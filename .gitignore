@@ -2,8 +2,5 @@ p*.eot
 p*.woff
 p*.ttf
 p*.svg
-p*.otf
-
+*.otf
 css/f.css
-
-fonts/FontAwesome.otf
