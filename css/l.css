@@ -28,8 +28,8 @@
 }
 
 .powered-by:hover>li {
-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-opacity: .5;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+	opacity: .5;
 }
 
 .powered-by>li:hover {
