@@ -1,6 +1,10 @@
-p*.eot
-p*.woff
-p*.ttf
-p*.svg
-*.otf
-css/f.css
+*.sublime-project
+*.sublime-workspace
+.project
+.idea
+*.swp
+Vagrantfile
+.vagrant
+provision.sh
+*.komodoproject
+.DS_Store
