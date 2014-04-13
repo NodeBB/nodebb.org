@@ -479,9 +479,11 @@ button:focus { outline: 0; }
 	padding-top: 3em; }
 	
 	#features>div>section { box-shadow: none; }
+
+	#features header, 
+	#features i { color: #151515 }
 	
 	#features .h4 { color: #2c2c2c }
-	#features i { color: #151515 }
 	
 	#features .col-md-4 { min-height: 220px; }
  
