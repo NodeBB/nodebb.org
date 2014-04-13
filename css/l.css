@@ -331,11 +331,7 @@ background-color: rgba(0,0,0,0.85);
  
 	.bg-splash-a a, 
 	.bg-splash-c a { color: rgba(255,255,255,0.75); }
-	
-	.bg-splash-c a.btn-landing:hover { 
-		color: #E32167 !important;
-	}
-	
+
 	.bg-splash-c h3,
 	.bg-splash-a .h3 {
 		color: #FFF !important;
