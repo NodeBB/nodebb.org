@@ -4,16 +4,19 @@
 ::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.4); }
 
 
+a {
+	-webkit-transition: color .2s;
+	-moz-transition: color .2s;
+	-o-transition: color .2s;
+	transition: color .2s;
+}
+
 #landing {
 	-moz-background-size: cover;
 	-moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,0.08),0px 1px 0 0 rgba(0,0,0,0.3);
 	-o-background-size: cover;
 	-webkit-background-size: cover;
 	-webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.08),0px 1px 0 0 rgba(0, 0, 0, 0.3);
-	/*
-	background-color: #2D2D2D;
-	background-image: url(../images/splash-bg.jpg);
-	*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -30,6 +33,7 @@
 	padding: 0 12px 100px 12px;
 	position: relative;
 	vertical-align: middle;
+	background-image: -webkit-radial-gradient(0% bottom, rgba(23, 82, 186, 0.7) 0%, rgba(118, 72, 160, 0) 60%),-webkit-radial-gradient(90% bottom, #113e8d 0%, rgba(82, 63, 140, 0) 40%);
 }
 
 
@@ -56,7 +60,6 @@
 		color: #FFF;
 	}
 
-.bg-powered-by,
 .bg-integrated {
 	background-color: #0C0C0C;
 	color: rgba(255, 255, 255, 0.85);
@@ -296,20 +299,23 @@
 	position: relative;
 	text-align: left; }
  
-	.bg-splash * .text-white {
-		color: #FFF!important;
-		text-shadow: 0 1px 1px rgba(0,0,0,0.2); }
+	.bg-splash * .text-white { color: #FFF!important; }
  
- 
+
 .bg-splash-a {
 	-moz-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1),0px 1px 0 0 rgba(0,0,0,0.1);
 	-webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1),0px 1px 0 0 rgba(0,0,0,0.1);
-	background-color: rgba(0,0,0,0.85);
+	/*
+background-color: rgba(0,0,0,0.85);
 	background-image: -moz-linear-gradient(left,rgba(23, 164, 187, 0.6),rgba(23, 82, 187, 0.6));
 	background-image: -o-linear-gradient(left,rgba(23, 164, 187, 0.6),rgba(23, 82, 187, 0.6));
 	background-image: -webkit-linear-gradient(left,rgba(23, 164, 187, 0.6),rgba(23, 82, 187, 0.6));
 	background-image: linear-gradient(to right,rgba(23, 164, 187, 0.6),rgba(23, 82, 187, 0.6));
 	box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1),0px 1px 0 0 rgba(0,0,0,0.1);
+*/
+
+	background-color: #1449A4;
+	background-image: -webkit-radial-gradient(50% top, rgba(23, 82, 186, 1) 0%, rgba(23, 82, 186, 0) 75%),-webkit-radial-gradient(right top, rgba(23, 164, 187, 0.6) 0%, rgba(23, 164, 187, 0) 57%);
 	color: rgba(255,255,255,0.9); }
  
 	.bg-splash-a a { color: rgba(255,255,255,0.75); }
@@ -375,12 +381,31 @@ body {
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
 	background-color: #479aeb;
 	border-color: transparent; }
- 
- 
+
+.btn-landing {
+	color: rgba(255, 255, 255, 0.85) !important;
+}
+.btn-landing:hover,
+.btn-landing:focus, 
+.btn-landing:active, 
+.btn-landing.active, 
+.open .dropdown-toggle.btn-landing {
+	background-color: #FFF;
+	color: #1449A4 !important;
+	border-color: rgba(0, 0, 0, 0);
+}
+
 .btn-signup {
-	background-color: rgba(51, 156, 225, 1);
-	color: rgba(255, 255, 255, 0.85)!important; }
- 
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #FFF !important; }
+.btn-signup:hover,
+.btn-signup:focus, 
+.btn-signup:active, 
+.btn-signup.active,
+.open .dropdown-toggle.btn-signup {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+	
 
 .btn {
 	-webkit-transition: background-color 200ms ease-out;
@@ -398,17 +423,17 @@ button:focus { outline: 0; }
 	top: 7px; }
  
  
-#content>div.bg-splash.dk.splash-v>div.container>div>div.col-sm-6.col-sm-pull-6>div>div>div>div>h1 { font-size: 46px; }
+#content>div.bg-splash.splash-v>div.container>div>div.col-sm-6.col-sm-pull-6>div>div>div>div>h1 { font-size: 46px; }
  
  
-#content>div.bg-splash.dk.splash-v>div.container>div>p>span.h3.text-white.m-t-dl {
+#content>div.bg-splash.splash-v>div.container>div>p>span.h3.text-white.m-t-dl {
 	display: block;
 	line-height: 50px;
 	padding-left: 0;
 	padding: 10px; }
  
  
-#content>div.bg-splash.dk.splash-x {
+#content>div.bg-splash.splash-x {
 	padding-bottom: 5em;
 	padding-top: 5em; }
  
@@ -427,17 +452,19 @@ button:focus { outline: 0; }
  
  
 #features {
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	-webkit-background-size: contain;
 	background-image: url(../images/bg.png);
-	background-position: center;
 	background-repeat: repeat;
-	background-size: contain;
+	background-size: inherit;
 	padding-bottom: 3em;
-	padding-top: 3em; }
- 
+	padding-top: 3em;
+	color: rgba(255, 255, 255, 0.7);
+	background-color: rgba(21, 21, 21, 0.9); }
+	
 	#features>div>section { box-shadow: none; }
+	
+	#features .h4 { color: rgba(255, 255, 255, 0.85);}
+	
+	#features .col-md-4 { min-height: 220px; }
  
 		#features>div>section>table>thead>tr>th,#features>div>section>table>tbody>tr>td {
 			background: transparent;
@@ -477,7 +504,8 @@ img.hero-ss {
 	width: 100%;
 	z-index: 1; }
  
- 
+.latest-blurb { color: rgba(255, 255, 255, 0.35); }
+
 .legal {
 	color: rgba(41, 41, 41, 0.8);
 	font-size: 15px;
@@ -707,18 +735,22 @@ i.i.i-2x.text-white { color: rgba(255, 255, 255, 0.97); }
 	}
 
 	#header > div > div.navbar-collapse.collapse.in > ul > li:nth-child(6) {
-		margin-left: 15px;
+		margin-right: 15px;
+		float: right;
+		position: absolute;
+		top: 50px;
+		right: 0px;
 	}
 
-	#content > div.bg-splash.dk.splash-v > div.container > div > div > div > div > h1 {
+	#content > div.bg-splash.splash-v > div.container > div > div > div > div > h1 {
 		font-size: 32px;
 	}
 
-	#content > div.bg-splash.dk.splash-v > div.container > div > div > h3 {
+	#content > div.bg-splash.splash-v > div.container > div > div > h3 {
 		font-size: 20px;
 	}
 
-	#content > div.bg-splash.dk.splash-v > div.container > div > p > span:nth-child(2) > small:nth-child(1) > a {
+	#content > div.bg-splash.splash-v > div.container > div > p > span:nth-child(2) > small:nth-child(1) > a {
 		margin-left: 0;
 	}
 
@@ -743,19 +775,42 @@ i.i.i-2x.text-white { color: rgba(255, 255, 255, 0.97); }
 		display: none;
 	}
 
-	#content>div.bg-splash.dk.splash-v>div.container>div>div.col-sm-6.col-sm-pull-6>div>div>div>div>h1 {
+	#content>div.bg-splash.splash-v>div.container>div>div.col-sm-6.col-sm-pull-6>div>div>div>div>h1 {
 		font-size: 42px;
+	}
+		
+	.navbar.affix > div > div.navbar-header > a,
+	.navbar.affix-top > div > div.navbar-header > a {
+		display: block;
+	}
+	
+	.navbar.affix-top .navbar-nav li a.btn-signup {
+		background-color: #339CE1;
 	}
 	
 	.navbar.affix > div > div.navbar-header > a,
 	.navbar.affix-top > div > div.navbar-header > a {
-		display: inline-block;
+		margin-left: 30px !important;
+	}
+	.navbar.affix-top .navbar-nav li a, 
+	.navbar.affix .navbar-nav li a {
+		margin-left: 15px;
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 	
-	.navbar.affix-top > div > div.navbar-header > a {
-		margin-left: 0 !important;
+	.navbar.affix .navbar-nav li a.btn-link,
+	.navbar.affix-top .navbar-nav li a.btn-link {
+		margin-left: 4px !important;
 	}
 	
+	.navbar.affix-top .navbar-header {
+		background: rgba(0, 0, 0, 0);
+	}
+	.navbar.affix-top:hover .navbar-header {
+		background: #151515;
+	}
+
 	.proceed:after {
 		display: none;
 	}
