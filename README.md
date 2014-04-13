@@ -6,4 +6,4 @@ A beautiful, responsive theme developed specifically for NodeBB's marketing page
 
 Twitter: [@nodebb](http://twitter.com/nodebb)
 
-![Home View](http://i.imgur.com/j2ppNGD.png)
+![NodeBB Marketing Page](https://github.com/cnvo/nodebb.org/raw/c5c11c3e8ed9f31b5a8afa059efd62cdadf6ab57/images/screenies/screenie-m1.png)
