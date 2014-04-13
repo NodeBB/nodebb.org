@@ -178,7 +178,6 @@ a {
 	top: 7px;
 	z-index: 1; }
  
- 
 /* @TODO
 .authentication button,
 .authentication button:active {
@@ -493,7 +492,25 @@ button:focus { outline: 0; }
  
 	#footer > div.bg-dark.wrapper.location a { color: #FFF; }
  
- 
+#footer ul {
+	margin: 0;
+	padding: 0;
+	float: none;
+}
+#footer ul li {
+	list-style: none;
+	padding: 7px 15px;
+	margin: 0;
+	display: inline-block;
+	white-space: nowrap;
+}
+
+#footer ul li a {
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
 .h1 { font-size: 42px; }
  
  
