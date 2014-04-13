@@ -743,6 +743,13 @@ i.i.i-2x.text-white { color: rgba(255, 255, 255, 0.97); }
 	height: 100%;
 }
 
+.ghb {
+	position: absolute;
+	bottom: 50px;
+	opacity: .65;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65);
+}
+
 
 @media (max-width:767px) {
 
