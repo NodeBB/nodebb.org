@@ -36,6 +36,16 @@ a {
 	background-image: -webkit-radial-gradient(0% bottom, rgba(23, 82, 186, 0.7) 0%, rgba(118, 72, 160, 0) 60%),-webkit-radial-gradient(90% bottom, #113e8d 0%, rgba(82, 63, 140, 0) 40%);
 }
 
+.landing-overlay,
+.splash-overlay {
+	background: url(../images/bg.png) repeat center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+}
 
 .hero-mb {
 	padding-left: 15px;
