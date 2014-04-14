@@ -2,7 +2,7 @@
 
 A beautiful, responsive landing page specifically for NodeBB.
 
-![NodeBB Marketing Page](https://github.com/cnvo/nodebb.org/raw/e7491e76c8a8a73f17c6c7dabde654fc9e535a47/images/screenies/screenie-m1.png)
+![NodeBB Marketing Page](https://raw.githubusercontent.com/cnvo/nodebb.org/68d7f263efa68b09675b84eb0b10bc3f66030367/images/screenie.png)
 
 ###Features
 
