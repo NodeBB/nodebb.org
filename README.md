@@ -8,6 +8,3 @@ A beautiful, responsive landing page specifically for NodeBB.
 
  * Built with: HTML5, CSS3, jQuery
  * BS3 Framework with modified classes
-
-###Credits
-Created by: Trevor Williams [@convoe_](http://twitter.com/convoe_)
