@@ -33,18 +33,6 @@ a {
 	padding: 0 12px 100px 12px;
 	position: relative;
 	vertical-align: middle;
-	background-image: -webkit-radial-gradient(0% bottom, rgba(23, 82, 186, 0.7) 0%, rgba(118, 72, 160, 0) 60%),-webkit-radial-gradient(90% bottom, #113e8d 0%, rgba(82, 63, 140, 0) 40%);
-}
-
-.landing-overlay,
-.splash-overlay {
-	background: url(../images/bg.png) repeat center;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: 0;
 }
 
 .hero-mb {
@@ -124,6 +112,10 @@ a {
 
 .proceed {
 	position: relative;
+	-webkit-border-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.09) 10%, rgba(0,0,0,0.09) 90%, rgba(0,0,0,0)) 100% 0;
+	border-width: 1px 0;
+	border-bottom: 0;
+	padding-top: 20px;
 }
 
 
@@ -377,7 +369,7 @@ background-color: rgba(0,0,0,0.85);
 	position: absolute;
 	right: 0;
 	top: 0;
-	z-index: 1; }
+	z-index: 0; }
  
  
 .bg-v {
@@ -476,7 +468,9 @@ button:focus { outline: 0; }
  
 #features {
 	padding-bottom: 3.2em;
-	padding-top: 3em; }
+	padding-top: 3em;
+	z-index: 1;
+	position: relative; }
 	
 	#features>div>section { box-shadow: none; }
 
@@ -603,26 +597,23 @@ i.i.i-2x.text-white { color: rgba(255, 255, 255, 0.97); }
 		.navbar.affix-top .navbar-nav>li>a:hover,
 .navbar.affix .navbar-nav>li>a:hover { background: transparent; }
  
-	.navbar.affix { background: rgba(0, 0, 0, 0.72); }
+	.navbar.affix { background: rgba(0, 0, 0, 0.85);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05),0 1px 0 rgba(0, 0, 0, 0.05);
+-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05),0 1px 0 rgba(0, 0, 0, 0.05); }
  
 		.navbar.affix > div > div.navbar-header > a,
 .navbar.affix-top > div > div.navbar-header > a {
-			background-image: url(../images/logo-rt.png);
+			background-image: url(../images/brand/logo-bb-wc.png);
 			background-position: center center;
 			background-repeat: no-repeat;
 			
-			background-size: 90px 20px;
-			width: 90px;
-			height: 20px;
-			/*
-			background-size: 68px 17px;
-			height: 17px;
-			width: 68px;
-			*/
+			background-size: 98px 40px;
+			width: 98px;
+			height: 40px;
 			display: block;
 			margin-left: 0;
 			margin-right: 0;
-			margin-top: 15px;
+			margin-top: 4px;
 			padding: 0;
 			 }
  
@@ -665,15 +656,21 @@ i.i.i-2x.text-white { color: rgba(255, 255, 255, 0.97); }
 	background-size: cover;
 	padding-bottom: 5em;
 	padding-top: 5em; }
+	
+	.maps section { background: rgba(0, 0, 0, 0);
+border: 0 none;
+box-shadow: none; }
+
+	.plans section ul li { color: rgba(255,255,255,0.8); }
+	.plans section ul li .h1 { color: #FFF!important; }
  
-	#responsive>div>div>div>div.col-sm-4.animated>section>ul>li.list-group-item.text-center.bg-light.lt,#responsive>div>div>div>div.col-sm-4.animated>section>ul>li { color: rgba(255,255,255,0.8); }
- 
-	#responsive>div>div>div>div.col-sm-4.animated>section>ul>li>div>.h1,#responsive>div>div>div>div.col-sm-4.animated>section>ul>li>.h1 { color: #FFF!important; }
- 
-	#responsive>div>div>div>div.col-sm-4.animated>section>header,#responsive>div>div>div>div.col-sm-4.animated>section,#responsive>div>div>div>div.col-sm-4.animated>section>ul>li.list-group-item.text-center.bg-light.lt,#responsive>div>div>div>div.col-sm-4.animated>section>ul>li,#responsive>div>div>div>div.col-sm-4.animated>section>footer {
-		background: transparent;
-		border: 0 none;
-		box-shadow: none; }
+	.plans section header,
+	.plans section,
+	.plans ul li,
+	.plans footer {
+		background: transparent !important;
+		border: 0 none !important;
+		box-shadow: none !important; }
  
  
 .screenies img {
@@ -685,7 +682,7 @@ i.i.i-2x.text-white { color: rgba(255, 255, 255, 0.97); }
 .splash-v {
 	max-height: 600px;
 	padding-top: 10em; }
- 
+	
  
 .strong { font-weight: bold; }
  
