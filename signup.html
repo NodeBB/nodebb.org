@@ -34,13 +34,13 @@
 				<div class="splash-overlay"></div>
 					<div class="container aside-xl">
 						<section class="m-b-lg m-t-lg">
-							<form class="authentication" action="index.html">
+							<form class="authentication" method="post" action="https://manage.nodebb.org/register">
 								<div class="list-group">
 									<div class="">
-										<input type="email" placeholder="Email" class="text name">
+										<input type="email" name="email" placeholder="Email" class="text name">
 									</div>
 									<div class="">
-										<input type="password" placeholder="Password" class="text password">
+										<input type="password" name="password" placeholder="Password" class="text password">
 									</div>
 								</div>
 								<button type="submit" class="btn btn-lg btn-landing b-white bg-empty btn-block">
@@ -95,6 +95,7 @@
 			<script src="js/jquery/jquery.smooth.js"></script>
 			<script src="js/landing.js"></script>
 			<script src="js/nodebb.js"></script>
+			<script src="js/csrf.js"></script>
 			<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
