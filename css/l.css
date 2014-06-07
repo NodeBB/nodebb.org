@@ -510,7 +510,7 @@ button:focus { outline: 0; }
 	-o-transition: opacity linear 0.3s;
 	-webkit-background-size: cover;
 	-webkit-transition: opacity linear 0.3s;
-	background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=43.6519457,-79.3650784&scale=2&zoom=17&format=png&sensor=false&size=512x512&maptype=roadmap&visual_refresh=true&style=visibility:on%7Cinvert_lightness:true%7Csaturation:-100&style=feature:poi%7Cvisibility:simplified&style=feature:transit%7Cvisibility:simplified&style=feature:transit.station%7Cvisibility:on&markers=color:0x1752ba%7C341+King+St+E+Toronto,Ontario');
+	background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=Toronto&20Ontario&scale=2&format=png&sensor=false&size=512x512&maptype=roadmap&visual_refresh=true&style=visibility:on%7Cinvert_lightness:true%7Csaturation:-100&style=feature:poi%7Cvisibility:simplified&style=feature:transit%7Cvisibility:simplified&style=feature:transit.station%7Cvisibility:on');
 	background-position: 0 45%;
 	background-repeat: no-repeat;
 	background-size: cover;
