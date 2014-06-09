@@ -775,6 +775,11 @@ box-shadow: none; }
 	.hero-mb {
 		margin-bottom: 0;
 	}
+	
+	.landing-blurb-subtext {
+		font-size: 14px;
+		line-height: normal;
+	}
 
 	#footer > div.bg-dark.wrapper.location > div.container.text-center.m-t-lg.bg-v > div.row.m-t-xl.m-b-xl > div.col-sm-4.animated {
 		margin-bottom: 20px;
