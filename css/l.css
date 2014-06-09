@@ -771,6 +771,10 @@ box-shadow: none; }
 		background: #151515;
 		padding-bottom: 15px;
 	}
+	
+	.hero-mb {
+		margin-bottom: 0;
+	}
 
 	#footer > div.bg-dark.wrapper.location > div.container.text-center.m-t-lg.bg-v > div.row.m-t-xl.m-b-xl > div.col-sm-4.animated {
 		margin-bottom: 20px;
