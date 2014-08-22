@@ -104,3 +104,9 @@ $(document).ready(function () {
         }
     })
 });
+
+$(document).ready(function() {
+    $('.demo-link').on("click", function() {
+        $('.demo-arrow').fadeOut();
+    });
+ });

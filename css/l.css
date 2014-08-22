@@ -876,3 +876,15 @@ box-shadow: none; }
 	}
 	
 }
+
+
+
+
+.demo-arrow {
+	width: 160px;
+	height: 43px;
+	position: absolute;
+	top: 37px;
+	left: 15px;
+	background-image: url(../images/arrow.png);
+}
