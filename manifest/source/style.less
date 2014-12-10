@@ -1,0 +1,38 @@
+@import "animations.less";
+
+.hero {
+	text-align: center;
+	width: 100%;
+
+	> div {
+		display: inline-block;
+	}
+
+	.h-logo {
+		background: url('../assets/images/logo.png');
+		width: 266px;
+		height: 73px;
+		margin-left: 10px;
+	}
+
+	.h-animation {
+		position: relative;
+		margin-top: 100px;
+		margin-bottom: 25px;
+
+		.hexagon {
+			background: url('../assets/images/hexagon.png');
+			width: 130px;
+			height: 150px;
+		}
+
+		.bubble {
+			background: url('../assets/images/bubble.png');
+			width: 130px;
+			height: 150px;
+			position: absolute;
+			top: 0px;
+			z-index: 10;
+		}
+	}
+}
