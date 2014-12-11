@@ -1,7 +1,17 @@
 $(document).ready(function() {
 	//setupHeroAnimation();
+	$(window).scroll(resizeHeader);
+	resizeHeader();
 });
 
+
+function resizeHeader() {
+	if ($(window).scrollTop() < 50) {
+		$('header').removeClass('offTop');
+	} else {
+		$('header').addClass('offTop');
+	}
+}
 
 
 function setupHeroAnimation() {
