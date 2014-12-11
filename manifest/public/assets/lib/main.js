@@ -1,11 +1,11 @@
 $(document).ready(function() {
-	setupHeroAnimation();
+	//setupHeroAnimation();
 });
 
 
 
 function setupHeroAnimation() {
-	var rotate, bounce;
+	var rotate, bounce, count = 0;
 
 	setInterval(function() {
 		rotate = rotate || $('.rotate');
@@ -17,6 +17,10 @@ function setupHeroAnimation() {
 		setTimeout(function() {
 			rotate.addClass('rotate');
 			bounce.addClass('bounce');
+
+			setTimeout(function() {
+				$('.hero').addClass('loaded');
+			}, 500);
 		}, 10);
-	}, 3500);
+	}, 750);
 }
