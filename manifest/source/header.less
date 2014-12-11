@@ -35,7 +35,6 @@ header {
 
 .hero {
 	text-align: center;
-	width: 100%;
 
 	> div {
 		display: inline-block;
@@ -43,7 +42,7 @@ header {
 
 	.animation {
 		position: relative;
-		margin-top: 100px;
+		margin-top: 75px;
 		margin-bottom: 25px;
 
 		.hexagon {
@@ -61,4 +60,82 @@ header {
 			z-index: 10;
 		}
 	}
+
+	h1 {
+		font-weight: 400;
+		font-size: 36px;
+		color: #333;
+	}
+
+	h2 {
+		font-weight: 300;
+		font-size: 24px;
+	}
+}
+
+.navigation {
+	list-style-type: none;
+	padding: 0;
+	margin: 50px 0;
+
+	li {
+		width: 20%;
+		display: block;
+		float: left;
+		text-align: center;
+		font-size: 30px;
+		font-weight: 300;
+		color: white;
+		//cursor: pointer;
+
+		a, a:visited, a:hover, a:focus, a:active {
+			padding: 20px 0;
+			display: block;
+			width: 100%;
+			color: white;
+			text-decoration: none;
+		}
+
+		&.first a {
+			background-color: #00bcd4;
+
+			&:hover {
+				background-color: lighten(#00bcd4, 10%);
+			}
+		}
+
+		&.second a {
+			background-color: #607d8b;
+
+			&:hover {
+				background-color: lighten(#607d8b, 10%);
+			}
+		}
+
+		&.third a {
+			background-color: #9c27b0;
+
+			&:hover {
+				background-color: lighten(#9c27b0, 10%);
+			}
+		}
+
+		&.fourth a {
+			background-color: #03a9f4;
+
+			&:hover {
+				background-color: lighten(#03a9f4, 10%);
+			}
+		}
+
+		&.fifth a {
+			background-color: #e91e63;
+
+			&:hover {
+				background-color: lighten(#e91e63, 10%);
+			}
+		}
+	}
+
+
 }
