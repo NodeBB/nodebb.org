@@ -48,7 +48,8 @@
 		background-color: #e91e63;
 	}
 
-	a, a:visited, a:hover, a:focus, a:active {
+	a, a:visited, a:hover, a:focus, a:active,
+	&.page3 a, &.page3 a:visited, &.page3 a:hover, &.page3 a:focus, &.page3 a:active {
 		text-decoration: none;
 		font-weight: 300;
 		float: right;
@@ -58,4 +59,20 @@
 		padding: 18px;
 		margin-top: -14px;
 	}
+
+	&.page3 {
+		background-color: #9c27b0;
+		text-align: left;
+		margin: 35px 3px 10px;
+
+		a, a:visited, a:hover, a:focus, a:active {
+			margin-top: -32px;
+		}
+
+		strong {
+			font-weight: 400;
+		}
+	}
+
+	
 }
