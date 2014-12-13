@@ -8,6 +8,7 @@
 
 	h1 {
 		font-weight: 400;
+		font-size: 45px;
 	}
 
 	h2 {
@@ -30,25 +31,76 @@
 		width: 19.5%;
 		padding: 3px;
 
-		&.first .package {
-			background-color: #00bcd4;
+		&.first {
+			.package {
+				background-color: #00bcd4;
+			}
+
+			.buy a {
+				background-color: #00bcd4;
+
+				&:hover {
+					background-color: lighten(#00bcd4, 10%);
+				}
+			}
 		}
 
-		&.second .package {
-			background-color: #607d8b;
+		&.second {
+			.package {
+				background-color: #607d8b;
+			}
+
+			.buy a {
+				background-color: #607d8b;
+
+				&:hover {
+					background-color: lighten(#607d8b, 10%);
+				}
+			}
 		}
 
-		&.third .package {
-			background-color: #9c27b0;
+		&.third {
+			.package {
+				background-color: #9c27b0;
+			}
+
+			.buy a {
+				background-color: #9c27b0;
+
+				&:hover {
+					background-color: lighten(#9c27b0, 10%);
+				}
+			}
 		}
 
-		&.fourth .package {
-			background-color: #03a9f4;
+		&.fourth {
+			.package {
+				background-color: #03a9f4;
+			}
+
+			.buy a {
+				background-color: #03a9f4;
+
+				&:hover {
+					background-color: lighten(#03a9f4, 10%);
+				}
+			}
 		}
 
-		&.fifth .package {
-			background-color: #e91e63;
+		&.fifth {
+			.package {
+				background-color: #e91e63;
+			}
+
+			.buy a {
+				background-color: #e91e63;
+
+				&:hover {
+					background-color: lighten(#e91e63, 10%);
+				}
+			}
 		}
+
 
 		li {
 			padding: 1px;
@@ -77,14 +129,18 @@
 				height: 25px;
 				background: white;
 
-				.dollar {
-					
-				}
 				.number {
 					font-size: 24px;
 				}
-				.duration {
+			}
 
+			&.buy {
+				a {
+					padding: 10px 0;
+					text-transform: uppercase;
+					font-weight: 300;
+					width: 175px;
+					display: inline-block;
 				}
 			}
 		}
