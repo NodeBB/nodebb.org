@@ -1,9 +1,10 @@
 .pricing {
-	background: #e91e63;
+	background: #333;
 	color: white;
 	margin-top: 40px;
 	padding: 20px;
 	text-align: center;
+	padding-bottom: 55px;
 
 	h1 {
 		font-weight: 400;
@@ -11,7 +12,8 @@
 
 	h2 {
 		font-weight: 300;
-		font-size: 20px;
+		font-size: 18px;
+		margin-bottom: 35px;
 	}
 
 	a {
@@ -22,9 +24,31 @@
 
 	ul {
 		list-style-type: none;
-		padding: 0px;
 		margin: 0px;
 		float: left;
+
+		width: 19.5%;
+		padding: 3px;
+
+		&.first .package {
+			background-color: #00bcd4;
+		}
+
+		&.second .package {
+			background-color: #607d8b;
+		}
+
+		&.third .package {
+			background-color: #9c27b0;
+		}
+
+		&.fourth .package {
+			background-color: #03a9f4;
+		}
+
+		&.fifth .package {
+			background-color: #e91e63;
+		}
 
 		li {
 			padding: 1px;
@@ -41,6 +65,7 @@
 
 			&.package {
 				font-size: 18px;
+				font-weight: 300;
 				text-transform: uppercase;
 				background: #333;
 				padding: 20px;
