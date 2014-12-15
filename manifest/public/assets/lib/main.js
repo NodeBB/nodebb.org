@@ -6,6 +6,24 @@ $(document).ready(function() {
 	$(window).resize(resizeWindow);
 	resizeHeader();
 	resizeWindow();
+
+	$('.left-arrow').on('click', function() {
+		planBeingViewed --;
+		if (planBeingViewed < 0) {
+			planBeingViewed = 4;
+		}
+
+		configureMobilePricing();
+	});
+
+	$('.right-arrow').on('click', function() {
+		planBeingViewed ++;
+		if (planBeingViewed > 4) {
+			planBeingViewed = 0;
+		}
+
+		configureMobilePricing();
+	});
 });
 
 
