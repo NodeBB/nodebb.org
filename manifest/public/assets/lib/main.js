@@ -1,7 +1,11 @@
+var planBeingViewed = 1;
+
 $(document).ready(function() {
 	//setupHeroAnimation();
 	$(window).scroll(resizeHeader);
+	$(window).resize(resizeWindow);
 	resizeHeader();
+	resizeWindow();
 });
 
 
@@ -11,6 +15,27 @@ function resizeHeader() {
 	} else {
 		$('header').addClass('offTop');
 	}
+}
+
+function resizeWindow() {
+	if ($(window).width() < 768) {
+		configureMobilePricing();
+	}
+}
+
+function configureMobilePricing() {
+	var plan = $('.pricing .table ul').eq(planBeingViewed),
+		windowWidth = $(window).width(),
+		planWidth = plan.width()
+		offset = planBeingViewed === 1 ? 15 : 0;
+
+	var totalWidth = 0;
+	$('.pricing .table ul').slice(0,planBeingViewed).each(function() {
+		totalWidth += $(this).width();
+	});
+
+
+	$('.table').css('margin-left', - totalWidth + (windowWidth/2) - (planWidth / 2) - offset);
 }
 
 
