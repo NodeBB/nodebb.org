@@ -26,16 +26,19 @@ function resizeWindow() {
 function configureMobilePricing() {
 	var plan = $('.pricing .table ul').eq(planBeingViewed),
 		windowWidth = $(window).width(),
-		planWidth = plan.width()
-		offset = planBeingViewed === 1 ? 15 : 0;
+		planWidth = plan.width(),
+		offset = planBeingViewed === 1 ? 15 : 0,
+		x;
 
 	var totalWidth = 0;
 	$('.pricing .table ul').slice(0,planBeingViewed).each(function() {
 		totalWidth += $(this).width();
 	});
 
-
-	$('.table').css('margin-left', - totalWidth + (windowWidth/2) - (planWidth / 2) - offset);
+	x = - totalWidth + (windowWidth/2) - (planWidth / 2) - offset;
+	$('.table').css({
+		'transform': 'translateX(' + x + 'px)'
+	});
 }
 
 
