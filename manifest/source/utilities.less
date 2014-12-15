@@ -54,3 +54,29 @@
 	display: inline-block;
 	margin: 10px;
 }
+
+
+
+
+
+
+
+.mobile-only {
+	display: none;
+}
+
+@media (max-width: 1200px) {
+	.tablet-hide {
+		display: none !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.mobile-only {
+		display: inline-block;
+	}
+
+	.mobile-hide {
+		display: none !important;
+	}
+}
