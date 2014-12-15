@@ -1,5 +1,15 @@
 @media (max-width: 768px) {
+	.content {
+		.pull-right, .pull-left {
+			clear: both;
+			width: 100%;
 
+			img {
+				float: none;
+				width: 100%;
+			}
+		}
+	}
 }
 
 @media (max-width: 1200px) {
@@ -11,5 +21,16 @@
 
 	.navigation li a {
 		height: 56px;
+	}
+
+	.next-page h3 a {
+		display: block !important;
+		float: none !important;
+		margin-top: 20px !important;
+		width: 250px !important;
+	}
+
+	.next-page br {
+		display: none;
 	}
 }
