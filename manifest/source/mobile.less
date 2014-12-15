@@ -43,6 +43,15 @@
 	}
 
 	header {
+		.pull-left, .pull-right {
+			width: 100%;
+			> * {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+		}
+
 		&.offTop {
 			height: 50px;
 			.container {
@@ -52,6 +61,15 @@
 			.pull-left {
 				position: absolute;
 			}
+
+			.pull-left, .pull-right {
+				width: auto;
+				> * {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+
 
 			.logo {
 				background-position: -65px;
