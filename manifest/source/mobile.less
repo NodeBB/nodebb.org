@@ -10,6 +10,36 @@
 			}
 		}
 	}
+
+	header {
+		&.offTop {
+			height: 50px;
+			.container {
+				box-shadow: 0px 1px 1px rgba(0,0,0,0.9);
+			}
+
+			.pull-left {
+				position: absolute;
+			}
+
+			.logo {
+				background-position: -65px;
+			}
+		}
+		
+		.container {
+			background: #333;
+		}
+
+		.menu li {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+
+	.mobile-hide {
+		display: none !important;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -33,4 +63,10 @@
 	.next-page br {
 		display: none;
 	}
+
+	.tablet-hide {
+		display: none !important;
+	}
+
+
 }
