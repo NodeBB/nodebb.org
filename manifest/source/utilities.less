@@ -63,19 +63,31 @@
 
 
 
-.mobile-only {
-	display: none;
+.mobile-only, .tablet-only {
+	display: none !important;
 }
 
 @media (max-width: 1200px) {
 	.tablet-hide {
 		display: none !important;
 	}
+
+	.desktop-only {
+		display: none !important;
+	}
+
+	.tablet-only {
+		display: inline-block !important;
+	}
+
+	.mobile-only {
+		display: none !important;
+	}
 }
 
 @media (max-width: 768px) {
 	.mobile-only {
-		display: inline-block;
+		display: inline-block !important;
 	}
 
 	.mobile-hide {
