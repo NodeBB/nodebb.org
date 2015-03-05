@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 var frames = 15;
 var durations = [
-	500,
+	0,
 	3300,
 	3700,
 	4000,
@@ -81,6 +81,8 @@ function loadImages(cb) {
 		img.className = 'frame frame' + i;
 		$('#canvas').append(img);
 	}
+
+	$('#canvas img').attr('width', '100%');
 }
 
 
