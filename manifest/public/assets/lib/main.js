@@ -97,6 +97,8 @@ function resizeHeader() {
 function resizeWindow() {
 	if ($(window).width() < 768) {
 		configureMobilePricing();
+	} else {
+		$('.table').removeAttr('style');
 	}
 }
 
