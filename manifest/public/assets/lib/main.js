@@ -1,7 +1,6 @@
 var planBeingViewed = 1;
 
 $(document).ready(function() {
-	//setupHeroAnimation();
 	$(window).scroll(resizeHeader);
 	$(window).resize(resizeWindow);
 	resizeHeader();
@@ -118,26 +117,4 @@ function configureMobilePricing() {
 	$('.table').css({
 		'transform': 'translateX(' + x + 'px)'
 	});
-}
-
-
-function setupHeroAnimation() {
-	var rotate, bounce, count = 0;
-
-	setInterval(function() {
-		rotate = rotate || $('.rotate');
-		bounce = bounce || $('.bounce');
-
-		rotate.removeClass('rotate');
-		bounce.removeClass('bounce');
-
-		setTimeout(function() {
-			rotate.addClass('rotate');
-			bounce.addClass('bounce');
-
-			setTimeout(function() {
-				$('.hero').addClass('loaded');
-			}, 500);
-		}, 10);
-	}, 750);
 }
