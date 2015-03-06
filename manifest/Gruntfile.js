@@ -15,16 +15,30 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		uglify: {
+			js: {
+				files: {
+					"public/bin/nodebb.min.js": ["public/assets/lib/main.js"]
+				}
+			}
+		},
 		watch: {
 			css: {
 				files: "source/**/*.less",
-				tasks: ['less'],
+				tasks: ["less"],
 				options: {
-					livereload: 3001,
+					livereload: 3001
+				}
+			},
+			js: {
+				files: "public/**/*.js",
+				tasks: ["uglify"],
+				options: {
+					livereload: 3001
 				}
 			},
 			html: {
-				files: ["public/**/*.html", "public/**/*.js", "public/**/*.png"],
+				files: ["public/**/*.html", "public/**/*.png"],
 				options: {
 					livereload: 3001
 				}
@@ -32,9 +46,10 @@ module.exports = function(grunt) {
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-express-server');
 
-	grunt.registerTask('default', ['express:dev', 'less', 'watch']);
+	grunt.registerTask('default', ['express:dev', 'less', 'uglify', 'watch']);
 };
