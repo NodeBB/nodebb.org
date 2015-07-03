@@ -1,0 +1,164 @@
+@media (max-width: 1200px) {
+	.container {
+		max-width: 95%;
+		padding-right: 2.5%;
+		padding-left: 2.5%;
+	}
+
+	.navigation li a {
+		height: 56px;
+	}
+
+	.next-page h3 a {
+		display: block !important;
+		float: none !important;
+		margin-top: 20px !important;
+		width: 250px !important;
+	}
+
+	.next-page br {
+		display: none;
+	}
+
+	.tablet-hide {
+		display: none !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.content {
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+
+		.pull-right, .pull-left {
+			clear: both;
+			width: 100%;
+
+			img {
+				float: none;
+				width: 100%;
+			}
+		}
+	}
+
+	header {
+		.pull-left, .pull-right {
+			width: 100%;
+			> * {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+		}
+
+		&.offTop {
+			height: 50px;
+			.container {
+				box-shadow: 0px 1px 1px rgba(0,0,0,0.9);
+			}
+
+			.pull-left {
+				position: absolute;
+			}
+
+			.pull-left, .pull-right {
+				width: auto;
+				> * {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+
+
+			.logo {
+				background-position: -65px;
+			}
+		}
+		
+		.container {
+			background: #333;
+		}
+
+		.menu li {
+			margin-left: 0;
+			margin-right: 10px;
+		}
+	}
+
+	.hero {
+		background: none;
+
+		.intro {
+			padding: 10px;
+			background: white;
+			color: #333;
+			margin-top: -120px;
+		}
+	}
+
+	.navigation {
+		margin-bottom: 20px;
+		display: inline-block;
+
+		li {
+			width: 100%;
+
+			a {
+				height: auto !important;
+			}
+		}
+	}
+
+	.next-page h3 a {
+		width: auto !important;
+	}
+
+	.next-page {
+		padding: 10px 25px;
+		font-size: 20px;
+	}
+
+	.pricing {
+		padding-left: 0;
+		padding-right: 0;
+		overflow: hidden;
+
+		.table {
+			min-width: 1200px;
+			transition: 0.3s all cubic-bezier(0.075, 0.820, 0.165, 0.8);
+			-webkit-transition: 0.3s all cubic-bezier(0.075, 0.820, 0.165, 0.8);
+		}
+
+		ul {
+			li.price {
+				padding: 20px;
+			}
+		}
+
+		.left-arrow, .right-arrow {
+			position: absolute;
+			cursor: pointer;
+			z-index: 2;
+			top: 350px;
+			padding: 10px 15px 10px 10px;
+			left: 8px;
+			background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
+		}
+
+		.right-arrow {
+			right: 8px;
+			left: auto;
+			padding: 10px 10px 10px 15px;
+		}
+	}
+
+	.footer {
+		.w33 {
+			width: 100%;
+			border-bottom: 1px dashed rgba(255,255,255,0.3);
+			padding-bottom: 10px;
+			margin-bottom: 21px;
+		}
+	}
+}

@@ -1,0 +1,179 @@
+.pricing {
+	background: #333;
+	color: white;
+	margin-top: 75px;
+	padding: 20px;
+	text-align: center;
+	padding-bottom: 55px;
+
+	h2 {
+		font-weight: 300;
+		font-size: 22px;
+		margin-bottom: 45px;
+		margin-top: 30px;
+	}
+
+	a {
+		color: white;
+		font-weight: 500;
+		text-decoration: none;
+	}
+
+	.table {
+		padding-top: 20px;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: 0px;
+		float: left;
+
+		width: 19.5%;
+		padding: 3px;
+
+		&.first {
+			.package {
+				background-color: #00bcd4;
+			}
+
+			.buy a {
+				background-color: #00bcd4;
+
+				&:hover {
+					background-color: lighten(#00bcd4, 10%);
+				}
+			}
+		}
+
+		&.second {
+			.package {
+				background-color: #607d8b;
+				font-weight: 400;
+
+				small {
+					font-weight: 400;
+					font-size: 12px;
+				}
+			}
+
+			.buy a {
+				background-color: #607d8b;
+				padding: 17px 10px;
+
+				&:hover {
+					background-color: lighten(#607d8b, 10%);
+				}
+
+				font-weight: 400;
+			}
+
+			width: 110%;
+			z-index: 1;
+			position: relative;
+			margin-top: -28px;
+			margin-left: -18px;
+			border: 6px solid rgb(51, 51, 51);
+			padding: 0px;
+		}
+
+		&.third {
+			.package {
+				background-color: #9c27b0;
+			}
+
+			.buy a {
+				background-color: #9c27b0;
+
+				&:hover {
+					background-color: lighten(#9c27b0, 10%);
+				}
+			}
+		}
+
+		&.fourth {
+			.package {
+				background-color: #03a9f4;
+			}
+
+			.buy a {
+				background-color: #03a9f4;
+
+				&:hover {
+					background-color: lighten(#03a9f4, 10%);
+				}
+			}
+		}
+
+		&.fifth {
+			.package {
+				background-color: #fff;
+				color: #333;
+				text-transform: none;
+			}
+
+			.price {
+				padding: 8px;
+			}
+
+			.buy {
+				margin-bottom: 8px;
+				a {
+					background-color: #e91e63;
+
+					&:hover {
+						background-color: lighten(#e91e63, 10%);
+					}
+				}
+			}
+
+
+			li {
+				background: white !important;
+			}
+		}
+
+
+		li {
+			padding: 1px;
+			color: #333;
+			padding: 20px;
+
+			&:nth-child(odd) {
+				background: #efefef;
+			}
+
+			&:nth-child(even) {
+				background: white;
+			}
+
+			&.package {
+				font-size: 18px;
+				font-weight: 300;
+				text-transform: uppercase;
+				background: #333;
+				padding: 20px;
+				color: white;
+			}
+
+			&.price {
+				padding: 50px;
+				height: 25px;
+				background: white;
+
+				.number {
+					font-size: 24px;
+				}
+			}
+
+			&.buy {
+				a {
+					padding: 10px 0;
+					text-transform: uppercase;
+					font-weight: 300;
+					width: 175px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

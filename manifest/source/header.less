@@ -1,0 +1,251 @@
+header {
+	background: #333;
+	line-height: 50px;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+
+	.logo {
+		background: url(../assets/images/logo-bb-wc.png);
+		width: 147px;
+		height: 60px;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 147px 60px;
+		margin-top: 4px;
+		transition: 0.3s all cubic-bezier(0.075, 0.820, 0.165, 0.8);
+		-webkit-transition: 0.3s all cubic-bezier(0.075, 0.820, 0.165, 0.8);
+	}
+
+	.menu {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			position: relative;
+			display: inline-block;
+			margin-left: 20px;
+
+			a, a:visited, a:hover, a:focus, a:active {
+				color: white;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 14px;
+			}
+
+			.arrow {
+				position: absolute;
+				width: 160px;
+				height: 43px;
+				background: url(../assets/images/arrow.png);
+			}
+		}
+	}
+
+	height: 75px;
+	transition: 0.3s height cubic-bezier(0.075, 0.820, 0.165, 0.8);
+	-webkit-transition: 0.3s height cubic-bezier(0.075, 0.820, 0.165, 0.8);
+
+	&.offTop {
+		height: 50px;
+		box-shadow: 0px 1px 1px rgba(0,0,0,0.9);
+
+		.logo {
+			width: 98px;
+			height: 40px;
+			background-size: 98px 40px;
+		}
+	}
+}
+
+
+.hero {
+	text-align: center;
+	margin-bottom: -20px;
+	padding-bottom: 50px;
+	padding-top: 125px;
+
+	.intro {
+		background: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 75px;
+		
+		display: inline-block;
+		
+		padding: 25px 75px;
+		color: #333;
+
+		> div {
+			display: inline-block;
+		}
+
+		h2 {
+			margin-top: -15px;
+		}
+	}
+
+	.animation {
+		position: relative;
+		display: inline-block;
+		margin-top: 120px;
+		margin-bottom: -20px;
+		opacity: 0;
+
+		.hexagon {
+			background: url(../assets/images/hexagon.png);
+			width: 130px;
+			height: 150px;
+		}
+
+		.bubble {
+			background: url(../assets/images/bubble.png);
+			width: 130px;
+			height: 150px;
+			position: absolute;
+			top: 0px;
+			z-index: 10;
+		}
+	}
+
+	h1 {
+		font-weight: 400;
+		font-size: 36px;
+	}
+
+	h2 {
+		font-weight: 300;
+		font-size: 24px;
+	}
+}
+
+.navigation {
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 140px;
+
+	li {
+		width: 20%;
+		display: block;
+		float: left;
+		text-align: center;
+		font-size: 22px;
+		font-weight: 300;
+		color: white;
+
+		a, a:visited, a:hover, a:focus, a:active {
+			padding: 20px 0;
+			display: block;
+			width: 100%;
+			color: white;
+			text-decoration: none;
+		}
+
+		&.first a {
+			background-color: #00bcd4;
+
+			&:hover {
+				background-color: lighten(#00bcd4, 10%);
+			}
+		}
+
+		&.second a {
+			background-color: #607d8b;
+
+			&:hover {
+				background-color: lighten(#607d8b, 10%);
+			}
+		}
+
+		&.third a {
+			background-color: #9c27b0;
+
+			&:hover {
+				background-color: lighten(#9c27b0, 10%);
+			}
+		}
+
+		&.fourth a {
+			background-color: #03a9f4;
+
+			&:hover {
+				background-color: lighten(#03a9f4, 10%);
+			}
+		}
+
+		&.fifth a {
+			background-color: #e91e63;
+
+			&:hover {
+				background-color: lighten(#e91e63, 10%);
+			}
+		}
+	}
+}
+
+
+#canvas {
+	position: relative;
+	margin-top: -115px;
+	pointer-events: none;
+
+	padding: 0 !important;
+
+	.frame {
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		opacity: 0;
+
+		&.phaseIn {
+			opacity: 1;
+		}
+	}
+}
+
+.hero-signup {
+	span {
+		font-family: 'Shadows Into Light Two', cursive;
+		font-size: 35px;
+		color: #555;
+	}
+
+	a {
+		padding: 18px 0px;
+		text-transform: uppercase;
+		font-weight: 300;
+		width: 250px;
+		display: inline-block;
+		background-color: #E91E63;
+		margin-top: 18px;
+		text-decoration: none;
+		color: white;
+
+		&:hover {
+			background-color: lighten(#e91e63, 10%);
+		}
+	}
+
+	a {
+		opacity: 0;
+		transition: 0.75s opacity ease-in-out;
+		-webkit-transition: 0.75s opacity ease-in-out;
+
+		&.phaseIn {
+			opacity: 1;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.hero {
+		padding-top: 150px;
+	}
+	#canvas {
+		margin-top: 20px;
+		.frame {
+			bottom: 2px;
+		}
+	}
+}
