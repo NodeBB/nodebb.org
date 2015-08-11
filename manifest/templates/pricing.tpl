@@ -2,8 +2,8 @@
 	<div class="pricing">
 		<div class="container clearfix relative">
 			<h2>Select the NodeBB plan that works best for your community. <br /><small>Need help? <a href="mailto:sales@nodebb.org">Contact us</a>.</small></h2>
-			<span class="mobile-only left-arrow">&nbsp;<i class="fa fa-angle-left fa-4x"></i></span>
-			<span class="mobile-only right-arrow">&nbsp;<i class="fa fa-angle-right fa-4x"></i></span>
+			<span class="left-arrow">&nbsp;<i class="fa fa-angle-left fa-4x"></i></span>
+			<span class="right-arrow">&nbsp;<i class="fa fa-angle-right fa-4x"></i></span>
 			<div class="table">
 				<ul class="first">
 					<li class="package">Hamlet</li>
