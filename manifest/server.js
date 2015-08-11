@@ -4,6 +4,7 @@ var express = require('express'),
 	winston = require('winston'),
 	async = require('async'),
 	app = express(),
+	middleware = require('./lib/middleware')(app),
 	filecache = {};
 
 winston.remove(winston.transports.Console);
@@ -18,8 +19,9 @@ app.set('views', 'templates');
 
 
 app.use(express.static('public', {}));
+app.use(middleware.processRender);
 
-app.get('/:page?/:subpage?', function (req, res) {
+app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
 	var page = require('path').join(req.params.page || 'index', req.params.subpage || '');
 	
 	res.render(page, {});
