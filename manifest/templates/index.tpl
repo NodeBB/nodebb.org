@@ -12,20 +12,25 @@
 </section>
 
 <ul class="navigation">
-	<li class="first"><a href="#">
-		Grow Your Community  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
+	<li class="first"><a href="/">
+		<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+		<small>Leverage NodeBB to engage your users</small>
 	</a></li>
-	<li class="second"><a href="/product/modern-ux">
-		Modern UX  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
+	<li class="second"><a href="/product/control-panel">
+		<strong>Customize Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+		<small>With a powerful yet intuitive control panel</small>
 	</a></li>
-	<li class="third"><a href="#">
-		Customize Everything  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
+	<li class="third"><a href="/product/modern-design">
+		<strong>Modern Design</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+		<small>Mobile Responsiveness and stuff</small>
 	</a></li>
-	<li class="fourth"><a href="#">
-		Third-party Integrations  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
+	<li class="fourth"><a href="/product/integrations">
+		<strong>Cloud Integrations</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+		<small>With Slack, Pushbullet, and more</small>
 	</a></li>
-	<li class="fifth"><a href="#">
-		Developer Friendly  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
+	<li class="fifth"><a href="/product/">
+		<strong>Gamification</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+		<small>Engage and retain your users</small>
 	</a></li>
 </ul>
 
