@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title></title>
 
-	<link rel="stylesheet" type="text/css" href="bin/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/normalize.css">
+	<link rel="stylesheet" type="text/css" href="{base_path}/bin/style.css">
+	<link rel="stylesheet" type="text/css" href="{base_path}/assets/normalize.css">
 	<link href="//fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">

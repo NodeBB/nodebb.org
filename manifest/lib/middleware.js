@@ -2,12 +2,19 @@
 
 var middleware = {},
 	async = require('async'),
+	nconf = require('nconf'),
 	app;
 
 
 middleware.buildPage = function(req, res, next) { 
+	var data = {
+		'base_path': nconf.get('base_path')
+	};
+
+	console.log(nconf.get('base_path'));
+
 	async.each(['header', 'footer'], function(tpl, next) {
-		app.render(tpl, {}, function(err, html) {
+		app.render(tpl, data, function(err, html) {
 			res.locals[tpl] = html;
 			next(err);
 		});
