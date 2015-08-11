@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 				}
 			},
 			html: {
-				files: ["public/**/*.html", "public/**/*.png", "server.js"],
+				files: ["templates/**/*.html", "public/**/*.png", "server.js"],
 				options: {
 					livereload: 3001
 				}
