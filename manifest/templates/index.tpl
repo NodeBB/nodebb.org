@@ -1,16 +1,3 @@
-<section class="hero">
-	<div class="hero-signup">
-		<span>Grow your community.</span><br />
-		<a href="#" class="desktop-only">Start your free trial</a>
-	</div>
-	<div id="canvas" class="container">
-		<img src="assets/animation/frames/frame0.gif" width="100%" />
-	</div>
-	<div class="hero-signup tablet-only">
-		<a href="#" class="tablet-only">Start your free trial</a>
-	</div>
-</section>
-
 <ul class="navigation">
 	<li class="first"><a href="/">
 		<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
@@ -33,6 +20,20 @@
 		<small>Engage and retain your users</small>
 	</a></li>
 </ul>
+
+
+<section class="hero">
+	<div class="hero-signup">
+		<span>Grow your community.</span><br />
+		<a href="#" class="desktop-only">Start your free trial</a>
+	</div>
+	<div id="canvas" class="container">
+		<img src="assets/animation/frames/frame0.gif" width="100%" />
+	</div>
+	<div class="hero-signup tablet-only">
+		<a href="#" class="tablet-only">Start your free trial</a>
+	</div>
+</section>
 
 <section class="content container clearfix">
 	<h1 class="text-center tag-line">

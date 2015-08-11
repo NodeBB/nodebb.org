@@ -20,7 +20,7 @@
 </head>
 <body class="{path}">
 	<header>
-		<div class="container clearfix">
+		<div class="container-fluid clearfix">
 			<div class="pull-left">
 				<div class="logo"></div>
 			</div>
