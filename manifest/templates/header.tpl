@@ -22,7 +22,7 @@
 	<header>
 		<div class="container-fluid clearfix">
 			<div class="pull-left">
-				<div class="logo"></div>
+				<a href="/"><div class="logo"></div></a>
 			</div>
 			<div class="pull-right clearfix">
 				<ul class="menu">
