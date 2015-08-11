@@ -37,37 +37,37 @@
 		</div>
 	</div>
 
-	<div class="clearfix">
-		<div class="pull-left w40">
-			<h2>Mobile first design.</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-
-			<p>
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<p>
-				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus.
-			</p>
+	<div class="clearfix text-center feature-overview">
+		<h1><small>Why companies are choosing NodeBB to drive community engagement:</small></h1>
+		<div class="w33 pull-left">
+			<i class="i i-phone-portrait i-2x"></i><br />
+			<h2>Mobile Responsive</h2>
+			<p>NodeBB is mobile-first, allowing for a perfect experience no matter what device or resolution it's viewed on.</p>
 		</div>
-		<div class="pull-right w60">
-			<img src="https://placekitten.com/g/400/250" />
+		<div class="w33 pull-left">
+			<i class="fa fa-globe fa-4x"></i><br />
+			<h2>Internationalization</h2>
+			<p>NodeBB's user interface has built-in localization support, with over 50 languages actively translated.</p>
 		</div>
-	</div>
-
-	<div class="clearfix">
-		<div class="pull-left w60">
-			<img src="https://placekitten.com/g/500/300" />
+		<div class="w33 pull-left">
+			<i class="i i-statistics i-2x"></i><br />
+			<h2>SEO</h2>
+			<p>Enhance the visibility of your community with human-readable URLs, semantic HTML with embedded microdata, and more.</p>
 		</div>
-		<div class="pull-right w40">
-			<h2>Kitten friendly UX (aka KX).</h2>
-			<p>
-				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus. Sed eget convallis diam.
-			</p>
-			<p>
-				Nam venenatis euismod vehicula. Nunc erat augue, fermentum eget mi mollis, efficitur dapibus nibh. Suspendisse hendrerit velit et urna scelerisque, a rutrum risus rhoncus.
-			</p>
+		<div class="w33 pull-left">
+			<i class="i i-phone-portrait i-2x"></i><br />
+			<h2>Mobile Responsive</h2>
+			<p>NodeBB is mobile-first, allowing for a perfect experience no matter what device or resolution it's viewed on.</p>
+		</div>
+		<div class="w33 pull-left">
+			<i class="fa fa-globe fa-4x"></i><br />
+			<h2>Internationalization</h2>
+			<p>NodeBB's user interface has built-in localization support, with over 50 languages actively translated.</p>
+		</div>
+		<div class="w33 pull-left">
+			<i class="i i-statistics i-2x"></i><br />
+			<h2>SEO</h2>
+			<p>Enhance the visibility of your community with human-readable URLs, semantic HTML with embedded microdata, and more.</p>
 		</div>
 	</div>
 </section>
