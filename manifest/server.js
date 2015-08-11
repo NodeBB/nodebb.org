@@ -37,3 +37,9 @@ var server = app.listen(3000, function() {
 
 	winston.info('Manifest is ready and listening on http://%s:%s', host, port);
 });
+
+
+
+process.on('SIGTERM', function() {
+	process.exit();
+});

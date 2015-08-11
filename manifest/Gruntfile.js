@@ -27,27 +27,31 @@ module.exports = function(grunt) {
 				files: "source/**/*.less",
 				tasks: ["less"],
 				options: {
-					livereload: 3001
+					livereload: 3001,
+					spawn: false
 				}
 			},
 			js: {
 				files: "public/**/*.js",
 				tasks: ["uglify"],
 				options: {
-					livereload: 3001
+					livereload: 3001,
+					spawn: false
 				}
 			},
 			html: {
-				files: ["templates/**/*.html", "public/**/*.png", "server.js"],
+				files: ["templates/**/*.tpl", "public/**/*.png", "server.js"],
 				options: {
-					livereload: 3001
+					livereload: 3001,
+					spawn: false
 				}
 			},
 			server: {
-				files: ["server.js"],
+				files: ["server.js", "templates/**/*.tpl"],
 				tasks: ["express:dev"],
 				options: {
-					livereload: 3001
+					livereload: 3001,
+					spawn: false
 				}
 			}
 		}
