@@ -13,8 +13,11 @@ winston.add(winston.transports.Console, {
 
 app.use(express.static('public', {}));
 
-app.get('/:page?', function (req, res) {
-	renderPage(req.params.page || 'index', function(err, page) {
+app.get('/:page?/:subpage?', function (req, res) {
+	var page = req.params.page || 'index',
+		subpage = req.params.subpage || '';
+
+	renderPage(require('path').join(page, subpage), function(err, page) {
 		if (err) {
 			return res.status(404);
 		}
@@ -42,13 +45,14 @@ function renderPage(page, callback) {
 	var fs = require('fs'),
 		path = require('path');
 
-	fs.readFile(path.join(__dirname, 'templates', page + '.html'), function(err, file) {
+	fs.readFile(path.join(__dirname, 'templates', path.normalize(page) + '.html'), function(err, file) {
 		if (err || !file) {
 			return callback(true);
 		}
 
 		file = file.toString();
 		filecache[page] = file;
+		console.log('page', page);
 		
 		return callback(false, file);
 	});
