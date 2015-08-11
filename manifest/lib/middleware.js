@@ -8,10 +8,9 @@ var middleware = {},
 
 middleware.buildPage = function(req, res, next) { 
 	var data = {
-		'base_path': nconf.get('base_path')
+		'base_path': nconf.get('base_path'),
+		'path': req.route.path.replace(/\//g, '')
 	};
-
-	console.log(nconf.get('base_path'));
 
 	async.each(['header', 'footer'], function(tpl, next) {
 		app.render(tpl, data, function(err, html) {
