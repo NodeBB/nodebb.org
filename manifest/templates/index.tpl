@@ -55,19 +55,19 @@
 			<p>Enhance the visibility of your community with human-readable URLs, semantic HTML with embedded microdata, and more.</p>
 		</div>
 		<div class="w33 pull-left">
-			<i class="i i-phone-portrait i-2x"></i><br />
-			<h2>Mobile Responsive</h2>
-			<p>NodeBB is mobile-first, allowing for a perfect experience no matter what device or resolution it's viewed on.</p>
+			<i class="i i-share i-2x"></i><br />
+			<h2>Social Integration</h2>
+			<p>NodeBB makes it simple to share content to Facebook, Google, and Twitter, bringing more visitors to your community.</p>
 		</div>
 		<div class="w33 pull-left">
-			<i class="fa fa-globe fa-4x"></i><br />
-			<h2>Internationalization</h2>
-			<p>NodeBB's user interface has built-in localization support, with over 50 languages actively translated.</p>
+			<i class="i i-loop i-2x"></i><br />
+			<h2>Real-time Streaming</h2>
+			<p>Interact with your userbase faster than ever before with instant notifications, streaming posts, and real-time chats.</p>
 		</div>
 		<div class="w33 pull-left">
-			<i class="i i-statistics i-2x"></i><br />
-			<h2>SEO</h2>
-			<p>Enhance the visibility of your community with human-readable URLs, semantic HTML with embedded microdata, and more.</p>
+			<i class="fa fa-pie-chart fa-4x"></i><br />
+			<h2>Analytics</h2>
+			<p>NodeBB's Analytics Dashboard has real-time graphs and tools to help you find out what content your users enjoy most.</p>
 		</div>
 	</div>
 </section>
