@@ -33,7 +33,7 @@ $(document).ready(function() {
 	function scrollPlansLeft() {
 		planBeingViewed --;
 		if (planBeingViewed < 0) {
-			planBeingViewed = 4;
+			planBeingViewed = 3;
 		}
 
 		configureMobilePricing();
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 	function scrollPlansRight() {
 		planBeingViewed ++;
-		if (planBeingViewed > 4) {
+		if (planBeingViewed > 3) {
 			planBeingViewed = 0;
 		}
 

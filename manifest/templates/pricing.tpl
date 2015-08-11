@@ -1,12 +1,12 @@
 
 	<div class="pricing">
 		<div class="container clearfix relative">
-			<h2>Select the NodeBB plan that works best for your community. Need help? <a href="mailto:sales@nodebb.org">Contact us</a>.</h2>
+			<h2>Select the NodeBB plan that works best for your community. <br /><small>Need help? <a href="mailto:sales@nodebb.org">Contact us</a>.</small></h2>
 			<span class="mobile-only left-arrow">&nbsp;<i class="fa fa-angle-left fa-4x"></i></span>
 			<span class="mobile-only right-arrow">&nbsp;<i class="fa fa-angle-right fa-4x"></i></span>
 			<div class="table">
 				<ul class="first">
-					<li class="package">Starter</li>
+					<li class="package">Hamlet</li>
 					<li class="price"><sup>$</sup> <span class="number">149</span> <span class="duration">/ month</span></li>
 					<li>Some feature here</li>
 					<li>Some feature here</li>
@@ -17,7 +17,7 @@
 				</ul>
 				<ul>
 					<ul class="second">
-						<li class="package">Silver<br /><small>Best for small businesses</small></li>
+						<li class="package">Village<br /><small>Best for small businesses</small></li>
 						<li class="price"><sup>$</sup> <span class="number">299</span> <span class="duration">/ month</span></li>
 						<li>Some feature here</li>
 						<li>Some feature here</li>
@@ -28,18 +28,8 @@
 					</ul>
 				</ul>
 				<ul class="third">
-					<li class="package">Gold</li>
+					<li class="package">City</li>
 					<li class="price"><sup>$</sup> <span class="number">499</span> <span class="duration">/ month</span></li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
-					<li class="buy"><a href="#">Sign Up</a></li>
-				</ul>
-				<ul class="fourth">
-					<li class="package">Platinum</li>
-					<li class="price"><sup>$</sup> <span class="number">749</span> <span class="duration">/ month</span></li>
 					<li>Some feature here</li>
 					<li>Some feature here</li>
 					<li>Some feature here</li>

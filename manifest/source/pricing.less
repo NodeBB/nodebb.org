@@ -1,5 +1,5 @@
 .pricing {
-	background: #333;
+	background: @first-color;
 	color: white;
 	margin-top: 75px;
 	padding: 20px;
@@ -8,7 +8,7 @@
 
 	h2 {
 		font-weight: 300;
-		font-size: 22px;
+		font-size: 30px;
 		margin-bottom: 45px;
 		margin-top: 30px;
 	}
@@ -28,26 +28,26 @@
 		margin: 0px;
 		float: left;
 
-		width: 19.5%;
+		width: 24%;
 		padding: 3px;
 
 		&.first {
 			.package {
-				background-color: @fourth-color;
+				background-color: @second-color;
 			}
 
 			.buy a {
-				background-color: @fourth-color;
+				background-color: @second-color;
 
 				&:hover {
-					background-color: lighten(@fourth-color, 10%);
+					background-color: lighten(@second-color, 10%);
 				}
 			}
 		}
 
 		&.second {
 			.package {
-				background-color: @second-color;
+				background-color: @third-color;
 				font-weight: 400;
 
 				small {
@@ -57,11 +57,11 @@
 			}
 
 			.buy a {
-				background-color: @second-color;
+				background-color: @third-color;
 				padding: 17px 10px;
 
 				&:hover {
-					background-color: lighten(@second-color, 10%);
+					background-color: lighten(@third-color, 10%);
 				}
 
 				font-weight: 400;
@@ -72,20 +72,20 @@
 			position: relative;
 			margin-top: -28px;
 			margin-left: -18px;
-			border: 6px solid rgb(51, 51, 51);
+			border: 6px solid @first-color;
 			padding: 0px;
 		}
 
 		&.third {
 			.package {
-				background-color: @third-color;
+				background-color: @second-color;
 			}
 
 			.buy a {
-				background-color: @third-color;
+				background-color: @second-color;
 
 				&:hover {
-					background-color: lighten(@third-color, 10%);
+					background-color: lighten(@second-color, 10%);
 				}
 			}
 		}
