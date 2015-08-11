@@ -1,26 +1,4 @@
-<ul class="navigation">
-	<li class="first"><a href="#">
-		Grow Your Community  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
-	</a></li>
-	<li class="second"><a href="#">
-		Modern UX  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
-	</a></li>
-	<li class="third"><a href="#">
-		Customize Everything  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
-	</a></li>
-	<li class="fourth"><a href="#">
-		Third-party Integrations  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
-	</a></li>
-	<li class="fifth"><a href="#">
-		Developer Friendly  <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span>
-	</a></li>
-</ul>
-
-<section class="content container clearfix">
-	<h1 class="text-center tag-line">
-		A better community platform for the modern web.<br />
-		<small>NodeBB is a next generation forum software that's free and easy to use.</small>
-	</h1>
+<section class="content subpage container clearfix">
 	<div class="clearfix">
 		<div class="pull-left w60">
 			<div class="yt-wrapper">

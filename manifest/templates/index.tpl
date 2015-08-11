@@ -1,27 +1,3 @@
-<ul class="navigation">
-	<li class="first"><a href="/">
-		<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-		<small>Leverage NodeBB to engage your users</small>
-	</a></li>
-	<li class="second"><a href="/product/control-panel">
-		<strong>Customize Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-		<small>With a powerful yet intuitive control panel</small>
-	</a></li>
-	<li class="third"><a href="/product/modern-design">
-		<strong>Modern Design</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-		<small>Mobile Responsiveness and stuff</small>
-	</a></li>
-	<li class="fourth"><a href="/product/integrations">
-		<strong>Cloud Integrations</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-		<small>With Slack, Pushbullet, and more</small>
-	</a></li>
-	<li class="fifth"><a href="/product/">
-		<strong>Gamification</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-		<small>Engage and retain your users</small>
-	</a></li>
-</ul>
-
-
 <section class="hero">
 	<div class="hero-signup">
 		<span>Grow your community.</span><br />
@@ -47,11 +23,10 @@
 			</div>
 		</div>
 		<div class="pull-right w40">
-			<h2>Mobile first design.</h2>
+			<h2>The best solution for engaging and retaining customers.</h2>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus.
 			</p>
-
 			<p>
 				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
