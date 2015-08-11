@@ -15,6 +15,7 @@
 	<h1 class="text-center tag-line">
 		A better community platform for the modern web.<br />
 		<small>NodeBB is a next generation forum software that's free and easy to use.</small>
+		<a name="community"></a>
 	</h1>
 	<div class="clearfix">
 		<div class="pull-left w60">

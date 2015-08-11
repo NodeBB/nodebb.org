@@ -53,7 +53,7 @@
 	</header>
 
 	<ul class="navigation">
-		<li class="first"><a href="/">
+		<li class="first"><a href="/#community">
 			<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
 			<small>Leverage NodeBB to engage your users</small>
 		</a></li>
