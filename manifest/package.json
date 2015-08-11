@@ -20,6 +20,7 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-express-server": "^0.4.19",
     "grunt-supervisor": "^0.2.4",
+    "templates.js": "^0.2.7",
     "winston": "^0.8.3"
   }
 }
