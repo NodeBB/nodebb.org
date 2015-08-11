@@ -42,6 +42,13 @@ module.exports = function(grunt) {
 				options: {
 					livereload: 3001
 				}
+			},
+			server: {
+				files: ["server.js"],
+				tasks: ["express:dev"],
+				options: {
+					livereload: 3001
+				}
 			}
 		}
 	});
