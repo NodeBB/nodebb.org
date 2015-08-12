@@ -30,7 +30,7 @@
 						<a href="/">Home</a>
 					</li>
 					<li class="mobile-hide">
-						<a href="pricing" title="Plans & Pricing">Pricing</a>
+						<a href="/pricing" title="Plans & Pricing">Pricing</a>
 					</li>
 					<li>
 						<a class="demo-link" target="_blank" href="//community.nodebb.org/" title="Community">Community</a>
