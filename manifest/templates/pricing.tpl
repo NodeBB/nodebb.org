@@ -7,33 +7,33 @@
 			<div class="table">
 				<ul class="first">
 					<li class="package">Hamlet</li>
-					<li class="price"><sup>$</sup> <span class="number">149</span> <span class="duration">/ month</span></li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
+					<li class="price"><sup>$</sup> <span class="number">100</span> <span class="duration">/ month</span></li>
+					<li><strong>500k</strong> monthly pageviews</li>
+					<li>Daily Backups</li>
+					<li>Support tickets</li>
+					<li>SSL</li>
 					<li>Some feature here</li>
 					<li class="buy"><a href="#">Sign Up</a></li>
 				</ul>
 				<ul>
 					<ul class="second">
 						<li class="package">Village<br /><small>Best for small businesses</small></li>
-						<li class="price"><sup>$</sup> <span class="number">299</span> <span class="duration">/ month</span></li>
-						<li>Some feature here</li>
-						<li>Some feature here</li>
-						<li>Some feature here</li>
-						<li>Some feature here</li>
+						<li class="price"><sup>$</sup> <span class="number">250</span> <span class="duration">/ month</span></li>
+						<li><strong>2m</strong> monthly pageviews</li>
+						<li>Daily Backups</li>
+						<li>Support tickets </li>
+						<li>SSL</li>
 						<li>Some feature here</li>
 						<li class="buy"><a href="#">Sign Up</a></li>
 					</ul>
 				</ul>
 				<ul class="third">
 					<li class="package">City</li>
-					<li class="price"><sup>$</sup> <span class="number">499</span> <span class="duration">/ month</span></li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
-					<li>Some feature here</li>
+					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">/ month</span></li>
+					<li><strong>10m</strong> monthly pageviews</li>
+					<li>Daily Backups</li>
+					<li>VIP Support</li>
+					<li>SSL</li>
 					<li>Some feature here</li>
 					<li class="buy"><a href="#">Sign Up</a></li>
 				</ul>
