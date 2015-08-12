@@ -26,13 +26,13 @@
 		<div class="pull-right w40">
 			<h2>The best solution for engaging and retaining customers.</h2>
 			<p>
-				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus.
+				A community forum allows you to engage and retain customers, keeping them interested and up-to-date with your latest product or service.
 			</p>
 			<p>
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				NodeBB integrates into your existing website and social media networks, allowing you to maximize your outreach and establish close relationships with your users. By being available to respond to customer feedback, you generate a rapport with the consumer which can generate additional sales.
 			</p>
 			<p>
-				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus.
+				Don't forget to talk about SEO, well in fact, this entire blurb is basically rewording the video in another way, going into some detail where the video couldn't.
 			</p>
 		</div>
 	</div>
