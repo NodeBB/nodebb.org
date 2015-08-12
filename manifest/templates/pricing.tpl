@@ -12,7 +12,7 @@
 					<li>Daily Backups</li>
 					<li>Support tickets</li>
 					<li>SSL</li>
-					<li>Some feature here</li>
+					<li>Unlimited Users</li>
 					<li class="buy"><a href="#">Sign Up</a></li>
 				</ul>
 				<ul>
@@ -23,7 +23,7 @@
 						<li>Daily Backups</li>
 						<li>Support tickets </li>
 						<li>SSL</li>
-						<li>Some feature here</li>
+						<li>Unlimited Users</li>
 						<li class="buy"><a href="#">Sign Up</a></li>
 					</ul>
 				</ul>
@@ -34,7 +34,7 @@
 					<li>Daily Backups</li>
 					<li>VIP Support</li>
 					<li>SSL</li>
-					<li>Some feature here</li>
+					<li>Unlimited Users</li>
 					<li class="buy"><a href="#">Sign Up</a></li>
 				</ul>
 				<ul class="fifth">
