@@ -9,7 +9,7 @@ var middleware = {},
 middleware.buildPage = function(req, res, next) { 
 	var data = {
 		'base_path': nconf.get('base_path'),
-		'path': 'page-' + (req.url.slice(1) || 'index')
+		'path': 'page-' + (req.url.slice(1).replace(/\//g, '-') || 'index')
 	};
 
 	async.each(['header', 'footer'], function(tpl, next) {

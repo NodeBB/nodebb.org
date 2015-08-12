@@ -1,5 +1,6 @@
 <section class="content subpage container clearfix integrations">
-	<h1>Featured Integrations<br /><small></small></h1>
+	<h1 class="text-center">Featured Integrations</h1>
+	<h2 class="text-center">NodeBB integrates with several popular third-party cloud based services, apps, and products. Here's just a few:</h2>
 	<div class="integration-box">
 		<div class="w33 pull-left">
 			<a href="https://pushbullet.com"><img src="http://i.imgur.com/GsiBBHR.png" /></a>
@@ -23,6 +24,9 @@
 		<div>
 			<p>
 				Ghost connects your devices, making them feel like one. Ghost integration allows you to get push notifications on your mobile device whenever an action that you subscribe to happens on your forum.
+			</p>
+			<p>
+				Ghost is actually a blogging platform, but I'm just copying and pasting for now
 			</p>
 		</div>
 		
