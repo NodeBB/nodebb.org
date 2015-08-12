@@ -1,6 +1,7 @@
 <section class="content subpage container clearfix integrations">
 	<h1 class="text-center">Featured Integrations</h1>
 	<h2 class="text-center">NodeBB integrates with several popular third-party cloud based services, apps, and products. Here's just a few:</h2>
+
 	<div class="integration-box">
 		<div class="w33 pull-left">
 			<a href="https://pushbullet.com"><img src="http://i.imgur.com/GsiBBHR.png" /></a>
@@ -50,6 +51,77 @@
 
 		<span class="clearfix"></span>
 	</div>
+
+
+	<h1 class="text-center">Other Integrations</h1>
+	
+
+	<div class="metro-box">
+		<div>
+			<strong>Mandrill</strong>
+			<p>
+				The mandrill plugin lets you email people using mandrill. Neat huh?
+			</p>
+			<i class="fa fa-envelope"></i>
+		</div>
+
+		<div>
+			<strong>Mandrill</strong>
+			<p>
+				The mandrill plugin lets you email people using mandrill. Neat huh?
+			</p>
+			<i class="fa fa-envelope"></i>
+		</div>
+
+		<div>
+			<strong>Mandrill</strong>
+			<p>
+				The mandrill plugin lets you email people using mandrill. Neat huh?
+			</p>
+			<i class="fa fa-envelope"></i>
+		</div>
+
+		<div>
+			<strong>Mandrill</strong>
+			<p>
+				The mandrill plugin lets you email people using mandrill. Neat huh?
+			</p>
+			<i class="fa fa-envelope"></i>
+		</div>
+
+		<div>
+			<strong>Mandrill</strong>
+			<p>
+				The mandrill plugin lets you email people using mandrill. Neat huh?
+			</p>
+			<i class="fa fa-envelope"></i>
+		</div>
+
+		<div>
+			<strong>Mandrill</strong>
+			<p>
+				The mandrill plugin lets you email people using mandrill. Neat huh?
+			</p>
+			<i class="fa fa-envelope"></i>
+		</div>
+
+		<div>
+			<strong>Mandrill</strong>
+			<p>
+				The mandrill plugin lets you email people using mandrill. Neat huh?
+			</p>
+			<i class="fa fa-envelope"></i>
+		</div>
+
+		<div>
+			<strong>Mandrill</strong>
+			<p>
+				The mandrill plugin lets you email people using mandrill. Neat huh?
+			</p>
+			<i class="fa fa-envelope"></i>
+		</div>
+	</div>
+
 </section>
 
 
