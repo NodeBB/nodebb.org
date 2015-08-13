@@ -1,4 +1,13 @@
 <section class="content subpage showcase container clearfix">
+	<div class="clearfix mobile-responsive text-center">
+		<h1>Mobile-First Design</h1>
+		<h2>NodeBB was built from the ground up to work on all devices - phone, tablet, or desktop.</h2>
+		<div class="relative">
+			<img src="/assets/gallery/responsive.png" />
+			<a href="http://www.freepik.com/free-photos-vectors/icon" target="_blank">* Vector designed by Freepik</a>
+		</div>
+	</div>
+
 	<div class="clearfix">
 		<div class="pull-left w60">
 			<div class="yt-wrapper">
