@@ -90,17 +90,17 @@
 
 			<div>
 				<strong>Themes</strong><br />
-				Themes can change the overall appearance of your forum
+				Themes can dramatically change the overall appearance of your forum.
 			</div>
 
 			<div>
 				<strong>Skins</strong><br />
-				NodeBB comes with 16 default Bootswatch skins to choose from
+				NodeBB comes with 16 default Bootswatch skins to choose from.
 			</div>
 
 			<div>
 				<strong>Custom HTML & CSS</strong><br />
-				Modify your forum with the built-in code editor
+				Modify your forum with the built-in code editor.
 			</div>
 		</div>
 		
@@ -129,12 +129,12 @@
 
 			<div>
 				<strong>Groups</strong><br />
-				Toggle user-created groups / allow private groups to be created
+				Toggle user-created groups / allow private groups to be created.
 			</div>
 
 			<div>
 				<strong>Guests</strong><br />
-				Allow guests to post / allow guests to create a handle; allow guests to utilize search
+				Allow guests to post / allow guests to create a handle; allow guests to utilize search.
 			</div>
 
 			<div>
@@ -144,7 +144,7 @@
 
 			<div>
 				<strong>Pagination</strong><br />
-				Switch between the traditional paginated view or infinite scrollling
+				Switch between the traditional paginated view or infinite scrollling.
 			</div>
 
 			<div>
