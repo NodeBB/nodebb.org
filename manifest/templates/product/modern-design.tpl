@@ -31,14 +31,14 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w30">
-			<h2>Built-in Realtime Chat.</h2>
+			<h2>User-Created Groups.</h2>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Keep your users engaged and connected with each other via groups. Each group page has an activity feed and plugins can extend functionality with features such as a calendar or a photo gallery.
 			</p>
 
 		</div>
 		<div class="pull-right w70">
-			<img src="https://placekitten.com/g/800/400" />
+			<img src="/assets/gallery/groups.png" />
 		</div>
 	</div>
 
