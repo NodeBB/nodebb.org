@@ -1,4 +1,4 @@
-<section class="content subpage container clearfix">
+<section class="content subpage showcase container clearfix">
 	<div class="clearfix">
 		<div class="pull-left w60">
 			<div class="yt-wrapper">
