@@ -5,10 +5,45 @@
 			margin-bottom: 50px;
 		}
 
-		h2 {
-			margin-top: -50px;
+		h1 {
+			small {
+				color: #777;
+				font-size: 22px;
+				line-height: 28px;
+				display: inline-block;
+				margin-top: 20px;
+			}
+
+			margin-bottom: 0px;
 		}
 
 		margin-bottom: 50px;
+	}
+
+	.feature-list {
+		text-align: left;
+		font-size: 20px;
+		margin-bottom: 40px;
+
+		div {
+			padding: 20px;
+			&:nth-child(even) {
+				background: lighten(@third-color, 55%);
+			}
+			&:nth-child(odd) {
+				background: #fff;
+			}
+			&.section {
+				background: white;
+				color: @third-color;
+				font-weight: 700;
+				font-size: 30px;
+				margin-top: 20px;
+			}
+
+			strong {
+				font-size: 22px;
+			}
+		}
 	}
 }
