@@ -57,7 +57,7 @@
 
 <div class="container">
 	<div class="next-page page2">
-		<h3>Next: A control panel with all the bells and whistles. <a href="#">Customize Everything <span class="mobile-hide">&nbsp;<i class="fa fa-angle-right"></i></span></a></h3>
+		<h3>Next: Integrate NodeBB with other apps and services. <a href="/product/integrations">Cloud Integrations <span class="mobile-hide">&nbsp;<i class="fa fa-angle-right"></i></span></a></h3>
 	</div>
 </div>
 
