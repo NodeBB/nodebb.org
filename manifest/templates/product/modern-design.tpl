@@ -8,57 +8,48 @@
 		</div>
 	</div>
 
-	<div class="clearfix">
-		<div class="pull-left w60">
+	<div class="clearfix mobile-responsive text-center">
+		<h2>Choose between a "What You See is What You Get" editor or a Markdown editor to compose topics and replies.</h2>
+		<div class="relative">
+			<img src="/assets/gallery/composer.png" />
+		</div>
+	</div>
+
+	<div class="clearfix divided">
+		<div class="pull-left w70">
 			<div class="yt-wrapper">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/uwgdWPeVuJE?rel=0" frameborder="0" allowfullscreen></iframe>
+				<img src="/assets/gallery/chat.png" />
 			</div>
 		</div>
-		<div class="pull-right w40">
-			<h2>Mobile first design.</h2>
+		<div class="pull-right w30">
+			<h2>Built-in Realtime Chat.</h2>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-
-			<p>
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<p>
-				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus.
+				Never miss a message from your friends again. No more static private messaging and stuff, I'm making this all up we need to change it later.
 			</p>
 		</div>
 	</div>
 
-	<div class="clearfix">
-		<div class="pull-left w40">
-			<h2>Mobile first design.</h2>
+	<div class="clearfix divided">
+		<div class="pull-left w30">
+			<h2>Built-in Realtime Chat.</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			</p>
 
-			<p>
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			<p>
-				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus.
-			</p>
 		</div>
-		<div class="pull-right w60">
-			<img src="https://placekitten.com/g/400/250" />
+		<div class="pull-right w70">
+			<img src="https://placekitten.com/g/800/400" />
 		</div>
 	</div>
 
-	<div class="clearfix">
-		<div class="pull-left w60">
-			<img src="https://placekitten.com/g/500/300" />
+	<div class="clearfix divided">
+		<div class="pull-left w70">
+			<img src="https://placekitten.com/g/700/400" />
 		</div>
-		<div class="pull-right w40">
+		<div class="pull-right w30">
 			<h2>Kitten friendly UX (aka KX).</h2>
 			<p>
 				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus. Sed eget convallis diam.
-			</p>
-			<p>
-				Nam venenatis euismod vehicula. Nunc erat augue, fermentum eget mi mollis, efficitur dapibus nibh. Suspendisse hendrerit velit et urna scelerisque, a rutrum risus rhoncus.
 			</p>
 		</div>
 	</div>
