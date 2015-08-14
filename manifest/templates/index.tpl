@@ -74,7 +74,7 @@
 
 <div class="container">
 	<div class="next-page page2">
-		<h3>Next: A control panel with all the bells and whistles. <a href="/product/control-panel">Customize Everything &nbsp;<i class="fa fa-angle-right"></i></a></h3>
+		<h3>Next: All the features you need - built to work on all devices. <a href="/product/modern-design">Modern Design <span class="mobile-hide">&nbsp;<i class="fa fa-angle-right"></i></span></a></h3>
 	</div>
 </div>
 
