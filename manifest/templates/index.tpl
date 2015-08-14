@@ -17,7 +17,7 @@
 		<small>NodeBB is a next generation forum software that's free and easy to use.</small>
 		<a name="community"></a>
 	</h1>
-	<div class="clearfix">
+	<div class="clearfix hero-video">
 		<div class="pull-left w60">
 			<div class="yt-wrapper">
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/uwgdWPeVuJE?rel=0" frameborder="0" allowfullscreen></iframe>
@@ -29,10 +29,10 @@
 				A community forum allows you to engage and retain customers, keeping them interested and up-to-date with your latest product or service.
 			</p>
 			<p>
-				NodeBB integrates into your existing website and social media networks, allowing you to maximize your outreach and establish close relationships with your users. By being available to respond to customer feedback, you generate a rapport with the consumer which can generate additional sales.
+				NodeBB integrates into your existing website and social media networks, allowing you to maximize your outreach and establish close relationships with your users.
 			</p>
 			<p>
-				Don't forget to talk about SEO, well in fact, this entire blurb is basically rewording the video in another way, going into some detail where the video couldn't.
+				By being available to respond to customer feedback, you generate a rapport with the consumer which can generate additional sales.
 			</p>
 		</div>
 	</div>

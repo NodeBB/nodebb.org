@@ -8,7 +8,7 @@
 		</div>
 		<div>
 			<p>
-				Pushbullet connects your devices, making them feel like one. Pushbullet integration allows you to get push notifications on your mobile device whenever an action that you subscribe to happens on your forum.
+				Pushbullet integration allows you to get push notifications on your mobile device whenever an action that you subscribe to happens on your forum.
 			</p>
 		</div>
 
