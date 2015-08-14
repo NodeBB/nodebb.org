@@ -88,6 +88,7 @@
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="{base_path}/assets/lib/main.js"></script>
+	<script type="text/javascript" src="{base_path}/assets/lib/lazyload.min.js"></script>
 	<script src="//localhost:3001/livereload.js"></script>
 </body>
 </html>

@@ -11,14 +11,16 @@
 	<div class="clearfix mobile-responsive text-center">
 		<h2>Choose between a "What You See is What You Get" editor or a Markdown editor to compose topics and replies.</h2>
 		<div class="relative">
-			<img src="/assets/gallery/composer.png" />
+			<img class="lazy-load" data-src="/assets/gallery/composer.png" />
+			<noscript><img src="/assets/gallery/composer.png" /></noscript>
 		</div>
 	</div>
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
 			<div class="yt-wrapper">
-				<img src="/assets/gallery/chat.png" />
+				<img class="lazy-load" data-src="/assets/gallery/chat.png" />
+				<noscript><img src="/assets/gallery/chat.png" /></noscript>
 			</div>
 		</div>
 		<div class="pull-right w30">
@@ -38,7 +40,8 @@
 
 		</div>
 		<div class="pull-right w70">
-			<img src="/assets/gallery/groups.png" />
+			<img class="lazy-load" data-src="/assets/gallery/groups.png" />
+			<noscript><img src="/assets/gallery/groups.png" /></noscript>
 		</div>
 	</div>
 
@@ -51,7 +54,8 @@
 			</p>
 		</div>
 		<div class="pull-right w70">
-			<img src="/assets/gallery/notifications2.png" />
+			<img class="lazy-load" data-src="/assets/gallery/notifications2.png" />
+			<noscript><img src="/assets/gallery/notifications2.png" /></noscript>
 		</div>
 	</div>
 </section>
