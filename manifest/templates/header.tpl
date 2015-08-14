@@ -62,15 +62,15 @@
 			<small>Mobile Responsiveness and stuff</small>
 		</a></li>
 		<li class="third"><a href="/product/control-panel">
-			<strong>Customize Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>With a powerful yet intuitive control panel</small>
+			<strong>Control Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+			<small>With a powerful yet intuitive admin panel</small>
 		</a></li>
 		<li class="fourth"><a href="/product/integrations">
 			<strong>Cloud Integrations</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
 			<small>With Slack, Pushbullet, and more</small>
 		</a></li>
-		<li class="fifth"><a href="/product/">
-			<strong>Gamification</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>Engage and retain your users</small>
+		<li class="fifth"><a href="/product/extensibility">
+			<strong>Extensibility</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+			<small>One-click install plugins</small>
 		</a></li>
 	</ul>

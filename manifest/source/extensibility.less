@@ -1,0 +1,62 @@
+.page-product-extensibility {
+	h2 {
+		font-size: 22px;
+		margin-top: -50px;
+		margin-bottom: 40px;
+	}
+
+	.integration-box {
+		width: 100%;
+		padding: 20px;
+		
+		color: #333;
+		height: auto;
+
+		font-size: 20px;
+
+		img {
+			max-width: 80%;
+		}
+
+		div p:first-child {
+			margin-top: 0;
+		}
+
+		p {
+			font-size: 22px;
+		}
+	}
+
+	.metro-box {
+		color: white;
+		text-align: center;
+
+		> div {
+			background: #333;
+			padding: 20px;
+			position: relative;
+			display: inline-block;
+			width: 19.5%;
+			margin: 10px;
+			text-align: left;
+
+			i {
+				position: absolute;
+				right: 20px;
+				top: 20px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			> div {
+				width: 35%;
+			}
+		}
+
+		@media (max-width: 480px) {
+			> div {
+				width: 80%;
+			}
+		}
+	}
+}
