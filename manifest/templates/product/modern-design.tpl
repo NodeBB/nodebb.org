@@ -43,14 +43,14 @@
 	</div>
 
 	<div class="clearfix divided">
-		<div class="pull-left w70">
-			<img src="https://placekitten.com/g/700/400" />
-		</div>
-		<div class="pull-right w30">
-			<h2>Kitten friendly UX (aka KX).</h2>
+		<div class="pull-left w30">
+			<h2>Social Notifications.</h2>
 			<p>
 				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus. Sed eget convallis diam.
 			</p>
+		</div>
+		<div class="pull-right w70">
+			<img src="/assets/gallery/notifications.png" />
 		</div>
 	</div>
 </section>
