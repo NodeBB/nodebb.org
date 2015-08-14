@@ -42,6 +42,7 @@
 		</div>
 	</div>
 
+
 	<div class="clearfix divided">
 		<div class="pull-left w30">
 			<h2>Social Notifications.</h2>
@@ -50,7 +51,7 @@
 			</p>
 		</div>
 		<div class="pull-right w70">
-			<img src="/assets/gallery/notifications.png" />
+			<img src="/assets/gallery/notifications2.png" />
 		</div>
 	</div>
 </section>
