@@ -45,6 +45,23 @@
 		</div>
 	</div>
 
+	<div class="clearfix divided">
+		<div class="pull-left w70">
+			<div class="yt-wrapper">
+				<img class="lazy-load" data-src="/assets/gallery/reputation.png" />
+				<noscript><img src="/assets/gallery/reputation.png" /></noscript>
+			</div>
+		</div>
+		<div class="pull-right w30">
+			<h2>Social Interactions.</h2>
+			<p>
+				Interacting and sharing content something something something don't know.
+			</p>
+			<p>
+				Choose between our "favourite", "like", or "upvote" interaction engines (or use all three!)
+			</p>
+		</div>
+	</div>
 
 	<div class="clearfix divided">
 		<div class="pull-left w30">
