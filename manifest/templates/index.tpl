@@ -38,7 +38,7 @@
 	</div>
 
 	<div class="clearfix text-center feature-overview">
-		<h1><small>Why companies are choosing NodeBB to drive community engagement:</small></h1>
+		<h3>Why companies are choosing NodeBB to drive community engagement:</h3>
 		<div class="w33 pull-left">
 			<i class="i i-phone-portrait i-2x"></i><br />
 			<h2>Mobile Responsive</h2>
