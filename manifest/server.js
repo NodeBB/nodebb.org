@@ -8,7 +8,7 @@ var express = require('express'),
 	app = express(),
 	middleware = require('./lib/middleware')(app),
 	compression = require('compression'),
-	
+
 	filecache = {};
 
 winston.remove(winston.transports.Console);
@@ -35,6 +35,11 @@ app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
 	var page = path.join(req.params.page || 'index', req.params.subpage || '');
 	
 	res.render(page, {});
+});
+
+app.use(function (req, res, next) {
+	res.setHeader('X-Powered-By', 'NodeBB');
+	res.setHeader("Cache-Control", "max-age=86400000");
 });
 
 var server = app.listen(3000, function() {
