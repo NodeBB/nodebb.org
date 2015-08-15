@@ -7,14 +7,17 @@
 	<div class="clearfix divided">
 		<div class="pull-left w70">
 			<div class="yt-wrapper">
-				<img class="lazy-load" data-src="/assets/gallery/chat.png" />
-				<noscript><img src="/assets/gallery/chat.png" /></noscript>
+				<img class="lazy-load" data-src="/assets/gallery/mentions.png" />
+				<noscript><img src="/assets/gallery/mentions.png" /></noscript>
 			</div>
 		</div>
 		<div class="pull-right w30">
-			<h2>Built-in Realtime Chat.</h2>
+			<h2>Mentions</h2>
 			<p>
-				Never miss a message from your friends again. No more static private messaging and stuff, I'm making this all up we need to change it later.
+				Mentioning another user with "@username" will send them a notification allowing them to join the conversation instantly.
+			</p>
+			<p>
+				You can even mention groups, handy for getting the attention of a handful of people at a time.
 			</p>
 		</div>
 	</div>

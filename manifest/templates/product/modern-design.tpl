@@ -35,7 +35,10 @@
 		<div class="pull-left w30">
 			<h2>User-Created Groups.</h2>
 			<p>
-				Keep your users engaged and connected with each other via groups. Each group page has an activity feed and plugins can extend functionality with features such as a calendar or a photo gallery.
+				Keep your users engaged and connected with each other via groups.
+			</p>
+			<p>
+				Each group page has an activity feed and plugins can extend functionality with features such as a calendar and a photo gallery.
 			</p>
 
 		</div>
