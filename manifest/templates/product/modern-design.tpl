@@ -26,7 +26,7 @@
 		<div class="pull-right w30">
 			<h2>Built-in Realtime Chat.</h2>
 			<p>
-				Never miss a message from your friends again. No more static private messaging and stuff, I'm making this all up we need to change it later.
+				Chats take private messaging to a whole new level. Native multi-tasking support allows you to have streaming conversations with multiple people side-by-side.
 			</p>
 		</div>
 	</div>
