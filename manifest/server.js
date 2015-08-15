@@ -22,7 +22,11 @@ app.engine('tpl', require('templates.js').__express);
 app.set('view engine', 'tpl');
 app.set('views', 'templates');
 
-app.use(express.static('public', {}));
+app.use(express.compress());
+app.use(express.static('public', {
+	maxAge: 86400000
+}));
+
 app.use(middleware.processRender);
 
 app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
