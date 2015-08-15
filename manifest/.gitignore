@@ -83,3 +83,4 @@ sftp-config.json
 # =========================
 
 public/bin
+config.json
