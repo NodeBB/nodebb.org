@@ -47,6 +47,10 @@
 		<div class="frame">
 			<ul class="slidee">
 				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/17.png" />
+					<noscript><img src="/assets/gallery/skins/17.png" /></noscript>
+				</li>
+				<li>
 					<img class="lazy-load" data-src="/assets/gallery/skins/2.png" />
 					<noscript><img src="/assets/gallery/skins/2.png" /></noscript>
 				</li>
