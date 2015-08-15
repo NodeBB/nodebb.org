@@ -18,30 +18,30 @@
 	<header>
 		<div class="container-fluid clearfix">
 			<div class="pull-left">
-				<a href="/"><div class="logo"></div></a>
+				<a title="NodeBB - Modern Forum Software" href="/"><div class="logo"></div></a>
 			</div>
 			<div class="pull-right clearfix">
 				<ul class="menu">
 					<li class="mobile-hide">
-						<a href="/">Home</a>
+						<a title="NodeBB - Modern Forum Software" href="/">Home</a>
 					</li>
 					<li class="mobile-hide">
-						<a href="/pricing" title="Plans & Pricing">Pricing</a>
+						<a title="NodeBB Plans and Pricing" href="/pricing" title="Plans & Pricing">Pricing</a>
 					</li>
 					<li>
-						<a class="demo-link" target="_blank" href="//community.nodebb.org/" title="Community">Community</a>
+						<a title="NodeBB Community Forum" class="demo-link" target="_blank" href="//community.nodebb.org/" title="Community">Community</a>
 					</li>
 					<li>
-						<a target="_blank" href="//blog.nodebb.org/" title="Blog">Blog</a>
+						<a title="NodeBB Blog" target="_blank" href="//blog.nodebb.org/" title="Blog">Blog</a>
 					</li>
 					<li class="mobile-hide">
-						<a href="//docs.nodebb.org" target="_blank" title="Documentation">Docs</a>
+						<a title="NodeBB Documentation" href="//docs.nodebb.org" target="_blank" title="Documentation">Docs</a>
 					</li>
 					<li>
-						<a href="//manage.nodebb.org">Sign in</a>
+						<a title="Sign in to manage your NodeBB forums" href="//manage.nodebb.org">Sign in</a>
 					</li>
 					<li>
-						<a href="//manage.nodebb.org/register"><strong>Sign up</strong></a>
+						<a title="Sign up to create a NodeBB community forum" href="//manage.nodebb.org/register"><strong>Sign up</strong></a>
 					</li>
 				</ul>
 			</div>
@@ -49,23 +49,23 @@
 	</header>
 
 	<ul class="navigation">
-		<li class="first"><a href="/#community">
+		<li class="first"><a title="Grow your community with NodeBB" href="/#community">
 			<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
 			<small>Leverage NodeBB to engage your users</small>
 		</a></li>
-		<li class="second"><a href="/product/modern-design">
+		<li class="second"><a title="NodeBB - Modern features with a mobile responsive design" href="/product/modern-design">
 			<strong>Modern Design</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
 			<small>Mobile-first and real-time interactions </small>
 		</a></li>
-		<li class="third"><a href="/product/control-panel">
+		<li class="third"><a title="Check out NodeBB's state of the art Control Panel" href="/product/control-panel">
 			<strong>Control Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
 			<small>With a powerful yet intuitive admin panel</small>
 		</a></li>
-		<li class="fourth"><a href="/product/integrations">
+		<li class="fourth"><a title="NodeBB integrations with 3rd party software" href="/product/integrations">
 			<strong>Cloud Integrations</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
 			<small>Slack, Pushbullet, Mailchimp, and more</small>
 		</a></li>
-		<li class="fifth"><a href="/product/extensibility">
+		<li class="fifth"><a title="Extend NodeBB with plugins, addons, and themes" href="/product/extensibility">
 			<strong>Extensibility</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
 			<small>One-click install plugins and themes</small>
 		</a></li>

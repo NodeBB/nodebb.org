@@ -1,13 +1,13 @@
 <section class="hero">
 	<div class="hero-signup">
 		<span>Grow your community.</span><br />
-		<a href="//manage.nodebb.org/register" class="desktop-only">Create A Forum</a>
+		<a title="Sign-up to create your NodeBB forum" href="//manage.nodebb.org/register" class="desktop-only">Create A Forum</a>
 	</div>
 	<div id="canvas" class="container">
 		<img alt="Grow your community with NodeBB" src="assets/animation/frames/frame0.gif" width="100%" />
 	</div>
 	<div class="hero-signup tablet-only">
-		<a href="//manage.nodebb.org/register" class="tablet-only">Create A Forum</a>
+		<a title="Sign-up to create your NodeBB forum" href="//manage.nodebb.org/register" class="tablet-only">Create A Forum</a>
 	</div>
 </section>
 
@@ -74,7 +74,7 @@
 
 <div class="container">
 	<div class="next-page page2">
-		<h3>Next: All the features you need - built to work on all devices. <a href="/product/modern-design">Modern Design <span class="mobile-hide">&nbsp;<i class="fa fa-angle-right"></i></span></a></h3>
+		<h3>Next: All the features you need - built to work on all devices. <a title="NodeBB - Modern features with a mobile responsive design" href="/product/modern-design">Modern Design <span class="mobile-hide">&nbsp;<i class="fa fa-angle-right"></i></span></a></h3>
 	</div>
 </div>
 
