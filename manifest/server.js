@@ -42,7 +42,7 @@ app.use(function (req, res, next) {
 	res.setHeader("Cache-Control", "max-age=86400000");
 });
 
-var server = app.listen(3000, function() {
+var server = app.listen(nconf.get('port') || 3000, function() {
 	var host = server.address().address;
 	var port = server.address().port;
 
