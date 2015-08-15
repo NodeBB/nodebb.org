@@ -54,7 +54,7 @@
 						</p>
 						<p class="col-md-12 h4 m-b text-center">
 							<a href="https://sslcheck.globalsign.com/en_US/sslcheck?host=nodebb.org">
-								<img class="gss-logo" src="https://static1.globalsign.com/images/seal/ssv4/seal_125-50_white.png">
+								<img alt="SSL Secured with GlobalSign" class="gss-logo" src="https://static1.globalsign.com/images/seal/ssv4/seal_125-50_white.png">
 							</a>
 						</p>
 					</div>

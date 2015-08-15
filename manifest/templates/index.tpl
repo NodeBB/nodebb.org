@@ -4,7 +4,7 @@
 		<a href="//manage.nodebb.org/register" class="desktop-only">Create A Forum</a>
 	</div>
 	<div id="canvas" class="container">
-		<img src="assets/animation/frames/frame0.gif" width="100%" />
+		<img alt="Grow your community with NodeBB" src="assets/animation/frames/frame0.gif" width="100%" />
 	</div>
 	<div class="hero-signup tablet-only">
 		<a href="//manage.nodebb.org/register" class="tablet-only">Create A Forum</a>
