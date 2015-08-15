@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta property="fb:page_id" content="207121219437299" />
-	<title></title>
+	<title>NodeBB | Modern Forum Software</title>
 
 	<link rel="stylesheet" type="text/css" href="{base_path}/bin/style.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/normalize.css">
