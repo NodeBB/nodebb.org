@@ -65,9 +65,9 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w30">
-			<h2>Real-time Notifications.</h2>
+			<h2>Real-time Interactions.</h2>
 			<p>
-				Donec et eleifend ex, in rutrum felis. Nullam sit amet sapien arcu. Quisque nisl nulla, scelerisque a justo in, volutpat blandit risus. Sed eget convallis diam.
+				NodeBB integrates real-time events in the background - your users are notified instantly when someone follows them, likes their post, or subscribes to their topics.
 			</p>
 		</div>
 		<div class="pull-right w70">
