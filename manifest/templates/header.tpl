@@ -59,7 +59,7 @@
 		</a></li>
 		<li class="second"><a href="/product/modern-design">
 			<strong>Modern Design</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>Mobile Responsiveness and stuff</small>
+			<small>Mobile-first and real-time interactions </small>
 		</a></li>
 		<li class="third"><a href="/product/control-panel">
 			<strong>Control Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
@@ -67,7 +67,7 @@
 		</a></li>
 		<li class="fourth"><a href="/product/integrations">
 			<strong>Cloud Integrations</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>With Slack, Pushbullet, and more</small>
+			<small>Slack, Pushbullet, Mailchimp, and more</small>
 		</a></li>
 		<li class="fifth"><a href="/product/extensibility">
 			<strong>Extensibility</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
