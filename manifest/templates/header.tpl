@@ -48,25 +48,27 @@
 		</div>
 	</header>
 
-	<ul class="navigation">
-		<li class="first"><a title="Grow your community with NodeBB" href="/#community">
-			<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>Leverage NodeBB to engage your users</small>
-		</a></li>
-		<li class="second"><a title="NodeBB - Modern features with a mobile responsive design" href="/product/modern-design">
-			<strong>Modern Design</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>Mobile-first and real-time interactions </small>
-		</a></li>
-		<li class="third"><a title="Check out NodeBB's state of the art Control Panel" href="/product/control-panel">
-			<strong>Control Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>With a powerful yet intuitive admin panel</small>
-		</a></li>
-		<li class="fourth"><a title="NodeBB integrations with 3rd party software" href="/product/integrations">
-			<strong>Cloud Integrations</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>Slack, Pushbullet, Mailchimp, and more</small>
-		</a></li>
-		<li class="fifth"><a title="Extend NodeBB with plugins, addons, and themes" href="/product/extensibility">
-			<strong>Extensibility</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>One-click install plugins and themes</small>
-		</a></li>
-	</ul>
+	<nav>
+		<ul class="navigation">
+			<li class="first"><a title="Grow your community with NodeBB" href="/#community">
+				<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+				<small>Leverage NodeBB to engage your users</small>
+			</a></li>
+			<li class="second"><a title="NodeBB - Modern features with a mobile responsive design" href="/product/modern-design">
+				<strong>Modern Design</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+				<small>Mobile-first and real-time interactions </small>
+			</a></li>
+			<li class="third"><a title="Check out NodeBB's state of the art Control Panel" href="/product/control-panel">
+				<strong>Control Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+				<small>With a powerful yet intuitive admin panel</small>
+			</a></li>
+			<li class="fourth"><a title="NodeBB integrations with 3rd party software" href="/product/integrations">
+				<strong>Cloud Integrations</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+				<small>Slack, Pushbullet, Mailchimp, and more</small>
+			</a></li>
+			<li class="fifth"><a title="Extend NodeBB with plugins, addons, and themes" href="/product/extensibility">
+				<strong>Extensibility</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+				<small>One-click install plugins and themes</small>
+			</a></li>
+		</ul>
+	</nav>
