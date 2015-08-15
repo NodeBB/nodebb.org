@@ -20,17 +20,18 @@ $(document).ready(function() {
 		];
 
 	$(window).scroll(resizeHeader);
-	$(window).resize(resizeWindow);
 	resizeHeader();
-	resizeWindow();
 
-	$('.left-arrow').on('click', scrollPlansLeft);
-	$('.right-arrow').on('click', scrollPlansRight);
-
-	setupCanvas();
 
 	if ($('.page-product-extensibility').length) {
 		setupSly();
+	} else if ($('.page-index').length) {
+		setupCanvas();
+	} else if ($('.page-pricing').length) {
+		$(window).resize(resizeWindow);
+		resizeWindow();
+		$('.left-arrow').on('click', scrollPlansLeft);
+		$('.right-arrow').on('click', scrollPlansRight);
 	}
 		
 
@@ -58,6 +59,7 @@ $(document).ready(function() {
 			clickBar: 1
 		});
 	}
+	
 	function scrollPlansLeft() {
 		planBeingViewed --;
 		if (planBeingViewed < 0) {
