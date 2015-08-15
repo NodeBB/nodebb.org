@@ -71,6 +71,6 @@
 		</a></li>
 		<li class="fifth"><a href="/product/extensibility">
 			<strong>Extensibility</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-			<small>One-click install plugins</small>
+			<small>One-click install plugins and themes</small>
 		</a></li>
 	</ul>

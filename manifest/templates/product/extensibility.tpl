@@ -1,125 +1,42 @@
 <section class="content subpage container clearfix integrations">
-	<h1 class="text-center">Featured Plugins</h1>
-	<h2 class="text-center">NodeBB integrates with several popular third-party cloud based services, apps, and products. Here's just a few:</h2>
-
-	<div class="integration-box">
-		<div class="w33 pull-left">
-			<a href="https://pushbullet.com"><img src="http://i.imgur.com/GsiBBHR.png" /></a>
-		</div>
-		<div>
-			<p>
-				Pushbullet integration allows you to get push notifications on your mobile device whenever an action that you subscribe to happens on your forum.
-			</p>
-		</div>
-
-		<span class="clearfix"></span>
+	<div class="mobile-responsive text-center">
+		<h1>Featured Plugins</h1>
+		<h2>NodeBB has over 300 plugins and themes to choose from. Here are some of our favourites:</h2>
 	</div>
 
-	<div class="clearfix"></div>
-
-	<div class="integration-box">
-		<div class="w33 pull-left">
-			<a href="https://ghost.org"><img src="http://i.imgur.com/X9yepOk.png" /></a>
+	<div class="clearfix divided">
+		<div class="pull-left w70">
+			<div class="yt-wrapper">
+				<img class="lazy-load" data-src="/assets/gallery/chat.png" />
+				<noscript><img src="/assets/gallery/chat.png" /></noscript>
+			</div>
 		</div>
-		
-		<div>
+		<div class="pull-right w30">
+			<h2>Built-in Realtime Chat.</h2>
 			<p>
-				Ghost connects your devices, making them feel like one. Ghost integration allows you to get push notifications on your mobile device whenever an action that you subscribe to happens on your forum.
-			</p>
-			<p>
-				Ghost is actually a blogging platform, but I'm just copying and pasting for now
+				Never miss a message from your friends again. No more static private messaging and stuff, I'm making this all up we need to change it later.
 			</p>
 		</div>
-		
-
-		<span class="clearfix"></span>
 	</div>
 
-	<div class="clearfix"></div>
-
-	<div class="integration-box">
-		<div class="w33 pull-left">
-			<a href="https://mailchimp.com"><img src="http://i.imgur.com/34Yoh0D.png" /></a>
-		</div>
-		
-		<div>
+	<div class="clearfix divided">
+		<div class="pull-left w30">
+			<h2>User-Created Groups.</h2>
 			<p>
-				Mailchimp connects your devices, making them feel like one. Mailchimp integration allows you to get push notifications on your mobile device whenever an action that you subscribe to happens on your forum.
+				Keep your users engaged and connected with each other via groups. Each group page has an activity feed and plugins can extend functionality with features such as a calendar or a photo gallery.
 			</p>
-		</div>
-		
 
-		<span class="clearfix"></span>
+		</div>
+		<div class="pull-right w70">
+			<img class="lazy-load" data-src="/assets/gallery/groups.png" />
+			<noscript><img src="/assets/gallery/groups.png" /></noscript>
+		</div>
 	</div>
 
 
-	<h1 class="text-center">Other Integrations</h1>
-	
-
-	<div class="metro-box">
-		<div>
-			<strong>Mandrill</strong>
-			<p>
-				The mandrill plugin lets you email people using mandrill. Neat huh?
-			</p>
-			<i class="fa fa-envelope"></i>
-		</div>
-
-		<div>
-			<strong>Mandrill</strong>
-			<p>
-				The mandrill plugin lets you email people using mandrill. Neat huh?
-			</p>
-			<i class="fa fa-envelope"></i>
-		</div>
-
-		<div>
-			<strong>Mandrill</strong>
-			<p>
-				The mandrill plugin lets you email people using mandrill. Neat huh?
-			</p>
-			<i class="fa fa-envelope"></i>
-		</div>
-
-		<div>
-			<strong>Mandrill</strong>
-			<p>
-				The mandrill plugin lets you email people using mandrill. Neat huh?
-			</p>
-			<i class="fa fa-envelope"></i>
-		</div>
-
-		<div>
-			<strong>Mandrill</strong>
-			<p>
-				The mandrill plugin lets you email people using mandrill. Neat huh?
-			</p>
-			<i class="fa fa-envelope"></i>
-		</div>
-
-		<div>
-			<strong>Mandrill</strong>
-			<p>
-				The mandrill plugin lets you email people using mandrill. Neat huh?
-			</p>
-			<i class="fa fa-envelope"></i>
-		</div>
-
-		<div>
-			<strong>Mandrill</strong>
-			<p>
-				The mandrill plugin lets you email people using mandrill. Neat huh?
-			</p>
-			<i class="fa fa-envelope"></i>
-		</div>
-
-		<div>
-			<strong>Mandrill</strong>
-			<p>
-				The mandrill plugin lets you email people using mandrill. Neat huh?
-			</p>
-			<i class="fa fa-envelope"></i>
-		</div>
+	<div class="mobile-responsive text-center">
+		<h1>Skins</h1>
+		<h2>NodeBB ships with 16 default skins. You can further customize a skin in the Custom CSS Panel.</h2>
 	</div>
 
 </section>
