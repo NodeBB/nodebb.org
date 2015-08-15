@@ -7,6 +7,8 @@ var express = require('express'),
 	path = require('path'),
 	app = express(),
 	middleware = require('./lib/middleware')(app),
+	compression = require('compression'),
+	
 	filecache = {};
 
 winston.remove(winston.transports.Console);
@@ -22,7 +24,7 @@ app.engine('tpl', require('templates.js').__express);
 app.set('view engine', 'tpl');
 app.set('views', 'templates');
 
-app.use(express.compress());
+app.use(compression());
 app.use(express.static('public', {
 	maxAge: 86400000
 }));

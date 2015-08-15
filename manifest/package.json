@@ -23,5 +23,8 @@
     "nconf": "^0.7.2",
     "templates.js": "^0.2.7",
     "winston": "^0.8.3"
+  },
+  "dependencies": {
+    "compression": "^1.5.2"
   }
 }
