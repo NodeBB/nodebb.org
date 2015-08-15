@@ -34,75 +34,84 @@
 	</div>
 
 
-	<div class="mobile-responsive text-center">
-		<h1>Skins</h1>
+	<div class="mobile-responsive text-center wrap">
+		<h1>Spice up your forum with Skins</h1>
 		<h2>NodeBB ships with 16 default skins. You can further customize a skin in the Custom CSS Panel.</h2>
 
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/2.png" />
-			<noscript><img src="/assets/gallery/skins/2.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/1.png" />
-			<noscript><img src="/assets/gallery/skins/1.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/3.png" />
-			<noscript><img src="/assets/gallery/skins/3.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/4.png" />
-			<noscript><img src="/assets/gallery/skins/4.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/5.png" />
-			<noscript><img src="/assets/gallery/skins/5.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/6.png" />
-			<noscript><img src="/assets/gallery/skins/6.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/7.png" />
-			<noscript><img src="/assets/gallery/skins/7.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/8.png" />
-			<noscript><img src="/assets/gallery/skins/8.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/9.png" />
-			<noscript><img src="/assets/gallery/skins/9.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/10.png" />
-			<noscript><img src="/assets/gallery/skins/10.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/11.png" />
-			<noscript><img src="/assets/gallery/skins/11.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/12.png" />
-			<noscript><img src="/assets/gallery/skins/12.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/13.png" />
-			<noscript><img src="/assets/gallery/skins/13.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/14.png" />
-			<noscript><img src="/assets/gallery/skins/14.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/15.png" />
-			<noscript><img src="/assets/gallery/skins/15.png" /></noscript>
-		</div>
-		<div class="pull-left w25">
-			<img class="lazy-load" data-src="/assets/gallery/skins/16.png" />
-			<noscript><img src="/assets/gallery/skins/16.png" /></noscript>
+		<div class="scrollbar">
+			<div class="handle">
+				<div class="mousearea"></div>
+			</div>
 		</div>
 
+		<div class="frame">
+			<ul class="slidee">
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/2.png" />
+					<noscript><img src="/assets/gallery/skins/2.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/1.png" />
+					<noscript><img src="/assets/gallery/skins/1.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/3.png" />
+					<noscript><img src="/assets/gallery/skins/3.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/4.png" />
+					<noscript><img src="/assets/gallery/skins/4.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/5.png" />
+					<noscript><img src="/assets/gallery/skins/5.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/6.png" />
+					<noscript><img src="/assets/gallery/skins/6.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/7.png" />
+					<noscript><img src="/assets/gallery/skins/7.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/8.png" />
+					<noscript><img src="/assets/gallery/skins/8.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/9.png" />
+					<noscript><img src="/assets/gallery/skins/9.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/10.png" />
+					<noscript><img src="/assets/gallery/skins/10.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/11.png" />
+					<noscript><img src="/assets/gallery/skins/11.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/12.png" />
+					<noscript><img src="/assets/gallery/skins/12.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/13.png" />
+					<noscript><img src="/assets/gallery/skins/13.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/14.png" />
+					<noscript><img src="/assets/gallery/skins/14.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/15.png" />
+					<noscript><img src="/assets/gallery/skins/15.png" /></noscript>
+				</li>
+				<li>
+					<img class="lazy-load" data-src="/assets/gallery/skins/16.png" />
+					<noscript><img src="/assets/gallery/skins/16.png" /></noscript>
+				</li>
+			</ul>
+		</div>
 	</div>
 
 </section>
