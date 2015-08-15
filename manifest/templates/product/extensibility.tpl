@@ -24,18 +24,35 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w30">
-			<h2>User-Created Groups.</h2>
+			<h2>Question and Answer</h2>
 			<p>
-				Keep your users engaged and connected with each other via groups. Each group page has an activity feed and plugins can extend functionality with features such as a calendar or a photo gallery.
+				Users can post topics as a question, and then mark it as solved when their query has been answered by another community member.
+			</p>
+			<p>
+				A new page is made available for users to easily browse all answered questions.
 			</p>
 
 		</div>
 		<div class="pull-right w70">
-			<img class="lazy-load" data-src="/assets/gallery/groups.png" />
-			<noscript><img src="/assets/gallery/groups.png" /></noscript>
+			<img class="lazy-load" data-src="/assets/gallery/qanda.png" />
+			<noscript><img src="/assets/gallery/qanda.png" /></noscript>
 		</div>
 	</div>
 
+	<div class="clearfix divided">
+		<div class="pull-left w70">
+			<div class="yt-wrapper">
+				<img class="lazy-load" data-src="/assets/gallery/desktop-notifications.png" />
+				<noscript><img src="/assets/gallery/desktop-notifications.png" /></noscript>
+			</div>
+		</div>
+		<div class="pull-right w30">
+			<h2>Desktop Notifications</h2>
+			<p>
+				Receive notification alerts even while NodeBB is in the background so that you never miss a conversation important to you.
+			</p>
+		</div>
+	</div>
 
 	<div class="mobile-responsive text-center wrap">
 		<h1>Spice up your forum with Skins</h1>
