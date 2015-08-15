@@ -58,7 +58,7 @@
 		<div class="pull-right w30">
 			<h2>Social Interactions.</h2>
 			<p>
-				Interacting and sharing content something something something don't know.
+				NodeBB makes it easy to share and interact with content. Earn reputation from other users by posting meaningful comments.
 			</p>
 			<p>
 				Choose between our "favourite", "like", or "upvote" interaction engines (or use all three!)
