@@ -3,13 +3,12 @@
 		<h1>Featured Plugins</h1>
 		<h2>NodeBB has over 300 plugins and themes to choose from. Here are some of our favourites:</h2>
 	</div>
+	<br />
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<div class="yt-wrapper">
-				<img class="lazy-load" data-src="/assets/gallery/mentions.png" />
-				<noscript><img src="/assets/gallery/mentions.png" /></noscript>
-			</div>
+			<img class="lazy-load" data-src="/assets/gallery/mentions.png" />
+			<noscript><img src="/assets/gallery/mentions.png" /></noscript>
 		</div>
 		<div class="pull-right w30">
 			<h2>Mentions</h2>
@@ -41,10 +40,8 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<div class="yt-wrapper">
-				<img class="lazy-load" data-src="/assets/gallery/desktop-notifications.png" />
-				<noscript><img src="/assets/gallery/desktop-notifications.png" /></noscript>
-			</div>
+			<img class="lazy-load" data-src="/assets/gallery/desktop-notifications.png" />
+			<noscript><img src="/assets/gallery/desktop-notifications.png" /></noscript>
 		</div>
 		<div class="pull-right w30">
 			<h2>Desktop Notifications</h2>
@@ -53,6 +50,23 @@
 			</p>
 		</div>
 	</div>
+
+	<div class="clearfix divided">
+		<div class="pull-left w40">
+			<h2>NS Awards</h2>
+			<p>
+				Gamify your community by awarding users with badges and medals for contributing content, helping out other members, or simply being a role-model user.
+			</p>
+			<p>
+				<small>Plugin by <a href="https://github.com/NicolasSiver" target="_blank">Nicolas Siver</a>.</small>
+			</p>
+		</div>
+		<div class="pull-right w60">
+			<img class="lazy-load" data-src="/assets/gallery/nsawards.png" />
+			<noscript><img src="/assets/gallery/nsawards.png" /></noscript>
+		</div>
+	</div>
+
 
 	<div class="mobile-responsive text-center wrap">
 		<h1>Spice up your forum with Skins</h1>
