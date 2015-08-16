@@ -17,7 +17,6 @@
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/normalize.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/icons.css">
 	<link href="//fonts.googleapis.com/css?family=Lato:100,300,400,600,700,900" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel='shortcut icon' href='{base_path}/favicon.ico' type='image/x-icon'/ >
 </head>
