@@ -10,9 +10,9 @@
 							Press
 						</h3>
 						<p class="m-t">
-							<a href="mailto:media@nodebb.org">
+							<a title="Press Email" href="mailto:media@nodebb.org">
 								media@nodebb.org
-							</a> | <a href="/press">Press Room</a>
+							</a> | <a title="Press Room" href="/press">Press Room</a>
 						</p>
 						<p class="subtext">
 							Please send any media relations inquiries to our press team.
@@ -25,7 +25,7 @@
 							Sales
 						</h3>
 						<p class="m-t m-b">
-							<a href="mailto:sales@nodebb.org">
+							<a title="Sales Email" href="mailto:sales@nodebb.org">
 							sales@nodebb.org
 							</a>
 						</p>
@@ -41,19 +41,19 @@
 							Info
 						</h3>
 						<p class="h5 m-b inline text-left m-r">
-							<a href="tos">Terms</a>
+							<a title="Terms of Service" href="/tos">Terms</a>
 						</p>
 						<p class="h5 m-b inline text-left m-r">
-							<a href="privacy">Privacy</a>
+							<a title="Privacy Policy" href="/privacy">Privacy</a>
 						</p>
 						<p class="h5 m-b inline text-left m-r">
-							<a href="dmca">DMCA</a>
+							<a title="DMCA" href="/dmca">DMCA</a>
 						</p>
 						<p class="h5 m-b inline text-left m-r">
 							<a href="//blog.nodebb.org/">Blog</a>
 						</p>
 						<p class="col-md-12 h4 m-b text-center">
-							<a href="https://sslcheck.globalsign.com/en_US/sslcheck?host=nodebb.org">
+							<a title="SSL Check" href="https://sslcheck.globalsign.com/en_US/sslcheck?host=nodebb.org">
 								<img alt="SSL Secured with GlobalSign" class="gss-logo" src="https://static1.globalsign.com/images/seal/ssv4/seal_125-50_white.png">
 							</a>
 						</p>
@@ -61,15 +61,15 @@
 				</div>
 				<div class="container copyright-text">
 					<p>
-						<a href="https://www.facebook.com/NodeBB" class="btn btn-icon btn-rounded btn-facebook bg-empty m-sm">
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="btn btn-icon btn-rounded btn-facebook bg-empty m-sm">
 						<i class="fa fa-facebook">
 						</i>
 						</a>
-						<a href="https://www.twitter.com/NodeBB" class="btn btn-icon btn-rounded btn-twitter bg-empty m-sm">
+						<a title="NodeBB Twitter Page" href="https://www.twitter.com/NodeBB" class="btn btn-icon btn-rounded btn-twitter bg-empty m-sm">
 						<i class="fa fa-twitter">
 						</i>
 						</a>
-						<a href="https://www.github.com/NodeBB/NodeBB" class="btn btn-icon btn-rounded btn-gplus bg-empty m-sm">
+						<a title="Fork NodeBB on Github" href="https://www.github.com/NodeBB/NodeBB" class="btn btn-icon btn-rounded btn-gplus bg-empty m-sm">
 						<i class="fa fa-github-alt">
 						</i>
 						</a>
