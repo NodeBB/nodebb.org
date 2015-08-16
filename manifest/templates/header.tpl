@@ -58,7 +58,7 @@
 		<ul class="navigation">
 			<li class="first"><a title="Grow your community with NodeBB" href="/#community">
 				<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-				<small>Leverage NodeBB to engage your users</small>
+				<small>Drive user engagement with NodeBB</small>
 			</a></li>
 			<li class="second"><a title="NodeBB - Modern features with a mobile responsive design" href="/product/modern-design">
 				<strong>Modern Design</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
