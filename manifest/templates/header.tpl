@@ -13,10 +13,12 @@
 
 	<meta property="fb:page_id" content="207121219437299" />
 
+	<!-- IF loadOriginalCSS -->
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/l.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/m.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/n.css">
-	
+	<!-- ENDIF loadOriginalCSS -->
+
 	<link rel="stylesheet" type="text/css" href="{base_path}/bin/style.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/normalize.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/icons.css">

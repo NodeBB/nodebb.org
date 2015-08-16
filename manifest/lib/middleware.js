@@ -7,6 +7,7 @@ var middleware = {},
 	constants = require('../data.json'),
 	app;
 
+var originalPages = ['dmca', 'press', 'privacy', 'tos'];
 
 middleware.buildPage = function(req, res, next) { 
 	res.page = path.join(req.params.page || 'index', req.params.subpage || '');
@@ -14,7 +15,8 @@ middleware.buildPage = function(req, res, next) {
 	var data = {
 		'base_path': nconf.get('base_path'),
 		'path': 'page-' + (req.url.slice(1).replace(/\//g, '-') || 'index'),
-		'title': constants.titles[res.page] || constants.titles.default
+		'title': constants.titles[res.page] || constants.titles.default,
+		'loadOriginalCSS': originalPages.indexOf(res.page) !== - 1
 	};
 
 	async.each(['header', 'footer'], function(tpl, next) {
