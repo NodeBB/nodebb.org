@@ -129,7 +129,7 @@
 
 <div class="container">
 	<div class="next-page page2">
-		<h3>Next: Supercharge your forum with one-click installable plugins <a href="/product/extensibility">Extensibility <span class="mobile-hide">&nbsp;<i class="fa fa-angle-right"></i></span></a></h3>
+		<h3>Next: Supercharge your forum with one-click installable plugins <a href="/product/extensibility">Extensibility &nbsp;<i class="fa fa-angle-right"></i></a></h3>
 	</div>
 </div>
 

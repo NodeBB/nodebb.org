@@ -159,7 +159,7 @@
 
 <div class="container">
 	<div class="next-page page2">
-		<h3>Jumpstart your community today with NodeBB. <a href="/pricing">Plans &amp; Pricing <span class="mobile-hide">&nbsp;<i class="fa fa-angle-right"></i></span></a></h3>
+		<h3>Jumpstart your community today with NodeBB. <a href="/pricing">Plans &amp; Pricing &nbsp;<i class="fa fa-angle-right"></i></a></h3>
 	</div>
 </div>
 
