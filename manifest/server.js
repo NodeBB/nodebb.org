@@ -41,9 +41,7 @@ app.use(function (req, res, next) {
 });
 
 app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
-	var page = path.join(req.params.page || 'index', req.params.subpage || '');
-	
-	res.render(page, {});
+	res.render(res.page, res.data);
 });
 
 var server = app.listen(nconf.get('port') || 3000, function() {

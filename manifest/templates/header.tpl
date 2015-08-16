@@ -7,7 +7,7 @@
 	<meta name="description" content="NodeBB Forum Software - A better community platform for the modern web. NodeBB is a next generation forum software that's free and easy to use.">
 	<meta name="author" content="NodeBB Inc.">
 	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting">
-	<title>NodeBB | Modern Forum Software</title>
+	<title>{title}</title>
 
 	
 

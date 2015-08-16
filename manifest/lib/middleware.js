@@ -3,13 +3,18 @@
 var middleware = {},
 	async = require('async'),
 	nconf = require('nconf'),
+	path = require('path'),
+	constants = require('../data.json'),
 	app;
 
 
 middleware.buildPage = function(req, res, next) { 
+	res.page = path.join(req.params.page || 'index', req.params.subpage || '');
+
 	var data = {
 		'base_path': nconf.get('base_path'),
-		'path': 'page-' + (req.url.slice(1).replace(/\//g, '-') || 'index')
+		'path': 'page-' + (req.url.slice(1).replace(/\//g, '-') || 'index'),
+		'title': constants.titles[res.page] || constants.titles.default
 	};
 
 	async.each(['header', 'footer'], function(tpl, next) {
@@ -21,7 +26,6 @@ middleware.buildPage = function(req, res, next) {
 		next(err);
 	});
 };
-
 
 middleware.processRender = function(req, res, next) {
 	// res.render post-processing, modified from here: https://gist.github.com/mrlannigan/5051687
