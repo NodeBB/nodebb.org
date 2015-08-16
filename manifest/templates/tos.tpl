@@ -276,35 +276,5 @@
 				</div>
 			</section>
 			<!-- /SEC -->
-			<footer id="footer" class="clearfix padder m-t-lg m-b-lg">
-				<div class="container aside-xl text-center padder">
-					<ul class="footer-links">
-						<li>
-						<a href="tos">Terms</a>
-						</li>
-						<li>
-						<a href="privacy">Privacy</a>
-						</li>
-						<li>
-						<a href="dmca">DMCA</a>
-						</li>
-						<li>
-						<a href="https://twitter.com/nodebb">Status</a>
-						</li>
-					</ul>
-					<p class="m-t">
-						<small>
-						&copy; NodeBB 2014
-						</small>
-					</p>
-				</div>
-			</footer>
-			<!-- /FTR -->
-			<!-- /APP -->
-			<script src="https://code.jquery.com/jquery.js"></script>
-			<script src="js/jquery/jquery.appear.js"></script>
-			<script src="js/landing.js"></script>
-			<script src="js/nodebb.js"></script>
-			<!-- /SCR -->
 	</body>
 </html>
