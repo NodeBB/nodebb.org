@@ -28,6 +28,7 @@ app.set('views', 'templates');
 app.use(function (req, res, next) {
 	res.setHeader('X-Powered-By', 'NodeBB');
 	res.setHeader("Cache-Control", "max-age=86400000");
+	next();
 });
 
 app.use(compression());
