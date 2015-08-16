@@ -56,9 +56,9 @@
 			</div>
 		</div>
 		<div class="pull-right w30">
-			<h2>Social Interactions.</h2>
+			<h2 style="margin-top: 35px;">Social Interactions.</h2>
 			<p>
-				NodeBB makes it easy to share and interact with content. Earn reputation from other users by posting meaningful comments.
+				NodeBB makes it easy to share and interact with content. Users earn reputation from others when posting helpful comments - gamifying and engaging your community.
 			</p>
 			<p>
 				Choose between our "favourite", "like", or "upvote" interaction engines (or use all three!)
@@ -68,7 +68,7 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w30">
-			<h2>Real-time Interactions.</h2>
+			<h2>Real-time Notifications.</h2>
 			<p>
 				NodeBB integrates real-time events in the background - your users are notified instantly when someone follows them, likes their post, or subscribes to their topics.
 			</p>
