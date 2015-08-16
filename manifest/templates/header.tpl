@@ -13,9 +13,14 @@
 
 	<meta property="fb:page_id" content="207121219437299" />
 
+	<link rel="stylesheet" type="text/css" href="{base_path}/assets/l.css">
+	<link rel="stylesheet" type="text/css" href="{base_path}/assets/m.css">
+	<link rel="stylesheet" type="text/css" href="{base_path}/assets/n.css">
+	
 	<link rel="stylesheet" type="text/css" href="{base_path}/bin/style.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/normalize.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/icons.css">
+
 	<link href="//fonts.googleapis.com/css?family=Lato:300,400,600,700,900|Shadows+Into+Light+Two" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	
