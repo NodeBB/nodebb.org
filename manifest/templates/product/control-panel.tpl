@@ -2,7 +2,7 @@
 	<div class="clearfix dashboard text-center">
 		<h1>Real-time Analytics Dashboard</h1>
 		<h2>Be in control with access to trending content, user activity, and other forum metrics.</h2>
-		<img src="/assets/gallery/dashboard.png" />
+		<img alt="See what your users are doing with via NodeBB's real-time graphs" src="/assets/gallery/dashboard.png" />
 	</div>
 
 	<div class="clearfix dashboard text-center">

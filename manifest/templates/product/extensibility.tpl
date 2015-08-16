@@ -7,8 +7,8 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<img class="lazy-load" data-src="/assets/gallery/mentions.png" />
-			<noscript><img src="/assets/gallery/mentions.png" /></noscript>
+			<img alt="Mention other users or groups to get their attention" class="lazy-load" data-src="/assets/gallery/mentions.png" />
+			<noscript><img alt="Mention other users or groups to get their attention" src="/assets/gallery/mentions.png" /></noscript>
 		</div>
 		<div class="pull-right w30">
 			<h2>Mentions</h2>
@@ -33,15 +33,15 @@
 
 		</div>
 		<div class="pull-right w70">
-			<img class="lazy-load" data-src="/assets/gallery/qanda.png" />
-			<noscript><img src="/assets/gallery/qanda.png" /></noscript>
+			<img alt="Post topics as a question and mark it as solved when it's answered" class="lazy-load" data-src="/assets/gallery/qanda.png" />
+			<noscript><img alt="Post topics as a question and mark it as solved when it's answered" src="/assets/gallery/qanda.png" /></noscript>
 		</div>
 	</div>
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<img class="lazy-load" data-src="/assets/gallery/desktop-notifications.png" />
-			<noscript><img src="/assets/gallery/desktop-notifications.png" /></noscript>
+			<img alt="Get an alert on your desktop when a notification pops up in NodeBB" class="lazy-load" data-src="/assets/gallery/desktop-notifications.png" />
+			<noscript><img alt="Get an alert on your desktop when a notification pops up in NodeBB" src="/assets/gallery/desktop-notifications.png" /></noscript>
 		</div>
 		<div class="pull-right w30">
 			<h2>Desktop Notifications</h2>
@@ -62,8 +62,8 @@
 			</p>
 		</div>
 		<div class="pull-right w60">
-			<img class="lazy-load" data-src="/assets/gallery/nsawards.png" />
-			<noscript><img src="/assets/gallery/nsawards.png" /></noscript>
+			<img alt="Gamification plugins engage your community by rewarding users for participation" class="lazy-load" data-src="/assets/gallery/nsawards.png" />
+			<noscript><img alt="Gamification plugins engage your community by rewarding users for participation" src="/assets/gallery/nsawards.png" /></noscript>
 		</div>
 	</div>
 	<br />
@@ -81,72 +81,72 @@
 		<div class="frame">
 			<ul class="slidee">
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/17.png" />
-					<noscript><img src="/assets/gallery/skins/17.png" /></noscript>
+					<img alt="Persona - Default theme for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/17.png" />
+					<noscript><img alt="Persona - Default theme for NodeBB" src="/assets/gallery/skins/17.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/2.png" />
-					<noscript><img src="/assets/gallery/skins/2.png" /></noscript>
+					<img alt="Cerulean - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/2.png" />
+					<noscript><img alt="Cerulean - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/2.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/1.png" />
-					<noscript><img src="/assets/gallery/skins/1.png" /></noscript>
+					<img alt="Cosmo - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/1.png" />
+					<noscript><img alt="Cosmo - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/1.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/3.png" />
-					<noscript><img src="/assets/gallery/skins/3.png" /></noscript>
+					<img alt="Cyborg - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/3.png" />
+					<noscript><img alt="Cyborg - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/3.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/4.png" />
-					<noscript><img src="/assets/gallery/skins/4.png" /></noscript>
+					<img alt="Darkly - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/4.png" />
+					<noscript><img alt="Darkly - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/4.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/5.png" />
-					<noscript><img src="/assets/gallery/skins/5.png" /></noscript>
+					<img alt="Flatly - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/5.png" />
+					<noscript><img alt="Flatly - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/5.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/6.png" />
-					<noscript><img src="/assets/gallery/skins/6.png" /></noscript>
+					<img alt="Journal - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/6.png" />
+					<noscript><img alt="Journal - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/6.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/7.png" />
-					<noscript><img src="/assets/gallery/skins/7.png" /></noscript>
+					<img alt="Lumen - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/7.png" />
+					<noscript><img alt="Lumen - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/7.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/8.png" />
-					<noscript><img src="/assets/gallery/skins/8.png" /></noscript>
+					<img alt="Paper - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/8.png" />
+					<noscript><img alt="Paper - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/8.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/9.png" />
-					<noscript><img src="/assets/gallery/skins/9.png" /></noscript>
+					<img alt="Readable - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/9.png" />
+					<noscript><img alt="Readable - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/9.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/10.png" />
-					<noscript><img src="/assets/gallery/skins/10.png" /></noscript>
+					<img alt="Sandstone - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/10.png" />
+					<noscript><img alt="Sandstone - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/10.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/11.png" />
-					<noscript><img src="/assets/gallery/skins/11.png" /></noscript>
+					<img alt="Simplex - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/11.png" />
+					<noscript><img alt="Simplex - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/11.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/12.png" />
-					<noscript><img src="/assets/gallery/skins/12.png" /></noscript>
+					<img alt="Slate - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/12.png" />
+					<noscript><img alt="Slate - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/12.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/13.png" />
-					<noscript><img src="/assets/gallery/skins/13.png" /></noscript>
+					<img alt="Spacelab - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/13.png" />
+					<noscript><img alt="Spacelab - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/13.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/14.png" />
-					<noscript><img src="/assets/gallery/skins/14.png" /></noscript>
+					<img alt="Superhero - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/14.png" />
+					<noscript><img alt="Superhero - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/14.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/15.png" />
-					<noscript><img src="/assets/gallery/skins/15.png" /></noscript>
+					<img alt="United - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/15.png" />
+					<noscript><img alt="United - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/15.png" /></noscript>
 				</li>
 				<li>
-					<img class="lazy-load" data-src="/assets/gallery/skins/16.png" />
-					<noscript><img src="/assets/gallery/skins/16.png" /></noscript>
+					<img alt="Yeti - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/16.png" />
+					<noscript><img alt="Yeti - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/16.png" /></noscript>
 				</li>
 			</ul>
 		</div>
