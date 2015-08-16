@@ -66,7 +66,7 @@
 			<noscript><img src="/assets/gallery/nsawards.png" /></noscript>
 		</div>
 	</div>
-
+	<br />
 
 	<div class="mobile-responsive text-center wrap">
 		<h1>Spice up your forum with Skins</h1>

@@ -6,7 +6,7 @@
 	</div>
 
 	<div class="clearfix dashboard text-center">
-		<h1>Control Panel Feature List<br /><small>This is what NodeBB's administration interface can do out of the box.<br /> Plugins can also extend and add new features.</small></h1>
+		<h1>Administration Control Panel<br /><small>This is what NodeBB's administration interface can do out of the box.<br /> Plugins can also extend and add new features.</small></h1>
 		
 		<div class="feature-list">
 			<div class="section">General</div>
