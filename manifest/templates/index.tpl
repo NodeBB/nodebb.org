@@ -38,35 +38,35 @@
 	</div>
 
 	<div class="clearfix text-center feature-overview">
-		<h3>Why companies are choosing NodeBB to drive community engagement:</h3>
+		<h2>Why companies are choosing NodeBB to drive community engagement:</h2>
 		<div class="w33 pull-left">
 			<i class="i i-phone-portrait i-2x"></i><br />
-			<h2>Mobile Responsive</h2>
+			<h3>Mobile Responsive</h3>
 			<p>NodeBB is mobile-first, allowing for a perfect experience no matter what device or resolution it's viewed on.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="fa fa-globe fa-4x"></i><br />
-			<h2>Internationalization</h2>
+			<h3>Internationalization</h3>
 			<p>NodeBB's user interface has built-in localization support, with over 50 languages actively translated.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="i i-statistics i-2x"></i><br />
-			<h2>SEO</h2>
+			<h3>SEO</h3>
 			<p>Enhance the visibility of your community with human-readable URLs, semantic HTML with embedded microdata, and more.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="i i-share i-2x"></i><br />
-			<h2>Social Integration</h2>
+			<h3>Social Integration</h3>
 			<p>NodeBB makes it simple to share content to Facebook, Google, and Twitter, bringing more visitors to your community.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="i i-loop i-2x"></i><br />
-			<h2>Real-time Streaming</h2>
+			<h3>Real-time Streaming</h3>
 			<p>Interact with your userbase faster than ever before with instant notifications, streaming posts, and real-time chats.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="fa fa-pie-chart fa-4x"></i><br />
-			<h2>Analytics</h2>
+			<h3>Analytics</h3>
 			<p>NodeBB's Analytics Dashboard has real-time graphs and tools to help you find out what content your users enjoy most.</p>
 		</div>
 	</div>

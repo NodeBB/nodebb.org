@@ -83,32 +83,32 @@
 	<div class="clearfix text-center feature-overview">
 		<div class="w33 pull-left">
 			<i class="i i-login i-2x"></i><br />
-			<h2>Single Sign-On</h2>
+			<h3>Single Sign-On</h3>
 			<p>Users can register using over 30 services including Google, Facebook, LinkedIn, and Twitter.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="fa fa-search fa-4x"></i><br />
-			<h2>Advanced Search</h2>
+			<h3>Advanced Search</h3>
 			<p>Find the content you're looking for with the help of several search filters designed to fine-tune your search results.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="fa fa-trash fa-4x"></i><br />
-			<h2>Spam Prevention</h2>
+			<h3>Spam Prevention</h3>
 			<p>NodeBB integrates with several spam prevention tools including Akismet, StopForumSpam, and Project Honeypot. </p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="fa fa-cloud-download fa-4x"></i><br />
-			<h2>API</h2>
+			<h3>API</h3>
 			<p>NodeBB has a publically facing read-only API as well as a REST write API, making it easy to integrate with your software.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="fa fa-lock fa-4x"></i><br />
-			<h2>Roles & Permissions</h2>
+			<h3>Roles & Permissions</h3>
 			<p>Control fine-grained, role-based permissions that can be assigned per category. Assign multiple roles to individual users.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="fa fa-tags fa-4x"></i><br />
-			<h2>Tags</h2>
+			<h3>Tags</h3>
 			<p>Users can tag topics, adding an extra dimension beyond categorization and making it easy to find related content.</p>
 		</div>
 	</div>
