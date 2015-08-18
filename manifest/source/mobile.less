@@ -278,19 +278,19 @@
 	.slideout-open body,
 	.slideout-open .slideout-panel {
 		overflow: hidden;
-		overflow-y: hidden !important;
 	}
 
 	.slideout-open .slideout-menu {
 		display: block;
 	}
 
-	html {
+	html, body {
 		height: 100%;
-	}
-	
-	body.slideout-open, body.slideout-open #panel {
 		overflow-y: hidden;
+	}
+
+	#panel {
+		overflow-y: scroll;
 		height: 100%;
 	}
 
