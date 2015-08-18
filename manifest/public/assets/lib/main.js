@@ -43,12 +43,24 @@ $(document).ready(function() {
 
 	$('#mobile-menu').on('click', function() {
 		slideout.toggle();
-		console.log('test');
 	});
+
+	function scrollHeader() {
+		$('#header').css('top', $(window).scrollTop() + 'px');
+	}
+
+	$(window).on('resize', function() {
+		slideout.close();
+	});
+	$(window).on('scroll', scrollHeader);
+	scrollHeader();
 
 	document.querySelector('.menu').addEventListener('click', function(eve) {
 		if (eve.target.nodeName === 'A') { slideout.close(); }
 	});
+
+	$('#product-menu-mobile').html($('#product-menu').html());
+	$('#navigation-menu-mobile').html($('#navigation-menu').html());
 		
 
 	function setupSly() {

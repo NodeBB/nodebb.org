@@ -62,7 +62,32 @@
 	}
 }
 
+
+
+#mobile-menu, .slideout-menu {
+	display: none;
+}
+
+
 @media (max-width: 768px) {
+	#mobile-menu {
+		display: inline-block;
+	}
+
+	.logo {
+		width: 98px !important;
+		height: 40px !important;
+		background-size: 98px 40px !important;
+	}
+
+	header {
+		height: 50px !important;
+
+		.pull-left {
+			position: absolute;
+		}
+	}
+
 	.content {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -90,22 +115,7 @@
 		}
 
 		&.offTop {
-			height: 50px;
-			.container, .container-fluid {
-				box-shadow: 0px 1px 1px rgba(0,0,0,0.9);
-			}
-
-			.pull-left {
-				position: absolute;
-			}
-
-			.pull-left, .pull-right {
-				width: auto;
-				> * {
-					margin-left: 0;
-					margin-right: 0;
-				}
-			}
+			height: 50px !important;
 		}
 		
 		.container, .container-fluid {
@@ -168,6 +178,108 @@
 		.navigation {
 			display: none;
 		}
+	}
+
+
+
+	#mobile-menu {
+		width: 40px;
+		background: none;
+		border: none;
+		vertical-align: 10%;
+		margin-right: 10px;
+
+		.bar {
+			width: 100%;
+			height: 3px;
+			background: #ccc;
+			margin-bottom: 5px;
+			border-radius: 10px;
+		}
+	}
+
+	#menu {
+		background-color: #1D1F20;
+		background-image: linear-gradient(145deg, #1D1F20, #404348);
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.menu-header-title {
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		margin: 0;
+	}
+
+	.menu-section {
+		margin: 25px 0;
+	}
+
+	.menu-section-title {
+		text-transform: uppercase;
+		color: #85888d;
+		font-weight: 200;
+		font-size: 13px;
+		letter-spacing: 1px;
+		padding: 0 20px;
+		margin:0;
+	}
+
+	.menu-section-list {
+		padding:0;
+		margin: 10px 0;
+		list-style:none;
+
+		a {
+			display: block;
+			padding: 10px 20px;
+		}
+
+		a:hover {
+			background-color: rgba(255, 255, 255, 0.1);
+			text-decoration: none;
+		}
+	}
+
+	#panel {
+		background: white;
+	}
+
+
+	.slideout-menu {
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 0;
+		width: 256px;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		display: none;
+	}
+
+
+	.slideout-panel {
+		position: relative;
+		z-index: 1;
+	}
+
+	.slideout-open,
+	.slideout-open body,
+	.slideout-open .slideout-panel {
+		overflow: hidden;
+	}
+
+	.slideout-open .slideout-menu {
+		display: block;
 	}
 
 }

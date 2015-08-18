@@ -48,35 +48,20 @@
 <body class="{path}">
 	<nav id="menu">
 		<section class="menu-section">
-			<h3 class="menu-section-title">Docs</h3>
-			<ul class="menu-section-list">
-				<li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
-				<li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
-				<li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
-				<li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
-			</ul>
+			<h3 class="menu-section-title">Navigation</h3>
+			<ul class="menu-section-list" id="navigation-menu-mobile"></ul>
 		</section>
 
 		<section class="menu-section">
-			<h3 class="menu-section-title">Slideout</h3>
-			<ul class="menu-section-list">
-				<li><a href="https://github.com/mango/slideout" target="_blank">Fork it</a></li>
-				<li><a href="https://github.com/mango/slideout/issues/new" target="_blank">Create an issue</a></li>
-				<li><a href="https://github.com/mango/slideout/releases/">Download</a></li>
-			</ul>
-		</section>
-
-		<section class="menu-section">
-			<h3 class="menu-section-title">Mango</h3>
-			<ul class="menu-section-list">
-				<li><a href="https://getmango.com" target="_blank">About Mango</a></li>
-				<li><a href="https://twitter.com/getmango" target="_blank">Follow Us</a></li>
+			<h3 class="menu-section-title">Product</h3>
+			<ul class="menu-section-list" id="product-menu-mobile">
+				
 			</ul>
 		</section>
 	</nav>
 
 	<main id="panel">
-		<header>
+		<header id="header">
 			<div class="container-fluid clearfix">
 				<div class="pull-left">
 					<button id="mobile-menu">
@@ -87,8 +72,8 @@
 					<a title="NodeBB - Modern Forum Software" href="/"><div class="logo"></div></a>
 				</div>
 				<div class="pull-right clearfix">
-					<ul class="menu mobile-hide">
-						<li>
+					<ul class="menu mobile-hide" id="navigation-menu">
+						<li class="mobile-hide">
 							<a title="NodeBB - Modern Forum Software" href="/">Home</a>
 						</li>
 						<li>
@@ -115,7 +100,7 @@
 		</header>
 
 		<nav>
-			<ul class="navigation mobile-hide">
+			<ul class="navigation mobile-hide" id="product-menu">
 				<li class="first"><a title="Grow your community with NodeBB" href="/#community">
 					<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
 					<small>Drive user engagement with NodeBB</small>
