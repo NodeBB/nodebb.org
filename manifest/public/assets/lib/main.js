@@ -49,12 +49,15 @@ $(document).ready(function() {
 		slideout.close();
 	});
 
-	slideout.on('open', function() {
+	function onOpeningMenu() {
 		$('#header').css({
-			'top': $(window).scrollTop() + 'px',
+			'top': $('#panel').position().top * -1 + 'px',
 			'position': 'absolute'
 		});
-	});
+	}
+
+	slideout.on('beforeopen', onOpeningMenu);
+	slideout.on('translate', onOpeningMenu);
 
 	slideout.on('close', function() {
 		$('#header').css({

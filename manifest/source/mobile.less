@@ -287,11 +287,16 @@
 
 	html {
 		height: 100%;
+		overflow-y: hidden;
 	}
 	
-	body.slideout-open, body.slideout-open #panel {
+	.slideout-open {
 		overflow-y: hidden;
 		height: 100%;
+	}
+
+	body {
+		overflow-y: scroll;
 	}
 
 	.content.subpage {
