@@ -53,13 +53,16 @@ $(document).ready(function() {
 			ev.preventDefault();
 	}
 
-	slideout.on('beforeopen', function() {
+	function onOpeningMenu() {
 		$('#panel').on('touchmove', preventScroll);
 		$('#header').css({
 			'top': $('#panel').scrollTop() + 'px',
 			'position': 'absolute'
 		});
-	});
+	}
+
+	slideout.on('beforeopen', onOpeningMenu);
+	slideout.on('translate', onOpeningMenu);
 
 	slideout.on('close', function() {
 		$('#panel').off('touchmove', preventScroll);
