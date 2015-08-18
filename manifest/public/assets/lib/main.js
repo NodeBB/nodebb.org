@@ -57,6 +57,7 @@ $(document).ready(function() {
 	}
 
 	slideout.on('beforeopen', onOpeningMenu);
+	slideout.on('open', onOpeningMenu);
 	slideout.on('translate', onOpeningMenu);
 
 	slideout.on('close', function() {
