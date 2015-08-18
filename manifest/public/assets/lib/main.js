@@ -49,20 +49,14 @@ $(document).ready(function() {
 		slideout.close();
 	});
 
-	function preventScroll(ev) {
-			ev.preventDefault();
-	}
-
-	slideout.on('beforeopen', function() {
-		$('#panel').on('touchmove', preventScroll);
+	slideout.on('open', function() {
 		$('#header').css({
-			'top': $('#panel').scrollTop() + 'px',
+			'top': $(window).scrollTop() + 'px',
 			'position': 'absolute'
 		});
 	});
 
 	slideout.on('close', function() {
-		$('#panel').off('touchmove', preventScroll);
 		$('#header').css({
 			'top': '0px',
 			'position': 'fixed'
