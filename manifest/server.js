@@ -8,6 +8,7 @@ var express = require('express'),
 	app = express(),
 	middleware = require('./lib/middleware')(app),
 	compression = require('compression'),
+	cacheTime = process.env.NODE_ENV === 'production' ? 86400000 : 0,
 
 	filecache = {};
 
@@ -26,13 +27,13 @@ app.set('views', 'templates');
 
 app.use(function (req, res, next) {
 	res.setHeader('X-Powered-By', 'NodeBB');
-	res.setHeader("Cache-Control", "max-age=86400000");
+	res.setHeader("Cache-Control", "max-age=" + cacheTime);
 	next();
 });
 
 app.use(compression());
 app.use(express.static('public', {
-	maxAge: 86400000
+	maxAge: cacheTime
 }));
 
 app.use(middleware.processRender);

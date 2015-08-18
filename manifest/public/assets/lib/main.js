@@ -46,7 +46,14 @@ $(document).ready(function() {
 	});
 
 	function scrollHeader() {
-		$('#header').css('top', $(window).scrollTop() + 'px');
+		var transform = 'translate3d(0, ' + $(window).scrollTop() + 'px, 0)';
+		$('#header').css({
+			'-webkit-transform': transform,
+			'-moz-transform': transform,
+			'-ms-transform': transform,
+			'-o-transform': transform,
+			'transform': transform
+		});
 	}
 
 	$(window).on('resize', function() {
@@ -54,10 +61,6 @@ $(document).ready(function() {
 	});
 	$(window).on('scroll', scrollHeader);
 	scrollHeader();
-
-	document.querySelector('.menu').addEventListener('click', function(eve) {
-		if (eve.target.nodeName === 'A') { slideout.close(); }
-	});
 
 	$('#product-menu-mobile').html($('#product-menu').html());
 	$('#navigation-menu-mobile').html($('#navigation-menu').html());

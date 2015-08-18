@@ -188,6 +188,8 @@
 		border: none;
 		vertical-align: 10%;
 		margin-right: 10px;
+		margin-left: -15px;
+		outline: none !important;
 
 		.bar {
 			width: 100%;
@@ -276,10 +278,19 @@
 	.slideout-open body,
 	.slideout-open .slideout-panel {
 		overflow: hidden;
+		overflow-y: hidden !important;
 	}
 
 	.slideout-open .slideout-menu {
 		display: block;
 	}
 
+	html {
+		height: 100%;
+	}
+	
+	body.slideout-open, body.slideout-open #panel {
+		overflow-y: hidden;
+		height: 100%;
+	}
 }
