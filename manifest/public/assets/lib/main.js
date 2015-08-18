@@ -45,22 +45,23 @@ $(document).ready(function() {
 		slideout.toggle();
 	});
 
-	function scrollHeader() {
-		var transform = 'translate3d(0, ' + $(window).scrollTop() + 'px, 0)';
-		$('#header').css({
-			'-webkit-transform': transform,
-			'-moz-transform': transform,
-			'-ms-transform': transform,
-			'-o-transform': transform,
-			'transform': transform
-		});
-	}
-
 	$(window).on('resize', function() {
 		slideout.close();
 	});
-	$(window).on('scroll', scrollHeader);
-	scrollHeader();
+
+	slideout.on('open', function() {
+		$('#header').css({
+			'top': $(window).scrollTop() + 'px',
+			'position': 'absolute'
+		});
+	});
+
+	slideout.on('close', function() {
+		$('#header').css({
+			'top': '0px',
+			'position': 'fixed'
+		});
+	})
 
 	$('#product-menu-mobile').html($('#product-menu').html());
 	$('#navigation-menu-mobile').html($('#navigation-menu').html());
@@ -70,7 +71,6 @@ $(document).ready(function() {
 		var $frame = $('.frame');
 		var $wrap  = $frame.parent();
 
-		// Call Sly on frame
 		$frame.sly({
 			horizontal: 1,
 			itemNav: 'centered',
