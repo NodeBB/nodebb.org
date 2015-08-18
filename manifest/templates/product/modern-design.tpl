@@ -18,10 +18,8 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<div class="yt-wrapper">
-				<img alt="Real-time chat with multi-tasking support" class="lazy-load" data-src="/assets/gallery/chat.png" />
-				<noscript><img alt="Real-time chat with multi-tasking support" src="/assets/gallery/chat.png" /></noscript>
-			</div>
+			<img alt="Real-time chat with multi-tasking support" class="lazy-load" data-src="/assets/gallery/chat.png" />
+			<noscript><img alt="Real-time chat with multi-tasking support" src="/assets/gallery/chat.png" /></noscript>
 		</div>
 		<div class="pull-right w30">
 			<h2>Built-in Realtime Chat.</h2>
@@ -50,10 +48,8 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<div class="yt-wrapper">
-				<img alt="Gamify your community with social interactions" class="lazy-load" data-src="/assets/gallery/reputation.png" />
-				<noscript><img alt="Gamify your community with social interactions" src="/assets/gallery/reputation.png" /></noscript>
-			</div>
+			<img alt="Gamify your community with social interactions" class="lazy-load" data-src="/assets/gallery/reputation.png" />
+			<noscript><img alt="Gamify your community with social interactions" src="/assets/gallery/reputation.png" /></noscript>
 		</div>
 		<div class="pull-right w30">
 			<h2 style="margin-top: 35px;">Social Interactions.</h2>
