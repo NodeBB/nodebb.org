@@ -46,60 +46,95 @@
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body class="{path}">
-	<header>
-		<div class="container-fluid clearfix">
-			<div class="pull-left">
-				<a title="NodeBB - Modern Forum Software" href="/"><div class="logo"></div></a>
-			</div>
-			<div class="pull-right clearfix">
-				<ul class="menu">
-					<li class="mobile-hide">
-						<a title="NodeBB - Modern Forum Software" href="/">Home</a>
-					</li>
-					<li class="mobile-hide">
-						<a title="NodeBB Plans and Pricing" href="/pricing" title="Plans & Pricing">Pricing</a>
-					</li>
-					<li>
-						<a title="NodeBB Community Forum" class="demo-link" target="_blank" href="//community.nodebb.org/" title="Community">Community</a>
-					</li>
-					<li>
-						<a title="NodeBB Blog" target="_blank" href="//blog.nodebb.org/" title="Blog">Blog</a>
-					</li>
-					<li class="mobile-hide">
-						<a title="NodeBB Documentation" href="//docs.nodebb.org" target="_blank" title="Documentation">Docs</a>
-					</li>
-					<li>
-						<a title="Sign in to manage your NodeBB forums" href="//manage.nodebb.org">Sign in</a>
-					</li>
-					<li>
-						<a title="Sign up to create a NodeBB community forum" href="//manage.nodebb.org/register"><strong>Sign up</strong></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</header>
+	<nav id="menu">
+		<section class="menu-section">
+			<h3 class="menu-section-title">Docs</h3>
+			<ul class="menu-section-list">
+				<li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
+				<li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
+				<li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
+				<li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+			</ul>
+		</section>
 
-	<nav>
-		<ul class="navigation">
-			<li class="first"><a title="Grow your community with NodeBB" href="/#community">
-				<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-				<small>Drive user engagement with NodeBB</small>
-			</a></li>
-			<li class="second"><a title="NodeBB - Modern features with a mobile responsive design" href="/product/modern-design">
-				<strong>Modern Design</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-				<small>Mobile-first and real-time interactions </small>
-			</a></li>
-			<li class="third"><a title="Check out NodeBB's state of the art Control Panel" href="/product/control-panel">
-				<strong>Control Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-				<small>With a powerful yet intuitive admin panel</small>
-			</a></li>
-			<li class="fourth"><a title="NodeBB integrations with 3rd party software" href="/product/integrations">
-				<strong>Cloud Integrations</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-				<small>Slack, Pushbullet, Mailchimp, and more</small>
-			</a></li>
-			<li class="fifth"><a title="Extend NodeBB with plugins, addons, and themes" href="/product/extensibility">
-				<strong>Extensibility</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
-				<small>One-click install plugins and themes</small>
-			</a></li>
-		</ul>
+		<section class="menu-section">
+			<h3 class="menu-section-title">Slideout</h3>
+			<ul class="menu-section-list">
+				<li><a href="https://github.com/mango/slideout" target="_blank">Fork it</a></li>
+				<li><a href="https://github.com/mango/slideout/issues/new" target="_blank">Create an issue</a></li>
+				<li><a href="https://github.com/mango/slideout/releases/">Download</a></li>
+			</ul>
+		</section>
+
+		<section class="menu-section">
+			<h3 class="menu-section-title">Mango</h3>
+			<ul class="menu-section-list">
+				<li><a href="https://getmango.com" target="_blank">About Mango</a></li>
+				<li><a href="https://twitter.com/getmango" target="_blank">Follow Us</a></li>
+			</ul>
+		</section>
 	</nav>
+
+	<main id="panel">
+		<header>
+			<div class="container-fluid clearfix">
+				<div class="pull-left">
+					<button id="mobile-menu">
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</button>
+					<a title="NodeBB - Modern Forum Software" href="/"><div class="logo"></div></a>
+				</div>
+				<div class="pull-right clearfix">
+					<ul class="menu mobile-hide">
+						<li>
+							<a title="NodeBB - Modern Forum Software" href="/">Home</a>
+						</li>
+						<li>
+							<a title="NodeBB Plans and Pricing" href="/pricing" title="Plans & Pricing">Pricing</a>
+						</li>
+						<li>
+							<a title="NodeBB Community Forum" class="demo-link" target="_blank" href="//community.nodebb.org/" title="Community">Community</a>
+						</li>
+						<li>
+							<a title="NodeBB Blog" target="_blank" href="//blog.nodebb.org/" title="Blog">Blog</a>
+						</li>
+						<li>
+							<a title="NodeBB Documentation" href="//docs.nodebb.org" target="_blank" title="Documentation">Docs</a>
+						</li>
+						<li>
+							<a title="Sign in to manage your NodeBB forums" href="//manage.nodebb.org">Sign in</a>
+						</li>
+						<li>
+							<a title="Sign up to create a NodeBB community forum" href="//manage.nodebb.org/register"><strong>Sign up</strong></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<nav>
+			<ul class="navigation mobile-hide">
+				<li class="first"><a title="Grow your community with NodeBB" href="/#community">
+					<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+					<small>Drive user engagement with NodeBB</small>
+				</a></li>
+				<li class="second"><a title="NodeBB - Modern features with a mobile responsive design" href="/product/modern-design">
+					<strong>Modern Design</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+					<small>Mobile-first and real-time interactions </small>
+				</a></li>
+				<li class="third"><a title="Check out NodeBB's state of the art Control Panel" href="/product/control-panel">
+					<strong>Control Everything</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+					<small>With a powerful yet intuitive admin panel</small>
+				</a></li>
+				<li class="fourth"><a title="NodeBB integrations with 3rd party software" href="/product/integrations">
+					<strong>Cloud Integrations</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+					<small>Slack, Pushbullet, Mailchimp, and more</small>
+				</a></li>
+				<li class="fifth"><a title="Extend NodeBB with plugins, addons, and themes" href="/product/extensibility">
+					<strong>Extensibility</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
+					<small>One-click install plugins and themes</small>
+				</a></li>
+			</ul>
+		</nav>

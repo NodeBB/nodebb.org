@@ -33,6 +33,22 @@ $(document).ready(function() {
 		$('.left-arrow').on('click', scrollPlansLeft);
 		$('.right-arrow').on('click', scrollPlansRight);
 	}
+
+	var slideout = new Slideout({
+		'panel': document.getElementById('panel'),
+		'menu': document.getElementById('menu'),
+		'padding': 256,
+		'tolerance': 70
+	});
+
+	$('#mobile-menu').on('click', function() {
+		slideout.toggle();
+		console.log('test');
+	});
+
+	document.querySelector('.menu').addEventListener('click', function(eve) {
+		if (eve.target.nodeName === 'A') { slideout.close(); }
+	});
 		
 
 	function setupSly() {
