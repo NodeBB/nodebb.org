@@ -46,7 +46,7 @@
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body class="{path}">
-	<nav id="menu">
+	<nav id="menu" class="mobile-only">
 		<section class="menu-section">
 			<h3 class="menu-section-title">Navigation</h3>
 			<ul class="menu-section-list" id="navigation-menu-mobile"></ul>
