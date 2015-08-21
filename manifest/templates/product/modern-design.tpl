@@ -100,7 +100,7 @@
 		<div class="w33 pull-left">
 			<i class="fa fa-lock fa-4x"></i><br />
 			<h3>Roles & Permissions</h3>
-			<p>Control fine-grained, role-based permissions that can be assigned per category. Assign multiple roles to individual users.</p>
+			<p>Create private or read-only categories with access control. Give users or groups special roles to view or moderate content.</p>
 		</div>
 		<div class="w33 pull-left">
 			<i class="fa fa-tags fa-4x"></i><br />
