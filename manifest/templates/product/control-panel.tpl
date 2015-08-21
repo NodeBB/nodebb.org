@@ -1,8 +1,16 @@
 <section class="content subpage showcase container clearfix">
 	<div class="clearfix dashboard text-center">
+		<h1>Control Everything</h1>
+		<h2>With over a dozen settings pages, you're able to administrate your forum as much as you want.</h2>
+		<img alt="NodeBB's control panel lets you customise every setting for your community forum" class="lazy-load" data-src="/assets/gallery/settings.png" />
+		<noscript><img alt="NodeBB's control panel lets you customise every setting for your community forum" src="/assets/gallery/settings.png" /></noscript>
+	</div>
+
+	<div class="clearfix dashboard text-center">
 		<h1>Real-time Analytics Dashboard</h1>
 		<h2>Be in control with access to trending content, user activity, and other forum metrics.</h2>
-		<img alt="See what your users are doing with via NodeBB's real-time graphs" src="/assets/gallery/dashboard.png" />
+		<img alt="See what your users are doing with via NodeBB's real-time graphs" class="lazy-load" data-src="/assets/gallery/dashboard.png" />
+		<noscript><img alt="See what your users are doing with via NodeBB's real-time graphs" src="/assets/gallery/dashboard.png" /></noscript>
 	</div>
 
 	<div class="clearfix divided">
