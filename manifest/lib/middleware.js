@@ -14,7 +14,7 @@ middleware.buildPage = function(req, res, next) {
 
 	var data = {
 		'base_path': nconf.get('base_path'),
-		'dev': nconf.get('production') ? true : false,
+		'dev': nconf.get('production') ? false : true,
 		'path': 'page-' + (req.url.slice(1).replace(/\//g, '-') || 'index'),
 		'title': constants.titles[res.page] || constants.titles.default,
 		'loadOriginalCSS': originalPages.indexOf(res.page) !== - 1
