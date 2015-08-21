@@ -1,5 +1,14 @@
 <section class="content subpage container clearfix integrations">
 	<div class="mobile-responsive text-center">
+		<h1>Plugin Manager</h1>
+		<h2>Download and install plugins directly from the control panel in one click.</h2>
+
+		<img alt="The plugins control panel lets you choose from over 300 plugins to install" class="lazy-load" data-src="/assets/gallery/plugins.png" />
+		<noscript><img alt="The plugins control panel lets you choose from over 300 plugins to install" src="/assets/gallery/plugins.png" /></noscript>
+	</div>
+
+
+	<div class="mobile-responsive text-center">
 		<h1>Featured Plugins</h1>
 		<h2>NodeBB has over 300 plugins and themes to choose from. Here are some of our favourites:</h2>
 	</div>
