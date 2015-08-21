@@ -96,7 +96,9 @@
 	<script type="text/javascript" src="{base_path}/assets/lib/lazyload.min.js"></script>
 	<script type="text/javascript" src="{base_path}/assets/lib/slideout.min.js"></script>
 	<script type="text/javascript" src="{base_path}/assets/lib/sly.min.js"></script>
+	<!-- IF dev -->
 	<script src="//localhost:3001/livereload.js"></script>
+	<!-- ENDIF dev -->
 
 	<!-- Clicky Analytics Code -->
 	<script type="text/javascript">
