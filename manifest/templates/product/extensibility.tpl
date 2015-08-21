@@ -81,16 +81,20 @@
 		<h1>Transform your forum's look with the Theme system</h1>
 		<h2>NodeBB ships with 3 core themes. You can download more themes in the Plugins Control Panel.</h2>
 
-		<img alt="Customise your forum's look with a NodeBB Theme" class="lazy-load" data-src="/assets/gallery/themes.png" />
-		<noscript><img alt="Customise your forum's look with a NodeBB Theme" src="/assets/gallery/themes.png" /></noscript>
+		<p>
+			<img alt="Customise your forum's look with a NodeBB Theme" class="lazy-load" data-src="/assets/gallery/themes.png" />
+			<noscript><img alt="Customise your forum's look with a NodeBB Theme" src="/assets/gallery/themes.png" /></noscript>
+		</p>
 	</div>
 
 	<div class="mobile-responsive text-center wrap">
 		<h1>Spice up your forum with Skins</h1>
 		<h2>NodeBB ships with 16 bootswatch skins. You can customize a skin with the Custom CSS Panel.</h2>
 
-		<img alt="Change the colour scheme of your forum with the skinning system" class="lazy-load" data-src="/assets/gallery/skins.png" />
-		<noscript><img alt="Change the colour scheme of your forum with the skinning system" src="/assets/gallery/skins.png" /></noscript>
+		<p>
+			<img alt="Change the colour scheme of your forum with the skinning system" class="lazy-load" data-src="/assets/gallery/skins.png" />
+			<noscript><img alt="Change the colour scheme of your forum with the skinning system" src="/assets/gallery/skins.png" /></noscript>
+		</p>
 	</div>
 
 </section>
