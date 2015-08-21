@@ -11,25 +11,24 @@
 			<noscript><img alt="Real-time chat with multi-tasking support" src="/assets/gallery/custom-css.png" /></noscript>
 		</div>
 		<div class="pull-right w30">
+			<h2>Customise with HTML, CSS, and JavaScript.</h2>
 			<p>
+				Tweak your forum's design to your heart's content. Don't worry - if something goes wrong, reverting is a snap. You can even paste scripts from third party vendors such as Google Analytics.
 			</p>
 		</div>
 	</div>
 
 	<div class="clearfix divided">
 		<div class="pull-left w30">
-			<h2>User-Created Groups.</h2>
+			<h2>Drag-and-drop Widgets.</h2>
 			<p>
-				Keep your users engaged and connected with each other via groups.
-			</p>
-			<p>
-				Each group page has an activity feed and plugins can extend functionality with features such as a calendar and a photo gallery.
+				Add new functionality to your forum via the widgets system. You can add new content via an HTML widget or from over a dozen other widgets by dragging and dropping it onto a widget area on your forum.
 			</p>
 
 		</div>
 		<div class="pull-right w70">
-			<img alt="User-created groups with activity feeds" class="lazy-load" data-src="/assets/gallery/groups.png" />
-			<noscript><img alt="User-created groups with activity feeds" src="/assets/gallery/groups.png" /></noscript>
+			<img alt="User-created groups with activity feeds" class="lazy-load" data-src="/assets/gallery/widgets.png" />
+			<noscript><img alt="User-created groups with activity feeds" src="/assets/gallery/widgets.png" /></noscript>
 		</div>
 	</div>
 
