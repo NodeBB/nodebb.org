@@ -1,16 +1,21 @@
 .pricing {
-	background: @first-color;
+	background: white;
 	color: white;
 	margin-top: 75px;
 	padding: 20px;
 	text-align: center;
 	padding-bottom: 55px;
 
+	.page3 {
+		background: @brand-primary;
+	}
+
 	h2 {
-		font-weight: 300;
-		font-size: 30px;
+		font-weight: 800;
+		font-size: 42px;
 		margin-bottom: 45px;
 		margin-top: 30px;
+		color: #222;
 	}
 
 	a {
@@ -32,7 +37,7 @@
 		margin: 0px;
 		float: left;
 
-		width: 24%;
+		width: 24.5%;
 		padding: 3px;
 
 		&.first {
@@ -51,7 +56,7 @@
 
 		&.second {
 			.package {
-				background-color: @third-color;
+				background-color: @fourth-color;
 				font-weight: 400;
 
 				small {
@@ -61,11 +66,11 @@
 			}
 
 			.buy a {
-				background-color: @third-color;
+				background-color: @fourth-color;
 				padding: 17px 10px;
 
 				&:hover {
-					background-color: lighten(@third-color, 10%);
+					background-color: lighten(@fourth-color, 10%);
 				}
 
 				font-weight: 400;
@@ -76,7 +81,7 @@
 			position: relative;
 			margin-top: -28px;
 			margin-left: -18px;
-			border: 6px solid @first-color;
+			border: 6px solid white;
 			padding: 0px;
 		}
 
@@ -132,7 +137,7 @@
 
 
 			li {
-				background: white !important;
+				background: #f0f0f0 !important;
 			}
 		}
 
@@ -147,7 +152,7 @@
 			}
 
 			&:nth-child(even) {
-				background: white;
+				background: #fafafa;
 			}
 
 			&.package {
@@ -162,7 +167,7 @@
 			&.price {
 				padding: 50px;
 				height: 25px;
-				background: white;
+				background: #fafafa;
 
 				.number {
 					font-size: 24px;
@@ -178,6 +183,12 @@
 					display: inline-block;
 				}
 			}
+		}
+	}
+
+	@media (max-width: 1200px) {
+		ul {
+			width: 24.3%
 		}
 	}
 }
