@@ -96,7 +96,7 @@
         <h3 class="h3 text-dark text-left m-b">In the news...</h3>
 
         <p class="h4 lte">
-        	We love it when people talk about us. Wrote something up? <a href="javascript:olark('api.box.expand');">Let us know!</a>
+        	We love it when people talk about us. Wrote something up? <a href="mailto:media@nodebb.org">Let us know!</a>
         </p>
 
         <div class="line"></div>
