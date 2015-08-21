@@ -1,21 +1,46 @@
 .pricing {
 	background: white;
 	color: white;
-	margin-top: 75px;
 	padding: 20px;
 	text-align: center;
 	padding-bottom: 55px;
 
 	.page3 {
 		background: @brand-primary;
+		h3 {
+			color: white;
+		}
 	}
 
 	h2 {
-		font-weight: 800;
-		font-size: 42px;
-		margin-bottom: 45px;
-		margin-top: 30px;
-		color: #222;
+		max-width: 85%;
+		text-align: center;
+		display: inline-block;
+	}
+	
+	.mobile-responsive {		
+		h1 {
+			color: #222;
+			margin-top: 75px;
+			
+			small {
+				color: #777;
+				font-size: 22px;
+				line-height: 28px;
+				display: inline-block;
+				margin-top: 20px;
+			}
+
+			margin-bottom: 0px;
+		}
+	}
+
+	.mobile-responsive h2 {
+		a {
+			color: @brand-primary;
+			font-weight: 400;
+			text-decoration: underline;
+		}
 	}
 
 	a {

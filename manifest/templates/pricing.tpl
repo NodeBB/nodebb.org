@@ -1,7 +1,11 @@
 
-	<div class="pricing">
+	<div class="pricing content">
 		<div class="container clearfix relative">
-			<h2>Select a plan that works best for your community.</h2>
+			<div class="mobile-responsive text-center">
+				<h1>Select a plan that works best for your community.</h1>
+				<h2>Need help figuring out the right plan for your business? <a href="mailto:sales@nodebb.org">Contact us</a>.</h2>
+			</div><br /><br />
+
 			<span class="left-arrow">&nbsp;<i class="fa fa-angle-left fa-4x"></i></span>
 			<span class="right-arrow">&nbsp;<i class="fa fa-angle-right fa-4x"></i></span>
 			<div class="table">
