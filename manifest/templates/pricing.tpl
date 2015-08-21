@@ -3,7 +3,7 @@
 		<div class="container clearfix relative">
 			<div class="mobile-responsive text-center">
 				<h1>Select a plan that works best for your community.</h1>
-				<h2>Need help figuring out the right plan for your business? <a href="mailto:sales@nodebb.org">Contact us</a>.</h2>
+				<h2>Need help figuring out the right plan for your business? <a onclick="javascript:olark('api.box.expand');">Contact us</a>.</h2>
 			</div><br /><br />
 
 			<span class="left-arrow">&nbsp;<i class="fa fa-angle-left fa-4x"></i></span>
@@ -47,10 +47,10 @@
 					<li class="buy"><a href="https://github.com/NodeBB/NodeBB/" target="_top">Github &nbsp;<i class="fa fa-external-link-square"></i></a></li>
 					<li class="package">Non-profit Organizations</li>
 					<li class="price"><sup>$</sup> <span class="number">20</span> <span class="duration">/ month</span></li>
-					<li class="buy"><a href="mailto:sales@nodebb.org">Contact Us &nbsp;<i class="fa fa-envelope-o"></i></a></li>
+					<li class="buy"><a onclick="javascript:olark('api.box.expand');">Contact Us &nbsp;<i class="fa fa-envelope-o"></i></a></li>
 					<li class="package">On-site Installation</li>
 					<li class="price" style="padding: 9px"><sup>$</sup> <span class="number">100</span> <span class="duration">+</span></li>
-					<li class="buy"><a href="mailto:sales@nodebb.org">Contact Us &nbsp;<i class="fa fa-envelope-o"></i></a></li>
+					<li class="buy"><a onclick="javascript:olark('api.box.expand');">Contact Us &nbsp;<i class="fa fa-envelope-o"></i></a></li>
 				</ul>
 			</div>
 		</div>
