@@ -7,8 +7,8 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<img alt="Real-time chat with multi-tasking support" class="lazy-load" data-src="/assets/gallery/custom-css.png" />
-			<noscript><img alt="Real-time chat with multi-tasking support" src="/assets/gallery/custom-css.png" /></noscript>
+			<img alt="Use the custom CSS and custom header panel to insert styling or functionality" class="lazy-load" data-src="/assets/gallery/custom-css.png" />
+			<noscript><img alt="Use the custom CSS and custom header panel to insert styling or functionality" src="/assets/gallery/custom-css.png" /></noscript>
 		</div>
 		<div class="pull-right w30">
 			<h2>Customise with HTML, CSS, and JavaScript.</h2>
@@ -27,8 +27,8 @@
 
 		</div>
 		<div class="pull-right w70">
-			<img alt="User-created groups with activity feeds" class="lazy-load" data-src="/assets/gallery/widgets.png" />
-			<noscript><img alt="User-created groups with activity feeds" src="/assets/gallery/widgets.png" /></noscript>
+			<img alt="Drag and drop widgets onto your forum to customise its look" class="lazy-load" data-src="/assets/gallery/widgets.png" />
+			<noscript><img alt="Drag and drop widgets onto your forum to customise its look" src="/assets/gallery/widgets.png" /></noscript>
 		</div>
 	</div>
 
