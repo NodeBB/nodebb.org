@@ -62,65 +62,65 @@
 
 		<div class="metro-box">
 			<div>
-				<strong>Mandrill</strong>
+				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-slack">Slack</a></strong>
 				<p>
-					The mandrill plugin lets you email people using mandrill. Neat huh?
+					Notify forum administrators of new posts in the community on their Slack channel
 				</p>
 				<i class="fa fa-envelope"></i>
 			</div>
 
 			<div>
-				<strong>Mandrill</strong>
+				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-mailchimp">Mailchimp</a></strong>
 				<p>
-					The mandrill plugin lets you email people using mandrill. Neat huh?
+					Auto-subscribe new user registrations to your MailChimp email list
 				</p>
 				<i class="fa fa-envelope"></i>
 			</div>
 
 			<div>
-				<strong>Mandrill</strong>
+				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-pushbullet">Pushbullet</a></strong>
 				<p>
-					The mandrill plugin lets you email people using mandrill. Neat huh?
+					Send push notifications to mobile phones whenever a NodeBB notification comes in
 				</p>
 				<i class="fa fa-envelope"></i>
 			</div>
 
 			<div>
-				<strong>Mandrill</strong>
+				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-blog-comments">Ghost</a></strong>
 				<p>
-					The mandrill plugin lets you email people using mandrill. Neat huh?
+					Use NodeBB as a commenting engine for the Ghost blogging platform
 				</p>
 				<i class="fa fa-envelope"></i>
 			</div>
 
 			<div>
-				<strong>Mandrill</strong>
+				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-google-adsense">Google Adsense</a></strong>
 				<p>
-					The mandrill plugin lets you email people using mandrill. Neat huh?
+					Monetize your community by placing Adsense ads on any page on your forum
 				</p>
 				<i class="fa fa-envelope"></i>
 			</div>
 
 			<div>
-				<strong>Mandrill</strong>
+				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-blog-comments">Wordpress</a></strong>
 				<p>
-					The mandrill plugin lets you email people using mandrill. Neat huh?
+					Use NodeBB as a commenting engine for the Wordpress CMS platform
 				</p>
 				<i class="fa fa-envelope"></i>
 			</div>
 
 			<div>
-				<strong>Mandrill</strong>
+				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-twilio">Twilio</a></strong>
 				<p>
-					The mandrill plugin lets you email people using mandrill. Neat huh?
+					Mobile verification of users via an SMS text containing a random pin code
 				</p>
 				<i class="fa fa-envelope"></i>
 			</div>
 
 			<div>
-				<strong>Mandrill</strong>
+				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-s3-uploads">Amazon S3</a></strong>
 				<p>
-					The mandrill plugin lets you email people using mandrill. Neat huh?
+					Store images and file uploads on the cloud via Amazon S3
 				</p>
 				<i class="fa fa-envelope"></i>
 			</div>
