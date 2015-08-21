@@ -69,87 +69,19 @@
 	<br />
 
 	<div class="mobile-responsive text-center wrap">
+		<h1>Transform your forum's look with the Theme system</h1>
+		<h2>NodeBB ships with 3 core themes. You can download more themes in the Plugins Control Panel.</h2>
+
+		<img alt="Customise your forum's look with a NodeBB Theme" class="lazy-load" data-src="/assets/gallery/themes.png" />
+		<noscript><img alt="Customise your forum's look with a NodeBB Theme" src="/assets/gallery/themes.png" /></noscript>
+	</div>
+
+	<div class="mobile-responsive text-center wrap">
 		<h1>Spice up your forum with Skins</h1>
-		<h2>NodeBB ships with 16 default skins. You can further customize a skin in the Custom CSS Panel.</h2>
+		<h2>NodeBB ships with 16 bootswatch skins. You can customize a skin with the Custom CSS Panel.</h2>
 
-		<div class="scrollbar">
-			<div class="handle">
-				<div class="mousearea"></div>
-			</div>
-		</div>
-
-		<div class="frame">
-			<ul class="slidee">
-				<li>
-					<img alt="Persona - Default theme for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/17.png" />
-					<noscript><img alt="Persona - Default theme for NodeBB" src="/assets/gallery/skins/17.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Cerulean - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/2.png" />
-					<noscript><img alt="Cerulean - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/2.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Cosmo - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/1.png" />
-					<noscript><img alt="Cosmo - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/1.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Cyborg - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/3.png" />
-					<noscript><img alt="Cyborg - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/3.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Darkly - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/4.png" />
-					<noscript><img alt="Darkly - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/4.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Flatly - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/5.png" />
-					<noscript><img alt="Flatly - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/5.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Journal - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/6.png" />
-					<noscript><img alt="Journal - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/6.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Lumen - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/7.png" />
-					<noscript><img alt="Lumen - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/7.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Paper - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/8.png" />
-					<noscript><img alt="Paper - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/8.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Readable - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/9.png" />
-					<noscript><img alt="Readable - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/9.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Sandstone - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/10.png" />
-					<noscript><img alt="Sandstone - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/10.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Simplex - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/11.png" />
-					<noscript><img alt="Simplex - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/11.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Slate - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/12.png" />
-					<noscript><img alt="Slate - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/12.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Spacelab - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/13.png" />
-					<noscript><img alt="Spacelab - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/13.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Superhero - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/14.png" />
-					<noscript><img alt="Superhero - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/14.png" /></noscript>
-				</li>
-				<li>
-					<img alt="United - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/15.png" />
-					<noscript><img alt="United - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/15.png" /></noscript>
-				</li>
-				<li>
-					<img alt="Yeti - Bootswatch Skin for NodeBB" class="lazy-load" data-src="/assets/gallery/skins/16.png" />
-					<noscript><img alt="Yeti - Bootswatch Skin for NodeBB" src="/assets/gallery/skins/16.png" /></noscript>
-				</li>
-			</ul>
-		</div>
+		<img alt="Change the colour scheme of your forum with the skinning system" class="lazy-load" data-src="/assets/gallery/skins.png" />
+		<noscript><img alt="Change the colour scheme of your forum with the skinning system" src="/assets/gallery/skins.png" /></noscript>
 	</div>
 
 </section>
