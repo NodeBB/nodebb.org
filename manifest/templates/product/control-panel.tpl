@@ -32,6 +32,22 @@
 		</div>
 	</div>
 
+	<div class="clearfix divided">
+		<div class="pull-left w70">
+			<img alt="Control fine-grained permissions with the access control panel" class="lazy-load" data-src="/assets/gallery/privileges.png" />
+			<noscript><img alt="Control fine-grained permissions with the access control panel" src="/assets/gallery/privileges.png" /></noscript>
+		</div>
+		<div class="pull-right w30">
+			<h2>Access Control.</h2>
+			<p>
+				Grant privileges to individual users or groups, allowing you to create read-only categories or hide them altogether.
+			</p>
+			<p>
+				Give forum members elevated roles such as "Moderator" to allow them to help police your community.
+			</p>
+		</div>
+	</div>
+
 	<div class="clearfix dashboard text-center">
 		<h1>Administration Control Panel<br /><small>This is what NodeBB's administration interface can do out of the box.<br /> Plugins can also extend and add new features.</small></h1>
 		
