@@ -52,6 +52,11 @@
 			width: 19.5%;
 			margin: 10px;
 			text-align: left;
+			vertical-align: top;
+
+			p {
+				height: 55px;
+			}
 
 			i {
 				position: absolute;
@@ -60,7 +65,16 @@
 			}
 		}
 
-		@media (max-width: 768px) {
+		@media (max-width: 1200px) {
+			> div {
+				width: 18%;
+				p {
+					height: 75px;
+				}
+			}
+		}
+
+		@media (max-width: 940px) {
 			> div {
 				width: 35%;
 			}

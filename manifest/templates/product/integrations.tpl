@@ -66,7 +66,7 @@
 				<p>
 					Notify forum administrators of new posts in the community on their Slack channel
 				</p>
-				<i class="fa fa-envelope"></i>
+				<i class="fa fa-exclamation-circle"></i>
 			</div>
 
 			<div>
@@ -82,7 +82,7 @@
 				<p>
 					Send push notifications to mobile phones whenever a NodeBB notification comes in
 				</p>
-				<i class="fa fa-envelope"></i>
+				<i class="fa fa-exclamation-circle"></i>
 			</div>
 
 			<div>
@@ -90,7 +90,7 @@
 				<p>
 					Use NodeBB as a commenting engine for the Ghost blogging platform
 				</p>
-				<i class="fa fa-envelope"></i>
+				<i class="fa fa-commenting-o"></i>
 			</div>
 
 			<div>
@@ -98,7 +98,7 @@
 				<p>
 					Monetize your community by placing Adsense ads on any page on your forum
 				</p>
-				<i class="fa fa-envelope"></i>
+				<i class="fa fa-dollar"></i>
 			</div>
 
 			<div>
@@ -106,7 +106,7 @@
 				<p>
 					Use NodeBB as a commenting engine for the Wordpress CMS platform
 				</p>
-				<i class="fa fa-envelope"></i>
+				<i class="fa fa-commenting-o"></i>
 			</div>
 
 			<div>
@@ -122,7 +122,7 @@
 				<p>
 					Store images and file uploads on the cloud via Amazon S3
 				</p>
-				<i class="fa fa-envelope"></i>
+				<i class="fa fa-cloud-upload"></i>
 			</div>
 		</div>
 	</div>
