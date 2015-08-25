@@ -93,7 +93,7 @@
 								</li>
 								<li>
 									<span>
-									You have, in the case of Content that includes computer code, accurately categorized and/or described the type, nature, uses and effects of the materials, whether requested to do so by Design Create Play or otherwise.
+									You have, in the case of Content that includes computer code, accurately categorized and/or described the type, nature, uses and effects of the materials, whether requested to do so by NodeBB or otherwise.
 									</span>
 								</li>
 								<p class="m-t inf">

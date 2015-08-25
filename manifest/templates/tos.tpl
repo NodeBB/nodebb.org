@@ -34,7 +34,7 @@
 						<section class="legal m-b-xl m-t-xl">
 							<p>
 								<span>
-								The following terms and conditions govern all use of the NodeBB.org website and all content, services and products available at or through the website, including, but not limited to, the NodeBB.org premium hosting service ("Premium Service"), (taken together, the Website). The Website is owned and operated by Design Create Play, Inc (“Design Create Play”). The Website is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies
+								The following terms and conditions govern all use of the NodeBB.org website and all content, services and products available at or through the website, including, but not limited to, the NodeBB.org premium hosting service ("Premium Service"), (taken together, the Website). The Website is owned and operated by NodeBB, Inc (“NodeBB”). The Website is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies
 								</span>
 								<span>
 								(including, without limitation,
@@ -43,12 +43,12 @@
 								<a href="privacy">NodeBB Privacy Policy</a>)
 								</span>
 								<span>
-								and procedures that may be published from time to time on this Site by Design Create Play (collectively, the "Agreement").
+								and procedures that may be published from time to time on this Site by NodeBB (collectively, the "Agreement").
 								</span>
 							</p>
 							<p>
 								<span>
-								Please read this Agreement carefully before accessing or using the Website. By accessing or using any part of the web site, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access the Website or use any services. If these terms and conditions are considered an offer by Design Create Play, acceptance is expressly limited to these terms. The Website is available only to individuals who are at least 13 years old.
+								Please read this Agreement carefully before accessing or using the Website. By accessing or using any part of the web site, you agree to become bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access the Website or use any services. If these terms and conditions are considered an offer by NodeBB, acceptance is expressly limited to these terms. The Website is available only to individuals who are at least 13 years old.
 								</span>
 							</p>
 							<ol>
@@ -57,7 +57,7 @@
 									Your NodeBB.org Account and Site.
 									</span>
 									<span>
-									If you create a forum on the Website, you are responsible for maintaining the security of your account and forum, and you are fully responsible for all activities that occur under the account and any other actions taken in connection with the forum. You must not describe or assign keywords to your forum in a misleading or unlawful manner, including in a manner intended to trade on the name or reputation of others, and Design Create Play may change or remove any description or keyword that it considers inappropriate or unlawful, or otherwise likely to cause Design Create Play liability. You must immediately notify Design Create Play of any unauthorized uses of your forum, your account or any other breaches of security. Design Create Play will not be liable for any acts or omissions by You, including any damages of any kind incurred as a result of such acts or omissions.
+									If you create a forum on the Website, you are responsible for maintaining the security of your account and forum, and you are fully responsible for all activities that occur under the account and any other actions taken in connection with the forum. You must not describe or assign keywords to your forum in a misleading or unlawful manner, including in a manner intended to trade on the name or reputation of others, and NodeBB may change or remove any description or keyword that it considers inappropriate or unlawful, or otherwise likely to cause NodeBB liability. You must immediately notify NodeBB of any unauthorized uses of your forum, your account or any other breaches of security. NodeBB will not be liable for any acts or omissions by You, including any damages of any kind incurred as a result of such acts or omissions.
 									</span>
 								</li>
 							</ol>
@@ -120,17 +120,17 @@
 								</li>
 								<li>
 									<span>
-									You have, in the case of Content that includes computer code, accurately categorized and/or described the type, nature, uses and effects of the materials, whether requested to do so by Design Create Play or otherwise.
+									You have, in the case of Content that includes computer code, accurately categorized and/or described the type, nature, uses and effects of the materials, whether requested to do so by NodeBB or otherwise.
 									</span>
 								</li>
 								<p class="m-t inf">
 									<span>
-									By submitting Content to Design Create Play for inclusion on your Website, you grant Design Create Play a world-wide, royalty-free, and non-exclusive license to reproduce, modify, adapt and publish the Content solely for the purpose of displaying, distributing and promoting your forum. If you delete Content, Design Create Play will use reasonable efforts to remove it from the Website, but you acknowledge that caching or references to the Content may not be made immediately unavailable.
+									By submitting Content to NodeBB for inclusion on your Website, you grant NodeBB a world-wide, royalty-free, and non-exclusive license to reproduce, modify, adapt and publish the Content solely for the purpose of displaying, distributing and promoting your forum. If you delete Content, NodeBB will use reasonable efforts to remove it from the Website, but you acknowledge that caching or references to the Content may not be made immediately unavailable.
 									</span>
 								</p>
 								<p class="m-b-lg inf">
 									<span>
-									Without limiting any of those representations or warranties, Design Create Play has the right (though not the obligation) to, in its sole discretion (i) refuse or remove any content that, in Design Create Play 's reasonable opinion, violates any Design Create Play policy or is in any way harmful or objectionable, or (ii) terminate or deny access to and use of the Website to any individual or entity for any reason, in Design Create Play’s sole discretion. Design Create Play will have no obligation to produce a refund of any amounts previously paid, however, depending on the circumstance, and at its sole option may reimburse for prepaid future usage.
+									Without limiting any of those representations or warranties, NodeBB has the right (though not the obligation) to, in its sole discretion (i) refuse or remove any content that, in NodeBB 's reasonable opinion, violates any NodeBB policy or is in any way harmful or objectionable, or (ii) terminate or deny access to and use of the Website to any individual or entity for any reason, in NodeBB’s sole discretion. NodeBB will have no obligation to produce a refund of any amounts previously paid, however, depending on the circumstance, and at its sole option may reimburse for prepaid future usage.
 									</span>
 								</p>
 							</ul>
@@ -140,13 +140,13 @@
 									Fees and Payment.
 									</span>
 									<span>
-									By selecting a subscription plan you agree to pay Design Create Play the monthly or annual subscription fees for the service and additional usage fees indicated for that subscription plan. Initially,
+									By selecting a subscription plan you agree to pay NodeBB the monthly or annual subscription fees for the service and additional usage fees indicated for that subscription plan. Initially,
 									</span>
 									<span>
 									you will be billed a pro-rated charge for usage of NodeBB until the end of the calendar month. For every month thereafter, you will be billed on the first of each month for use of your NodeBB.
 									</span>
 									<span>
-									Subscription fees are not refundable and are paid in advance of using such services. Payment for Services will be made by a valid credit card accepted by Design Create Play, unless other payment arrangements have been made. You hereby authorize Design Create Play and its third party payment processor service(s) to charge your credit card for such amounts according to your service usage. Design Create Play reserves the right to change the payment terms and fees upon thirty (30) days prior written notice to you. Unless otherwise stated in your subscription agreement, the subscription can be canceled by you at any time.
+									Subscription fees are not refundable and are paid in advance of using such services. Payment for Services will be made by a valid credit card accepted by NodeBB, unless other payment arrangements have been made. You hereby authorize NodeBB and its third party payment processor service(s) to charge your credit card for such amounts according to your service usage. NodeBB reserves the right to change the payment terms and fees upon thirty (30) days prior written notice to you. Unless otherwise stated in your subscription agreement, the subscription can be canceled by you at any time.
 									</span>
 								</li>
 							</ol>
@@ -156,7 +156,7 @@
 									Responsibility of Website Visitors.
 									</span>
 									<span>
-									Design Create Play has not reviewed, and cannot review, all of the material, including computer software, posted to the Website, and cannot therefore be responsible for that material's content, use or effects. By operating the Website, Design Create Play does not represent or imply that it endorses the material there posted, or that it believes such material to be accurate, useful or non-harmful. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. The Website may contain content that is offensive, indecent, or otherwise objectionable, as well as content containing technical inaccuracies, typographical mistakes, and other errors. The Website may also contain material that violates the privacy or publicity rights, or infringes the intellectual property and other proprietary rights, of third parties, or the downloading, copying or use of which is subject to additional terms and conditions, stated or unstated. Design Create Play disclaims any responsibility for any harm resulting from the use by visitors of the Website, or from any downloading by those visitors of content there posted.
+									NodeBB has not reviewed, and cannot review, all of the material, including computer software, posted to the Website, and cannot therefore be responsible for that material's content, use or effects. By operating the Website, NodeBB does not represent or imply that it endorses the material there posted, or that it believes such material to be accurate, useful or non-harmful. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. The Website may contain content that is offensive, indecent, or otherwise objectionable, as well as content containing technical inaccuracies, typographical mistakes, and other errors. The Website may also contain material that violates the privacy or publicity rights, or infringes the intellectual property and other proprietary rights, of third parties, or the downloading, copying or use of which is subject to additional terms and conditions, stated or unstated. NodeBB disclaims any responsibility for any harm resulting from the use by visitors of the Website, or from any downloading by those visitors of content there posted.
 									</span>
 								</li>
 							</ol>
@@ -166,7 +166,7 @@
 									Content Posted on Other Websites.
 									</span>
 									<span>
-									We have not reviewed, and cannot review, all of the material, including computer software, made available through the websites and webpages to which NodeBB.org links, and that link to NodeBB.org. Design Create Play does not have any control over those non-NodeBB forums, websites and webpages, and is not responsible for their contents or their use. By linking to a non-NodeBB forums, website or webpage, Design Create Play does not represent or imply that it endorses such website or webpage. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. Design Create Play disclaims any responsibility for any harm resulting from your use of non-NodeBB forums, websites and webpages.
+									We have not reviewed, and cannot review, all of the material, including computer software, made available through the websites and webpages to which NodeBB.org links, and that link to NodeBB.org. NodeBB does not have any control over those non-NodeBB forums, websites and webpages, and is not responsible for their contents or their use. By linking to a non-NodeBB forums, website or webpage, NodeBB does not represent or imply that it endorses such website or webpage. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. NodeBB disclaims any responsibility for any harm resulting from your use of non-NodeBB forums, websites and webpages.
 									</span>
 								</li>
 							</ol>
@@ -176,7 +176,7 @@
 									Copyright Infringement and DMCA Policy.
 									</span>
 									<span>
-									As Design Create Play asks others to respect its intellectual property rights, it respects the intellectual property rights of others. If you believe that material located on or linked to by NodeBB.org violates your copyright, you are encouraged to notify Design Create Play in accordance with
+									As NodeBB asks others to respect its intellectual property rights, it respects the intellectual property rights of others. If you believe that material located on or linked to by NodeBB.org violates your copyright, you are encouraged to notify NodeBB in accordance with
 									</span>
 									<span>
 									<a href="dmca">
@@ -184,7 +184,7 @@
 									</a>.
 									</span>
 									<span>
-									Design Create Play will respond to all such notices, including as required or appropriate by removing the infringing material or disabling all links to the infringing material. In the case of a visitor who may infringe or repeatedly infringes the copyrights or other intellectual property rights of Design Create Play or others, Design Create Play may, in its discretion, terminate or deny access to and use of the Website. In the case of such termination, Design Create Play will have no obligation to provide a refund of any amounts previously paid to Design Create Play.
+									NodeBB will respond to all such notices, including as required or appropriate by removing the infringing material or disabling all links to the infringing material. In the case of a visitor who may infringe or repeatedly infringes the copyrights or other intellectual property rights of NodeBB or others, NodeBB may, in its discretion, terminate or deny access to and use of the Website. In the case of such termination, NodeBB will have no obligation to provide a refund of any amounts previously paid to NodeBB.
 									</span>
 								</li>
 							</ol>
@@ -194,7 +194,7 @@
 									Intellectual Property.
 									</span>
 									<span>
-									This Agreement does not transfer from Design Create Play to you any Design Create Play or third party intellectual property, and all right, title and interest in and to such property will remain (as between the parties) solely with Design Create Play. Design Create Play, NodeBB Forums, NodeBB.org, the NodeBB.org logo, and all other trademarks, service marks, graphics and logos used in connection with NodeBB.org, or the Website are trademarks or registered trademarks of Design Create Play or Design Create Play's licensors. Other trademarks, service marks, graphics and logos used in connection with the Website may be the trademarks of other third parties. Your use of the Website grants you no right or license to reproduce or otherwise use any Design Create Play or third-party trademarks.
+									This Agreement does not transfer from NodeBB to you any NodeBB or third party intellectual property, and all right, title and interest in and to such property will remain (as between the parties) solely with NodeBB. NodeBB, NodeBB Forums, NodeBB.org, the NodeBB.org logo, and all other trademarks, service marks, graphics and logos used in connection with NodeBB.org, or the Website are trademarks or registered trademarks of NodeBB or NodeBB's licensors. Other trademarks, service marks, graphics and logos used in connection with the Website may be the trademarks of other third parties. Your use of the Website grants you no right or license to reproduce or otherwise use any NodeBB or third-party trademarks.
 									</span>
 								</li>
 							</ol>
@@ -204,7 +204,7 @@
 									Changes.
 									</span>
 									<span>
-									Design Create Play reserves the right, at its sole discretion, to modify or replace any part of this Agreement. It is your responsibility to check this Agreement periodically for changes. Your continued use of or access to the Website following the posting of any changes to this Agreement constitutes acceptance of those changes. Design Create Play may also, in the future, offer new services and/or features through the Website (including, the release of new tools and resources). Such new features and/or services shall be subject to the terms and conditions of this Agreement.
+									NodeBB reserves the right, at its sole discretion, to modify or replace any part of this Agreement. It is your responsibility to check this Agreement periodically for changes. Your continued use of or access to the Website following the posting of any changes to this Agreement constitutes acceptance of those changes. NodeBB may also, in the future, offer new services and/or features through the Website (including, the release of new tools and resources). Such new features and/or services shall be subject to the terms and conditions of this Agreement.
 									</span>
 								</li>
 							</ol>
@@ -219,7 +219,7 @@
 								</li>
 								<p class="m-t-lg m-b-lg inf">
 									<span>
-									Design Create Play may terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately. Notwithstanding the foregoing, if you have a paid subscription plan or signed agreement with Design Create Play, such account can only be terminated by Design Create Play if you materially breach this Agreement and fail to cure such breach within thirty (30) days from Design Create Play 's notice to you thereof; provided that, Design Create Play can terminate the Website immediately as part of a general shut down of our service. All provisions of this Agreement which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+									NodeBB may terminate your access to all or any part of the Website at any time, with or without cause, with or without notice, effective immediately. Notwithstanding the foregoing, if you have a paid subscription plan or signed agreement with NodeBB, such account can only be terminated by NodeBB if you materially breach this Agreement and fail to cure such breach within thirty (30) days from NodeBB 's notice to you thereof; provided that, NodeBB can terminate the Website immediately as part of a general shut down of our service. All provisions of this Agreement which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
 									</span>
 								</p>
 							</ol>
@@ -229,7 +229,7 @@
 									Disclaimer of Warranties.
 									</span>
 									<span>
-									The Website is provided “as is”. Design Create Play and its suppliers and licensors hereby disclaim all warranties of any kind, express or implied, including, without limitation, the warranties of merchantability, fitness for a particular purpose and non-infringement. Neither Design Create Play nor its suppliers and licensors, makes any warranty that the Website will be error free or that access thereto will be continuous or uninterrupted. You understand that you download from, or otherwise obtain content or services through, the Website at your own discretion and risk.
+									The Website is provided “as is”. NodeBB and its suppliers and licensors hereby disclaim all warranties of any kind, express or implied, including, without limitation, the warranties of merchantability, fitness for a particular purpose and non-infringement. Neither NodeBB nor its suppliers and licensors, makes any warranty that the Website will be error free or that access thereto will be continuous or uninterrupted. You understand that you download from, or otherwise obtain content or services through, the Website at your own discretion and risk.
 									</span>
 								</li>
 							</ol>
@@ -239,7 +239,7 @@
 									Limitation of Liability.
 									</span>
 									<span>
-									In no event will Design Create Play, or its suppliers or licensors, be liable with respect to any subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory for: (i) any special, incidental or consequential damages; (ii) the cost of procurement or substitute products or services; (iii) for interruption of use or loss or corruption of data; or (iv) for any amounts that exceed the fees paid by you to Design Create Play under this agreement during the twelve (12) month period prior to the cause of action. Design Create Play shall have no liability for any failure or delay due to matters beyond their reasonable control. The foregoing shall not apply to the extent prohibited by applicable law.
+									In no event will NodeBB, or its suppliers or licensors, be liable with respect to any subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory for: (i) any special, incidental or consequential damages; (ii) the cost of procurement or substitute products or services; (iii) for interruption of use or loss or corruption of data; or (iv) for any amounts that exceed the fees paid by you to NodeBB under this agreement during the twelve (12) month period prior to the cause of action. NodeBB shall have no liability for any failure or delay due to matters beyond their reasonable control. The foregoing shall not apply to the extent prohibited by applicable law.
 									</span>
 								</li>
 							</ol>
@@ -249,7 +249,7 @@
 									General Representation and Warranty.
 									</span>
 									<span>
-									You represent and warrant that (i) your use of the Website will be in strict accordance with the Design Create Play Privacy Policy, with this Agreement and with all applicable laws and regulations (including without limitation any local laws or regulations in your country, state, city, or other governmental area, regarding online conduct and acceptable content, and including all applicable laws regarding the transmission of technical data exported from the Design Create Play or the country in which you reside) and (ii) your use of the Website will not infringe or misappropriate the intellectual property rights of any third party.
+									You represent and warrant that (i) your use of the Website will be in strict accordance with the NodeBB Privacy Policy, with this Agreement and with all applicable laws and regulations (including without limitation any local laws or regulations in your country, state, city, or other governmental area, regarding online conduct and acceptable content, and including all applicable laws regarding the transmission of technical data exported from the NodeBB or the country in which you reside) and (ii) your use of the Website will not infringe or misappropriate the intellectual property rights of any third party.
 									</span>
 								</li>
 							</ol>
@@ -259,7 +259,7 @@
 									Indemnification.
 									</span>
 									<span>
-									You agree to indemnify and hold harmless Design Create Play, its contractors, and its licensors, and their respective directors, officers, employees and agents from and against any and all claims and expenses, including attorneys' fees, arising out of your use of the Website, including but not limited to your violation of this Agreement.
+									You agree to indemnify and hold harmless NodeBB, its contractors, and its licensors, and their respective directors, officers, employees and agents from and against any and all claims and expenses, including attorneys' fees, arising out of your use of the Website, including but not limited to your violation of this Agreement.
 									</span>
 								</li>
 								<p>
@@ -267,7 +267,7 @@
 									Miscellaneous.
 									</span>
 									<span>
-									This Agreement constitutes the entire agreement between Design Create Play and you concerning the subject matter hereof, and they may only be modified by a written amendment signed by an authorized executive of Design Create Play, or by the posting by Design Create Play of a revised version. The Agreement shall be governed by the laws of Canada without regard to its choice or law or conflict of laws provisions. All legal actions in connection with the Agreement shall be brought in the state or federal courts located in Toronto, Ontario, Canada. The prevailing party in any action or proceeding to enforce this Agreement shall be entitled to costs and attorneys' fees. If any part of this Agreement is held invalid or unenforceable, that part will be construed to reflect the parties' original intent, and the remaining portions will remain in full force and effect. A waiver by either party of any term or condition of this Agreement or any breach thereof, in any one instance, will not waive such term or condition or any subsequent breach thereof. Rights under this Agreement may be assigned to any party that consents to, and agrees to be bound by, its terms and conditions; Design Create Play may assign its rights under this Agreement without condition. This Agreement will be binding upon and will inure to the benefit of the parties, their successors and permitted assigns.
+									This Agreement constitutes the entire agreement between NodeBB and you concerning the subject matter hereof, and they may only be modified by a written amendment signed by an authorized executive of NodeBB, or by the posting by NodeBB of a revised version. The Agreement shall be governed by the laws of Canada without regard to its choice or law or conflict of laws provisions. All legal actions in connection with the Agreement shall be brought in the state or federal courts located in Toronto, Ontario, Canada. The prevailing party in any action or proceeding to enforce this Agreement shall be entitled to costs and attorneys' fees. If any part of this Agreement is held invalid or unenforceable, that part will be construed to reflect the parties' original intent, and the remaining portions will remain in full force and effect. A waiver by either party of any term or condition of this Agreement or any breach thereof, in any one instance, will not waive such term or condition or any subsequent breach thereof. Rights under this Agreement may be assigned to any party that consents to, and agrees to be bound by, its terms and conditions; NodeBB may assign its rights under this Agreement without condition. This Agreement will be binding upon and will inure to the benefit of the parties, their successors and permitted assigns.
 									</span>
 								</p>
 							</ol>
