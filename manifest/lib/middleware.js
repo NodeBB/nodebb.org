@@ -7,7 +7,7 @@ var middleware = {},
 	constants = require('../data.json'),
 	app;
 
-var originalPages = ['dmca', 'press', 'privacy', 'tos'];
+var originalPages = ['dmca', 'press', 'privacy', 'tos', '502'];
 
 middleware.buildPage = function(req, res, next) { 
 	res.page = path.join(req.params.page || 'index', req.params.subpage || '');
