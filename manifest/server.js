@@ -39,7 +39,13 @@ app.use(express.static('public', {
 app.use(middleware.processRender);
 
 app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
-	res.render(res.page, res.data);
+	var validPages = ['404', '502', 'dmca', 'index', 'press', 'pricing', 'privacy', 'tos', 'product'];
+
+	if (!req.params.page || validPages.indexOf(req.params.page) !== -1) {
+		res.render(res.page, res.data);
+	} else {
+		res.render('404', {});
+	}
 });
 
 var server = app.listen(nconf.get('port') || 3000, function() {
