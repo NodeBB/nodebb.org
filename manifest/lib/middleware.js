@@ -12,11 +12,13 @@ var originalPages = ['dmca', 'press', 'privacy', 'tos', '502'];
 middleware.buildPage = function(req, res, next) { 
 	res.page = path.join(req.params.page || 'index', req.params.subpage || '');
 
+	var title = (req.params.page || 'index') + (req.params.subpage ? ('/' + req.params.subpage) : '');
+
 	var data = {
 		'base_path': nconf.get('base_path'),
 		'dev': nconf.get('production') ? false : true,
 		'path': 'page-' + (req.url.slice(1).replace(/\//g, '-') || 'index'),
-		'title': constants.titles[res.page] || constants.titles.default,
+		'title': constants.titles[title] || constants.titles.default,
 		'loadOriginalCSS': originalPages.indexOf(res.page) !== - 1
 	};
 

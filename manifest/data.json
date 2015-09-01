@@ -1,10 +1,10 @@
 {
 	"titles": {
 		"index": "NodeBB Forum Software | Drive user engagement with a modern community platform",
-		"product\\modern-design": "NodeBB Forum Software | Mobile responsive design with real-time interactions",
-		"product\\control-panel": "NodeBB Forum Software | A powerful admin control panel with real-time analytics",
-		"product\\integrations": "NodeBB Forum Software | Integrate social networks, cloud-based services and apps",
-		"product\\extensibility": "NodeBB Forum Software | One-click installation of plugins, skins, and themes",
+		"product/modern-design": "NodeBB Forum Software | Mobile responsive design with real-time interactions",
+		"product/control-panel": "NodeBB Forum Software | A powerful admin control panel with real-time analytics",
+		"product/integrations": "NodeBB Forum Software | Integrate social networks, cloud-based services and apps",
+		"product/extensibility": "NodeBB Forum Software | One-click installation of plugins, skins, and themes",
 		"pricing": "NodeBB Forum Software | Select a plan that works best for your community",
 		"default": "NodeBB Forum Software | A better community platform for the modern web"
 	}
