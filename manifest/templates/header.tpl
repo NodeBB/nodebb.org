@@ -101,7 +101,7 @@
 
 		<nav>
 			<ul class="navigation mobile-hide" id="product-menu">
-				<li class="first"><a title="Grow your community with NodeBB" href="/#community">
+				<li class="first"><a title="Grow your community with NodeBB" href="/">
 					<strong>Grow Your Community</strong> <span class="mobile-only">&nbsp;<i class="fa fa-angle-right"></i></span><br />
 					<small>Drive user engagement with NodeBB</small>
 				</a></li>
