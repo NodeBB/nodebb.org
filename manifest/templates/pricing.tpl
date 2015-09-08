@@ -17,7 +17,7 @@
 					<li>Support tickets</li>
 					<li>SSL</li>
 					<li>Unlimited Users</li>
-					<li class="buy"><a href="#">Sign Up</a></li>
+					<li class="buy"><a href="//manage.nodebb.org/register">Sign Up</a></li>
 				</ul>
 				<ul>
 					<ul class="second">
@@ -28,7 +28,7 @@
 						<li>Support tickets </li>
 						<li>SSL</li>
 						<li>Unlimited Users</li>
-						<li class="buy"><a href="#">Sign Up</a></li>
+						<li class="buy"><a href="//manage.nodebb.org/register">Sign Up</a></li>
 					</ul>
 				</ul>
 				<ul class="third">
@@ -39,7 +39,7 @@
 					<li>VIP Support</li>
 					<li>SSL</li>
 					<li>Unlimited Users</li>
-					<li class="buy"><a href="#">Sign Up</a></li>
+					<li class="buy"><a href="//manage.nodebb.org/register">Sign Up</a></li>
 				</ul>
 				<ul class="fifth">
 					<li class="package">Developer's Edition</li>
