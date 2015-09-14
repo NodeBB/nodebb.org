@@ -3,8 +3,7 @@
 		<h1>Plugin Manager</h1>
 		<h2>Download and install plugins directly from the control panel in one click.</h2>
 
-		<img alt="The plugins control panel lets you choose from over 300 plugins to install" class="lazy-load" data-src="/assets/gallery/plugins.png" />
-		<noscript><img alt="The plugins control panel lets you choose from over 300 plugins to install" src="/assets/gallery/plugins.png" /></noscript>
+		<img alt="The plugins control panel lets you choose from over 300 plugins to install" src="/assets/gallery/plugins.png" />
 	</div>
 
 
@@ -16,8 +15,7 @@
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<img alt="Mention other users or groups to get their attention" class="lazy-load" data-src="/assets/gallery/mentions.png" />
-			<noscript><img alt="Mention other users or groups to get their attention" src="/assets/gallery/mentions.png" /></noscript>
+			<img alt="Mention other users or groups to get their attention" src="/assets/gallery/mentions.png" />
 		</div>
 		<div class="pull-right w30">
 			<h2>Mentions</h2>
@@ -42,15 +40,13 @@
 
 		</div>
 		<div class="pull-right w70">
-			<img alt="Post topics as a question and mark it as solved when it's answered" class="lazy-load" data-src="/assets/gallery/qanda.png" />
-			<noscript><img alt="Post topics as a question and mark it as solved when it's answered" src="/assets/gallery/qanda.png" /></noscript>
+			<img alt="Post topics as a question and mark it as solved when it's answered" src="/assets/gallery/qanda.png" />
 		</div>
 	</div>
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<img alt="Get an alert on your desktop when a notification pops up in NodeBB" class="lazy-load" data-src="/assets/gallery/desktop-notifications.png" />
-			<noscript><img alt="Get an alert on your desktop when a notification pops up in NodeBB" src="/assets/gallery/desktop-notifications.png" /></noscript>
+			<img alt="Get an alert on your desktop when a notification pops up in NodeBB" src="/assets/gallery/desktop-notifications.png" />
 		</div>
 		<div class="pull-right w30">
 			<h2>Desktop Notifications</h2>
@@ -71,8 +67,7 @@
 			</p>
 		</div>
 		<div class="pull-right w60">
-			<img alt="Gamification plugins engage your community by rewarding users for participation" class="lazy-load" data-src="/assets/gallery/nsawards.png" />
-			<noscript><img alt="Gamification plugins engage your community by rewarding users for participation" src="/assets/gallery/nsawards.png" /></noscript>
+			<img alt="Gamification plugins engage your community by rewarding users for participation" src="/assets/gallery/nsawards.png" />
 		</div>
 	</div>
 	<br />
@@ -82,8 +77,7 @@
 		<h2>NodeBB ships with 3 core themes. You can download more themes in the Plugins Control Panel.</h2>
 
 		<p>
-			<img alt="Customise your forum's look with a NodeBB Theme" class="lazy-load" data-src="/assets/gallery/themes.png" />
-			<noscript><img alt="Customise your forum's look with a NodeBB Theme" src="/assets/gallery/themes.png" /></noscript>
+			<img alt="Customise your forum's look with a NodeBB Theme" src="/assets/gallery/themes.png" />
 		</p>
 	</div>
 
@@ -92,8 +86,7 @@
 		<h2>NodeBB ships with 16 bootswatch skins. You can customize a skin with the Custom CSS Panel.</h2>
 
 		<p>
-			<img alt="Change the colour scheme of your forum with the skinning system" class="lazy-load" data-src="/assets/gallery/skins.png" />
-			<noscript><img alt="Change the colour scheme of your forum with the skinning system" src="/assets/gallery/skins.png" /></noscript>
+			<img alt="Change the colour scheme of your forum with the skinning system" src="/assets/gallery/skins.png" />
 		</p>
 	</div>
 

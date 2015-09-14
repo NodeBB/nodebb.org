@@ -2,21 +2,18 @@
 	<div class="clearfix dashboard text-center">
 		<h1>Control Everything</h1>
 		<h2>With over a dozen settings pages, you're able to administrate your forum as much as you want.</h2>
-		<img alt="NodeBB's control panel lets you customise every setting for your community forum" class="lazy-load" data-src="/assets/gallery/settings.png" />
-		<noscript><img alt="NodeBB's control panel lets you customise every setting for your community forum" src="/assets/gallery/settings.png" /></noscript>
+		<img alt="NodeBB's control panel lets you customise every setting for your community forum" src="/assets/gallery/settings.png" />
 	</div>
 
 	<div class="clearfix dashboard text-center">
 		<h1>Real-time Analytics Dashboard</h1>
 		<h2>Be in control with access to trending content, user activity, and other forum metrics.</h2>
-		<img alt="See what your users are doing with via NodeBB's real-time graphs" class="lazy-load" data-src="/assets/gallery/dashboard.png" />
-		<noscript><img alt="See what your users are doing with via NodeBB's real-time graphs" src="/assets/gallery/dashboard.png" /></noscript>
+		<img alt="See what your users are doing with via NodeBB's real-time graphs" src="/assets/gallery/dashboard.png" />
 	</div>
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<img alt="Use the custom CSS and custom header panel to insert styling or functionality" class="lazy-load" data-src="/assets/gallery/custom-css.png" />
-			<noscript><img alt="Use the custom CSS and custom header panel to insert styling or functionality" src="/assets/gallery/custom-css.png" /></noscript>
+			<img alt="Use the custom CSS and custom header panel to insert styling or functionality" src="/assets/gallery/custom-css.png" />
 		</div>
 		<div class="pull-right w30">
 			<h2>Customise with HTML, CSS, and JavaScript.</h2>
@@ -35,15 +32,13 @@
 
 		</div>
 		<div class="pull-right w70">
-			<img alt="Drag and drop widgets onto your forum to customise its look" class="lazy-load" data-src="/assets/gallery/widgets.png" />
-			<noscript><img alt="Drag and drop widgets onto your forum to customise its look" src="/assets/gallery/widgets.png" /></noscript>
+			<img alt="Drag and drop widgets onto your forum to customise its look" src="/assets/gallery/widgets.png" />
 		</div>
 	</div>
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<img alt="Control fine-grained permissions with the access control panel" class="lazy-load" data-src="/assets/gallery/privileges.png" />
-			<noscript><img alt="Control fine-grained permissions with the access control panel" src="/assets/gallery/privileges.png" /></noscript>
+			<img alt="Control fine-grained permissions with the access control panel" src="/assets/gallery/privileges.png" />
 		</div>
 		<div class="pull-right w30">
 			<h2>Access Control.</h2>

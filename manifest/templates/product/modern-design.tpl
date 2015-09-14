@@ -11,15 +11,13 @@
 	<div class="clearfix mobile-responsive text-center">
 		<h2>Choose between a "What You See is What You Get" editor or a Markdown editor to compose topics and replies.</h2>
 		<div class="relative">
-			<img alt="Choose between a WYSIWYG or Markdown composer" class="lazy-load" data-src="/assets/gallery/composer.png" data-src-mobile="/assets/gallery/composer.png" />
-			<noscript><img alt="Choose between a WYSIWYG or Markdown composer" src="/assets/gallery/composer.png" /></noscript>
+			<img alt="Choose between a WYSIWYG or Markdown composer" src="/assets/gallery/composer.png" />
 		</div>
 	</div>
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<img alt="Real-time chat with multi-tasking support" class="lazy-load" data-src="/assets/gallery/chat.png" data-src-mobile="/assets/gallery/chat.png" />
-			<noscript><img alt="Real-time chat with multi-tasking support" src="/assets/gallery/chat.png" /></noscript>
+			<img alt="Real-time chat with multi-tasking support" src="/assets/gallery/chat.png" />
 		</div>
 		<div class="pull-right w30">
 			<h2>Built-in Realtime Chat.</h2>
@@ -41,15 +39,13 @@
 
 		</div>
 		<div class="pull-right w70">
-			<img alt="User-created groups with activity feeds" class="lazy-load" data-src="/assets/gallery/groups.png" data-src-mobile="/assets/gallery/groups.png" />
-			<noscript><img alt="User-created groups with activity feeds" src="/assets/gallery/groups.png" /></noscript>
+			<img alt="User-created groups with activity feeds" src="/assets/gallery/groups.png" />
 		</div>
 	</div>
 
 	<div class="clearfix divided">
 		<div class="pull-left w70">
-			<img alt="Gamify your community with social interactions" class="lazy-load" data-src="/assets/gallery/reputation.png" data-src-mobile="/assets/gallery/reputation.png" />
-			<noscript><img alt="Gamify your community with social interactions" src="/assets/gallery/reputation.png" /></noscript>
+			<img alt="Gamify your community with social interactions" src="/assets/gallery/reputation.png" />
 		</div>
 		<div class="pull-right w30">
 			<h2 style="margin-top: 35px;">Social Interactions.</h2>
@@ -70,8 +66,7 @@
 			</p>
 		</div>
 		<div class="pull-right w70">
-			<img alt="Interact with other users in real-time" class="lazy-load" data-src="/assets/gallery/notifications2.png" data-src-mobile="/assets/gallery/notifications2.png" />
-			<noscript><img alt="Interact with other users in real-time" src="/assets/gallery/notifications2.png" /></noscript>
+			<img alt="Interact with other users in real-time" src="/assets/gallery/notifications2.png" />
 		</div>
 	</div>
 
