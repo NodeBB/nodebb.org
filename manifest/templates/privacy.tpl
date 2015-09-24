@@ -24,7 +24,7 @@
 				<div class="bg-splash dk splash-x">
 					<div class="container">
 						<div class="">
-							<h1 class="m-b-none text-white font-thin text-center logo"><a href="/" title="NodeBB"><img src="assets/images/logo-bb-wc.png" width="120" height="49" alt="NodeBB"></a></h1>
+							<h1 class="m-b-none text-white font-thin text-center logo"><a href="/" title="NodeBB"><img src="assets/images/logo-bb-wc.png" width="147" height="60" alt="NodeBB"></a></h1>
 							<h3 class="text-white font-thin text-center">NodeBB Privacy Policy</h3>
 						</div>
 					</div>
