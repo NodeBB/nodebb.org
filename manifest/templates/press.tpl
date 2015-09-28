@@ -102,6 +102,12 @@
         <div class="line"></div>
 
         <ul class="list-unstyled m-t-xl">
+      <li>
+        <p class="_1 h5 text-left clear m-b-lg">
+          28 September 2015<br />
+          <a class="m-t-xs block" href="http://gaffg.com/blog/the-future-of-forum-software-is-here/">Gaming Affiliates Guide</a>
+        </p>
+      </li>
 			<li>
 				<p class="_1 h5 text-left clear m-b-lg">
 					03 February 2014<br />
