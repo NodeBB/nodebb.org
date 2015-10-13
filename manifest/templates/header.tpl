@@ -86,9 +86,6 @@
 							<a title="NodeBB Blog" target="_blank" href="//blog.nodebb.org/" title="Blog">Blog</a>
 						</li>
 						<li>
-							<a title="NodeBB Documentation" href="//docs.nodebb.org" target="_blank" title="Documentation">Docs</a>
-						</li>
-						<li>
 							<a title="Sign in to manage your NodeBB forums" href="//manage.nodebb.org">Sign in</a>
 						</li>
 						<li>
