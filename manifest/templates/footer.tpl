@@ -27,11 +27,12 @@
 							<p class="m-t m-b">
 								<a title="Sales Email" href="mailto:sales@nodebb.org">
 								sales@nodebb.org
-								</a>
+								</a><br />
+								or <a onclick="javascript:Intercom('showNewMessage');">Chat with Us</a>
 							</p>
 							<p class="subtext">
-								Have a question? Send our sales team an email. We are here 24/7 to answer any questions
-							you may have regarding NodeBB.
+								Have a question? Send our sales team an email or reach out to us via chat.
+								We are here 24/7 to answer any questions you may have regarding NodeBB.
 							</p>
 						</div>
 						<div class="pull-left w33">
