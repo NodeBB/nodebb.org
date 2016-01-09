@@ -1,13 +1,13 @@
 <section class="hero">
 	<div class="hero-signup">
 		<span>Grow your community.</span><br />
-		<a title="Sign-up to create your NodeBB forum" href="//manage.nodebb.org/register" class="desktop-only">Create A Forum</a>
+		<a title="Sign-up to create your NodeBB forum" href="//manage.nodebb.org/register" class="desktop-only">Start Free Trial</a>
 	</div>
 	<div id="canvas" class="container">
 		<img alt="Grow your community with NodeBB" src="assets/animation/frames/frame0.gif" width="100%" />
 	</div>
 	<div class="hero-signup tablet-only">
-		<a title="Sign-up to create your NodeBB forum" href="//manage.nodebb.org/register" class="tablet-only">Create A Forum</a>
+		<a title="Sign-up to create your NodeBB forum" href="//manage.nodebb.org/register" class="tablet-only">Start Free Trial</a>
 	</div>
 </section>
 

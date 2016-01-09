@@ -13,35 +13,49 @@
 					<li class="package">Hamlet</li>
 					<li class="price"><sup>$</sup> <span class="number">100</span> <span class="duration">/ month</span></li>
 					<li><strong>500k</strong> monthly pageviews</li>
+					<li>95% Uptime SLA</li>
 					<li>Daily Backups</li>
-					<li>Support tickets</li>
-					<li>SSL</li>
+					<li>8x5 Online Support</li>
+					<li>Free SSL</li>
 					<li>Unlimited Users</li>
-					<li class="buy"><a href="//manage.nodebb.org/register">Sign Up</a></li>
+					<li class="buy"><a href="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 				</ul>
 				<ul>
 					<ul class="second">
 						<li class="package">Village<br /><small>Best for small businesses</small></li>
 						<li class="price"><sup>$</sup> <span class="number">250</span> <span class="duration">/ month</span></li>
 						<li><strong>2m</strong> monthly pageviews</li>
+						<li>95% Uptime SLA</li>
 						<li>Daily Backups</li>
-						<li>Support tickets </li>
-						<li>SSL</li>
+						<li>24x7 Online Support</li>
+						<li>Free SSL</li>
 						<li>Unlimited Users</li>
-						<li class="buy"><a href="//manage.nodebb.org/register">Sign Up</a></li>
+						<li class="buy"><a href="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 					</ul>
 				</ul>
 				<ul class="third">
 					<li class="package">City</li>
 					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">/ month</span></li>
-					<li><strong>5m</strong> monthly pageviews</li>
+					<li><strong>10m</strong> monthly pageviews</li>
+					<li>99% Uptime SLA</li>
 					<li>Daily Backups</li>
-					<li>VIP Support</li>
-					<li>SSL</li>
+					<li>24x7 Online Support</li>
+					<li>Free SSL</li>
 					<li>Unlimited Users</li>
-					<li class="buy"><a href="//manage.nodebb.org/register">Sign Up</a></li>
+					<li class="buy"><a href="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 				</ul>
-				<ul class="fifth">
+				<ul class="fourth">
+					<li class="package">Enterprise</li>
+					<li class="price"><span class="number">Contact Us!</span><br /><span class="duration">"City" plan, plus...</span></li>
+					<li><strong>10m+</strong> monthly pageviews</li>
+					<li>100% Uptime SLA</li>
+					<li>Hourly Backups</li>
+					<li>VIP Online/Phone Support</li>
+					<li>White-labeled Android App</li>
+					<li>Dedicated Community Manager</li>
+					<li class="buy"><a href="javascript:Intercom('showNewMessage');">Contact Us</a></li>
+				</ul>
+				<!-- <ul class="fifth">
 					<li class="package">Custom Theme</li>
 					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">+</span></li>
 					<li class="buy"><a class="pointer" onclick="javascript:Intercom('showNewMessage');">Contact Us &nbsp;<i class="fa fa-comments-o"></i></a></li>
@@ -51,7 +65,7 @@
 					<li class="package">Developer's Edition</li>
 					<li class="price"><span class="number" style="font-size: 19px;">Free &amp; Open Source</span></span></li>
 					<li class="buy"><a href="https://github.com/NodeBB/NodeBB/" target="_top">Github &nbsp;<i class="fa fa-external-link-square"></i></a></li>
-				</ul>
+				</ul> -->
 			</div>
 		</div>
 
