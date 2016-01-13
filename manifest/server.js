@@ -50,6 +50,7 @@ app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
 
 		res.render(res.page, res.data);
 	} else {
+		res.statusCode = 404;
 		res.render('404', {});
 	}
 });
