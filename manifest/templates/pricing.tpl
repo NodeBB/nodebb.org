@@ -44,7 +44,7 @@
 					<li>Unlimited Users</li>
 					<li class="buy"><a href="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 				</ul>
-				<ul class="fourth">
+				<!-- <ul class="fourth">
 					<li class="package">Enterprise</li>
 					<li class="price"><span class="number">Contact Us!</span><br /><span class="duration">"City" plan, plus...</span></li>
 					<li><strong>10m+</strong> monthly pageviews</li>
@@ -54,8 +54,8 @@
 					<li>White-labeled Android App</li>
 					<li>Dedicated Community Manager</li>
 					<li class="buy"><a href="javascript:Intercom('showNewMessage');">Contact Us</a></li>
-				</ul>
-				<!-- <ul class="fifth">
+				</ul> -->
+				<ul class="fifth">
 					<li class="package">Custom Theme</li>
 					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">+</span></li>
 					<li class="buy"><a class="pointer" onclick="javascript:Intercom('showNewMessage');">Contact Us &nbsp;<i class="fa fa-comments-o"></i></a></li>
@@ -65,7 +65,7 @@
 					<li class="package">Developer's Edition</li>
 					<li class="price"><span class="number" style="font-size: 19px;">Free &amp; Open Source</span></span></li>
 					<li class="buy"><a href="https://github.com/NodeBB/NodeBB/" target="_top">Github &nbsp;<i class="fa fa-external-link-square"></i></a></li>
-				</ul> -->
+				</ul>
 			</div>
 		</div>
 
