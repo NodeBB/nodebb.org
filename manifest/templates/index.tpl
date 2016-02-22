@@ -70,6 +70,30 @@
 			<p>NodeBB's Analytics Dashboard has real-time graphs and tools to help you find out what content your users enjoy most.</p>
 		</div>
 	</div>
+
+	<div class="clearfix text-center companies-using-nodebb">
+		<h2>In use by companies like...</h2>
+		<div class="companies">
+			<div>
+				<a href="https://www.pagecloud.com"><img src="/assets/logos/pagecloud.png" /></a>
+			</div>
+			<div>
+				<a href="https://onsen.io/"><img src="/assets/logos/onsen.png" /></a>
+			</div>
+			<div class="flux-logo">
+				<a href="https://justgetflux.com/">
+					<img src="/assets/logos/flux.png" /><span>f.lux</span><span>&reg;</span>
+				</a>
+			</div>
+			<div class="campusprotein-logo">
+				<a href="https://www.campusprotein.com"><img src="/assets/logos/campusprotein.png" /></a>
+			</div>
+			<div>
+				<a href="https://expii.com"><img src="/assets/logos/expii.png" /></a>
+			</div>
+			<a href="https://notepad-plus-plus.org" class="npp-logo"></a>
+		</div>
+	</div>
 </section>
 
 <div class="container">

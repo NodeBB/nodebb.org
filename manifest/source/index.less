@@ -29,3 +29,75 @@
 		color: @brand-primary;
 	}
 }
+
+.companies-using-nodebb {
+	h2 {
+		font-size: 32px;
+		margin-top: 70px;
+		margin-bottom: 50px;
+		color: #333;
+	}
+
+	.companies {
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 1rem;
+
+		> div {
+			margin: auto 2rem;
+			padding: 1rem;
+		}
+
+		.flux-logo {
+			font-size: 36px;
+			font-weight: bold;
+			white-space: nowrap;
+
+			a {
+				text-decoration: none;
+			}
+
+			span {
+				padding-left: 0.5rem;
+				color: #333;
+			}
+
+			span:last-child {
+				padding-left: 0;
+				font-size: 16px;
+			}
+
+			img {
+				vertical-align: middle;
+			}
+		}
+
+		.campusprotein-logo {
+			background-color: black;
+
+			img {
+				position: relative;
+				top: 5px;
+			}
+		}
+
+		.npp-logo {
+			background-image: url("/assets/logos/npp.png");
+			width: 180px;
+			height: 120px;
+			margin: auto 2rem;
+			padding: 1rem;
+
+			&:hover {
+				background-position: 0 -153px;
+			}
+		}
+	}
+}
+
+@media (min-width: 320px) {
+	.companies-using-nodebb img {
+		max-width: 200px;
+	}
+}
