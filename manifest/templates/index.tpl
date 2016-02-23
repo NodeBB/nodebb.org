@@ -75,23 +75,26 @@
 		<h2>In use by companies like...</h2>
 		<div class="companies">
 			<div>
-				<a href="https://www.pagecloud.com"><img src="/assets/logos/pagecloud.png" /></a>
+				<a target="_blank" href="https://www.adultswim.com"><img src="/assets/logos/adultswim.png" /></a>
 			</div>
 			<div>
-				<a href="https://onsen.io/"><img src="/assets/logos/onsen.png" /></a>
+				<a target="_blank" href="https://www.pagecloud.com"><img src="/assets/logos/pagecloud.png" /></a>
 			</div>
+			<a target="_blank" href="https://notepad-plus-plus.org" class="npp-logo"></a>
 			<div class="flux-logo">
-				<a href="https://justgetflux.com/">
+				<a target="_blank" href="https://justgetflux.com/">
 					<img src="/assets/logos/flux.png" /><span>f.lux</span><span>&reg;</span>
 				</a>
 			</div>
+			<div>
+				<a target="_blank" href="https://onsen.io/"><img src="/assets/logos/onsen.png" /></a>
+			</div>
 			<div class="campusprotein-logo">
-				<a href="https://www.campusprotein.com"><img src="/assets/logos/campusprotein.png" /></a>
+				<a target="_blank" href="https://www.campusprotein.com"><img src="/assets/logos/campusprotein.png" /></a>
 			</div>
 			<div>
-				<a href="https://expii.com"><img src="/assets/logos/expii.png" /></a>
+				<a target="_blank" href="https://expii.com"><img src="/assets/logos/expii.png" /></a>
 			</div>
-			<a href="https://notepad-plus-plus.org" class="npp-logo"></a>
 		</div>
 	</div>
 </section>
