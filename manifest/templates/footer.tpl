@@ -53,11 +53,6 @@
 							<p class="h5 m-b inline text-left m-r">
 								<a href="//blog.nodebb.org/">Blog</a>
 							</p>
-							<p class="col-md-12 h4 m-b text-center">
-								<a title="SSL Check" href="https://sslcheck.globalsign.com/en_US/sslcheck?host=nodebb.org">
-									<img alt="SSL Secured with GlobalSign" class="gss-logo" src="https://static1.globalsign.com/images/seal/ssv4/seal_125-50_white.png">
-								</a>
-							</p>
 						</div>
 					</div>
 					<div class="container copyright-text">
