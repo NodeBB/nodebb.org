@@ -53,6 +53,11 @@
 							<p class="h5 m-b inline text-left m-r">
 								<a href="//blog.nodebb.org/">Blog</a>
 							</p>
+							<div class="address">
+								Made in Canada with <i class="fa fa-heart"></i><br />
+								Suite #619, 341 King Street East<br />
+								Toronto, Ontario. M5A 1L1
+							</div>
 						</div>
 					</div>
 					<div class="container copyright-text">
