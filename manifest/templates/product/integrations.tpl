@@ -62,7 +62,7 @@
 
 		<div class="metro-box">
 			<div>
-				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-slack">Slack</a></strong>
+				<strong><a target="blank" href="https://www.npmjs.com/package/nodebb-plugin-slack-extended">Slack</a></strong>
 				<p>
 					Notify forum administrators of new posts in the community on their Slack channel
 				</p>
