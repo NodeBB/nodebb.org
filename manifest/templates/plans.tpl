@@ -26,7 +26,6 @@
 					<li class="price"><sup>$</sup> <span class="number">100</span> <span class="duration">/ month</span></li>
 					<li><strong>500k</strong> monthly pageviews</li>
 					<li>95% Uptime SLA</li>
-					<li>8x5 Online Support</li>
 					<li class="buy"><a href="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 				</ul>
 				<ul>
@@ -35,7 +34,6 @@
 						<li class="price"><sup>$</sup> <span class="number">250</span> <span class="duration">/ month</span></li>
 						<li><strong>2m</strong> monthly pageviews</li>
 						<li>95% Uptime SLA</li>
-						<li>24x7 Online Support</li>
 						<li class="buy"><a href="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 					</ul>
 				</ul>
@@ -44,7 +42,6 @@
 					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">/ month</span></li>
 					<li><strong>10m</strong> monthly pageviews</li>
 					<li>99% Uptime SLA</li>
-					<li>24x7 Online Support</li>
 					<li class="buy"><a href="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 				</ul>
 				<ul class="third">
