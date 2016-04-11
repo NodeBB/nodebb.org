@@ -5,6 +5,19 @@
 	text-align: center;
 	padding-bottom: 55px;
 
+	.metropolis {
+		text-align: center;
+		p {
+			padding: 70px 0;
+		}
+	}
+
+	.plan-included {
+		margin-top: -15px;
+		margin-bottom: -20px;
+		color: black;
+	}
+
 	.page3 {
 		background: @brand-primary;
 		h3 {
@@ -220,5 +233,59 @@
 		ul {
 			width: 24.3%
 		}
+	}
+}
+
+// plans
+
+.you-host {
+	width: 100%;
+
+	strong {
+		text-transform: uppercase;
+		
+	}
+	.box {
+		    width: 40%;
+    display: inline-block;
+    color: #333;
+    background-color: #eee;
+    padding: 20px;
+    max-width: 300px;
+    margin: 10px;
+	}
+
+	.package {
+		background-color: #fff;
+		color: #333;
+		text-transform: none;
+	}
+
+	.price {
+		padding: 8px;
+	}
+
+	.buy {
+		margin-bottom: 8px;
+		a {
+			background-color: @fifth-color;
+
+			&:hover {
+				background-color: lighten(@fifth-color, 10%);
+			}
+		}
+	}
+
+
+	li {
+		background: #f0f0f0 !important;
+	}
+
+	a {
+		padding: 10px 0;
+		text-transform: uppercase;
+		font-weight: 300;
+		width: 175px;
+		display: inline-block;
 	}
 }
