@@ -27,7 +27,7 @@ $(document).ready(function() {
 		setupSly();
 	} else if ($('.page-index').length) {
 		setupCanvas();
-	} else if ($('.page-pricing').length) {
+	} else if ($('.page-pricing').length || $('.page-plans').length) {
 		$(window).resize(resizeWindow);
 		resizeWindow();
 		$('.left-arrow').on('click', scrollPlansLeft);
