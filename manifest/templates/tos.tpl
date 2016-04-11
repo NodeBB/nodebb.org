@@ -130,7 +130,7 @@
 								</p>
 								<p class="m-b-lg inf">
 									<span>
-									Without limiting any of those representations or warranties, NodeBB has the right (though not the obligation) to, in its sole discretion (i) refuse or remove any content that, in NodeBB 's reasonable opinion, violates any NodeBB policy or is in any way harmful or objectionable, or (ii) terminate or deny access to and use of the Website to any individual or entity for any reason, in NodeBB’s sole discretion. NodeBB will have no obligation to produce a refund of any amounts previously paid, however, depending on the circumstance, and at its sole option may reimburse for prepaid future usage.
+									Without limiting any of those representations or warranties, NodeBB has the right (though not the obligation) to, in its sole discretion (i) refuse or remove any content that, in NodeBB&apos;s reasonable opinion, violates any NodeBB policy or is in any way harmful or objectionable, or (ii) terminate or deny access to and use of the Website to any individual or entity for any reason, in NodeBB’s sole discretion. NodeBB will have no obligation to produce a refund of any amounts previously paid, however, depending on the circumstance, and at its sole option may reimburse for prepaid future usage.
 									</span>
 								</p>
 							</ul>
@@ -140,14 +140,23 @@
 									Fees and Payment.
 									</span>
 									<span>
-									By selecting a subscription plan you agree to pay NodeBB the monthly or annual subscription fees for the service and additional usage fees indicated for that subscription plan. Initially,
+										By selecting a subscription plan you agree to pay NodeBB the monthly or annual subscription fees for the service and additional usage fees indicated for that subscription plan.
 									</span>
-									<span>
-									you will be billed a pro-rated charge for usage of NodeBB until the end of the calendar month. For every month thereafter, you will be billed on the first of each month for use of your NodeBB.
-									</span>
-									<span>
-									Subscription fees are not refundable and are paid in advance of using such services. Payment for Services will be made by a valid credit card accepted by NodeBB, unless other payment arrangements have been made. You hereby authorize NodeBB and its third party payment processor service(s) to charge your credit card for such amounts according to your service usage. NodeBB reserves the right to change the payment terms and fees upon thirty (30) days prior written notice to you. Unless otherwise stated in your subscription agreement, the subscription can be canceled by you at any time.
-									</span>
+									<p>
+										At instance creation, you will be placed on a fourteen day (14-day) trial, at the end of which the hosting contract will begin.
+										The monthly billing date is fourteen days past initial instance creation.
+									</p>
+									<p>
+										Subscription fees are not refundable and are paid in advance of using such services.
+										Payment for Services will be made by a valid credit card accepted by NodeBB, unless other payment arrangements have been made.
+									</p>
+									<p>
+										You hereby authorize NodeBB and its third party payment processor service(s) to charge your credit card for such amounts according to your service usage.
+									</p>
+									<p>
+										NodeBB reserves the right to change the payment terms and fees upon thirty (30) days prior written electronic notice to you.
+										Unless otherwise stated in your subscription agreement, the subscription can be canceled by you at any time.
+									</p>
 								</li>
 							</ol>
 							<ol>
