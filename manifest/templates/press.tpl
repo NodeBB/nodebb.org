@@ -102,6 +102,12 @@
         <div class="line"></div>
 
         <ul class="list-unstyled m-t-xl">
+        <li>
+        <p class="_1 h5 text-left clear m-b-lg">
+          03 May 2016<br />
+          <a class="m-t-xs block" href="https://www.prlog.org/12554564-modern-forum-software-nodebb-powers-community-forum-for-flic-wireless-smart-button.html">Modern forum software NodeBB powers community forum for Flic wireless smart button</a>
+        </p>
+      </li>
       <li>
         <p class="_1 h5 text-left clear m-b-lg">
           28 September 2015<br />
