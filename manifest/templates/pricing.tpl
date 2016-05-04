@@ -35,7 +35,7 @@
 				</ul>
 				<ul class="third">
 					<li class="package">City</li>
-					<li class="price"><span class="number">Contact us...</span></li>
+					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">/ month</span></li>
 					<li><strong>5m+</strong> monthly pageviews</li>
 					<li>99% Uptime SLA</li>
 					<li>Daily Backups</li>
