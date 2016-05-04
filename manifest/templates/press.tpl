@@ -44,7 +44,7 @@
             <p class="_2 h4 text-left clear m-b-lg">
               There are currently
               <strong>
-                3
+                4
               </strong>
               employees.
             </p>
@@ -68,7 +68,7 @@
             <p class="_4 h4 text-left clear m-b-lg">
               There are now
               <strong>
-                31
+                40+
               </strong>
               languages available.
             </p>
@@ -77,7 +77,7 @@
           <li>
 
             <p class="_5 h4 text-left clear m-b-lg">
-              56 contributors and counting.
+              127 contributors and counting.
             </p>
 
           </li>
