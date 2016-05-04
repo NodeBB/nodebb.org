@@ -28,7 +28,7 @@
 								<a title="Sales Email" href="mailto:sales@nodebb.org">
 								sales@nodebb.org
 								</a><br />
-								or <a onclick="javascript:Intercom('showNewMessage');">Chat with Us</a>
+								or <a class="pointer" onclick="javascript:$zopim.livechat.window.show();">Chat with Us</a>
 							</p>
 							<p class="subtext">
 								Have a question? Send our sales team an email or reach out to us via chat.
@@ -125,13 +125,14 @@
 	</script>
 	<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100870636ns.gif" /></p></noscript>
 
-	<!-- intercom.io -->
-	<script>
-	window.intercomSettings = {
-		app_id: "udugx4o4"
-	};
+	<!--Start of Zopim Live Chat Script-->
+	<script type="text/javascript">
+	window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+	d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+	_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+	$.src="//v2.zopim.com/?3tD283j1qO6OkTMlM0C9SQZkB3f494fg";z.t=+new Date;$.
+	type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	</script>
-	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/udugx4o4';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-	<!-- End intercom.io -->
+	<!--End of Zopim Live Chat Script-->
 </body>
 </html>
