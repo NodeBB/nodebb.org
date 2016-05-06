@@ -75,7 +75,7 @@
 									The Content is not pornographic, libelous or defamatory
 									</span>
 									<span>
-									(<a href="http://www.eff.com/issues/bloggers/legal/liability/defamation">more info on what that means</a>)
+									(<a href="http://www.eff.com/issues/bloggers/legal/liability/defamation" onclick="trackOutboundLink('http://www.eff.com/issues/bloggers/legal/liability/defamation'); return false;">more info on what that means</a>)
 									</span>
 									<span>
 									, does not contain threats or incite violence towards individuals or entities, and does not violate the privacy or publicity rights of any third party;

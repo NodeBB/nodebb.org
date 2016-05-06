@@ -105,37 +105,37 @@
         <li>
         <p class="_1 h5 text-left clear m-b-lg">
           03 May 2016<br />
-          <a class="m-t-xs block" href="https://www.prlog.org/12554564-modern-forum-software-nodebb-powers-community-forum-for-flic-wireless-smart-button.html">Modern forum software NodeBB powers community forum for Flic wireless smart button</a>
+          <a class="m-t-xs block" href="https://www.prlog.org/12554564-modern-forum-software-nodebb-powers-community-forum-for-flic-wireless-smart-button.html" onclick="trackOutboundLink('https://www.prlog.org/12554564-modern-forum-software-nodebb-powers-community-forum-for-flic-wireless-smart-button.html'); return false;">Modern forum software NodeBB powers community forum for Flic wireless smart button</a>
         </p>
       </li>
       <li>
         <p class="_1 h5 text-left clear m-b-lg">
           28 September 2015<br />
-          <a class="m-t-xs block" href="http://gaffg.com/blog/the-future-of-forum-software-is-here/">Gaming Affiliates Guide</a>
+          <a class="m-t-xs block" href="http://gaffg.com/blog/the-future-of-forum-software-is-here/" onclick="trackOutboundLink('http://gaffg.com/blog/the-future-of-forum-software-is-here/'); return false;">Gaming Affiliates Guide</a>
         </p>
       </li>
 			<li>
 				<p class="_1 h5 text-left clear m-b-lg">
 					03 February 2014<br />
-					<a class="m-t-xs block" href="http://www.lafermeduweb.net/billet/nodebb-une-plateforme-de-forums-moderne-et-open-source-en-node-js-1701.html">LaFermeDuWeb.net</a>
+					<a class="m-t-xs block" href="http://www.lafermeduweb.net/billet/nodebb-une-plateforme-de-forums-moderne-et-open-source-en-node-js-1701.html" onclick="trackOutboundLink('http://www.lafermeduweb.net/billet/nodebb-une-plateforme-de-forums-moderne-et-open-source-en-node-js-1701.html'); return false;">LaFermeDuWeb.net</a>
 				</p>
 			</li>
 			<li>
 				<p class="_1 h5 text-left clear m-b-lg">
 					05 December 2013<br />
-					<a class="m-t-xs block" href="http://strongloop.com/strongblog/in-the-loop-nodebb-using-node-js-to-become-the-discussion-platform-of-the-future/">StrongLoop</a>
+					<a class="m-t-xs block" href="http://strongloop.com/strongblog/in-the-loop-nodebb-using-node-js-to-become-the-discussion-platform-of-the-future/" onclick="trackOutboundLink('http://strongloop.com/strongblog/in-the-loop-nodebb-using-node-js-to-become-the-discussion-platform-of-the-future/'); return false;">StrongLoop</a>
 				</p>
 			</li>
 			<li>
 				<p class="_1 h5 text-left clear m-b-lg">
 					18 November 2013<br />
-					<a class="m-t-xs block" href="http://www.cmscritic.com/nodebb-v0.1.0-released/">CMS Critic</a>
+					<a class="m-t-xs block" href="http://www.cmscritic.com/nodebb-v0.1.0-released/" onclick="trackOutboundLink('http://www.cmscritic.com/nodebb-v0.1.0-released/'); return false;">CMS Critic</a>
 				</p>
 			</li>
 			<li>
 				<p class="_1 h5 text-left clear m-b-lg">
 					08 October 2013<br />
-					<a class="m-t-xs block" href="http://nodecode.de/nodejs-forum-nodebb">NodeCode.de</a>
+					<a class="m-t-xs block" href="http://nodecode.de/nodejs-forum-nodebb" onclick="trackOutboundLink('http://nodecode.de/nodejs-forum-nodebb'); return false;">NodeCode.de</a>
 				</p>
 			</li>
         </ul>
@@ -154,7 +154,7 @@
 	<div class="bg-primary bg-splash-c text-center">
 		<div class="container wrapper">
 			<div class="m-t m-b text-white h3">
-				<a href="https://drive.google.com/folderview?id=0B6ij6Y_hCx6hTHJFcXBpUk5BSjQ&usp=sharing" target="_blank" class="text-sm btn btn-lg btn-rounded btn-landing b-white m-sm"> <i class="i i-book fa-3x pull-left m-l-sm m-r-xs"></i> <span class="block clear m-t-xs text-left m-r m-l">View/Download our<b class="text-lg block font-bold">Press Kit</b> </span> </a> or <a href="/nodebb_logos.zip" target="_blank" class="text-sm btn btn-lg btn-rounded btn-landing b-white m-sm"> <i class="i i-images fa-3x pull-left m-l-sm m-r-xs"></i> <span class="block clear m-t-xs text-left m-r m-l">Download our <b class="text-lg block font-bold">Images</b> </span> </a>
+				<a href="https://drive.google.com/folderview?id=0B6ij6Y_hCx6hTHJFcXBpUk5BSjQ&usp=sharing" onclick="trackOutboundLink('https://drive.google.com/folderview?id=0B6ij6Y_hCx6hTHJFcXBpUk5BSjQ&usp=sharing'); return false;" target="_blank" class="text-sm btn btn-lg btn-rounded btn-landing b-white m-sm"> <i class="i i-book fa-3x pull-left m-l-sm m-r-xs"></i> <span class="block clear m-t-xs text-left m-r m-l">View/Download our<b class="text-lg block font-bold">Press Kit</b> </span> </a> or <a href="/nodebb_logos.zip" target="_blank" class="text-sm btn btn-lg btn-rounded btn-landing b-white m-sm"> <i class="i i-images fa-3x pull-left m-l-sm m-r-xs"></i> <span class="block clear m-t-xs text-left m-r m-l">Download our <b class="text-lg block font-bold">Images</b> </span> </a>
 			</div>
 		</div>
 	</div>

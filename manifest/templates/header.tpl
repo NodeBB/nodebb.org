@@ -77,19 +77,19 @@
 							<a title="NodeBB - Modern Forum Software" href="/">Home</a>
 						</li>
 						<li>
-							<a title="NodeBB Plans and Pricing" href="/pricing" title="Plans & Pricing">Pricing</a>
+							<a title="NodeBB Plans and Pricing" href="/pricing" title="Plans &amp; Pricing">Pricing</a>
 						</li>
 						<li>
-							<a title="NodeBB Community Forum" class="demo-link" target="_blank" href="//community.nodebb.org/" title="Community">Community</a>
+							<a title="NodeBB Community Forum" class="demo-link" target="_blank" href="//community.nodebb.org/" title="Community" onclick="trackOutboundLink('//community.nodebb.org/'); return false;">Community</a>
 						</li>
 						<li>
-							<a title="NodeBB Blog" target="_blank" href="//blog.nodebb.org/" title="Blog">Blog</a>
+							<a title="NodeBB Blog" target="_blank" href="//blog.nodebb.org/" title="Blog" onclick="trackOutboundLink('//blog.nodebb.org/'); return false;">Blog</a>
 						</li>
 						<li>
-							<a title="Sign in to manage your NodeBB forums" href="//manage.nodebb.org">Sign in</a>
+							<a title="Sign in to manage your NodeBB forums" href="//manage.nodebb.org" onclick="trackOutboundLink('//manage.nodebb.org'); return false;">Sign in</a>
 						</li>
 						<li>
-							<a title="Sign up to create a NodeBB community forum" href="//manage.nodebb.org/register"><strong>Sign up</strong></a>
+							<a title="Sign up to create a NodeBB community forum" href="//manage.nodebb.org/register" onclick="trackOutboundLink('//manage.nodebb.org/register'); return false;"><strong>Sign up</strong></a>
 						</li>
 					</ul>
 				</div>

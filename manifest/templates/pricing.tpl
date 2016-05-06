@@ -18,7 +18,7 @@
 					<li>Online/community support</li>
 					<li>Free SSL</li>
 					<li>Unlimited Users</li>
-					<li class="buy"><a href="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
+					<li class="buy"><a href="//manage.nodebb.org/register" onclick="trackOutboundLink('//manage.nodebb.org/register'); return false;">Free 14-Day Trial</a></li>
 				</ul>
 				<ul>
 					<ul class="second">
@@ -30,7 +30,7 @@
 						<li>Online/community Support</li>
 						<li>Free SSL</li>
 						<li>Unlimited Users</li>
-						<li class="buy"><a href="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
+						<li class="buy"><a href="//manage.nodebb.org/register" onclick="trackOutboundLink('//manage.nodebb.org/register'); return false;">Free 14-Day Trial</a></li>
 					</ul>
 				</ul>
 				<ul class="third">
@@ -64,7 +64,7 @@
 					<li class="buy"><a class="pointer" onclick="javascript:$zopim.livechat.window.show();">Contact Us &nbsp;<i class="fa fa-comments-o"></i></a></li>
 					<li class="package">Developer's Edition</li>
 					<li class="price"><span class="number" style="font-size: 19px;">Free &amp; Open Source</span></span></li>
-					<li class="buy"><a href="https://github.com/NodeBB/NodeBB/" target="_top">Github &nbsp;<i class="fa fa-external-link-square"></i></a></li>
+					<li class="buy"><a href="https://github.com/NodeBB/NodeBB/" target="_top" onclick="trackOutboundLink('https://github.com/NodeBB/NodeBB/'); return false;">Github &nbsp;<i class="fa fa-external-link-square"></i></a></li>
 				</ul>
 			</div>
 		</div>

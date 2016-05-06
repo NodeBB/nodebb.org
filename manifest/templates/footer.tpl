@@ -51,7 +51,7 @@
 								<a title="DMCA" href="/dmca">DMCA</a>
 							</p>
 							<p class="h5 m-b inline text-left m-r">
-								<a href="//blog.nodebb.org/">Blog</a>
+								<a href="//blog.nodebb.org/" onclick="trackOutboundLink('//blog.nodebb.org'); return false;">Blog</a>
 							</p>
 							<div class="address">
 								Made in Canada with <i class="fa fa-heart"></i><br />
@@ -62,15 +62,15 @@
 					</div>
 					<div class="container copyright-text">
 						<p>
-							<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="btn btn-icon btn-rounded btn-facebook bg-empty m-sm">
+							<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" onclick="trackOutboundLink('https://www.facebook.com/NodeBB'); return false;" class="btn btn-icon btn-rounded btn-facebook bg-empty m-sm">
 							<i class="fa fa-facebook">
 							</i>
 							</a>
-							<a title="NodeBB Twitter Page" href="https://www.twitter.com/NodeBB" class="btn btn-icon btn-rounded btn-twitter bg-empty m-sm">
+							<a title="NodeBB Twitter Page" href="https://www.twitter.com/NodeBB" onclick="trackOutboundLink('https://www.twitter.com/NodeBB'); return false;" class="btn btn-icon btn-rounded btn-twitter bg-empty m-sm">
 							<i class="fa fa-twitter">
 							</i>
 							</a>
-							<a title="Fork NodeBB on Github" href="https://www.github.com/NodeBB/NodeBB" class="btn btn-icon btn-rounded btn-gplus bg-empty m-sm">
+							<a title="Fork NodeBB on Github" href="https://www.github.com/NodeBB/NodeBB" onclick="trackOutboundLink('https://www.github.com/NodeBB/NodeBB'); return false;" class="btn btn-icon btn-rounded btn-gplus bg-empty m-sm">
 							<i class="fa fa-github-alt">
 							</i>
 							</a>
