@@ -107,8 +107,9 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-45914244-2', 'auto');
-		ga('create', 'UA-45914244-5', 'auto');
+		ga('create', 'UA-45914244-5', 'auto', 'ComboTracker');
 		ga('send', 'pageview');
+		ga('ComboTracker.send', 'pageview');
 	</script>
 	
 	<script>
