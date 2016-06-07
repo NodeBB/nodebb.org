@@ -13,7 +13,6 @@
 					<li class="package">Hamlet</li>
 					<li class="price"><sup>$</sup> <span class="number">100</span> <span class="duration">/ month</span></li>
 					<li><strong>250k</strong> monthly pageviews</li>
-					<li>95% Uptime SLA</li>
 					<li>Daily Backups</li>
 					<li>Online/community support</li>
 					<li>Free SSL</li>
@@ -25,7 +24,6 @@
 						<li class="package">Village<br /><small>Best for small businesses</small></li>
 						<li class="price"><sup>$</sup> <span class="number">250</span> <span class="duration">/ month</span></li>
 						<li><strong>1m</strong> monthly pageviews</li>
-						<li>95% Uptime SLA</li>
 						<li>Daily Backups</li>
 						<li>Online/community Support</li>
 						<li>Free SSL</li>
@@ -37,7 +35,6 @@
 					<li class="package">City</li>
 					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">/ month</span></li>
 					<li><strong>5m+</strong> monthly pageviews</li>
-					<li>99% Uptime SLA</li>
 					<li>Daily Backups</li>
 					<li>Premium Support</li>
 					<li>Free SSL</li>
@@ -48,7 +45,6 @@
 					<li class="package">Enterprise</li>
 					<li class="price"><span class="number">Contact Us!</span><br /><span class="duration">"City" plan, plus...</span></li>
 					<li><strong>10m+</strong> monthly pageviews</li>
-					<li>100% Uptime SLA</li>
 					<li>Hourly Backups</li>
 					<li>VIP Online/Phone Support</li>
 					<li>White-labeled Android App</li>
@@ -57,7 +53,7 @@
 				</ul> -->
 				<ul class="fifth">
 					<li class="package">Custom Theme</li>
-					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">+</span></li>
+					<li class="price"><sup>$</sup> <span class="number">2500</span> <span class="duration">+</span></li>
 					<li class="buy"><a class="pointer" onclick="javascript:$zopim.livechat.window.show();">Contact Us &nbsp;<i class="fa fa-comments-o"></i></a></li>
 					<li class="package">Off-site Installation</li>
 					<li class="price" style="padding: 9px"><sup>$</sup> <span class="number">100</span> <span class="duration">+</span></li>
