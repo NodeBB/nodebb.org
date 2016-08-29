@@ -102,7 +102,13 @@
         <div class="line"></div>
 
         <ul class="list-unstyled m-t-xl">
-        <li>
+      <li>
+        <p class="_1 h5 text-left clear m-b-lg">
+          25 July 2016<br />
+          <a class="m-t-xs block" href="http://www.ibm.com/developerworks/cloud/library/cl-bluemix-nodebb-forum-trs/index.html?ca=drs-" onclick="trackOutboundLink('http://www.ibm.com/developerworks/cloud/library/cl-bluemix-nodebb-forum-trs/index.html?ca=drs-'); return false;">Deploy a modern forum with Bluemix and NodeBB</a>
+        </p>
+      </li>
+      <li>
         <p class="_1 h5 text-left clear m-b-lg">
           03 May 2016<br />
           <a class="m-t-xs block" href="https://www.prlog.org/12554564-modern-forum-software-nodebb-powers-community-forum-for-flic-wireless-smart-button.html" onclick="trackOutboundLink('https://www.prlog.org/12554564-modern-forum-software-nodebb-powers-community-forum-for-flic-wireless-smart-button.html'); return false;">Modern forum software NodeBB powers community forum for Flic wireless smart button</a>
