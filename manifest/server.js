@@ -38,6 +38,13 @@ app.use(express.static('public', {
 
 app.use(middleware.processRender);
 
+app.get('/503', function(req, res) {
+	res.statusCode = 503;
+	res.locals.header = '';
+	res.locals.footer = '';
+	res.render('503', {});
+});
+
 app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
 	var validPages = ['404', '502', 'dmca', 'index', 'press', 'pricing', 'privacy', 'tos', 'product', 'plans'];
 
