@@ -67,7 +67,7 @@
 
 		<div class="container">
 			<div class="next-page page3">
-				<h3>Looking to <strong>migrate your forum</strong>, build a <strong>custom theme or plugin</strong>, <br />or <strong>customize a plan</strong> to suit your community's needs? <a href="olark('api.box.expand')">Contact Us <span class="mobile-hide">&nbsp;<i class="fa fa-comments-o"></i></span></a>
+				<h3>Looking to <strong>migrate your forum</strong>, build a <strong>custom theme or plugin</strong>, <br />or <strong>customize a plan</strong> to suit your community's needs? <a onclick="olark('api.box.expand')">Contact Us <span class="mobile-hide">&nbsp;<i class="fa fa-comments-o"></i></span></a>
 			</div>
 		</div>
 	</div>
