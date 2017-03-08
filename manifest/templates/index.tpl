@@ -75,7 +75,7 @@
 		<h2>In use by companies like...</h2>
 		<div class="companies">
 			<div>
-				<a target="_blank" href="http://boards.adultswim.com/"><img src="/assets/logos/adultswim.png" /></a>
+				<img src="/assets/logos/adultswim.png" />
 			</div>
 			<div>
 				<a target="_blank" href="https://forums.pagecloud.com/"><img src="/assets/logos/pagecloud.png" /></a>
