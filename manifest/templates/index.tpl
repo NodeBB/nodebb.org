@@ -74,11 +74,11 @@
 	<div class="clearfix text-center companies-using-nodebb">
 		<h2>In use by companies like...</h2>
 		<div class="companies">
+			<!--<div>
+				<a target="_blank" href="https://bethesda.net/community/"><img src="/assets/logos/bethesda.png" /></a>
+			</div>-->
 			<div>
-				<img src="/assets/logos/adultswim.png" />
-			</div>
-			<div>
-				<a target="_blank" href="https://forums.pagecloud.com/"><img src="/assets/logos/pagecloud.png" /></a>
+				<a target="_blank" href="https://www.funimation.com/forum/"><img src="/assets/logos/funimation.png" /></a>
 			</div>
 			<a target="_blank" href="https://notepad-plus-plus.org/community/" class="npp-logo"></a>
 			<div class="flux-logo">
@@ -86,12 +86,17 @@
 					<img src="/assets/logos/flux.png" /><span>f.lux</span><span>&reg;</span>
 				</a>
 			</div>
+		</div>
+		<div class="companies">
+			<div>
+				<a target="_blank" href="https://forums.itpro.tv/"><img src="/assets/logos/itprotv.png" /></a>
+			</div>
 			<div>
 				<a target="_blank" href="https://community.onsen.io/"><img src="/assets/logos/onsen.png" /></a>
 			</div>
-			<div class="campusprotein-logo">
-				<a target="_blank" href="https://community.campusprotein.com/"><img src="/assets/logos/campusprotein.png" /></a>
-			</div>
+			<!--<div>
+				<a target="_blank" href="https://forums.tornbanner.com"><img src="/assets/logos/tornbanner.png" /></a>
+			</div>-->
 			<div>
 				<a target="_blank" href="http://forum.expii.com/"><img src="/assets/logos/expii.png" /></a>
 			</div>
