@@ -74,9 +74,9 @@
 	<div class="clearfix text-center companies-using-nodebb">
 		<h2>In use by companies like...</h2>
 		<div class="companies">
-			<!--<div>
+			<div>
 				<a target="_blank" href="https://bethesda.net/community/"><img src="/assets/logos/bethesda.png" /></a>
-			</div>-->
+			</div>
 			<div>
 				<a target="_blank" href="https://www.funimation.com/forum/"><img src="/assets/logos/funimation.png" /></a>
 			</div>
