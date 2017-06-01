@@ -55,8 +55,8 @@
 							</p>
 							<div class="address">
 								Made in Canada with <i class="fa fa-heart"></i><br />
-								Suite #619, 341 King Street East<br />
-								Toronto, Ontario. M5A 1L1
+								Suite #200, 95 King Street East<br />
+								Toronto, Ontario. M5C 1G3
 							</div>
 						</div>
 					</div>
