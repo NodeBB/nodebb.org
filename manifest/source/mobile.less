@@ -47,38 +47,49 @@
 			margin-top: 50px;
 		}
 
-		.table {
-			min-width: 1200px;
-			transition: 0.3s all cubic-bezier(0.075, 0.820, 0.165, 0.8);
-			-webkit-transition: 0.3s all cubic-bezier(0.075, 0.820, 0.165, 0.8);
+		h4 {
+			text-align: left;
 		}
 
-		ul {
-			li.price {
-				padding: 20px;
+		li {
+			text-align: left;
+		}
+
+		ul.custom-features {
+			padding: 0 1em;
+
+			li {
+				list-style-type: none;
+				margin-bottom: 1em;
+				text-align: left;
+
+				strong {
+					display: block;
+					font-weight: 600;
+					margin-bottom: 0.5em;
+				}
 			}
 		}
 
-		.left-arrow, .right-arrow {
-			position: absolute;
-			cursor: pointer;
-			z-index: 2;
-			top: 700px;
-			padding: 10px 15px 10px 10px;
-			left: 8px;
-			background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.5);
-			display: block;
+		a.start {
+			padding: 8px;
 		}
 
-		.right-arrow {
-			right: 8px;
-			left: auto;
-			padding: 10px 10px 10px 15px;
+		.table-wrapper {
+			overflow-x: auto;
+
+			table.pricing-table {
+				tr td {
+					padding: 8px;
+				}
+
+				th.popular::after {
+					left: 100px;
+				}
+			}
 		}
 	}
 }
-
-
 
 #mobile-menu, .slideout-menu {
 	display: none;

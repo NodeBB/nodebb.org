@@ -1,73 +1,107 @@
+	<div class="content pricing">
+		<p class="lead">
+			Thousands of organizations big and small power their communities with NodeBB.
+			From free self-service to full customization, we have the perfect forum solution for you.
+		</p>
 
-	<div class="pricing content">
-		<div class="container clearfix relative">
-			<div class="mobile-responsive text-center">
-				<h1>Select a plan that works best for your community.</h1>
-				<h2>Need help figuring out the right plan for your business? <a class="pointer" onclick="olark('api.box.expand')">Contact us</a>.</h2>
-			</div><br /><br />
+		<h2>NodeBB Instant Hosting</h2>
+		<p>
+			The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us.
+		</p>
 
-			<span class="left-arrow">&nbsp;<i class="fa fa-angle-left fa-4x"></i></span>
-			<span class="right-arrow">&nbsp;<i class="fa fa-angle-right fa-4x"></i></span>
-			<div class="table">
-				<ul class="first">
-					<li class="package">Hamlet</li>
-					<li class="price"><sup>$</sup> <span class="number">100</span> <span class="duration">/ month</span></li>
-					<li><strong>250k</strong> monthly pageviews</li>
-					<li>Daily Backups</li>
-					<li>Online/community support</li>
-					<li>Free SSL</li>
-					<li>Unlimited Users</li>
-					<li class="buy"><a href="//manage.nodebb.org/register" onclick="trackOutboundLink('//manage.nodebb.org/register'); return false;">Free 14-Day Trial</a></li>
-				</ul>
-				<ul>
-					<ul class="second">
-						<li class="package">Village<br /><small>Best for small businesses</small></li>
-						<li class="price"><sup>$</sup> <span class="number">250</span> <span class="duration">/ month</span></li>
-						<li><strong>1m</strong> monthly pageviews</li>
-						<li>Daily Backups</li>
-						<li>Online/community Support</li>
-						<li>Free SSL</li>
-						<li>Unlimited Users</li>
-						<li class="buy"><a href="//manage.nodebb.org/register" onclick="trackOutboundLink('//manage.nodebb.org/register'); return false;">Free 14-Day Trial</a></li>
-					</ul>
-				</ul>
-				<ul class="third">
-					<li class="package">City</li>
-					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">/ month</span></li>
-					<li><strong>5m+</strong> monthly pageviews</li>
-					<li>Daily Backups</li>
-					<li>Premium Support</li>
-					<li>Free SSL</li>
-					<li>Unlimited Users</li>
-					<li class="buy"><a class="pointer" onclick="olark('api.box.expand')">Contact Us &nbsp;<i class="fa fa-comments-o"></i></a></li>
-				</ul>
-				<!-- <ul class="fourth">
-					<li class="package">Enterprise</li>
-					<li class="price"><span class="number">Contact Us!</span><br /><span class="duration">"City" plan, plus...</span></li>
-					<li><strong>10m+</strong> monthly pageviews</li>
-					<li>Hourly Backups</li>
-					<li>VIP Online/Phone Support</li>
-					<li>White-labeled Android App</li>
-					<li>Dedicated Community Manager</li>
-					<li class="buy"><a href="olark('api.box.expand')">Contact Us</a></li>
-				</ul> -->
-				<ul class="fifth">
-					<li class="package">Custom Theme</li>
-					<li class="price"><sup>$</sup> <span class="number">2500</span> <span class="duration">+</span></li>
-					<li class="buy"><a class="pointer" onclick="olark('api.box.expand')">Contact Us &nbsp;<i class="fa fa-comments-o"></i></a></li>
-					<li class="package">Off-site Installation</li>
-					<li class="price" style="padding: 9px"><sup>$</sup> <span class="number">100</span> <span class="duration">+</span></li>
-					<li class="buy"><a class="pointer" onclick="olark('api.box.expand')">Contact Us &nbsp;<i class="fa fa-comments-o"></i></a></li>
-					<li class="package">Developer's Edition</li>
-					<li class="price"><span class="number" style="font-size: 19px;">Free &amp; Open Source</span></span></li>
-					<li class="buy"><a href="https://github.com/NodeBB/NodeBB/" target="_top" onclick="trackOutboundLink('https://github.com/NodeBB/NodeBB/'); return false;">Github &nbsp;<i class="fa fa-external-link-square"></i></a></li>
-				</ul>
-			</div>
+		<div class="table-wrapper">
+			<table class="pricing-table">
+				<tr>
+					<th>
+						<h3>Village</h3>
+						<p>for small business and groups</p>
+					</th>
+					<th class="popular">
+						<h3>City</h3>
+						<p>for medium businesses and groups</p>
+					</th>
+					<th>
+						<h3>Metropolis</h3>
+						<p>for larger organizations who need a custom solution</p>
+					</th>
+				</tr>
+				<tr>
+					<td><sup>$</sup><span class="amount">250</span> / month</td>
+					<td><sup>$</sup><span class="amount">750</span> / month</td>
+					<td><span class="amount">&nbsp;</span><a class="pointer" onclick="olark('api.box.expand')">Contact Us</a><span class="amount">&nbsp;</span></td>
+				</tr>
+				<tr>
+					<td>Up to 2 million monthly page views</td>
+					<td>Up to 10 million monthly page views</td>
+					<td>Above 10 million monthly page views</td>
+				</tr>
+				<tr>
+					<td>Email and community forum support</td>
+					<td>Premium support</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<a class="start" href="//manage.nodebb.org/register">Start Now!</a>
+						<p>
+							Instant set-up
+						</p>
+					</td>
+					<td>
+						<a class="start" href="//manage.nodebb.org/register">Start Now!</a>
+						<p>
+							Instant set-up
+						</p>
+					</td>
+					<td><a class="contact-us pointer" onclick="olark('api.box.expand')">Contact Us</a></td>
+				</tr>
+			</table>
+		</div>
+		<p class="footnote">
+			Free for 14 days. Credit card required. All prices in USD.
+		</p>
+
+		<p>
+			All our monthly hosting packages include:
+		</p>
+		<ul class="all-include">
+			<li><i class="fa fa-user-plus fa-4x"></i>Unlimited Staff and<br>Community Users</li><!--
+			--><li><i class="fa fa-lock fa-4x"></i>Free SSL Encryption</li><!--
+			--><li><i class="fa fa-floppy-o fa-4x"></i>Automated Daily Backup</li>
+		</ul>
+
+		<div class="offer">
+			<p>
+				<a class="pointer" onclick="olark('api.box.expand')">Non-profit or start-up company? Please contact us for discounted pricing.</a>
+			</p>
 		</div>
 
-		<div class="container">
-			<div class="next-page page3">
-				<h3>Looking to <strong>migrate your forum</strong>, build a <strong>custom theme or plugin</strong>, <br />or <strong>customize a plan</strong> to suit your community's needs? <a class="pointer" onclick="olark('api.box.expand')">Contact Us <span class="mobile-hide">&nbsp;<i class="fa fa-comments-o"></i></span></a>
-			</div>
+		<div class="oss-offer">
+			<p>Free hosting available for open source project communities</p>
+			<p>If you run a popular open source project and are interested in a free hosting account from NodeBB to help grow your community, please drop us a line.</p>
+			<h4>Requirements:</h4>
+			<ul>
+				<li>Qualified projects will be hosted on GitHub or GitLab, and demonstrate a clear need for better interaction within their contributor community</li>
+				<li>Hosting provided will be equivalent to our 'Village' level plan – upgraded plans may be provided at a discounted rate</li>
+				<li>Your forum URL must retain the "project.nodebb.com" format, with no other NodeBB branding required</li>
+				<li>Qualification will be at the discretion of NodeBB Inc.</li>
+			</ul>
+			<p><a class="pointer" onclick="olark('api.box.expand')"><strong>Contact us for more information</strong></a></p>
 		</div>
+
+		<h2>NodeBB Custom Solutions</h2>
+		<p>Custom enterprise packages for larger businesses and organizations. Includes:</p>
+		<ul class="custom-features">
+			<li><strong>Custom feature development</strong> to integrate with your current systems</li>
+			<li><strong>Theme customization</strong> to match your brand identity perfectly</li>
+			<li><strong>Single Sign-On</strong> with your existing services to provide your users with a seamless experience</li>
+			<li><strong>Migration services</strong> from existing forums – we'll make the move from your old software as painless as possible</li>
+			<li><strong>Premium hosting or self-hosting options</strong> to best suit your requirements and security policies</li>
+		</ul>
+		<p>
+				We will work closely with you to create the perfect solution.
+		</p>
+		<p>
+			<a class="contact-us" onclick="olark('api.box.expand')">Contact Us for a Custom Quote Today</a>
+		</p>
 	</div>

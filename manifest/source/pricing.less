@@ -1,291 +1,166 @@
 .pricing {
+	margin: 0 auto;
+	max-width: 960px;
 	background: white;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	padding-bottom: 55px;
+	color: #333;
+	text-align: left;
+	padding: 100px 0 55px 0;
 
-	.metropolis {
-		text-align: center;
-		p {
-			padding: 41px 0;
-		}
-	}
+	p {
+		font-size: 18px;
+		margin-top: 1em;
 
-	.plan-included {
-		margin-top: -15px;
-		margin-bottom: -20px;
-		color: black;
-	}
-
-	.page3 {
-		background: @brand-primary;
-		h3 {
-			color: white;
+		&.lead {
+			font-size: 22px;
 		}
 	}
 
 	h2 {
-		max-width: 85%;
-		text-align: center;
-		display: inline-block;
+		border-top: 1px dashed #cfcfcf;
+		display: block;
+		padding-top: 2em;
+		margin-top: 2em;
 	}
-	
-	.mobile-responsive {		
-		h1 {
-			color: #222;
-			margin-top: 75px;
 
-			small {
-				color: #777;
-				font-size: 22px;
-				line-height: 28px;
-				display: inline-block;
-				margin-top: 20px;
+	li {
+		list-style-type: square;
+	}
+
+	.all-include {
+		padding: 0;
+
+		li {
+			vertical-align: top;
+			list-style-type: none;
+			display: inline-block;
+			width: 33%;
+			text-align: center;
+			font-size: 20px;
+			color: #e91e63;
+			font-weight: 600;
+
+			i {
+				display: block;
+				color: #333;
+				margin-bottom: 0.25em;
 			}
-
-			margin-bottom: 0px;
 		}
 	}
 
-	.mobile-responsive h2 {
-		a {
-			color: @brand-primary;
-			font-weight: 800;
-			text-decoration: underline;
-		}
-	}
-
-	a {
+	a.start {
 		color: white;
 		font-weight: 500;
 		text-decoration: none;
-	}
-
-	.table {
-		padding-top: 20px;
-	}
-
-	.left-arrow, .right-arrow {
-		display: none;
-	}
-
-	ul {
-		list-style-type: none;
-		margin: 0px;
-		float: left;
+		display: inline-block;
+		background-color: #7b96a3;
 		font-weight: 800;
+		padding: 1rem;
+	}
 
-		width: 24.5%;
-		padding: 3px;
+	table.pricing-table {
+		padding-top: 20px;
+		border-spacing: 3px;
+		border-collapse: separate;
+		table-layout: fixed;
+		width: 960px;
+		margin: 0 auto;
 
-		li strong {
-			font-size: 18px;
-		}
+		tr {
+			background-color: #fafafa;
 
-		&.first {
-			.package {
-				background-color: @second-color;
-			}
+			th {
+				background-color: #607d8b;
+				color: white;
+				padding: 20px;
+				font-weight: 300;
+				width: 250px;
+				vertical-align: top;
+				text-transform: uppercase;
+				text-align: center;
 
-			.buy a {
-				background-color: @second-color;
-
-				&:hover {
-					background-color: lighten(@second-color, 10%);
-				}
-			}
-		}
-
-		&.second {
-			.package {
-				background-color: @fourth-color;
-				font-weight: 800;
-
-				small {
-					font-weight: 400;
-					font-size: 12px;
-				}
-			}
-
-			.buy a {
-				background-color: @fourth-color;
-				padding: 17px 10px;
-
-				&:hover {
-					background-color: lighten(@fourth-color, 10%);
+				p {
+					font-size: 14px;
+					margin-top: 0.5em;
 				}
 
-				font-weight: 800;
-			}
-
-			width: 110%;
-			z-index: 1;
-			position: relative;
-			margin-top: -28px;
-			margin-left: -18px;
-			border: 6px solid white;
-			padding: 0px;
-		}
-
-		&.third {
-			.package {
-				background-color: @second-color;
-			}
-
-			.buy a {
-				background-color: @second-color;
-
-				&:hover {
-					background-color: lighten(@second-color, 10%);
+				h3 {
+					color: white;
+					font-weight: 600;
+					margin-bottom: 0;
 				}
-			}
-		}
 
-		&.fourth {
-			.package {
-				background-color: @first-color;
-			}
+				&.popular {
+					background-color: #00bcd4;
 
-			.buy a {
-				background-color: @first-color;
-
-				&:hover {
-					background-color: lighten(@first-color, 10%);
-				}
-			}
-		}
-
-		&.fifth {
-			.package {
-				background-color: #fff;
-				color: #333;
-				text-transform: none;
-			}
-
-			.price {
-				padding: 8px;
-			}
-
-			.buy {
-				margin-bottom: 8px;
-				a {
-					background-color: @fifth-color;
-
-					&:hover {
-						background-color: lighten(@fifth-color, 10%);
+					&::after {
+						content: 'POPULAR';
+						background-color: #e03177;
+						padding: 0.25em 0.5em;
+						font-size: 12px;
+						font-weight: 600;
+						position: relative;
+						top: -5rem;
+						left: 110px;
+						transform: rotate(20deg);
+						display: inline-block;
 					}
 				}
 			}
 
-
-			li {
-				background: #f0f0f0 !important;
-			}
-		}
-
-
-		li {
-			padding: 1px;
-			color: #333;
-			padding: 20px;
-
 			&:nth-child(odd) {
-				background: #efefef;
+				background-color: #efefef;
 			}
 
-			&:nth-child(even) {
-				background: #fafafa;
-			}
-
-			&.package {
-				font-size: 18px;
-				font-weight: 300;
-				text-transform: uppercase;
-				background: #333;
+			td {
 				padding: 20px;
-				color: white;
-			}
+				font-weight: 800;
+				text-align: center;
 
-			&.price {
-				padding: 50px;
-				height: 25px;
-				background: #fafafa;
+				&:last-child {
+					vertical-align: top;
+				}
 
-				.number {
+				p {
+					font-weight: 300;
+					font-size: 14px;
+				}
+
+				.amount {
 					font-size: 24px;
 				}
 			}
-
-			&.buy {
-				a {
-					padding: 10px 0;
-					text-transform: uppercase;
-					font-weight: 300;
-					width: 175px;
-					display: inline-block;
-				}
-			}
 		}
 	}
 
-	@media (max-width: 1200px) {
-		ul {
-			width: 24.3%
-		}
+	.footnote {
+		font-size: 12px;
+		margin-top: 4px;
+		margin-left: 1rem;
+		font-style: italic;
+		font-weight: bold;
 	}
-}
 
-// plans
-
-.you-host {
-	width: 100%;
-
-	strong {
-		text-transform: uppercase;
-
-	}
-	.box {
-		width: 75%;
-		display: inline-block;
-		color: #333;
-		background-color: #eee;
+	.offer {
+		color: #eee;
+		background-color: #e03177;
 		padding: 20px;
-		max-width: 300px;
-		margin: 10px;
-	}
+		margin: 2em 0;
 
-	.package {
-		background-color: #fff;
-		color: #333;
-		text-transform: none;
-	}
-
-	.price {
-		padding: 8px;
-	}
-
-	.buy {
-		margin-bottom: 8px;
-		a {
-			background-color: @fifth-color;
-
-			&:hover {
-				background-color: lighten(@fifth-color, 10%);
-			}
+		p:first-child {
+			font-weight: bold;
+			font-size: 20px;
 		}
 	}
 
-
-	li {
-		background: #f0f0f0 !important;
+	.oss-offer {
+		.offer;
+		background-color: #607d8b;
 	}
 
-	a {
-		padding: 10px 0;
-		text-transform: uppercase;
-		font-weight: 300;
-		width: 175px;
+	.contact-us {
+		background-color: #e03177;
+		padding: 1rem;
+		color: #eee;
 		display: inline-block;
 	}
 }
