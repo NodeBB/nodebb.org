@@ -38,7 +38,7 @@
 				<tr>
 					<td>Email and community forum support</td>
 					<td>Premium support</td>
-					<td></td>
+					<td>Customised Support</td>
 				</tr>
 				<tr>
 					<td>
@@ -57,6 +57,9 @@
 				</tr>
 			</table>
 		</div>
+		<p class="footnote pull-right">
+			Contact us directly for customised support<br>plans (uptime guarantee, etc.)
+		</p>
 		<p class="footnote">
 			Free for 14 days. Credit card required. All prices in USD.
 		</p>
