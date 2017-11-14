@@ -26,7 +26,7 @@
 					<li class="price"><sup>$</sup> <span class="number">100</span> <span class="duration">/ month</span></li>
 					<li><strong>500k</strong> monthly pageviews</li>
 					<li>95% Uptime SLA</li>
-					<li class="buy"><a href="//manage.nodebb.org/register" onclick="trackOutboundLink('//manage.nodebb.org/register'); return false;">Free 14-Day Trial</a></li>
+					<li class="buy"><a href="//manage.nodebb.org/register" data-outboundTrack="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 				</ul>
 				<ul>
 					<ul class="second">
@@ -34,7 +34,7 @@
 						<li class="price"><sup>$</sup> <span class="number">250</span> <span class="duration">/ month</span></li>
 						<li><strong>2m</strong> monthly pageviews</li>
 						<li>95% Uptime SLA</li>
-						<li class="buy"><a href="//manage.nodebb.org/register" onclick="trackOutboundLink('//manage.nodebb.org/register'); return false;">Free 14-Day Trial</a></li>
+						<li class="buy"><a href="//manage.nodebb.org/register" data-outboundTrack="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 					</ul>
 				</ul>
 				<ul class="third">
@@ -42,7 +42,7 @@
 					<li class="price"><sup>$</sup> <span class="number">750</span> <span class="duration">/ month</span></li>
 					<li><strong>10m</strong> monthly pageviews</li>
 					<li>99% Uptime SLA</li>
-					<li class="buy"><a href="//manage.nodebb.org/register" onclick="trackOutboundLink('//manage.nodebb.org/register'); return false;">Free 14-Day Trial</a></li>
+					<li class="buy"><a href="//manage.nodebb.org/register" data-outboundTrack="//manage.nodebb.org/register">Free 14-Day Trial</a></li>
 				</ul>
 				<ul class="third">
 					<li class="package">Metropolis</li>
@@ -78,7 +78,7 @@
 					<div class="box">
 						<strong>Free open-source license</strong>
 						<p>NodeBB's source code is available for no cost under the GPLv3.<br />
-						<div class="buy"><a href="https://github.com/NodeBB/NodeBB/" target="_top" onclick="trackOutboundLink('https://github.com/NodeBB/NodeBB/'); return false;">Github &nbsp;<i class="fa fa-external-link-square"></i></a></div></p>
+						<div class="buy"><a href="https://github.com/NodeBB/NodeBB/" target="_top" data-outboundTrack="https://github.com/NodeBB/NodeBB/">Github &nbsp;<i class="fa fa-external-link-square"></i></a></div></p>
 					</div>
 					<div class="box">
 						<strong>Commercial Licence</strong>
