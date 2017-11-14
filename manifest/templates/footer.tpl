@@ -121,7 +121,7 @@
 		*/
 		
 		$(document).ready(function() {
-			if (!ga) {
+			if (!ga || !ga.loaded) {
 				return;
 			}
 
