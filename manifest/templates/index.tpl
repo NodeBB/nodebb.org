@@ -76,7 +76,7 @@
 		<div class="w33 pull-left">
 			<i class="fa fa-magic fa-4x"></i><br />
 			<h3>NodeBB Instant Hosting</h3>
-			<p>Want to get your forum going right away without any set-up hassles? Our monthly hosing plans are for you.</p>
+			<p>Want to get your forum going right away without any set-up hassles? Our monthly hosting plans are for you.</p>
 		</div>
 		<div class="w33 pull-left">
 				<i class="fa fa-server fa-4x"></i><br />
