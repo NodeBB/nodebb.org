@@ -43,23 +43,25 @@
 			<div>
 				<a target="_blank" href="https://www.funimation.com/forum/"><img src="/assets/logos/funimation.png" /></a>
 			</div>
+			<div>
+				<a target="_blank" href="https://forums.opera.com/">
+					<img width="200" src="/assets/logos/opera.svg" />
+				</a>
+			</div>
 			<a target="_blank" href="https://notepad-plus-plus.org/community/" class="npp-logo"></a>
+		</div>
+		<div class="companies">
 			<div class="flux-logo">
 				<a target="_blank" href="https://forum.justgetflux.com/">
 					<img src="/assets/logos/flux.png" /><span>f.lux</span><span>&reg;</span>
 				</a>
 			</div>
-		</div>
-		<div class="companies">
 			<div>
 				<a target="_blank" href="https://forums.itpro.tv/"><img src="/assets/logos/itprotv.png" /></a>
 			</div>
 			<div>
-				<a target="_blank" href="https://community.onsen.io/"><img src="/assets/logos/onsen.png" /></a>
-			</div>
-			<!--<div>
 				<a target="_blank" href="https://forums.tornbanner.com"><img src="/assets/logos/tornbanner.png" /></a>
-			</div>-->
+			</div>
 			<div>
 				<a target="_blank" href="http://forum.expii.com/"><img src="/assets/logos/expii.png" /></a>
 			</div>
