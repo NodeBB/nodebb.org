@@ -69,19 +69,25 @@
 	<div class="clearfix text-center feature-overview">
 		<h2>Select the forum option that works best for you:</h2>
 		<div class="w33 pull-left">
-			<i class="fa fa-wrench fa-4x"></i><br />
-			<h3>NodeBB Open Source</h3>
-			<p>For the tech savvy DIY pro, install and maintain NodeBB on your own server.</p>
+			<a href="//github.com/NodeBB/NodeBB">
+				<i class="fa fa-wrench fa-4x"></i><br />
+				<h3>NodeBB Open Source</h3>
+				<p>For the tech savvy DIY pro, install and maintain NodeBB on your own server.</p>
+			</a>
 		</div>
 		<div class="w33 pull-left">
-			<i class="fa fa-magic fa-4x"></i><br />
-			<h3>NodeBB Instant Hosting</h3>
-			<p>Want to get your forum going right away without any set-up hassles? Our monthly hosting plans are for you.</p>
+			<a href="/pricing">
+				<i class="fa fa-magic fa-4x"></i><br />
+				<h3>NodeBB Instant Hosting</h3>
+				<p>Want to get your forum going right away without any set-up hassles? Our monthly hosting plans are for you.</p>
+			</a>
 		</div>
 		<div class="w33 pull-left">
-				<i class="fa fa-server fa-4x"></i><br />
-			<h3>NodeBB Enterprise</h3>
-			<p>Looking for a customized, high-performance forum that integrates with your existing infrastructure? We work closely with you to create the perfect solution.</p>
+			<a href="/pricing">
+				<i class="fa fa-building fa-4x"></i><br />
+				<h3>NodeBB Enterprise</h3>
+				<p>Looking for a customized, high-performance forum that integrates with your existing infrastructure? We work closely with you to create the perfect solution.</p>
+			</a>
 		</div>
 	</div>
 

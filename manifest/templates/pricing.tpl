@@ -14,7 +14,7 @@
 				<tr>
 					<th>
 						<h3>Village</h3>
-						<p>for small business and groups</p>
+						<p>for small businesses and groups</p>
 					</th>
 					<th class="popular">
 						<h3>City</h3>
