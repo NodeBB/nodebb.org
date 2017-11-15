@@ -91,6 +91,13 @@
 		</div>
 	</div>
 
+	<div class="clearfix text-center awards">
+		<h2>
+			<img src="/assets/images/cms-critic-awards.png" />
+			<p>Winner &ndash; 2014 CMS Critic People's Choice Awards for Best Forum Software</p>
+		</h2>
+	</div>
+
 	<div class="clearfix text-center feature-overview">
 		<h2>Why NodeBB?</h2>
 		<div class="w33 pull-left">
