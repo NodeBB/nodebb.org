@@ -38,6 +38,49 @@
 	}
 }
 
+.testimonial {
+	background-color: #eee;
+	padding: 3em 2em 2em 2em;
+	
+	&.clearfix {
+		margin-bottom: 4em;
+		border-bottom: none;
+	
+		.pull-right {
+			margin-bottom: 0;
+		}
+	}
+
+	p {
+		text-align: left;
+		font-weight: 500;
+		font-size: 20px;
+		margin-top: 0;
+
+		&.attribution {
+			font-style: italic;
+			font-weight: 300;
+			text-align: right;
+		}
+	}
+
+	img {
+		border-radius: 50%;
+		max-width: 50%;
+	}
+
+	@media (min-width: 480px) {
+		p {
+			margin-right: 4em;
+		}
+
+		img {
+			float: right;
+			margin-right: 3em;
+		}
+	}
+}
+
 .companies-using-nodebb {
 	h2 {
 		font-size: 32px;
