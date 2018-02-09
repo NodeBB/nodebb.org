@@ -127,6 +127,7 @@
 						<p>
 							Unfortunately your message could not be sent. Please try again later or email us at
 							<a href="mailto:support@nodebb.org">support@nodebb.org</a>. Thanks!
+							<button class="reset" type="button">send another message</button>
 						</p>
 					</div>
 				</form>
