@@ -85,6 +85,53 @@
 				<div class="location-overlay"></div>
 			</div>
 		</footer>
+		<div class="contact-toggle">
+			<i class="fa fa-envelope"></i>&nbsp;&nbsp;
+			Contact Us
+		</div>
+		<div class="contact-overlay"></div>
+		<div class="contact-modal-wrapper">
+			<div class="contact-modal">
+				<h3>Contact NodeBB</h3>
+				<p>I&apos;d like to speak to someone about...</p>
+				<form>
+					<div>
+						<button type="button" data-type="support">A technical / support issue with NodeBB</button>
+						<button type="button" data-type="sales">Pricing or other question about NodeBB hosting</button>
+						<button type="button" data-type="custom">Custom development / Enterprise service inquiry</button>
+						<button type="button" data-type="other">Other / Not sure</button>
+						<input type="hidden" id="type" name="type" value="other" />
+					</div>
+					<fieldset>
+						<div>
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" placeholder="Name" />
+						</div>
+						<div>
+							<label for="email">Email</label>
+							<input type="text" id="email" name="email" placeholder="Email" />
+						</div>
+						<div>
+							<label for="message">Message</label>
+							<textarea id="message" name="message" placeholder="I&apos;d like to ask about..."></textarea>
+						</div>
+						<button class="submit" type="button">submit</button>
+					</fieldset>
+					<div>
+						<p>
+							Thank you for your inquiry, a representative should be in contact shortly!
+						</p>
+						<button class="reset" type="button">send another message</button>
+					</div>
+					<div>
+						<p>
+							Unfortunately your message could not be sent. Please try again later or email us at
+							<a href="mailto:support@nodebb.org">support@nodebb.org</a>. Thanks!
+						</p>
+					</div>
+				</form>
+			</div>
+		</div>
 	</main>
 
 	
@@ -95,6 +142,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="{base_path}/assets/lib/main.js"></script>
 	<script type="text/javascript" src="{base_path}/assets/lib/slideout.min.js"></script>
+	<script type="text/javascript" src="{base_path}/assets/lib/bootbox.min.js"></script>
+	<script type="text/javascript" src="{base_path}/assets/lib/contact.js"></script>
 	<!-- IF dev -->
 	<script src="//localhost:3001/livereload.js"></script>
 	<!-- ENDIF dev -->
@@ -138,24 +187,5 @@
 		});
 	</script>
 	<!-- End Google Analytics -->
-
-	<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
-	f[z]=function(){
-	(a.s=a.s||[]).push(arguments)};var a=f[z]._={
-	},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
-	f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
-	0:+new Date};a.P=function(u){
-	a.p[u]=new Date-a.p[0]};function s(){
-	a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
-	hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
-	return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
-	b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
-	b.contentWindow[g].open()}catch(w){
-	c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
-	var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
-	b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
-	loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-	/* custom configuration goes here (www.olark.com/documentation) */
-	olark.identify('7202-831-10-7053');/*]]>*/</script><noscript><a href="https://www.olark.com/site/7202-831-10-7053/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
 </body>
 </html>

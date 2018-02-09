@@ -8,9 +8,12 @@ var express = require('express'),
 	app = express(),
 	middleware = require('./lib/middleware')(app),
 	compression = require('compression'),
-	cacheTime = process.env.NODE_ENV === 'production' ? 86400000 : 0,
+	cacheTime = process.env.NODE_ENV === 'production' ? 86400000 : 0;
 
-	filecache = {};
+var bodyParser = require('body-parser');
+var request = require('request');
+
+var filecache = {};
 
 winston.remove(winston.transports.Console);
 winston.add(winston.transports.Console, {
@@ -35,6 +38,8 @@ app.use(compression());
 app.use(express.static('public', {
 	maxAge: cacheTime
 }));
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(middleware.processRender);
 
@@ -61,6 +66,50 @@ app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
 		res.render('404', {});
 	}
 });
+
+app.post('/contact', function (req, res) {
+	var required = ['type', 'message', 'email', 'name'];
+	var ok = required.every(function (prop) {
+		return req.body.hasOwnProperty(prop);
+	});
+
+	if (!ok) {
+		return res.sendStatus(400);
+	}
+
+	var mailbox = req.body.type === 'support' ? 2911339330 : 2915337130;
+
+	request.post({
+		url: 'https://api.groovehq.com/v1/tickets',
+		json: true,
+		body: {
+			body: req.body.message,
+			from: {
+				email: req.body.email,
+				name: req.body.name,
+			},
+			to: {
+				name: 'NodeBB',
+				email: 'support@nodebb.org',
+			},
+			tags: ['contact-form', req.body.type],
+			subject: 'Customer Inquiry via Website',
+			mailbox: mailbox + '',
+		},
+		auth: {
+			bearer: 'eb48aaf5776c764d9e6ed4507f6853cc858a1d33dc6a79d74956e05e98a7f6dc',
+		},
+	}, function (err, response, body) {
+		if (err) {
+			res.sendStatus(400);
+		} else if (response.statusCode !== 201) {
+			res.sendStatus(response.statusCode);
+		} else {
+			res.sendStatus(200);
+		}
+	});
+});
+
 
 var server = app.listen(nconf.get('port') || 3000, function() {
 	var host = server.address().address;

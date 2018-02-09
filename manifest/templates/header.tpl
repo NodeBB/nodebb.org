@@ -25,8 +25,8 @@
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/icons.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,900|Shadows+Into+Light+Two" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	
 
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
