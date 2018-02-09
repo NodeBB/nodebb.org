@@ -6,6 +6,7 @@ $(document).ready(function () {
 			wrapperEl: $('.contact-modal-wrapper'),
 			overlayEl: $('.contact-overlay'),
 			formEl: $('.contact-modal form'),
+			closeEl: $('.contact-modal .close'),
 		},
 	};
 
@@ -23,15 +24,21 @@ $(document).ready(function () {
 		
 		Contact.els.toggleEl.on('click', Contact.showModal);
 		Contact.els.overlayEl.on('click', Contact.hideModal);
+		Contact.els.closeEl.on('click', Contact.hideModal);
 		Contact.els.modalEl.find('button[data-type]').on('click', Contact.showForm);
 		Contact.els.formEl.find('.submit').on('click', Contact.submit);
 		Contact.els.formEl.find('.reset').on('click', Contact.showForm);
+
+		Contact.els.modalEl.on('scroll', function (e) {
+			e.preventDefault();
+		});
 	}
 
 	Contact.showModal = function () {
 		Contact.els.overlayEl.toggleClass('open', true);
 		Contact.els.toggleEl.toggleClass('open', true);
 		Contact.els.wrapperEl.toggleClass('open', true);
+		$('body').toggleClass('modal-open', true);
 	};
 
 	
@@ -39,6 +46,7 @@ $(document).ready(function () {
 		Contact.els.overlayEl.toggleClass('open', false);
 		Contact.els.toggleEl.toggleClass('open', false);
 		Contact.els.wrapperEl.toggleClass('open', false);
+		$('body').toggleClass('modal-open', false);
 	};
 
 	Contact.submit = function (e) {

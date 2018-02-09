@@ -92,6 +92,7 @@
 		<div class="contact-overlay"></div>
 		<div class="contact-modal-wrapper">
 			<div class="contact-modal">
+				<div class="close"><i class="fa fa-times"></i></div>
 				<h3>Contact NodeBB</h3>
 				<p>I&apos;d like to speak to someone about...</p>
 				<form>
