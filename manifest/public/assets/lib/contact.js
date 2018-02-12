@@ -97,7 +97,9 @@ $(document).ready(function () {
 		var successEl = Contact.els.formEl.find('> div:nth-child(3)');
 		var failureEl = Contact.els.formEl.find('> div:nth-child(4)');
 
-		Contact.els.formEl.get(0).reset();
+		if (!buttonEl.attr('data-type')) {
+			Contact.els.formEl.get(0).reset();
+		}
 
 		// Highlight selection and expose form
 		siblings.toggleClass('selected', false);
