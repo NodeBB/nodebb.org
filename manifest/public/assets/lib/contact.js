@@ -39,6 +39,7 @@ $(document).ready(function () {
 		Contact.els.toggleEl.toggleClass('open', true);
 		Contact.els.wrapperEl.toggleClass('open', true);
 		$('body').toggleClass('modal-open', true);
+		ga('send', 'event', 'Contact Form', 'open');
 	};
 
 	
@@ -47,6 +48,7 @@ $(document).ready(function () {
 		Contact.els.toggleEl.toggleClass('open', false);
 		Contact.els.wrapperEl.toggleClass('open', false);
 		$('body').toggleClass('modal-open', false);
+		ga('send', 'event', 'Contact Form', 'close');
 	};
 
 	Contact.submit = function (e) {
@@ -66,6 +68,8 @@ $(document).ready(function () {
 			memo[cur.name] = cur.value;
 			return memo;
 		}, {});
+
+		ga('send', 'event', 'Contact Form', 'submit', payload.type);
 
 		$.post('/contact', payload)
 			.done(function () {
@@ -123,6 +127,9 @@ $(document).ready(function () {
 		// Re-enable all buttons
 		Contact.els.modalEl.find('button').prop('disabled', false);
 		Contact.els.formEl.find('.submit').text('submit');
+
+		// GA integration
+		ga('send', 'event', 'Contact Form', 'start', buttonEl.attr('data-type'));
 	};
 
 	Contact.init();
