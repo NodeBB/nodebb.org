@@ -39,7 +39,7 @@ $(document).ready(function () {
 		Contact.els.toggleEl.toggleClass('open', true);
 		Contact.els.wrapperEl.toggleClass('open', true);
 		$('body').toggleClass('modal-open', true);
-		ga('send', 'event', 'Contact Form', 'open');
+		ga('ComboTracker.send', 'event', 'Contact Form', 'open');
 	};
 
 	
@@ -48,7 +48,7 @@ $(document).ready(function () {
 		Contact.els.toggleEl.toggleClass('open', false);
 		Contact.els.wrapperEl.toggleClass('open', false);
 		$('body').toggleClass('modal-open', false);
-		ga('send', 'event', 'Contact Form', 'close');
+		ga('ComboTracker.send', 'event', 'Contact Form', 'close');
 	};
 
 	Contact.submit = function (e) {
@@ -69,7 +69,7 @@ $(document).ready(function () {
 			return memo;
 		}, {});
 
-		ga('send', 'event', 'Contact Form', 'submit', payload.type);
+		ga('ComboTracker.send', 'event', 'Contact Form', 'submit', payload.type);
 
 		$.post('/contact', payload)
 			.done(function () {
@@ -129,7 +129,7 @@ $(document).ready(function () {
 		Contact.els.formEl.find('.submit').text('submit');
 
 		// GA integration
-		ga('send', 'event', 'Contact Form', 'start', buttonEl.attr('data-type'));
+		ga('ComboTracker.send', 'event', 'Contact Form', 'start', buttonEl.attr('data-type'));
 	};
 
 	Contact.init();
