@@ -91,6 +91,7 @@ app.post('/contact', function (req, res) {
 			to: (req.body.type === 'support' ? 'support' : 'sales') + '@nodebb.org',
 			tags: ['contact-form', req.body.type],
 			subject: 'Customer Inquiry via Website',
+			assignee: req.body.type !== 'support' ? 'jay@nodebb.org' : undefined,
 		},
 		auth: {
 			bearer: 'eb48aaf5776c764d9e6ed4507f6853cc858a1d33dc6a79d74956e05e98a7f6dc',
