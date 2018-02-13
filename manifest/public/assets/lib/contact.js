@@ -8,6 +8,7 @@ $(document).ready(function () {
 			formEl: $('.contact-modal form'),
 			closeEl: $('.contact-modal .close'),
 		},
+		open: false,
 	};
 
 	Contact.init = function () {
@@ -29,17 +30,26 @@ $(document).ready(function () {
 		Contact.els.formEl.find('.submit').on('click', Contact.submit);
 		Contact.els.formEl.find('.reset').on('click', Contact.showForm);
 
-		Contact.els.modalEl.on('scroll', function (e) {
-			e.preventDefault();
+		$(window).on('unload', function () {
+			if (Contact.open) {
+				ga('ComboTracker.send', {
+					hitType: 'event',
+					eventCategory: 'Contact Form',
+					eventAction: 'close',
+					transport: 'beacon',
+				});
+			}
 		});
-	}
+	};
 
 	Contact.showModal = function () {
 		Contact.els.overlayEl.toggleClass('open', true);
 		Contact.els.toggleEl.toggleClass('open', true);
 		Contact.els.wrapperEl.toggleClass('open', true);
 		$('body').toggleClass('modal-open', true);
+
 		ga('ComboTracker.send', 'event', 'Contact Form', 'open');
+		Contact.open = true;
 	};
 
 	
@@ -48,7 +58,9 @@ $(document).ready(function () {
 		Contact.els.toggleEl.toggleClass('open', false);
 		Contact.els.wrapperEl.toggleClass('open', false);
 		$('body').toggleClass('modal-open', false);
+
 		ga('ComboTracker.send', 'event', 'Contact Form', 'close');
+		Contact.open = false;
 	};
 
 	Contact.submit = function (e) {

@@ -1,6 +1,14 @@
 body.modal-open {
 	height: 100%;
 	overflow: hidden;
+
+	.contact-toggle {
+		-webkit-animation:  contact-hide 500ms linear;
+		-moz-animation:  contact-hide 500ms linear;
+		-o-animation:  contact-hide 500ms linear;
+		animation: contact-hide 500ms linear;
+		bottom: -4rem;
+	}
 }
 
 .contact-toggle {
@@ -50,6 +58,12 @@ body.modal-open {
 	15%		{ bottom: 0px; }
 	20%		{ bottom: -5px; }
 	100%	{ bottom: -5px; }
+}
+
+@keyframes contact-hide {
+	0%		{ bottom: -5px; }
+	25%		{ bottom: 0px; }
+	100%	{ bottom: -4rem; }
 }
 
 .contact-overlay {
