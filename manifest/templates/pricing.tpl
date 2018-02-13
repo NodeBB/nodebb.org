@@ -28,7 +28,7 @@
 				<tr>
 					<td><sup>$</sup><span class="amount">250</span> / month</td>
 					<td><sup>$</sup><span class="amount">750</span> / month</td>
-					<td><span class="amount">&nbsp;</span><a class="pointer" onclick="olark('api.box.expand')">Contact Us</a><span class="amount">&nbsp;</span></td>
+					<td><span class="amount">&nbsp;</span><a class="pointer" onclick="nodebb.contact.showModal()">Contact Us</a><span class="amount">&nbsp;</span></td>
 				</tr>
 				<tr>
 					<td>Up to 2 million monthly page views</td>
@@ -53,7 +53,7 @@
 							Instant set-up
 						</p>
 					</td>
-					<td><a class="contact-us pointer" onclick="olark('api.box.expand')">Contact Us</a></td>
+					<td><a class="contact-us pointer" onclick="nodebb.contact.showModal()">Contact Us</a></td>
 				</tr>
 			</table>
 		</div>
@@ -75,7 +75,7 @@
 
 		<div class="offer">
 			<p>
-				<a class="pointer" onclick="olark('api.box.expand')">Non-profit or start-up company? Please contact us for discounted pricing.</a>
+				<a class="pointer" onclick="nodebb.contact.showModal()">Non-profit or start-up company? Please contact us for discounted pricing.</a>
 			</p>
 		</div>
 
@@ -89,7 +89,7 @@
 				<li>Your forum URL must retain the "project.nodebb.com" format, with no other NodeBB branding required</li>
 				<li>Qualification will be at the discretion of NodeBB Inc.</li>
 			</ul>
-			<p><a class="pointer" onclick="olark('api.box.expand')"><strong>Contact us for more information</strong></a></p>
+			<p><a class="pointer" onclick="nodebb.contact.showModal()"><strong>Contact us for more information</strong></a></p>
 		</div>
 
 		<h2>NodeBB Custom Solutions</h2>
@@ -105,6 +105,6 @@
 				We will work closely with you to create the perfect solution.
 		</p>
 		<p>
-			<a class="contact-us" onclick="olark('api.box.expand')">Contact Us for a Custom Quote Today</a>
+			<a class="contact-us" onclick="nodebb.contact.showModal()">Contact Us for a Custom Quote Today</a>
 		</p>
 	</div>

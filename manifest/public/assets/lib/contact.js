@@ -135,4 +135,7 @@ $(document).ready(function () {
 	};
 
 	Contact.init();
+
+	window.nodebb = window.nodebb || {};
+	window.nodebb.contact = Contact;
 });

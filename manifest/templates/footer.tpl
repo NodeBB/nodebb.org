@@ -28,7 +28,7 @@
 								<a title="Sales Email" href="mailto:sales@nodebb.org">
 								sales@nodebb.org
 								</a><br />
-								or <a class="pointer" onclick="olark('api.box.expand')">Chat with Us</a>
+								or <a class="pointer" onclick="nodebb.contact.showModal()">Chat with Us</a>
 							</p>
 							<p class="subtext">
 								Have a question? Send our sales team an email or reach out to us via chat.
