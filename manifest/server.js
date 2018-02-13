@@ -88,13 +88,9 @@ app.post('/contact', function (req, res) {
 				email: req.body.email,
 				name: req.body.name,
 			},
-			to: {
-				name: 'NodeBB',
-				email: 'support@nodebb.org',
-			},
+			to: (req.body.type === 'support' ? 'support' : 'sales') + '@nodebb.org',
 			tags: ['contact-form', req.body.type],
 			subject: 'Customer Inquiry via Website',
-			mailbox: mailbox + '',
 		},
 		auth: {
 			bearer: 'eb48aaf5776c764d9e6ed4507f6853cc858a1d33dc6a79d74956e05e98a7f6dc',
