@@ -65,6 +65,14 @@ $(document).ready(function () {
 
 	Contact.submit = function (e) {
 		e.preventDefault();
+		var emailEl = Contact.els.formEl.find('#email');
+
+		// Check for a valid email
+		emailEl.toggleClass('invalid', false);
+		if (!/^.+@.+$/.test(emailEl.val())) {
+			emailEl.toggleClass('invalid', true);
+			return false;
+		}
 
 		// Disable all buttons
 		$(this).html('<i class="fa fa-spinner fa-spin"></i>');
@@ -92,7 +100,12 @@ $(document).ready(function () {
 					successEl.css('display', 'block').css('opacity', 1);
 				}, 200);
 			})
-			.fail(function () {
+			.fail(function (e, code, message) {
+				var errorMessage = message === 'Unprocessable Entity' ?
+					'It looks like an invalid email was entered, we require a valid email in order to coordinate a response, thanks!' :
+					'Unfortunately your message could not be sent. Please try again later or email us at <a href="mailto:support@nodebb.org">support@nodebb.org</a>. Thanks!';
+
+				failureEl.find('p').html(errorMessage);
 				fieldset.css('opacity', 0);
 				failureEl.css('opacity', 0);
 				setTimeout(function () {
@@ -108,8 +121,9 @@ $(document).ready(function () {
 		var fieldset = Contact.els.formEl.find('fieldset');
 		var successEl = Contact.els.formEl.find('> div:nth-child(3)');
 		var failureEl = Contact.els.formEl.find('> div:nth-child(4)');
+		var doReset = this.getAttribute('data-clear') === '1';
 
-		if (!buttonEl.attr('data-type')) {
+		if (doReset) {
 			Contact.els.formEl.get(0).reset();
 		}
 

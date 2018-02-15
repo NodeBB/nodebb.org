@@ -110,7 +110,7 @@
 						</div>
 						<div>
 							<label for="email">Email</label>
-							<input type="text" id="email" name="email" placeholder="Email" />
+							<input type="email" id="email" name="email" placeholder="Email" />
 						</div>
 						<div>
 							<label for="message">Message</label>
@@ -122,14 +122,11 @@
 						<p>
 							Thank you for your inquiry, a representative should be in contact shortly!
 						</p>
-						<button class="reset" type="button">send another message</button>
+						<button class="reset" type="button" data-clear="1">send another message</button>
 					</div>
 					<div>
-						<p>
-							Unfortunately your message could not be sent. Please try again later or email us at
-							<a href="mailto:support@nodebb.org">support@nodebb.org</a>. Thanks!
-							<button class="reset" type="button">send another message</button>
-						</p>
+						<p></p>
+						<button class="reset" type="button">try again</button>
 					</div>
 				</form>
 			</div>
