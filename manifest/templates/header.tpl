@@ -109,7 +109,7 @@
 							<a title="Sign in to manage your NodeBB forums" href="//manage.nodebb.org" data-outboundTrack="//manage.nodebb.org">Sign in</a>
 						</li>
 						<li>
-							<a title="Sign up to create a NodeBB community forum" href="//manage.nodebb.org/register" data-outboundTrack="//manage.nodebb.org/register"><strong>Sign up</strong></a>
+							<a class="sign-up" title="Sign up to create a NodeBB community forum" href="//manage.nodebb.org/register" data-outboundTrack="//manage.nodebb.org/register"><strong>Sign up</strong></a>
 						</li>
 					</ul>
 				</div>
