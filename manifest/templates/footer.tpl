@@ -99,7 +99,7 @@
 					<div>
 						<button type="button" data-type="support">A technical / support issue with NodeBB</button>
 						<button type="button" data-type="sales">NodeBB Hosting including startup / nonprofit pricing</button>
-						<button type="button" data-type="custom">Custom Design, Development, or Metropolis/Enterprise Pricing</button>
+						<button type="button" data-type="custom">Custom Design, Development, or Metropolis / Enterprise Pricing</button>
 						<button type="button" data-type="other">Other / Not sure</button>
 						<input type="hidden" id="type" name="type" value="other" />
 					</div>
