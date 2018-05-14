@@ -51,7 +51,7 @@ app.get('/503', function(req, res) {
 });
 
 app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
-	var validPages = ['404', '502', 'dmca', 'index', 'press', 'pricing', 'privacy', 'tos', 'product', 'plans'];
+	var validPages = ['404', '502', 'dmca', 'index', 'press', 'pricing', 'privacy', 'tos', 'product', 'plans', 'gdpr'];
 
 	if (!req.params.page || validPages.indexOf(req.params.page) !== -1) {
 		if (req.params.page === 'product' && !req.params.subpage) {

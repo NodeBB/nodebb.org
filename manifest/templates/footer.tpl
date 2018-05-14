@@ -48,6 +48,9 @@
 								<a title="Privacy Policy" href="/privacy">Privacy</a>
 							</p>
 							<p class="h5 m-b inline text-left m-r">
+								<a title="GDPR" href="/gdpr">GDPR</a>
+							</p>
+							<p class="h5 m-b inline text-left m-r">
 								<a title="DMCA" href="/dmca">DMCA</a>
 							</p>
 							<p class="h5 m-b inline text-left m-r">
