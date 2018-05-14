@@ -54,7 +54,7 @@
 							</p>
 
 							<p>
-								<a href="/assets/NodeBB%20DPA.pdf">Download NodeBB Data Protection Addendum (DPA)</a>
+								<a href="/assets/nodebb-dpa.pdf">Download NodeBB Data Protection Addendum (DPA)</a>
 							</p>
 
 							<p>
