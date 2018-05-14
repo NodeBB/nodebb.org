@@ -24,7 +24,7 @@
 				<div class="bg-splash dk splash-x">
 					<div class="container">
 						<div class="">
-							<h1 class="m-b-none text-white font-thin text-center logo"><a href="/" title="NodeBB"><img src="assets/images/logo.png" width="266" height="73" alt="NodeBB"></a></h1>
+								<h1 class="m-b-none text-white font-thin text-center logo"><a href="/" title="NodeBB"><img src="assets/images/logo-bb-wc.png" width="147" height="60" alt="NodeBB"></a></h1>
 							<h3 class="text-white font-thin text-center">NodeBB and the European Union&apos;s General Data Protection Regulation (GDPR)</h3>
 						</div>
 					</div>
@@ -49,8 +49,12 @@
 							<p>
 								With regards to compliance with GDPR in terms of our hosting service, please contact us
 								at the mail or email addresses below to receive correspondence and documentation
-								regarding our services. Specifically, you can request a copy of our Data Processing
-								Agreement for your records.
+								regarding our services. Specifically, you can retrieve a copy of our Data Processing
+								Agreement for your records by clicking the following link:
+							</p>
+
+							<p>
+								<a href="/assets/NodeBB%20DPA.pdf">Download NodeBB Data Protection Addendum (DPA)</a>
 							</p>
 
 							<p>
