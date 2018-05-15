@@ -65,6 +65,44 @@
 
 							<p>
 								<span class="h3 m-t-lg">
+									<strong>Frequently Asked Questions</strong>
+								</span>
+							</p>
+
+							<p>
+								<strong>What types of data is collected and processed by NodeBB?</strong>
+							</p>
+
+							<p>
+								The complete list of data categories collected and processed by a vanilla NodeBB install
+								can be found in our Data Protection Addendum (DPA), the download link of which is located
+								above. Feel free to contact us for more details regarding our GDPR implementation.
+							</p>
+
+							<p>
+								Third-party plugins and themes have the capability to collect additional information, and
+								are thus not covered by the existing DPA. You may wish to contact appropriate plugin
+								authors to verify GDPR compliance.
+							</p>
+
+							<p>
+								<strong>How will my existing users provide consent for data processing?</strong>
+							</p>
+
+							<p>
+								All users are able to review their list of rights and consent status via the "Your Rights
+								&amp; Consent" page, accessible via the user settings page in NodeBB. Your existing users
+								are able to provide consent here as well.
+							</p>
+							<p>
+								In order to facilitate receipt of consents for all users, you can elect to download and
+								install <a href="https://github.com/nodebb/nodebb-plugin-gdpr">the NodeBB GDPR plugin</a>,
+								which will allow you to require users to provide consent upon login, and view a list of
+								users who have not provided consent yet.
+							</p>
+
+							<p>
+								<span class="h3 m-t-lg">
 									<strong>Contacting us</strong>
 								</span>
 								<address>
