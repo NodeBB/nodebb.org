@@ -77,7 +77,7 @@
 									Toronto, Ontario M5C 1G4<br />
 									Canada<br /><br />
 									https://nodebb.org<br />
-									<a href="mailto:sales@nodebb.org">sales@nodebb.org</a>
+									<a href="mailto:support@nodebb.org">support@nodebb.org</a>
 								</address>
 							</p>
 
