@@ -31,6 +31,16 @@
 	</script>
 	<!-- End Google Analytics & Optimize -->
 
+	<!-- Envoke Tracking -->
+	<script type="text/javascript">
+		(function () {
+			var n = document.createElement('script'); n.type = 'text/javascript'; n.async = true;
+			n.src = document.location.protocol + '//files.envoke.com/web_files/3821/scripts/nvk.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(n, s);
+		})();
+	</script>
+	<!-- End Envoke Tracking -->
+
 	<meta property="fb:page_id" content="207121219437299" />
 
 	<!-- IF loadOriginalCSS -->
