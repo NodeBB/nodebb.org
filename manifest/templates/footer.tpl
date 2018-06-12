@@ -89,8 +89,8 @@
 			</div>
 		</footer>
 		<div class="contact-toggle">
-			<i class="fa fa-envelope"></i>&nbsp;&nbsp;
-			Contact Us
+			<i class="fa fa-comment"></i>&nbsp;&nbsp;
+			Speak to a Specialist
 		</div>
 		<div class="contact-overlay"></div>
 		<div class="contact-modal-wrapper">
