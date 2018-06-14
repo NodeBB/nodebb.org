@@ -160,14 +160,14 @@ header {
 			width: 1000px;
 			padding: 20px 5px 18px;
 			background-color: #03a9f4 !important;
-			
-			small {
-				text-decoration: underline;
-			}
 		}
 
 		&.active {
 			border-bottom: 6px solid #0091d4;
+			
+			small {
+				font-weight: 600;
+			}
 		}
 
 		&.fourth a {
@@ -288,6 +288,11 @@ header {
 	}
 }
 
+@media (max-width: 998px) {
+	.sign-up {
+		display: none;
+	}
+}
 
 .tag-line {
 	small {
