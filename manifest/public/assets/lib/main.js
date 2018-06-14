@@ -194,7 +194,6 @@ $(document).ready(function() {
 		var path = window.location.pathname;
 		$('#product-menu a').each(function() {
 			var nav = $(this);
-			console.log(nav.attr('href'), nav.attr('href') === path);
 			nav.parents('li').toggleClass('active', nav.attr('href') === path);
 		});
 	}
