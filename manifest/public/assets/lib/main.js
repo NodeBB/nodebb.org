@@ -76,6 +76,10 @@ $(document).ready(function() {
 		var $frame = $('.frame');
 		var $wrap  = $frame.parent();
 
+		if (!$frame.length || !$wrap.length) {
+			return;
+		}
+
 		$frame.sly({
 			horizontal: 1,
 			itemNav: 'centered',
