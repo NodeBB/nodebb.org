@@ -21,6 +21,7 @@ $(document).ready(function() {
 
 	$(window).scroll(resizeHeader);
 	resizeHeader();
+	activateHeader();
 
 
 	if ($('.page-product-extensibility').length) {
@@ -182,6 +183,15 @@ $(document).ready(function() {
 		x = - totalWidth + (windowWidth/2) - (planWidth / 2) - offset;
 		$('.table').css({
 			'transform': 'translateX(' + x + 'px)'
+		});
+	}
+
+	function activateHeader() {
+		var path = window.location.pathname;
+		$('#product-menu a').each(function() {
+			var nav = $(this);
+			console.log(nav.attr('href'), nav.attr('href') === path);
+			nav.parents('li').toggleClass('active', nav.attr('href') === path);
 		});
 	}
 });

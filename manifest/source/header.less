@@ -148,7 +148,6 @@ header {
 		color: white;
 
 		a, a:visited, a:hover, a:focus, a:active {
-			padding: 20px 0;
 			display: block;
 			width: 100%;
 			color: white;
@@ -157,7 +156,17 @@ header {
 			display: table-cell;
 			vertical-align: middle;
 			width: 1000px;
-			padding: 20px 5px;
+			padding: 20px 5px 18px;
+			background-color: #03a9f4 !important;
+			border-bottom: 6px solid #79d5ff;
+
+			small {
+				text-decoration: underline;
+			}
+		}
+
+		&.active a {
+			border-bottom: 6px solid #0091d4;
 		}
 
 		&.fourth a {
