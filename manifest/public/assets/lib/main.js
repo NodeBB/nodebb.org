@@ -70,7 +70,10 @@ $(document).ready(function() {
 
 	$('#product-menu-mobile').html($('#product-menu').html());
 	$('#navigation-menu-mobile').html($('#navigation-menu').html());
-		
+
+	$('#navigation-menu-mobile a').on('click', function() {
+		slideout.close();
+	});
 
 	function setupSly() {
 		var $frame = $('.frame');
