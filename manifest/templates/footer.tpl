@@ -59,7 +59,7 @@
 							<div class="address">
 								Made in Canada with <i class="fa fa-heart"></i><br />
 								Suite #200, 95 King Street East<br />
-								Toronto, Ontario. M5C 1G3
+								Toronto, Ontario. M5C 1G4
 							</div>
 						</div>
 					</div>
