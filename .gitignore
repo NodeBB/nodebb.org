@@ -1,4 +1,6 @@
 manifest/config.json
+manifest/package.json
+manifest/package-lock.json
 
 *.sublime-project
 *.sublime-workspace
