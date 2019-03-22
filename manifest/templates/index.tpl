@@ -17,20 +17,38 @@
 		<small>NodeBB is next generation forum software. It's powerful, mobile-ready and easy to use.</small>
 		<a name="community"></a>
 	</h1>
-	<div class="clearfix testimonial">
-		<div class="pull-left w25">
-			<img src="/assets/images/attis.jpg">
+	<div class="clearfix" id="testimonial">
+		<div class="clearfix testimonial">
+			<div class="pull-left w25">
+				<img src="/assets/images/attis.jpg">
+			</div>
+			<div class="pull-right w75">
+				<p>
+					&ldquo;When we decided it was time to revamp our community we contemplated several possible solutions. We finally opted for NodeBB, and we couldn’t be happier.
+				</p>
+				<p>
+					We&apos;re using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself. &rdquo;
+				</p>
+				<p class="attribution">
+					&mdash; Artur Matczak, Software Engineer, <a href="https://forums.opera.com/">Opera Forums</a>
+				</p>
+			</div>
 		</div>
-		<div class="pull-right w75">
-			<p>
-				&ldquo;When we decided it was time to revamp our community we contemplated several possible solutions. We finally opted for NodeBB, and we couldn’t be happier.
-			</p>
-			<p>
-				We&apos;re using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself. &rdquo;
-			</p>
-			<p class="attribution">
-				&mdash; Artur Matczak, Software Engineer, <a href="https://forums.opera.com/">Opera Forums</a>
-			</p>
+		<div class="clearfix testimonial">
+			<div class="pull-left w25">
+				<img src="/assets/images/attis.jpg">
+			</div>
+			<div class="pull-right w75">
+				<p>
+					&ldquo;When we decided it was time to revamp our community we contemplated several possible solutions. We finally opted for NodeBB, and we couldn’t be happier.
+				</p>
+				<p>
+					We&apos;re using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself. &rdquo;
+				</p>
+				<p class="attribution">
+					&mdash; Artur Matczak, Software Engineer, <a href="https://forums.opera.com/">Opera Forums</a>
+				</p>
+			</div>
 		</div>
 	</div>
 	<div class="clearfix hero-video">

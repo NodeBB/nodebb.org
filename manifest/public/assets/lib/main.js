@@ -28,6 +28,7 @@ $(document).ready(function() {
 		setupSly();
 	} else if ($('.page-index').length) {
 		setupCanvas();
+		setupTestimonialSlider();
 	} else if ($('.page-pricing').length || $('.page-plans').length) {
 		$(window).resize(resizeWindow);
 		resizeWindow();
@@ -119,6 +120,10 @@ $(document).ready(function() {
 		}
 
 		configureMobilePricing();
+	}
+
+	function setupTestimonialSlider() {
+		$('#testimonial').bxSlider();
 	}
 
 	function setupCanvas() {

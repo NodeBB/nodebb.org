@@ -125,6 +125,7 @@
 	<script type="text/javascript" src="{base_path}/assets/lib/slideout.min.js"></script>
 	<script type="text/javascript" src="{base_path}/assets/lib/bootbox.min.js"></script>
 	<script type="text/javascript" src="{base_path}/assets/lib/contact.js"></script>
+	<script type="text/javascript" src="{base_path}/assets/lib/bxslider/jquery.bxslider.min.js"></script>
 	<!-- IF dev -->
 	<script src="//localhost:3001/livereload.js"></script>
 	<!-- ENDIF dev -->

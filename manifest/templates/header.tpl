@@ -52,6 +52,7 @@
 	<link rel="stylesheet" type="text/css" href="{base_path}/bin/style.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/normalize.css">
 	<link rel="stylesheet" type="text/css" href="{base_path}/assets/icons.css">
+	<link rel="stylesheet" type="text/css" href="{base_path}/assets/lib/bxslider/jquery.bxslider.min.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,900|Shadows+Into+Light+Two" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
