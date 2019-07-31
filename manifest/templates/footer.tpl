@@ -96,11 +96,6 @@
 		<div class="contact-modal-wrapper">
 			<div class="contact-modal">
 				<div class="close"><i class="fa fa-times"></i></div>
-				<!-- Embed Envoke Engagement -->
-				<div id="nvkEmbed6dea37964c9030fa4335b16c72316d56" class="nvkEmbed"></div>
-				<script async src="https://offers.nodebb.org/ext/embed/engagements/6dea37964c9030fa4335b16c72316d56.js"></script>
-				<!-- End Embed Envoke Engagement -->
-				<!--
 				<h3>Contact NodeBB</h3>
 				<p>I&apos;d like to speak to someone about...</p>
 				<form>
@@ -137,7 +132,6 @@
 						<button class="reset" type="button">try again</button>
 					</div>
 				</form>
-				-->
 			</div>
 		</div>
 	</main>
