@@ -103,7 +103,7 @@
 				<a target="_blank" href="https://forums.tornbanner.com"><img src="/assets/logos/tornbanner.png" /></a>
 			</div>
 			<div>
-				<a target="_blank" href="http://forum.expii.com/"><img src="/assets/logos/expii.png" /></a>
+				<a target="_blank" href="https://forum.netgate.com/"><img src="/assets/logos/netgate.png" /></a>
 			</div>
 		</div>
 	</div>
