@@ -30,7 +30,7 @@
 					We&apos;re using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself. &rdquo;
 				</p>
 				<p class="attribution">
-					&mdash; <img class="mobile-avatar" src="/assets/images/testimonials/people/attis.jpg"> Artur Matczak, Software Engineer, <a href="https://forums.opera.com/">Opera Forums</a>
+					&mdash; <img class="mobile-avatar" src="/assets/images/testimonials/people/attis.jpg"> Artur Matczak, Software Engineer, <a target="_blank" href="https://forums.opera.com/">Opera Forums</a>
 				</p>
 			</div>
 		</div>
@@ -52,7 +52,7 @@
 					NodeBB is the most attractive piece of open source forum software we’ve found.
 				</p>
 				<p class="attribution">
-					&mdash; <img class="mobile-avatar" src="/assets/images/testimonials/people/jim.jpg"> Jim Thompson, CTO, <a href="https://forum.netgate.com/">Opera Forums</a>
+					&mdash; <img class="mobile-avatar" src="/assets/images/testimonials/people/jim.jpg"> Jim Thompson, CTO, <a target="_blank" href="https://forum.netgate.com/">Opera Forums</a>
 				</p>
 			</div>
 		</div>
