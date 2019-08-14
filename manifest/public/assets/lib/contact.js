@@ -24,6 +24,7 @@ $(document).ready(function () {
 			});
 		
 		Contact.els.toggleEl.on('click', Contact.showModal);
+		$('.header-contact-toggle').on('click', Contact.showModal);
 		Contact.els.overlayEl.on('click', Contact.hideModal);
 		Contact.els.closeEl.on('click', Contact.hideModal);
 		Contact.els.modalEl.find('button[data-type]').on('click', Contact.showForm);
