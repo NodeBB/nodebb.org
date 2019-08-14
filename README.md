@@ -1,4 +1,4 @@
-##NodeBB
+## NodeBB
 
 A beautiful, responsive landing page specifically for NodeBB.
 
