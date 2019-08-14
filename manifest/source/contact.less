@@ -84,7 +84,7 @@ body.modal-open {
 	}
 }
 
-.contact-modal-wrapper, .header-contact-modal-wrapper {
+.contact-modal-wrapper {
 	margin: 10% auto;
 	position: fixed;
 	top: 0;
@@ -100,7 +100,7 @@ body.modal-open {
 	}
 }
 
-.contact-modal, .header-contact-modal {
+.contact-modal {
 	margin: 0 auto;
 	background-color: #fff;
 	width: 66%;
@@ -115,5 +115,146 @@ body.modal-open {
 		top: -1rem;
 		left: 2rem;
 		cursor: pointer;
+	}
+
+	form {
+		display: flex;
+
+		> div, > fieldset {
+			&:first-child {
+				flex: 1;
+				padding-right: 1rem;
+			}
+			
+			&:nth-child(2), &:nth-child(3), &:nth-child(4) {
+				display: none;
+				flex: 2;
+				padding-left: 1rem;
+				border: none;
+				border-left: 1px solid #ccc;
+
+				-webkit-transition: opacity 200ms linear;
+				-moz-transition: opacity 200ms linear;
+				-ms-transition: opacity 200ms linear;
+				-o-transition: opacity 200ms linear;
+				transition: opacity 200ms linear;
+			}
+		}
+
+		label {
+			display: block;
+			font-size: 10px;
+			color: #999;
+			opacity: 0;
+
+			-webkit-transition: opacity 200ms linear;
+			-moz-transition: opacity 200ms linear;
+			-ms-transition: opacity 200ms linear;
+			-o-transition: opacity 200ms linear;
+			transition: opacity 200ms linear;
+
+			&.visible {
+				opacity: 1;
+			}
+
+			&[for="message"] {
+				position: relative;
+				top: 18px;
+				left: 8px;
+			}
+		}
+
+		input {
+			border: none;
+			border-bottom: 1px solid #eee;
+			outline: none;
+			padding: 8px;
+			display: block;
+			width: 100%;
+			margin-bottom: 1em;
+
+			&:focus {
+				border-bottom: 1px solid #E91E63;
+			}
+
+			&.invalid {
+				border-bottom: 1px solid #f0ad4e;
+				color: #f0ad4e;
+			}
+		}
+
+		textarea {
+			border: 1px solid #eee;
+			outline: none;
+			padding: 8px;
+			display: block;
+			width: 100%;
+			padding-top: 20px;
+			height: 85px;
+			
+			&:focus {
+				border: 1px solid #E91E63;
+			}
+		}
+	}
+
+	button[data-type] {
+		width: 100%;
+		display: block;
+		padding: 0.7em 1em;
+		border: none;
+		text-align: left;
+		margin: 0.5em 0;
+		border-radius: 2px;
+		color: #E91E63;
+		background: none;
+		font-size: 14px;
+		outline: none;
+		user-select: none;
+		
+		&.selected {
+			background: #E91E63;
+			color: white;
+		}
+	}
+	
+	button.submit, button.reset {
+		float: right;
+		background: none;
+		text-transform: uppercase;
+		color: #E91E63;
+		margin-top: 1rem;
+		font-size: 14px;
+		font-weight: 600;
+		border: none;
+		outline: none;
+		border-radius: 2px;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact-modal form {
+		> div:first-child.selected {
+			display: none;
+		}
+
+		> fieldset:nth-child(2), > div:nth-child(3), > div:nth-child(4) {
+			border: none;
+			padding-left: 0;
+		}
+
+	}
+	
+	.contact-modal {
+		position: absolute;
+		top: 0;
+
+		> h3, > p {
+			padding-left: 15px;
+		}
+
+		form {
+			padding: 15px;
+		}
 	}
 }

@@ -117,9 +117,6 @@
 							<a title="NodeBB Blog" target="_blank" href="//blog.nodebb.org/" title="Blog" data-outboundTrack="//blog.nodebb.org/">Blog</a>
 						</li>
 						<li>
-							<a class="header-contact-toggle" title="Contact Us" href="#" title="Contact Us">Contact</a>
-						</li>
-						<li>
 							<a title="Sign in to manage your NodeBB forums" href="//manage.nodebb.org" data-outboundTrack="//manage.nodebb.org">Sign in</a>
 						</li>
 						<li>
