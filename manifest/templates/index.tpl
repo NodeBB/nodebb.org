@@ -17,6 +17,24 @@
 		<small>NodeBB is next generation forum software. It's powerful, mobile-ready and easy to use.</small>
 		<a name="community"></a>
 	</h1>
+
+	<div class="clearfix hero-video">
+		<div class="pull-left w60">
+			<div class="yt-wrapper">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/uwgdWPeVuJE?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="pull-right w40">
+			<h2>The best solution for engaging and retaining customers.</h2>
+			<p>
+				From brand communities to product support boards, forums are a great way to engage and provide value to your audience.
+			</p>
+			<p>
+				<em>At NodeBB, our mission is to provide forum software with all the modern features and performance you’ve come to expect from the social and mobile web.</em>
+			</p>
+		</div>
+	</div>
+
 	<div class="clearfix" id="testimonial">
 		<div class="clearfix testimonial">
 			<div class="pull-left w25">
@@ -55,22 +73,6 @@
 					&mdash; <img class="mobile-avatar" src="/assets/images/testimonials/people/jim.jpg"> Jim Thompson, CTO, <a target="_blank" href="https://forum.netgate.com/">Opera Forums</a>
 				</p>
 			</div>
-		</div>
-	</div>
-	<div class="clearfix hero-video">
-		<div class="pull-left w60">
-			<div class="yt-wrapper">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/uwgdWPeVuJE?rel=0" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-		<div class="pull-right w40">
-			<h2>The best solution for engaging and retaining customers.</h2>
-			<p>
-				From brand communities to product support boards, forums are a great way to engage and provide value to your audience.
-			</p>
-			<p>
-				<em>At NodeBB, our mission is to provide forum software with all the modern features and performance you’ve come to expect from the social and mobile web.</em>
-			</p>
 		</div>
 	</div>
 
