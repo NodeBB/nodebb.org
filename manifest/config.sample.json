@@ -4,5 +4,6 @@
 	"zendesk": {
 		"email": "",
 		"api": ""
-	}
+	},
+	"production": true
 }
