@@ -1,14 +1,14 @@
 "use strict";
 
-var express = require('express'),
-	winston = require('winston'),
-	async = require('async'),
-	nconf = require('nconf'),
-	path = require('path'),
-	app = express(),
-	middleware = require('./lib/middleware')(app),
-	compression = require('compression'),
-	cacheTime = process.env.NODE_ENV === 'production' ? 86400000 : 0;
+const express = require('express');
+const winston = require('winston');
+const async = require('async');
+const nconf = require('nconf');
+const path = require('path');
+const app = express();
+const middleware = require('./lib/middleware')(app);
+const compression = require('compression');
+const cacheTime = process.env.NODE_ENV === 'production' ? 86400000 : 0;
 
 var bodyParser = require('body-parser');
 var request = require('request');
@@ -23,6 +23,8 @@ winston.add(winston.transports.Console, {
 nconf.file({
 	file: path.join(__dirname, '/config.json')
 });
+
+const zendesk = require('./lib/zendesk');
 
 app.engine('tpl', require('templates.js').__express);
 app.set('view engine', 'tpl');
@@ -77,30 +79,22 @@ app.post('/contact', function (req, res) {
 		return res.sendStatus(400);
 	}
 
-	var mailbox = req.body.type === 'support' ? 2911339330 : 2915337130;
+	var mailbox = req.body.type === 'support' ? 360003654833 : 360003659214;
+	
 
-	request.post({
-		url: 'https://api.groovehq.com/v1/tickets',
-		json: true,
-		body: {
+	zendesk.create({
+		subject: (req.body.type === 'support' ? 'Support Request: ' : 'NodeBB Contact: ') + req.body.email,
+		comment: {
 			body: req.body.message,
-			from: {
-				email: req.body.email,
-				name: req.body.name,
-			},
-			to: (req.body.type === 'support' ? 'support' : 'sales') + '@nodebb.org',
-			tags: ['contact-form', req.body.type],
-			subject: 'Customer Inquiry via Website',
-			assignee: req.body.type !== 'support' ? 'jay@nodebb.org' : undefined,
 		},
-		auth: {
-			bearer: 'eb48aaf5776c764d9e6ed4507f6853cc858a1d33dc6a79d74956e05e98a7f6dc',
+		requester: {
+			name: req.body.name,
+			email: req.body.email,
 		},
+		group_id: mailbox,		
 	}, function (err, response, body) {
 		if (err) {
 			res.sendStatus(400);
-		} else if (response.statusCode !== 201) {
-			res.sendStatus(response.statusCode);
 		} else {
 			res.sendStatus(200);
 		}

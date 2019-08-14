@@ -94,3 +94,4 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+manifest/config.json
