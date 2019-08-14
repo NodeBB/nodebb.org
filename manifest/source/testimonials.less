@@ -23,11 +23,19 @@
 			font-weight: 300;
 			text-align: right;
 		}
-	}
+    }
+    
+    &.text-small p {
+        font-size: 17px;
+
+        &.attribution {
+            font-size: 20px;
+        }
+    }
 
 	img {
 		border-radius: 50%;
-		max-width: 50%;
+		max-width: 65%;
 	}
 
 	@media (min-width: 480px) {
@@ -47,8 +55,9 @@
 }
 
 body .bx-wrapper img {
-    max-width: 50%;
+    max-width: 60%;
     margin-right: 25%;
+    margin-top: -5px;
 }
 
 .bx-next, .bx-prev {

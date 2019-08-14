@@ -20,7 +20,7 @@
 	<div class="clearfix" id="testimonial">
 		<div class="clearfix testimonial">
 			<div class="pull-left w25">
-				<img src="/assets/images/attis.jpg">
+				<img src="/assets/images/testimonials/people/attis.jpg">
 			</div>
 			<div class="pull-right w75">
 				<p>
@@ -30,23 +30,29 @@
 					We&apos;re using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself. &rdquo;
 				</p>
 				<p class="attribution">
-					&mdash; <img class="mobile-avatar" src="/assets/images/attis.jpg"> Artur Matczak, Software Engineer, <a href="https://forums.opera.com/">Opera Forums</a>
+					&mdash; <img class="mobile-avatar" src="/assets/images/testimonials/people/attis.jpg"> Artur Matczak, Software Engineer, <a href="https://forums.opera.com/">Opera Forums</a>
 				</p>
 			</div>
 		</div>
-		<div class="clearfix testimonial">
+		<div class="clearfix testimonial text-small">
 			<div class="pull-left w25">
-				<img src="/assets/images/attis.jpg">
+				<img src="/assets/images/testimonials/people/jim.jpg">
 			</div>
 			<div class="pull-right w75">
 				<p>
-					&ldquo;When we decided it was time to revamp our community we contemplated several possible solutions. We finally opted for NodeBB, and we couldn’t be happier.
+					Due to the need for GDPR compliance, and a desire to update the technology base from PHP, wanted to migrate the pfSense community to a new forum, and NodeBB fit our needs. 
 				</p>
 				<p>
-					We&apos;re using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself. &rdquo;
+					The migration process was surprisingly simple, and customizing the colors and icons was painless.  The UI is great, our users really like it, and the performance is excellent.
+				</p>
+				<p>
+					NodeBB makes GDPR compliance exceedingly simple, everything is mobile and SEO-friendly out of the box, and general maintenance is a lot easier compared to our old forum. As a bonus, the NodeBB support team is available whenever we run into trouble. 
+				</p>
+				<p>
+					NodeBB is the most attractive piece of open source forum software we’ve found.
 				</p>
 				<p class="attribution">
-					&mdash; <img class="mobile-avatar" src="/assets/images/attis.jpg"> Artur Matczak, Software Engineer, <a href="https://forums.opera.com/">Opera Forums</a>
+					&mdash; <img class="mobile-avatar" src="/assets/images/testimonials/people/jim.jpg"> Jim Thompson, CTO, <a href="https://forum.netgate.com/">Opera Forums</a>
 				</p>
 			</div>
 		</div>
