@@ -80,12 +80,22 @@ app.post('/contact', function (req, res) {
 	}
 
 	var mailbox = req.body.type === 'support' ? 360003654833 : 360003659214;
-	
+	var type;
 
+	if (req.body.type === 'support') {
+		type = 'Technical Support';
+	} else if (req.body.type === 'sales') {
+		type = 'NodeBB Hosting';
+	} else if (req.body.type === 'custom') {
+		type = 'Custom Development / Enterprise';
+	} else {
+		type = 'Other';
+	}
+	
 	zendesk.create({
 		subject: (req.body.type === 'support' ? 'Support Request: ' : 'NodeBB Contact: ') + req.body.email,
 		comment: {
-			body: req.body.message,
+			html_body: '<strong>Request type: ' + type + '</strong><br /><br />' + req.body.message,
 		},
 		requester: {
 			name: req.body.name,
