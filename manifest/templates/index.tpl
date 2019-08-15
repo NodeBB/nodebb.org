@@ -70,7 +70,7 @@
 					NodeBB is the most attractive piece of open source forum software we’ve found.
 				</p>
 				<p class="attribution">
-					&mdash; <img class="mobile-avatar" src="/assets/images/testimonials/people/jim.jpg"> Jim Thompson, CTO, <a target="_blank" href="https://forum.netgate.com/">Opera Forums</a>
+					&mdash; <img class="mobile-avatar" src="/assets/images/testimonials/people/jim.jpg"> Jim Thompson, CTO, <a target="_blank" href="https://forum.netgate.com/">Netgate</a>
 				</p>
 			</div>
 		</div>
