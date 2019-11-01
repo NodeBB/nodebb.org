@@ -58,13 +58,13 @@
 			</div>
 			<div class="pull-right w75">
 				<p>
-					Due to the need for GDPR compliance, and a desire to update the technology base from PHP, wanted to migrate the pfSense community to a new forum, and NodeBB fit our needs. 
+					Due to the need for GDPR compliance, and a desire to update the technology base from PHP, wanted to migrate the pfSense community to a new forum, and NodeBB fit our needs.
 				</p>
 				<p>
 					The migration process was surprisingly simple, and customizing the colors and icons was painless.  The UI is great, our users really like it, and the performance is excellent.
 				</p>
 				<p>
-					NodeBB makes GDPR compliance exceedingly simple, everything is mobile and SEO-friendly out of the box, and general maintenance is a lot easier compared to our old forum. As a bonus, the NodeBB support team is available whenever we run into trouble. 
+					NodeBB makes GDPR compliance exceedingly simple, everything is mobile and SEO-friendly out of the box, and general maintenance is a lot easier compared to our old forum. As a bonus, the NodeBB support team is available whenever we run into trouble.
 				</p>
 				<p>
 					NodeBB is the most attractive piece of open source forum software we’ve found.
@@ -86,27 +86,32 @@
 				<a target="_blank" href="https://www.funimation.com/forum/"><img src="/assets/logos/funimation.png" /></a>
 			</div>
 			<div>
+				<a target="_blank" href="https://www.bleedingedge.com/forums/"><img src="/assets/logos/bleedingedge.png" /></a>
+			</div>
+		</div>
+		<div class="companies">
+			<div>
 				<a target="_blank" href="https://forums.opera.com/">
 					<img width="200" src="/assets/logos/opera.svg" />
 				</a>
 			</div>
-			<a target="_blank" href="https://notepad-plus-plus.org/community/" class="npp-logo"></a>
-		</div>
-		<div class="companies">
+			<div>
+				<a target="_blank" href="https://forum.netgate.com/"><img src="/assets/logos/netgate.png" /></a>
+			</div>
 			<div class="flux-logo">
 				<a target="_blank" href="https://forum.justgetflux.com/">
 					<img src="/assets/logos/flux.png" /><span>f.lux</span><span>&reg;</span>
 				</a>
 			</div>
+		</div>
+		<div class="companies">
 			<div>
 				<a target="_blank" href="https://forums.itpro.tv/"><img src="/assets/logos/itprotv.png" /></a>
 			</div>
 			<div>
 				<a target="_blank" href="https://forums.tornbanner.com"><img src="/assets/logos/tornbanner.png" /></a>
 			</div>
-			<div>
-				<a target="_blank" href="https://forum.netgate.com/"><img src="/assets/logos/netgate.png" /></a>
-			</div>
+			<a target="_blank" href="https://notepad-plus-plus.org/community/" class="npp-logo"></a>
 		</div>
 	</div>
 

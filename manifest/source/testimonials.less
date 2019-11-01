@@ -2,11 +2,11 @@
 .testimonial {
 	background-color: #eee;
 	padding: 3em 2em 2em 2em;
-	
+
 	&.clearfix {
 		margin-bottom: 4em;
 		border-bottom: none;
-	
+
 		.pull-right {
 			margin-bottom: 0;
 		}
@@ -24,7 +24,7 @@
 			text-align: right;
 		}
     }
-    
+
     &.text-small p {
         font-size: 17px;
 
@@ -48,7 +48,7 @@
 			margin-right: 3em;
 		}
     }
-    
+
     .mobile-avatar {
         display: none;
     }
@@ -60,8 +60,11 @@ body .bx-wrapper img {
     margin-top: -5px;
 }
 
-.bx-next, .bx-prev {
-    cursor: pointer;
+.bx-wrapper .bx-controls-direction {
+    .bx-next, .bx-prev {
+        cursor: pointer;
+        z-index: 4;
+    }
 }
 
 @media (max-width: 768px) {
