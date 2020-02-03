@@ -75,6 +75,11 @@ app.post('/contact', function (req, res) {
 		return req.body.hasOwnProperty(prop);
 	});
 
+	// Naive filtering of Russian spambots
+	if (req.body.email.indexOf('@yandex.ru') !== -1 && /\.ru\//.test(req.body.message)) {
+		return res.sendStatus(200);	// OK, ya rascals!
+	}
+
 	if (!ok) {
 		return res.sendStatus(400);
 	}
@@ -91,7 +96,7 @@ app.post('/contact', function (req, res) {
 	} else {
 		type = 'Other';
 	}
-	
+
 	zendesk.create({
 		subject: (req.body.type === 'support' ? 'Support Request: ' : 'NodeBB Contact: ') + req.body.email,
 		comment: {
@@ -101,7 +106,7 @@ app.post('/contact', function (req, res) {
 			name: req.body.name,
 			email: req.body.email,
 		},
-		group_id: mailbox,		
+		group_id: mailbox,
 	}, function (err, response, body) {
 		if (err) {
 			res.sendStatus(400);
