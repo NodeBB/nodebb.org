@@ -1,9 +1,0 @@
-{
-	"base_path": "http://34.71.198.154:8000",
-	"port": 8000,
-	"zendesk": {
-		"email": "support@nodebb.org",
-		"api": "30ecb03d-abfd-4841-93e5-c5b22c4987b8"
-	},
-	"production": true
-}
