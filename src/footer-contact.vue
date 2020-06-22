@@ -5,7 +5,7 @@
         <h3>Speak to a specialist</h3>
         <p>I'd like to speak to someone about...</p>
       </div>-->
-      <iframe src="http://34.71.198.154:8000/"></iframe>
+      <iframe src="/contact"></iframe>
     </factor-modal>
     <factor-btn @click="vis = !vis" class="contact-specialist-btn">Speak to a specialist</factor-btn>
   </div>
