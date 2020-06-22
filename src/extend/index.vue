@@ -1,0 +1,208 @@
+<template>
+  <div class="extend-container">
+    <div class="extend-index-head">
+      <div class="content-pad">
+        <h1 class="title">{{ describe.title }}</h1>
+        <h3 class="sub-title">{{ describe.description }}</h3>
+      </div>
+    </div>
+    <factor-spinner v-if="loading" />
+    <div v-else-if="extensionType == 'plugin'" class="extensions-wrap plugins-wrap content-pad">
+      <plugin-grid :extensions="extensions" />
+      <div>
+        <extension-sidebar :index-data="extensionIndex" />
+      </div>
+      <!-- <div class="coming-soon">
+        <div class="title">Coming soon 👋</div>
+        <div class="sub-title">NodeBB Plugins will launch early June, 2020</div>
+
+        <div class="actions">
+          <factor-link btn="primary" path="/signin?newAccount">Create an account &rarr;</factor-link>
+          <span class="cta-tag">for early access.</span>
+        </div>
+      </div>-->
+    </div>
+
+    <div v-else class="extensions-wrap themes-wrap content-pad">
+      <theme-grid :extensions="extensions" />
+    </div>
+
+    <call-to-action />
+  </div>
+</template>
+
+<script lang="ts">
+import { isLoggedIn } from "@factor/user";
+import { stored } from "@factor/api";
+import { factorSpinner } from "@factor/ui";
+import {
+  postType,
+  titleFromPackage,
+  formatDownloads,
+  extensionPermalink,
+  extensionImage,
+  getAuthors
+} from "./util";
+
+import { requestIndex } from "./request";
+export default {
+  components: {
+    callToAction: () => import("./el/cta.vue"),
+    pluginGrid: () => import("./grid-plugin.vue"),
+    themeGrid: () => import("./grid-theme.vue"),
+    factorSpinner
+  },
+  data() {
+    return {
+      loading: false,
+      getData: ""
+    };
+  },
+  serverPrefetch() {
+    return this.getPosts();
+  },
+  computed: {
+    isLoggedIn,
+    extensions(this: any) {
+      const storeKey = [postType, this.extensionType].join("");
+      const index = stored(storeKey) || {};
+      return index.posts ?? [];
+    },
+    extensionType(this: any) {
+      return this.$route.path.includes("theme") ? "theme" : "plugin";
+    },
+    describe(this: any) {
+      if (this.extensionType == "plugin") {
+        return {
+          title: "NodeBB Plugins",
+          description: "Add new features to your community in seconds."
+        };
+      } else {
+        return {
+          title: "NodeBB Themes",
+          description:
+            "Pick a professionally designed theme for your community and get started."
+        };
+      }
+    }
+  },
+  watch: {
+    $route: {
+      handler: function(this: any) {
+        this.getPosts();
+      }
+    }
+  },
+
+  mounted() {
+    if (this.extensions.length == 0) {
+      this.getPosts();
+    }
+  },
+
+  methods: {
+    async getPosts(this: any) {
+      this.loading = true;
+
+      await requestIndex({ extensionType: this.extensionType });
+
+      this.loading = false;
+    },
+    titleFromPackage,
+    formatDownloads,
+    extensionPermalink,
+    extensionImage,
+    getAuthors
+  },
+  metaInfo() {
+    return this.describe;
+  }
+};
+</script>
+<style lang="less">
+.extend-container {
+  font-weight: 400;
+  overflow: hidden;
+  .coming-soon {
+    box-shadow: var(--panel-shadow);
+    border-radius: 10px;
+    line-height: 1.4;
+    text-align: center;
+    padding: 6rem 2em 6rem;
+    .title {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .sub-title {
+      font-size: 1.5em;
+    }
+    .actions {
+      margin-top: 2rem;
+      .cta-tag {
+        display: block;
+        margin-top: 0.5rem;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .extend-index-head {
+    padding: 6em 0;
+    text-align: center;
+    .title {
+      font-size: 2.5em;
+      line-height: 1.1;
+      font-weight: var(--font-weight-bold, 700);
+      letter-spacing: -0.03em;
+      text-transform: capitalize;
+      margin-bottom: 0.5rem;
+    }
+    .sub-title {
+      font-size: 1.5em;
+      opacity: 0.7;
+    }
+    @media (max-width: 900px) {
+      text-align: left;
+      .title {
+        font-size: 2em;
+      }
+      .sub-title {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  .spinner-wrap {
+    min-height: 400px;
+  }
+
+  .content-pad {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+  }
+
+  @media (max-width: 900px) {
+    padding-top: 0;
+    .extend-index-head {
+      padding: 4em 0;
+    }
+  }
+
+  .extensions-wrap {
+    &.plugins-wrap {
+      display: grid;
+      grid-gap: 4rem;
+      //grid-template-columns: 1fr 150px;
+
+      @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+      }
+    }
+  }
+}
+</style>

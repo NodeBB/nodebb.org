@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="342" viewBox="0 0 290 342">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="290" height="342" fill="#FFF" rx="5"/>
+    <rect width="290" height="1" y="286" fill="#ECEEF0"/>
+    <rect width="147" height="12" x="20" y="138" fill="#F84F77" rx="6"/>
+    <rect width="75.85" height="10.85" x="55.575" y="258.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="5.425"/>
+    <rect width="107.85" height="10.85" x="55.575" y="231.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="5.425"/>
+    <rect width="75.85" height="10.85" x="55.575" y="204.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="5.425"/>
+    <rect width="18.85" height="14.85" x="21.575" y="202.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="7.425"/>
+    <rect width="18.85" height="14.85" x="21.575" y="229.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="7.425"/>
+    <rect width="18.85" height="14.85" x="21.575" y="256.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="7.425"/>
+    <rect width="53.85" height="6.85" x="21.575" y="182.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".177" rx="3.425"/>
+    <rect width="30.85" height="6.85" x="81.575" y="182.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".177" rx="3.425"/>
+    <rect width="247.85" height="10.85" x="20.575" y="307.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".297" rx="5.425"/>
+    <rect width="59.85" height="10.85" x="55.575" y="93.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="5.425"/>
+    <rect width="81.85" height="10.85" x="55.575" y="66.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="5.425"/>
+    <rect width="59.85" height="10.85" x="55.575" y="39.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="5.425"/>
+    <rect width="18.85" height="14.85" x="21.575" y="91.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="7.425"/>
+    <rect width="18.85" height="14.85" x="21.575" y="64.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="7.425"/>
+    <rect width="18.85" height="14.85" x="21.575" y="37.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".3" rx="7.425"/>
+    <rect width="49.85" height="6.85" x="20.575" y="16.575" fill="#8792A2" stroke="#8792A2" stroke-opacity=".18" stroke-width="1.15" opacity=".178" rx="3.425"/>
+    <path fill="#F84F77" fill-rule="nonzero" d="M199.6,133 C197.0248,133 194.0132,135.919411 192.4,137.8 C190.7868,135.919411 187.7752,133 185.2,133 C180.6416,133 178,136.555488 178,141.080654 C178,146.093551 182.8,151.4 192.4,157 C202,151.4 206.8,146.2 206.8,141.4 C206.8,136.874834 204.1584,133 199.6,133 Z"/>
+  </g>
+</svg>

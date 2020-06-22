@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'nbb';
+  src: url('./@fonts/ae/aeroport-italic.woff2') format('woff2'),
+    url('./@fonts/ae/aeroport-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'nbb';
+  src: url('./@fonts/ae/aeroport-medium.woff2') format('woff2'),
+    url('./@fonts/ae/aeroport-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nbb';
+  src: url('./@fonts/ae/aeroport-light.woff2') format('woff2'),
+    url('./@fonts/ae/aeroport-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nbb';
+  src: url('./@fonts/ae/aeroport.woff2') format('woff2'),
+    url('./@fonts/ae/aeroport.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nbb';
+  src: url('./@fonts/ae/aeroport-bold.woff2') format('woff2'),
+    url('./@fonts/ae/aeroport-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nbb-script';
+  src: url('./@fonts/n/nanum.woff2') format('woff2'),
+    url('./@fonts/n/nanum.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@import "./@fonts/fa/less/fontawesome";
+@import "./@fonts/fa/less/brands";
+@import "./@fonts/fa/less/duotone";
+@import "./@fonts/fa/less/light";
+// @import "./@fonts/fa/less/regular";
+@import "./@fonts/fa/less/solid";
+
+@import "~@factor/ui/css/standard-reset.less";
+
+.factor-app {
+  @import "~@factor/ui/css/standard-form.less";
+  --color-primary: #1952be;
+  --color-tertiary: #e91e63;
+  --color-secondary: #2a6cbe;
+  --color-text: #4f566b;
+  --color-text-secondary: #8792a2;
+  --color-code: #283f63;
+  --color-border: #e3e8ee;
+  --color-text-rgb: 79, 86, 107;
+  --color-light: #fafbff;
+  --color-placeholder: #bdcad4;
+  --color-success: #42b983;
+  --color-info: #62bdff;
+  --color-warning: #ff6464;
+  --color-danger: #ff0076;
+  --color-bg: #ffffff;
+  --color-bg-contrast: #f6fafd;
+  --color-bg-highlight: #edf1f5;
+  --font-family-primary: nbb, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-family-cursive: nbb-script, script;
+  -webkit-font-smoothing: antialiased;
+
+  --font-weight-bold: 700;
+  --font-weight-light: 300;
+
+  --box-shadow-panel: 0 0 1px rgba(58, 55, 148, 0.25), 0 6px 14px 0 rgba(24, 32, 41, 0.06),
+    0 12px 34px 0 rgba(24, 32, 41, 0.04);
+  --box-shadow-input: 0 0 0 1px rgba(0, 43, 93, 0.2);
+
+  color: var(--color-text);
+
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+
+  strong {
+    font-weight: var(--font-weight-bold);
+  }
+
+  a {
+    color: var(--color-primary);
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
+
+  .email-list-form {
+    max-width: 650px;
+    font-size: 1.3em;
+    margin: 2rem auto;
+
+    @media (max-width: 900px) {
+      font-size: 1em;
+    }
+  }
+
+  .show-mobile {
+    display: none;
+
+    @media (max-width: 900px) {
+      display: block;
+    }
+  }
+
+  .show-desktop {
+    display: block;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+}

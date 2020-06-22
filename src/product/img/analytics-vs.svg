@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="197" viewBox="0 0 172 197">
+  <defs>
+    <circle id="analytics-vs-a" cx="60" cy="60" r="60"/>
+    <mask id="analytics-vs-c" width="120" height="120" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+      <use xlink:href="#analytics-vs-a"/>
+    </mask>
+    <circle id="analytics-vs-b" cx="60" cy="60" r="60"/>
+    <mask id="analytics-vs-d" width="120" height="120" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+      <use xlink:href="#analytics-vs-b"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-11 -18)">
+    <rect width="246" height="230" rx="5"/>
+    <rect width="138" height="6" x="11" y="18" fill="#8792A2" opacity=".7" rx="3"/>
+    <rect width="40" height="5" x="28" y="47" fill="#8792A2" opacity=".4" rx="2.5"/>
+    <rect width="40" height="5" x="28" y="63" fill="#8792A2" opacity=".4" rx="2.5"/>
+    <g transform="rotate(83 37.814 143.063)">
+      <path d="M60,120 C93.137085,120 120,93.137085 120,60 C120,26.862915 93.137085,3.41060513e-13 60,3.41060513e-13 C26.862915,3.41060513e-13 1.36424205e-12,26.862915 1.36424205e-12,60 C1.36424205e-12,93.137085 26.862915,120 60,120 Z"/>
+      <use stroke="#EFE3F7" stroke-dasharray="440" stroke-linejoin="round" stroke-width="24" mask="url(#analytics-vs-c)" xlink:href="#analytics-vs-a"/>
+      <use stroke="#CBA3E5" stroke-dasharray="165" stroke-linejoin="round" stroke-width="24" mask="url(#analytics-vs-d)" xlink:href="#analytics-vs-b"/>
+    </g>
+    <rect width="12" height="12" x="11" y="43" fill="#EFE3F7" rx="6"/>
+    <rect width="12" height="12" x="11" y="59" fill="#CBA3E5" rx="6"/>
+  </g>
+</svg>

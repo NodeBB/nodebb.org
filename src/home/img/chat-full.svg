@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1124" height="1063" viewBox="0 0 1124 1063">
+  <defs>
+    <rect id="chat-full-a" width="12" height="12" x="502.628" y="21.024" rx="6"/>
+    <linearGradient id="chat-full-b" x1="50.007%" x2="50.007%" y1="-141.4%" y2="-47.015%">
+      <stop offset="0%" stop-color="#2A6CBE"/>
+      <stop offset="38.688%" stop-color="#2062BC"/>
+      <stop offset="49.182%" stop-color="#1F5FBC"/>
+      <stop offset="66.583%" stop-color="#1C5ABD"/>
+      <stop offset="85.354%" stop-color="#1956BC"/>
+      <stop offset="100%" stop-color="#1851BE"/>
+    </linearGradient>
+    <circle id="chat-full-d" cx="25" cy="165" r="10"/>
+    <filter id="chat-full-c" width="160%" height="160%" x="-30%" y="-30%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+      <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"/>
+      <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.749019608   0 0 0 0 0.898039216   0 0 0 0 0.882352941  0 0 0 0.829545455 0"/>
+    </filter>
+    <circle id="chat-full-f" cx="25" cy="387" r="10"/>
+    <filter id="chat-full-e" width="160%" height="160%" x="-30%" y="-30%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+      <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"/>
+      <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.749019608   0 0 0 0 0.898039216   0 0 0 0 0.882352941  0 0 0 0.829545455 0"/>
+    </filter>
+    <circle id="chat-full-h" cx="25" cy="463" r="10"/>
+    <filter id="chat-full-g" width="160%" height="160%" x="-30%" y="-30%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+      <feOffset in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"/>
+      <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0.749019608   0 0 0 0 0.898039216   0 0 0 0 0.882352941  0 0 0 0.829545455 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="1124" height="1063" fill="#FFF"/>
+    <rect width="391" height="1008" y="55" fill="#ECEEF0"/>
+    <g transform="translate(436 986)">
+      <rect width="529.971" height="53.75" x=".625" y=".625" fill="#FFF" stroke="#D4D8DD" stroke-width="1.25" rx="3"/>
+      <rect width="113.509" height="20.952" x="11.351" y="17.024" fill="#8792A2" fill-opacity=".219" rx="10.476"/>
+      <use fill="#0E423C" stroke="#BFE5E1" stroke-width="20" xlink:href="#chat-full-a"/>
+      <rect width="15" height="15" x="501.128" y="19.524" stroke="#FFF" stroke-opacity=".819" stroke-width="3" rx="7.5"/>
+      <rect width="85" height="20.952" x="404.87" y="17.024" fill="#ECEEF0" rx="10.476"/>
+      <g transform="translate(542.572)">
+        <rect width="103.293" height="55" x=".08" fill="url(#chat-full-b)" rx="5"/>
+        <rect width="65.835" height="11.786" x="18.242" y="22.262" fill="#5C84D1" rx="5.893"/>
+      </g>
+    </g>
+    <g transform="translate(436 83)">
+      <circle cx="22" cy="22" r="22" fill="#8792A2" opacity=".24"/>
+      <g transform="translate(65 3)">
+        <rect width="88" height="18" fill="#8792A2" opacity=".4" rx="9"/>
+        <rect width="291" height="18" y="38" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="192" height="18" y="66" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="39" height="18" x="203" y="66" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="335" height="18" x="254" y="66" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="28" height="18" x="98" fill="#ECEEF0" rx="3"/>
+      </g>
+    </g>
+    <rect width="1124" height="55" fill="#000306"/>
+    <rect width="61" height="12" x="436" y="23" fill="#FFF" opacity=".44" rx="3"/>
+    <rect width="61" height="12" x="507" y="23" fill="#FFF" rx="3"/>
+    <rect width="114" height="12" x="578" y="23" fill="#FFF" rx="3"/>
+    <rect width="136" height="12" x="702" y="23" fill="#FFF" rx="3"/>
+    <g transform="translate(436 210)">
+      <circle cx="22" cy="22" r="22" fill="#8792A2" opacity=".24"/>
+      <g transform="translate(65 4)">
+        <rect width="124" height="18" x="1" fill="#8792A2" opacity=".4" rx="9"/>
+        <rect width="572" height="18" y="38" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="40" height="18" x="142" fill="#ECEEF0" rx="3"/>
+      </g>
+    </g>
+    <g transform="translate(436 309)">
+      <circle cx="22" cy="22" r="22" fill="#8792A2" opacity=".24"/>
+      <g transform="translate(65 3)">
+        <rect width="111" height="18" fill="#8792A2" opacity=".4" rx="9"/>
+        <rect width="216" height="18" y="38" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="352" height="18" x="230" y="38" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="50" height="18" y="66" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="352" height="18" x="64" y="66" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="34" height="18" x="126" fill="#ECEEF0" rx="3"/>
+      </g>
+    </g>
+    <g transform="translate(436 436)">
+      <circle cx="22" cy="22" r="22" fill="#8792A2" opacity=".24"/>
+      <g transform="translate(65 4)">
+        <rect width="145" height="18" fill="#8792A2" opacity=".4" rx="9"/>
+        <rect width="457" height="187" y="38" fill="#F1EFF8" rx="5"/>
+        <rect width="65" height="18" x="392" y="230" fill="#8792A2" opacity=".12" rx="9"/>
+        <rect width="118" height="10" x="329" y="190" fill="#24124D" opacity=".52" rx="5"/>
+        <rect width="30" height="10" x="294" y="190" fill="#24124D" opacity=".52" rx="5"/>
+        <rect width="195" height="10" x="252" y="172" fill="#24124D" rx="5"/>
+        <rect width="46" height="18" x="164" fill="#ECEEF0" rx="3"/>
+      </g>
+    </g>
+    <g transform="translate(436 831)">
+      <circle cx="22" cy="22" r="22" fill="#8792A2" opacity=".24"/>
+      <g transform="translate(65 3)">
+        <rect width="145" height="18" fill="#8792A2" opacity=".4" rx="9"/>
+        <rect width="358" height="18" y="38" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="319" height="18" x="1" y="66" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="400" height="18" y="94" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="145" height="18" x="419" y="94" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="46" height="18" x="164" fill="#ECEEF0" rx="3"/>
+      </g>
+    </g>
+    <g transform="translate(436 704)">
+      <circle cx="22" cy="22" r="22" fill="#8792A2" opacity=".24"/>
+      <g transform="translate(65 4)">
+        <rect width="87" height="18" fill="#8792A2" opacity=".4" rx="9"/>
+        <rect width="291" height="18" x="1" y="38" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="192" height="18" y="66" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="39" height="18" x="203" y="66" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="335" height="18" x="254" y="66" fill="#8792A2" opacity=".241" rx="9"/>
+        <rect width="27" height="18" x="100" fill="#ECEEF0" rx="3"/>
+      </g>
+    </g>
+    <circle cx="42" cy="105" r="22" fill="#8792A2" opacity=".375"/>
+    <rect width="88" height="12" x="84" y="86" fill="#8792A2" opacity=".2" rx="6"/>
+    <rect width="88" height="12" x="84" y="160" fill="#8792A2" opacity=".2" rx="6"/>
+    <rect width="88" height="12" x="84" y="234" fill="#8792A2" opacity=".2" rx="6"/>
+    <rect width="88" height="12" x="84" y="308" fill="#8792A2" opacity=".2" rx="6"/>
+    <rect width="88" height="12" x="84" y="382" fill="#8792A2" opacity=".2" rx="6"/>
+    <rect width="88" height="12" x="84" y="456" fill="#8792A2" opacity=".2" rx="6"/>
+    <rect width="88" height="12" x="84" y="530" fill="#8792A2" opacity=".2" rx="6"/>
+    <rect width="88" height="12" x="84" y="604" fill="#8792A2" opacity=".2" rx="6"/>
+    <rect width="88" height="12" x="84" y="678" fill="#8792A2" opacity=".2" rx="6"/>
+    <rect width="281" height="16" x="84" y="109" fill="#8792A2" opacity=".4" rx="8"/>
+    <rect width="134" height="16" x="84" y="183" fill="#8792A2" opacity=".4" rx="8"/>
+    <rect width="181" height="16" x="84" y="257" fill="#8792A2" opacity=".4" rx="8"/>
+    <rect width="225" height="16" x="84" y="331" fill="#8792A2" opacity=".4" rx="8"/>
+    <rect width="261" height="16" x="84" y="405" fill="#8792A2" opacity=".4" rx="8"/>
+    <rect width="134" height="16" x="84" y="479" fill="#8792A2" opacity=".4" rx="8"/>
+    <rect width="281" height="16" x="84" y="553" fill="#8792A2" opacity=".4" rx="8"/>
+    <rect width="198" height="16" x="84" y="627" fill="#8792A2" opacity=".4" rx="8"/>
+    <rect width="55" height="16" x="84" y="701" fill="#8792A2" opacity=".4" rx="8"/>
+    <circle cx="42" cy="179" r="22" fill="#8792A2" opacity=".375"/>
+    <circle cx="42" cy="253" r="22" fill="#8792A2" opacity=".375"/>
+    <circle cx="42" cy="327" r="22" fill="#8792A2" opacity=".375"/>
+    <circle cx="42" cy="401" r="22" fill="#8792A2" opacity=".375"/>
+    <circle cx="42" cy="475" r="22" fill="#8792A2" opacity=".375"/>
+    <circle cx="42" cy="549" r="22" fill="#8792A2" opacity=".375"/>
+    <circle cx="42" cy="623" r="22" fill="#8792A2" opacity=".375"/>
+    <circle cx="42" cy="697" r="22" fill="#8792A2" opacity=".375"/>
+    <circle cx="59" cy="196" r="15" fill="#000306" stroke="#ECEEF0" stroke-width="4"/>
+    <circle cx="59" cy="270" r="15" fill="#000306" stroke="#ECEEF0" stroke-width="4"/>
+    <circle cx="59" cy="418" r="15" fill="#000306" stroke="#ECEEF0" stroke-width="4"/>
+    <circle cx="59" cy="714" r="15" fill="#000306" stroke="#ECEEF0" stroke-width="4"/>
+    <circle cx="25" cy="92" r="8.25" fill="#8792A2" stroke="#ECEEF0" stroke-width="3.5"/>
+    <circle cx="25" cy="315" r="8.25" fill="#8792A2" stroke="#ECEEF0" stroke-width="3.5"/>
+    <circle cx="25" cy="537" r="8.25" fill="#8792A2" stroke="#ECEEF0" stroke-width="3.5"/>
+    <circle cx="25" cy="611" r="8.25" fill="#8792A2" stroke="#ECEEF0" stroke-width="3.5"/>
+    <circle cx="25" cy="685" r="8.25" fill="#8792A2" stroke="#ECEEF0" stroke-width="3.5"/>
+    <use fill="#000" filter="url(#chat-full-c)" xlink:href="#chat-full-d"/>
+    <circle cx="25" cy="165" r="8.25" fill="#0E423C" stroke="#ECEEF0" stroke-linejoin="square" stroke-width="3.5"/>
+    <use fill="#000" filter="url(#chat-full-e)" xlink:href="#chat-full-f"/>
+    <circle cx="25" cy="387" r="8.25" fill="#0E423C" stroke="#ECEEF0" stroke-linejoin="square" stroke-width="3.5"/>
+    <circle cx="25" cy="241" r="8.25" fill="#D91111" stroke="#ECEEF0" stroke-width="3.5"/>
+    <use fill="#000" filter="url(#chat-full-g)" xlink:href="#chat-full-h"/>
+    <circle cx="25" cy="463" r="8.25" fill="#0E423C" stroke="#ECEEF0" stroke-linejoin="square" stroke-width="3.5"/>
+  </g>
+</svg>

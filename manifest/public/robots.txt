@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /502
-Disallow: /503
-Sitemap: https://nodebb.org/sitemap.xml

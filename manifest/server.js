@@ -41,11 +41,13 @@ app.use(express.static('public', {
 	maxAge: cacheTime
 }));
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
 
 app.use(middleware.processRender);
 
-app.get('/503', function(req, res) {
+app.get('/503', function (req, res) {
 	res.statusCode = 503;
 	res.locals.header = '';
 	res.locals.footer = '';
@@ -77,7 +79,7 @@ app.post('/contact', function (req, res) {
 
 	// Naive filtering of Russian spambots
 	if (req.body.email.indexOf('@yandex.ru') !== -1 && /\.ru\//.test(req.body.message)) {
-		return res.sendStatus(200);	// OK, ya rascals!
+		return res.sendStatus(200); // OK, ya rascals!
 	}
 
 	if (!ok) {
@@ -117,7 +119,7 @@ app.post('/contact', function (req, res) {
 });
 
 
-var server = app.listen(nconf.get('port') || 3000, function() {
+var server = app.listen(nconf.get('port') || 8000, function () {
 	var host = server.address().address;
 	var port = server.address().port;
 
@@ -126,6 +128,6 @@ var server = app.listen(nconf.get('port') || 3000, function() {
 
 
 
-process.on('SIGTERM', function() {
+process.on('SIGTERM', function () {
 	process.exit();
 });

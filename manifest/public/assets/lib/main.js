@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 	var planBeingViewed = 1,
 		frames = 15,
 		durations = [
@@ -43,11 +43,11 @@ $(document).ready(function() {
 		'tolerance': 70
 	});
 
-	$('#mobile-menu').on('click', function() {
+	$('#mobile-menu').on('click', function () {
 		slideout.toggle();
 	});
 
-	$(window).on('resize', function() {
+	$(window).on('resize', function () {
 		slideout.close();
 	});
 
@@ -62,7 +62,7 @@ $(document).ready(function() {
 	slideout.on('open', onOpeningMenu);
 	slideout.on('translate', onOpeningMenu);
 
-	slideout.on('close', function() {
+	slideout.on('close', function () {
 		$('#header').css({
 			'top': '0px',
 			'position': 'fixed'
@@ -72,13 +72,13 @@ $(document).ready(function() {
 	$('#product-menu-mobile').html($('#product-menu').html());
 	$('#navigation-menu-mobile').html($('#navigation-menu').html());
 
-	$('#navigation-menu-mobile a').on('click', function() {
+	$('#navigation-menu-mobile a').on('click', function () {
 		slideout.close();
 	});
 
 	function setupSly() {
 		var $frame = $('.frame');
-		var $wrap  = $frame.parent();
+		var $wrap = $frame.parent();
 
 		if (!$frame.length || !$wrap.length) {
 			return;
@@ -103,9 +103,9 @@ $(document).ready(function() {
 			clickBar: 1
 		});
 	}
-	
+
 	function scrollPlansLeft() {
-		planBeingViewed --;
+		planBeingViewed--;
 		if (planBeingViewed < 0) {
 			planBeingViewed = 3;
 		}
@@ -114,7 +114,7 @@ $(document).ready(function() {
 	}
 
 	function scrollPlansRight() {
-		planBeingViewed ++;
+		planBeingViewed++;
 		if (planBeingViewed > 3) {
 			planBeingViewed = 0;
 		}
@@ -127,10 +127,10 @@ $(document).ready(function() {
 	}
 
 	function setupCanvas() {
-		loadImages(function() {
+		loadImages(function () {
 			for (var i = 1; i <= frames; i++) {
-				(function(i) {
-					setTimeout(function() {
+				(function (i) {
+					setTimeout(function () {
 						$('.frame' + i).addClass('phaseIn rubberBand animated');
 						if (i === 1) {
 							$('.hero-signup span').addClass('phaseIn');
@@ -145,6 +145,7 @@ $(document).ready(function() {
 
 	function loadImages(cb) {
 		var loaded = 0;
+
 		function loadFinish() {
 			loaded++;
 			if (loaded === frames) {
@@ -188,11 +189,11 @@ $(document).ready(function() {
 			x;
 
 		var totalWidth = 0;
-		$('.pricing .table ul').slice(0,planBeingViewed).each(function() {
+		$('.pricing .table ul').slice(0, planBeingViewed).each(function () {
 			totalWidth += $(this).width();
 		});
 
-		x = - totalWidth + (windowWidth/2) - (planWidth / 2) - offset;
+		x = -totalWidth + (windowWidth / 2) - (planWidth / 2) - offset;
 		$('.table').css({
 			'transform': 'translateX(' + x + 'px)'
 		});
@@ -200,7 +201,7 @@ $(document).ready(function() {
 
 	function activateHeader() {
 		var path = window.location.pathname;
-		$('#product-menu a').each(function() {
+		$('#product-menu a').each(function () {
 			var nav = $(this);
 			nav.parents('li').toggleClass('active', nav.attr('href') === path);
 		});

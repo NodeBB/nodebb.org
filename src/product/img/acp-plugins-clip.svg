@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="706" height="104" viewBox="0 0 706 104">
+  <g fill="none" fill-rule="evenodd" transform="translate(-19 -10)">
+    <rect width="734" height="132" rx="7"/>
+    <g transform="translate(17 82)">
+      <rect width="18" height="18"/>
+      <path fill="#F84F77" d="M8.1669899,3.74941818 L2.32535718,14.2643571 C2.057144,14.7471408 2.2310878,15.3559441 2.71387153,15.6241573 C2.86242953,15.7066895 3.02957021,15.75 3.19951446,15.75 L15.4669432,15.75 C16.0192279,15.75 16.4669432,15.3022847 16.4669432,14.75 C16.4669432,14.5659952 16.4161743,14.3855579 16.320225,14.22855 L9.89442901,3.7136111 C9.60644012,3.24235656 8.99095171,3.09379039 8.51969717,3.38177928 C8.37235941,3.47181902 8.25084676,3.59847583 8.1669899,3.74941818 Z"/>
+      <rect width="1.5" height="5.25" x="8.25" y="6.75" fill="#FFF" rx=".75"/>
+      <rect width="1.5" height="1.5" x="8.25" y="12.75" fill="#FFF" rx=".75"/>
+    </g>
+    <rect width="268" height="10" x="20" y="20" fill="#2A2F45" opacity=".711" rx="5"/>
+    <rect width="82" height="6.5" x="20" y="107" fill="#8792A2" opacity=".303" rx="3.25"/>
+    <rect width="372" height="6.5" x="111" y="107" fill="#1851BE" opacity=".6" rx="3.25"/>
+    <rect width="76" height="10" x="40" y="86" fill="#8792A2" opacity=".403" rx="5"/>
+    <rect width="56" height="10" x="121" y="86" fill="#8792A2" opacity=".403" rx="5"/>
+    <rect width="56" height="10" x="187" y="86" fill="#8792A2" opacity=".403" rx="5"/>
+    <rect width="90" height="30" x="635" y="10" fill="#8792A2" rx="5"/>
+    <rect width="58" height="7" x="650" y="22" fill="#FFF" opacity=".6" rx="3.5"/>
+    <rect width="90" height="30" x="537" y="10" fill="#8792A2" opacity=".4" rx="5"/>
+    <rect width="58" height="7" x="552" y="22" fill="#FFF" opacity=".7" rx="3.5"/>
+    <rect width="361" height="9" x="20" y="40" fill="#2A2F45" opacity=".153" rx="4.5"/>
+    <rect width="56" height="17" x="253" y="83" fill="#BFE5E1" rx="5"/>
+    <rect width="34" height="5" x="264" y="89" fill="#0E423C" rx="2.5"/>
+  </g>
+</svg>

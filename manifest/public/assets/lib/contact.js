@@ -22,7 +22,7 @@ $(document).ready(function () {
 					$(this).siblings('label').toggleClass('visible', false);
 				}
 			});
-		
+
 		Contact.els.toggleEl.on('click', Contact.showModal);
 		$('.header-contact-toggle').on('click', Contact.showModal);
 		Contact.els.overlayEl.on('click', Contact.hideModal);
@@ -53,7 +53,7 @@ $(document).ready(function () {
 		Contact.open = true;
 	};
 
-	
+
 	Contact.hideModal = function () {
 		Contact.els.overlayEl.toggleClass('open', false);
 		Contact.els.toggleEl.toggleClass('open', false);
@@ -81,7 +81,7 @@ $(document).ready(function () {
 
 		// Re-enable reset button
 		Contact.els.modalEl.find('button.reset').prop('disabled', false);
-		
+
 		var successEl = Contact.els.formEl.find('> div:nth-child(3)');
 		var failureEl = Contact.els.formEl.find('> div:nth-child(4)');
 		var fieldset = Contact.els.formEl.find('fieldset');
@@ -92,7 +92,7 @@ $(document).ready(function () {
 
 		ga('ComboTracker.send', 'event', 'Contact Form', 'submit', payload.type);
 
-		$.post('/contact', payload)
+		$.post('https://nodebb.org/contact', payload)
 			.done(function () {
 				fieldset.css('opacity', 0);
 				successEl.css('opacity', 0);
@@ -155,7 +155,7 @@ $(document).ready(function () {
 
 		// Re-enable all buttons
 		Contact.els.modalEl.find('button').prop('disabled', false);
-		Contact.els.formEl.find('.submit').text('submit');
+		Contact.els.formEl.find('.submit').text('Send');
 
 		// GA integration
 		ga('ComboTracker.send', 'event', 'Contact Form', 'start', buttonEl.attr('data-type'));

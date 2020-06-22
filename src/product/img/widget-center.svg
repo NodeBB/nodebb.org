@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="520" height="221" viewBox="0 0 520 221">
+  <defs>
+    <linearGradient id="widget-center-c" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#F1F1F1" stop-opacity=".22"/>
+      <stop offset="41.652%" stop-color="#FFF" stop-opacity=".548"/>
+      <stop offset="62.476%" stop-color="#ECEEF0" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#8792A2" stop-opacity=".16"/>
+    </linearGradient>
+    <circle id="widget-center-b" cx="155" cy="98" r="65"/>
+    <filter id="widget-center-a" width="156%" height="156%" x="-28%" y="-28%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".375" result="shadowSpreadOuter1"/>
+      <feOffset dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.529411765   0 0 0 0 0.57254902   0 0 0 0 0.635294118  0 0 0 0.282315341 0"/>
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".375" result="shadowSpreadOuter2"/>
+      <feOffset in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
+      <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="12"/>
+      <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+      <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0.529411765   0 0 0 0 0.57254902   0 0 0 0 0.635294118  0 0 0 0.08 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="shadowMatrixOuter2"/>
+      </feMerge>
+    </filter>
+    <filter id="widget-center-d" width="139%" height="139%" x="-19.5%" y="-19.5%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation=".5"/>
+      <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="519.4" height="220.4" x=".3" y=".3" fill="#FFF" stroke="#8792A2" stroke-opacity=".281" stroke-width=".6" rx="5"/>
+    <rect width="180" height="8" x="20" y="181" fill="#000306" opacity=".679" rx="4"/>
+    <rect width="74" height="8" x="20" y="166" fill="#000306" rx="4"/>
+    <rect width="480" height="12" x="20" y="58" fill="#8792A2" opacity=".18" rx="6"/>
+    <rect width="182" height="12" x="20" y="75" fill="#8792A2" opacity=".18" rx="6"/>
+    <rect width="100" height="16" x="20" y="108" fill="#8792A2" opacity=".42" rx="8"/>
+    <rect width="120" height="14" x="20" y="23" fill="#8792A2" opacity=".682" rx="7"/>
+    <use fill="#000" filter="url(#widget-center-a)" xlink:href="#widget-center-b"/>
+    <use fill="url(#widget-center-c)" xlink:href="#widget-center-b"/>
+    <use fill="#000" filter="url(#widget-center-d)" xlink:href="#widget-center-b"/>
+    <use stroke="#FFF" stroke-opacity=".116" stroke-width=".75" xlink:href="#widget-center-b"/>
+  </g>
+</svg>

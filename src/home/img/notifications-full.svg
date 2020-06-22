@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="586" height="782" viewBox="0 0 586 782">
+  <defs>
+    <rect id="notifications-full-a" width="586" height="677" x="0" y=".212" rx="5"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="586" height="782" fill="#FFF"/>
+    <g transform="translate(0 -50)">
+      <mask id="notifications-full-b" fill="#fff">
+        <use xlink:href="#notifications-full-a"/>
+      </mask>
+      <use fill="#FFF" xlink:href="#notifications-full-a"/>
+      <rect width="589" height="218" y="49.212" fill="#F1EFF8" mask="url(#notifications-full-b)"/>
+      <rect width="279" height="16" x="112" y="88.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".8" rx="8"/>
+      <rect width="155" height="16" x="112" y="112.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".8" rx="8"/>
+      <rect width="65" height="16" x="113" y="210.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".661" rx="8"/>
+      <rect width="224" height="16" x="192" y="211.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".803" rx="8"/>
+      <rect width="25" height="16" x="514" y="210.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".48" rx="5"/>
+      <rect width="25" height="16" x="514" y="99.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".818" rx="5"/>
+      <rect width="45" height="45" x="40" y="86.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".4" rx="22.5"/>
+      <rect width="45" height="45" x="40" y="196.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".4" rx="22.5"/>
+      <rect width="25" height="16" x="514" y="320.212" fill="#8792A2" mask="url(#notifications-full-b)" opacity=".24" rx="5"/>
+      <rect width="25" height="16" x="514" y="430.212" fill="#8792A2" mask="url(#notifications-full-b)" opacity=".24" rx="5"/>
+      <rect width="25" height="16" x="514" y="540.212" fill="#8792A2" mask="url(#notifications-full-b)" opacity=".24" rx="5"/>
+      <rect width="36" height="16" x="464" y="210.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".144" rx="8"/>
+      <rect width="36" height="16" x="464" y="99.212" fill="#24124D" mask="url(#notifications-full-b)" opacity=".441" rx="8"/>
+      <rect width="36" height="16" x="464" y="320.212" fill="#8792A2" mask="url(#notifications-full-b)" opacity=".144" rx="8"/>
+      <rect width="36" height="16" x="464" y="430.212" fill="#8792A2" mask="url(#notifications-full-b)" opacity=".144" rx="8"/>
+      <rect width="36" height="16" x="464" y="540.212" fill="#8792A2" mask="url(#notifications-full-b)" opacity=".144" rx="8"/>
+      <rect width="279" height="16" x="112" y="309.212" fill="#8792A2" fill-opacity=".24" mask="url(#notifications-full-b)" rx="8"/>
+      <rect width="155" height="16" x="113" y="334.212" fill="#8792A2" fill-opacity=".24" mask="url(#notifications-full-b)" rx="8"/>
+      <rect width="279" height="16" x="112" y="416.212" fill="#8792A2" fill-opacity=".24" mask="url(#notifications-full-b)" rx="8"/>
+      <rect width="84" height="16" x="113" y="440.212" fill="#8792A2" fill-opacity=".24" mask="url(#notifications-full-b)" rx="8"/>
+      <rect width="126" height="16" x="113" y="540.212" fill="#8792A2" fill-opacity=".24" mask="url(#notifications-full-b)" rx="8"/>
+      <rect width="45" height="45" x="43" y="307.212" fill="#8792A2" mask="url(#notifications-full-b)" opacity=".28" rx="22.5"/>
+      <rect width="45" height="45" x="43" y="416.212" fill="#8792A2" mask="url(#notifications-full-b)" opacity=".28" rx="22.5"/>
+      <rect width="35" height="35" x="63" y="436.212" fill="#000306" stroke="#FFF" stroke-width="4" mask="url(#notifications-full-b)" rx="17.5"/>
+      <rect width="35" height="35" x="61" y="216.212" fill="#000306" stroke="#F1EFF8" stroke-width="4" mask="url(#notifications-full-b)" rx="17.5"/>
+      <rect width="45" height="45" x="43" y="527.212" fill="#8792A2" mask="url(#notifications-full-b)" opacity=".28" rx="22.5"/>
+      <path stroke="#8792A2" stroke-opacity=".332" stroke-width=".5" d="M0.25,787.25 L0.25,831.75 L585.75,831.75 L585.75,787.25 L0.25,787.25 Z"/>
+      <rect width="585.5" height="44.5" x="4.25" y="743.25" stroke="#8792A2" stroke-opacity=".332" stroke-width=".5"/>
+      <rect width="203" height="12" x="192" y="760" fill="#8792A2" opacity=".361" rx="5"/>
+      <rect width="203" height="12" x="192" y="804" fill="#8792A2" opacity=".361" rx="5"/>
+    </g>
+  </g>
+</svg>

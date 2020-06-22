@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+.factor-app body,
+.factor-app .btn {
+  /* @apply font-sans; */
+  font-family: nbb, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+}
+
+.factor-app body {
+  @apply text-gray-800;
+}
+
+.factor-app body .nodebb-content {
+  opacity: 1;
+}
+
+.factor-app .btn {
+  @apply inline-block px-5 py-3 font-semibold text-sm leading-tight tracking-widest uppercase rounded;
+}
+
+.factor-app .btn-ol {
+  @apply border-solid border;
+}
+
+.factor-app .custom-uppercase {
+  @apply font-sans font-semibold text-sm mb-2 leading-tight tracking-widest uppercase;
+}
+
+.factor-app .custom-card-left {
+  transform: scale(1) perspective(3040px) rotateY(13deg) rotateX(2deg) rotate(-2deg) translateZ(0);
+  box-shadow: 0 55px 80px -40px rgba(0, 0, 0, 0.35);
+}
+
+.factor-app .custom-card-left:hover {
+  transform: none;
+}
+
+.factor-app .transition-all {
+  transition: 0.15s cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+
+.factor-app .transition-height {
+  transition: height 0.15s cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+
+.factor-app .h-188 {
+  height: calc(100vh - 56px);
+}
+
+@media (max-width: 767px) {
+  .factor-app .custom-card-left {
+    transform: none;
+  }
+}

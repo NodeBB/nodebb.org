@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="172" height="203" viewBox="0 0 172 203">
+  <defs>
+    <circle id="analytics-presence-a" cx="60" cy="60" r="60"/>
+    <mask id="analytics-presence-g" width="120" height="120" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+      <use xlink:href="#analytics-presence-a"/>
+    </mask>
+    <circle id="analytics-presence-b" cx="60" cy="60" r="60"/>
+    <mask id="analytics-presence-h" width="120" height="120" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+      <use xlink:href="#analytics-presence-b"/>
+    </mask>
+    <circle id="analytics-presence-c" cx="60" cy="60" r="60"/>
+    <mask id="analytics-presence-i" width="120" height="120" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+      <use xlink:href="#analytics-presence-c"/>
+    </mask>
+    <circle id="analytics-presence-d" cx="60" cy="60" r="60"/>
+    <mask id="analytics-presence-j" width="120" height="120" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+      <use xlink:href="#analytics-presence-d"/>
+    </mask>
+    <circle id="analytics-presence-e" cx="60" cy="60" r="60"/>
+    <mask id="analytics-presence-k" width="120" height="120" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+      <use xlink:href="#analytics-presence-e"/>
+    </mask>
+    <circle id="analytics-presence-f" cx="60" cy="60" r="60"/>
+    <mask id="analytics-presence-l" width="120" height="120" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+      <use xlink:href="#analytics-presence-f"/>
+    </mask>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-11 -14)">
+    <rect width="246" height="230" rx="5"/>
+    <rect width="78" height="6" x="11" y="14" fill="#8792A2" opacity=".7" rx="3"/>
+    <rect width="38" height="5" x="28" y="37" fill="#8792A2" opacity=".4" rx="2.5"/>
+    <rect width="46" height="5" x="28" y="53" fill="#8792A2" opacity=".4" rx="2.5"/>
+    <rect width="60" height="5" x="28" y="69" fill="#8792A2" opacity=".4" rx="2.5"/>
+    <rect width="60" height="5" x="28" y="85" fill="#8792A2" opacity=".4" rx="2.5"/>
+    <rect width="36" height="5" x="28" y="101" fill="#8792A2" opacity=".4" rx="2.5"/>
+    <rect width="12" height="12" x="11" y="33" fill="#386AC6" rx="6"/>
+    <rect width="12" height="12" x="11" y="49" fill="#DEE5F3" rx="6"/>
+    <rect width="12" height="12" x="11" y="65" fill="#C3D2EE" rx="6"/>
+    <rect width="12" height="12" x="11" y="81" fill="#5C84D1" rx="6"/>
+    <rect width="12" height="12" x="11" y="97" fill="#1851BE" rx="6"/>
+    <path fill="#C3D2EE" d="M17,65 C20.3137085,65 23,67.6862915 23,71 C23,74.3137085 20.3137085,77 17,77 C13.6862915,77 11,74.3137085 11,71 C11,67.6862915 13.6862915,65 17,65 Z"/>
+    <path fill="#5C84D1" d="M17,81 C20.3137085,81 23,83.6862915 23,87 C23,90.3137085 20.3137085,93 17,93 C13.6862915,93 11,90.3137085 11,87 C11,83.6862915 13.6862915,81 17,81 Z"/>
+    <path fill="#1851BE" d="M17,97 C20.3137085,97 23,99.6862915 23,103 C23,106.313708 20.3137085,109 17,109 C13.6862915,109 11,106.313708 11,103 C11,99.6862915 13.6862915,97 17,97 Z"/>
+    <g stroke-linejoin="round" stroke-width="24" transform="translate(62.962 96.962)">
+      <use stroke="#F9F9F9" stroke-dasharray="440" mask="url(#analytics-presence-g)" xlink:href="#analytics-presence-a"/>
+      <use stroke="#C3D2EE" stroke-dasharray="330" mask="url(#analytics-presence-h)" opacity=".5" xlink:href="#analytics-presence-b"/>
+      <use stroke="#5C84D1" stroke-dasharray="265" mask="url(#analytics-presence-i)" opacity=".5" xlink:href="#analytics-presence-c"/>
+      <use stroke="#1851BE" stroke-dasharray="250" mask="url(#analytics-presence-j)" opacity=".5" xlink:href="#analytics-presence-d"/>
+      <use stroke="#1851BE" stroke-dasharray="235" mask="url(#analytics-presence-k)" opacity=".5" xlink:href="#analytics-presence-e"/>
+      <use stroke="#1851BE" stroke-dasharray="165" mask="url(#analytics-presence-l)" opacity=".5" xlink:href="#analytics-presence-f"/>
+    </g>
+  </g>
+</svg>

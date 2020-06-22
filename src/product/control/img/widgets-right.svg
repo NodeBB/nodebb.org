@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="562" height="652" viewBox="0 0 562 652">
+  <defs>
+    <path id="widgets-right-b" d="M5,277 L515,277 C517.761424,277 520,279.238576 520,282 L520,635 L520,635 L0,635 L0,282 C-3.38176876e-16,279.238576 2.23857625,277 5,277 Z"/>
+    <filter id="widgets-right-a" width="103.8%" height="105.6%" x="-1.9%" y="-2.2%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.529411765   0 0 0 0 0.57254902   0 0 0 0 0.635294118  0 0 0 0.144749781 0"/>
+    </filter>
+    <rect id="widgets-right-d" width="480" height="42" x="20" y="359" rx="5"/>
+    <filter id="widgets-right-c" width="104.2%" height="147.6%" x="-2.1%" y="-19%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.529411765   0 0 0 0 0.57254902   0 0 0 0 0.635294118  0 0 0 0.144749781 0"/>
+    </filter>
+    <path id="widgets-right-f" d="M25,579 L495,579 C497.761424,579 500,581.238576 500,584 L500,635 L500,635 L20,635 L20,584 C20,581.238576 22.2385763,579 25,579 Z"/>
+    <filter id="widgets-right-e" width="104.2%" height="135.7%" x="-2.1%" y="-14.3%" filterUnits="objectBoundingBox">
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.529411765   0 0 0 0 0.57254902   0 0 0 0 0.635294118  0 0 0 0.144749781 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="562" height="652" fill="#FFF"/>
+    <g transform="translate(21 18)">
+      <rect width="520" height="221" fill="#8792A2" fill-opacity=".38" rx="5"/>
+      <use fill="#000" filter="url(#widgets-right-a)" xlink:href="#widgets-right-b"/>
+      <path fill="#FFF" stroke="#8792A2" stroke-linejoin="square" stroke-opacity=".281" stroke-width=".6" d="M0.3,634.7 L519.7,634.7 L519.7,282 C519.7,279.404262 517.595738,277.3 515,277.3 L5,277.3 C2.40426168,277.3 0.3,279.404262 0.3,282 L0.3,634.7 Z"/>
+      <use fill="#000" filter="url(#widgets-right-c)" xlink:href="#widgets-right-d"/>
+      <rect width="479.4" height="41.4" x="20.3" y="359.3" fill="#FFF" stroke="#8792A2" stroke-linejoin="square" stroke-opacity=".281" stroke-width=".6" rx="5"/>
+      <use fill="#000" filter="url(#widgets-right-e)" xlink:href="#widgets-right-f"/>
+      <path fill="#FFF" stroke="#8792A2" stroke-linejoin="square" stroke-opacity=".281" stroke-width=".6" d="M20.3,634.7 L499.7,634.7 L499.7,584 C499.7,581.404262 497.595738,579.3 495,579.3 L25,579.3 C22.4042617,579.3 20.3,581.404262 20.3,584 L20.3,634.7 Z"/>
+      <rect width="59" height="13" x="30" y="374" fill="#000306" rx="3"/>
+      <rect width="480" height="42" x="20" y="429" fill="#ECEEF0" rx="5"/>
+      <rect width="480" height="87" x="20" y="477" fill="#ECEEF0" rx="5"/>
+      <rect width="59" height="10" x="30" y="445" fill="#000306" opacity=".378" rx="3"/>
+      <rect width="59" height="10" x="60" y="514" fill="#000306" opacity=".386" rx="3"/>
+      <rect width="59" height="10" x="30" y="603" fill="#000306" rx="3"/>
+      <rect width="29" height="13" x="431" y="601" fill="#D96D11" rx="6.5"/>
+      <rect width="29" height="13" x="392" y="601" fill="#7418BE" rx="6.5"/>
+      <rect width="29" height="13" x="353" y="601" fill="#33BF1C" rx="6.5"/>
+      <rect width="29" height="13" x="275" y="601" fill="#8792A2" opacity=".698" rx="6.5"/>
+      <rect width="29" height="13" x="314" y="601" fill="#1851BE" rx="6.5"/>
+      <rect width="310" height="12" x="20" y="332" fill="#8792A2" opacity=".18" rx="3"/>
+      <rect width="120" height="14" x="20" y="298" fill="#8792A2" opacity=".682" rx="3"/>
+    </g>
+  </g>
+</svg>
