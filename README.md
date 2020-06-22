@@ -1,10 +1,16 @@
 ## NodeBB
 
-A beautiful, responsive landing page specifically for NodeBB.
+A beautiful, responsive landing page redesigned for NodeBB.
 
-![NodeBB Marketing Page](http://i.imgur.com/aYolLnl.png)
+![NodeBB Marketing Page](https://i.imgur.com/yO8kbeP.png)
 
 ### Features
 
- * Built with: HTML5, CSS3, jQuery
- * BS3 Framework with modified classes
+- Built with: Vue, Typescript, Node, Factor
+- Tailwind CSS Framework
+
+### Installation
+
+- `npm install`
+- `npx factor dev` (for development)
+- `npx factor start` (for production)
