@@ -2,8 +2,6 @@
 
 A beautiful, responsive landing page redesigned for NodeBB.
 
-![NodeBB Marketing Page](https://i.imgur.com/yO8kbeP.png)
-
 ### Features
 
 - Built with: Vue, Typescript, Node, Factor
