@@ -25,6 +25,7 @@ export default {
 .contact-specialist {
   display: flex;
   align-items: center;
+
   .modal-text-content {
     overflow: hidden;
     padding-top: 56.25%;
@@ -97,6 +98,7 @@ iframe {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  z-index: 9999 !important;
   cursor: pointer !important;
   &:hover {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
