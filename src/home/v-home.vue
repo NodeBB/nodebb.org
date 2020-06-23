@@ -942,6 +942,39 @@ export default {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 1rem;
+      position: relative;
+      &:before {
+        content: "";
+        background-image: url(./img/nbb-bg-a-dark.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 400px;
+        width: 700px;
+        display: block;
+        z-index: -1;
+        left: -12rem;
+        position: absolute;
+        top: -9.5rem;
+        opacity: 0.72;
+      }
+      &:after {
+        content: "";
+        background-image: url(./img/nbb-bg-d-dark.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+
+        display: block;
+        z-index: -1;
+        position: absolute;
+        opacity: 0.72;
+
+        right: -17rem;
+        bottom: -13.5rem;
+        width: 400px;
+        height: 700px;
+      }
       .column {
         text-align: left;
         background: #fff;
@@ -1067,12 +1100,12 @@ export default {
             }
           }
           &:hover {
-            transform: translateY(-2px);
+            transform: translateY(-4px);
             box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
               0 30px 60px -30px rgba(0, 0, 0, 0.3),
               0 -18px 60px -10px rgba(0, 0, 0, 0.025);
             .row:nth-last-child(2) {
-              padding-bottom: 1rem;
+              // padding-bottom: 1rem;
             }
             .footer-row {
               transform: translateY(0);
