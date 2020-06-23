@@ -60,93 +60,97 @@
 </template>
 
 <script lang="ts">
-import { setting, toLabel } from "@factor/api"
-import { factorLink, factorIcon, factorBtn } from "@factor/ui"
-import { activeDocGroup, DocConfig } from "../util"
+import { setting, toLabel } from "@factor/api";
+import { factorLink, factorIcon, factorBtn } from "@factor/ui";
+import { activeDocGroup, DocConfig } from "../util";
 export default {
   components: {
     factorLink,
     factorIcon,
     factorBtn,
     mobileToggle: () => import("./mobile-toggle.vue"),
-    docSearch: () => import("./search.vue"),
+    docSearch: () => import("./search.vue")
   },
   // Injected components wont load metaInfo
-  metaInfo: {
-    link: [
-      {
-        rel: "stylesheet",
-        href:
-          "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css",
-      },
-    ],
-  },
+  // metaInfo: {
+  //   link: [
+  //     {
+  //       rel: "stylesheet",
+  //       href:
+  //         "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css",
+  //     },
+  //   ],
+  // },
   data() {
     return {
       vis: false,
       selectedGroup: "",
-      nav: setting("docsEngine.nav"),
-    }
+      nav: setting("docsEngine.nav")
+    };
   },
   computed: {
     baseRoute() {
-      return setting("docsEngine.baseRoute") ?? "/docs"
+      return setting("docsEngine.baseRoute") ?? "/docs";
     },
     doc(this: any) {
-      return this.$route.params.doc
-    },
+      return this.$route.params.doc;
+    }
   },
   watch: {
     $route: {
-      handler: function (this: any) {
-        this.setActiveGroup()
-      },
-    },
+      handler: function(this: any) {
+        this.setActiveGroup();
+      }
+    }
   },
 
   async created() {
-    this.setActiveGroup()
+    this.setActiveGroup();
   },
   methods: {
     toLabel,
     async setActiveGroup(this: any) {
-      this.selectedGroup = await activeDocGroup(this.doc)
+      this.selectedGroup = await activeDocGroup(this.doc);
     },
     toggleGroupTitle(this: any, group: DocConfig) {
       if (this.selectedGroup == group.title) {
-        this.selectedGroup = ""
+        this.selectedGroup = "";
       } else {
-        this.selectedGroup = group.title
+        this.selectedGroup = group.title;
       }
     },
     toggleNav(this: any) {
-      this.vis = !this.vis
+      this.vis = !this.vis;
 
       this.clickHandler = () => {
-        this.vis = false
-        document.removeEventListener("click", this.clickHandler)
-      }
+        this.vis = false;
+        document.removeEventListener("click", this.clickHandler);
+      };
 
       if (this.vis) {
-        document.addEventListener("click", this.clickHandler)
+        document.addEventListener("click", this.clickHandler);
       } else {
-        document.removeEventListener("click", this.clickHandler)
+        document.removeEventListener("click", this.clickHandler);
       }
-    },
-  },
-}
+    }
+  }
+};
 </script>
 
 <style lang="less">
 .docs-engine-wrap {
   --content-width: 1000px;
-  --panel-shadow: 0 0 0 2px rgba(0, 43, 93, 0.1), 0 0 1px rgba(58, 55, 148, 0.25),
-    0 3px 3px 0 rgba(24, 32, 41, 0.06), 0 6px 14px -10px rgba(24, 32, 41, 0.04);
+  --panel-shadow: 0 0 0 2px rgba(0, 43, 93, 0.1),
+    0 0 1px rgba(58, 55, 148, 0.25), 0 3px 3px 0 rgba(24, 32, 41, 0.06),
+    0 6px 14px -10px rgba(24, 32, 41, 0.04);
   --panel-shadow-inset: inset 0 0 0 1px rgba(0, 43, 93, 0.06),
-    inset 0 0 1px rgba(58, 55, 148, 0.25), inset 0 -12px 34px 0 rgba(24, 32, 41, 0.03);
+    inset 0 0 1px rgba(58, 55, 148, 0.25),
+    inset 0 -12px 34px 0 rgba(24, 32, 41, 0.03);
   --dropdown-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
-    0 30px 60px -30px rgba(0, 0, 0, 0.3), 0 -18px 60px -10px rgba(0, 0, 0, 0.025);
-  --menu-shadow: 0 0 0 1px rgba(50, 50, 93, 0.1), 0 2px 5px -1px rgba(50, 50, 93, 0.25),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3),
+    0 -18px 60px -10px rgba(0, 0, 0, 0.025);
+  --menu-shadow: 0 0 0 1px rgba(50, 50, 93, 0.1),
+    0 2px 5px -1px rgba(50, 50, 93, 0.25),
     0 15px 15px -6px rgba(50, 50, 93, 0.2), 0 1px 3px -1px rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-columns: minmax(300px, 1fr) 3fr;

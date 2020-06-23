@@ -24,15 +24,33 @@ export default {
   metaInfo() {
     return {
       titleTemplate: "%s - NodeBB",
-      image: require("./static/og-image.jpg")
+      image: require("./static/og-image.jpg"),
+      meta: [
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+        },
+        {
+          name: "author",
+          content: "NodeBB, LLC"
+        }
+      ],
+      htmlAttrs: { lang: "en" }
       // link: [
       //   {
-      //     vmid: "font",
-      //     rel: "stylesheet"
-      //     href:
-      //     "https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=fallback"
-      //   }
-      // ]
+      //     vmid: "my-key",
+      //     rel: "stylesheet",
+      //     href: "https://cdn.jsdelivr.net/some-external-stylesheet/css.min.css",
+      //   },
+      // ],
+      // script: [
+      //   {
+      //     vmid: "my-key",
+      //     src: "https://cdn.jsdelivr.net/some-external-script/script.js",
+      //     async: true,
+      //     defer: true,
+      //   },
+      // ],
     };
   }
 };

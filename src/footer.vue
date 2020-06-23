@@ -3,7 +3,7 @@
     <div class="content-footer">
       <div class="content-footer-pad">
         <div class="footer-col">
-          <factor-link path="/" class="nodebb-pin">
+          <factor-link path="/" class="nodebb-logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="39">
               <defs />
               <path
@@ -102,7 +102,7 @@ export default {
       grid-gap: 0;
 
       .footer-col {
-        .nodebb-pin {
+        .nodebb-logo {
           display: block;
           svg {
             width: 50px;
@@ -184,22 +184,6 @@ export default {
           color: var(--color-text-secondary);
         }
       }
-      /* .made-in-canada {
-        color: red;
-        padding: 0 0.25rem;
-        position: relative;
-        border-left: 5px solid;
-        border-right: 5px solid;
-        margin-left: 0.35rem;
-        border-top: 0 solid transparent;
-        border-bottom: 0 solid transparent;
-        border-radius: 0.15rem;
-        background: #fff;
-        &:before {
-          transform: scale(1);
-          font-size: 0.925rem;
-        }
-      } */
     }
   }
 }

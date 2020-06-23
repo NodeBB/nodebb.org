@@ -3,11 +3,9 @@
     <div class="site-head-pad">
       <site-brand class="site-brand" />
       <div class="head-nav page-nav">
-        <!-- <factor-link v-if="$route.path != '/'" path="/">Home</factor-link> -->
         <factor-link v-for="navItem in pageNav" :key="navItem.path" :path="navItem.path">
           <span v-formatted-text="navItem.name" />
         </factor-link>
-        <!-- <github-stars /> -->
       </div>
       <div class="head-nav action-nav">
         <account-menu v-if="!userLoading && isLoggedIn()" />
@@ -63,10 +61,8 @@ export default {
       ],
       actionNav: [
         {
-          // event: "sign-in-modal",
           path: "https://manage.nodebb.org",
           name: "Sign In &rarr;"
-          // condition: (): boolean => !isLoggedIn()
         },
         { component: accountMenu, condition: (): boolean => isLoggedIn() }
       ]
