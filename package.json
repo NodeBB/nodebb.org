@@ -20,7 +20,7 @@
       "email": "NodeBB <support@nodebb.com>"
     },
     "admins": [
-      "trevor@engineer.com"
+      "admin@nodebb.com"
     ]
   },
   "dependencies": {
