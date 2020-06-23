@@ -41,16 +41,16 @@
         </div>
 
         <div class="footer-col icons">
-          <factor-link class="icon-link" path="https://go.nodeb.com/github" target="_blank">
+          <factor-link class="icon-link" path="https://github.com/nodebb" target="_blank">
             <factor-icon icon="fab fa-github" />
           </factor-link>
           <!-- <factor-link class="icon-link" path="https://go.nodeb.com/slack" target="_blank">
             <factor-icon icon="fab fa-slack" />
           </factor-link>-->
-          <factor-link class="icon-link" path="https://go.nodebb.com/facebook" target="_blank">
+          <factor-link class="icon-link" path="https://www.facebook.com/nodebb" target="_blank">
             <factor-icon icon="fab fa-facebook" />
           </factor-link>
-          <factor-link class="icon-link" path="https://go.nodeb.com/twitter" target="_blank">
+          <factor-link class="icon-link" path="https://twitter.com/nodebb" target="_blank">
             <factor-icon icon="fab fa-twitter" />
           </factor-link>
         </div>

@@ -77,10 +77,10 @@
       </div>
     </div>
 
-    <section class="quotes content-pad py-10">
+    <!-- <section class="quotes content-pad py-10">
       <h2 class="title">What people are saying about us</h2>
       <section-quotes />
-    </section>
+    </section>-->
     <section class="benefits content">
       <section-benefits class="content-pad" />
     </section>
@@ -99,8 +99,8 @@ export default {
     elCta: () => import("./el-cta.vue"),
     homeSplash: () => import("./splash.vue"),
     homeIcon: () => import("../product/icon.vue"),
-    sectionBenefits: () => import("./section-benefits.vue"),
-    sectionQuotes: () => import("./section-quotes.vue")
+    sectionBenefits: () => import("./section-benefits.vue")
+    // sectionQuotes: () => import("./section-quotes.vue")
   },
   data(this: any) {
     return {
