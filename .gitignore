@@ -15,3 +15,4 @@ sftp.json
 .history
 .vscode
 .docker
+src/@fonts/*
