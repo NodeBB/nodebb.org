@@ -44,11 +44,44 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
-  // background: #e3e8ee;
-  border-radius: 5px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  // background: rgba(255, 179, 0, 0.2);
+  background: #fff;
+  border-radius: 0.5rem;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  position: relative;
+  box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1),
+    0 5px 15px 0 rgba(0, 0, 0, 0.07);
+  &:before {
+    content: "";
+    background-image: url(../home/img/nbb-bg-c.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    height: 400px;
+    width: 700px;
+    left: -12rem;
+    top: -9.5rem;
+  }
+  &:after {
+    content: "";
+    background-image: url(../home/img/nbb-bg-c.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0;
+    transform: rotate(32deg);
+    display: block;
+    z-index: -1;
+    position: absolute;
+    height: 400px;
+    width: 700px;
+
+    transform: rotate(32deg);
+    right: -32rem;
+    top: 7rem;
+  }
 
   ul {
     li {

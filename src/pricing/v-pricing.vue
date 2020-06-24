@@ -52,6 +52,7 @@ export default {
 <style lang="less">
 .plans {
   padding: 5rem 1rem 0;
+  overflow: hidden;
   .plans-content {
     margin: 0 auto;
     max-width: 1100px;
