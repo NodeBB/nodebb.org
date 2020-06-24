@@ -94,7 +94,7 @@ export default {
   }
 
   .section-header {
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
@@ -144,8 +144,9 @@ export default {
         line-height: 1.95rem;
       }
       .text {
-        font-size: 1.15rem;
-        line-height: 1.7em;
+        // font-size: 1.15rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
         font-weight: 400;
       }
       .icon {
@@ -162,12 +163,6 @@ export default {
         width: 3rem;
         height: 3rem;
         i {
-          // top: 12px;
-          // width: 48px;
-          // height: 48px;
-          text-align: center;
-          // position: absolute;
-          left: 0;
         }
         img {
         }
