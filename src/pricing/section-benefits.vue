@@ -14,7 +14,7 @@
       <li class="feature-block">
         <home-icon icon="ssl-encryption" />
         <h3 class="title">Free SSL encryption for security</h3>
-        <p class="text">protects your site and customers, while boosting your page rank</p>
+        <p class="text">protect your site and customers, while boosting your page rank</p>
       </li>
 
       <li class="feature-block">
@@ -92,6 +92,8 @@ export default {
         font-weight: 500;
         font-size: 1.2em;
         line-height: 1.5em;
+        margin-left: 5rem;
+        margin-top: 1rem;
       }
       .text {
         font-size: 1.3rem;
@@ -102,10 +104,9 @@ export default {
       }
       .icon {
         margin: 1rem 0 1.5rem;
-        position: relative;
+        position: absolute;
         color: #1952be;
         font-size: 2rem;
-        border-radius: 0.5rem;
         overflow: visible;
         -webkit-flex: none;
         -ms-flex: none;
@@ -122,6 +123,7 @@ export default {
       }
       p:last-child {
         margin-bottom: 0;
+        margin-left: 5rem;
       }
     }
   }
