@@ -7,7 +7,7 @@
 
     <ul class="features-list">
       <li class="feature-block">
-        <home-icon icon="responsive" />
+        <home-icon icon="mobile-responsive" />
         <!-- <h5 class="suptitle">Responsive</h5> -->
         <h3 class="title">Mobile-first responsive</h3>
         <p
@@ -16,14 +16,14 @@
       </li>
 
       <li class="feature-block">
-        <home-icon icon="i18n" />
+        <home-icon icon="international" />
         <!-- <h5 class="suptitle">i18n</h5> -->
         <h3 class="title">Internationalization</h3>
         <p class="text">Built-in localization support with over 50 languages actively translated.</p>
       </li>
 
       <li class="feature-block">
-        <home-icon icon="seo" />
+        <home-icon icon="searching" />
         <!-- <h5 class="suptitle">SEO</h5> -->
         <h3 class="title">Search optimized</h3>
         <p
@@ -32,7 +32,7 @@
       </li>
 
       <li class="feature-block">
-        <home-icon icon="sso" />
+        <home-icon icon="sai" />
         <!-- <h5 class="suptitle">SSO</h5> -->
         <h3 class="title">Social authentication integration</h3>
         <p
@@ -41,7 +41,7 @@
       </li>
 
       <li class="feature-block">
-        <home-icon icon="stream" />
+        <home-icon icon="streaming" />
         <!-- <h5 class="suptitle">Live</h5> -->
         <h3 class="title">Real-time streaming</h3>
         <p
@@ -50,7 +50,7 @@
       </li>
 
       <li class="feature-block">
-        <home-icon icon="analytics" />
+        <home-icon icon="lytics" />
         <!-- <h5 class="suptitle">Stats</h5> -->
         <h3 class="title">Native analytics</h3>
         <p
@@ -153,12 +153,14 @@ export default {
         position: relative;
         color: #1952be;
         font-size: 2rem;
-        width: 48px;
-        height: 48px;
         border-radius: 0.5rem;
-        // box-shadow: 0 2px 3px rgba(50, 50, 93, 0.13),
-        //   0 2px 5px rgba(50, 50, 93, 0.11), 0 5px 15px rgba(0, 0, 0, 0.07);
-        overflow: hidden;
+        overflow: visible;
+        -webkit-flex: none;
+        -ms-flex: none;
+        flex: none;
+        display: block;
+        width: 3rem;
+        height: 3rem;
         i {
           // top: 12px;
           // width: 48px;
@@ -166,6 +168,8 @@ export default {
           text-align: center;
           // position: absolute;
           left: 0;
+        }
+        img {
         }
       }
       h3,

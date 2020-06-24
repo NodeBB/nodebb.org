@@ -2,9 +2,9 @@
   <div class="cta content">
     <div class="content-pad">
       <div class="head">
-        <home-icon icon="support" />
+        <!-- <home-icon icon="supporting" /> -->
         <h2 class="title">Have a question?</h2>
-        <!-- <h3 class="sub-title">We've got the answers.</h3> -->
+        <h3 class="sub-title">...we've got the answers</h3>
       </div>
       <div
         class="text"
@@ -25,7 +25,7 @@ export default {
     factorLink,
     factorIcon,
     factorEmailList,
-    homeIcon: () => import("./icon.vue")
+    homeIcon: () => import("../product/icon.vue")
   }
 };
 </script>
@@ -38,6 +38,29 @@ export default {
   .content-pad {
     max-width: 700px;
     margin: 0 auto;
+    position: relative;
+    z-index: -1;
+    &:before {
+      content: "";
+      background-image: url(./img/nbb-bg-e.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      z-index: 0;
+      position: absolute;
+      height: 400px;
+      width: 700px;
+      left: -23rem;
+      top: -16.5rem;
+
+      @media (max-width: 900px) {
+        height: 400px;
+        width: 500px;
+        left: -16rem;
+        top: -21.5rem;
+      }
+    }
   }
   figure.icon {
     width: 48px;
@@ -63,9 +86,10 @@ export default {
     letter-spacing: -0.025em;
   }
   .sub-title {
-    font-size: 1.4rem;
+    font-size: 1.95rem;
     opacity: 0.8;
     margin-top: 1rem;
+    font-family: var(--font-family-cursive);
   }
   .text,
   .action {

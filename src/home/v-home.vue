@@ -42,7 +42,7 @@
                 <home-icon icon="stars" />
               </div>-->
               <div class="title">Start your community with NodeBB.</div>
-              <div class="text">Select the forum option that works best for you:</div>
+              <div class="text">select the forum option that works best for you...</div>
             </div>
           </div>
           <div class="feature-table-wrap">

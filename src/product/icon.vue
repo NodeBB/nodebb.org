@@ -1,5 +1,6 @@
 <template>
   <figure class="icon">
+    <!--  -->
     <i v-if="icon == 'slack'" class="fab fa-slack"></i>
     <i v-else-if="icon == 'question'" class="fad fa-question"></i>
     <i v-else-if="icon == 'support'" class="fad fa-life-ring"></i>
@@ -26,6 +27,16 @@
     <i v-else-if="icon == 'encrypt'" class="fad fa-lock-alt"></i>
     <i v-else-if="icon == 'backup'" class="fad fa-save"></i>
 
+    <!-- benefits -->
+    <img v-else-if="icon == 'lytics'" src="../home/img/benefit-analytics.svg" class />
+    <img v-else-if="icon == 'international'" src="../home/img/benefit-i18n.svg" class />
+    <img v-else-if="icon == 'mobile-responsive'" src="../home/img/benefit-responsive.svg" class />
+    <img v-else-if="icon == 'sai'" src="../home/img/benefit-sai.svg" class />
+    <img v-else-if="icon == 'searching'" src="../home/img/benefit-search.svg" class />
+    <img v-else-if="icon == 'streaming'" src="../home/img/benefit-stream.svg" class />
+    <img v-else-if="icon == 'supporting'" src="../home/img/support.svg" class />
+
+    <!-- models -->
     <svg v-else-if="icon == 'instant-hosting'">
       <g fill="none" fill-rule="evenodd">
         <g fill="#000" fill-rule="nonzero" transform="translate(131 181)">
@@ -103,7 +114,6 @@
     </svg>
 
     <!-- <i v-else-if="icon == 'backup'" class="fad fa-archive"></i> -->
-
     <svg v-else xmlns="http://www.w3.org/2000/svg" width="64" height="64">
       <path fill="#62bdff" />
     </svg>
