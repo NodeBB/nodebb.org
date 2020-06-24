@@ -97,34 +97,43 @@ export default {
     }
   }
   .features-list {
-    font-size: 1.1em;
+    font-size: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2em;
+    grid-gap: 4rem;
     list-style: none;
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
     }
     .feature-block {
       position: relative;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      /* background-color: rgba(219, 230, 251, 0.15); */
+      /* background-image: linear-gradient(45deg, #f6fafd 0%, #ffffff00 50%); */
+      box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.02),
+        inset 0 0 0 1px rgba(34, 34, 34, 0.07);
       .title {
         font-weight: 700;
-        font-size: 1.2em;
-        line-height: 1.5em;
+        font-size: 1.4rem;
+        line-height: 1.75rem;
+        margin-left: 5rem;
+        margin-bottom: 0.75rem;
+        margin-top: 0;
       }
       .text {
-        font-size: 1.15rem;
-        line-height: 1.7em;
+        font-size: 1rem;
+        line-height: 1.7rem;
         font-weight: 400;
       }
       .icon {
-        width: 2.825rem;
-        height: 3.225rem;
-        margin: 1rem 0;
+        width: 3.5rem;
+        height: 4.225rem;
+        margin: 0.5rem 0;
         overflow: hidden;
-        position: relative;
         color: #1952be;
         font-size: 1.5rem;
+        position: absolute;
         i {
           position: relative;
           left: 0;
@@ -139,6 +148,7 @@ export default {
       }
       p:last-child {
         margin-bottom: 0;
+        margin-left: 5rem;
       }
     }
   }
