@@ -8,21 +8,19 @@
       <li class="feature-block">
         <home-icon icon="additional-users" />
         <h3 class="title">Unlimited staff and community users</h3>
-        <p
-          class="text"
-        >add unlimited users to your account so that you and all your staff can have their own logins</p>
+        <p class="text">so that you, all your staff and community can have their own logins</p>
       </li>
 
       <li class="feature-block">
         <home-icon icon="ssl-encryption" />
         <h3 class="title">Free SSL encryption for security</h3>
-        <p class="text">protect your site and customers with a free ssl certificate.</p>
+        <p class="text">protects your site and customers, while boosting your page rank</p>
       </li>
 
       <li class="feature-block">
         <home-icon icon="automated-backup" />
         <h3 class="title">Automated daily backup of all your data</h3>
-        <p class="text">we'll automatically backup your forum just incase</p>
+        <p class="text">just incase...</p>
       </li>
     </ul>
   </div>
