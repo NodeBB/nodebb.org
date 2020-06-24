@@ -50,6 +50,11 @@
     <img v-else-if="icon == 'ssl-encryption'" src="../home/img/ssl-encryption.svg" class />
     <img v-else-if="icon == 'additional-users'" src="../home/img/additional-users.svg" class />
 
+    <!--  -->
+    <img v-else-if="icon == 'model-custom'" src="../home/img/model-custom.svg" class />
+    <img v-else-if="icon == 'model-open'" src="../home/img/model-open.svg" class />
+    <img v-else-if="icon == 'model-instant'" src="../home/img/model-instant.svg" class />
+
     <!-- -->
     <svg v-else-if="icon == 'instant-hosting'">
       <g fill="none" fill-rule="evenodd">

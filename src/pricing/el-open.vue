@@ -1,6 +1,7 @@
 <template>
   <div class="pricing-open">
     <div class="header">
+      <home-icon icon="model-open" />
       <h2 class="title">Open source</h2>
       <div
         class="sub"
@@ -26,10 +27,12 @@
 </template>
 
 <script lang="ts">
-import { factorLink } from "@factor/ui";
+import { factorLink, factorIcon } from "@factor/ui";
 export default {
   components: {
     factorLink,
+    factorIcon,
+    homeIcon: () => import("../product/icon.vue"),
     githubStars: () => import("../el/github-stars.vue")
   },
   data() {
@@ -81,6 +84,19 @@ export default {
     transform: rotate(32deg);
     right: -32rem;
     top: 7rem;
+  }
+
+  .header {
+    padding-left: 5rem;
+    position: relative;
+    .icon {
+      width: 3.5rem;
+      height: 4.225rem;
+      margin: -0.25rem 0;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+    }
   }
 
   ul {

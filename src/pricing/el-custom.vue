@@ -1,6 +1,7 @@
 <template>
   <div class="pricing-custom">
     <div class="header">
+      <home-icon icon="model-custom" />
       <h2 class="title">Custom solutions</h2>
       <div class="sub">We will work closely with you to create the perfect solution.</div>
       <div class="mt-5">
@@ -39,7 +40,8 @@ import { factorLink, factorIcon } from "@factor/ui";
 export default {
   components: {
     factorLink,
-    factorIcon
+    factorIcon,
+    homeIcon: () => import("../product/icon.vue")
   },
   data() {
     return {};
@@ -53,13 +55,25 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
-  // background: #e3e8ee;
-  border-radius: 5px;
-  background: rgba(0, 150, 136, 0.25);
+  border-radius: 0.5rem;
+  background: #2a2f45;
+  color: #fff;
+  .header {
+    padding-left: 5rem;
+    position: relative;
+    .icon {
+      width: 3.5rem;
+      height: 4.225rem;
+      margin: -0.25rem 0;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+    }
+  }
   a {
     button {
-      background: #00423c !important;
-      box-shadow: 0 0 0 1px #00423c !important;
+      background: #5534a7 !important;
+      box-shadow: 0 0 0 1px #5534a7 !important;
     }
   }
   ul {
@@ -73,13 +87,14 @@ export default {
     font-weight: var(--font-weight-bold);
     line-height: 1.2;
     margin-bottom: 1rem;
-    color: #00423c;
+    color: #fff;
   }
   .sub {
     // color: var(--color-text-secondary);
-    color: rgba(0, 62, 56, 0.5);
+    // color: #5534a7;
     font-size: 1.25rem;
     font-weight: 400;
+    opacity: 0.72;
   }
   .figure {
     justify-self: center;

@@ -1,12 +1,15 @@
 <template>
   <div class="el-table">
     <div class="max-w-xl">
-      <h1>Instant Hosting</h1>
-      <p
-        class="text-lg font-normal mb-10"
-      >The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us.</p>
-    </div>
+      <div class="header">
+        <home-icon icon="model-instant" />
 
+        <h1>Instant Hosting</h1>
+        <p
+          class="text-lg font-normal mb-10"
+        >The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us.</p>
+      </div>
+    </div>
     <div class="view-table-version-2">
       <div class="compare content">
         <div class="content-pad">
@@ -143,6 +146,7 @@ export default {
   components: {
     factorIcon,
     factorLink,
+    homeIcon: () => import("../product/icon.vue"),
     planIcon: () => import("./icons.vue"),
     planBenefits: () => import("./section-benefits.vue")
   },
@@ -381,10 +385,23 @@ export default {
   padding: 2rem 2rem 0;
   border-radius: 0.5rem;
   background: rgba(25, 82, 190, 0.25);
+  .header {
+    padding-left: 5rem;
+    position: relative;
+    .icon {
+      width: 3.5rem;
+      height: 4.225rem;
+      margin: 0;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+    }
+  }
   h1 {
-    padding: 0.5rem 0;
+    padding: 0;
     font-size: 2.355rem;
     font-weight: var(--font-weight-bold, 700);
+    margin-bottom: 1rem;
   }
 
   .feature-group {
@@ -617,8 +634,12 @@ export default {
     margin: 0 auto;
     padding: 0 1.5rem;
     width: 100%;
+
     &.wide {
       max-width: 1200px;
+    }
+    @media (max-width: 900px) {
+      padding: 0;
     }
   }
   .header {
@@ -1263,7 +1284,7 @@ export default {
         .column {
           text-align: left;
           &:nth-child(1) {
-            display: none;
+            // display: none;
           }
           &.data {
             .footer-row {
