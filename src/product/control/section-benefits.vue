@@ -26,13 +26,13 @@ export default {
         //   text: `Be in control with access to trending content, user activity, and other forum metrics. See what your users are doing with via NodeBB's real-time graphs. Create custom reports for virtually any action a user does, with APIs available to export into your favourite analytics software.`
         // },
         {
-          icon: "moderation",
+          icon: "moderating",
           title: "Moderation",
           text: `Unparalleled moderation tools give your moderators full control over the content of your forum. Designed for both small and large-scale teams in mind.` // - for example, the ability to assign moderation tasks to individuals and mark tasks with statuses such as "solved" or "work in progress" allows your team to distribute and organize moderation duties.`
         },
         {
-          icon: "customize",
-          title: "Customize with HTML, CSS, and JavaScript",
+          icon: "customization",
+          title: "Customise with HTML, CSS, and JavaScript",
           text:
             "Tweak your forum's design to your heart's content. Don't worry - if something goes wrong, reverting is a snap. You can even include scripts from third party vendors such as Google Analytics."
         },
@@ -42,12 +42,12 @@ export default {
         //   text: `Add new functionality to your forum via the widgets system. You can add new content via an HTML widget or customize your forum's presentation with over a dozen other widgets by dragging and dropping it onto a widget area on your forum.`
         // },
         {
-          icon: "api",
+          icon: "apis",
           title: "API",
           text: `NodeBB has a publically facing read-only API as well as a REST write API, making it easy to integrate with your software.`
         },
         {
-          icon: "spam",
+          icon: "spam-prevention",
           title: "Spam prevention",
           text: `NodeBB integrates with several spam prevention tools including Akismet, StopForumSpam, and Project Honeypot.`
         }

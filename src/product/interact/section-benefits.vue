@@ -1,13 +1,8 @@
 <template>
   <div class="interact-benefits">
-    <!-- <header class="section-header">
-      <h1 class="title">Why NodeBB?</h1>
-      <p class="text"></p>
-    </header>-->
-
     <ul class="features-list">
       <li class="feature-block">
-        <home-icon icon="groups" />
+        <home-icon icon="user-created-groups" />
         <h3 class="title">User-created groups</h3>
         <p
           class="text"
@@ -15,7 +10,7 @@
       </li>
 
       <li class="feature-block">
-        <home-icon icon="tags" />
+        <home-icon icon="tagging" />
         <h3 class="title">Tags</h3>
         <p
           class="text"
@@ -23,7 +18,7 @@
       </li>
 
       <li class="feature-block">
-        <home-icon icon="search" />
+        <home-icon icon="advanced-search" />
         <h3 class="title">Advanced search</h3>
         <p
           class="text"
@@ -31,8 +26,8 @@
       </li>
 
       <li class="feature-block">
-        <home-icon icon="roles" />
-        <h3 class="title">Roles & permissions</h3>
+        <home-icon icon="roles-permissions" />
+        <h3 class="title">Roles &amp; permissions</h3>
         <p
           class="text"
         >Grant privileges to individual users or groups, allowing you to create read-only categories or hide them altogether. Give forum members elevated roles such as "Moderator" to allow them to help police your community.</p>

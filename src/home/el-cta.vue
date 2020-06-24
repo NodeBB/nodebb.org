@@ -53,7 +53,7 @@ export default {
       width: 700px;
       left: -23rem;
       top: -16.5rem;
-
+      opacity: 0.72;
       @media (max-width: 900px) {
         height: 400px;
         width: 500px;

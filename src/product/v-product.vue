@@ -2,35 +2,6 @@
   <div class="view-product">
     <section-product-splash />
 
-    <!-- <section
-      v-for="(feature, index) in features"
-      :id="feature.id"
-      :key="index"
-      class="features content"
-      :data-test="`feature-` + index"
-      :class="[index == features.length - 1 ? 'last' : '']"
-    >
-      <div class="split-feature" :class="[index % 2 == 0 ? 'even' : 'odd']">
-        <div class="feature-figure-container">
-          <div v-if="feature.figure" class="figure-container">
-            <component :is="feature.figure" />
-          </div>
-        </div>
-        <div class="feature-content-container">
-          <div class="feature-content">
-            <h2 class="title">{{ feature.title }}</h2>
-            <div class="text">{{ feature.text }}</div>
-            <div v-if="feature.link" class="action">
-              <factor-link :path="feature.link.path">{{ feature.link.text }} &rarr;</factor-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
-
-    <!-- <section class="benefits content">
-      <section-benefits class="content-pad" />
-    </section>-->
     <section-design />
     <section-interact />
     <section-control />
@@ -54,45 +25,13 @@ export default {
     sectionDesign: () => import("./design/v-design.vue"),
     sectionExtend: () => import("./extend/v-extend.vue"),
     sectionIntegrate: () => import("./integrate/v-integrate.vue"),
-    sectionInteract: () => import("./interact/v-interact.vue"),
-    elCta: () => import("./el-cta.vue")
+    sectionInteract: () => import("./interact/v-interact.vue")
+    // elCta: () => import("./el-cta.vue")
   },
   data(this: any) {
     return {
       loading: true,
-      loadingButtons: true,
-      features: [
-        // {
-        //   title: `Floating composer`,
-        //   text: `Choose between a "What You See is What You Get" (WYSIWYG) editor or a Markdown editor to compose topics and replies.`,
-        //   // figure: () => import("./figure-composer.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // },
-        // {
-        //   title: "Built-in realtime chat",
-        //   text: `Chats take private messaging to a whole new level. Native multi-tasking support allows you to have streaming conversations with multiple people side-by-side.`,
-        //   // figure: () => import("./figure-chat.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // },
-        // {
-        //   title: "User-created groups",
-        //   text: `Keep your users engaged and connected with each other via groups. Each group page has an activity feed and plugins can extend functionality with features such as a calendar and a photo gallery.`,
-        //   // figure: () => import("./figure-groups.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // },
-        // {
-        //   title: "Social interactions",
-        //   text: `NodeBB makes it easy to share and interact with content. Users earn reputation from others when posting helpful comments - gamifying and engaging your community. Choose between our "favourite", "like", or "upvote" interaction engines (or use all three!)`,
-        //   // figure: () => import("./figure-social.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // },
-        // {
-        //   title: "Real-time notifications",
-        //   text: `NodeBB integrates real-time events in the background - your users are notified instantly when someone follows them, likes their post, or subscribes to their topics.`,
-        //   // figure: () => import("./figure-notifications.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // }
-      ]
+      loadingButtons: true
     };
   },
   mounted(this: any) {

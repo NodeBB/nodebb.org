@@ -17,6 +17,10 @@ html,
   opacity: 1;
 }
 
+html button.app-btn.link {
+  color: #2a2f45;
+}
+
 .factor-app .btn {
   @apply inline-block px-5 py-3 font-semibold text-sm leading-tight tracking-widest uppercase rounded;
 }

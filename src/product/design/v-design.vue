@@ -29,41 +29,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="quotes content">
-      <div class="content-pad quotes-pad">
-        <article
-          v-for="(quote, index) in quotes"
-          :key="index"
-          itemprop="review"
-          itemscope
-          itemtype="http://schema.org/Review"
-        >
-          <blockquote itemprop="reviewRating" itemscope itemtype="http://schema.org/Review">
-            <p class="quote-body" itemprop="reviewBody">"{{ quote.text }}"</p>
-            <footer>
-              <div class="quote-media">
-                <a class="quote-image" :href="quote.link">
-                  <img :src="quote.img" alt="quote" />
-                </a>
-              </div>
-              <a
-                :href="quote.link"
-                target="_blank"
-                itemprop="author"
-                itemscope
-                itemtype="https://schema.org/Person"
-              >{{ quote.attribution }}</a>
-            </footer>
-          </blockquote>
-        </article>
-      </div>
-    </section>-->
-    <!-- <section class="benefits content">
-      <section-benefits class="content-pad" />
-    </section>-->
-
-    <!-- <el-cta id="cta" /> -->
   </div>
 </template>
 
@@ -81,62 +46,7 @@ export default {
   data(this: any) {
     return {
       loading: true,
-      loadingButtons: true,
-      features: [
-        // {
-        //   title: `Posting Topics and Replies`,
-        //   text: `Choose between a "What You See is What You Get" (WYSIWYG) editor or a Markdown editor to compose topics and replies.`,
-        //   // figure: () => import("./figure-composer.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // },
-        // {
-        //   title: "Built-in realtime chat",
-        //   text: `Chats take private messaging to a whole new level. Native multi-tasking support allows you to have streaming conversations with multiple people side-by-side.`,
-        //   // figure: () => import("./figure-chat.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // },
-        // {
-        //   title: "User-created groups",
-        //   text: `Keep your users engaged and connected with each other via groups. Each group page has an activity feed and plugins can extend functionality with features such as a calendar and a photo gallery.`,
-        //   // figure: () => import("./figure-groups.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // },
-        // {
-        //   title: "Social interactions",
-        //   text: `NodeBB makes it easy to share and interact with content. Users earn reputation from others when posting helpful comments - gamifying and engaging your community. Choose between our "favourite", "like", or "upvote" interaction engines (or use all three!)`,
-        //   // figure: () => import("./figure-social.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // },
-        // {
-        //   title: "Real-time notifications",
-        //   text: `NodeBB integrates real-time events in the background - your users are notified instantly when someone follows them, likes their post, or subscribes to their topics.`,
-        //   // figure: () => import("./figure-notifications.vue"),
-        //   link: { path: "/pricing", text: "Learn more" }
-        // }
-      ]
-      // quotes: [
-      //   {
-      //     text: `When I moved from a legacy forum to NodeBB, traffic blew up. Once you see what NodeBB can do for you, you won't want to use anything else.`,
-      //     attribution: "Trevor Williams, Designer",
-      //     // img: require("./img/_.jpg"),
-      //     link: "https://nodebb.org"
-      //   },
-      //   {
-      //     text: `NodeBB gives me the right technology and a robust set of plugins. NodeBB helps me build and get paid faster.`,
-      //     attribution: "Jane Doe Carter, Full-stack Developer"
-      //     // img: require("./img/_.jpg")
-      //   },
-      //   {
-      //     text: `Its just one the of the best forum platforms out there.`,
-      //     attribution: "John Doe, Front-end Developer"
-      //     // img: require("./img/_.jpg")
-      //   },
-      //   {
-      //     text: `My community loves NodeBB.`,
-      //     attribution: "New Doe, UI Designer"
-      //     // img: require("./img/_.jpg")
-      //   }
-      // ]
+      loadingButtons: true
     };
   },
   mounted(this: any) {
@@ -155,8 +65,6 @@ export default {
 </script>
 <style lang="less">
 .view-product-design {
-  // overflow: hidden;
-  // background: ;
   .content-pad {
     max-width: 1100px;
     margin: 0 auto;

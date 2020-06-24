@@ -27,7 +27,7 @@
     <i v-else-if="icon == 'encrypt'" class="fad fa-lock-alt"></i>
     <i v-else-if="icon == 'backup'" class="fad fa-save"></i>
 
-    <!-- benefits -->
+    <!-- -->
     <img v-else-if="icon == 'lytics'" src="../home/img/benefit-analytics.svg" class />
     <img v-else-if="icon == 'international'" src="../home/img/benefit-i18n.svg" class />
     <img v-else-if="icon == 'mobile-responsive'" src="../home/img/benefit-responsive.svg" class />
@@ -36,7 +36,17 @@
     <img v-else-if="icon == 'streaming'" src="../home/img/benefit-stream.svg" class />
     <img v-else-if="icon == 'supporting'" src="../home/img/support.svg" class />
 
-    <!-- models -->
+    <!-- -->
+    <img v-else-if="icon == 'user-created-groups'" src="../home/img/user-created-groups.svg" class />
+    <img v-else-if="icon == 'advanced-search'" src="../home/img/advanced-search.svg" class />
+    <img v-else-if="icon == 'tagging'" src="../home/img/tagging.svg" class />
+    <img v-else-if="icon == 'roles-permissions'" src="../home/img/roles-permissions.svg" class />
+    <img v-else-if="icon == 'moderating'" src="../home/img/moderation.svg" class />
+    <img v-else-if="icon == 'apis'" src="../home/img/apis.svg" class />
+    <img v-else-if="icon == 'customization'" src="../home/img/customization.svg" class />
+    <img v-else-if="icon == 'spam-prevention'" src="../home/img/antispam.svg" class />
+
+    <!-- -->
     <svg v-else-if="icon == 'instant-hosting'">
       <g fill="none" fill-rule="evenodd">
         <g fill="#000" fill-rule="nonzero" transform="translate(131 181)">
