@@ -46,6 +46,10 @@
     <img v-else-if="icon == 'customization'" src="../home/img/customization.svg" class />
     <img v-else-if="icon == 'spam-prevention'" src="../home/img/antispam.svg" class />
 
+    <img v-else-if="icon == 'automated-backup'" src="../home/img/automated-backup.svg" class />
+    <img v-else-if="icon == 'ssl-encryption'" src="../home/img/ssl-encryption.svg" class />
+    <img v-else-if="icon == 'additional-users'" src="../home/img/additional-users.svg" class />
+
     <!-- -->
     <svg v-else-if="icon == 'instant-hosting'">
       <g fill="none" fill-rule="evenodd">

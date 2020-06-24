@@ -6,25 +6,23 @@
 
     <ul class="features-list">
       <li class="feature-block">
-        <home-icon icon="users" />
+        <home-icon icon="additional-users" />
         <h3 class="title">Unlimited staff and community users</h3>
-        <!-- <p
+        <p
           class="text"
-        ></p>-->
+        >add unlimited users to your account so that you and all your staff can have their own logins.</p>
       </li>
 
       <li class="feature-block">
-        <home-icon icon="encrypt" />
+        <home-icon icon="ssl-encryption" />
         <h3 class="title">Free SSL encryption for security</h3>
-        <!-- <p class="text"></p> -->
+        <p class="text">protect your site and customers with a free ssl certificate.</p>
       </li>
 
       <li class="feature-block">
-        <home-icon icon="backup" />
+        <home-icon icon="automated-backup" />
         <h3 class="title">Automated daily backup of all your data</h3>
-        <!-- <p
-          class="text"
-        ></p>-->
+        <p class="text">we'll automatically backup your forum just incase</p>
       </li>
     </ul>
   </div>
@@ -51,10 +49,10 @@ export default {
   }
 
   .section-header {
-    font-size: 1em;
+    font-size: 1rem;
     text-align: center;
     max-width: 900px;
-    margin: 3rem auto 0;
+    margin: 3rem auto 2rem;
     letter-spacing: -0.02em;
     .title {
       font-size: 1.5rem;
@@ -69,10 +67,11 @@ export default {
       }
     }
     .text {
-      margin-top: 20px;
+      font-size: 1.3rem;
       font-weight: 400;
-      font-size: 1.3em;
-      line-height: 1.6;
+      line-height: 1.7rem;
+      opacity: 0.7;
+      font-family: var(--font-family-cursive);
     }
     @media (max-width: 767px) {
       text-align: left;
@@ -95,26 +94,25 @@ export default {
         line-height: 1.5em;
       }
       .text {
-        font-size: 1.15rem;
+        font-size: 0.9rem;
         font-weight: 400;
-        line-height: 1.7rem;
-        opacity: 0.85;
+        line-height: 1.45rem;
+        opacity: 0.9;
       }
       .icon {
-        width: 48px;
-        height: 48px;
-        margin: 2rem 0 0;
-        border-radius: 0.5rem;
-        overflow: hidden;
+        margin: 1rem 0 1.5rem;
         position: relative;
-        color: #2a2f44;
-        font-size: 1.5rem;
+        color: #1952be;
+        font-size: 2rem;
+        border-radius: 0.5rem;
+        overflow: visible;
+        -webkit-flex: none;
+        -ms-flex: none;
+        flex: none;
+        display: block;
+        width: 3rem;
+        height: 3rem;
         i {
-          position: relative;
-          left: 0;
-          margin-left: 0;
-          top: 0;
-          transform: translateY(0);
         }
       }
       h3,
