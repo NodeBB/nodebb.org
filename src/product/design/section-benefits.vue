@@ -91,10 +91,9 @@ export default {
         font-weight: 400;
       }
       .icon {
-        width: 48px;
-        height: 48px;
+        width: 2.825rem;
+        height: 3.225rem;
         margin: 1rem 0;
-        border-radius: 0.5rem;
         overflow: hidden;
         position: relative;
         color: #1952be;
