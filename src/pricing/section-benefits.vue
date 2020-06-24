@@ -10,7 +10,7 @@
         <h3 class="title">Unlimited staff and community users</h3>
         <p
           class="text"
-        >add unlimited users to your account so that you and all your staff can have their own logins.</p>
+        >add unlimited users to your account so that you and all your staff can have their own logins</p>
       </li>
 
       <li class="feature-block">
@@ -43,6 +43,9 @@ export default {
 <style lang="less">
 .pricing-benefits {
   position: relative;
+  background: #b3c1dc;
+  border-radius: 0.5rem;
+  padding: 0 2rem 2rem;
 
   @media (max-width: 767px) {
     padding-bottom: 80px;
@@ -56,10 +59,10 @@ export default {
     letter-spacing: -0.02em;
     .title {
       font-size: 1.5rem;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 1.1;
-      color: #8192b3;
-      letter-spacing: -0.025em;
+      color: #1a1f36;
+      padding: 1.5rem 0 0;
 
       @media (max-width: 670px) {
         font-size: 2em;
@@ -71,7 +74,6 @@ export default {
       font-weight: 400;
       line-height: 1.7rem;
       opacity: 0.7;
-      font-family: var(--font-family-cursive);
     }
     @media (max-width: 767px) {
       text-align: left;
@@ -94,10 +96,11 @@ export default {
         line-height: 1.5em;
       }
       .text {
-        font-size: 0.9rem;
+        font-size: 1.3rem;
         font-weight: 400;
-        line-height: 1.45rem;
-        opacity: 0.9;
+        line-height: 1.75rem;
+        opacity: 0.78;
+        font-family: var(--font-family-cursive);
       }
       .icon {
         margin: 1rem 0 1.5rem;
