@@ -1005,6 +1005,20 @@ export default {
 
           &:first-child {
             background: #fff;
+            &:before {
+              content: "";
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: 0;
+              background-image: url(./img/icon-opensource.svg);
+              flex: none;
+              display: block;
+              width: 3.45rem;
+              height: 3.45rem;
+              margin-left: 2rem;
+              margin-top: 1.5rem;
+              margin-bottom: -1rem;
+            }
             .row {
               &.footer-row {
                 background: #fff;
@@ -1018,27 +1032,61 @@ export default {
             }
           }
           &:nth-child(2) {
+            &:before {
+              content: "";
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: 0;
+              background-image: url(./img/icon-instanthosting.svg);
+              flex: none;
+              display: block;
+              width: 3.45rem;
+              height: 3.45rem;
+              margin-left: 2rem;
+              margin-top: 1.5rem;
+              margin-bottom: -1rem;
+            }
             .row {
               &.footer-row {
                 a {
                   button {
-                    color: var(--color-bg, #fff);
-                    background: #1a1f36;
-                    box-shadow: 0 0 0 1px #1a1f36;
+                    // color: var(--color-bg, #fff);
+                    // background: #1a1f36;
+                    // box-shadow: 0 0 0 1px #1a1f36;
                   }
                 }
               }
             }
           }
+          &:nth-child(3) {
+            &:before {
+              content: "";
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: 0;
+              background-image: url(./img/icon-enterprise.svg);
+              flex: none;
+              display: block;
+              width: 3.45rem;
+              height: 3.45rem;
+              margin-left: 2rem;
+              margin-top: 1.5rem;
+              margin-bottom: -1rem;
+            }
+          }
           &:last-child {
-            background: rgb(191, 229, 225);
+            background: #2a2f45;
             .row {
+              &.has-content {
+                color: #fff;
+              }
               &.footer-row {
-                background: rgba(0, 66, 60, 0.25);
+                background: #242940;
                 a {
                   button {
-                    background: #00423c;
-                    box-shadow: 0 0 0 1px #00423c;
+                    background: #5534a7;
+                    box-shadow: 0 0 0 1px #5534a7;
+                    color: #fff;
                   }
                 }
               }
