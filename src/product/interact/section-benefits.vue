@@ -118,15 +118,12 @@ export default {
         font-weight: 400;
       }
       .icon {
-        width: 48px;
-        height: 48px;
-        margin: 1rem 0 1rem;
-        border-radius: 0.5rem;
-        /* box-shadow: 0 2px 3px rgba(25,82,190,.13), 0 2px 5px rgba(25,82,190,.11), 0 5px 15px rgba(0,0,0,.07); */
+        width: 2.825rem;
+        height: 3.225rem;
+        margin: 1rem 0;
         overflow: hidden;
         position: relative;
         color: #1952be;
-        /* background: #f6fafd; */
         font-size: 1.5rem;
         i {
           position: relative;
