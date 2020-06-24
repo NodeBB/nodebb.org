@@ -170,7 +170,7 @@ export default {
     .sub {
       // color: var(--color-text-secondary);
 
-      margin-top: 2rem;
+      margin-top: 1rem;
       font-size: 1.4rem;
       font-weight: 400;
       margin-bottom: 1rem;
