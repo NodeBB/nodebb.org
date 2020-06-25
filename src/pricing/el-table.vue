@@ -387,22 +387,23 @@ export default {
   background: rgba(25, 82, 190, 0.25);
   // background: #c5d3ef;
   position: relative;
+  overflow: hidden;
 
   &:before {
     content: "";
-    background-image: url(../home/img/nbb-bg-e.svg);
+    background-image: url(../home/img/nbb-bg-b.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0;
 
     display: block;
-    z-index: -1;
+    z-index: auto;
     position: absolute;
     height: 700px;
-    width: 700px;
-    right: -9rem;
-    top: -21.75rem;
-
+    width: 450px;
+    right: 0rem;
+    top: -8.5rem;
+    opacity: 0.72;
     @media (max-width: 900px) {
       z-index: -1;
       right: -10rem;

@@ -40,6 +40,7 @@ export default {
     margin: 0 auto;
     position: relative;
     z-index: -1;
+
     &:before {
       content: "";
       background-image: url(./img/nbb-bg-e.svg);
@@ -49,16 +50,16 @@ export default {
       display: block;
       z-index: 0;
       position: absolute;
-      height: 400px;
-      width: 700px;
-      left: -23rem;
-      top: -16.5rem;
-      opacity: 0.72;
+      height: 300px;
+      width: 400px;
+      left: -12rem;
+      top: -17.25rem;
+      transform: rotate(-45deg);
       @media (max-width: 900px) {
-        height: 400px;
+        height: 300px;
         width: 500px;
         left: -16rem;
-        top: -21.5rem;
+        top: -18.5rem;
       }
     }
   }

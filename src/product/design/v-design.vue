@@ -2,7 +2,7 @@
   <div class="view-product-design">
     <section-splash />
 
-    <section
+    <!-- <section
       v-for="(feature, index) in features"
       :id="feature.id"
       :key="index"
@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
   </div>
 </template>
 
