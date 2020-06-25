@@ -20,7 +20,7 @@
               <div class="main wrap">
                 <div class="scroller" :style="`backgroundImage: url(${scrollerBg})`" />
               </div>
-              <img src="./img/terminal.svg" alt class="terminal" />
+              <img src="../home/img/terminal.svg" alt class="terminal" />
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ export default {
       return this.figures[this.active];
     },
     scrollerBg(this: any) {
-      return require("./img/code.svg");
+      return require("../home/img/code.svg");
     }
   },
 
@@ -425,15 +425,15 @@ figure.splash-figure-container.splash-figure-main {
       }
       .icon {
         transition: all 0.3s;
-        background-color: #2a2f45;
+        background-color: #2a2f44;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 3.2em;
-        height: 3.2em;
+        width: 4rem;
+        height: 4rem;
         border-radius: 50%;
-        box-shadow: 0 0 1px 0 rgba(255, 255, 255, 0.01), 0 0 1px 0 #2a2f45;
-        background-image: linear-gradient(90deg, #2a2f45 0%, #000 100%);
+        box-shadow: 0 0 1px 0 hsla(0, 0%, 100%, 0.01), 0 0 1px 0 #2a2f44;
+        background-image: linear-gradient(90deg, #2a2f44, #2a2f44);
         position: relative;
         img {
           // max-width: 25px;
