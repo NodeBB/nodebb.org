@@ -3,15 +3,15 @@
     <div class="header">
       <home-icon icon="model-custom" />
       <h2 class="title">Custom solutions</h2>
-      <div class="sub">We will work closely with you to create the perfect solution.</div>
+      <div
+        class="sub"
+      >Custom enterprise packages for larger businesses and organizations. We will work closely with you to create the perfect solution.</div>
       <div class="mt-5">
-        <factor-link btn="primary" path="/contact">Contact us &rarr;</factor-link>
+        <factor-link btn="primary" size="medium" path="/contact">Contact us &rarr;</factor-link>
       </div>
     </div>
     <div class="figure">
-      <p
-        class="font-normal text-base leading-relaxed"
-      >Custom enterprise packages for larger businesses and organizations. Includes:</p>
+      <p class="font-semibold list-outside list-square ml-5 text-base leading-relaxed">Includes:</p>
       <ul class="font-normal list-outside list-square mt-5 ml-5 text-base leading-relaxed">
         <li>
           <strong>Custom feature development</strong> to integrate with your current systems.
@@ -62,12 +62,18 @@ export default {
     padding-left: 5rem;
     position: relative;
     .icon {
-      width: 3.5rem;
-      height: 4.225rem;
-      margin: -0.25rem 0;
-      font-size: 1.5rem;
+      margin: 0rem 0 1.5rem;
       position: absolute;
+      color: #5534a7;
+      font-size: 2rem;
       left: 0;
+      overflow: visible;
+      -webkit-flex: none;
+      -ms-flex: none;
+      flex: none;
+      display: block;
+      width: 3rem;
+      height: 3rem;
     }
   }
   a {
@@ -92,9 +98,10 @@ export default {
   .sub {
     // color: var(--color-text-secondary);
     // color: #5534a7;
+    color: #a0a6c3;
     font-size: 1.25rem;
     font-weight: 400;
-    opacity: 0.72;
+    // opacity: 0.72;
   }
   .figure {
     justify-self: center;

@@ -6,15 +6,28 @@
       <div
         class="sub"
       >NodeBB is open source software that is free for anyone to download and install on their own server under the terms of the GNU General Public Licence (GPLv3).</div>
-      <div class="mt-3">
-        <div class="actions">
+
+      <div class="mt-5">
+        <factor-link
+          btn="primary"
+          size="medium"
+          target="_blank"
+          path="https://github.com/NodeBB/NodeBB"
+        >Go to Github repo &rarr;</factor-link>
+        <!-- <div class="actions">
           <github-stars />
-        </div>
+        </div>-->
       </div>
     </div>
 
     <div class="figure font-normal">
-      <p>The code can be found at our project repository on GitHub, and installation instructions can be found in our Documentation Portal.</p>
+      <p>
+        The code can be found at our project repository on GitHub, and installation instructions can be found in our
+        <a
+          href="https://docs.nodebb.org"
+          target="_blank"
+        >Documentation Portal</a>.
+      </p>
       <p>
         If you do not have a server, we recommend using DigitalOcean to host NodeBB. They do charge based on your usage, but you can get a month of free hosting from them by
         <a

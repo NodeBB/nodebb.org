@@ -4,7 +4,7 @@
       <div class="header">
         <home-icon icon="model-instant" />
 
-        <h1>Instant Hosting</h1>
+        <h1>Instant hosting</h1>
         <p
           class="text-lg font-normal mb-10"
         >The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us.</p>
@@ -1142,7 +1142,8 @@ export default {
             background: #fff;
           }
           &:first-child {
-            background: #d5dff3;
+            // background: #d5dff3;
+            background: #fff;
             .row:first-child {
               // color: #ffb300;
             }
