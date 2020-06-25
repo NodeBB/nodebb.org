@@ -384,7 +384,25 @@ export default {
 .el-table {
   padding: 2rem 2rem 0;
   border-radius: 0.5rem;
-  background: rgba(25, 82, 190, 0.25);
+  // background: rgba(25, 82, 190, 0.25);
+  background: #c5d3ef;
+  position: relative;
+
+  &:before {
+    content: "";
+    background-image: url(../home/img/nbb-bg-e.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    height: 400px;
+    width: 700px;
+    right: -22rem;
+    top: -4.5rem;
+    transform: rotate(45deg);
+  }
   .header {
     padding-left: 5rem;
     position: relative;

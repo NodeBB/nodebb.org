@@ -20,7 +20,7 @@
       <li class="feature-block">
         <home-icon icon="automated-backup" />
         <h3 class="title">Automated daily backup of all your data</h3>
-        <p class="text">just incase...</p>
+        <p class="text">just in case...</p>
       </li>
     </ul>
   </div>
