@@ -63,8 +63,8 @@ export default {
 
   .pricing-splash-inner {
     display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-gap: 4em;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
     // padding: 4rem 3rem 6rem;
     padding: 0 0 2rem;
     align-items: center;

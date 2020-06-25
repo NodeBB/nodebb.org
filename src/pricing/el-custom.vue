@@ -58,6 +58,24 @@ export default {
   border-radius: 0.5rem;
   background: #2a2f45;
   color: #fff;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    background-image: url(../home/img/nbb-bg-e-dark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0;
+
+    display: block;
+    z-index: auto;
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    left: 1rem;
+    bottom: -4.75rem;
+    opacity: 0.42;
+  }
   .header {
     padding-left: 5rem;
     position: relative;

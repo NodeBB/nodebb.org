@@ -384,8 +384,8 @@ export default {
 .el-table {
   padding: 2rem 2rem 0;
   border-radius: 0.5rem;
-  // background: rgba(25, 82, 190, 0.25);
-  background: #c5d3ef;
+  background: rgba(25, 82, 190, 0.25);
+  // background: #c5d3ef;
   position: relative;
 
   &:before {
@@ -394,14 +394,26 @@ export default {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0;
+
     display: block;
     z-index: -1;
     position: absolute;
-    height: 400px;
+    height: 700px;
     width: 700px;
-    right: -22rem;
-    top: -4.5rem;
-    transform: rotate(45deg);
+    right: -9rem;
+    top: -21.75rem;
+
+    @media (max-width: 900px) {
+      z-index: -1;
+      right: -10rem;
+      top: -10.5rem;
+
+      height: 400px;
+      width: 400px;
+      // right: -10rem;
+      // top: -1.5rem;
+      opacity: 0.72;
+    }
   }
   .header {
     padding-left: 5rem;

@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1227" height="895" viewBox="0 0 1227 895">
   <defs>
-    <linearGradient id="nbb-bg-b-a" x1="50.008%" x2="50.007%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#2A6CBE" stop-opacity=".381"/>
-      <stop offset="100%" stop-color="#1851BE" stop-opacity=".9"/>
-    </linearGradient>
+    <radialGradient id="nbb-bg-b-a" cx="57.589%" cy="6.829%" r="99.85%" fx="57.589%" fy="6.829%">
+      <stop offset="0%" stop-color="#949FB9"/>
+      <stop offset="100%" stop-color="#8690AA"/>
+    </radialGradient>
     <linearGradient id="nbb-bg-b-b" x1="50%" x2="50%" y1="0%" y2="100%">
       <stop offset="0%" stop-color="#BCC4CF" stop-opacity="0"/>
       <stop offset="100%" stop-color="#8792A2"/>
