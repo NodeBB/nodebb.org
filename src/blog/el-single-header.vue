@@ -31,36 +31,36 @@
   </div>
 </template>
 <script lang="ts">
-import { factorPostEdit } from "@factor/post"
-import { factorLink, factorAvatar } from "@factor/ui"
-import { postLink, standardDate, setting, stored } from "@factor/api"
+import { factorPostEdit } from "@factor/post";
+import { factorLink, factorAvatar } from "@factor/ui";
+import { postLink, standardDate, setting, stored } from "@factor/api";
 
 export default {
   components: { factorLink, factorAvatar, factorPostEdit },
   props: {
     postId: { type: String, default: "" },
-    url: { type: String, default: "" },
+    url: { type: String, default: "" }
   },
   computed: {
     post(this: any) {
-      return stored(this.postId) || {}
+      return stored(this.postId) || {};
     },
     avatar(this: any) {
-      return stored(this.post.avatar) || {}
+      return stored(this.post.avatar) || {};
     },
     avatarUrl(this: any) {
-      return this.avatar.url || ""
-    },
+      return this.avatar.url || "";
+    }
   },
   methods: {
     getPost(_id: any) {
-      return stored(_id) || {}
+      return stored(_id) || {};
     },
     postLink,
     setting,
-    standardDate,
-  },
-}
+    standardDate
+  }
+};
 </script>
 <style lang="less">
 .plugin-blog {
@@ -76,7 +76,7 @@ export default {
     }
 
     .blog-hero {
-      background-image: url("../img/dot.svg");
+      // background-image: url("../img/dot.svg");
 
       // Dark version
       // background-color: #1b223c;

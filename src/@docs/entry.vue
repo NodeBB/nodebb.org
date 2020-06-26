@@ -6,23 +6,23 @@
   </div>
 </template>
 <script lang="ts">
-import { injectMarkdownComponents, setting } from "@factor/api"
-import { factorHighlightCode } from "@factor/plugin-highlight-code"
+import { injectMarkdownComponents, setting } from "@factor/api";
+import { factorHighlightCode } from "@factor/plugin-highlight-code";
 export default {
   components: {
-    factorHighlightCode,
+    factorHighlightCode
   },
   props: {
-    content: { type: String, default: "" },
+    content: { type: String, default: "" }
   },
   mounted(this: any) {
     setTimeout(() => {
-      injectMarkdownComponents()
-    }, 50)
+      injectMarkdownComponents();
+    }, 50);
   },
 
-  methods: { setting },
-}
+  methods: { setting }
+};
 </script>
 
 <style lang="less" >
@@ -69,10 +69,11 @@ export default {
     }
 
     img {
-      background-image: url("../img/dot.svg");
+      // background-image: url("../img/dot.svg");
       max-width: 100%;
       margin: 0 auto;
-      box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25), 0 1px 3px -1px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
+        0 1px 3px -1px rgba(0, 0, 0, 0.3);
 
       transition: all 0.2s ease-in-out;
       border-radius: 5px;

@@ -55,7 +55,7 @@ figure.plugins-graph {
     padding: 30% 0;
     width: 500px;
     position: relative;
-    transform: translateY(-4rem) scale(0.8);
+    transform: translateY(-4rem) translateX(-7rem) scale(0.8);
     transform-style: preserve-3d;
     perspective: 1000px;
 

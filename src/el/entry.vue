@@ -67,7 +67,7 @@ export default {
     }
 
     img {
-      background-image: url("../img/dot.svg");
+      // background-image: url("../img/dot.svg");
       max-width: 100%;
       margin: 0 auto;
       box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),

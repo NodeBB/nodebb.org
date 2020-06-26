@@ -66,7 +66,7 @@ figure.responsive-graph {
     position: relative;
     transform: translateX(-7.25rem) translateY(-12rem) translateZ(12rem)
       scale(0.68);
-    perspective: 1012px;
+    perspective: 1000px;
     @media (max-width: 1200px) {
       padding: 30% 0;
       width: 800px;

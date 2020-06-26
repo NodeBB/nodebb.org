@@ -161,7 +161,7 @@ export default {
 
     color: var(--color-text);
     background-color: #fff;
-    background-image: url("../img/dot.svg");
+    // background-image: url("../img/dot.svg");
     // background-image: url(../img/promo.svg);
     // background-repeat: no-repeat;
     // background-size: cover;
