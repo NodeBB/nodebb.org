@@ -53,20 +53,20 @@ figure.plugins-graph {
   }
   .stage {
     padding: 30% 0;
-    width: 800px;
+    width: 500px;
     position: relative;
-    transform: translateX(-5.25rem) translateY(-4rem) scale(0.64);
-    perspective: 1024px;
+    transform: translateY(-4rem) scale(0.8);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
     @media (max-width: 1200px) {
-      transform: translateX(-15.75rem) translateY(-7rem) scale(0.74);
+      transform: translateX(-8.75rem) translateY(-6rem) scale(0.9);
       perspective: 1024px;
     }
     @media (max-width: 900px) {
       width: 500px;
       transform: translate(-4.25rem, -3rem) scale(0.68);
     }
-
-    perspective: 800px;
 
     .plugins-wrap {
       width: 500px;

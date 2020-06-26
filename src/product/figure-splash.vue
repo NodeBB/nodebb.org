@@ -35,11 +35,11 @@ export default {
     return {
       icons: [
         // { name: "NodeBB", img: require("./img/icon-nodebb.svg") },
-        { name: "Elastic", img: require("./img/icon-elastic.svg") },
-        { name: "Varnish", img: require("./img/icon-varnish.svg") },
-        { name: "Mongo", img: require("./img/icon-mongodb.svg") },
         { name: "Node.js", img: require("./img/icon-nodejs.svg") },
-        { name: "Redis", img: require("./img/icon-redis.svg") }
+        { name: "Mongo", img: require("./img/icon-mongodb.svg") },
+        { name: "Redis", img: require("./img/icon-redis.svg") },
+        { name: "Varnish", img: require("./img/icon-varnish.svg") },
+        { name: "Elastic", img: require("./img/icon-elastic.svg") }
       ],
       width: 500,
       active: 0,
@@ -127,6 +127,7 @@ figure.splash-figure-container.splash-figure-main {
   }
   .stage {
     perspective: 800px;
+    transform: scale(0.9) translateX(-1rem) translateY(-2.45rem);
   }
 
   .splash-figure.themes,
@@ -219,16 +220,16 @@ figure.splash-figure-container.splash-figure-main {
   }
   .stage-icons-wrap {
     position: absolute;
-    width: 120%;
-    height: 10%;
-    top: 1rem;
+    width: 100%;
+    height: auto;
+    bottom: -7.25rem;
 
     //transform-style: preserve-3d;
     .stage-icons {
       width: 100%;
       height: 100%;
       perspective: 700px;
-      transform: translateX(-4em) rotate(-2.5deg);
+      transform: translateX(0rem);
     }
     .flying-icon {
       transform-origin: center;
@@ -243,33 +244,33 @@ figure.splash-figure-container.splash-figure-main {
       &:nth-child(1) {
         top: 0;
         left: 5%;
-        transform: scale(0.5) rotate3d(0, 0, 0, 18deg) translate3d(47%, 0px, 0);
+        // transform: scale(0.5) rotate3d(0, 0, 0, 18deg) translate3d(47%, 0px, 0);
         animation: iconTransform 0.3s 0s forwards;
       }
       &:nth-child(2) {
         top: 0;
         left: 16%;
-        transform: scale(1) rotate3d(-1, -1, 0, -18deg)
-          translate3d(56%, -75%, 0);
+        // transform: scale(1) rotate3d(-1, -1, 0, -18deg)
+        //   translate3d(56%, -75%, 0);
         animation: iconTransform 0.3s 0.1s forwards;
       }
       &:nth-child(3) {
         top: 0;
         left: 49%;
-        transform: scale(1.4) rotate3d(1, 0, 1, 49deg) translateY(-40%);
+        // transform: scale(1.4) rotate3d(1, 0, 1, 49deg) translateY(-40%);
         animation: iconTransform 0.3s 0.3s forwards;
       }
       &:nth-child(4) {
         top: 0;
         left: 83%;
-        transform: scale(2.4) rotate(20deg) rotateY(-50deg);
+        // transform: scale(2.4) rotate(20deg) rotateY(-50deg);
         animation: iconTransform 0.3s 0.6s forwards;
       }
       &:nth-child(5) {
         top: 0;
         left: 36%;
-        transform: scale(1.3) translateY(-36%) rotateY(17deg)
-          rotate3d(1, 0, 1, 34deg);
+        // transform: scale(1.3) translateY(-36%) rotateY(17deg)
+        //   rotate3d(1, 0, 1, 34deg);
         animation: iconTransform 0.3s 0.2s forwards;
       }
       // &:nth-child(6) {
@@ -404,14 +405,16 @@ figure.splash-figure-container.splash-figure-main {
       display: flex;
       margin: 0 auto;
       justify-content: space-between;
-      transform: translate(-3rem, -2rem) translateZ(-8rem);
+      transform: translate(-3rem, -2rem) translateZ(-16rem);
 
       .icon-wrap {
         text-align: center;
         .name {
-          transition: 0.3s opacity;
-          opacity: 0;
-          font-size: 0.9em;
+          transition: opacity 0.3s;
+          opacity: 0.78;
+          font-size: 1rem;
+          font-weight: 700;
+          margin-top: 0.5rem;
         }
 
         &:hover {

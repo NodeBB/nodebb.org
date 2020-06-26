@@ -11,8 +11,8 @@
         <factor-link
           btn="primary"
           size="medium"
-          target="_blank"
           path="https://github.com/NodeBB/NodeBB"
+          target="_blank"
         >Go to Github repo &rarr;</factor-link>
         <!-- <div class="actions">
           <github-stars />
@@ -21,19 +21,13 @@
     </div>
 
     <div class="figure font-normal">
-      <p>
-        The code can be found at our project repository on GitHub, and installation instructions can be found in our
-        <a
-          href="https://docs.nodebb.org"
-          target="_blank"
-        >Documentation Portal</a>.
-      </p>
+      <p>The code can be found at our project repository on GitHub, and installation instructions can be found in our</p>
       <p>
         If you do not have a server, we recommend using DigitalOcean to host NodeBB. They do charge based on your usage, but you can get a month of free hosting from them by
-        <a
-          href="https://www.digitalocean.com/?refcode=98bdc9454647"
+        <factor-link
+          path="https://www.digitalocean.com/?refcode=98bdc9454647"
           target="_blank"
-        >following this link</a>.
+        >following this link</factor-link>.
       </p>
     </div>
   </div>

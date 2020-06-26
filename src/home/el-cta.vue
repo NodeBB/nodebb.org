@@ -35,6 +35,8 @@ export default {
   --bg-opacity: 1;
   text-align: center;
   padding: 6rem 0;
+  position: relative;
+  z-index: 1;
   .content-pad {
     max-width: 700px;
     margin: 0 auto;

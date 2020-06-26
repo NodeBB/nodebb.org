@@ -343,7 +343,7 @@ export default {
   }
   .information {
     padding: 3rem;
-    background-image: url("./img/dot.svg");
+    // background-image: url("./img/dot.svg");
     .block-grid {
       margin-bottom: 3rem;
       &.last-child {
