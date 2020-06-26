@@ -1,8 +1,7 @@
 <template>
   <div class="contact-specialist">
     <factor-modal :vis.sync="vis">
-      <!-- @TODO -->
-      <iframe src="/contact-api"></iframe>
+      <iframe src="/contact"></iframe>
     </factor-modal>
     <factor-btn @click="vis = !vis" class="contact-specialist-btn">Speak to a specialist</factor-btn>
   </div>

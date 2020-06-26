@@ -17,7 +17,7 @@
         <div class="grid">
           <!-- <component :is="setting('contactForm.form')" /> -->
           <div class="zd-embedded-form">
-            <iframe src="/contact-api"></iframe>
+            <iframe src="/contact"></iframe>
           </div>
 
           <div class="aside">

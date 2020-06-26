@@ -49,10 +49,10 @@ addRoutes({
         path: "/about",
         component: (): Promise<any> => import("./v-company.vue"),
       },
-      {
-        path: "/contact",
-        component: (): Promise<any> => import("./v-contact.vue"),
-      },
+      // {
+      //   path: "/contact",
+      //   component: (): Promise<any> => import("./v-contact.vue"),
+      // },
       {
         path: `/themes`,
         component: (): Promise<any> => import("./extend/wrap.vue"),
