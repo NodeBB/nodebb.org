@@ -37,9 +37,9 @@ export default {
 
   .product-splash-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     grid-gap: 4em;
-    padding: 4rem 3rem 6rem;
+    padding: 8rem 3rem 2rem;
     align-items: center;
 
     @media (min-height: 1000px) {
@@ -57,8 +57,8 @@ export default {
       justify-content: center;
     }
     .content {
-      max-width: 550px;
-      justify-self: flex-end;
+      // max-width: 550px;
+      justify-self: center;
 
       h1 {
         z-index: 5;

@@ -133,17 +133,22 @@
         <div class="sub">Please contact us for discounted pricing.</div>
       </div>
       <div class="action">
-        <factor-link btn-link="primary" path="/contact">Contact us &rarr;</factor-link>
+        <!-- <factor-link btn-link="primary" path="/contact">Contact us &rarr;</factor-link> -->
+        <factor-link @click="vis = !vis">Contact us &rarr;</factor-link>
       </div>
     </div>
+    <factor-modal class="pricing-cta-contact" :vis.sync="vis">
+      <iframe class="pricing-cta-iframe" src="/contact"></iframe>
+    </factor-modal>
   </div>
 </template>
 
 <script lang="ts">
 import { toLabel } from "@factor/api";
-import { factorIcon, factorLink } from "@factor/ui";
+import { factorModal, factorIcon, factorLink } from "@factor/ui";
 export default {
   components: {
+    factorModal,
     factorIcon,
     factorLink,
     homeIcon: () => import("../product/icon.vue"),
@@ -159,6 +164,7 @@ export default {
   },
   data(this: any) {
     return {
+      vis: false,
       header: [
         // {
         //   super: "Hobbyists",
