@@ -71,7 +71,7 @@ app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
 	}
 });
 
-app.post('/contact', function (req, res) {
+app.post('/', function (req, res) {
 	var required = ['type', 'message', 'email', 'name'];
 	var ok = required.every(function (prop) {
 		return req.body.hasOwnProperty(prop);

@@ -25,18 +25,8 @@
 		ga('ComboTracker.send', 'pageview');
 	</script>
 
-	<script type="text/javascript">
-		(function () {
-			var n = document.createElement('script'); n.type = 'text/javascript'; n.async = true;
-			n.src = document.location.protocol + '//files.envoke.com/web_files/3821/scripts/nvk.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(n, s);
-		})();
-	</script>
-
-
-
 	<link rel="stylesheet" type="text/css" href="{base_path}/bin/style.css">
 </head>
 <body class="{path}">
 	<main id="panel">
-		
+
