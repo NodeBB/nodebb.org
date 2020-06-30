@@ -82,9 +82,9 @@ export default {
       }
 
       .page-sup {
-        // font-weight: 700;
         margin-bottom: 1rem;
-        font-size: 1.75rem;
+        font-size: 1.35rem;
+        font-weight: 300;
         font-family: var(--font-family-cursive);
         opacity: 0.9;
       }

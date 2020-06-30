@@ -82,8 +82,8 @@
       </div>
     </div>
 
-    <section class="quotes content-pad py-10">
-      <h2 class="title">What people are saying about us</h2>
+    <section class="quotes">
+      <!-- <h2 class="title">What people are saying about us</h2> -->
       <section-quotes />
     </section>
     <section class="benefits content">
