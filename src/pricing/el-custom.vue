@@ -7,7 +7,7 @@
         class="sub"
       >Custom enterprise packages for larger businesses and organizations. We will work closely with you to create the perfect solution.</div>
       <div class="mt-5">
-        <factor-link btn="primary" size="medium" path="/contact">Contact us &rarr;</factor-link>
+        <factor-link btn="primary" size="medium" @click="vis = !vis">Contact us &rarr;</factor-link>
       </div>
     </div>
     <div class="figure">
@@ -31,14 +31,17 @@
         </li>
       </ul>
     </div>
+    <factor-modal class="pricing-cta-contact" :vis.sync="vis">
+      <iframe class="pricing-cta-iframe" src="/contact"></iframe>
+    </factor-modal>
   </div>
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
-
+import { factorModal, factorLink, factorIcon } from "@factor/ui";
 export default {
   components: {
+    factorModal,
     factorLink,
     factorIcon,
     homeIcon: () => import("../product/icon.vue")
@@ -130,6 +133,15 @@ export default {
     .title {
       font-size: 1.5em;
     }
+  }
+
+  .pricing-cta-iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
 </style>

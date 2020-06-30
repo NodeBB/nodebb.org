@@ -16,18 +16,23 @@
             <!-- <home-icon v-if="feature.icon" class="feature-icon" :icon="feature.icon" /> -->
             <h2 class="title">{{ feature.title }}</h2>
             <div class="text" v-formatted-text="feature.text"></div>
-
-            <div v-if="feature.external" class="action">
-              <factor-link path="#" @click="vis = !vis">
+            <div class="action">
+              <factor-link v-if="feature.external" path="#" @click="vis = !vis">
                 <span v-formatted-text="feature.external.text" />
               </factor-link>
-            </div>
-            <div v-if="feature.link" class="action">
-              <factor-link :path="feature.link.path">{{ feature.link.text }} &rarr;</factor-link>
-              <factor-link :path="feature.linkvideo.path" target="_blank" rel="noopener">
+              <factor-link
+                v-if="feature.linkvideo"
+                :path="feature.linkvideo.path"
+                target="_blank"
+                rel="noopener"
+              >
                 {{ feature.linkvideo.text }}
                 <home-icon icon="play" />
               </factor-link>
+              <factor-link
+                v-if="feature.link"
+                :path="feature.link.path"
+              >{{ feature.link.text }} &rarr;</factor-link>
             </div>
           </div>
         </div>
@@ -360,8 +365,12 @@ export default {
       a {
         display: inline-block;
         line-height: 1;
-        margin-right: 1rem;
+        margin-right: 2.5rem;
         margin-bottom: 1rem;
+        font-weight: 700;
+        @media (max-width: 900px) {
+          margin-bottom: 2rem;
+        }
         .icon {
           display: inline-block;
           margin-left: 0.25rem;

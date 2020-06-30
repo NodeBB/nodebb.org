@@ -7,7 +7,7 @@
           class="page-title-sub"
         >NodeBB is next generation forum software. It's powerful, mobile-ready and easy to use.</h3>
         <div class="actions">
-          <factor-link btn="primary" path="/pricing">Start Free Trial &rarr;</factor-link>
+          <factor-link btn="primary" path="/pricing">Start Free Trial</factor-link>
           <factor-link btn="link" path="/product">Learn more &rarr;</factor-link>
           <!-- <factor-link btn="primary" path="/install">Install NodeBB &rarr;</factor-link>
           <factor-link btn="link" path="https://go.nodebb.org/github" target="_blank">
@@ -127,7 +127,7 @@ export default {
       @media (max-width: 1200px) {
         max-width: 450px;
         .page-title {
-          font-size: 3em;
+          font-size: 2.35rem;
         }
         .page-title-sub {
           font-size: 1.5em;
@@ -143,7 +143,7 @@ export default {
         justify-self: center;
         max-width: 100%;
         .page-title {
-          font-size: 2.6rem;
+          font-size: 2rem;
           line-height: 1.2;
         }
         .page-title-sub {
