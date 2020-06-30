@@ -15,7 +15,13 @@
           <div class="feature-content">
             <!-- <home-icon v-if="feature.icon" class="feature-icon" :icon="feature.icon" /> -->
             <h2 class="title">{{ feature.title }}</h2>
-            <div class="text" v-formatted-text="feature.text" />
+            <div class="text" v-formatted-text="feature.text"></div>
+
+            <div v-if="feature.external" class="action">
+              <factor-link path="#" @click="vis = !vis">
+                <span v-formatted-text="feature.external.text" />
+              </factor-link>
+            </div>
             <div v-if="feature.link" class="action">
               <factor-link :path="feature.link.path">{{ feature.link.text }} &rarr;</factor-link>
               <factor-link :path="feature.linkvideo.path" target="_blank" rel="noopener">
@@ -31,6 +37,10 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <section class="poweredby content">
+      <section-poweredby class="content-pad" />
     </section>
 
     <div class="view-home-version-2">
@@ -75,6 +85,11 @@
                     <span v-formatted-text="col.link.text" />
                   </factor-link>
                 </div>
+                <div v-if="col.external" class="footer-row row">
+                  <factor-link btn="primary" size="medium" class="font-bold" @click="vis = !vis">
+                    <span v-formatted-text="col.external.text" />
+                  </factor-link>
+                </div>
               </div>
             </div>
           </div>
@@ -91,24 +106,31 @@
     </section>
 
     <el-cta id="cta" />
+
+    <factor-modal class="content-footer-contact" :vis.sync="vis">
+      <iframe class="content-footer-iframe" src="/contact"></iframe>
+    </factor-modal>
   </div>
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
+import { factorModal, factorLink, factorIcon } from "@factor/ui";
 
 export default {
   components: {
+    factorModal,
     factorLink,
     factorIcon,
     elCta: () => import("./el-cta.vue"),
     homeSplash: () => import("./splash.vue"),
     homeIcon: () => import("../product/icon.vue"),
     sectionBenefits: () => import("./section-benefits.vue"),
-    sectionQuotes: () => import("./section-quotes.vue")
+    sectionQuotes: () => import("./section-quotes.vue"),
+    sectionPoweredby: () => import("./section-poweredby.vue")
   },
   data(this: any) {
     return {
+      vis: false,
       loading: true,
       loadingButtons: true,
       features: [
@@ -124,7 +146,11 @@ export default {
           title: "The best solution for engaging and retaining customers.",
           text: `From brand communities to product support boards, forums are a great way to engage and provide value to your audience.<br/><br/>At NodeBB, our mission is to provide forum software with all the modern features and performance you’ve come to expect from the social and mobile web.`,
           // figure: () => import("./figure-dashboard.vue"),
-          link: { path: "/contact", text: "Contact us" },
+          // link: { path: "/contact", text: "Contact us" },
+          external: {
+            // path: "/contact",
+            text: `Contact us &rarr;`
+          },
           linkvideo: {
             path: "https://youtu.be/uwgdWPeVuJE",
             text: "Watch video"
@@ -168,9 +194,9 @@ export default {
             "Large organizations that prefer custom-built solutions",
             "A tailored, high-performance forum for enterprise customers that integrates with your existing infrastructure."
           ],
-          link: {
-            path: "/contact",
-            text: "Contact us &rarr;"
+          external: {
+            // path: "/contact",
+            text: `Contact us &rarr;`
           }
         }
       ],
@@ -190,6 +216,7 @@ export default {
       ]
     };
   },
+
   mounted(this: any) {
     setTimeout(() => {
       this.loadingButtons = false;
@@ -219,11 +246,15 @@ export default {
 
   .benefits {
     .content-pad {
-      padding-top: 8rem;
+      padding-top: 4rem;
       padding-bottom: 3rem;
       @media (max-width: 900px) {
-        padding-top: 6rem;
+        padding-top: 4rem;
         padding-bottom: 1.5rem;
+      }
+      @media (max-width: 768px) {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
       }
     }
   }
@@ -311,7 +342,7 @@ export default {
     }
     .title {
       font-weight: 700;
-      font-size: 3rem;
+      font-size: 2.5rem;
       line-height: 1.1;
       margin-bottom: 1.5rem;
       // color: #fff;
@@ -363,102 +394,6 @@ export default {
       }
     }
   }
-  // .quotes-wrap {
-  //   position: relative;
-  //   background-image: url("./img/dot.svg");
-
-  //   margin-top: 5em;
-  //   .quotes {
-  //     transform: skewY(-10deg);
-
-  //     .quotes-pad {
-  //       display: grid;
-  //       grid-template-columns: 1fr 1fr;
-  //       grid-gap: 4em;
-  //       perspective: 800px;
-  //     }
-  //     @media (max-width: 900px) {
-  //       .quotes-pad {
-  //         grid-template-columns: 1fr;
-  //         article:nth-child(odd),
-  //         article:nth-child(even) {
-  //           transform: none;
-  //           margin: 0 auto;
-  //         }
-  //         article {
-  //           blockquote {
-  //             padding: 4rem 2rem;
-  //             text-align: left;
-  //             .quote-media {
-  //               text-align: left;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //     article {
-  //       position: relative;
-  //       display: flex;
-
-  //       &:nth-child(odd) {
-  //         transform: rotateX(2deg) rotateY(7deg);
-  //         //    background-image: linear-gradient(45deg, #fff, #f7f7f7);
-  //         blockquote {
-  //           box-shadow: 1px 1px 4px 0 rgba(26, 26, 67, 0.1),
-  //             -9px 22.5px 65px -5px rgba(50, 50, 93, 0.2);
-  //         }
-  //       }
-  //       &:nth-child(even) {
-  //         transform: rotateX(1deg) rotateY(-7deg);
-  //         // background-image: linear-gradient(45deg, #fff, #f7f7f7);
-  //         blockquote {
-  //           box-shadow: 1px 1px 4px 0 rgba(26, 26, 67, 0.1),
-  //             19px 22.5px 75px -5px rgba(50, 50, 93, 0.2);
-  //         }
-  //       }
-  //       &.odd {
-  //         justify-content: flex-end;
-  //       }
-  //       blockquote {
-  //         transform: skewY(10deg);
-
-  //         max-width: 550px;
-  //         padding: 8rem 4rem;
-  //         font-size: 1.4em;
-  //         line-height: 1.8;
-  //         text-align: center;
-  //         background: #fff;
-  //         border-radius: 6px;
-
-  //         .quote-media {
-  //           display: block;
-  //           text-align: center;
-  //           a {
-  //             display: inline-block;
-  //             width: 100px;
-
-  //             img {
-  //               display: block;
-  //               width: 100%;
-  //             }
-  //           }
-
-  //           margin-bottom: 1rem;
-  //         }
-  //         footer {
-  //           margin-top: 1rem;
-  //           text-transform: uppercase;
-
-  //           font-size: 0.8em;
-  //           font-weight: 500;
-  //         }
-  //         .rating-value {
-  //           display: none;
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
 .view-home-version-2 {
   --color-bg-splash: #1952be;
@@ -638,7 +573,7 @@ export default {
         }
       }
       .title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 1.1;
         margin: 0 0 0.5em;
         letter-spacing: -0.02em;
@@ -945,6 +880,14 @@ export default {
         // font-family: var(--font-family-cursive);
         font-size: 1.75rem;
         margin-bottom: 0;
+      }
+      @media (max-width: 900px) {
+        .text {
+          color: #fff;
+          font-size: 1.25rem;
+          margin-bottom: 0;
+          line-height: 1.4;
+        }
       }
     }
     .feature-table {

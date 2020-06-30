@@ -46,6 +46,9 @@ export default {
   padding: 6rem 0;
   position: relative;
   z-index: 1;
+  @media (max-width: 900px) {
+    text-align: left;
+  }
   .content-pad {
     max-width: 700px;
     margin: 0 auto;
@@ -93,16 +96,15 @@ export default {
   }
   line-height: 1.1;
   .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: -0.025em;
   }
   .sub-title {
-    font-size: 1.95rem;
+    font-size: 1.75rem;
     font-weight: 300;
-    opacity: 0.8;
+    opacity: 0.9;
     margin-top: 1rem;
-    // font-family: var(--font-family-cursive);
   }
   .text,
   .action {

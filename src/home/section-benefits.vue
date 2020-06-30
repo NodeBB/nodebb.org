@@ -88,6 +88,7 @@ export default {
 <style lang="less">
 .nodebb-benefits {
   position: relative;
+  margin-top: 4rem;
 
   @media (max-width: 767px) {
     padding-bottom: 80px;
@@ -101,7 +102,7 @@ export default {
     margin-bottom: 50px;
     letter-spacing: -0.02em;
     .title {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 700;
       line-height: 1.1;
       letter-spacing: -0.025em;

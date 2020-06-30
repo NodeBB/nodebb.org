@@ -14,11 +14,6 @@
           itemtype="http://schema.org/Review"
         >
           <blockquote itemprop="reviewRating" itemscope itemtype="http://schema.org/Review">
-            <div class="quote-media">
-              <a class="quote-image" href="#">
-                <img :src="quote.img" alt="quote" />
-              </a>
-            </div>
             <p class="quote-body" v-formatted-text="quote.text" itemprop="reviewBody"></p>
             <div
               class="rating"
@@ -32,6 +27,11 @@
               <factor-icon icon="fas fa-star" />
               <factor-icon icon="fas fa-star" />
               <span class="rating-value" itemprop="ratingValue">5</span>
+            </div>
+            <div class="quote-media">
+              <a class="quote-image" href="#">
+                <img :src="quote.img" alt="quote" />
+              </a>
             </div>
             <footer>
               <a
@@ -75,14 +75,14 @@ export default {
           <span>NodeBB makes GDPR compliance exceedingly simple, everything is mobile and SEO-friendly out of the box, and general maintenance is a lot easier compared to our old forum. As a bonus, the NodeBB support team is available whenever we run into trouble.</span>
 					<span>NodeBB is the most attractive piece of open source forum software we’ve found.</span>`,
           attribution: "Jim Thompson, CTO, Netgate",
-          img: require("./img/netgate.svg"),
+          img: require("./img/jim.jpg"),
           link: "https://forum.netgate.com"
         },
         {
           text: `<span>When we decided it was time to revamp our community we contemplated several possible solutions. We finally opted for NodeBB, and we couldn't be happier.</span>
           <span>We're using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself.</span>`,
           attribution: "Artur Matczak, Software Engineer, Opera",
-          img: require("./img/opera.svg"),
+          img: require("./img/attis.jpg"),
           link: "https://forums.opera.com"
         }
       ]
@@ -124,8 +124,9 @@ export default {
 .quotes-wrap {
   position: relative;
   background-image: url("./img/dot.svg");
-  margin-top: 6em;
+  margin-top: 0;
   margin-bottom: 6em;
+  padding-top: 4rem;
   .quotes {
     transform: skewY(-10deg);
     .quotes-pad {
@@ -199,26 +200,31 @@ export default {
         background: #fff;
         border-radius: 0.5rem;
         .quote-media {
-          display: block;
           text-align: center;
-          margin-bottom: 1.5rem;
+          margin-bottom: 0;
+          margin-top: 0.75rem;
+          float: left;
+          position: relative;
           a {
             display: block;
-            width: 38px;
+            width: 70px;
+            border-radius: 999rem;
+            overflow: hidden;
+            position: relative;
             img {
               display: block;
               width: 100%;
             }
           }
-          margin-bottom: 1rem;
         }
 
         footer {
-          margin-top: 1rem;
+          margin-top: 2.25rem;
           text-transform: uppercase;
-          font-size: 0.9rem;
-          font-weight: 600;
-          text-align: center;
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-align: left;
+          margin-left: 5.5rem;
         }
         .rating-value {
           display: none;
