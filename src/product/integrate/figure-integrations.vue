@@ -74,12 +74,12 @@ export default {
           synopsis: `Use NodeBB as a commenting engine for the Ghost blogging platform.`,
           permalink: ``
         },
-        {
-          icon: "adsense",
-          title: `Google Adsense`,
-          synopsis: `Monetize your community by placing Adsense ads on any page on your forum.`,
-          permalink: ``
-        },
+        // {
+        //   icon: "adsense",
+        //   title: `Google Adsense`,
+        //   synopsis: `Monetize your community by placing Adsense ads on any page on your forum.`,
+        //   permalink: ``
+        // },
         {
           icon: "wordpress",
           title: `WordPress`,
@@ -103,13 +103,13 @@ export default {
           title: `SendGrid`,
           synopsis: `Allow your users to register with the SSO provider of their choice.`,
           permalink: ``
-        },
-        {
-          icon: "zendesk",
-          title: `Zendesk`,
-          synopsis: `Allow your users to register with the SSO provider of their choice.`,
-          permalink: ``
         }
+        // {
+        //   icon: "zendesk",
+        //   title: `Zendesk`,
+        //   synopsis: `Allow your users to register with the SSO provider of their choice.`,
+        //   permalink: ``
+        // }
         // {
         //   icon: "sign",
         //   title: `SSO`,

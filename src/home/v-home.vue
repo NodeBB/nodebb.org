@@ -18,7 +18,7 @@
             <div class="text" v-formatted-text="feature.text" />
             <div v-if="feature.link" class="action">
               <factor-link :path="feature.link.path">{{ feature.link.text }} &rarr;</factor-link>
-              <factor-link :path="feature.linkvideo.path" target="_blank">
+              <factor-link :path="feature.linkvideo.path" target="_blank" rel="noopener">
                 {{ feature.linkvideo.text }}
                 <home-icon icon="play" />
               </factor-link>
@@ -42,7 +42,7 @@
                 <home-icon icon="stars" />
               </div>-->
               <div class="title">Start your community with NodeBB.</div>
-              <div class="text">select the forum option that works best for you...</div>
+              <div class="text">Select the forum option that works best for you:</div>
             </div>
           </div>
           <div class="feature-table-wrap">
@@ -65,8 +65,13 @@
                   <!-- <factor-link class="font-bold" :path="col.link.path">
                     <span v-formatted-text="col.link.text" />
                   </factor-link>-->
-
-                  <factor-link btn="primary" size="medium" class="font-bold" :path="col.link.path">
+                  <factor-link
+                    btn="primary"
+                    size="medium"
+                    class="font-bold"
+                    :path="col.link.path"
+                    :target="col.link.target"
+                  >
                     <span v-formatted-text="col.link.text" />
                   </factor-link>
                 </div>
@@ -77,10 +82,10 @@
       </div>
     </div>
 
-    <!-- <section class="quotes content-pad py-10">
+    <section class="quotes content-pad py-10">
       <h2 class="title">What people are saying about us</h2>
       <section-quotes />
-    </section>-->
+    </section>
     <section class="benefits content">
       <section-benefits class="content-pad" />
     </section>
@@ -99,8 +104,8 @@ export default {
     elCta: () => import("./el-cta.vue"),
     homeSplash: () => import("./splash.vue"),
     homeIcon: () => import("../product/icon.vue"),
-    sectionBenefits: () => import("./section-benefits.vue")
-    // sectionQuotes: () => import("./section-quotes.vue")
+    sectionBenefits: () => import("./section-benefits.vue"),
+    sectionQuotes: () => import("./section-quotes.vue")
   },
   data(this: any) {
     return {
@@ -142,7 +147,8 @@ export default {
           ],
           link: {
             path: "https://github.com/NodeBB/NodeBB",
-            text: "Go to Github repo &rarr;"
+            text: "Go to GitHub repo &rarr;",
+            target: "_blank"
           }
         },
         {
@@ -258,7 +264,8 @@ export default {
         min-width: 0;
         .feature-content {
           padding: 5rem 1.5rem;
-          max-width: 550px;
+          // max-width: 550px;
+          max-width: 620px;
         }
       }
       .feature-figure-container {
@@ -310,8 +317,8 @@ export default {
       // color: #fff;
     }
     .text {
-      font-weight: 400;
-      font-size: 1.4rem;
+      font-weight: 300;
+      font-size: 1.35rem;
       line-height: 1.6;
       margin-bottom: 1.5rem;
       opacity: 0.9;
@@ -844,7 +851,8 @@ export default {
     }
     .feature-content {
       // letter-spacing: -0.01em;
-      max-width: 500px;
+      // max-width: 500px;
+      max-width: 620px;
       .bullets {
         margin: 2rem 0;
         display: grid;
@@ -927,13 +935,14 @@ export default {
     .feature-content {
       // padding: 10rem 1.5rem;
       margin: 0 auto;
-      max-width: 550px;
+      // max-width: 550px;
+      max-width: 620px;
       .title {
         color: #fff;
       }
       .text {
         color: #fff;
-        font-family: var(--font-family-cursive);
+        // font-family: var(--font-family-cursive);
         font-size: 1.75rem;
         margin-bottom: 0;
       }

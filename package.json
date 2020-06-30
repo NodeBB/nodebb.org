@@ -25,7 +25,6 @@
   },
   "dependencies": {
     "@factor/core": "^1.7.9",
-    "@factor/plugin-email-list": "^1.7.8",
     "@factor/plugin-google-tag-manager": "^1.6.0",
     "@factor/plugin-highlight-code": "^1.7.8",
     "@factor/plugin-notify": "^1.7.8",

@@ -10,7 +10,7 @@
       :class="{ 'active': active === index }"
     >
       <blockquote itemprop="reviewRating" itemscope itemtype="http://schema.org/Review">
-        <p class="quote-body" itemprop="reviewBody">"{{ quote.text }}"</p>
+        <!-- <p class="quote-body" v-formatted-text="quote.text" itemprop="reviewBody"></p> -->
         <footer>
           <div class="quote-media">
             <a class="quote-image" :href="quote.link">
@@ -20,6 +20,7 @@
           <a
             :href="quote.link"
             target="_blank"
+            rel="noopener"
             itemprop="author"
             itemscope
             itemtype="https://schema.org/Person"
@@ -40,21 +41,27 @@ export default {
       quotes: [
         {
           // I have been deploying services on the Internet since the 90's, during which time I have worn numerous hats, critically evaluated more forum software offerings than I can remember, deployed several, and been community member of yet others.
-          text: `NodeBB is hands down the best I have ever used from both management and user perspectives`,
+          text: `<span>NodeBB is hands down the best I have ever used from both management and user perspectives
+          Due to the need for GDPR compliance, and a desire to update the technology base from PHP, wanted to migrate the pfSense community to a new forum, and NodeBB fit our needs.</span>
+          <span>
+          The migration process was surprisingly simple, and customizing the colors and icons was painless.  The UI is great, our users really like it, and the performance is excellent.
+          </span>
+          <span>NodeBB makes GDPR compliance exceedingly simple, everything is mobile and SEO-friendly out of the box, and general maintenance is a lot easier compared to our old forum. As a bonus, the NodeBB support team is available whenever we run into trouble.</span>
+					<span>NodeBB is the most attractive piece of open source forum software we’ve found.</span>`,
           attribution: "Ken G."
           // img: require("./img/patrick.jpg")
         },
         {
           text: `NodeBB proved to be a cut above other outdated forum building tools in its speed and modern integrations.`,
-          attribution: "Ramindu D."
+          attribution: "Artur Matczak, Software Engineer, Opera Forums"
           // img: require("./img/melissa.jpg")
-        },
-        {
-          text: `For my business providing an intuitive, flexible and adaptable UI to the users is key. I have found this software meets all my needs and the NodeBB team are experts in what they do, "they know their stuff".`,
-          //I found that they will make your idea become reality, providing you with feedback on a possible alternative ways of meeting your needs, I have found the NodeBB team participate with what you are trying to achieve, you don't feel like your on your own, they help you get there.
-          attribution: "Mukesh V."
-          // img: require("./img/joshua.jpg")
         }
+        // {
+        //   text: `For my business providing an intuitive, flexible and adaptable UI to the users is key. I have found this software meets all my needs and the NodeBB team are experts in what they do, "they know their stuff".`,
+        //   //I found that they will make your idea become reality, providing you with feedback on a possible alternative ways of meeting your needs, I have found the NodeBB team participate with what you are trying to achieve, you don't feel like your on your own, they help you get there.
+        //   attribution: "Mukesh V."
+        //   // img: require("./img/joshua.jpg")
+        // }
         // {
         //   text: ``,
         //   attribution: ""

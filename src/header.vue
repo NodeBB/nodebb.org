@@ -14,6 +14,7 @@
           _event="sign-in-modal"
           path="https://manage.nodebb.org"
           target="_blank"
+          rel="noopener"
           data-test="signin-link"
         >Sign In</factor-link>
         <factor-link
@@ -50,13 +51,15 @@ export default {
         {
           path: "https://community.nodebb.org",
           name: "Community",
-          target: "_blank"
+          target: "_blank",
+          rel: "noopener"
         },
         { path: "https://blog.nodebb.org", name: "Blog", target: "_blank" },
         {
           path: "https://answers.nodebb.org",
           name: "Answers",
-          target: "_blank"
+          target: "_blank",
+          rel: "noopener"
         }
       ],
       actionNav: [

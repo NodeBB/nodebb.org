@@ -4,28 +4,37 @@
       <div class="head">
         <!-- <home-icon icon="supporting" /> -->
         <h2 class="title">Have a question?</h2>
-        <h3 class="sub-title">...we've got the answers</h3>
+        <h3 class="sub-title">We've got the answers.</h3>
       </div>
       <div
         class="text"
       >Send our sales team an email or reach out to us via chat. We are here to answer any questions you may have regarding NodeBB.</div>
       <div class="action">
         <!-- <factor-email-list list-id="nodeBBProgram" /> -->
-        <factor-link btn="primary" path="/contact">Contact us &rarr;</factor-link>
+        <!-- <factor-link btn="primary" path="/contact">Contact us</factor-link> -->
+        <factor-link btn="primary" @click="vis = !vis">Contact us &rarr;</factor-link>
       </div>
     </div>
+
+    <factor-modal class="content-cta-contact" :vis.sync="vis">
+      <iframe class="content-cta-iframe" src="/contact"></iframe>
+    </factor-modal>
   </div>
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
-import { factorEmailList } from "@factor/plugin-email-list";
+import { factorModal, factorLink, factorIcon } from "@factor/ui";
 export default {
   components: {
+    factorModal,
     factorLink,
     factorIcon,
-    factorEmailList,
     homeIcon: () => import("../product/icon.vue")
+  },
+  data() {
+    return {
+      vis: false
+    };
   }
 };
 </script>
@@ -90,9 +99,10 @@ export default {
   }
   .sub-title {
     font-size: 1.95rem;
+    font-weight: 300;
     opacity: 0.8;
     margin-top: 1rem;
-    font-family: var(--font-family-cursive);
+    // font-family: var(--font-family-cursive);
   }
   .text,
   .action {
@@ -106,6 +116,15 @@ export default {
   }
   .action {
     font-weight: 500;
+  }
+
+  .content-cta-iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
 </style>

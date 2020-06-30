@@ -1,4 +1,7 @@
 export default {
+  headTags: {
+    font: `<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />`,
+  },
   serverAnalytics: {
     trackingId: "UA-45914244-5",
   },
@@ -24,6 +27,6 @@ export default {
   },
   footer: {
     legal:
-      `&copy 2020 <a href='https://www.nodebb.org/' target='_blank'>NodeBB, Inc.</a> &mdash; Made in Canada.`,
+      `&copy 2020 <a href='https://www.nodebb.org/' rel='noopener' target='_blank'>NodeBB, Inc.</a> &mdash; Made in Canada.`,
   },
 }

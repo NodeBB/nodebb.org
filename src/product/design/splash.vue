@@ -12,7 +12,7 @@
           class="page-title-sub"
         >Need an even more customized look? No problem, we provide full in-house design services for our Enterprise clients, contact us for more details.</p>
         <div class="actions">
-          <factor-link btn-link="primary" path="/pricing" size="medium">Learn more &rarr;</factor-link>
+          <!-- <factor-link btn-link="primary" path="/pricing" size="medium">Learn more &rarr;</factor-link> -->
           <factor-link btn-link="default" path="/contact" size="medium">Contact us &rarr;</factor-link>
         </div>
       </div>

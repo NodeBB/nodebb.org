@@ -61,7 +61,7 @@ export default {
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    z-index: 9999 !important;
+    z-index: 4999 !important;
     cursor: pointer !important;
     &:hover {
       box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.08),

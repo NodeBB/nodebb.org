@@ -1,7 +1,19 @@
-import { addRoutes } from "@factor/api"
+import { addFilter, setting, addRoutes } from "@factor/api"
 import { addPageTemplate } from "@factor/templates"
 
 import "./extend"
+
+
+if (setting("headTags") != "") {
+  addFilter({
+    key: "addNBBFont",
+    hook: "factor_head",
+    callback: (_: []) => {
+      return [..._, setting("headTags.font")]
+    },
+    priority: 200,
+  })
+}
 
 // addPageTemplate({
 //   slug: "example",

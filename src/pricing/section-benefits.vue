@@ -8,19 +8,19 @@
       <li class="feature-block">
         <home-icon icon="additional-users" />
         <h3 class="title">Unlimited staff and community users</h3>
-        <p class="text">so that you, all your staff and community can have their own logins</p>
+        <!-- <p class="text">so that you, all your staff and community can have their own logins</p> -->
       </li>
 
       <li class="feature-block">
         <home-icon icon="ssl-encryption" />
         <h3 class="title">Free SSL encryption for security</h3>
-        <p class="text">protect your site and customers, while boosting your page rank</p>
+        <!-- <p class="text">protect your site and customers, while boosting your page rank</p> -->
       </li>
 
       <li class="feature-block">
         <home-icon icon="automated-backup" />
         <h3 class="title">Automated daily backup of all your data</h3>
-        <p class="text">just in case...</p>
+        <!-- <p class="text">just in case...</p> -->
       </li>
     </ul>
   </div>
@@ -100,7 +100,7 @@ export default {
         font-weight: 400;
         line-height: 1.75rem;
         opacity: 0.78;
-        font-family: var(--font-family-cursive);
+        // font-family: var(--font-family-cursive);
       }
       .icon {
         margin: 1rem 0 1.5rem;

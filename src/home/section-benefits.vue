@@ -134,7 +134,7 @@ export default {
       position: relative;
       .suptitle {
         margin-bottom: 0.5rem;
-        font-family: var(--font-family-cursive);
+        // font-family: var(--font-family-cursive);
         font-size: 1.5rem;
         opacity: 0.38;
       }

@@ -13,7 +13,8 @@
           size="medium"
           path="https://github.com/NodeBB/NodeBB"
           target="_blank"
-        >Go to Github repo &rarr;</factor-link>
+          rel="noopener"
+        >Go to GitHub repo &rarr;</factor-link>
         <!-- <div class="actions">
           <github-stars />
         </div>-->
@@ -27,6 +28,7 @@
         <factor-link
           path="https://www.digitalocean.com/?refcode=98bdc9454647"
           target="_blank"
+          rel="noopener"
         >following this link</factor-link>.
       </p>
     </div>

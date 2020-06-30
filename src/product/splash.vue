@@ -82,7 +82,7 @@ export default {
       }
 
       .page-sup {
-        font-weight: 700;
+        // font-weight: 700;
         margin-bottom: 1rem;
         font-size: 1.75rem;
         font-family: var(--font-family-cursive);

@@ -129,7 +129,7 @@ export default {
         font-weight: 500;
         opacity: 0.5;
         color: var(--color-text-secondary);
-        font-family: var(--font-family-cursive);
+        // font-family: var(--font-family-cursive);
       }
     }
   }

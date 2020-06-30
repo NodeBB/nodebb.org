@@ -22,7 +22,7 @@
               <factor-link
                 v-else
                 class="menu-link primary-doc-link"
-                :path="item.route"
+                :path="item.path"
                 :event="item.event"
               >
                 <span v-if="item.name" v-formatted-text="item.name" />
@@ -57,22 +57,21 @@ export default {
         _id: "pages",
         title: "Pages",
         items: [
-          {
-            event: "sign-in-modal",
-            name: "Sign In &rarr;",
-            condition: (): boolean => !isLoggedIn()
-          },
-          {
-            route: "/dashboard",
-            name: "View Dashboard &rarr;",
-            condition: (): boolean => isLoggedIn()
-          },
+          // {
+          //     event: "sign-in-modal",
+          //     name: "Sign In &rarr;",
+          //     condition: (): boolean => !isLoggedIn(),
+          //   },
+          //   {
+          //     path: "/dashboard",
+          //     name: "View Dashboard &rarr;",
+          //     condition: (): boolean => isLoggedIn(),
+          //   },
 
-          // { route: "/product", name: "Product" },
-          // { route: "/pricing", name: "Pricing" },
-          // { route: "/themes", name: "Themes" },
-          // { route: "/plugins", name: "Plugins" },
-          // { route: "/docs", name: "Docs" },
+          // { path: "/install", name: "Install" },
+          // { path: "/themes", name: "Themes" },
+          // { path: "/plugins", name: "Plugins" },
+          // { path: "/docs", name: "Docs" },
 
           { path: "/", name: "Home" },
           { path: "/product", name: "Product" },
@@ -82,13 +81,20 @@ export default {
           {
             path: "https://community.nodebb.org",
             name: "Community",
-            target: "_blank"
+            target: "_blank",
+            rel: "noopener"
           },
-          { path: "https://blog.nodebb.org", name: "Blog", target: "_blank" },
+          {
+            path: "https://blog.nodebb.org",
+            name: "Blog",
+            target: "_blank",
+            rel: "noopener"
+          },
           {
             path: "https://answers.nodebb.org",
             name: "Answers",
-            target: "_blank"
+            target: "_blank",
+            rel: "noopener"
           },
 
           { component: () => import("./el/github-stars.vue") }

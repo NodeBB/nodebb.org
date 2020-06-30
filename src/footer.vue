@@ -26,8 +26,8 @@
 
         <div class="footer-col list">
           <div class="menu-header text-sm">Resources</div>
-          <factor-link path="https://answers.nodebb.org">Answers</factor-link>
-          <factor-link path="https://docs.nodebb.org" target="_blank">Docs</factor-link>
+          <factor-link path="https://answers.nodebb.org" target="_blank" rel="noopener">Answers</factor-link>
+          <factor-link path="https://docs.nodebb.org" target="_blank" rel="noopener">Docs</factor-link>
           <!-- <factor-link path="/themes">Themes</factor-link>
           <factor-link path="/plugins">Plugins</factor-link>-->
         </div>
@@ -36,21 +36,36 @@
           <div class="menu-header text-sm">Company</div>
           <factor-link path="/about">About</factor-link>
           <!-- <factor-link path="/careers">Careers</factor-link> -->
-          <factor-link path="https://blog.nodebb.org" target="_blank">Blog</factor-link>
-          <factor-link path="/contact">Contact us</factor-link>
+          <factor-link path="https://blog.nodebb.org" target="_blank" rel="noopener">Blog</factor-link>
+          <factor-link @click="vis = !vis">Contact us</factor-link>
         </div>
 
         <div class="footer-col icons">
-          <factor-link class="icon-link" path="https://github.com/nodebb" target="_blank">
+          <factor-link
+            class="icon-link"
+            path="https://github.com/nodebb"
+            target="_blank"
+            rel="noopener"
+          >
             <factor-icon icon="fab fa-github" />
           </factor-link>
-          <!-- <factor-link class="icon-link" path="https://go.nodeb.com/slack" target="_blank">
+          <!-- <factor-link class="icon-link" path="https://go.nodeb.com/slack" target="_blank" rel="noopener">
             <factor-icon icon="fab fa-slack" />
           </factor-link>-->
-          <factor-link class="icon-link" path="https://www.facebook.com/nodebb" target="_blank">
+          <factor-link
+            class="icon-link"
+            path="https://www.facebook.com/nodebb"
+            target="_blank"
+            rel="noopener"
+          >
             <factor-icon icon="fab fa-facebook" />
           </factor-link>
-          <factor-link class="icon-link" path="https://twitter.com/nodebb" target="_blank">
+          <factor-link
+            class="icon-link"
+            path="https://twitter.com/nodebb"
+            target="_blank"
+            rel="noopener"
+          >
             <factor-icon icon="fab fa-twitter" />
           </factor-link>
         </div>
@@ -68,16 +83,25 @@
         </div>
       </div>
     </div>
+
+    <factor-modal class="content-footer-contact" :vis.sync="vis">
+      <iframe class="content-footer-iframe" src="/contact"></iframe>
+    </factor-modal>
   </footer>
 </template>
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
+import { factorModal, factorLink, factorIcon } from "@factor/ui";
 import { setting } from "@factor/api";
-
 export default {
   components: {
+    factorModal,
     factorLink,
     factorIcon
+  },
+  data() {
+    return {
+      vis: false
+    };
   },
   methods: { setting }
 };
@@ -137,7 +161,9 @@ export default {
             text-transform: uppercase;
             margin-bottom: 0.5rem;
           }
-          a {
+
+          a,
+          .factor-link {
             display: block;
 
             color: var(--color-text-secondary);
@@ -186,6 +212,14 @@ export default {
       }
     }
   }
+  .content-footer-iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer {
@@ -212,6 +246,8 @@ export default {
           }
         }
       }
+    }
+    .content-footer-iframe {
     }
   }
 }
