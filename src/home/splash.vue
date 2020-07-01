@@ -84,7 +84,7 @@ export default {
       }
       .page-title,
       .page-title-sub {
-        letter-spacing: -0.045rem;
+        // letter-spacing: -0.045rem;
       }
 
       .page-title {
@@ -96,16 +96,11 @@ export default {
       }
 
       .page-title-sub {
-        // font-weight: 400;
-        // font-size: 1.4rem;
-        // line-height: 1.6;
-        // margin-bottom: 1rem;
-        font-weight: 300;
+        // font-weight: 300;
         font-size: 1.35rem;
         line-height: 1.6;
         margin-bottom: 1.5rem;
         opacity: 0.9;
-        letter-spacing: 0;
         .highlight {
           color: #5c84a4;
         }
@@ -113,12 +108,19 @@ export default {
 
       .actions {
         margin-top: 2rem;
+        font-weight: 700;
+        font-size: 1.35rem;
         .factor-btn {
           margin-right: 1rem;
           margin-bottom: 1rem;
         }
       }
 
+      .actions {
+        .link {
+          color: var(--color-primary);
+        }
+      }
       .sub-actions {
         margin-top: 1.5rem;
       }
@@ -134,7 +136,7 @@ export default {
       }
 
       @media (max-width: 900px) {
-        padding: 1em 2em;
+        padding: 1rem;
         justify-self: center;
         max-width: 100%;
         .page-title {

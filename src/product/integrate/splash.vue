@@ -125,7 +125,7 @@ export default {
       }
 
       @media (max-width: 900px) {
-        padding: 1em 2em;
+        padding: 1rem;
         justify-self: center;
         max-width: 100%;
         .page-title {

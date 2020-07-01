@@ -49,7 +49,7 @@ export default {
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
       text-align: left;
-      padding: 3rem 0 6rem;
+      padding: 3rem 0 0;
     }
     .figure-container {
       min-width: 0;
@@ -108,12 +108,12 @@ export default {
       }
 
       @media (max-width: 1200px) {
-        max-width: 450px;
+        // max-width: 450px;
         .page-title {
           font-size: 2.5rem;
         }
         .page-title-sub {
-          font-size: 1.5em;
+          font-size: 1.5rem;
         }
         .actions {
           font-size: 1.25rem;
@@ -121,15 +121,15 @@ export default {
       }
 
       @media (max-width: 900px) {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1rem;
         justify-self: center;
         max-width: 100%;
         .page-title {
-          font-size: 2.6rem;
+          font-size: 2rem;
           line-height: 1.2;
         }
         .page-title-sub {
-          font-size: 1.4em;
+          font-size: 1.25rem;
           line-height: 1.4;
         }
 

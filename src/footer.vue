@@ -171,7 +171,7 @@ export default {
             cursor: pointer;
             text-decoration: none;
             transition: opacity 0.1s;
-            opacity: 0.78;
+            opacity: 0.9;
             &:hover {
               opacity: 1;
               color: var(--color-primary);
@@ -221,9 +221,10 @@ export default {
     width: 100%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
   .footer {
     background: #e3e8ee;
+    padding: 2rem 0;
     .content-footer {
       .content-footer-pad {
         display: grid;
@@ -231,6 +232,20 @@ export default {
         padding: 0 1rem;
         .footer-col {
           padding-bottom: 2rem;
+          &.list {
+            a {
+              color: var(--color-text-secondary);
+              line-height: 1.8;
+              cursor: pointer;
+              text-decoration: none;
+              transition: opacity 0.1s;
+              opacity: 0.9;
+              font-size: 1.15rem;
+            }
+          }
+          &.icons {
+            text-align: left;
+          }
         }
       }
       .copyright-wrap {

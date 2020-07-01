@@ -224,7 +224,9 @@ figure.splash-figure-container.splash-figure-main {
     width: 100%;
     height: auto;
     bottom: -7.25rem;
-
+    @media (max-width: 900px) {
+      bottom: -10.25rem;
+    }
     //transform-style: preserve-3d;
     .stage-icons {
       width: 100%;
@@ -408,6 +410,9 @@ figure.splash-figure-container.splash-figure-main {
       justify-content: space-between;
       transform: translate(-3rem, -4rem) translateZ(-8rem);
 
+      @media (max-width: 900px) {
+        transform: translate(-2rem, -4rem) translateZ(-20rem);
+      }
       .icon-wrap {
         text-align: center;
         .name {

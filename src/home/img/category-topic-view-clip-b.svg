@@ -1,17 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="515" height="47" viewBox="0 0 515 47">
-  <g fill="none" fill-rule="evenodd">
-    <rect width="41" height="32" x="308" fill="#8792A2" opacity=".322" rx="10"/>
-    <rect width="40" height="32" x="248" fill="#8792A2" opacity=".322" rx="10"/>
-    <rect width="40" height="7" x="248" y="39" fill="#ECEEF0" rx="3.5"/>
-    <rect width="40" height="7" x="309" y="39" fill="#ECEEF0" rx="3.5"/>
-    <rect width="8" height="46" x="366" y="1" fill="#F84F77" rx="4"/>
-    <rect width="18" height="18" x="390" fill="#8792A2" opacity=".32" rx="9"/>
-    <rect width="40" height="7" x="415" y="6" fill="#8792A2" opacity=".164" rx="3.5"/>
-    <rect width="87" height="7" x="390" y="22" fill="#8792A2" opacity=".164" rx="3.5"/>
-    <rect width="34" height="7" x="481" y="22" fill="#8792A2" opacity=".164" rx="3.5"/>
-    <rect width="37" height="7" x="390" y="33" fill="#8792A2" opacity=".164" rx="3.5"/>
-    <circle cx="23" cy="23" r="23" fill="#8792A2" opacity=".24"/>
-    <path fill="#8792A2" d="M123.470588,18 C126.232012,18 128.470588,20.2385763 128.470588,23 C128.470588,25.7614237 126.232012,28 123.470588,28 L65,28 C62.2385763,28 60,25.7614237 60,23 C60,20.2385763 62.2385763,18 65,18 L123.470588,18 Z M187,18 C189.761424,18 192,20.2385763 192,23 C192,25.7614237 189.761424,28 187,28 L187,28 L138.411765,28 C135.650341,28 133.411765,25.7614237 133.411765,23 C133.411765,20.2385763 135.650341,18 138.411765,18 L138.411765,18 Z" opacity=".28"/>
-    <rect width="166" height="11" x="60" fill="#8792A2" opacity=".28" rx="5.5"/>
-  </g>
-</svg>
+<svg height="47" viewBox="0 0 515 47" width="515" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#8792a2" height="32" opacity=".322" rx="10" width="41" x="308"/><rect fill="#8792a2" height="32" opacity=".322" rx="10" width="40" x="248"/><rect fill="#eceef0" height="7" rx="3.5" width="40" x="248" y="39"/><rect fill="#eceef0" height="7" rx="3.5" width="40" x="309" y="39"/><rect fill="#f84f77" height="46" rx="4" width="8" x="366" y="1"/><g fill="#8792a2"><rect height="18" opacity=".32" rx="9" width="18" x="390"/><rect height="7" opacity=".164" rx="3.5" width="40" x="415" y="6"/><rect height="7" opacity=".164" rx="3.5" width="87" x="390" y="22"/><rect height="7" opacity=".164" rx="3.5" width="34" x="481" y="22"/><rect height="7" opacity=".164" rx="3.5" width="37" x="390" y="33"/><circle cx="23" cy="23" opacity=".24" r="23"/><path d="m123.470588 18c2.761424 0 5 2.2385763 5 5s-2.238576 5-5 5h-58.470588c-2.7614237 0-5-2.2385763-5-5s2.2385763-5 5-5zm63.529412 0c2.761424 0 5 2.2385763 5 5s-2.238576 5-5 5h-48.588235c-2.761424 0-5-2.2385763-5-5s2.238576-5 5-5z" opacity=".28"/><rect height="11" opacity=".28" rx="5.5" width="166" x="60"/></g></g></svg>

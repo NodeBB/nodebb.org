@@ -98,6 +98,20 @@ export default {
       width: 3rem;
       height: 3rem;
     }
+    @media (max-width: 900px) {
+      padding-left: 0;
+    }
+    .icon {
+      width: 3.5rem;
+      height: 4.225rem;
+      margin: 0;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 0;
+      @media (max-width: 900px) {
+        position: relative;
+      }
+    }
   }
   a {
     button {
@@ -112,7 +126,7 @@ export default {
   }
 
   .title {
-    font-size: 2.355rem;
+    font-size: 2rem;
     font-weight: var(--font-weight-bold);
     line-height: 1.2;
     margin-bottom: 1rem;

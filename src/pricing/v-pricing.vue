@@ -74,6 +74,7 @@ export default {
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
       text-align: left;
+      padding: 0;
       // padding: 3rem 0 6rem;
     }
     .figure-container {
@@ -95,11 +96,10 @@ export default {
       }
 
       .page-title {
-        font-size: 3rem;
-        letter-spacing: -0.045em;
-        line-height: 1.1;
         font-weight: 700;
-        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
       }
 
       .page-title-sub {
@@ -128,9 +128,9 @@ export default {
       }
 
       @media (max-width: 1200px) {
-        max-width: 450px;
+        // max-width: 450px;
         .page-title {
-          font-size: 3em;
+          font-size: 2.5rem;
         }
         .page-title-sub {
           font-size: 1.5em;

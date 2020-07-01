@@ -70,6 +70,9 @@ export default {
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
     list-style: none;
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
     @media (max-width: 767px) {
       grid-template-columns: 1fr;
     }
@@ -81,6 +84,9 @@ export default {
       /* background-image: linear-gradient(45deg, #f6fafd 0%, #ffffff00 50%); */
       // box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.02),
       //   inset 0 0 0 1px rgba(34, 34, 34, 0.07);
+      @media (max-width: 900px) {
+        padding: 1rem 0rem;
+      }
       .title {
         font-weight: 700;
         font-size: 1.4rem;

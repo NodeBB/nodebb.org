@@ -65,8 +65,10 @@ figure.figure-chat {
     position: relative;
     transform-style: preserve-3d;
     transform: scale(0.6) translateX(6rem) translateY(-6rem);
+    @media (max-width: 1200px) {
+    }
     @media (max-width: 900px) {
-      transform: translateX(6rem) translateY(2rem) translateZ(-32rem);
+      transform: translateX(6rem) translateY(4rem) translateZ(-42rem);
     }
     .screenshot {
       background: #fff;
@@ -81,6 +83,9 @@ figure.figure-chat {
           0 15px 35px rgba(50, 50, 93, 0.11), 0 5px 15px rgba(0, 0, 0, 0.07);
         overflow: hidden;
         border-radius: 0.5rem;
+        @media (max-width: 900px) {
+          top: -3.5rem;
+        }
       }
       &.card-chat-page {
         position: absolute;
@@ -97,6 +102,8 @@ figure.figure-chat {
         @media (max-width: 900px) {
           transform: rotateX(0) rotateY(0) translateZ(-84rem) translateY(-19rem)
             translateX(34.35rem);
+          top: -7rem;
+          left: 2rem;
         }
       }
       &.card-chat-clip {
@@ -114,6 +121,11 @@ figure.figure-chat {
           13.4px 37.5px 55px -37.5px rgba(0, 0, 0, 0.3);
         overflow: hidden;
         border-radius: 0.5rem;
+
+        @media (max-width: 900px) {
+          top: -7rem;
+          left: 2rem;
+        }
       }
     }
   }

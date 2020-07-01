@@ -34,7 +34,6 @@ export default {
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
   // background: #e3e8ee;
-  border-radius: 5px;
   margin-bottom: 3rem;
   // background: rgba(81, 130, 248, 0.2);
 
@@ -62,6 +61,8 @@ export default {
   }
   @media (max-width: 900px) {
     margin: 4rem 0;
+    padding-left: 0;
+    padding-right: 0;
     grid-template-columns: 1fr;
     .title {
       font-size: 1.5rem;

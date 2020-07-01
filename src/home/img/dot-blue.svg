@@ -1,6 +1,1 @@
-
-<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
-  <g fill="none" fill-rule="evenodd">
-    <circle cx="5" cy="5" r="1" fill="#CCE9FE"/>
-  </g>
-</svg>
+<svg height="10" viewBox="0 0 10 10" width="10" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" fill="#cce9fe" fill-rule="evenodd" r="1"/></svg>

@@ -156,28 +156,26 @@ export default {
             font-size: 2.5rem;
           }
           .page-title-sub {
-            font-size: 1.5em;
+            font-size: 1.5rem;
           }
-
           .actions {
             font-size: 1.25rem;
           }
         }
 
         @media (max-width: 900px) {
-          padding: 1em 2em;
+          padding: 1rem;
           justify-self: center;
           max-width: 100%;
           grid-area: auto;
           .page-title {
-            font-size: 2.6rem;
+            font-size: 2rem;
             line-height: 1.2;
           }
           .page-title-sub {
-            font-size: 1.4em;
+            font-size: 1.25rem;
             line-height: 1.4;
           }
-
           .actions {
             font-size: 1.15rem;
           }

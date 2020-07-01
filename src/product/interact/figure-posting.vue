@@ -64,7 +64,7 @@ figure.figure-posting {
     transform-style: preserve-3d;
     transform: translateY(-1.2rem) translateZ(-12rem) scale(0.86);
     @media (max-width: 900px) {
-      transform: translateY(2.15rem) translateZ(-12rem) translateX(-1.45rem);
+      transform: translateY(-0.85rem) translateZ(-16rem) translateX(-3.45rem);
     }
     .screenshot {
       background: #fff;

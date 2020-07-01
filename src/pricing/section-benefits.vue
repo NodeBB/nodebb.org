@@ -62,8 +62,8 @@ export default {
       color: #1a1f36;
       padding: 1.5rem 0 0;
 
-      @media (max-width: 670px) {
-        font-size: 2em;
+      @media (max-width: 900px) {
+        font-size: 1.35rem;
         line-height: 1.2;
       }
     }

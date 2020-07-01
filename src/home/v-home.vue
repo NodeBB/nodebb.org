@@ -44,9 +44,9 @@
       </div>
     </section>
 
-    <section class="poweredby content">
+    <!-- <section class="poweredby content">
       <section-poweredby class="content-pad" />
-    </section>
+    </section>-->
 
     <div class="view-home-version-2">
       <div class="compare content">
@@ -130,8 +130,8 @@ export default {
     homeSplash: () => import("./splash.vue"),
     homeIcon: () => import("../product/icon.vue"),
     sectionBenefits: () => import("./section-benefits.vue"),
-    sectionQuotes: () => import("./section-quotes.vue"),
-    sectionPoweredby: () => import("./section-poweredby.vue")
+    sectionQuotes: () => import("./section-quotes.vue")
+    // sectionPoweredby: () => import("./section-poweredby.vue")
   },
   data(this: any) {
     return {
@@ -154,7 +154,7 @@ export default {
           // link: { path: "/contact", text: "Contact us" },
           external: {
             // path: "/contact",
-            text: `Contact us &rarr;`
+            text: `Contact us`
           },
           linkvideo: {
             path: "https://youtu.be/uwgdWPeVuJE",
@@ -353,7 +353,7 @@ export default {
       // color: #fff;
     }
     .text {
-      font-weight: 300;
+      // font-weight: 300;
       font-size: 1.35rem;
       line-height: 1.6;
       margin-bottom: 1.5rem;
@@ -382,7 +382,7 @@ export default {
         font-size: 1.75rem;
       }
       .text {
-        font-size: 1rem;
+        font-size: 1.15rem;
       }
     }
   }
@@ -1071,7 +1071,11 @@ export default {
               border: none;
               background: rgb(197, 211, 239);
               margin-top: 2rem;
+              padding-bottom: 1.5rem;
               text-align: right;
+            }
+            @media (max-width: 900px) {
+              font-size: 1rem;
             }
           }
           .row:first-child {
@@ -1127,8 +1131,8 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 90px;
-        padding: 1.5rem 2rem;
+        height: 100px;
+        padding: 1.5rem 2rem 0;
         &:nth-child(1) {
           height: 100px;
         }
@@ -1168,62 +1172,6 @@ export default {
 
     ~ .cta {
       margin-top: 2rem;
-    }
-  }
-  .alpha-program {
-    text-align: center;
-    padding: 7rem 0 4em;
-    .content-pad {
-      max-width: 750px;
-    }
-    .glyph {
-      color: var(--color-primary);
-      width: 100px;
-      height: 100px;
-      line-height: 100px;
-      font-size: 3.5em;
-      border-radius: 50%;
-      margin: 1rem auto;
-    }
-    .title {
-      font-size: 3em;
-      line-height: 1.1;
-      font-weight: var(--font-weight-bold, 700);
-    }
-    .sub-title {
-      font-size: 2em;
-      opacity: 0.8;
-      font-weight: 400;
-      line-height: 1.1;
-      margin: 1em 0;
-      // color: var(--color-primary);
-    }
-    .text,
-    .action {
-      font-size: 1.3em;
-    }
-    .text {
-      margin: 2rem 0;
-      font-weight: 400;
-    }
-    .action {
-      font-weight: 600;
-      > .factor-link {
-        font-weight: 600;
-      }
-    }
-    .email-list-form {
-      input {
-        background: #fff;
-      }
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    @media (max-width: 900px) {
-      text-align: left;
-      .glyph {
-        margin: 0;
-      }
     }
   }
 }

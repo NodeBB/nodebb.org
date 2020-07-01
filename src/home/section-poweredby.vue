@@ -57,6 +57,10 @@ export default {
     -webkit-box-pack: var(--align-items);
     justify-content: var(--align-items);
     padding: 5rem 1rem 2.25rem;
+    @media (max-width: 900px) {
+      padding-top: 1rem;
+      padding-bottom: 2rem;
+    }
     @media (max-width: 767px) {
       padding: 2rem 1rem 1rem;
     }

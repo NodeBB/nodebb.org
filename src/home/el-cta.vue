@@ -12,7 +12,7 @@
       <div class="action">
         <!-- <factor-email-list list-id="nodeBBProgram" /> -->
         <!-- <factor-link btn="primary" path="/contact">Contact us</factor-link> -->
-        <factor-link link-btn="primary" @click="vis = !vis">Contact us &rarr;</factor-link>
+        <factor-link btn="primary" size="medium" @click="vis = !vis">Contact us</factor-link>
       </div>
     </div>
 

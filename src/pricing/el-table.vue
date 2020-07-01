@@ -43,7 +43,7 @@
                     <span v-formatted-text="col.link.text" />
                   </factor-link>
 
-                  <span class="text-xs mt-3" v-formatted-text="col.link.meta" />
+                  <span class="text-xs mt-3 font-bold" v-formatted-text="col.link.meta" />
                 </div>
 
                 <div v-if="col.external" class="footer-row row">
@@ -57,7 +57,7 @@
                     <span v-formatted-text="col.external.text" />
                   </factor-link>
 
-                  <span class="text-xs mt-3" v-formatted-text="col.external.meta" />
+                  <span class="text-xs mt-3 font-bold" v-formatted-text="col.external.meta" />
                 </div>
               </div>
             </div>
@@ -405,10 +405,11 @@ export default {
   padding: 2rem 2rem 0;
   border-radius: 0.5rem;
   background: rgba(25, 82, 190, 0.25);
-  // background: #c5d3ef;
   position: relative;
   overflow: hidden;
-
+  @media (max-width: 900px) {
+    padding: 1rem 1rem 0;
+  }
   &:before {
     content: "";
     background-image: url(../home/img/nbb-bg-b.svg);
@@ -439,6 +440,9 @@ export default {
   .header {
     padding-left: 5rem;
     position: relative;
+    @media (max-width: 900px) {
+      padding-left: 0;
+    }
     .icon {
       width: 3.5rem;
       height: 4.225rem;
@@ -446,11 +450,14 @@ export default {
       font-size: 1.5rem;
       position: absolute;
       left: 0;
+      @media (max-width: 900px) {
+        position: relative;
+      }
     }
   }
   h1 {
     padding: 0;
-    font-size: 2.355rem;
+    font-size: 2rem;
     font-weight: var(--font-weight-bold, 700);
     margin-bottom: 1rem;
   }
@@ -641,19 +648,16 @@ export default {
   }
 
   .discount {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    padding-top: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    margin-left: -2rem;
-    margin-right: -2rem;
+    padding: 2rem;
+    margin: 2rem -2rem 0;
     background: #1a1f36;
     border-radius: 0 0 0.5rem 0.5rem;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
     a {
       color: #fff;
     }
@@ -661,6 +665,16 @@ export default {
       font-size: 1.5rem;
       font-weight: var(--font-weight-bold, 700);
       color: #fff;
+      @media (max-width: 900px) {
+        font-size: 1rem;
+      }
+    }
+    .action {
+      color: #fff;
+      font-weight: 700;
+      @media (max-width: 900px) {
+        margin-top: 2rem;
+      }
     }
     .sub {
       // color: var(--color-text-secondary);
@@ -1319,6 +1333,7 @@ export default {
         height: 90px;
         padding: 1rem 2rem;
         text-align: left;
+        font-size: 1.185rem;
         &:first-child {
           font-size: 0.9rem;
           padding-bottom: 0;

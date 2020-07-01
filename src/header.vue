@@ -18,7 +18,7 @@
           data-test="signin-link"
         >Sign In</factor-link>
         <factor-link
-          v-if="$route.path != '/install'"
+          v-if="$route.path != '/pricing'"
           path="/pricing"
           btn="primary"
         >Start Free Trial &rarr;</factor-link>

@@ -286,9 +286,10 @@ export default {
 
     .title {
       font-weight: 700;
-      font-size: 1.2em;
-      line-height: 1.5em;
-      margin-bottom: 0.3rem;
+      font-size: 1.25rem;
+      line-height: 1.35;
+      margin-bottom: 0.5rem;
+      color: #2a2f45;
     }
     .description {
       display: -webkit-box;
@@ -298,7 +299,7 @@ export default {
       text-overflow: -o-ellipsis-lastline;
       /* overflow: hidden; */
       font-size: 0.9rem;
-      color: var(--color-text-secondary);
+      // color: var(--color-text-secondary);
     }
   }
 }

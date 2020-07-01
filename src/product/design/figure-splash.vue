@@ -69,15 +69,14 @@ figure.responsive-graph {
     perspective: 1000px;
     @media (max-width: 1200px) {
       padding: 30% 0;
-      width: 800px;
+      width: 600px;
       position: relative;
-      transform: translateX(-17.5rem) translateY(-10.5rem) translateZ(12rem)
+      transform: translateX(-4.25rem) translateY(-12rem) translateZ(12rem)
         scale(0.6);
-      perspective: 1012px;
+      perspective: 900px;
     }
     @media (max-width: 900px) {
       width: 500px;
-      // transform: translate(-9.5rem, -7.5rem) scale(0.48);
       transform: translate(-6.5rem, -7.5rem) scale(0.48);
     }
 
