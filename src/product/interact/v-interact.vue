@@ -137,7 +137,7 @@ export default {
   .benefits {
     .content-pad {
       padding-top: 3rem;
-      padding-bottom: 6rem;
+      padding-bottom: 0rem;
       @media (max-width: 900px) {
         padding-top: 6rem;
         padding-bottom: 3rem;
