@@ -62,7 +62,7 @@ figure.figure-posting {
     width: 500px;
     position: relative;
     transform-style: preserve-3d;
-    transform: translateY(-1.2rem) translateZ(-12rem);
+    transform: translateY(-1.2rem) translateZ(-12rem) scale(0.86);
     @media (max-width: 900px) {
       transform: translateY(2.15rem) translateZ(-12rem) translateX(-1.45rem);
     }

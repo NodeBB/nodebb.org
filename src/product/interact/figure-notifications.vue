@@ -59,7 +59,7 @@ figure.figure-notifications {
     width: 500px;
     position: relative;
     transform-style: preserve-3d;
-    transform: scale(0.68) translateX(6rem) translateY(-6rem);
+    transform: scale(0.58) translateX(2rem) translateY(-3rem);
     @media (max-width: 900px) {
       // transform: translateZ(-16rem) translateY(2rem) translateX(-4rem);
       transform: translate(-1rem, 2rem) scale(0.72);

@@ -221,8 +221,9 @@ export default {
       margin-bottom: 1rem;
     }
     .action {
-      font-weight: 500;
+      font-weight: 700;
       font-size: 1.3em;
+      margin-top: 2rem;
     }
     @media (max-width: 900px) {
       .title {

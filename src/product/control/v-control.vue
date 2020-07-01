@@ -200,7 +200,7 @@ export default {
     }
     .title {
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 1.75rem;
       line-height: 1.1;
       margin-bottom: 1.5rem;
     }
@@ -212,8 +212,9 @@ export default {
       // opacity: 0.8;
     }
     .action {
-      font-weight: 500;
-      font-size: 1.3em;
+      font-weight: 700;
+      font-size: 1.35rem;
+      margin-top: 2rem;
     }
     @media (max-width: 900px) {
       .title {

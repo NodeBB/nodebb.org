@@ -406,13 +406,13 @@ figure.splash-figure-container.splash-figure-main {
       display: flex;
       margin: 0 auto;
       justify-content: space-between;
-      transform: translate(-3rem, -2rem) translateZ(-16rem);
+      transform: translate(-3rem, -4rem) translateZ(-8rem);
 
       .icon-wrap {
         text-align: center;
         .name {
           transition: opacity 0.3s;
-          opacity: 0.78;
+          opacity: 0;
           font-size: 1rem;
           font-weight: 700;
           margin-top: 0.5rem;

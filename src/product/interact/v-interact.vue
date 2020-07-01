@@ -151,7 +151,7 @@ export default {
         box-shadow: none;
       }
       @media (max-width: 900px) {
-        padding: 4rem 0;
+        padding: 0 0 4rem;
         box-shadow: none;
       }
     }
@@ -205,7 +205,7 @@ export default {
         }
         .feature-content-container {
           .feature-content {
-            padding: 3rem 1.5rem 1rem;
+            padding: 0 1.5rem 1rem;
             max-width: 100%;
           }
         }
@@ -230,7 +230,7 @@ export default {
     }
     .title {
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 1.75rem;
       line-height: 1.1;
       margin-bottom: 1.5rem;
     }
@@ -240,16 +240,16 @@ export default {
       line-height: 1.6;
       margin-bottom: 1rem;
     }
-    .action {
-      font-weight: 500;
-      font-size: 1.3em;
+    .actions {
+      font-weight: 700;
+      font-size: 1.35rem;
     }
     @media (max-width: 900px) {
       .title {
-        font-size: 1.8em;
+        font-size: 1.5rem;
       }
       .text {
-        font-size: 1.1em;
+        font-size: 1.15rem;
       }
     }
   }

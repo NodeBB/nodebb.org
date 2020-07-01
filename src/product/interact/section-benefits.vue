@@ -122,7 +122,7 @@ export default {
         margin-top: 0;
       }
       .text {
-        font-size: 1rem;
+        font-size: 1.15rem;
         line-height: 1.7rem;
         font-weight: 400;
       }

@@ -112,7 +112,6 @@ export default {
       }
 
       .actions {
-        font-size: 1.3em;
         margin-top: 2rem;
         .factor-btn {
           margin-right: 1rem;
@@ -132,10 +131,6 @@ export default {
         .page-title-sub {
           font-size: 1.5em;
         }
-
-        .actions {
-          font-size: 1.1em;
-        }
       }
 
       @media (max-width: 900px) {
@@ -149,10 +144,6 @@ export default {
         .page-title-sub {
           font-size: 1.4em;
           line-height: 1.4;
-        }
-
-        .actions {
-          font-size: 1em;
         }
       }
     }

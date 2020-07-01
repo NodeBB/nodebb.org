@@ -47,7 +47,9 @@ export default {
     homeIcon: () => import("../product/icon.vue")
   },
   data() {
-    return {};
+    return {
+      vis: false
+    };
   }
 };
 </script>

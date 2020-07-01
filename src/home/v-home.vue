@@ -360,9 +360,9 @@ export default {
       opacity: 0.9;
     }
     .action {
-      font-weight: 500;
-      font-size: 1.3em;
-      a {
+      font-weight: 700;
+      font-size: 1.35rem;
+      .factor-link {
         display: inline-block;
         line-height: 1;
         margin-right: 2.5rem;

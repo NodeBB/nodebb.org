@@ -45,6 +45,20 @@
 
                   <span class="text-xs mt-3" v-formatted-text="col.link.meta" />
                 </div>
+
+                <div v-if="col.external" class="footer-row row">
+                  <factor-link
+                    btn="primary"
+                    size="medium"
+                    class="font-bold"
+                    @click="vis = !vis"
+                    :path="col.external.path"
+                  >
+                    <span v-formatted-text="col.external.text" />
+                  </factor-link>
+
+                  <span class="text-xs mt-3" v-formatted-text="col.external.meta" />
+                </div>
               </div>
             </div>
           </div>
@@ -373,8 +387,8 @@ export default {
             "Over 10 million monthly page views",
             "Customised support"
           ],
-          link: {
-            path: "/contact",
+          external: {
+            path: "",
             text: "Contact us &rarr;",
             meta:
               "Contact us directly for customised support plans (SLAs, etc.)"
@@ -1211,11 +1225,11 @@ export default {
             .row:last-child {
               // background: #bfe5e1;
               // background: rgba(191, 229, 225, 0.3);
-              a {
-                button {
-                  background: #1a1f36;
-                  box-shadow: 0 0 0 1px #1a1f36;
-                }
+
+              button {
+                background: #1a1f36;
+                box-shadow: 0 0 0 1px #1a1f36;
+                width: 100%;
               }
             }
           }

@@ -65,7 +65,7 @@ export default {
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
       text-align: left;
-      padding: 3rem 0 6rem;
+      padding: 3rem 0 0;
     }
     .figure-container {
       min-width: 0;
@@ -94,10 +94,9 @@ export default {
       }
 
       .page-title {
-        font-size: 3rem;
-        letter-spacing: -0.045em;
-        line-height: 1.1;
         font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.1;
         margin-bottom: 1.5rem;
         // color: #fff;
       }
@@ -121,14 +120,14 @@ export default {
       }
 
       .actions {
+        font-weight: 700;
         font-size: 1.3em;
         margin-top: 2rem;
-        // a {
-        //   color: #fff;
-        // }
+        a,
         .factor-btn {
           margin-right: 1rem;
           margin-bottom: 1rem;
+          font-weight: 700;
         }
       }
 
@@ -137,17 +136,15 @@ export default {
       }
 
       @media (max-width: 1200px) {
-        max-width: 450px;
         .page-title {
-          font-size: 2.6rem;
-          line-height: 1.2;
+          font-size: 2.5rem;
         }
         .page-title-sub {
           font-size: 1.5em;
         }
 
         .actions {
-          font-size: 1.1em;
+          font-size: 1.25rem;
         }
       }
 
@@ -165,7 +162,7 @@ export default {
         }
 
         .actions {
-          font-size: 1em;
+          font-size: 1.15rem;
         }
       }
     }

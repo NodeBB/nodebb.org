@@ -171,8 +171,9 @@ export default {
       opacity: 0.8;
     }
     .action {
-      font-weight: 500;
-      font-size: 1.3em;
+      font-weight: 700;
+      font-size: 1.35rem;
+      margin-top: 2rem;
     }
     @media (max-width: 900px) {
       .title {

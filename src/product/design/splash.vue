@@ -13,7 +13,8 @@
         >Need an even more customized look? No problem, we provide full in-house design services for our Enterprise clients, contact us for more details.</p>
         <div class="actions">
           <!-- <factor-link btn-link="primary" path="/pricing" size="medium">Learn more &rarr;</factor-link> -->
-          <factor-link btn-link="default" path="/contact" size="medium">Contact us &rarr;</factor-link>
+          <!-- <factor-link btn-link="default" path="/contact" size="medium">Contact us &rarr;</factor-link> -->
+          <factor-link btn-link="default" @click="vis = !vis" size="medium">Contact us &rarr;</factor-link>
         </div>
       </div>
 
@@ -21,30 +22,25 @@
         <splash-figure />
       </div>
     </div>
+    <factor-modal class="product-cta-contact" :vis.sync="vis">
+      <iframe class="product-cta-iframe" src="/contact"></iframe>
+    </factor-modal>
   </section>
 </template>
 
 <script lang="ts">
-import { factorLink } from "@factor/ui";
+import { factorModal, factorLink } from "@factor/ui";
 
 export default {
   components: {
+    factorModal,
     factorLink,
     splashFigure: () => import("./figure-splash.vue"),
     splashFigureMini: () => import("./figure-splash-mini.vue")
   },
-  metaInfo() {
+  data() {
     return {
-      // titleTemplate: "%s",
-      // image: require("./static/_.jpg"),
-      // link: [
-      //   {
-      //     vmid: "font",
-      //     rel: "stylesheet",
-      //     href:
-      //       "https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
-      //   }
-      // ]
+      vis: false
     };
   }
 };
@@ -63,10 +59,8 @@ export default {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "a b";
-
-      grid-gap: 4em;
+      grid-gap: 3rem;
       padding: 4rem 3rem 0;
-
       align-items: center;
 
       @media (min-height: 1000px) {
@@ -82,10 +76,9 @@ export default {
       .figure-container {
         min-width: 0;
         display: grid;
-        // justify-content: center;
-
         grid-area: a;
-        justify-self: flex-start;
+        justify-self: self-end;
+
         @media (max-width: 900px) {
           grid-area: auto;
           justify-self: center;
@@ -121,10 +114,9 @@ export default {
         }
 
         .page-title {
-          font-size: 3rem;
-          letter-spacing: -0.045em;
-          line-height: 1.1;
           font-weight: 700;
+          font-size: 2.5rem;
+          line-height: 1.1;
           margin-bottom: 1.5rem;
         }
 
@@ -140,12 +132,14 @@ export default {
         }
 
         .actions {
-          font-size: 1.3em;
           margin-top: 2rem;
+          font-size: 1.35rem;
+          color: var(--color-primary);
           .factor-btn,
           .factor-link {
             margin-right: 3rem;
             margin-bottom: 1rem;
+            font-weight: 700;
             @media (max-width: 900px) {
               margin-right: 1rem;
             }
@@ -159,14 +153,14 @@ export default {
         @media (max-width: 1200px) {
           max-width: 450px;
           .page-title {
-            font-size: 3em;
+            font-size: 2.5rem;
           }
           .page-title-sub {
             font-size: 1.5em;
           }
 
           .actions {
-            font-size: 1.1em;
+            font-size: 1.25rem;
           }
         }
 
@@ -185,11 +179,19 @@ export default {
           }
 
           .actions {
-            font-size: 1em;
+            font-size: 1.15rem;
           }
         }
       }
     }
+  }
+  .product-cta-iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }
 </style>

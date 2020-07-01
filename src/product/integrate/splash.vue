@@ -81,10 +81,9 @@ export default {
       }
 
       .page-title {
-        font-size: 3rem;
-        letter-spacing: -0.045em;
-        line-height: 1.1;
         font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.1;
         margin-bottom: 1.5rem;
       }
 
@@ -100,7 +99,7 @@ export default {
       }
 
       .actions {
-        font-size: 1.3em;
+        font-size: 1.35rem;
         margin-top: 2rem;
         .factor-btn {
           margin-right: 1rem;
@@ -115,14 +114,13 @@ export default {
       @media (max-width: 1200px) {
         max-width: 450px;
         .page-title {
-          font-size: 3em;
+          font-size: 2.5rem;
         }
         .page-title-sub {
           font-size: 1.5em;
         }
-
         .actions {
-          font-size: 1.1em;
+          font-size: 1.25rem;
         }
       }
 
@@ -140,7 +138,7 @@ export default {
         }
 
         .actions {
-          font-size: 1em;
+          font-size: 1.15rem;
         }
       }
     }
