@@ -90,9 +90,9 @@ export default {
   position: relative;
   margin-top: 4rem;
 
-  @media (max-width: 767px) {
-    padding-bottom: 80px;
-  }
+  // @media (max-width: 767px) {
+  //   padding-bottom: 80px;
+  // }
 
   .section-header {
     font-size: 1rem;

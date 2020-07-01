@@ -32,8 +32,6 @@
     <section class="benefits content">
       <section-benefits class="content-pad" />
     </section>
-
-    <!-- <el-cta id="cta" /> -->
   </div>
 </template>
 
@@ -59,53 +57,20 @@ export default {
           title: `Posting topics and replies`,
           text: `Choose between a "What You See is What You Get" editor or a Markdown editor to compose topics and replies.`,
           figure: () => import("./figure-posting.vue")
-          // link: { path: "/pricing", text: "Learn more" }
         },
         {
           icon: "chat",
           title: "Built-in realtime chat",
           text: `Chats take private messaging to a whole new level. Native multi-tasking support allows you to have streaming conversations with multiple people side-by-side.`,
           figure: () => import("./figure-chat.vue")
-          // link: { path: "/pricing", text: "Learn more" }
         },
         {
           icon: "notifications",
           title: "Real-time notifications",
           text: `NodeBB integrates real-time events in the background - your users are notified instantly when someone follows them, likes their post, or subscribes to their topics.`,
           figure: () => import("./figure-notifications.vue")
-          // link: { path: "/pricing", text: "Learn more" }
         }
-
-        // {
-        //   title: "Single sign-on",
-        //   text: `Users can register using over 30 services including Google, Facebook, LinkedIn, and Twitter.`
-        //   // figure: () => import("./figure-.vue"),
-        //   // link: { path: "/pricing", text: "Learn more" }
-        // }
       ]
-      // quotes: [
-      //   {
-      //     text: `When I moved from a legacy forum to NodeBB, traffic blew up. Once you see what NodeBB can do for you, you won't want to use anything else.`,
-      //     attribution: "Trevor Williams, Designer",
-      //     // img: require("./img/_.jpg"),
-      //     link: "https://nodebb.org"
-      //   },
-      //   {
-      //     text: `NodeBB gives me the right technology and a robust set of plugins. NodeBB helps me build and get paid faster.`,
-      //     attribution: "Jane Doe Carter, Full-stack Developer"
-      //     // img: require("./img/_.jpg")
-      //   },
-      //   {
-      //     text: `Its just one the of the best forum platforms out there.`,
-      //     attribution: "John Doe, Front-end Developer"
-      //     // img: require("./img/_.jpg")
-      //   },
-      //   {
-      //     text: `My community loves NodeBB.`,
-      //     attribution: "New Doe, UI Designer"
-      //     // img: require("./img/_.jpg")
-      //   }
-      // ]
     };
   },
   mounted(this: any) {
@@ -124,7 +89,6 @@ export default {
 </script>
 <style lang="less">
 .view-product-interact {
-  // overflow: hidden;
   .content-pad {
     max-width: 1100px;
     margin: 0 auto;
@@ -161,7 +125,7 @@ export default {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "a b";
       align-items: center;
-      // min-height: 80vh;
+      margin-bottom: 2rem;
       &.even {
         .feature-content-container {
           justify-self: flex-end;
@@ -187,10 +151,9 @@ export default {
       }
       .feature-figure-container {
         grid-area: b;
-        min-width: 0; // defaults content width
+        min-width: 0;
         height: 100%;
         position: relative;
-        // width: 100%;
         display: flex;
         align-items: center;
         .figure-container {
@@ -215,19 +178,16 @@ export default {
       }
     }
 
-    .feature-content {
-      // letter-spacing: -0.01em;
-    }
-    .feature-icon {
-      height: 72px;
-      width: 72px;
-      margin-bottom: 1rem;
-      box-shadow: 0px 2px 3px rgba(50, 50, 93, 0.13),
-        0px 2px 5px rgba(50, 50, 93, 0.11), 0px 5px 15px rgba(0, 0, 0, 0.07);
-      border-radius: 999rem;
-
-      display: none;
-    }
+    // @TODO:
+    // .feature-icon {
+    //   height: 72px;
+    //   width: 72px;
+    //   margin-bottom: 1rem;
+    //   box-shadow: 0px 2px 3px rgba(50, 50, 93, 0.13),
+    //     0px 2px 5px rgba(50, 50, 93, 0.11), 0px 5px 15px rgba(0, 0, 0, 0.07);
+    //   border-radius: 999rem;
+    //   display: none;
+    // }
     .title {
       font-weight: 700;
       font-size: 1.75rem;

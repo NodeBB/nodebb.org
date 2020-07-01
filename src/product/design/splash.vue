@@ -2,19 +2,15 @@
   <section class="product-splash product-design-splash">
     <div class="product-splash-inner">
       <div class="content">
-        <!-- <h3 class="page-sup">Design</h3> -->
         <h1 class="page-title">Get a platform that supports modern responsive design.</h1>
         <h3
           class="page-title-sub"
         >NodeBB forums are built from the ground up to work on all devices - phone, tablet, or desktop.</h3>
-        <!-- <splash-figure-mini /> -->
         <p
           class="page-title-sub"
         >Need an even more customized look? No problem, we provide full in-house design services for our Enterprise clients, contact us for more details.</p>
         <div class="actions">
-          <!-- <factor-link btn-link="primary" path="/pricing" size="medium">Learn more &rarr;</factor-link> -->
-          <!-- <factor-link btn-link="default" path="/contact" size="medium">Contact us &rarr;</factor-link> -->
-          <factor-link btn-link="default" @click="vis = !vis" size="medium">Contact us &rarr;</factor-link>
+          <factor-link btn-link="default" @click="vis = !vis" size="medium">Contact us</factor-link>
         </div>
       </div>
 
@@ -50,9 +46,6 @@ export default {
 .product-splash {
   position: relative;
   &.product-design-splash {
-    // background-color: rgba(255, 179, 0, 0.2);
-    // background-color: rgb(248, 247, 252);
-    // background-color: #000306;
     overflow: visible;
 
     .product-splash-inner {
@@ -62,10 +55,6 @@ export default {
       grid-gap: 3rem;
       padding: 4rem 3rem 0;
       align-items: center;
-
-      @media (min-height: 1000px) {
-        padding-top: 170px;
-      }
 
       @media (max-width: 900px) {
         grid-template-columns: 1fr;
@@ -87,12 +76,10 @@ export default {
       .content {
         max-width: 500px;
         justify-self: flex-start;
-
         grid-area: b;
         min-width: 0;
         height: 100%;
         position: relative;
-        // display: flex;
         align-items: center;
         justify-self: flex-start;
         flex-direction: column;
@@ -108,10 +95,6 @@ export default {
           color: var(--color-text-secondary);
           margin-bottom: 1rem;
         }
-        .page-title,
-        .page-title-sub {
-          // letter-spacing: -0.035em;
-        }
 
         .page-title {
           font-weight: 700;
@@ -124,8 +107,6 @@ export default {
           margin-top: 2rem;
           font-size: 1.4rem;
           font-weight: 400;
-          // color: var(--color-text-secondary);
-          // color: rgba(255, 255, 255, 0.97);
           .highlight {
             color: #5c84a4;
           }

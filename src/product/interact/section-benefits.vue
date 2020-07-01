@@ -33,18 +33,6 @@
         >Grant privileges to individual users or groups, allowing you to create read-only categories or hide them altogether. Give forum members elevated roles such as "Moderator" to allow them to help police your community.</p>
       </li>
     </ul>
-
-    <!-- cta -->
-    <!-- <div class="interstitial-cta">
-      <div class="text">
-        <h2 class="title">Plans and pricing</h2>
-        <h2 class="title-sub">Jumpstart your community today with NodeBB.</h2>
-      </div>
-
-      <div class="buttons">
-        <factor-link btn="primary" size="large" path="/pricing">Learn more &rarr;</factor-link>
-      </div>
-    </div>-->
   </div>
 </template>
 
@@ -63,11 +51,6 @@ export default {
 <style lang="less">
 .interact-benefits {
   position: relative;
-
-  @media (max-width: 767px) {
-    padding-bottom: 80px;
-  }
-
   .section-header {
     font-size: 1em;
     text-align: center;
@@ -112,10 +95,6 @@ export default {
       position: relative;
       padding: 2rem;
       border-radius: 0.5rem;
-      /* background-color: rgba(219, 230, 251, 0.15); */
-      /* background-image: linear-gradient(45deg, #f6fafd 0%, #ffffff00 50%); */
-      // box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.02),
-      //   inset 0 0 0 1px rgba(34, 34, 34, 0.07);
       @media (max-width: 900px) {
         padding: 1rem 0;
       }
@@ -155,30 +134,6 @@ export default {
       p:last-child {
         margin-bottom: 0;
         margin-left: 5rem;
-      }
-    }
-  }
-  .interstitial-cta {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    border-top: 2px solid #f6f9fc;
-    padding: 60px 20px 0;
-    max-width: 700px;
-    margin: 60px auto 0;
-    @media (max-width: 767px) {
-      grid-template-columns: 1fr;
-    }
-    .text h2 {
-      &.title {
-        color: var(--color-primary);
-      }
-      font-size: 1.5em;
-    }
-    .buttons {
-      margin: 0 0 0 20px;
-      @media (max-width: 767px) {
-        margin: 20px 0 0 0;
       }
     }
   }

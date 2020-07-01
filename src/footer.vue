@@ -17,10 +17,6 @@
         <div class="footer-col list">
           <div class="menu-header text-sm">Get started</div>
           <factor-link path="/product">Product</factor-link>
-          <!-- <factor-link path="/product/design">Design</factor-link>
-          <factor-link path="/product/control">Control</factor-link>
-          <factor-link path="/product/integrate">Integrate</factor-link>
-          <factor-link path="/product/extend">Extend</factor-link>-->
           <factor-link path="/pricing">Pricing</factor-link>
         </div>
 
@@ -28,14 +24,11 @@
           <div class="menu-header text-sm">Resources</div>
           <factor-link path="https://answers.nodebb.org" target="_blank" rel="noopener">Answers</factor-link>
           <factor-link path="https://docs.nodebb.org" target="_blank" rel="noopener">Docs</factor-link>
-          <!-- <factor-link path="/themes">Themes</factor-link>
-          <factor-link path="/plugins">Plugins</factor-link>-->
         </div>
 
         <div class="footer-col list">
           <div class="menu-header text-sm">Company</div>
           <factor-link path="/about">About</factor-link>
-          <!-- <factor-link path="/careers">Careers</factor-link> -->
           <factor-link path="https://blog.nodebb.org" target="_blank" rel="noopener">Blog</factor-link>
           <factor-link @click="vis = !vis">Contact us</factor-link>
         </div>
@@ -49,9 +42,6 @@
           >
             <factor-icon icon="fab fa-github" />
           </factor-link>
-          <!-- <factor-link class="icon-link" path="https://go.nodeb.com/slack" target="_blank" rel="noopener">
-            <factor-icon icon="fab fa-slack" />
-          </factor-link>-->
           <factor-link
             class="icon-link"
             path="https://www.facebook.com/nodebb"

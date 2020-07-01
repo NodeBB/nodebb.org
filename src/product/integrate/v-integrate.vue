@@ -1,7 +1,5 @@
 <template>
   <div class="view-product-integrate">
-    <!-- <section-splash /> -->
-
     <section
       v-for="(feature, index) in features"
       :id="feature.id"
@@ -31,9 +29,6 @@
     <section class="plugins-gallery-section content-pad">
       <section-integrate />
     </section>
-
-    <!-- <el-cta id="cta" /> -->
-    <!-- <el-cta-help id="cta-help" /> -->
   </div>
 </template>
 
@@ -50,36 +45,7 @@ export default {
   data(this: any) {
     return {
       loading: true,
-      loadingButtons: true,
-      features: [
-        // {
-        //   title: "Integrations",
-        //   text: `NodeBB integrates with several popular third-party cloud based services, apps, and products.`,
-        //   figure: () => import("./figure-integrations.vue"),
-        //   link: {
-        //     path: "/pricing",
-        //     text: "Learn more"
-        //   },
-        //   buttons: [
-        //     {
-        //       _item: "plugins",
-        //       link: "/plugins",
-        //       text: "Start Integrating",
-        //       classes: "btn mr-4 text-white bg-blue-500 hover:bg-blue-600"
-        //     }
-        //   ],
-        //   bullets: []
-        // }
-        // {
-        //   title: `Single Sign-On providers`,
-        //   text: `Allow your users to register with the SSO provider of their choice.`,
-        //   figure: () => import("./figure-sso.vue")
-        //   // link: {
-        //   //   path: "/",
-        //   //   text: ""
-        //   // }
-        // }
-      ]
+      loadingButtons: true
     };
   },
   mounted(this: any) {
@@ -87,14 +53,7 @@ export default {
       this.loadingButtons = false;
     }, 1000);
   },
-  methods: {},
-  metaInfo() {
-    return {
-      title: "Integrations - NodeBB",
-      description:
-        "NodeBB integrates with many popular third-party cloud based services, apps, and products."
-    };
-  }
+  methods: {}
 };
 </script>
 <style lang="less">
@@ -111,8 +70,6 @@ export default {
 
   .cta {
     --bg-opacity: 1;
-    // background-color: #e3e8ee;
-    // background-color: rgba(227, 232, 238, var(--bg-opacity));
     text-align: center;
     .content-pad {
       max-width: 700px;
@@ -138,8 +95,6 @@ export default {
       }
       &:not(.last) {
         --bg-opacity: 1;
-        // background-color: #dbe6fb;
-        // background-color: rgba(219, 230, 251, var(--bg-opacity));
         overflow: hidden;
       }
       @media (max-width: 900px) {

@@ -33,26 +33,20 @@ export default {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
-  // background: #e3e8ee;
   margin-bottom: 3rem;
-  // background: rgba(81, 130, 248, 0.2);
-
   ul {
     li {
       margin-bottom: 1rem;
     }
   }
-
   .title {
-    font-size: 2.355rem;
+    font-size: 2rem;
     font-weight: var(--font-weight-bold);
     line-height: 1.2;
     margin-bottom: 1rem;
-    // color: rgb(0, 27, 93);
   }
   .sub {
     color: var(--color-text-secondary);
-    // color: rgba(0, 27, 93, 0.5);
     font-size: 1.25rem;
     font-weight: 400;
   }

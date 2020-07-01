@@ -7,7 +7,7 @@
         class="sub"
       >Custom enterprise packages for larger businesses and organizations. We will work closely with you to create the perfect solution.</div>
       <div class="mt-5">
-        <factor-link btn="primary" size="medium" @click="vis = !vis">Contact us &rarr;</factor-link>
+        <factor-link btn="primary" size="medium" @click="vis = !vis">Contact us</factor-link>
       </div>
     </div>
     <div class="figure">

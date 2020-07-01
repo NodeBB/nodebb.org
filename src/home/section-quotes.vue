@@ -16,7 +16,7 @@
           <blockquote itemprop="reviewRating" itemscope itemtype="http://schema.org/Review">
             <p class="quote-body" v-formatted-text="quote.text" itemprop="reviewBody"></p>
             <div
-              class="rating"
+              class="rating hidden"
               itemprop="reviewRating"
               itemscope
               itemtype="https://schema.org/Rating"
@@ -31,6 +31,9 @@
             <div class="quote-media">
               <a class="quote-image" href="#">
                 <img :src="quote.img" alt="quote" />
+              </a>
+              <a class="quote-image company" target="_blank" href="#">
+                <img :src="quote.company" alt="quote" />
               </a>
             </div>
             <footer>
@@ -67,22 +70,26 @@ export default {
 
       quotes: [
         {
-          text: `<span>NodeBB is hands down the best I have ever used from both management and user perspectives
+          text: `<span>“NodeBB is hands down the best I have ever used from both management and user perspectives
           Due to the need for GDPR compliance, and a desire to update the technology base from PHP, wanted to migrate the pfSense community to a new forum, and NodeBB fit our needs.</span>
           <span>
           The migration process was surprisingly simple, and customizing the colors and icons was painless.  The UI is great, our users really like it, and the performance is excellent.
           </span>
           <span>NodeBB makes GDPR compliance exceedingly simple, everything is mobile and SEO-friendly out of the box, and general maintenance is a lot easier compared to our old forum. As a bonus, the NodeBB support team is available whenever we run into trouble.</span>
-					<span>NodeBB is the most attractive piece of open source forum software we’ve found.</span>`,
-          attribution: "Jim Thompson, CTO, Netgate",
+					<span>NodeBB is the most attractive piece of open source forum software we’ve found.”</span>`,
+          attribution: "Jim Thompson, CTO",
           img: require("./img/jim.jpg"),
+          company: require("./img/netgate.svg"),
+          companylink: "https://netgate.com",
           link: "https://forum.netgate.com"
         },
         {
-          text: `<span>When we decided it was time to revamp our community we contemplated several possible solutions. We finally opted for NodeBB, and we couldn't be happier.</span>
-          <span>We're using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself.</span>`,
-          attribution: "Artur Matczak, Software Engineer, Opera",
+          text: `<span>“When we decided it was time to revamp our community we contemplated several possible solutions. We finally opted for NodeBB, and we couldn't be happier.</span>
+          <span>We're using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself.”</span>`,
+          attribution: "Artur Matczak, Software Engineer",
           img: require("./img/attis.jpg"),
+          company: require("./img/opera.svg"),
+          companylink: "https://opera.com",
           link: "https://forums.opera.com"
         }
       ]
@@ -125,7 +132,6 @@ export default {
   position: relative;
   background-image: url("./img/dot.svg");
   margin-top: 0;
-  margin-bottom: 6em;
   padding-top: 4rem;
   .quotes {
     transform: skewY(-10deg);
@@ -161,6 +167,16 @@ export default {
         }
       }
     }
+    .quote-image {
+      &.company {
+        width: 28px;
+        position: absolute;
+        right: -0.5rem;
+        bottom: 0;
+        background: #fff;
+        border: 0.175rem solid #fff;
+      }
+    }
     article {
       position: relative;
       display: flex;
@@ -170,10 +186,12 @@ export default {
         blockquote {
           box-shadow: 1px 1px 4px 0 rgba(26, 26, 67, 0.1),
             -5px 22.5px 65px 0 rgba(50, 50, 93, 0.2);
+          transform: skewY(10deg) translateY(-6rem);
         }
       }
       &:nth-child(even) {
         transform: rotateX(1deg) rotateY(-7deg);
+
         // background-image: linear-gradient(45deg, #fff, #f7f7f7);
         blockquote {
           box-shadow: 1px 1px 4px 0 rgba(26, 26, 67, 0.1),
@@ -184,7 +202,7 @@ export default {
         justify-content: flex-end;
       }
       .rating {
-        display: block;
+        // display: block;
         text-align: center;
         padding: 0.5rem;
         font-size: 1.35rem;
@@ -193,18 +211,21 @@ export default {
       blockquote {
         transform: skewY(10deg);
         max-width: 500px;
-        padding: 4rem 3rem;
+        padding: 2rem 2.5rem;
         font-size: 1.15rem;
         line-height: 1.8;
         text-align: left;
         background: #fff;
         border-radius: 0.5rem;
+        height: fit-content;
+        overflow: auto;
         .quote-media {
           text-align: center;
           margin-bottom: 0;
           margin-top: 0.75rem;
           float: left;
           position: relative;
+
           a {
             display: block;
             width: 70px;
@@ -219,9 +240,9 @@ export default {
         }
 
         footer {
-          margin-top: 2.25rem;
+          margin-top: 2.75rem;
           text-transform: uppercase;
-          font-size: 0.75rem;
+          font-size: 0.9rem;
           font-weight: 700;
           text-align: left;
           margin-left: 5.5rem;

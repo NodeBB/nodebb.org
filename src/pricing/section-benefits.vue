@@ -45,9 +45,9 @@ export default {
   border-radius: 0.5rem;
   padding: 0 2rem 2rem;
 
-  @media (max-width: 767px) {
-    padding-bottom: 80px;
-  }
+  // @media (max-width: 767px) {
+  //   padding-bottom: 80px;
+  // }
 
   .section-header {
     font-size: 1rem;

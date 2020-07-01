@@ -7,7 +7,6 @@
         </div>
         <div class="text">
           <h2 class="title">Jumpstart your community today with NodeBB.</h2>
-          <!-- <h2 class="title-sub"></h2> -->
         </div>
 
         <div class="buttons">
@@ -50,7 +49,6 @@ export default {
     overflow: hidden;
     border-radius: 8px;
     background: #f3f6fc;
-    // box-shadow: 0 0 3px rgba(50, 50, 93, 0.2), 0 14px 32px rgba(50, 50, 93, 0.1);
 
     @media (max-width: 767px) {
       grid-template-columns: 1fr;

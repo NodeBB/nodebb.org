@@ -148,7 +148,7 @@
       </div>
       <div class="action">
         <!-- <factor-link btn-link="primary" path="/contact">Contact us &rarr;</factor-link> -->
-        <factor-link @click="vis = !vis">Contact us &rarr;</factor-link>
+        <factor-link @click="vis = !vis">Contact us</factor-link>
       </div>
     </div>
     <factor-modal class="pricing-cta-contact" :vis.sync="vis">
@@ -389,7 +389,7 @@ export default {
           ],
           external: {
             path: "",
-            text: "Contact us &rarr;",
+            text: "Contact us",
             meta:
               "Contact us directly for customised support plans (SLAs, etc.)"
           }
@@ -666,7 +666,7 @@ export default {
       font-weight: var(--font-weight-bold, 700);
       color: #fff;
       @media (max-width: 900px) {
-        font-size: 1rem;
+        font-size: 1.25rem;
       }
     }
     .action {

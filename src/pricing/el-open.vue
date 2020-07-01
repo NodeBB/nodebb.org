@@ -22,7 +22,14 @@
     </div>
 
     <div class="figure font-normal">
-      <p>The code can be found at our project repository on GitHub, and installation instructions can be found in our</p>
+      <p>
+        The code can be found at our project repository on GitHub, and installation instructions can be found in our
+        <factor-link
+          path="https://docs.nodebb.org"
+          target="_blank"
+          rel="noopener"
+        >Documentation Portal</factor-link>.
+      </p>
       <p>
         If you do not have a server, we recommend using DigitalOcean to host NodeBB. They do charge based on your usage, but you can get a month of free hosting from them by
         <factor-link
@@ -118,15 +125,13 @@ export default {
   }
 
   .title {
-    font-size: 2.355rem;
+    font-size: 2rem;
     font-weight: var(--font-weight-bold);
     line-height: 1.2;
     margin-bottom: 1rem;
     color: #1a1f36;
   }
   .sub {
-    // color: var(--color-text-secondary);
-    // color: rgba(95, 67, 0, 0.5);
     font-size: 1.25rem;
     font-weight: 400;
   }
@@ -137,7 +142,7 @@ export default {
     margin: 4rem 0;
     grid-template-columns: 1fr;
     .title {
-      font-size: 1.5em;
+      font-size: 1.5rem;
     }
   }
 }

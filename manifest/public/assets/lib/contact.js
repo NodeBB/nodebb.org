@@ -76,7 +76,7 @@ $(document).ready(function () {
 		}
 
 		// Disable all buttons
-		$(this).html('<i class="fa fa-spinner fa-spin"></i>');
+		$(this).html('<i class="fas fa-spinner fa-spin"></i>');
 		Contact.els.modalEl.find('button').prop('disabled', true);
 
 		// Re-enable reset button

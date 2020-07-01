@@ -65,9 +65,9 @@ export default {
 .nodebb-product-benefits {
   position: relative;
 
-  @media (max-width: 767px) {
-    padding-bottom: 80px;
-  }
+  // @media (max-width: 767px) {
+  //   padding-bottom: 80px;
+  // }
 
   .features-list {
     font-size: 1.1em;

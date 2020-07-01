@@ -47,7 +47,7 @@ export default {
     align-items: center;
 
     @media (min-height: 1000px) {
-      padding-top: 170px;
+      // padding-top: 170px;
     }
 
     @media (max-width: 900px) {

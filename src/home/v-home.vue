@@ -84,6 +84,7 @@
                     btn="primary"
                     size="medium"
                     class="font-bold"
+                    rel="noopener"
                     :path="col.link.path"
                     :target="col.link.target"
                   >
@@ -139,21 +140,11 @@ export default {
       loading: true,
       loadingButtons: true,
       features: [
-        // {
-        //   icon: "",
-        //   title: "",
-        //   text: ``,
-        //   figure: () => import("./figure-live-changes.vue"),
-        //   link: { path: "/install", text: "Install NodeBB" }
-        // },
         {
           icon: "engage",
           title: "The best solution for engaging and retaining customers.",
-          text: `From brand communities to product support boards, forums are a great way to engage and provide value to your audience.<br/><br/>At NodeBB, our mission is to provide forum software with all the modern features and performance you’ve come to expect from the social and mobile web.`,
-          // figure: () => import("./figure-dashboard.vue"),
-          // link: { path: "/contact", text: "Contact us" },
+          text: `From brand communities to product support boards, forums are a great way to engage and provide value to your audience.<br/><br/><em>At NodeBB, our mission is to provide forum software with all the modern features and performance you’ve come to expect from the social and mobile web.</em>`,
           external: {
-            // path: "/contact",
             text: `Contact us`
           },
           linkvideo: {
@@ -163,13 +154,6 @@ export default {
         }
       ],
       compare: [
-        // {
-        //   items: [
-        //     // "",
-        //     // "For &rarr;",
-        //     // "More &rarr;"
-        //   ]
-        // },
         {
           items: [
             "Open Source",
@@ -200,23 +184,8 @@ export default {
             "A tailored, high-performance forum for enterprise customers that integrates with your existing infrastructure."
           ],
           external: {
-            // path: "/contact",
-            text: `Contact us &rarr;`
+            text: `Contact us`
           }
-        }
-      ],
-      quotes: [
-        {
-          text: ``,
-          attribution: "",
-          // img: require("./img/_.svg"),
-          link: ""
-        },
-        {
-          text: ``,
-          attribution: "",
-          // img: require("./img/_.svg")
-          link: ""
         }
       ]
     };
@@ -230,9 +199,10 @@ export default {
   methods: {},
   metaInfo() {
     return {
-      title: "A better community platform for the modern web.",
+      title:
+        "NodeBB Forum Software | Drive user engagement with a modern community platform",
       description:
-        "NodeBB is next generation forum software. It's powerful, mobile-ready and easy to use."
+        "NodeBB Forum Software - A better community platform for the modern web. NodeBB is a next generation forum software that's free and easy to use."
     };
   }
 };

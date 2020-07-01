@@ -47,7 +47,7 @@ export default {
       padding-bottom: 6rem;
 
       @media (min-height: 1000px) {
-        padding-top: 170px;
+        // padding-top: 170px;
       }
 
       @media (max-width: 900px) {
