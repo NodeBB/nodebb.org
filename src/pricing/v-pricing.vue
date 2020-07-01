@@ -65,17 +65,12 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 3rem;
-    padding: 0 2rem 2rem;
+    padding: 0 2rem 1rem;
     align-items: center;
-    @media (min-height: 1000px) {
-      // padding-top: 170px;
-    }
-
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
       text-align: left;
       padding: 0;
-      // padding: 3rem 0 6rem;
     }
     .figure-container {
       min-width: 0;
@@ -90,11 +85,6 @@ export default {
         position: relative;
       }
 
-      .page-title,
-      .page-title-sub {
-        // letter-spacing: -0.035em;
-      }
-
       .page-title {
         font-weight: 700;
         font-size: 2.5rem;
@@ -103,12 +93,11 @@ export default {
       }
 
       .page-title-sub {
-        font-weight: 400;
-        font-size: 1.4em;
+        margin-top: 2rem;
+        font-size: 1.4rem;
         line-height: 1.6;
-        margin-bottom: 1rem;
-        opacity: 0.8;
-        // letter-spacing: -0.01em;
+        font-weight: 400;
+        margin-bottom: 0;
         .highlight {
           color: #5c84a4;
         }
@@ -128,7 +117,6 @@ export default {
       }
 
       @media (max-width: 1200px) {
-        // max-width: 450px;
         .page-title {
           font-size: 2.5rem;
         }
@@ -138,7 +126,6 @@ export default {
       }
 
       @media (max-width: 900px) {
-        // padding: 1em 2em;
         justify-self: center;
         max-width: 100%;
         .page-title {
@@ -146,7 +133,7 @@ export default {
           line-height: 1.2;
         }
         .page-title-sub {
-          font-size: 1.4em;
+          font-size: 1.25rem;
           line-height: 1.4;
         }
       }

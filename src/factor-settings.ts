@@ -1,6 +1,6 @@
 export default {
   headTags: {
-    font: `<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />`,
+    // font: `<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />`,
   },
   serverAnalytics: {
     trackingId: "UA-45914244-5",

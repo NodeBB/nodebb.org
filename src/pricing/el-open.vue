@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="figure font-normal">
+    <div class="figure">
       <p>
         The code can be found at our project repository on GitHub, and installation instructions can be found in our
         <factor-link
