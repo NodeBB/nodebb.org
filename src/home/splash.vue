@@ -9,11 +9,6 @@
         <div class="actions">
           <factor-link btn="primary" path="/pricing">Start Free Trial</factor-link>
           <factor-link btn="link" path="/product">Learn more &rarr;</factor-link>
-          <!-- <factor-link btn="primary" path="/install">Install NodeBB &rarr;</factor-link>
-          <factor-link btn="link" path="https://go.nodebb.org/github" target="_blank">
-            <factor-icon icon="fab fa-github" />&nbsp;
-            {{ version }}
-          </factor-link>-->
         </div>
       </div>
 
@@ -33,11 +28,6 @@ export default {
     factorLink,
     factorIcon,
     splashFigure: () => import("./figure-splash.vue")
-  },
-  computed: {
-    version() {
-      return `v${factorVersion()}`;
-    }
   }
 };
 </script>
@@ -82,10 +72,6 @@ export default {
         margin-bottom: 1rem;
         opacity: 0.5;
       }
-      .page-title,
-      .page-title-sub {
-        // letter-spacing: -0.045rem;
-      }
 
       .page-title {
         font-size: 2.5rem;
@@ -96,7 +82,6 @@ export default {
       }
 
       .page-title-sub {
-        // font-weight: 300;
         font-size: 1.35rem;
         line-height: 1.6;
         margin-bottom: 1.5rem;
@@ -128,10 +113,10 @@ export default {
       @media (max-width: 1200px) {
         max-width: 450px;
         .page-title {
-          font-size: 2.35rem;
+          font-size: 2rem;
         }
         .page-title-sub {
-          font-size: 1.5em;
+          font-size: 1.5rem;
         }
       }
 
@@ -144,7 +129,7 @@ export default {
           line-height: 1.2;
         }
         .page-title-sub {
-          font-size: 1.4em;
+          font-size: 1.25rem;
           line-height: 1.4;
         }
       }

@@ -94,6 +94,7 @@ export default {
   width: 100%;
   z-index: 5000;
   font-weight: 600;
+  background-color: #fff;
 }
 
 .nodebb-site {
@@ -108,9 +109,18 @@ export default {
   }
   &.scrolled {
     .site-head {
-      padding: 0rem 2rem;
-      background: #fff;
+      padding: 0 2rem;
+      background-color: rgba(255, 255, 255, 0.7);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      z-index: 2;
+      backdrop-filter: blur(0.15rem);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      transition: border-bottom 150ms ease 0s, top 250ms ease 0s,
+        background-color 300ms ease 0s;
     }
   }
 }

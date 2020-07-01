@@ -61,7 +61,7 @@ export default {
         font-weight: 700;
         font-size: 2.5rem;
         line-height: 1.1;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0rem;
       }
 
       .page-title-sub {

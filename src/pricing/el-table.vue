@@ -13,15 +13,6 @@
     <div class="view-table-version-2">
       <div class="compare content">
         <div class="content-pad">
-          <!-- <div class="features mx-4 mb-12 pt-12">
-            <div class="feature-content items-center text-center">
-              <div class="feature-icon align-center">
-                <home-icon icon="stars" />
-              </div>
-              <div class="title">Start your community with NodeBB.</div>
-              <div class="text">Select the forum option that works best for you:</div>
-            </div>
-          </div>-->
           <div class="feature-table-wrap">
             <div class="feature-table">
               <div
@@ -42,7 +33,6 @@
                   <factor-link btn="primary" size="medium" class="font-bold" :path="col.link.path">
                     <span v-formatted-text="col.link.text" />
                   </factor-link>
-
                   <span class="text-xs mt-3 font-bold" v-formatted-text="col.link.meta" />
                 </div>
 
@@ -56,7 +46,6 @@
                   >
                     <span v-formatted-text="col.external.text" />
                   </factor-link>
-
                   <span class="text-xs mt-3 font-bold" v-formatted-text="col.external.meta" />
                 </div>
               </div>
@@ -66,79 +55,6 @@
       </div>
     </div>
 
-    <!-- <div class="table-header">
-      <div class="table-row">
-        <div class="col col-label" />
-        <div v-for="(item, i) in header" :key="i" class="col col-header" :class="`col-${item.id}`">
-          <div class="super">{{ item.super }}</div>
-          <h2>{{ toLabel(item.id) }}</h2>
-          <div class="price mt-1 mb-3 font-bold text-xl">
-            {{ item.price }}
-            <span v-if="item.id == 'village'" class="text-xs text-gray-300">Monthly</span>
-            <span v-else-if="item.id == 'city'" class="text-xs text-gray-300">Monthly</span>
-            <span v-else class="text-xs text-gray-300"></span>
-          </div>
-          <div class="sub font-normal">{{ item.sub }}</div>
-          <div class="action">
-            <factor-link v-if="item.id == 'homestead'" btn="default" path="/install">Free Forever</factor-link>
-            <factor-link
-              v-if="item.id == 'metropolis'"
-              btn="primary"
-              path="/contact"
-            >Contact us &rarr;</factor-link>
-            <factor-link
-              v-else
-              btn="primary"
-              path="https://manage.nodebb.org/register"
-              :query="{plan: item.id}"
-            >Start now</factor-link>
-          </div>
-          <div class="gutter font-normal">{{ item.gutter }}</div>
-        </div>
-      </div>
-    </div>-->
-    <!-- <h2 class="area-title">Compare benefits</h2> -->
-
-    <!-- <section v-for="(group, i) in groups" :key="i" class="feature-group">
-      <div v-if="group.title" class="group-header">
-        <plan-icon :icon="group.icon" />
-        <h2 v-formatted-text="group.title" class="group-title" />
-      </div>
-      <div v-for="(child, ii) in group.children" :key="ii" class="table-row feature-row">
-        <div class="col col-label">
-          <div class="label-wrap">
-            <span v-formatted-text="child.title" class="label" />
-            <p v-formatted-text="child.content" class="label-content text-xs font-normal mt-2" />
-          </div>
-        </div>
-        <div class="col col-icon col-village">
-          <div v-if="child.village" v-formatted-text="child.village" class="col-value" />
-          <div v-else-if="child.level <= 0" class="col-value mobile-label">
-            <factor-icon icon="fas fa-check" />
-            <span>Village</span>
-          </div>
-          <factor-icon v-else icon="fas fa-minus" />
-        </div>
-        <div class="col col-icon col-city">
-          <div v-if="child.city" v-formatted-text="child.city" class="col-value" />
-          <div v-else-if="child.level <= 10" class="col-value mobile-label">
-            <factor-icon icon="fas fa-check" />
-            <span>City</span>
-          </div>
-
-          <factor-icon v-else icon="fas fa-minus" />
-        </div>
-        <div class="col col-icon col-metropolis">
-          <div v-if="child.metropolis" v-formatted-text="child.metropolis" class="col-value" />
-          <div v-else-if="child.level <= 20" class="col-value mobile-label">
-            <factor-icon icon="fas fa-check" />
-            <span>Metropolis</span>
-          </div>
-          <factor-icon v-else icon="fas fa-minus" />
-        </div>
-      </div>
-    </section>-->
-
     <plan-benefits />
 
     <div class="discount">
@@ -147,7 +63,6 @@
         <div class="sub">Please contact us for discounted pricing.</div>
       </div>
       <div class="action">
-        <!-- <factor-link btn-link="primary" path="/contact">Contact us &rarr;</factor-link> -->
         <factor-link @click="vis = !vis">Contact us</factor-link>
       </div>
     </div>
@@ -342,15 +257,6 @@ export default {
         // }
       ],
       compare: [
-        // {
-        //   items: [
-        //     "",
-        //     "Purpose",
-        //     "Price",
-        //     "Monthly page views",
-        //     "Support benefits"
-        //   ]
-        // },
         {
           items: [
             "Village",
@@ -429,11 +335,8 @@ export default {
       z-index: -1;
       right: -10rem;
       top: -10.5rem;
-
       height: 400px;
       width: 400px;
-      // right: -10rem;
-      // top: -1.5rem;
       opacity: 0.72;
     }
   }
@@ -464,7 +367,6 @@ export default {
 
   .feature-group {
     padding: 1rem 0 2rem;
-    // border-top: 1px solid var(--color-border);
   }
   .group-header {
     padding: 1rem;
@@ -474,7 +376,6 @@ export default {
     grid-template-columns: 2rem 1fr;
     background: #fff;
     z-index: 1;
-    // border-bottom: 1px solid var(--color-border);
     i {
       position: relative;
       padding: 0.4rem 0;
@@ -566,7 +467,6 @@ export default {
         }
       }
       .mobile-label {
-        // display: none;
         font-size: 0.8em;
         text-transform: uppercase;
         color: var(--color-primary);
@@ -677,7 +577,6 @@ export default {
       }
     }
     .sub {
-      // color: var(--color-text-secondary);
       color: #8192b3;
     }
   }
@@ -827,7 +726,6 @@ export default {
       padding: 5rem 0 9rem;
     }
     .content-pad {
-      // opacity: 0.1;
       z-index: 1;
       position: relative;
       display: grid;
@@ -881,9 +779,6 @@ export default {
       .header-actions {
         font-size: 1.1em;
         margin-top: 2em;
-        // display: grid;
-        // grid-template-columns: 1fr 200px;
-        // grid-gap: 1.5em;
         .email-list-form {
           font-size: 1.2em;
           input {
@@ -930,7 +825,6 @@ export default {
         overflow: hidden;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
           0 15px 35px rgba(0, 0, 0, 0.1), 0 50px 100px rgba(50, 50, 93, 0.1);
-        // background: #f6f9fc url(./img/screencast-poster.jpg) 50%/100%;
         background-size: cover;
         transition: opacity 0.2s;
         @media (max-width: 900px) {
@@ -970,7 +864,6 @@ export default {
       }
     }
   }
-  //
   .nodebb-actions {
     display: grid;
     grid-gap: 1rem;
@@ -992,7 +885,6 @@ export default {
   }
   .benefits {
     margin: -7rem 1rem 0;
-    // background: url("./img/dot.svg");
     .content-pad {
       z-index: 100;
       position: relative;
@@ -1076,7 +968,6 @@ export default {
       }
     }
     .feature-content {
-      // letter-spacing: -0.01em;
       max-width: 500px;
       .bullets {
         margin: 2rem 0;
@@ -1107,7 +998,6 @@ export default {
     .feature-icon {
       margin: 0 auto;
       margin-bottom: 1rem;
-
       box-shadow: 0 2px 3px rgba(25, 82, 190, 0.13),
         0 2px 5px rgba(25, 82, 190, 0.11), 0 5px 15px rgba(0, 0, 0, 0.07);
       overflow: hidden;
@@ -1123,38 +1013,12 @@ export default {
         transform: translateY(-50%);
       }
     }
-    // .super {
-    //   text-transform: uppercase;
-    //   font-weight: 600;
-    //   font-size: 1.3em;
-    //   color: var(--color-primary);
-    //   margin-bottom: 0.6em;
-    // }
-    // .title {
-    //   font-size: 2em;
-    //   line-height: 1.3;
-    //   margin-bottom: 1.5rem;
-    //   font-weight: var(--font-weight-bold, 700);
-    // }
-    // .text {
-    //   font-weight: 400;
-    //   font-size: 1.4em;
-    //   line-height: 1.6;
-    //   margin-bottom: 1rem;
-    //   opacity: 0.8;
-    // }
     .action {
       margin-top: 2rem;
     }
   }
   .compare {
-    // background-color: var(--color-bg-alt);
-    // background-image: linear-gradient(#e3e8ee 80%, #e3e8ee);
-    // box-shadow: inset 0px -1px 1px #e3e8ee;
-    // padding: 4rem;
-    // margin: 0 0 -2rem 0;
     .feature-content {
-      // padding: 10rem 1.5rem;
       margin: 0 auto;
       max-width: 550px;
     }
@@ -1183,15 +1047,20 @@ export default {
         }
         .popular {
           position: absolute;
-          right: 1rem;
+          right: -2.85rem;
           top: 1rem;
-          background: rgba(255, 179, 0, 0.2);
-          padding: 0.25rem 1rem 0.25rem 1rem;
-          font-size: 0.8rem;
+          padding: 0.25rem 1rem;
+          font-size: 0.75rem;
           text-transform: uppercase;
           font-weight: 700;
-          letter-spacing: 1px;
-          border-radius: 30px;
+          letter-spacing: 0.1rem;
+          border-radius: 0.25rem;
+          background: rgba(81, 45, 168, 0.08);
+          color: #512da8;
+          transform: rotate(45deg);
+          width: 10rem;
+          text-align: center;
+          text-indent: 0.5rem;
         }
 
         &.data {
@@ -1265,6 +1134,11 @@ export default {
               font-weight: 700;
               padding-top: 0;
               height: auto;
+            }
+
+            .row:nth-child(3) {
+              font-weight: 700;
+              font-size: 1.15rem;
             }
             &:nth-child(4),
             &:nth-child(5) {

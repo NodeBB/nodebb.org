@@ -39,11 +39,14 @@
             <footer>
               <a
                 :href="quote.link"
+                v-formatted-text="quote.attribution"
                 target="_blank"
                 itemprop="author"
                 itemscope
                 itemtype="https://schema.org/Person"
-              >{{ quote.attribution }}</a>
+              >
+                <span v-formatted-text="quote.attribution"></span>
+              </a>
             </footer>
           </blockquote>
         </article>
@@ -77,7 +80,7 @@ export default {
           </span>
           <span>NodeBB makes GDPR compliance exceedingly simple, everything is mobile and SEO-friendly out of the box, and general maintenance is a lot easier compared to our old forum. As a bonus, the NodeBB support team is available whenever we run into trouble.</span>
 					<span>NodeBB is the most attractive piece of open source forum software we’ve found.”</span>`,
-          attribution: `Jim Thompson, CTO`,
+          attribution: `<strong>Jim Thompson</strong>, CTO`,
           img: require("./img/jim.jpg"),
           company: require("./img/netgate.svg"),
           companylink: "https://netgate.com",
@@ -86,7 +89,7 @@ export default {
         {
           text: `<span>“When we decided it was time to revamp our community we contemplated several possible solutions. We finally opted for NodeBB, and we couldn't be happier.</span>
           <span>We're using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself.”</span>`,
-          attribution: `Artur Matczak, Software Engineer`,
+          attribution: `<strong>Artur Matczak</strong>, Software Engineer`,
           img: require("./img/attis.jpg"),
           company: require("./img/opera.svg"),
           companylink: "https://opera.com",

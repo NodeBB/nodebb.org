@@ -1,9 +1,9 @@
 <template>
-  <div class="contact-specialist">
+  <div class="contact-modal">
     <factor-modal :vis.sync="vis">
       <iframe src="/contact"></iframe>
     </factor-modal>
-    <factor-btn @click="vis = !vis" class="contact-specialist-btn">Speak to a specialist</factor-btn>
+    <factor-btn @click="vis = !vis" class="contact-btn">Speak to a specialist</factor-btn>
   </div>
 </template>
 <script lang="ts">
@@ -18,7 +18,7 @@ export default {
 };
 </script>
 <style lang="less">
-.contact-specialist {
+.contact-modal {
   display: flex;
   align-items: center;
 
@@ -38,7 +38,7 @@ export default {
   .factor-link {
     margin: 1rem;
   }
-  .contact-specialist-btn {
+  .contact-btn {
     position: fixed !important;
     bottom: 2.5rem;
     right: 2.65rem;

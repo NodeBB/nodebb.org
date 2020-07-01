@@ -45,10 +45,6 @@ export default {
   border-radius: 0.5rem;
   padding: 0 2rem 2rem;
 
-  // @media (max-width: 767px) {
-  //   padding-bottom: 80px;
-  // }
-
   .section-header {
     font-size: 1rem;
     text-align: center;
@@ -89,18 +85,17 @@ export default {
     .feature-block {
       position: relative;
       .title {
-        font-weight: 500;
-        font-size: 1.2em;
-        line-height: 1.5em;
-        margin-left: 5rem;
-        margin-top: 1rem;
+        font-weight: 700;
+        font-size: 1.05rem;
+        line-height: 1.4;
+        margin-left: 4.25rem;
+        margin-top: 0.95rem;
       }
       .text {
         font-size: 1.3rem;
         font-weight: 400;
         line-height: 1.75rem;
         opacity: 0.78;
-        // font-family: var(--font-family-cursive);
       }
       .icon {
         margin: 1rem 0 1.5rem;
