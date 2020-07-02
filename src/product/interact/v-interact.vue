@@ -18,7 +18,7 @@
         </div>
         <div class="feature-content-container">
           <div class="feature-content">
-            <home-icon v-if="feature.icon" class="feature-icon" :icon="feature.icon" />
+            <!-- <home-icon v-if="feature.icon" class="feature-icon" :icon="feature.icon" /> -->
             <h2 class="title">{{ feature.title }}</h2>
             <div class="text">{{ feature.text }}</div>
             <div v-if="feature.link" class="action">
@@ -54,19 +54,19 @@ export default {
       features: [
         {
           icon: "post",
-          title: `Posting topics and replies`,
+          title: `Posting Topics and Replies`,
           text: `Choose between a "What You See is What You Get" editor or a Markdown editor to compose topics and replies.`,
           figure: () => import("./figure-posting.vue")
         },
         {
           icon: "chat",
-          title: "Built-in realtime chat",
+          title: "Built-in Realtime Chat",
           text: `Chats take private messaging to a whole new level. Native multi-tasking support allows you to have streaming conversations with multiple people side-by-side.`,
           figure: () => import("./figure-chat.vue")
         },
         {
           icon: "notifications",
-          title: "Real-time notifications",
+          title: "Real-time Notifications",
           text: `NodeBB integrates real-time events in the background - your users are notified instantly when someone follows them, likes their post, or subscribes to their topics.`,
           figure: () => import("./figure-notifications.vue")
         }

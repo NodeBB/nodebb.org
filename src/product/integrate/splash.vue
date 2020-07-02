@@ -3,23 +3,12 @@
     <div class="product-splash-inner">
       <div class="content">
         <h3 class="page-sup">Integrate</h3>
-        <h1 class="page-title">
-          Integrate to your favorite apps
-          <!-- Make running your community even easier with integrations. -->
-        </h1>
-        <!-- <h3
-          class="page-title-sub"
-        >Integrate NodeBB to your favorite apps.</h3>-->
-
-        <div class="actions">
-          <!-- <factor-link btn="primary" path="/pricing" size="large">Learn more &rarr;</factor-link> -->
-          <!-- <factor-link btn="primary" path="/plugins" size="large">&rarr;</factor-link> -->
-        </div>
+        <h1 class="page-title">Make running your community even easier with integrations.</h1>
       </div>
 
-      <div class="figure-container">
-        <!-- <splash-figure /> -->
-      </div>
+      <!-- <div class="figure-container">
+        <splash-figure />
+      </div>-->
     </div>
   </section>
 </template>
@@ -29,8 +18,8 @@ import { factorLink } from "@factor/ui";
 
 export default {
   components: {
-    factorLink,
-    splashFigure: () => import("./figure-splash.vue")
+    factorLink
+    // splashFigure: () => import("./figure-splash.vue")
   }
 };
 </script>
@@ -45,10 +34,6 @@ export default {
     grid-gap: 4em;
     padding: 4rem 3rem 6rem;
     align-items: center;
-
-    @media (min-height: 1000px) {
-      // padding-top: 170px;
-    }
 
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
@@ -75,10 +60,6 @@ export default {
         color: var(--color-text-secondary);
         margin-bottom: 1rem;
       }
-      .page-title,
-      .page-title-sub {
-        // letter-spacing: -0.035em;
-      }
 
       .page-title {
         font-weight: 700;
@@ -92,7 +73,6 @@ export default {
         font-size: 1.4rem;
         font-weight: 400;
         margin-bottom: 1rem;
-        // color: var(--color-text-secondary);
         .highlight {
           color: #5c84a4;
         }

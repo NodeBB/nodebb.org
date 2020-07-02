@@ -63,7 +63,7 @@
         <div class="sub">Please contact us for discounted pricing.</div>
       </div>
       <div class="action">
-        <factor-link @click="vis = !vis">Contact us</factor-link>
+        <factor-link btn="primary" @click="vis = !vis">Contact us</factor-link>
       </div>
     </div>
     <factor-modal class="pricing-cta-contact" :vis.sync="vis">
@@ -262,8 +262,8 @@ export default {
             "Village",
             "$250 / mo",
             "Small startups, businesses, and groups",
-            "Up to 2 million monthly page views",
-            "Email and community forum support"
+            `Up to 2 million monthly page views`,
+            `Email and community forum support`
           ],
           link: {
             path: "https://manage.nodebb.org/register",
@@ -276,8 +276,8 @@ export default {
             "City <span class='popular'>Popular</span>",
             "$750 / mo",
             "Great value for growing businesses and groups",
-            "Up to 10 million monthly page views",
-            "Premium support"
+            `Up to 10 million monthly page views`,
+            `Premium support`
           ],
           link: {
             path: "https://manage.nodebb.org/register",
@@ -290,8 +290,8 @@ export default {
             "Metropolis",
             "Custom",
             "Larger organizations that need a custom solution",
-            "Over 10 million monthly page views",
-            "Customised support"
+            `10 million monthly page views`,
+            `Customised support`
           ],
           external: {
             path: "",
@@ -549,7 +549,7 @@ export default {
 
   .discount {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 2rem;
     margin: 2rem -2rem 0;
@@ -560,6 +560,9 @@ export default {
     }
     a {
       color: #fff;
+    }
+    .text {
+      margin-right: 2rem;
     }
     .discount-title {
       font-size: 1.5rem;

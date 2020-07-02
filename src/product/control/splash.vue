@@ -2,11 +2,7 @@
   <section class="product-splash product-control">
     <div class="product-splash-inner">
       <div class="content">
-        <!-- <h3 class="page-sup">Control</h3> -->
-        <h1 class="page-title">
-          Be in
-          <span>complete</span> control.
-        </h1>
+        <h1 class="page-title">...be in complete control</h1>
         <h3
           class="page-title-sub"
         >NodeBB’s administration system makes it easy to control all aspects of your forum. You can create an unlimited number of administrator and moderator accounts, and you can set permissions on each account according to your needs.</h3>
@@ -38,17 +34,12 @@ export default {
 .product-splash {
   position: relative;
   &.product-control {
-    // background: #ffe;
     .product-splash-inner {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 4em;
       align-items: center;
       padding-bottom: 6rem;
-
-      @media (min-height: 1000px) {
-        // padding-top: 170px;
-      }
 
       @media (max-width: 900px) {
         grid-template-columns: 1fr;
@@ -75,10 +66,6 @@ export default {
           color: var(--color-text-secondary);
           margin-bottom: 1rem;
         }
-        .page-title,
-        .page-title-sub {
-          // letter-spacing: -0.035em;
-        }
 
         .page-title {
           font-weight: 700;
@@ -91,7 +78,6 @@ export default {
           margin-top: 2rem;
           font-size: 1.4rem;
           font-weight: 400;
-          // color: var(--color-text-secondary);
           .highlight {
             color: #5c84a4;
           }

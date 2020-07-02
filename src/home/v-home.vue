@@ -77,9 +77,6 @@
                   :class="row ? 'has-content text-sm' : 'empty'"
                 />
                 <div v-if="col.link" class="footer-row row">
-                  <!-- <factor-link class="font-bold" :path="col.link.path">
-                    <span v-formatted-text="col.link.text" />
-                  </factor-link>-->
                   <factor-link
                     btn="primary"
                     size="medium"
@@ -145,7 +142,7 @@ export default {
           title: "The best solution for engaging and retaining customers.",
           text: `From brand communities to product support boards, forums are a great way to engage and provide value to your audience.<br/><br/><em>At NodeBB, our mission is to provide forum software with all the modern features and performance you’ve come to expect from the social and mobile web.</em>`,
           external: {
-            text: `Contact us`
+            text: `Contact us &rarr;`
           },
           linkvideo: {
             path: "https://youtu.be/uwgdWPeVuJE",
@@ -184,7 +181,7 @@ export default {
             "A tailored, high-performance forum for enterprise customers that integrates with your existing infrastructure."
           ],
           external: {
-            text: `Contact us`
+            text: `Contact us &rarr;`
           }
         }
       ]

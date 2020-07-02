@@ -10,7 +10,7 @@
       :data-test="`feature-` + index"
       :class="[index == features.length - 1 ? 'last' : '']"
     >
-      <div class="split-feature" :class="[index % 2 == 0 ? 'even' : 'odd']">
+      <div class="split-feature" :class="[index % 2 == 0 ? 'odd' : 'even']">
         <div class="feature-figure-container">
           <div v-if="feature.figure" class="figure-container">
             <component :is="feature.figure" />
@@ -31,8 +31,6 @@
     <section class="benefits content">
       <section-benefits class="content-pad" />
     </section>
-
-    <!-- <el-cta id="cta" /> -->
   </div>
 </template>
 
@@ -53,40 +51,17 @@ export default {
       loadingButtons: true,
       features: [
         {
-          title: "Real-time analytics dashboard",
+          title: "Real-time Analytics Dashboard",
           text: `Be in control with access to trending content, user activity, and other forum metrics. See what your users are doing with via NodeBB's real-time graphs. Create custom reports for virtually any action a user does, with APIs available to export into your favourite analytics software.`,
           figure: () => import("./figure-analytics.vue")
         },
         {
-          title: `Drag-and-drop widgets`,
+          title: `Drag-and-drop Widgets`,
           text: `Add new functionality to your forum via the widgets system. You can add new content via an HTML widget or customize your forum's presentation with over a dozen other widgets by dragging and dropping it onto a widget area on your forum.`,
           figure: () => import("./figure-widgets.vue")
           // link: { path: "/pricing", text: "Learn more" }
         }
       ]
-      // quotes: [
-      //   {
-      //     text: `When I moved from a legacy forum to NodeBB, traffic blew up. Once you see what NodeBB can do for you, you won't want to use anything else.`,
-      //     attribution: "Trevor Williams, Designer",
-      //     // img: require("./img/_.jpg"),
-      //     link: "https://nodebb.org"
-      //   },
-      //   {
-      //     text: `NodeBB gives me the right technology and a robust set of plugins. NodeBB helps me build and get paid faster.`,
-      //     attribution: "Jane Doe Carter, Full-stack Developer"
-      //     // img: require("./img/_.jpg")
-      //   },
-      //   {
-      //     text: `Its just one the of the best forum platforms out there.`,
-      //     attribution: "John Doe, Front-end Developer"
-      //     // img: require("./img/_.jpg")
-      //   },
-      //   {
-      //     text: `My community loves NodeBB.`,
-      //     attribution: "New Doe, UI Designer"
-      //     // img: require("./img/_.jpg")
-      //   }
-      // ]
     };
   },
   mounted(this: any) {
@@ -167,10 +142,9 @@ export default {
       }
       .feature-figure-container {
         grid-area: b;
-        min-width: 0; // defaults content width
+        min-width: 0;
         height: 100%;
         position: relative;
-        // width: 100%;
         display: flex;
         align-items: center;
         .figure-container {
@@ -195,9 +169,6 @@ export default {
       }
     }
 
-    .feature-content {
-      // letter-spacing: -0.01em;
-    }
     .title {
       font-weight: 700;
       font-size: 1.75rem;

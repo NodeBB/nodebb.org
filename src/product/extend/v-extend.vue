@@ -1,11 +1,5 @@
 <template>
   <div class="view-product-extend">
-    <!-- <section-splash /> -->
-
-    <!-- <section class="benefits content">
-      <section-benefits class="content-pad" />
-    </section>-->
-
     <section
       v-for="(feature, index) in features"
       :id="feature.id"
@@ -22,8 +16,8 @@
         </div>
         <div class="feature-content-container">
           <div class="feature-content">
-            <h2 class="title">{{ feature.title }}</h2>
-            <div class="text">{{ feature.text }}</div>
+            <h2 class="title" v-formatted-text="feature.title"></h2>
+            <div class="text" v-formatted-text="feature.text"></div>
             <div v-if="feature.link" class="action">
               <factor-link :path="feature.link.path">{{ feature.link.text }} &rarr;</factor-link>
             </div>
@@ -31,8 +25,6 @@
         </div>
       </div>
     </section>
-
-    <!-- <el-cta id="cta" /> -->
   </div>
 </template>
 
@@ -42,10 +34,8 @@ import { factorLink, factorIcon } from "@factor/ui";
 export default {
   components: {
     factorLink,
-    factorIcon,
-    sectionSplash: () => import("./splash.vue"),
-    // sectionBenefits: () => import("./figure-benefits.vue"),
-    elCta: () => import("./el-cta.vue")
+    factorIcon
+    // sectionSplash: () => import("./splash.vue")
   },
   data(this: any) {
     return {
@@ -54,45 +44,11 @@ export default {
       features: [
         {
           id: "plugins",
-          // title: `Supercharge your community with plugins.`,
-          title: `Have access to more power with plugins and extensions.`,
-          // text: `Extend your forum's functionality with our robust NodeBB plugins.`,
-          text: `NodeBB has over 500 plugins and themes to choose from. Download and install them directly from the control panel in one click.`,
+          title: `...have access to more power with plugins and extensions`,
+          text: `NodeBB has <a target="_blank" class="factor-link" href="https://www.npmjs.com/search?q=nodebb-plugin-">over 500 plugins</a> and themes to choose from. Download and install them directly from the control panel in one click.`,
           figure: () => import("./figure-plugins.vue"),
-          // link: { path: "/plugins", text: "View all plugins" },
           link: { path: "/pricing", text: "Learn more" }
         }
-        // {
-        //   id: "themes",
-        //   title: "Make your forum stand out with themes.",
-        //   text: `Choose your favorite theme from our collection of both premium and community made NodeBB themes.`,
-        //   figure: () => import("./figure-themes.vue"),
-        //   link: { path: "/themes", text: "View all themes" }
-        // }
-        // {
-        //   title: `Mentions`,
-        //   text: `Mentioning another user with "@username" will send them a notification allowing them to join the conversation instantly. You can even mention groups, handy for getting the attention of a handful of people at a time.`,
-        //   // figure: () => import("./figure-.vue"),
-        //   link: { path: "/plugins", text: "Learn more" }
-        // },
-        // {
-        //   title: `Question and Answer`,
-        //   text: `Users can post topics as a question, and then mark it as solved when their query has been answered by another community member. A new page is made available for users to easily browse all answered questions.`,
-        //   // figure: () => import("./figure-.vue"),
-        //   link: { path: "/plugins", text: "Learn more" }
-        // },
-        // {
-        //   title: `Desktop Notifications`,
-        //   text: `Receive notification alerts even while NodeBB is in the background so that you never miss a conversation important to you.`,
-        //   // figure: () => import("./figure-.vue"),
-        //   link: { path: "/plugins", text: "Learn more" }
-        // },
-        // {
-        //   title: `NS Awards`,
-        //   text: `Gamify your community by awarding users with badges and medals for contributing content, helping out other members, or simply being a role-model user.`,
-        //   // figure: () => import("./figure-.vue"),
-        //   link: { path: "/plugins", text: "Learn more" }
-        // }
       ]
     };
   },
@@ -101,18 +57,17 @@ export default {
       this.loadingButtons = false;
     }, 1000);
   },
-  methods: {},
-  metaInfo() {
-    return {
-      title: "",
-      description: ""
-    };
-  }
+  methods: {}
+  // metaInfo() {
+  //   return {
+  //     title: "",
+  //     description: ""
+  //   };
+  // }
 };
 </script>
 <style lang="less">
 .view-product-extend {
-  // overflow: hidden;
   .content-pad {
     max-width: 1100px;
     margin: 0 auto;
@@ -155,7 +110,6 @@ export default {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "a b";
       align-items: center;
-      // min-height: 80vh;
       &.even {
         .feature-content-container {
           justify-self: flex-end;
@@ -180,10 +134,9 @@ export default {
       }
       .feature-figure-container {
         grid-area: b;
-        min-width: 0; // defaults content width
+        min-width: 0;
         height: 100%;
         position: relative;
-        // width: 100%;
         display: flex;
         align-items: center;
         .figure-container {
@@ -206,10 +159,6 @@ export default {
           justify-content: center;
         }
       }
-    }
-
-    .feature-content {
-      // letter-spacing: -0.01em;
     }
     .title {
       font-weight: 700;
@@ -236,93 +185,6 @@ export default {
       }
       .text {
         font-size: 1.1em;
-      }
-    }
-  }
-
-  .quotes {
-    padding: 6rem 0 4rem;
-    .quotes-pad {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    @media (max-width: 900px) {
-      .quotes-pad {
-        grid-template-columns: 1fr;
-        article {
-          margin: 0 auto;
-          blockquote {
-            padding: 2rem 0;
-          }
-        }
-      }
-    }
-    article {
-      position: relative;
-      display: flex;
-
-      blockquote {
-        max-width: 550px;
-        padding: 2rem;
-        font-size: 1.1em;
-        line-height: 1.8;
-        background: #fff;
-
-        .quote-body {
-          padding: 2rem;
-          box-shadow: 0px 0px 3px rgba(50, 50, 93, 0.2);
-          border-radius: 6px 6px 6px 0;
-        }
-
-        .quote-media {
-          display: block;
-          text-align: center;
-          a {
-            display: block;
-            width: 40px;
-
-            img {
-              display: block;
-              width: 100%;
-              border-radius: 50%;
-            }
-          }
-        }
-        footer {
-          display: grid;
-          grid-template-columns: 1fr 6fr;
-          align-items: center;
-          margin-top: 1rem;
-          font-size: 0.8em;
-          font-weight: 500;
-          a {
-            color: inherit;
-          }
-        }
-      }
-    }
-  }
-
-  .interstitial-cta {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    border-top: 2px solid #f6f9fc;
-    margin: 60px -20px 0;
-    padding: 60px 20px 0;
-    @media (max-width: 767px) {
-      grid-template-columns: 1fr;
-    }
-    .text h2 {
-      &.title {
-        color: var(--color-primary);
-      }
-      font-size: 1.5em;
-    }
-    .buttons {
-      margin: 0 0 0 20px;
-      @media (max-width: 767px) {
-        margin: 20px 0 0 0;
       }
     }
   }

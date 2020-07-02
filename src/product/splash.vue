@@ -2,11 +2,10 @@
   <section class="product-performance">
     <div class="product-performance-inner">
       <div class="content">
-        <!-- <h3 class="page-sup">Product</h3> -->
-        <!-- <span class="page-sup">With NodeBB, you...</span> -->
+        <span class="page-sup">With NodeBB, you...</span>
         <h1 class="page-title">
-          Never worry about
-          <span>performance</span> and scalability.
+          ...will never worry about
+          <span>performance</span> and scalability
         </h1>
         <h3
           class="page-title-sub"
@@ -41,10 +40,8 @@ export default {
 <style lang="less">
 .product-performance {
   position: relative;
-  // background: #000810;
   h1.page-title {
     span {
-      // background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOTYiIGhlaWdodD0iNjQiPjxkZWZzLz48cGF0aCBmaWxsPSIjRkZCMzAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yOTQgNWwyIDItMiAyIDIgMi0zIDQgMyAzLTEgMyAxIDMtMSAyIDEgMi0zIDEgMyAzLTEgMyAxIDItMiAzIDIgNC0zIDMgMiA0IDEgMS0zIDEgMiAyLTIgMiAzIDMtNSAzLTM5LTItMzIgMWgtNDlsLTM1IDFjLTEwIDAgMy0xLTIwLTFsLTQ3IDItMTYtMS0yMyAxLTIzLTItMy0zLTMtMiAzLTItMi0zLTItMSA0LTMtMi0yIDItMi0yLTItMi0xIDMtMi0yLTMgMi0yLTEtMiAyLTItMi0yIDEtMS0zLTEgNC0yLTMtMSAyLTIgMS0xLTItMSAyLTItMy0yaDRsLTItMS0xLTIgMi0ySDFsMi0yLTItMSAzLTItMi0yIDM4LTJjNSAwLTctMSA4LTFsMzIgMSA4IDFjNSAwLTItMiA5LTJsMjMgMSAyNS0xIDM5IDEgMjQtMSA0MCAxYzE2IDAgMzEgMSA0NiA0eiIgb3BhY2l0eT0iLjIiLz48L3N2Zz4=);
       background-size: 100%;
       background-position: 50% 75%;
       background-repeat: no-repeat;
@@ -54,13 +51,9 @@ export default {
   .product-performance-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 4em;
+    grid-gap: 4rem;
     padding: 4rem 3rem 6rem;
     align-items: center;
-
-    @media (min-height: 1000px) {
-      // padding-top: 170px;
-    }
 
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
@@ -82,15 +75,12 @@ export default {
       }
 
       .page-sup {
-        margin-bottom: 1rem;
-        font-size: 1.35rem;
+        font-size: 1.5rem;
         font-weight: 300;
         font-family: var(--font-family-cursive);
         opacity: 0.9;
-      }
-      .page-title,
-      .page-title-sub {
-        // letter-spacing: -0.035em;
+        display: flex;
+        margin-bottom: 0.25rem;
       }
 
       .page-title {
@@ -98,7 +88,6 @@ export default {
         font-size: 2.5rem;
         line-height: 1.1;
         margin-bottom: 1.5rem;
-        // color: #fff;
       }
 
       .page-title-sub {
@@ -108,12 +97,6 @@ export default {
 
         font-weight: 400;
         margin-bottom: 1rem;
-        // color: var(--color-text-secondary);
-        // color: #fff;
-        // color: rgba(255, 255, 255, 0.66);
-        // a {
-        //   color: #fff;
-        // }
         .highlight {
           color: #5c84a4;
         }

@@ -9,7 +9,7 @@
         href="https://github.com/NodeBB/NodeBB"
         target="_blank"
         rel="noopener noreferrer"
-      >Github repo</a>
+      >GitHub repo</a>
     </p>
   </div>
 </template>

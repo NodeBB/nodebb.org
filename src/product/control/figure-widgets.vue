@@ -55,7 +55,7 @@ figure.widgets-figure {
     padding: 30% 0;
     width: 500px;
     position: relative;
-    transform: translateY(-4rem) scale(0.8);
+    transform: translate(6rem, -1rem) scale(0.74);
     transform-style: preserve-3d;
     perspective: 1000px;
     @media (max-width: 900px) {

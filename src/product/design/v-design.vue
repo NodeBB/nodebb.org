@@ -101,7 +101,6 @@ export default {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "a b";
       align-items: center;
-      // min-height: 80vh;
       &.even {
         .feature-content-container {
           justify-self: flex-end;
@@ -126,10 +125,9 @@ export default {
       }
       .feature-figure-container {
         grid-area: b;
-        min-width: 0; // defaults content width
+        min-width: 0;
         height: 100%;
         position: relative;
-        // width: 100%;
         display: flex;
         align-items: center;
         .figure-container {
@@ -154,9 +152,6 @@ export default {
       }
     }
 
-    .feature-content {
-      // letter-spacing: -0.01em;
-    }
     .title {
       font-weight: 700;
       font-size: 3rem;
@@ -181,69 +176,6 @@ export default {
       }
       .text {
         font-size: 1.1em;
-      }
-    }
-  }
-
-  .quotes {
-    padding: 6rem 0 4rem;
-    .quotes-pad {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    @media (max-width: 900px) {
-      .quotes-pad {
-        grid-template-columns: 1fr;
-        article {
-          margin: 0 auto;
-          blockquote {
-            padding: 2rem 0;
-          }
-        }
-      }
-    }
-    article {
-      position: relative;
-      display: flex;
-
-      blockquote {
-        max-width: 550px;
-        padding: 2rem;
-        font-size: 1.1em;
-        line-height: 1.8;
-        background: #fff;
-
-        .quote-body {
-          padding: 2rem;
-          box-shadow: 0px 0px 3px rgba(50, 50, 93, 0.2);
-          border-radius: 6px 6px 6px 0;
-        }
-
-        .quote-media {
-          display: block;
-          text-align: center;
-          a {
-            display: block;
-            width: 40px;
-
-            img {
-              display: block;
-              width: 100%;
-              border-radius: 50%;
-            }
-          }
-        }
-        footer {
-          display: grid;
-          grid-template-columns: 1fr 6fr;
-          align-items: center;
-          margin-top: 1rem;
-          font-size: 0.8em;
-          font-weight: 500;
-          a {
-            color: inherit;
-          }
-        }
       }
     }
   }

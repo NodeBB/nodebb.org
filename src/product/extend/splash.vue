@@ -2,8 +2,7 @@
   <section class="product-splash">
     <div class="product-splash-inner">
       <div class="content">
-        <!-- <h3 class="page-sup">Extend</h3> -->
-        <h1 class="page-title">Have access to more power with plugins and extensions.</h1>
+        <h1 class="page-title">...have access to more power with plugins and extensions.</h1>
         <h3
           class="page-title-sub"
         >NodeBB has over 500 plugins and themes to choose from. Download and install them directly from the control panel in one click.</h3>
@@ -14,7 +13,7 @@
       </div>
 
       <div class="figure-container">
-        <!-- <splash-figure /> -->
+        <splash-figure />
       </div>
     </div>
   </section>
@@ -71,10 +70,6 @@ export default {
         color: var(--color-text-secondary);
         margin-bottom: 1rem;
       }
-      .page-title,
-      .page-title-sub {
-        // letter-spacing: -0.035em;
-      }
 
       .page-title {
         font-weight: 700;
@@ -87,7 +82,6 @@ export default {
         margin-top: 2rem;
         font-size: 1.4rem;
         font-weight: 400;
-        // color: var(--color-text-secondary);
         margin-bottom: 1.5rem;
         .highlight {
           color: #5c84a4;
@@ -113,7 +107,7 @@ export default {
           font-size: 2.5rem;
         }
         .page-title-sub {
-          font-size: 1.5em;
+          font-size: 1.5rem;
         }
 
         .actions {
@@ -126,11 +120,11 @@ export default {
         justify-self: center;
         max-width: 100%;
         .page-title {
-          font-size: 2.6rem;
+          font-size: 2rem;
           line-height: 1.2;
         }
         .page-title-sub {
-          font-size: 1.4em;
+          font-size: 1.5rem;
           line-height: 1.4;
         }
 

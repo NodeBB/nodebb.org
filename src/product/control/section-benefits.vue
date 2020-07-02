@@ -20,11 +20,6 @@ export default {
     return {
       img,
       features: [
-        // {
-        //   icon: "analytic-dashboard",
-        //   title: "Real-time analytics dashboard",
-        //   text: `Be in control with access to trending content, user activity, and other forum metrics. See what your users are doing with via NodeBB's real-time graphs. Create custom reports for virtually any action a user does, with APIs available to export into your favourite analytics software.`
-        // },
         {
           icon: "moderating",
           title: "Moderation",
@@ -36,11 +31,6 @@ export default {
           text:
             "Tweak your forum's design to your heart's content. Don't worry - if something goes wrong, reverting is a snap. You can even include scripts from third party vendors such as Google Analytics."
         },
-        // {
-        //   icon: "code",
-        //   title: "Drag-and-drop widgets",
-        //   text: `Add new functionality to your forum via the widgets system. You can add new content via an HTML widget or customize your forum's presentation with over a dozen other widgets by dragging and dropping it onto a widget area on your forum.`
-        // },
         {
           icon: "apis",
           title: "API",
@@ -48,7 +38,7 @@ export default {
         },
         {
           icon: "spam-prevention",
-          title: "Spam prevention",
+          title: "Spam Prevention",
           text: `NodeBB integrates with several spam prevention tools including Akismet, StopForumSpam, and Project Honeypot.`
         }
       ]
@@ -80,10 +70,6 @@ export default {
       position: relative;
       padding: 2rem;
       border-radius: 0.5rem;
-      /* background-color: rgba(219, 230, 251, 0.15); */
-      /* background-image: linear-gradient(45deg, #f6fafd 0%, #ffffff00 50%); */
-      // box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.02),
-      //   inset 0 0 0 1px rgba(34, 34, 34, 0.07);
       @media (max-width: 900px) {
         padding: 1rem 0rem;
       }

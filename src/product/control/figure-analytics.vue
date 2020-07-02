@@ -61,7 +61,7 @@ figure.analytics-figure {
     padding: 30% 0;
     width: 500px;
     position: relative;
-    transform: translate(7rem, -5rem) scale(0.84);
+    transform: translate(-3rem, -5rem) scale(0.74);
     transform-style: preserve-3d;
     perspective: 1024px;
     @media (max-width: 900px) {

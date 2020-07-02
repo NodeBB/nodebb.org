@@ -2,7 +2,7 @@
   <section class="product-splash">
     <div class="product-splash-inner">
       <div class="content">
-        <h1 class="page-title">Enable great conversation and community interaction.</h1>
+        <h1 class="page-title">...enable great conversation and community interaction.</h1>
       </div>
     </div>
   </section>
@@ -26,7 +26,7 @@ export default {
     display: grid;
     grid-template-columns: auto;
     grid-gap: 4em;
-    padding: 8rem 3rem 2rem;
+    padding: 8rem 3rem 1rem;
     align-items: center;
 
     @media (min-height: 1000px) {
