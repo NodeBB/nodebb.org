@@ -2,7 +2,7 @@
   <div class="pricing-open">
     <div class="header">
       <home-icon icon="model-open" />
-      <h2 class="title">Open source</h2>
+      <h2 class="title">Open Source</h2>
       <div
         class="sub"
       >NodeBB is open source software that is free for anyone to download and install on their own server under the terms of the GNU General Public Licence (GPLv3).</div>

@@ -3,7 +3,7 @@
     <ul class="features-list">
       <li class="feature-block">
         <home-icon icon="user-created-groups" />
-        <h3 class="title">User-created groups</h3>
+        <h3 class="title">User-created Groups</h3>
         <p
           class="text"
         >Keep your users engaged and connected with each other via groups. Each group page has an activity feed and plugins can extend functionality with features such as a calendar and a photo gallery.</p>
@@ -19,7 +19,7 @@
 
       <li class="feature-block">
         <home-icon icon="advanced-search" />
-        <h3 class="title">Advanced search</h3>
+        <h3 class="title">Advanced Search</h3>
         <p
           class="text"
         >Find the content you're looking for with the help of several search filters designed to fine-tune your search results.</p>
@@ -27,7 +27,7 @@
 
       <li class="feature-block">
         <home-icon icon="roles-permissions" />
-        <h3 class="title">Roles &amp; permissions</h3>
+        <h3 class="title">Roles &amp; Permissions</h3>
         <p
           class="text"
         >Grant privileges to individual users or groups, allowing you to create read-only categories or hide them altogether. Give forum members elevated roles such as "Moderator" to allow them to help police your community.</p>

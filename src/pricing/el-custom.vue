@@ -2,7 +2,7 @@
   <div class="pricing-custom">
     <div class="header">
       <home-icon icon="model-custom" />
-      <h2 class="title">Custom solutions</h2>
+      <h2 class="title">Custom Solutions</h2>
       <div
         class="sub"
       >Custom enterprise packages for larger businesses and organizations. We will work closely with you to create the perfect solution.</div>
@@ -133,12 +133,9 @@ export default {
     color: #fff;
   }
   .sub {
-    // color: var(--color-text-secondary);
-    // color: #5534a7;
     color: #a0a6c3;
     font-size: 1.25rem;
     font-weight: 400;
-    // opacity: 0.72;
   }
   .figure {
     justify-self: center;

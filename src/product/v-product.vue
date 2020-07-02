@@ -20,7 +20,6 @@ export default {
     factorLink,
     factorIcon,
     sectionProductSplash: () => import("./splash.vue"),
-    sectionBenefits: () => import("./section-benefits.vue"),
     sectionControl: () => import("./control/v-control.vue"),
     sectionDesign: () => import("./design/v-design.vue"),
     sectionExtend: () => import("./extend/v-extend.vue"),

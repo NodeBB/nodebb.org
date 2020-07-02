@@ -4,7 +4,7 @@
       <section class="pricing-splash">
         <div class="pricing-splash-inner">
           <div class="content">
-            <h1 class="page-title">Plans and pricing</h1>
+            <h1 class="page-title">Plans &amp; Pricing</h1>
             <h3
               class="page-title-sub"
             >Thousands of organizations big and small power their communities with NodeBB. From free self-service to full customization, we have the perfect forum solution for you:</h3>

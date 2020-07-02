@@ -3,8 +3,7 @@
     <div class="max-w-xl">
       <div class="header">
         <home-icon icon="model-instant" />
-
-        <h1>Instant hosting</h1>
+        <h1>Instant Hosting</h1>
         <p
           class="text-lg font-normal mb-10"
         >The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us.</p>
@@ -1041,7 +1040,6 @@ export default {
           text-transform: uppercase;
           font-weight: 600;
           color: var(--color-primary);
-          // color: #1952be;
           z-index: 0;
           margin-right: -1em;
           .has-content {
@@ -1072,7 +1070,6 @@ export default {
           box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1),
             0 5px 15px 0 rgba(0, 0, 0, 0.07);
           transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-          // background: #f6fafd;
 
           &:not(:first-child),
           &:not(:last-child) {
@@ -1109,9 +1106,6 @@ export default {
               }
             }
             .row:last-child {
-              // background: #bfe5e1;
-              // background: rgba(191, 229, 225, 0.3);
-
               button {
                 background: #1a1f36;
                 box-shadow: 0 0 0 1px #1a1f36;
@@ -1130,7 +1124,6 @@ export default {
             font-size: 2rem;
           }
           .row {
-            // border-bottom: 1px solid #e3e8ee;
             transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
             &:nth-child(2) {
               font-size: 1.75rem;
@@ -1154,8 +1147,6 @@ export default {
           .row:first-child {
             font-size: 0.9rem;
             text-transform: uppercase;
-            // background: var(--color-bg-splash);
-            // color: #fff;
             font-weight: 700;
             border-bottom-color: transparent;
             border-bottom-style: solid;
@@ -1167,17 +1158,12 @@ export default {
             bottom: 0;
             left: 0;
             width: 100%;
-            //padding: 8px 10px;
             height: auto;
             transform: translateY(50%);
             opacity: 1;
-
             border: none;
             position: relative;
             transform: translate(0);
-
-            // background: var(--color-primary, #0471ff);
-            // color: #fff;
             a {
               button {
                 color: #fff;

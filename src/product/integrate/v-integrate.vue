@@ -1,6 +1,6 @@
 <template>
   <div class="view-product-integrate">
-    <section
+    <!-- <section
       v-for="(feature, index) in features"
       :id="feature.id"
       :key="index"
@@ -24,7 +24,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <section class="plugins-gallery-section content-pad">
       <section-integrate />
@@ -39,7 +39,7 @@ export default {
   components: {
     factorLink,
     factorIcon,
-    sectionSplash: () => import("./splash.vue"),
+    // sectionSplash: () => import("./splash.vue"),
     sectionIntegrate: () => import("./figure-integrations.vue")
   },
   data(this: any) {
@@ -108,7 +108,6 @@ export default {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "a b";
       align-items: center;
-      // min-height: 80vh;
       &.even {
         .feature-content-container {
           justify-self: flex-end;
@@ -133,10 +132,9 @@ export default {
       }
       .feature-figure-container {
         grid-area: b;
-        min-width: 0; // defaults content width
+        min-width: 0;
         height: 100%;
         position: relative;
-        // width: 100%;
         display: flex;
         align-items: center;
         .figure-container {
@@ -159,9 +157,6 @@ export default {
           justify-content: center;
         }
       }
-    }
-    .feature-content {
-      // letter-spacing: -0.01em;
     }
     .title {
       font-weight: 700;
