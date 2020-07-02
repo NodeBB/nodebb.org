@@ -2,13 +2,11 @@
   <div class="nodebb-benefits">
     <header class="section-header">
       <h1 class="title">Why NodeBB?</h1>
-      <!-- <p class="text"></p> -->
     </header>
 
     <ul class="features-list">
       <li class="feature-block">
         <home-icon icon="mobile-responsive" />
-        <!-- <h5 class="suptitle">Responsive</h5> -->
         <h3 class="title">Mobile-first responsive</h3>
         <p
           class="text"
@@ -17,14 +15,12 @@
 
       <li class="feature-block">
         <home-icon icon="international" />
-        <!-- <h5 class="suptitle">i18n</h5> -->
         <h3 class="title">Internationalization</h3>
         <p class="text">Built-in localization support with over 50 languages actively translated.</p>
       </li>
 
       <li class="feature-block">
         <home-icon icon="searching" />
-        <!-- <h5 class="suptitle">SEO</h5> -->
         <h3 class="title">Search optimized</h3>
         <p
           class="text"
@@ -33,7 +29,6 @@
 
       <li class="feature-block">
         <home-icon icon="sai" />
-        <!-- <h5 class="suptitle">SSO</h5> -->
         <h3 class="title">Social authentication integration</h3>
         <p
           class="text"
@@ -42,7 +37,6 @@
 
       <li class="feature-block">
         <home-icon icon="streaming" />
-        <!-- <h5 class="suptitle">Live</h5> -->
         <h3 class="title">Real-time streaming</h3>
         <p
           class="text"
@@ -51,7 +45,6 @@
 
       <li class="feature-block">
         <home-icon icon="lytics" />
-        <!-- <h5 class="suptitle">Stats</h5> -->
         <h3 class="title">Native analytics</h3>
         <p
           class="text"
@@ -59,7 +52,6 @@
       </li>
     </ul>
 
-    <!-- cta -->
     <div class="interstitial-cta">
       <div class="text">
         <h2 class="title">Grow your community</h2>
@@ -89,11 +81,6 @@ export default {
 .nodebb-benefits {
   position: relative;
   margin-top: 4rem;
-
-  // @media (max-width: 767px) {
-  //   padding-bottom: 80px;
-  // }
-
   .section-header {
     font-size: 1rem;
     text-align: center;
@@ -115,7 +102,7 @@ export default {
     .text {
       margin-top: 20px;
       font-weight: 400;
-      font-size: 1.4em;
+      font-size: 1.4rem;
       line-height: 1.6;
     }
     @media (max-width: 767px) {
@@ -133,20 +120,13 @@ export default {
     }
     .feature-block {
       position: relative;
-      .suptitle {
-        margin-bottom: 0.5rem;
-        // font-family: var(--font-family-cursive);
-        font-size: 1.5rem;
-        opacity: 0.38;
-      }
       .title {
         font-weight: 700;
         font-size: 1.4rem;
         line-height: 1.95rem;
       }
       .text {
-        // font-size: 1.15rem;
-        font-size: 1rem;
+        font-size: 1.15rem;
         line-height: 1.7rem;
         font-weight: 400;
       }

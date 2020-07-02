@@ -29,9 +29,9 @@
               <span class="rating-value" itemprop="ratingValue">5</span>
             </div>
             <div class="quote-media">
-              <a class="quote-image" href="#">
+              <div class="quote-image">
                 <img :src="quote.img" alt="quote" />
-              </a>
+              </div>
               <a
                 class="quote-image quote-company"
                 target="_blank"
@@ -176,17 +176,6 @@ export default {
         }
       }
     }
-    .quote-image {
-      &.quote-company {
-        width: 28px;
-        position: absolute;
-        right: -0.5rem;
-        bottom: 0;
-        background: #fff;
-        border: 0.175rem solid #fff;
-        opacity: 1;
-      }
-    }
     article {
       position: relative;
       display: flex;
@@ -236,15 +225,28 @@ export default {
           float: left;
           position: relative;
 
-          a {
-            display: block;
-            width: 70px;
-            border-radius: 999rem;
-            overflow: hidden;
-            position: relative;
-            img {
+          .quote-image {
+            &:not(.quote-company) {
               display: block;
-              width: 100%;
+              width: 70px;
+              border-radius: 999rem;
+              overflow: hidden;
+              position: relative;
+              img {
+                display: block;
+                width: 100%;
+              }
+            }
+            &.quote-company {
+              width: 32px;
+              position: absolute;
+              right: -0.5rem;
+              border-radius: 999rem;
+              bottom: 0;
+              background: #fff;
+              border: 0.175rem solid #fff;
+              opacity: 1;
+              overflow: hidden;
             }
           }
         }
