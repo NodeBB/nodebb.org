@@ -5,9 +5,14 @@
         <h2 class="title">{{ title }}</h2>
         <div class="sub">{{ text }}</div>
       </div>
-      <!-- <div class="action">
-        <factor-link btn="default" path="/plugins">Browse All &rarr;</factor-link>
-      </div>-->
+      <div class="action">
+        <factor-link
+          btn="default"
+          target="_blank"
+          rel="noopener"
+          path="https://www.npmjs.com/search?q=nodebb-plugin-"
+        >Browse All &rarr;</factor-link>
+      </div>
     </div>
 
     <factor-spinner v-if="loading" />
@@ -161,6 +166,9 @@ export default {
     align-items: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    .text {
+      margin-right: 1rem;
+    }
     .title {
       font-weight: 700;
       font-size: 2rem;
@@ -234,22 +242,6 @@ export default {
         opacity: 1;
       }
     }
-    // &:nth-child(1) {
-    //   .plugin-icon {
-    //     background: #611f69;
-    //   }
-    // }
-    // &:nth-child(2) {
-    //   .plugin-icon {
-    //     background: #000;
-    //   }
-    // }
-    // &:nth-child(5) {
-    //   .plugin-icon {
-    //     background: #135e96;
-    //   }
-    // }
-
     .plugin-icon {
       width: 64px;
       height: 64px;
@@ -274,7 +266,6 @@ export default {
         background: #135e96;
       }
       svg {
-        // height: 48px;
         margin: 0 auto;
         padding: 0.5rem;
         transform: translateY(-50%) scale(1.2);
@@ -298,8 +289,10 @@ export default {
       /* height: 4.5rem; */
       text-overflow: -o-ellipsis-lastline;
       /* overflow: hidden; */
-      font-size: 0.9rem;
       // color: var(--color-text-secondary);
+
+      font-size: 1rem;
+      font-weight: 300;
     }
   }
 }

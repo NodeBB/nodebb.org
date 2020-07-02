@@ -32,7 +32,12 @@
               <a class="quote-image" href="#">
                 <img :src="quote.img" alt="quote" />
               </a>
-              <a class="quote-image company" target="_blank" href="#">
+              <a
+                class="quote-image quote-company"
+                target="_blank"
+                rel="noopener"
+                :href="quote.companylink"
+              >
                 <img :src="quote.company" alt="quote" />
               </a>
             </div>
@@ -154,6 +159,7 @@ export default {
     @media (max-width: 900px) {
       .quotes-pad {
         grid-template-columns: 1fr;
+        grid-gap: 0;
         article:nth-child(odd),
         article:nth-child(even) {
           transform: none;
@@ -171,7 +177,7 @@ export default {
       }
     }
     .quote-image {
-      &.company {
+      &.quote-company {
         width: 28px;
         position: absolute;
         right: -0.5rem;

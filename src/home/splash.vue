@@ -82,10 +82,11 @@ export default {
       }
 
       .page-title-sub {
-        font-size: 1.35rem;
+        margin-top: 2rem;
+        font-size: 1.4rem;
         line-height: 1.6;
-        margin-bottom: 1.5rem;
-        opacity: 0.9;
+        font-weight: 400;
+        margin-bottom: 1rem;
         .highlight {
           color: #5c84a4;
         }

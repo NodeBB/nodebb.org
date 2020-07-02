@@ -92,6 +92,9 @@ export default {
     &.content {
       &.last {
         box-shadow: none;
+        @media (max-width: 900px) {
+          padding: 2rem 0 1.5rem;
+        }
       }
       &:not(.last) {
         --bg-opacity: 1;

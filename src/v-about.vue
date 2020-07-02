@@ -36,13 +36,14 @@ export default {
     };
   },
   created: function() {},
+  methods: { setting },
   metaInfo() {
     return {
-      title: "About NodeBB",
-      description: ""
+      title: "Forum software for today's web - About NodeBB",
+      description:
+        "Community forum software for today's web: flexible, scalable and user-friendly."
     };
-  },
-  methods: { setting }
+  }
 };
 </script>
 <style lang="less">

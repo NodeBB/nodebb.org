@@ -65,7 +65,7 @@ figure.plugins-graph {
     }
     @media (max-width: 900px) {
       width: 500px;
-      transform: translate(-4.25rem, -3rem) scale(0.68);
+      transform: translate(-4.25rem, -1.85rem) scale(0.64);
     }
 
     .plugins-wrap {

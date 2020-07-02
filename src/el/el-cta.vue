@@ -17,14 +17,14 @@ export default {
   props: {
     offset: { type: Boolean, default: false },
     title: { type: String, default: "" },
-    subtitle: { type: String, default: "" },
+    subtitle: { type: String, default: "" }
   },
   computed: {
-    offsetCTA: function (this: any) {
-      return this.offset ? "offset-top" : ""
-    },
-  },
-}
+    offsetCTA: function(this: any) {
+      return this.offset ? "offset-top" : "";
+    }
+  }
+};
 </script>
 
 <style lang="less">
@@ -41,9 +41,7 @@ export default {
     grid-gap: 2em;
     padding: 3em;
     align-items: center;
-    border-radius: 4px;
-    //background: #0471ff;
-    //background-image: url("../img/dot-light.svg");
+    border-radius: 0.25rem;
     background: url("../img/dot-light.svg"),
       linear-gradient(120deg, #0471ff 0, #076bed 50%);
 

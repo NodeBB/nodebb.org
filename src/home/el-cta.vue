@@ -111,10 +111,13 @@ export default {
     font-size: 1.25rem;
   }
   .text {
-    line-height: 1.5;
     margin: 2rem 0;
+    font-size: 1.4rem;
+    line-height: 1.6;
     font-weight: 400;
-    opacity: 0.82;
+
+    margin: 2rem auto 2.5rem;
+    max-width: 600px;
   }
   .action {
     font-weight: 500;
