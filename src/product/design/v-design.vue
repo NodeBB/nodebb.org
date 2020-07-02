@@ -1,58 +1,28 @@
 <template>
   <div class="view-product-design">
     <section-splash />
-
-    <!-- <section
-      v-for="(feature, index) in features"
-      :id="feature.id"
-      :key="index"
-      class="features content"
-      :data-test="`feature-` + index"
-      :class="[index == features.length - 1 ? 'last' : '']"
-    >
-      <div class="split-feature" :class="[index % 2 == 0 ? 'even' : 'odd']">
-        <div class="feature-figure-container">
-          <div v-if="feature.figure" class="figure-container">
-            <component :is="feature.figure" />
-          </div>
-        </div>
-        <div class="feature-content-container">
-          <div class="feature-content">
-            <h2 class="title">{{ feature.title }}</h2>
-            <div class="text">{{ feature.text }}</div>
-
-            <div class="text">{{ feature.text }}</div>
-            <div v-if="feature.link" class="action">
-              <factor-link :path="feature.link.path">{{ feature.link.text }} &rarr;</factor-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
   </div>
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
+import { factorLink, factorIcon } from "@factor/ui"
 
 export default {
   components: {
     factorLink,
     factorIcon,
-    sectionSplash: () => import("./splash.vue"),
-    sectionBenefits: () => import("./section-benefits.vue"),
-    elCta: () => import("./el-cta.vue")
+    sectionSplash: () => import("./splash.vue")
   },
   data(this: any) {
     return {
       loading: true,
       loadingButtons: true
-    };
+    }
   },
   mounted(this: any) {
     setTimeout(() => {
-      this.loadingButtons = false;
-    }, 1000);
+      this.loadingButtons = false
+    }, 1000)
   },
   methods: {}
   // metaInfo() {
@@ -61,7 +31,7 @@ export default {
   //     description: ""
   //   };
   // }
-};
+}
 </script>
 <style lang="less">
 .view-product-design {

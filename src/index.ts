@@ -1,5 +1,5 @@
 import { addFilter, setting, addRoutes } from "@factor/api"
-import { addPageTemplate } from "@factor/templates"
+// import { addPageTemplate } from "@factor/templates"
 import "./extend"
 
 

@@ -25,33 +25,27 @@ export default {
         {
           img: require("../img/view-responsive-mobile.svg")
         }
-        // {
-        //   img: require("../img/theme-convoe.svg")
-        // },
-        // {
-        //   img: require("../img/theme-convoe-alt.svg")
-        // }
       ]
-    };
+    }
   },
   computed: {
     scale(this: any) {
-      return Math.max(Math.min(this.width / 500, 1), 0.5);
+      return Math.max(Math.min(this.width / 500, 1), 0.5)
     }
   },
   mounted(this: any) {
-    this.width = this.getWidth();
+    this.width = this.getWidth()
 
     window.addEventListener("resize", () => {
-      this.width = this.getWidth();
-    });
+      this.width = this.getWidth()
+    })
   },
   methods: {
     getWidth(this: any) {
-      return this.$refs.wrapper ? this.$refs.wrapper.clientWidth : 100;
+      return this.$refs.wrapper ? this.$refs.wrapper.clientWidth : 100
     }
   }
-};
+}
 </script>
 
 <style lang="less">
@@ -64,15 +58,13 @@ figure.responsive-graph {
     padding: 30% 0;
     width: 700px;
     position: relative;
-    transform: translateX(-1.25rem) translateY(-12rem) translateZ(12rem)
-      scale(0.68);
+    transform: translateX(-1.25rem) translateY(-12rem) translateZ(12rem) scale(0.68);
     perspective: 1000px;
     @media (max-width: 1200px) {
       padding: 30% 0;
       width: 600px;
       position: relative;
-      transform: translateX(-4.25rem) translateY(-12rem) translateZ(12rem)
-        scale(0.6);
+      transform: translateX(-4.25rem) translateY(-12rem) translateZ(12rem) scale(0.6);
       perspective: 900px;
     }
     @media (max-width: 900px) {

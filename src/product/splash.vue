@@ -27,14 +27,14 @@
 </template>
 
 <script lang="ts">
-import { factorLink } from "@factor/ui";
+import { factorLink } from "@factor/ui"
 
 export default {
   components: {
     factorLink,
     splashFigure: () => import("./figure-splash.vue")
   }
-};
+}
 </script>
 
 <style lang="less">
@@ -58,7 +58,7 @@ export default {
     @media (max-width: 900px) {
       grid-template-columns: 1fr;
       text-align: left;
-      padding: 3rem 0 0;
+      padding: 2rem 0 0;
     }
     .figure-container {
       min-width: 0;
