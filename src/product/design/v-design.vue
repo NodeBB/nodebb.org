@@ -54,13 +54,13 @@ export default {
       this.loadingButtons = false;
     }, 1000);
   },
-  methods: {},
-  metaInfo() {
-    return {
-      title: "Mobile-first and reatime interactions",
-      description: "Mobile responsive design with real-time interactions."
-    };
-  }
+  methods: {}
+  // metaInfo() {
+  //   return {
+  //     title: "",
+  //     description: ""
+  //   };
+  // }
 };
 </script>
 <style lang="less">

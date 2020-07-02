@@ -41,9 +41,9 @@ export default {
   },
   metaInfo() {
     return {
-      title: "Plans and Pricing - NodeBB",
+      title: "Forum software plans & pricing - NodeBB",
       description:
-        "The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us."
+        "Get the forum software package that works for you. NodeBB provides hosting, support and development for your community forum."
     };
   }
 };

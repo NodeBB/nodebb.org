@@ -22,19 +22,19 @@ export default {
       features: [
         {
           icon: "key",
-          title: "Single sign-on",
+          title: "Single Sign-On",
           text:
             "Users can register using over 30 services including Google, Facebook, LinkedIn, and Twitter."
         },
         {
           icon: "search",
-          title: "Advanced search",
+          title: "Advanced Search",
           text:
             "Find the content you're looking for with the help of several search filters designed to fine-tune your search results."
         },
         {
           icon: "spam",
-          title: "Spam prevention",
+          title: "Spam Prevention",
           text:
             "NodeBB integrates with several spam prevention tools including Akismet, StopForumSpam, and Project Honeypot."
         },
@@ -46,7 +46,7 @@ export default {
         },
         {
           icon: "roles",
-          title: "Roles & permissions",
+          title: "Roles & Permissions",
           text:
             "Create private or read-only categories with access control. Give users or groups special roles to view or moderate content."
         },

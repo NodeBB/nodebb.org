@@ -42,9 +42,9 @@ export default {
   methods: {},
   metaInfo() {
     return {
-      title: "Product - NodeBB",
+      title: "Forum software features - NodeBB",
       description:
-        "NodeBB Forum Software - A better community platform for the modern web. NodeBB is a next generation forum software that's free and easy to use."
+        "Enable great conversation with full-featured forum software. NodeBB is a high performance, responsive, real-time platform."
     };
   }
 };

@@ -78,13 +78,13 @@ export default {
       this.loadingButtons = false;
     }, 1000);
   },
-  methods: {},
-  metaInfo() {
-    return {
-      title: "",
-      description: ""
-    };
-  }
+  methods: {}
+  // metaInfo() {
+  //   return {
+  //     title: "",
+  //     description: ""
+  //   };
+  // }
 };
 </script>
 <style lang="less">
