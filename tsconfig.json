@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true,
+    "target": "ES2018",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "paths": {
+      "__CWD__/*": [
+        "test/modules/alias/*"
+      ],
+      "__SRC__/*": [
+        "test/modules/alias/*"
+      ],
+      "__FIND__/*": [
+        "test/modules/alias/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "**/dist",
+    "cypress",
+    "reports",
+    "coverage",
+    "**/iconfont.js",
+    "**/.ref*",
+    "**/create-factor-app/*"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "video": false,
+  "env": {
+    "url": "https://2020.nodebb.org/",
+    "username": "nodebb",
+    "password": ""
+  },
+  "blacklistHosts": [
+    "*google-analytics.com",
+    "*googletagmanager.com",
+    "*ads-twitter.com",
+    "*facebook.net",
+    "*facebook.com"
+  ]
+}

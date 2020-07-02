@@ -1,0 +1,15 @@
+{
+  "out": "@apps/factor/api",
+  "name": "Documentation for API folder",
+  "exclude": "**/*.d.ts",
+  "excludePrivate": true,
+  "mode": "file",
+  "src": [
+    "@factor/api"
+  ],
+  "ignoreCompilerErrors": true,
+  "excludeNotExported": true,
+  "excludeExternals": true,
+  "stripInternal": true,
+  "readme": "none"
+}

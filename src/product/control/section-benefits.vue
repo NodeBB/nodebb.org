@@ -2,7 +2,7 @@
   <div class="nodebb-product-benefits">
     <ul class="features-list">
       <li v-for="(feature, i) in features" :key="i" class="feature-block">
-        <home-icon :icon="feature.icon" />
+        <home-icon :icon="feature.icon" :alt="feature.title" />
         <h3 class="title">{{ feature.title }}</h3>
         <p class="text">{{ feature.text }}</p>
       </li>
@@ -50,20 +50,16 @@ export default {
 .nodebb-product-benefits {
   position: relative;
 
-  @media (max-width: 767px) {
-    padding-bottom: 80px;
-  }
-
   .features-list {
     font-size: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
     list-style: none;
-    @media (max-width: 900px) {
-      grid-template-columns: 1fr;
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr 1fr;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 900px) {
       grid-template-columns: 1fr;
     }
     .feature-block {
