@@ -31,6 +31,7 @@
     "@factor/plugin-seo": "^1.7.8",
     "@factor/plugin-sitemap": "^1.6.0",
     "@factor/plugin-tailwind": "^1.6.0",
+    "@factor/plugin-docs-engine": "^1.0.0",
     "@types/memory-cache": "^0.2.0",
     "memory-cache": "^0.2.0",
     "node-cache": "^5.1.0"

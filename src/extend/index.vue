@@ -13,11 +13,15 @@
         <extension-sidebar :index-data="extensionIndex" />
       </div>
       <!-- <div class="coming-soon">
-        <div class="title">Coming soon 👋</div>
-        <div class="sub-title">NodeBB Plugins will launch early June, 2020</div>
+        <div class="title">Coming soon...</div>
+        <div class="sub-title">NodeBB Plugins will launch early August, 2020</div>
 
         <div class="actions">
-          <factor-link btn="primary" path="/signin?newAccount">Create an account &rarr;</factor-link>
+          <factor-link
+            btn="primary"
+            target="_blank"
+            path="https://manage.nodebb.org/register"
+          >Create an account &rarr;</factor-link>
           <span class="cta-tag">for early access.</span>
         </div>
       </div>-->
@@ -32,9 +36,9 @@
 </template>
 
 <script lang="ts">
-import { isLoggedIn } from "@factor/user";
-import { stored } from "@factor/api";
-import { factorSpinner } from "@factor/ui";
+import { isLoggedIn } from "@factor/user"
+import { stored } from "@factor/api"
+import { factorLink, factorSpinner } from "@factor/ui"
 import {
   postType,
   titleFromPackage,
@@ -42,11 +46,12 @@ import {
   extensionPermalink,
   extensionImage,
   getAuthors
-} from "./util";
+} from "./util"
 
-import { requestIndex } from "./request";
+import { requestIndex } from "./request"
 export default {
   components: {
+    factorLink,
     callToAction: () => import("./el/cta.vue"),
     pluginGrid: () => import("./grid-plugin.vue"),
     themeGrid: () => import("./grid-theme.vue"),
@@ -56,57 +61,57 @@ export default {
     return {
       loading: false,
       getData: ""
-    };
+    }
   },
   serverPrefetch() {
-    return this.getPosts();
+    return this.getPosts()
   },
   computed: {
     isLoggedIn,
     extensions(this: any) {
-      const storeKey = [postType, this.extensionType].join("");
-      const index = stored(storeKey) || {};
-      return index.posts ?? [];
+      const storeKey = [postType, this.extensionType].join("")
+      const index = stored(storeKey) || {}
+      return index.posts ?? []
     },
     extensionType(this: any) {
-      return this.$route.path.includes("theme") ? "theme" : "plugin";
+      return this.$route.path.includes("theme") ? "theme" : "plugin"
     },
     describe(this: any) {
       if (this.extensionType == "plugin") {
         return {
           title: "NodeBB Plugins",
           description: "Add new features to your community in seconds."
-        };
+        }
       } else {
         return {
           title: "NodeBB Themes",
           description:
             "Pick a professionally designed theme for your community and get started."
-        };
+        }
       }
     }
   },
   watch: {
     $route: {
       handler: function(this: any) {
-        this.getPosts();
+        this.getPosts()
       }
     }
   },
 
   mounted() {
     if (this.extensions.length == 0) {
-      this.getPosts();
+      this.getPosts()
     }
   },
 
   methods: {
     async getPosts(this: any) {
-      this.loading = true;
+      this.loading = true
 
-      await requestIndex({ extensionType: this.extensionType });
+      await requestIndex({ extensionType: this.extensionType })
 
-      this.loading = false;
+      this.loading = false
     },
     titleFromPackage,
     formatDownloads,
@@ -115,9 +120,9 @@ export default {
     getAuthors
   },
   metaInfo() {
-    return this.describe;
+    return this.describe
   }
-};
+}
 </script>
 <style lang="less">
 .extend-container {

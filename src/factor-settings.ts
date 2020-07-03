@@ -1,4 +1,11 @@
+
+import docNav from "./@docs/_nav"
+import injectedComponents from "./@docs/_components"
 export default {
+  docsEngine: {
+    nav: docNav,
+    components: injectedComponents,
+  },
   headTags: {
     // font: `<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />`,
   },

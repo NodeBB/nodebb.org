@@ -38,7 +38,35 @@ addRoutes({
       {
         path: "/about",
         component: (): Promise<any> => import("./v-about.vue"),
-      }
+      },
+      {
+        path: `/themes`,
+        component: (): Promise<any> => import("./extend/wrap.vue"),
+        children: [
+          {
+            path: `/`,
+            component: (): Promise<any> => import("./extend/index.vue"),
+          },
+          {
+            path: `/theme/:permalink`,
+            component: (): Promise<any> => import("./extend/single.vue"),
+          },
+        ],
+      },
+      {
+        path: `/plugins`,
+        component: (): Promise<any> => import("./extend/wrap.vue"),
+        children: [
+          {
+            path: `/`,
+            component: (): Promise<any> => import("./extend/index.vue"),
+          },
+          {
+            path: `/plugin/:permalink`,
+            component: (): Promise<any> => import("./extend/single.vue"),
+          },
+        ],
+      },
     ]
   },
 })

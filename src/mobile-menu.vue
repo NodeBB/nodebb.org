@@ -23,6 +23,8 @@
                 v-else
                 class="menu-link primary-doc-link"
                 :path="item.path"
+                :target="item.target"
+                :rel="item.rel"
                 :event="item.event"
               >
                 <span v-if="item.name" v-formatted-text="item.name" />
@@ -35,10 +37,10 @@
   </div>
 </template>
 <script lang="ts">
-import { factorLink } from "@factor/ui";
-import { toLabel, emitEvent } from "@factor/api";
+import { factorLink } from "@factor/ui"
+import { toLabel, emitEvent } from "@factor/api"
 
-import { isLoggedIn } from "@factor/user";
+import { isLoggedIn } from "@factor/user"
 export default {
   components: {
     factorLink,
@@ -48,7 +50,7 @@ export default {
     return {
       menus: {},
       activeMenu: { docs: true, pages: true }
-    };
+    }
   },
   computed: {},
   mounted() {
@@ -100,26 +102,26 @@ export default {
           { component: () => import("./el/github-stars.vue") }
         ]
       }
-    ];
+    ]
   },
   methods: {
     filteredMenu(items: any) {
       return items.filter(item => {
-        const condition = item.condition ? item.condition() : true;
+        const condition = item.condition ? item.condition() : true
 
-        return condition;
-      });
+        return condition
+      })
     },
     toLabel,
     clickLink(this: any) {
-      emitEvent("reset-ui");
+      emitEvent("reset-ui")
     },
     toggleMenuArea(this: any, area: string) {
-      const newValue = this.activeMenu[area] ? false : true;
-      this.$set(this.activeMenu, area, newValue);
+      const newValue = this.activeMenu[area] ? false : true
+      this.$set(this.activeMenu, area, newValue)
     }
   }
-};
+}
 </script>
 <style lang="less">
 .mobile-menu {
@@ -141,8 +143,8 @@ export default {
     width: 100%;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 0 1px rgba(136, 152, 170, 0.1),
-      0 15px 35px 0 rgba(49, 49, 93, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0 0 1px rgba(136, 152, 170, 0.1), 0 15px 35px 0 rgba(49, 49, 93, 0.1),
+      0 5px 15px 0 rgba(0, 0, 0, 0.08);
 
     .menu-panel-pad {
       padding: 1rem 1.5rem;

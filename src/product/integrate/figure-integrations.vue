@@ -5,14 +5,6 @@
         <h2 class="title">{{ title }}</h2>
         <div class="sub">{{ text }}</div>
       </div>
-      <div class="action">
-        <factor-link
-          btn="default"
-          target="_blank"
-          rel="noopener"
-          path="https://www.npmjs.com/search?q=nodebb-plugin-"
-        >Browse All &rarr;</factor-link>
-      </div>
     </div>
 
     <factor-spinner v-if="loading" />
@@ -36,9 +28,9 @@
 </template>
 
 <script lang="ts">
-import { stored } from "@factor/api";
-import { factorLink, factorSpinner } from "@factor/ui";
-import { figureMixin } from "../../util";
+import { stored } from "@factor/api"
+import { factorLink, factorSpinner } from "@factor/ui"
+import { figureMixin } from "../../util"
 // import { requestIndex } from "../../extend/request";
 
 export default {
@@ -79,12 +71,6 @@ export default {
           synopsis: `Use NodeBB as a commenting engine for the Ghost blogging platform.`,
           permalink: ``
         },
-        // {
-        //   icon: "adsense",
-        //   title: `Google Adsense`,
-        //   synopsis: `Monetize your community by placing Adsense ads on any page on your forum.`,
-        //   permalink: ``
-        // },
         {
           icon: "wordpress",
           title: `WordPress`,
@@ -122,7 +108,7 @@ export default {
         //   permalink: ``
         // }
       ]
-    };
+    }
   }
   // serverPrefetch(this: any) {
   //   return this.getPosts();
@@ -155,7 +141,7 @@ export default {
   //     this.loading = false;
   //   }
   // }
-};
+}
 </script>
 <style lang="less">
 .plugins-gallery-container {
@@ -220,8 +206,7 @@ export default {
       left: 0;
       background-color: #fff;
       z-index: -1;
-      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1),
-        0 5px 15px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
       // border-radius: 4px;
       border-radius: 0.5rem;
       opacity: 0;

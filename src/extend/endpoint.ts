@@ -81,7 +81,7 @@ export const saveSingleExtension = async (params: {
   const screenshots = screenshotsList(files, cdnUrl)
   const icon = extensionImage(files, cdnUrl, "icon.svg")
   const extensionType = factor.extend ?? "plugin"
-  const tag = keywords.filter((_: string) => !_.includes("factor"))
+  const tag = keywords.filter((_: string) => !_.includes("nodebb"))
   const themeColor = factor.themeColor ?? "#FFFFFF"
   const permalink = factor.permalink ?? packageName
 

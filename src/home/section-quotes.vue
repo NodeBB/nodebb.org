@@ -28,7 +28,7 @@
               <factor-icon icon="fas fa-star" />
               <span class="rating-value" itemprop="ratingValue">5</span>
             </div>
-            <div class="quote-media">
+            <!-- <div class="quote-media">
               <div class="quote-image">
                 <img :src="quote.img" alt="quote" />
               </div>
@@ -40,8 +40,8 @@
               >
                 <img :src="quote.company" alt="quote" />
               </a>
-            </div>
-            <footer>
+            </div>-->
+            <!-- <footer>
               <a
                 :href="quote.link"
                 v-formatted-text="quote.attribution"
@@ -52,7 +52,47 @@
               >
                 <span v-formatted-text="quote.attribution"></span>
               </a>
-            </footer>
+            </footer>-->
+
+            <div class="md:flex md:items-center md:justify-center mt-10">
+              <div class="md:flex-shrink-0 relative">
+                <img
+                  class="client-picture mx-auto h-16 w-16 rounded-full"
+                  :src="quote.img"
+                  alt="NodeBB Client Picture"
+                />
+                <img
+                  class="client-company"
+                  :src="quote.company"
+                  alt="NodeBB Client Company Favicon"
+                />
+              </div>
+              <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
+                <div class="text-base leading-6 font-bold text-gray-900">
+                  <span v-formatted-text="quote.author"></span>
+                </div>
+
+                <svg
+                  class="hidden md:block mx-1 h-5 w-5 text-black-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M11 0h3L9 20H6l5-20z" />
+                </svg>
+
+                <div class="text-base leading-6 font-medium text-gray-500">
+                  <a
+                    :href="quote.link"
+                    v-formatted-text="quote.attribution"
+                    target="_blank"
+                    itemprop="author"
+                    rel="noopener"
+                    itemscope
+                    itemtype="https://schema.org/Person"
+                  ></a>
+                </div>
+              </div>
+            </div>
           </blockquote>
         </article>
       </div>
@@ -80,12 +120,11 @@ export default {
         {
           text: `<span>“NodeBB is hands down the best I have ever used from both management and user perspectives
           Due to the need for GDPR compliance, and a desire to update the technology base from PHP, wanted to migrate the pfSense community to a new forum, and NodeBB fit our needs.</span>
-          <span>
-          The migration process was surprisingly simple, and customizing the colors and icons was painless.  The UI is great, our users really like it, and the performance is excellent.
-          </span>
+          <span>The migration process was surprisingly simple, and customizing the colors and icons was painless.  The UI is great, our users really like it, and the performance is excellent.</span>
           <span>NodeBB makes GDPR compliance exceedingly simple, everything is mobile and SEO-friendly out of the box, and general maintenance is a lot easier compared to our old forum. As a bonus, the NodeBB support team is available whenever we run into trouble.</span>
 					<span>NodeBB is the most attractive piece of open source forum software we’ve found.”</span>`,
-          attribution: `<strong>Jim Thompson</strong>, CTO`,
+          attribution: `Netgate, CTO`,
+          author: `Jim Thompson`,
           img: require("./img/jim.jpg"),
           company: require("./img/netgate.svg"),
           companylink: "https://netgate.com",
@@ -94,7 +133,8 @@ export default {
         {
           text: `<span>“When we decided it was time to revamp our community we contemplated several possible solutions. We finally opted for NodeBB, and we couldn't be happier.</span>
           <span>We're using a modern, actively developed forum software. Numbers confirm that our user engagement skyrocketed and there was not a single comment from our users that would say that the old forums were better which, I think, speaks for itself.”</span>`,
-          attribution: `<strong>Artur Matczak</strong>, Software Engineer`,
+          attribution: `Opera, Software Engineer`,
+          author: `Artur Matczak`,
           img: require("./img/attis.jpg"),
           company: require("./img/opera.svg"),
           companylink: "https://opera.com",
@@ -248,6 +288,21 @@ export default {
           }
         }
 
+        .client-company {
+          width: 32px;
+          position: absolute;
+          right: -0.5rem;
+          border-radius: 999rem;
+          bottom: 0;
+          background: #fff;
+          border: 0.175rem solid #fff;
+          opacity: 1;
+          overflow: hidden;
+
+          @media (max-width: 900px) {
+            left: calc(50% + 1rem);
+          }
+        }
         footer {
           margin-top: 2.75rem;
           text-transform: uppercase;

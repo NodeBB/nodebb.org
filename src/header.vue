@@ -3,7 +3,13 @@
     <div class="site-head-pad">
       <site-brand class="site-brand" />
       <div class="head-nav page-nav">
-        <factor-link v-for="navItem in pageNav" :key="navItem.path" :path="navItem.path">
+        <factor-link
+          v-for="navItem in pageNav"
+          :key="navItem.path"
+          :path="navItem.path"
+          :target="navItem.target"
+          :rel="navItem.rel"
+        >
           <span v-formatted-text="navItem.name" />
         </factor-link>
       </div>
@@ -117,7 +123,7 @@ export default {
       -webkit-box-align: center;
       align-items: center;
       z-index: 2;
-      // backdrop-filter: blur(0.15rem);
+      backdrop-filter: blur(0.15rem);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       transition: border-bottom 150ms ease 0s, top 250ms ease 0s,
         background-color 300ms ease 0s;
