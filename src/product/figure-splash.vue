@@ -47,50 +47,50 @@ export default {
       figures: [{ id: "code", caption: "NodeBB" }],
       timer: false,
       animationInterval: 10000
-    };
+    }
   },
   computed: {
     scale(this: any) {
-      return Math.max(Math.min(this.width / 900, 1), 0.5);
+      return Math.max(Math.min(this.width / 900, 1), 0.5)
     },
     activeSlide(this: any) {
-      return this.figures[this.active];
+      return this.figures[this.active]
     },
     scrollerBg(this: any) {
-      return require("../home/img/code.svg");
+      return require("../home/img/code.svg")
     }
   },
 
   mounted() {
-    this.width = window.innerWidth;
+    this.width = window.innerWidth
 
     window.addEventListener("resize", () => {
-      this.width = window.innerWidth < 900 ? window.innerWidth : 900;
-    });
+      this.width = window.innerWidth < 900 ? window.innerWidth : 900
+    })
 
-    this.runTimer();
+    this.runTimer()
   },
   methods: {
     getWidth(this: any) {
-      return this.$refs.wrapper ? this.$refs.wrapper.clientWidth : 100;
+      return this.$refs.wrapper ? this.$refs.wrapper.clientWidth : 100
     },
 
     nextSlide(this: any) {
       if (this.active == this.figures.length - 1) {
-        this.active = 0;
+        this.active = 0
       } else {
-        this.active++;
+        this.active++
       }
 
-      this.runTimer();
+      this.runTimer()
     },
 
     runTimer(this: any) {
-      clearTimeout(this.timer);
-      this.timer = setTimeout(() => this.nextSlide(), this.animationInterval);
+      clearTimeout(this.timer)
+      this.timer = setTimeout(() => this.nextSlide(), this.animationInterval)
     }
   }
-};
+}
 </script>
 
 <style lang="less">
@@ -168,8 +168,7 @@ figure.splash-figure-container.splash-figure-main {
     .terminal {
       position: absolute;
       border-radius: 4px;
-      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05),
-        0px 7px 14px rgba(50, 50, 93, 0.1);
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 7px 14px rgba(50, 50, 93, 0.1);
     }
     .tablet {
       max-width: 410px;
@@ -186,8 +185,7 @@ figure.splash-figure-container.splash-figure-main {
       bottom: 9%;
       left: 0rem;
       animation: tabletTransform 1s 1 forwards;
-      box-shadow: 0 5px 15px rgba(27, 34, 60, 0.1),
-        0 15px 35px rgba(27, 34, 60, 0.1),
+      box-shadow: 0 5px 15px rgba(27, 34, 60, 0.1), 0 15px 35px rgba(27, 34, 60, 0.1),
         20px -20px 35px rgba(80, 102, 119, 0.15);
     }
     .pricing {
@@ -204,8 +202,8 @@ figure.splash-figure-container.splash-figure-main {
         transform: scale(0.9);
       }
       to {
-        transform: scale(1) perspective(500px) rotateX(1deg) rotateY(-2deg)
-          rotateZ(0deg) translateZ(-35px);
+        transform: scale(1) perspective(500px) rotateX(1deg) rotateY(-2deg) rotateZ(0deg)
+          translateZ(-35px);
       }
     }
 
@@ -214,8 +212,8 @@ figure.splash-figure-container.splash-figure-main {
         transform: scale(0.9);
       }
       to {
-        transform: perspective(1040px) rotate(-2deg) rotateX(-2deg)
-          rotateY(11deg) translateZ(20px) scale(1);
+        transform: perspective(1040px) rotate(-2deg) rotateX(-2deg) rotateY(11deg)
+          translateZ(20px) scale(1);
       }
     }
   }
@@ -248,33 +246,33 @@ figure.splash-figure-container.splash-figure-main {
         top: 0;
         left: 5%;
         // transform: scale(0.5) rotate3d(0, 0, 0, 18deg) translate3d(47%, 0px, 0);
-        animation: iconTransform 0.3s 0s forwards;
+        // animation: iconTransform 0.3s 0s forwards;
       }
       &:nth-child(2) {
         top: 0;
         left: 16%;
         // transform: scale(1) rotate3d(-1, -1, 0, -18deg)
         //   translate3d(56%, -75%, 0);
-        animation: iconTransform 0.3s 0.1s forwards;
+        // animation: iconTransform 0.3s 0.1s forwards;
       }
       &:nth-child(3) {
         top: 0;
         left: 49%;
         // transform: scale(1.4) rotate3d(1, 0, 1, 49deg) translateY(-40%);
-        animation: iconTransform 0.3s 0.3s forwards;
+        // animation: iconTransform 0.3s 0.3s forwards;
       }
       &:nth-child(4) {
         top: 0;
         left: 83%;
         // transform: scale(2.4) rotate(20deg) rotateY(-50deg);
-        animation: iconTransform 0.3s 0.6s forwards;
+        // animation: iconTransform 0.3s 0.6s forwards;
       }
       &:nth-child(5) {
         top: 0;
         left: 36%;
         // transform: scale(1.3) translateY(-36%) rotateY(17deg)
         //   rotate3d(1, 0, 1, 34deg);
-        animation: iconTransform 0.3s 0.2s forwards;
+        // animation: iconTransform 0.3s 0.2s forwards;
       }
       // &:nth-child(6) {
       //   top: 0;
@@ -299,10 +297,8 @@ figure.splash-figure-container.splash-figure-main {
       left: 32px;
       bottom: 10px;
       border-radius: 12px;
-      box-shadow: 0px 5px 15px rgba(27, 34, 60, 0.1),
-        0px 15px 35px rgba(27, 34, 60, 0.1),
-        0px 50px 100px rgba(27, 34, 60, 0.1),
-        20px -20px 35px rgba(80, 102, 119, 0.15);
+      box-shadow: 0px 5px 15px rgba(27, 34, 60, 0.1), 0px 15px 35px rgba(27, 34, 60, 0.1),
+        0px 50px 100px rgba(27, 34, 60, 0.1), 20px -20px 35px rgba(80, 102, 119, 0.15);
       transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
       //Animation
@@ -310,8 +306,7 @@ figure.splash-figure-container.splash-figure-main {
 
       &:hover {
         box-shadow: 0px 5px 15px rgba(4, 150, 255, 0.3),
-          0px 15px 35px rgba(4, 150, 255, 0.1),
-          0px 50px 100px rgba(27, 34, 60, 0.1),
+          0px 15px 35px rgba(4, 150, 255, 0.1), 0px 50px 100px rgba(27, 34, 60, 0.1),
           20px -20px 35px rgba(80, 102, 119, 0.15);
 
         transform: rotate(0deg) rotateX(0deg) rotateY(0deg) translateX(2em)
@@ -328,22 +323,22 @@ figure.splash-figure-container.splash-figure-main {
       }
     }
 
-    @keyframes iconTransform {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
+    // @keyframes iconTransform {
+    //   from {
+    //     opacity: 0;
+    //   }
+    //   to {
+    //     opacity: 1;
+    //   }
+    // }
 
     @keyframes mainTransform {
       from {
         transform: scale(0.9);
       }
       to {
-        transform: scale(1) perspective(500px) rotateX(1deg) rotateY(-2deg)
-          rotateZ(0deg) translateZ(-45px);
+        transform: scale(1) perspective(500px) rotateX(1deg) rotateY(-2deg) rotateZ(0deg)
+          translateZ(-45px);
       }
     }
 
@@ -352,8 +347,8 @@ figure.splash-figure-container.splash-figure-main {
         transform: scale(0.9);
       }
       to {
-        transform: perspective(1040px) rotate(-2deg) rotateX(-2deg)
-          rotateY(11deg) translateZ(20px) scale(1);
+        transform: perspective(1040px) rotate(-2deg) rotateX(-2deg) rotateY(11deg)
+          translateZ(20px) scale(1);
       }
     }
   }

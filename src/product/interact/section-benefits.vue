@@ -37,7 +37,7 @@
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
+import { factorLink, factorIcon } from "@factor/ui"
 
 export default {
   components: {
@@ -46,7 +46,7 @@ export default {
     homeIcon: () => import("../icon.vue")
   },
   methods: {}
-};
+}
 </script>
 <style lang="less">
 .interact-benefits {
@@ -119,6 +119,10 @@ export default {
         color: #1952be;
         font-size: 1.5rem;
         position: absolute;
+        @media (max-width: 900px) {
+          width: 2.75rem;
+          height: 3rem;
+        }
         i {
           position: relative;
           left: 0;

@@ -35,15 +35,14 @@
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
+import { factorLink, factorIcon } from "@factor/ui"
 
 export default {
   components: {
     factorLink,
     factorIcon,
     sectionSplash: () => import("./splash.vue"),
-    sectionBenefits: () => import("./section-benefits.vue"),
-    elCta: () => import("./el-cta.vue")
+    sectionBenefits: () => import("./section-benefits.vue")
   },
   data(this: any) {
     return {
@@ -59,15 +58,14 @@ export default {
           title: `Drag-and-drop Widgets`,
           text: `Add new functionality to your forum via the widgets system. You can add new content via an HTML widget or customize your forum's presentation with over a dozen other widgets by dragging and dropping it onto a widget area on your forum.`,
           figure: () => import("./figure-widgets.vue")
-          // link: { path: "/pricing", text: "Learn more" }
         }
       ]
-    };
+    }
   },
   mounted(this: any) {
     setTimeout(() => {
-      this.loadingButtons = false;
-    }, 1000);
+      this.loadingButtons = false
+    }, 1000)
   },
   methods: {}
   // metaInfo() {
@@ -76,7 +74,7 @@ export default {
   //     description: ""
   //   };
   // }
-};
+}
 </script>
 <style lang="less">
 .view-product-control {

@@ -13,11 +13,11 @@ import { renderMarkdown } from "@factor/api/markdown"
 export default {
   components: { factorPostEdit },
   props: {
-    post: { type: Object, default: () => {} },
+    post: { type: Object, default: () => {} }
   },
   data() {
     return {
-      content: "",
+      content: ""
     }
   },
   templateSettings() {
@@ -28,11 +28,11 @@ export default {
         label: "Example",
         description: "Shows example setting",
         list: ["foo", "bar"],
-        _default: "foo",
-      },
+        _default: "foo"
+      }
     ]
   },
-  methods: { renderMarkdown },
+  methods: { renderMarkdown }
 }
 </script>
 

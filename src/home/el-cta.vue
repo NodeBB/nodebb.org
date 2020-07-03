@@ -23,7 +23,7 @@
 </template>
 
 <script lang="ts">
-import { factorModal, factorLink, factorIcon } from "@factor/ui";
+import { factorModal, factorLink, factorIcon } from "@factor/ui"
 export default {
   components: {
     factorModal,
@@ -34,9 +34,9 @@ export default {
   data() {
     return {
       vis: false
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="less">
@@ -118,6 +118,10 @@ export default {
 
     margin: 2rem auto 2.5rem;
     max-width: 600px;
+    @media (max-width: 900px) {
+      margin: 2rem 0 2.5rem;
+      max-width: inherit;
+    }
   }
   .action {
     font-weight: 500;

@@ -27,9 +27,9 @@
   </div>
 </template>
 <script lang="ts">
-import { factorLink } from "@factor/ui";
-import { isLoggedIn, userInitialized } from "@factor/user";
-import { accountMenu } from "@factor/plugin-standard-signin";
+import { factorLink } from "@factor/ui"
+import { isLoggedIn, userInitialized } from "@factor/user"
+import { accountMenu } from "@factor/plugin-standard-signin"
 export default {
   components: {
     factorLink,
@@ -69,16 +69,16 @@ export default {
         },
         { component: accountMenu, condition: (): boolean => isLoggedIn() }
       ]
-    };
+    }
   },
   computed: {},
   async mounted() {
-    await userInitialized();
+    await userInitialized()
 
-    this.userLoading = false;
+    this.userLoading = false
   },
   methods: { isLoggedIn }
-};
+}
 </script>
 <style lang="less">
 .nav-light:not(.scrolled) .site-head {
@@ -110,14 +110,14 @@ export default {
   &.scrolled {
     .site-head {
       padding: 0 2rem;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.97);
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
       display: flex;
       flex-direction: column;
       -webkit-box-align: center;
       align-items: center;
       z-index: 2;
-      backdrop-filter: blur(0.15rem);
+      // backdrop-filter: blur(0.15rem);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       transition: border-bottom 150ms ease 0s, top 250ms ease 0s,
         background-color 300ms ease 0s;
@@ -196,12 +196,12 @@ export default {
 .scrolled {
   .site-head {
     padding: 0 2rem;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.97);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    backdrop-filter: blur(0.15rem);
+    // backdrop-filter: blur(0.15rem);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     transition: border-bottom 150ms ease 0s, top 250ms ease 0s,
       background-color 300ms ease 0s;

@@ -36,7 +36,7 @@
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
+import { factorLink, factorIcon } from "@factor/ui"
 
 export default {
   components: {
@@ -44,8 +44,7 @@ export default {
     factorIcon,
     sectionSplash: () => import("./splash.vue"),
     sectionBenefits: () => import("./section-benefits.vue"),
-    homeIcon: () => import("../../home/icon.vue"),
-    elCta: () => import("./el-cta.vue")
+    homeIcon: () => import("../../home/icon.vue")
   },
   data(this: any) {
     return {
@@ -71,12 +70,12 @@ export default {
           figure: () => import("./figure-notifications.vue")
         }
       ]
-    };
+    }
   },
   mounted(this: any) {
     setTimeout(() => {
-      this.loadingButtons = false;
-    }, 1000);
+      this.loadingButtons = false
+    }, 1000)
   },
   methods: {}
   // metaInfo() {
@@ -85,7 +84,7 @@ export default {
   //     description: ""
   //   };
   // }
-};
+}
 </script>
 <style lang="less">
 .view-product-interact {
@@ -168,7 +167,7 @@ export default {
         }
         .feature-content-container {
           .feature-content {
-            padding: 0 1.5rem 1rem;
+            padding: 0 1rem 1rem;
             max-width: 100%;
           }
         }
