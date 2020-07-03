@@ -61,7 +61,7 @@
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
+import { factorLink, factorIcon } from "@factor/ui"
 
 export default {
   components: {
@@ -101,39 +101,39 @@ export default {
           link: "https://forums.opera.com"
         }
       ]
-    };
+    }
   },
   computed: {
     currentQuote: function(this: any) {
-      return this.quotes[Math.abs(this.active) % this.quotes.length];
+      return this.quotes[Math.abs(this.active) % this.quotes.length]
     },
     activeSlide(this: any) {
-      return this.quotes[this.active];
+      return this.quotes[this.active]
     }
   },
 
   mounted(this: any) {
     setTimeout(() => {
-      this.loadingButtons = false;
-    }, 1000);
+      this.loadingButtons = false
+    }, 1000)
   },
 
   methods: {
     nextSlide(this: any) {
       if (this.active == this.quotes.length - 1) {
-        this.active = 0;
+        this.active = 0
       } else {
-        this.active++;
+        this.active++
       }
 
-      this.runTimer();
+      this.runTimer()
     },
     runTimer(this: any) {
-      clearTimeout(this.timer);
-      this.timer = setTimeout(() => this.nextSlide(), this.animationInterval);
+      clearTimeout(this.timer)
+      this.timer = setTimeout(() => this.nextSlide(), this.animationInterval)
     }
   }
-};
+}
 </script>
 <style lang="less">
 .quotes-wrap {
@@ -181,7 +181,6 @@ export default {
       display: flex;
       &:nth-child(odd) {
         transform: rotateX(2deg) rotateY(7deg);
-        //    background-image: linear-gradient(45deg, #fff, #f7f7f7);
         blockquote {
           box-shadow: 1px 1px 4px 0 rgba(26, 26, 67, 0.1),
             -5px 22.5px 65px 0 rgba(50, 50, 93, 0.2);
@@ -190,8 +189,6 @@ export default {
       }
       &:nth-child(even) {
         transform: rotateX(1deg) rotateY(-7deg);
-
-        // background-image: linear-gradient(45deg, #fff, #f7f7f7);
         blockquote {
           box-shadow: 1px 1px 4px 0 rgba(26, 26, 67, 0.1),
             19px 22.5px 75px -5px rgba(50, 50, 93, 0.2);
