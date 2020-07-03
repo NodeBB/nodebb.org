@@ -1,7 +1,8 @@
 <template>
   <div class="long-form">
     <factor-post-edit :post-id="post._id" />
-    <h1 v-formatted-text="post.title" class="title" />
+    <h1 class="title">{{ post.title }}</h1>
+    <h3 class="subtitle">{{ post.synopsis }}</h3>
     <div v-formatted-text="renderMarkdown(post.content)" class="content entry-content" />
   </div>
 </template>
@@ -9,30 +10,43 @@
 <script lang="ts">
 import { factorPostEdit } from "@factor/post"
 import { renderMarkdown } from "@factor/api/markdown"
+import { setting, stored, titleTag, descriptionTag, shareImage } from "@factor/api"
 
 export default {
   components: { factorPostEdit },
-  props: {
-    post: { type: Object, default: () => {} }
-  },
   data() {
     return {
       content: ""
     }
   },
+  metaInfo() {
+    return {
+      title: titleTag(this.post._id),
+      description: descriptionTag(this.post._id),
+      image: shareImage(this.post._id)
+    }
+  },
+  computed: {
+    post(this: any) {
+      return stored("post") || {}
+    },
+    settings(this: any) {
+      return this.post.settings || {}
+    }
+  },
+  methods: { setting, renderMarkdown },
   templateSettings() {
     return [
       {
-        _id: "exampleSetting",
         input: "select",
-        label: "Example",
-        description: "Shows example setting",
-        list: ["foo", "bar"],
-        _default: "foo"
+        label: "Header Alignment",
+        description: "Alignment of the page header",
+        _id: "headerAlignment",
+        list: ["left", "center", "right"],
+        _default: "left"
       }
     ]
-  },
-  methods: { renderMarkdown }
+  }
 }
 </script>
 

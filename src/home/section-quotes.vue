@@ -73,7 +73,7 @@
                 </div>
 
                 <svg
-                  class="hidden md:block mx-1 h-5 w-5 text-black-400"
+                  class="hidden md:block mx-1 h-5 w-5 text-gray-100"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >

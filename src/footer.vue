@@ -80,8 +80,8 @@
   </footer>
 </template>
 <script lang="ts">
-import { factorModal, factorLink, factorIcon } from "@factor/ui";
-import { setting } from "@factor/api";
+import { factorModal, factorLink, factorIcon } from "@factor/ui"
+import { setting } from "@factor/api"
 export default {
   components: {
     factorModal,
@@ -91,10 +91,10 @@ export default {
   data() {
     return {
       vis: false
-    };
+    }
   },
   methods: { setting }
-};
+}
 </script>
 
 <style lang="postcss">
@@ -121,9 +121,6 @@ export default {
           svg {
             width: 50px;
             height: 50px;
-          }
-          svg path {
-            /* fill: var(--color-primary); */
           }
         }
         &.icons {

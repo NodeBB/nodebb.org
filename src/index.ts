@@ -1,5 +1,5 @@
 import { addFilter, setting, addRoutes } from "@factor/api"
-// import { addPageTemplate } from "@factor/templates"
+import { addPageTemplate } from "@factor/templates"
 import "./extend"
 
 
@@ -14,10 +14,10 @@ if (setting("headTags") != "") {
   })
 }
 
-// addPageTemplate({
-//   slug: "example",
-//   component: (): Promise<any> => import("./page-template-default.vue"),
-// })
+addPageTemplate({
+  slug: "example",
+  component: (): Promise<any> => import("./page-template-default.vue"),
+})
 
 addRoutes({
   key: "factorAppRoutes",

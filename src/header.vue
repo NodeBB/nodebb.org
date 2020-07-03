@@ -56,14 +56,18 @@ export default {
 
         {
           path: "https://community.nodebb.org",
-          name: "Community",
+          name: `Community`,
           target: "_blank",
           rel: "noopener"
         },
-        { path: "https://blog.nodebb.org", name: "Blog", target: "_blank" },
+        {
+          path: "https://blog.nodebb.org",
+          name: `Blog`,
+          target: "_blank"
+        },
         {
           path: "https://answers.nodebb.org",
-          name: "Answers",
+          name: `Answers`,
           target: "_blank",
           rel: "noopener"
         }
@@ -163,7 +167,7 @@ export default {
       justify-content: flex-end;
     }
     > .factor-link {
-      color: inherit;
+      color: #8792a2;
       margin: 0 0.25em;
       padding: 0.25em 0.7em;
       border-radius: 6px;
@@ -177,11 +181,13 @@ export default {
       }
       &:hover,
       &.router-link-active {
-        color: var(--color-primary);
-        background: var(--color-bg-contrast);
+        // color: var(--color-primary);
+        // background: var(--color-bg-contrast);
+        color: #1a1f36;
+
         &:not(.active-path) {
           background: inherit;
-          color: inherit;
+          color: #8792a2;
         }
       }
       &:active {

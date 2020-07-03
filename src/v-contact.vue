@@ -5,10 +5,7 @@
         <div class="wedge" />
       </div>
       <div class="text">
-        <h1 class="title">
-          Contact NodeBB
-          <!-- <span class="arrow ">&darr;</span> -->
-        </h1>
+        <h1 class="title">Contact NodeBB</h1>
         <div class="sub-title">I'd like to speak to someone about...</div>
       </div>
     </div>
@@ -31,23 +28,23 @@
 </template>
 
 <script lang="ts">
-import { setting } from "@factor/api";
+import { setting } from "@factor/api"
 
 export default {
   data() {
     return {
       loading: true
-    };
+    }
   },
   metaInfo() {
     return {
       title: "Contact Sales or Support",
       description:
         "Get in touch with us with questions regarding sales, support, or anything NodeBB related."
-    };
+    }
   },
   methods: { setting }
-};
+}
 </script>
 <style lang="less">
 .view-contact {
@@ -71,10 +68,6 @@ export default {
       z-index: 10;
       padding: 0 1rem;
       letter-spacing: -0.03em;
-
-      .arrow {
-        color: var(--color-primary);
-      }
     }
     .title {
       font-weight: var(--font-weight-bold);
@@ -103,11 +96,6 @@ export default {
     position: relative;
     z-index: 10;
     .grid {
-      // padding: 0 1em;
-      // max-width: 600px;
-      // margin: 0 auto;
-      // align-items: center;
-
       padding: 1rem;
       max-width: 600px;
       margin: 0 auto;
@@ -129,13 +117,8 @@ export default {
         font-weight: 500;
         opacity: 0.5;
         color: var(--color-text-secondary);
-        // font-family: var(--font-family-cursive);
       }
     }
-  }
-  .contact-form {
-    // padding: 1.5em;
-    // background: #fff;
   }
   .confirm {
     padding: 8em 2em;
@@ -166,7 +149,5 @@ export default {
   padding-top: 56.25%;
   position: relative;
   min-height: 70vh;
-  iframe {
-  }
 }
 </style>

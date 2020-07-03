@@ -433,13 +433,17 @@ figure.splash-figure-container.splash-figure-main {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 4rem;
-        height: 4rem;
+        width: 3.5rem;
+        height: 3.5rem;
         border-radius: 50%;
         box-shadow: 0 0 1px 0 hsla(0, 0%, 100%, 0.01), 0 0 1px 0 #2a2f44;
         background-image: linear-gradient(90deg, #2a2f44, #2a2f44);
         position: relative;
         margin: 0 auto;
+
+        &:hover {
+          transform: scale(1.35) translateY(-0.5rem);
+        }
         img {
           // max-width: 25px;
           // max-height: 32px;
