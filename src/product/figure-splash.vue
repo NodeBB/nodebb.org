@@ -36,7 +36,7 @@ export default {
       icons: [
         // { name: "NodeBB", img: require("./img/icon-nodebb.svg") },
         { name: "Node.js", img: require("./img/icon-nodejs.svg") },
-        { name: "Mongo", img: require("./img/icon-mongodb.svg") },
+        { name: "MongoDB", img: require("./img/icon-mongodb.svg") },
         { name: "Redis", img: require("./img/icon-redis.svg") },
         { name: "Websockets", img: require("./img/icon-websocket.svg") }
         // { name: "Varnish", img: require("./img/icon-varnish.svg") },

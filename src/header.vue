@@ -180,15 +180,15 @@ export default {
         }
       }
       &:hover,
-      &.router-link-active {
-        // color: var(--color-primary);
-        // background: var(--color-bg-contrast);
+      &.active-path {
         color: #1a1f36;
-
         &:not(.active-path) {
           background: inherit;
           color: #8792a2;
         }
+      }
+      &:hover {
+        color: #1a1f36;
       }
       &:active {
         opacity: 0.5;
