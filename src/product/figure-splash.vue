@@ -34,7 +34,6 @@ export default {
   data() {
     return {
       icons: [
-        // { name: "NodeBB", img: require("./img/icon-nodebb.svg") },
         { name: "Node.js", img: require("./img/icon-nodejs.svg") },
         { name: "MongoDB", img: require("./img/icon-mongodb.svg") },
         { name: "Redis", img: require("./img/icon-redis.svg") },
@@ -175,9 +174,6 @@ figure.splash-figure-container.splash-figure-main {
       border-radius: 8px;
       bottom: 0;
       left: 0;
-      //    animation: tabletTransform 1s 1 forwards;
-      // transform: perspective(1040px) rotate(-2deg) rotateX(-2deg) rotateY(11deg)
-      //    translateZ(20px) scale(1);
     }
     .terminal {
       max-width: 35%;
@@ -194,7 +190,6 @@ figure.splash-figure-container.splash-figure-main {
       right: 0;
 
       animation: themeTransform 1s 1 forwards;
-      //  transform: rotateY(-13deg);
     }
 
     @keyframes themeTransform {
@@ -225,7 +220,6 @@ figure.splash-figure-container.splash-figure-main {
     @media (max-width: 900px) {
       bottom: -10.25rem;
     }
-    //transform-style: preserve-3d;
     .stage-icons {
       width: 100%;
       height: 100%;
@@ -245,41 +239,23 @@ figure.splash-figure-container.splash-figure-main {
       &:nth-child(1) {
         top: 0;
         left: 5%;
-        // transform: scale(0.5) rotate3d(0, 0, 0, 18deg) translate3d(47%, 0px, 0);
-        // animation: iconTransform 0.3s 0s forwards;
       }
       &:nth-child(2) {
         top: 0;
         left: 16%;
-        // transform: scale(1) rotate3d(-1, -1, 0, -18deg)
-        //   translate3d(56%, -75%, 0);
-        // animation: iconTransform 0.3s 0.1s forwards;
       }
       &:nth-child(3) {
         top: 0;
         left: 49%;
-        // transform: scale(1.4) rotate3d(1, 0, 1, 49deg) translateY(-40%);
-        // animation: iconTransform 0.3s 0.3s forwards;
       }
       &:nth-child(4) {
         top: 0;
         left: 83%;
-        // transform: scale(2.4) rotate(20deg) rotateY(-50deg);
-        // animation: iconTransform 0.3s 0.6s forwards;
       }
       &:nth-child(5) {
         top: 0;
         left: 36%;
-        // transform: scale(1.3) translateY(-36%) rotateY(17deg)
-        //   rotate3d(1, 0, 1, 34deg);
-        // animation: iconTransform 0.3s 0.2s forwards;
       }
-      // &:nth-child(6) {
-      //   top: 0;
-      //   left: 66%;
-      //   transform: scale(1.6) translateY(-61%) rotateY(-61deg) rotate(-15deg);
-      //   animation: iconTransform 0.3s 0.4s forwards;
-      // }
     }
   }
   .splash-figure.dashboard .stage {
@@ -300,8 +276,6 @@ figure.splash-figure-container.splash-figure-main {
       box-shadow: 0px 5px 15px rgba(27, 34, 60, 0.1), 0px 15px 35px rgba(27, 34, 60, 0.1),
         0px 50px 100px rgba(27, 34, 60, 0.1), 20px -20px 35px rgba(80, 102, 119, 0.15);
       transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-
-      //Animation
       animation: mobileTransform 1s 1 forwards;
 
       &:hover {
@@ -322,15 +296,6 @@ figure.splash-figure-container.splash-figure-main {
         transform: translateY(-50%);
       }
     }
-
-    // @keyframes iconTransform {
-    //   from {
-    //     opacity: 0;
-    //   }
-    //   to {
-    //     opacity: 1;
-    //   }
-    // }
 
     @keyframes mainTransform {
       from {
@@ -395,9 +360,6 @@ figure.splash-figure-container.splash-figure-main {
       top: 0;
       right: 4em;
       z-index: 0;
-
-      // transform: scale(1) perspective(1000px) rotateY(3deg) rotateX(2deg)
-      //   rotate(-1deg) translateZ(-40px);
     }
     .icons {
       display: flex;
@@ -445,8 +407,6 @@ figure.splash-figure-container.splash-figure-main {
           transform: scale(1.35) translateY(-0.5rem);
         }
         img {
-          // max-width: 25px;
-          // max-height: 32px;
           max-width: none;
           max-height: none;
         }
