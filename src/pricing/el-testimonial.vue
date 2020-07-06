@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import { factorLink, factorAvatar } from "@factor/ui";
+import { factorLink, factorAvatar } from "@factor/ui"
 export default {
   components: { factorLink, factorAvatar },
   data() {
@@ -36,53 +36,53 @@ export default {
           linkText: "Opera Forums"
         }
       ]
-    };
-  }
-};
-</script>
-
-<style lang="less" scoped>
-.testimonial {
-  margin: 8rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 3rem;
-  .title {
-    font-size: 2em;
-    font-weight: var(--font-weight-bold);
-    line-height: 1.1;
-    margin-bottom: 1rem;
-  }
-  .sub {
-    color: var(--color-text-secondary);
-  }
-  .figure {
-    justify-self: center;
-    .text {
-      font-size: 1.3em;
-      margin-bottom: 1rem;
-      font-style: italic;
-      color: var(--color-text-secondary);
-    }
-    .citation {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      .factor-avatar {
-        margin-right: 1rem;
-      }
-      .name {
-        font-weight: var(--font-weight-bold);
-        line-height: 1.5;
-      }
-    }
-  }
-  @media (max-width: 900px) {
-    margin: 4rem 0;
-    grid-template-columns: 1fr;
-    .title {
-      font-size: 1.5em;
     }
   }
 }
+</script>
+
+<style lang="less" scoped>
+// .testimonial {
+//   margin: 8rem 0;
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-gap: 3rem;
+//   .title {
+//     font-size: 2em;
+//     font-weight: var(--font-weight-bold);
+//     line-height: 1.1;
+//     margin-bottom: 1rem;
+//   }
+//   .sub {
+//     color: var(--color-text-secondary);
+//   }
+//   .figure {
+//     justify-self: center;
+//     .text {
+//       font-size: 1.3em;
+//       margin-bottom: 1rem;
+//       font-style: italic;
+//       color: var(--color-text-secondary);
+//     }
+//     .citation {
+//       display: flex;
+//       align-items: center;
+//       justify-content: flex-end;
+//       .factor-avatar {
+//         margin-right: 1rem;
+//       }
+//       .name {
+//         font-weight: var(--font-weight-bold);
+//         line-height: 1.5;
+//       }
+//     }
+//   }
+//   @media (max-width: 900px) {
+//     margin: 4rem 0;
+//     grid-template-columns: 1fr;
+//     .title {
+//       font-size: 1.5em;
+//     }
+//   }
+// }
 </style>

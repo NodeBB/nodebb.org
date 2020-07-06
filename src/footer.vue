@@ -210,7 +210,6 @@ export default {
 }
 @media screen and (max-width: 900px) {
   .footer {
-    background: #e3e8ee;
     padding: 2rem 0;
     .content-footer {
       .content-footer-pad {
