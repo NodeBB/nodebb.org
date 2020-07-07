@@ -202,7 +202,6 @@ export default {
     display: flex;
     flex-direction: row;
     padding: 1rem 1rem 1rem 0;
-    color: var(--color-text);
 
     &:before {
       content: "";
@@ -218,20 +217,6 @@ export default {
       opacity: 0;
       transform: scale(0.95);
       transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-
-    &:hover {
-      .plugin-icon {
-        transform: scale(0.75);
-      }
-      .title,
-      .description {
-        color: var(--color-text);
-      }
-      &:before {
-        transform: scale(1);
-        opacity: 1;
-      }
     }
     .plugin-icon {
       width: 64px;
@@ -265,7 +250,6 @@ export default {
         width: 100%;
       }
     }
-
     .title {
       font-weight: 700;
       font-size: 1.25rem;
@@ -275,12 +259,21 @@ export default {
     }
     .description {
       display: -webkit-box;
-      /* -webkit-line-clamp: 2; */
-      /* -webkit-box-orient: vertical; */
-      /* height: 4.5rem; */
-      // text-ovåerflow: -o-ellipsis-lastline;
-      font-size: 1rem;
-      font-weight: 300;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    &:hover {
+      .plugin-icon {
+        transform: scale(0.75);
+      }
+      .title,
+      .description {
+        font-weight: 600;
+      }
+      &:before {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
   }
 }

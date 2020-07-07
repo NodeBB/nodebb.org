@@ -46,38 +46,38 @@ export default {
   .factor-link {
     margin: 1rem;
   }
-  .contact-btn {
-    position: fixed !important;
-    bottom: 2.5rem;
-    right: 2.65rem;
-    background: #fff !important;
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04) !important;
-    border-radius: 1rem !important;
-    overflow: hidden !important;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex !important;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-transition: box-shadow 0.2s, -webkit-transform 0.2s;
-    -webkit-transition: box-shadow 0.2s, transform 0.2s;
-    transition: box-shadow 0.2s, transform 0.2s !important;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    z-index: 4999 !important;
-    cursor: pointer !important;
-    &:hover {
-      box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
-      -webkit-transform: translateY(-0.25rem);
-      -ms-transform: translateY(-0.25rem);
-      transform: translateY(-0.25rem);
-    }
-  }
+  // .contact-btn {
+  //   position: fixed !important;
+  //   bottom: 2.5rem;
+  //   right: 2.65rem;
+  //   background: #fff !important;
+  //   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04) !important;
+  //   border-radius: 1rem !important;
+  //   overflow: hidden !important;
+  //   display: -webkit-box;
+  //   display: -webkit-flex;
+  //   display: -ms-flexbox;
+  //   display: flex !important;
+  //   -webkit-flex-direction: column;
+  //   -ms-flex-direction: column;
+  //   flex-direction: column;
+  //   -webkit-transition: box-shadow 0.2s, -webkit-transform 0.2s;
+  //   -webkit-transition: box-shadow 0.2s, transform 0.2s;
+  //   transition: box-shadow 0.2s, transform 0.2s !important;
+  //   -webkit-backface-visibility: hidden;
+  //   backface-visibility: hidden;
+  //   -webkit-transform: translate3d(0, 0, 0);
+  //   -ms-transform: translate3d(0, 0, 0);
+  //   transform: translate3d(0, 0, 0);
+  //   z-index: 4999 !important;
+  //   cursor: pointer !important;
+  //   &:hover {
+  //     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  //     -webkit-transform: translateY(-0.25rem);
+  //     -ms-transform: translateY(-0.25rem);
+  //     transform: translateY(-0.25rem);
+  //   }
+  // }
 }
 .el-modal {
   .el-modal-pad {
@@ -106,28 +106,6 @@ export default {
   font-weight: 300;
 }
 
-@keyframes blink {
-  45% {
-    -webkit-transform: none;
-  }
-
-  50% {
-    -webkit-transform: rotateX(90deg);
-  }
-
-  55% {
-    -webkit-transform: none;
-  }
-
-  90% {
-    -webkit-transform: none;
-  }
-
-  95% {
-    -webkit-transform: rotateX(90deg);
-  }
-}
-
 .feedback-icon {
   z-index: 20;
   width: 38px;
@@ -137,12 +115,7 @@ export default {
   right: 15px;
   bottom: 56px;
   border-radius: 6px 5px 6px 0;
-  -webkit-transform: scale(0.74);
-  -ms-transform: scale(0.74);
   transform: scale(0.74);
-  -webkit-transition: all 0.15s cubic-bezier(0, 0, 0.58, 1);
-  -moz-transition: all 0.15s cubic-bezier(0, 0, 0.58, 1);
-  -o-transition: all 0.15s cubic-bezier(0, 0, 0.58, 1);
   transition: all 0.15s cubic-bezier(0, 0, 0.58, 1);
   &:before {
     display: block;
@@ -168,8 +141,6 @@ export default {
     border-radius: 4px 0 0 0;
   }
   &:hover {
-    -webkit-transform: scale(0.86);
-    -ms-transform: scale(0.86);
     transform: scale(0.86);
     right: 18px;
     .feedback-icon-mouth {
@@ -180,8 +151,6 @@ export default {
       }
     }
     .feedback-tooltip {
-      -webkit-transform: scale(1);
-      -ms-transform: scale(1);
       transform: scale(1);
       opacity: 1;
       visibility: visible;
@@ -199,16 +168,11 @@ export default {
     position: absolute;
     top: 0;
     left: -222px;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
     transform: scale(0);
-    -webkit-transform-origin: right;
-    -ms-transform-origin: right;
     transform-origin: right;
     opacity: 0;
     visibility: hidden;
     border: 1px solid rgba(173, 178, 187, 0.4);
-    -webkit-transition: all 0.065s ease-out 0.005s;
     transition: all 0.065s ease-out 0.005s;
   }
 }
@@ -224,10 +188,6 @@ export default {
   top: 8px;
   background: hsl(0, 100%, 100%);
   border-radius: 50%;
-  -webkit-animation: blink 6s ease-in-out infinite;
-  -moz-animation: blink 6s ease-in-out infinite;
-  -ms-animation: blink 6s ease-in-out infinite;
-  -o-animation: blink 6s ease-in-out infinite;
   animation: blink 6s ease-in-out infinite;
 }
 .feedback-icon-eye-left {
@@ -294,6 +254,28 @@ export default {
     z-index: -1;
     border-left-color: rgba(173, 178, 187, 0.6);
     margin-left: 0px;
+  }
+}
+
+@keyframes blink {
+  45% {
+    -webkit-transform: none;
+  }
+
+  50% {
+    -webkit-transform: rotateX(90deg);
+  }
+
+  55% {
+    -webkit-transform: none;
+  }
+
+  90% {
+    -webkit-transform: none;
+  }
+
+  95% {
+    -webkit-transform: rotateX(90deg);
   }
 }
 

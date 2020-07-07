@@ -51,9 +51,9 @@ export default {
       //     defer: true,
       //   },
       // ],
-    };
+    }
   }
-};
+}
 </script>
 
 <style lang="less">
@@ -62,8 +62,19 @@ export default {
   flex-direction: column;
   min-height: 100vh;
   padding-top: 45px;
+  .logo-nodebb {
+    transition: all 0.15s cubic-bezier(0, 0, 0.58, 1);
+  }
   .nav-show-mobile {
     display: none;
+    &.active {
+      .mobile-bar {
+        .logo-nodebb {
+          opacity: 0;
+          transition: all 0.15s cubic-bezier(0, 0, 0.58, 1);
+        }
+      }
+    }
     @media (max-width: 1100px) {
       display: block;
     }
