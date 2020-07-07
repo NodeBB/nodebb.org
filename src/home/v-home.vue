@@ -117,7 +117,7 @@
 </template>
 
 <script lang="ts">
-import { factorModal, factorLink, factorIcon } from "@factor/ui";
+import { factorModal, factorLink, factorIcon } from "@factor/ui"
 
 export default {
   components: {
@@ -185,13 +185,13 @@ export default {
           }
         }
       ]
-    };
+    }
   },
 
   mounted(this: any) {
     setTimeout(() => {
-      this.loadingButtons = false;
-    }, 1000);
+      this.loadingButtons = false
+    }, 1000)
   },
   methods: {},
   metaInfo() {
@@ -199,9 +199,9 @@ export default {
       title: "Modern forum software - NodeBB",
       description:
         "Better community forum software for the modern web: powerful, mobile-ready and easy-to-use."
-    };
+    }
   }
-};
+}
 </script>
 <style lang="less">
 .view-home {
@@ -246,7 +246,6 @@ export default {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "a b";
       align-items: center;
-      // min-height: 80vh;
       &.even {
         .feature-content-container {
           justify-self: flex-end;
@@ -266,16 +265,14 @@ export default {
         min-width: 0;
         .feature-content {
           padding: 5rem 1.5rem;
-          // max-width: 550px;
           max-width: 620px;
         }
       }
       .feature-figure-container {
         grid-area: b;
-        min-width: 0; // defaults content width
+        min-width: 0;
         height: 100%;
         position: relative;
-        // width: 100%;
         display: flex;
         align-items: center;
         .figure-container {
@@ -299,27 +296,21 @@ export default {
         }
       }
     }
-
-    .feature-content {
-      // letter-spacing: -0.01em;
-    }
     .feature-icon {
       height: 72px;
       width: 72px;
       margin-bottom: 1rem;
-      box-shadow: 0px 2px 3px rgba(50, 50, 93, 0.13),
-        0px 2px 5px rgba(50, 50, 93, 0.11), 0px 5px 15px rgba(0, 0, 0, 0.07);
-      border-radius: 6px;
+      box-shadow: 0px 2px 3px rgba(50, 50, 93, 0.13), 0px 2px 5px rgba(50, 50, 93, 0.11),
+        0px 5px 15px rgba(0, 0, 0, 0.07);
+      border-radius: 0.25rem;
     }
     .title {
       font-weight: 700;
       font-size: 2.5rem;
       line-height: 1.1;
       margin-bottom: 1.5rem;
-      // color: #fff;
     }
     .text {
-      // font-weight: 300;
       font-size: 1.35rem;
       line-height: 1.6;
       margin-bottom: 1.5rem;
@@ -334,6 +325,13 @@ export default {
         margin-right: 2.5rem;
         margin-bottom: 1rem;
         font-weight: 700;
+        .icon {
+          .fa-play {
+            font-size: 0.85rem;
+            position: relative;
+            top: -0.15rem;
+          }
+        }
         @media (max-width: 900px) {
           margin-bottom: 2rem;
         }
@@ -511,7 +509,6 @@ export default {
       padding: 5rem 0 9rem;
     }
     .content-pad {
-      // opacity: 0.1;
       z-index: 1;
       position: relative;
       display: grid;
@@ -564,22 +561,7 @@ export default {
       }
       .header-actions {
         font-size: 1.1em;
-        margin-top: 2em;
-        // display: grid;
-        // grid-template-columns: 1fr 200px;
-        // grid-gap: 1.5em;
-        .email-list-form {
-          font-size: 1.2em;
-          input {
-            margin: 0;
-            background: #fff;
-          }
-          @media (max-width: 900px) {
-            .app-btn {
-              width: 100%;
-            }
-          }
-        }
+        margin-top: 1.5rem;
       }
       @media (max-width: 900px) {
         font-size: 1em;
@@ -603,58 +585,7 @@ export default {
         }
       }
     }
-    .header-figure {
-      figure.screencast {
-        width: 800px;
-        background: #fff;
-        padding-top: 56.25%;
-        padding-top: calc(9 / 16 * 100%);
-        position: relative;
-        border-radius: 6px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
-          0 15px 35px rgba(0, 0, 0, 0.1), 0 50px 100px rgba(50, 50, 93, 0.1);
-        // background: #f6f9fc url(./img/screencast-poster.jpg) 50%/100%;
-        background-size: cover;
-        transition: opacity 0.2s;
-        @media (max-width: 900px) {
-          width: 100%;
-        }
-        &:hover {
-          cursor: pointer;
-          .play-button {
-            opacity: 0.8;
-          }
-        }
-        video {
-          position: absolute;
-          left: 0;
-          top: 0;
-          min-width: 100%;
-          max-width: 100%;
-          height: auto;
-          border-radius: 7px;
-        }
-        .play-button {
-          transition: opacity 0.2s;
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          pointer-events: none;
-          background: var(--color-text);
-          opacity: 0.9;
-          border-radius: 50%;
-          box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-            0 8px 16px -8px rgba(0, 0, 0, 0.3),
-            0 -6px 16px -6px rgba(0, 0, 0, 0.025);
-          width: 72px;
-          height: 72px;
-        }
-      }
-    }
   }
-  //
   .nodebb-actions {
     display: grid;
     grid-gap: 1rem;
@@ -676,7 +607,6 @@ export default {
   }
   .benefits {
     margin: -7rem 1rem 0;
-    // background: url("./img/dot.svg");
     .content-pad {
       z-index: 100;
       position: relative;
@@ -723,7 +653,6 @@ export default {
       box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
     }
     .split-feature {
-      // min-height: 90vh;
       display: grid;
       grid-column-gap: 4rem;
       grid-template-columns: 1fr 1fr;
@@ -760,8 +689,6 @@ export default {
       }
     }
     .feature-content {
-      // letter-spacing: -0.01em;
-      // max-width: 500px;
       max-width: 620px;
       .bullets {
         margin: 2rem 0;
@@ -793,8 +720,8 @@ export default {
       margin: 0 auto;
       margin-bottom: 1rem;
 
-      box-shadow: 0 2px 3px rgba(25, 82, 190, 0.13),
-        0 2px 5px rgba(25, 82, 190, 0.11), 0 5px 15px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 2px 3px rgba(25, 82, 190, 0.13), 0 2px 5px rgba(25, 82, 190, 0.11),
+        0 5px 15px rgba(0, 0, 0, 0.07);
       overflow: hidden;
       position: relative;
       color: #1952be;
@@ -826,7 +753,6 @@ export default {
       }
       .text {
         color: #fff;
-        // font-size: 1.75rem;
         margin-bottom: 0;
       }
       @media (max-width: 900px) {
@@ -897,8 +823,7 @@ export default {
         &.data {
           position: relative;
           z-index: 1;
-          box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1),
-            0 5px 15px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
           transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
           background: #d5dff3;
 
@@ -949,9 +874,6 @@ export default {
               &.footer-row {
                 a {
                   button {
-                    // color: var(--color-bg, #fff);
-                    // background: #1a1f36;
-                    // box-shadow: 0 0 0 1px #1a1f36;
                   }
                 }
               }
@@ -1319,11 +1241,7 @@ export default {
       }
       &.odd {
         background-color: #fff;
-        background-image: linear-gradient(
-          45deg,
-          var(--color-bg-contast),
-          #fff 90%
-        );
+        background-image: linear-gradient(45deg, var(--color-bg-contast), #fff 90%);
         transform: skewY(-3deg);
         .feature-wrap {
           grid-template-areas: "b a";

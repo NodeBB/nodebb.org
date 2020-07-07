@@ -1,1 +1,70 @@
-<svg height="76" viewBox="0 0 76 76" width="76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0" stop-color="#3f6abc"/><stop offset="1" stop-color="#1851be"/></linearGradient><filter id="b" height="107.4%" width="107.4%" x="-3.7%" y="-3.7%"><feGaussianBlur in="SourceGraphic" stdDeviation=".65"/></filter><radialGradient id="c" cx="45.734%" cy="0%" gradientTransform="matrix(0 1 -.78461 0 .457 -.457)" r="132.437%"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#aec3eb"/></radialGradient><filter id="d" height="107.6%" width="106%" x="-3%" y="-3.8%"><feGaussianBlur in="SourceGraphic" stdDeviation=".65"/></filter><mask id="e" fill="#fff"><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z" fill="#fff" fill-rule="evenodd"/></mask><mask id="f" fill="#fff"><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z" fill="#fff" fill-rule="evenodd"/></mask><g fill="none" fill-rule="evenodd"><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z" mask="url(#e)"/><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z"/><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z"/><rect height="75" rx="15" style="fill-rule:nonzero;stroke:#fff;stroke-opacity:.01;stroke-width:1.68;fill:url(#a);filter:url(#b);mask:url(#f)" width="75" x="1" y="1"/><rect height="75" rx="15" style="fill-rule:nonzero;stroke:#fff;stroke-opacity:.01;stroke-width:1.68;fill:url(#a);mask:url(#f)" width="75" x="1" y="1"/><g fill="url(#c)" transform="translate(6 13)"><path d="m23.0645161 28.1020408c4.5158393 0 8.4263573 2.577428 10.3190987 6.3319424.3125225-.0455859.6323423-.0735552.9567866-.0832278l.2563728-.0038166h8.3870968c3.1608941 0 5.9140028 1.7363296 7.3435392 4.3010559.3741097-.0752479.760132-.1207592 1.1549124-.1338492l.2381075-.0039414h6.639785c3.5867017 0 6.51018 2.6753423 6.6355928 6.0208905l.0041921.2240074v3.122449c0 1.6647229-1.3859268 3.0256289-3.1315336 3.1175051l-.1883589.0049439h-13.2795699c-.1995299 0-.3949548-.0165648-.5848045-.0483117-.1389987.0213103-.2799933.0356787-.4227905.0428899l-.2155232.0054218h-16.7741936c-.2452457 0-.4855819-.0209121-.7192975-.0610376-.2776814.0397272-.5629807.0610376-.8532831.0610376h-23.06451617c-3.18398437 0-5.76612903-2.5634981-5.76612903-5.7244898v-5.7244898c0-6.3237723 5.16428931-11.4489796 11.5322581-11.4489796zm31.9758065-7.2857143c3.7639554 0 6.8145161 2.7955676 6.8145161 6.244898 0 3.4493303-3.0505607 6.2448979-6.8145161 6.2448979-3.7628906 0-6.8145161-2.7955676-6.8145161-6.2448979 0-3.4493304 3.0516255-6.244898 6.8145161-6.244898zm-16.25-7.2857143c4.6325605 0 8.3870968 3.7274235 8.3870968 8.3265307 0 4.5991071-3.7545363 8.3265306-8.3870968 8.3265306-4.63125 0-8.3870968-3.7274235-8.3870968-8.3265306 0-4.5991072 3.7558468-8.3265307 8.3870968-8.3265307zm-20.967742-13.5306122c6.3697707 0 11.5322581 5.12520727 11.5322581 11.4489796 0 6.3237723-5.1624874 11.4489796-11.5322581 11.4489796-6.3679687 0-11.53225802-5.1252073-11.53225802-11.4489796 0-6.32377233 5.16428932-11.4489796 11.53225802-11.4489796z" filter="url(#d)"/><path d="m23.0645161 28.1020408c4.5158393 0 8.4263573 2.577428 10.3190987 6.3319424.3125225-.0455859.6323423-.0735552.9567866-.0832278l.2563728-.0038166h8.3870968c3.1608941 0 5.9140028 1.7363296 7.3435392 4.3010559.3741097-.0752479.760132-.1207592 1.1549124-.1338492l.2381075-.0039414h6.639785c3.5867017 0 6.51018 2.6753423 6.6355928 6.0208905l.0041921.2240074v3.122449c0 1.6647229-1.3859268 3.0256289-3.1315336 3.1175051l-.1883589.0049439h-13.2795699c-.1995299 0-.3949548-.0165648-.5848045-.0483117-.1389987.0213103-.2799933.0356787-.4227905.0428899l-.2155232.0054218h-16.7741936c-.2452457 0-.4855819-.0209121-.7192975-.0610376-.2776814.0397272-.5629807.0610376-.8532831.0610376h-23.06451617c-3.18398437 0-5.76612903-2.5634981-5.76612903-5.7244898v-5.7244898c0-6.3237723 5.16428931-11.4489796 11.5322581-11.4489796zm31.9758065-7.2857143c3.7639554 0 6.8145161 2.7955676 6.8145161 6.244898 0 3.4493303-3.0505607 6.2448979-6.8145161 6.2448979-3.7628906 0-6.8145161-2.7955676-6.8145161-6.2448979 0-3.4493304 3.0516255-6.244898 6.8145161-6.244898zm-16.25-7.2857143c4.6325605 0 8.3870968 3.7274235 8.3870968 8.3265307 0 4.5991071-3.7545363 8.3265306-8.3870968 8.3265306-4.63125 0-8.3870968-3.7274235-8.3870968-8.3265306 0-4.5991072 3.7558468-8.3265307 8.3870968-8.3265307zm-20.967742-13.5306122c6.3697707 0 11.5322581 5.12520727 11.5322581 11.4489796 0 6.3237723-5.1624874 11.4489796-11.5322581 11.4489796-6.3679687 0-11.53225802-5.1252073-11.53225802-11.4489796 0-6.32377233 5.16428932-11.4489796 11.53225802-11.4489796z"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="156" height="155" viewBox="0 0 156 155">
+  <defs>
+    <radialGradient id="user-created-groups-c" cx="18.205%" cy="0%" r="100%" fx="18.205%" fy="0%">
+      <stop offset="0%" stop-color="#3F6ABC"/>
+      <stop offset="100%" stop-color="#1851BE"/>
+    </radialGradient>
+    <path id="user-created-groups-b" d="M0.986842105,27.3157895 C0.986842105,12.7756579 12.7756579,0.986842105 27.3157895,0.986842105 L122.684211,0.986842105 C137.224342,0.986842105 149.013158,12.7756579 149.013158,27.3157895 L149.013158,122.684211 C149.013158,137.224342 137.224342,149.013158 122.684211,149.013158 L27.3157895,149.013158 C12.7756579,149.013158 0.986842105,137.224342 0.986842105,122.684211 L0.986842105,27.3157895 Z"/>
+    <filter id="user-created-groups-a" width="107.1%" height="107.1%" x="-3.5%" y="-2.5%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".75" result="shadowSpreadOuter1"/>
+      <feOffset dy="1.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.25"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.3 0"/>
+    </filter>
+    <filter id="user-created-groups-d" width="111.8%" height="111.8%" x="-5.9%" y="-4.9%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="5"/>
+      <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" result="shadowMatrixInner1" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.0490329983 0"/>
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetInner2"/>
+      <feComposite in="shadowOffsetInner2" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner2"/>
+      <feColorMatrix in="shadowInnerInner2" result="shadowMatrixInner2" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.0528299825 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixInner1"/>
+        <feMergeNode in="shadowMatrixInner2"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="user-created-groups-g" cx="22.09%" cy="0%" r="106.679%" fx="22.09%" fy="0%" gradientTransform="matrix(0 1 -.78461 0 .22 -.22)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#AEC3EB"/>
+    </radialGradient>
+    <path id="user-created-groups-f" d="M45.5220713,55.4645542 C54.43473,55.4645542 62.1527244,60.5513754 65.8884845,67.961355 C66.5668573,67.8631245 67.2586912,67.8063608 67.9612233,67.7930563 L68.283107,67.7900107 L84.8365874,67.7900107 C91.0753553,67.7900107 96.5092422,71.2171541 99.3306335,76.2793291 C100.117168,76.1207508 100.929727,76.0292013 101.761448,76.010548 L102.079796,76.0069817 L115.184635,76.0069817 C122.314547,76.0069817 128.116575,81.3634612 128.285681,88.0329408 L128.289474,88.3324382 L128.289474,94.4951665 C128.289474,97.8241701 125.481408,100.537602 121.972029,100.654004 L121.737054,100.657895 L95.5273769,100.657895 C95.1346034,100.657895 94.7498894,100.625373 94.3761136,100.563036 C94.0675113,100.609811 93.7530735,100.639781 93.4339587,100.651843 L93.1133277,100.657895 L60.0063667,100.657895 C59.5194519,100.657895 59.0423425,100.616129 58.578476,100.536009 C58.0317052,100.616351 57.4720238,100.657895 56.9025891,100.657895 L56.9025891,100.657895 L11.3805178,100.657895 C5.09633814,100.657895 0,95.598359 0,89.3595596 L0,89.3595596 L0,78.0612245 C0,65.5800949 10.1926763,55.4645542 22.7610357,55.4645542 L22.7610357,55.4645542 Z M108.632216,41.084855 C116.061075,41.084855 122.081919,46.6024226 122.081919,53.4103115 C122.081919,60.2182004 116.061075,65.735768 108.632216,65.735768 C101.205458,65.735768 95.1825127,60.2182004 95.1825127,53.4103115 C95.1825127,46.6024226 101.205458,41.084855 108.632216,41.084855 Z M76.5598472,26.7051557 C85.7030587,26.7051557 93.1133277,34.0619126 93.1133277,43.1390977 C93.1133277,52.2162829 85.7030587,59.5730397 76.5598472,59.5730397 C67.4192222,59.5730397 60.0063667,52.2162829 60.0063667,43.1390977 C60.0063667,34.0619126 67.4192222,26.7051557 76.5598472,26.7051557 Z M35.176146,0 C47.7480618,0 57.9371817,10.1155407 57.9371817,22.5966702 C57.9371817,35.0777998 47.7480618,45.1933405 35.176146,45.1933405 C22.6077866,45.1933405 12.4151104,35.0777998 12.4151104,22.5966702 C12.4151104,10.1155407 22.6077866,0 35.176146,0 Z"/>
+    <filter id="user-created-groups-e" width="116.6%" height="121.1%" x="-8.3%" y="-5.6%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".625" result="shadowSpreadOuter1"/>
+      <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.147836538 0"/>
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".625" result="shadowSpreadOuter2"/>
+      <feOffset dy="5" in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
+      <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="2.5"/>
+      <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+      <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.0864565122 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="shadowMatrixOuter2"/>
+      </feMerge>
+    </filter>
+    <filter id="user-created-groups-h" width="120.1%" height="125.6%" x="-10%" y="-7.8%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1.25"/>
+      <feOffset dy="12" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.0782615822 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(3 1)">
+    <g fill-rule="nonzero">
+      <use fill="#000" filter="url(#user-created-groups-a)" xlink:href="#user-created-groups-b"/>
+      <use fill="url(#user-created-groups-c)" xlink:href="#user-created-groups-b"/>
+      <use fill="#000" filter="url(#user-created-groups-d)" xlink:href="#user-created-groups-b"/>
+      <use stroke="#FFF" stroke-opacity=".01" stroke-width="1.5" xlink:href="#user-created-groups-b"/>
+    </g>
+    <g fill-rule="nonzero" transform="translate(11.842 25.658)">
+      <use fill="#000" filter="url(#user-created-groups-e)" xlink:href="#user-created-groups-f"/>
+      <use fill="url(#user-created-groups-g)" xlink:href="#user-created-groups-f"/>
+      <use fill="#000" filter="url(#user-created-groups-h)" xlink:href="#user-created-groups-f"/>
+      <use stroke="#FFF" stroke-opacity=".01" stroke-width="1.25" xlink:href="#user-created-groups-f"/>
+    </g>
+  </g>
+</svg>

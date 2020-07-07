@@ -22,7 +22,7 @@
     <i v-else-if="icon == 'code'" class="fad fa-code"></i>
     <i v-else-if="icon == 'customize'" class="fad fa-tachometer-alt-average"></i>
     <i v-else-if="icon == 'groups'" class="fad fa-users-class"></i>
-    <i v-else-if="icon == 'play'" class="fad fa-play-circle"></i>
+    <i v-else-if="icon == 'play'" class="fas fa-play"></i>
     <i v-else-if="icon == 'users'" class="fad fa-users-medical"></i>
     <i v-else-if="icon == 'encrypt'" class="fad fa-lock-alt"></i>
     <i v-else-if="icon == 'backup'" class="fad fa-save"></i>
@@ -69,7 +69,7 @@ export default {
   props: {
     icon: { type: String, default: "" }
   }
-};
+}
 </script>
 
 <style lang="less">

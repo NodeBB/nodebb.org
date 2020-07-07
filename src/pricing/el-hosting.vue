@@ -22,9 +22,9 @@
 export default {
   components: {},
   data() {
-    return {};
+    return {}
   }
-};
+}
 </script>
 
 <style lang="less">
@@ -54,10 +54,12 @@ export default {
     justify-self: center;
   }
   @media (max-width: 900px) {
-    margin: 4rem 0;
+    margin: 0.5rem 0;
     padding-left: 0;
     padding-right: 0;
     grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    padding-bottom: 0;
     .title {
       font-size: 1.5rem;
     }

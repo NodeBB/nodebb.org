@@ -28,9 +28,9 @@
 </template>
 
 <script lang="ts">
-import { stored } from "@factor/api"
+// import { stored } from "@factor/api"
 import { factorLink, factorSpinner } from "@factor/ui"
-import { figureMixin } from "../../util"
+// import { figureMixin } from "../../util"
 // import { requestIndex } from "../../extend/request";
 
 export default {
@@ -162,13 +162,20 @@ export default {
       margin-bottom: 1.5rem;
     }
     .sub {
-      // color: var(--color-text-secondary);
-
       margin-top: 1rem;
       font-size: 1.4rem;
       font-weight: 400;
       margin-bottom: 1rem;
       line-height: 1.6;
+    }
+    @media (max-width: 900px) {
+      .title {
+        font-size: 1.5rem;
+      }
+      .sub {
+        line-height: 1.4;
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -207,7 +214,6 @@ export default {
       background-color: #fff;
       z-index: -1;
       box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-      // border-radius: 4px;
       border-radius: 0.5rem;
       opacity: 0;
       transform: scale(0.95);
@@ -272,10 +278,7 @@ export default {
       /* -webkit-line-clamp: 2; */
       /* -webkit-box-orient: vertical; */
       /* height: 4.5rem; */
-      text-overflow: -o-ellipsis-lastline;
-      /* overflow: hidden; */
-      // color: var(--color-text-secondary);
-
+      // text-ovåerflow: -o-ellipsis-lastline;
       font-size: 1rem;
       font-weight: 300;
     }

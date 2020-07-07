@@ -1,1 +1,70 @@
-<svg height="80" viewBox="0 0 86 80" width="86" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0" stop-color="#3f6abc"/><stop offset="1" stop-color="#1851be"/></linearGradient><filter id="b" height="110.6%" width="110.6%" x="-5.3%" y="-5.3%"><feGaussianBlur in="SourceGraphic" stdDeviation="1.05"/></filter><radialGradient id="c" cx="57.581%" cy="0%" gradientTransform="matrix(0 1 -.80263 0 .576 -.576)" r="111.779%"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#bdceee"/></radialGradient><filter id="d" height="106.7%" width="105.4%" x="-2.7%" y="-3.4%"><feGaussianBlur in="SourceGraphic" stdDeviation=".65"/></filter><mask id="e" fill="#fff"><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z" fill="#fff" fill-rule="evenodd"/></mask><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z" mask="url(#e)"/><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z"/><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z"/><g fill-rule="nonzero"><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z" fill="url(#a)" filter="url(#b)" stroke="#fff" stroke-opacity=".01" stroke-width="1.68"/><path d="m.5 13.84c0-7.367 5.973-13.34 13.34-13.34h48.32c7.367 0 13.34 5.973 13.34 13.34v48.32c0 7.367-5.973 13.34-13.34 13.34h-48.32c-7.367 0-13.34-5.973-13.34-13.34z" fill="url(#a)" stroke="#fff" stroke-opacity=".01" stroke-width="1.68"/><g fill="url(#c)" transform="translate(10 7)"><path d="m25.2918033 29c7.9818727 0 14.452459-6.4918711 14.452459-14.5 0-8.00812887-6.4705863-14.5-14.452459-14.5s-14.452459 6.49187113-14.452459 14.5c0 8.0081289 6.4705863 14.5 14.452459 14.5zm10.8393442 7.25c.0081589-1.2108335.3228632-2.3997293.9145697-3.4550781-.5419672-.0566407-1.0726434-.1699219-1.6371926-.1699219h-1.8855943c-5.2230997 2.416595-11.2391543 2.416595-16.4622541 0h-1.8855942c-8.3801917.0018761-15.17321205 6.8172419-15.175082 15.225v4.7125c0 3.0030483 2.42646986 5.4375 5.41967213 5.4375h31.71637297c-.6493927-1.0975697-.9962081-2.3486485-1.0048976-3.625zm32.5180328-3.625h-3.6131147v-9.0625c0-5.0050805-4.0441165-9.0625-9.0327869-9.0625-4.9886705 0-9.0327869 4.0574195-9.0327869 9.0625v9.0625h-3.6131148c-1.9954681 0-3.6131147 1.6229678-3.6131147 3.625v18.125c0 2.0020322 1.6176466 3.625 3.6131147 3.625h25.2918033c1.9954682 0 3.6131148-1.6229678 3.6131148-3.625v-18.125c0-2.0020322-1.6176466-3.625-3.6131148-3.625zm-12.6459016 16.3125c-1.9954682 0-3.6131148-1.6229678-3.6131148-3.625s1.6176466-3.625 3.6131148-3.625 3.6131147 1.6229678 3.6131147 3.625-1.6176465 3.625-3.6131147 3.625zm3.6131147-16.3125h-7.2262295v-9.0625c0-2.0020322 1.6176466-3.625 3.6131148-3.625s3.6131147 1.6229678 3.6131147 3.625z" filter="url(#d)"/><path d="m25.2918033 29c7.9818727 0 14.452459-6.4918711 14.452459-14.5 0-8.00812887-6.4705863-14.5-14.452459-14.5s-14.452459 6.49187113-14.452459 14.5c0 8.0081289 6.4705863 14.5 14.452459 14.5zm10.8393442 7.25c.0081589-1.2108335.3228632-2.3997293.9145697-3.4550781-.5419672-.0566407-1.0726434-.1699219-1.6371926-.1699219h-1.8855943c-5.2230997 2.416595-11.2391543 2.416595-16.4622541 0h-1.8855942c-8.3801917.0018761-15.17321205 6.8172419-15.175082 15.225v4.7125c0 3.0030483 2.42646986 5.4375 5.41967213 5.4375h31.71637297c-.6493927-1.0975697-.9962081-2.3486485-1.0048976-3.625zm32.5180328-3.625h-3.6131147v-9.0625c0-5.0050805-4.0441165-9.0625-9.0327869-9.0625-4.9886705 0-9.0327869 4.0574195-9.0327869 9.0625v9.0625h-3.6131148c-1.9954681 0-3.6131147 1.6229678-3.6131147 3.625v18.125c0 2.0020322 1.6176466 3.625 3.6131147 3.625h25.2918033c1.9954682 0 3.6131148-1.6229678 3.6131148-3.625v-18.125c0-2.0020322-1.6176466-3.625-3.6131148-3.625zm-12.6459016 16.3125c-1.9954682 0-3.6131148-1.6229678-3.6131148-3.625s1.6176466-3.625 3.6131148-3.625 3.6131147 1.6229678 3.6131147 3.625-1.6176465 3.625-3.6131147 3.625zm3.6131147-16.3125h-7.2262295v-9.0625c0-2.0020322 1.6176466-3.625 3.6131148-3.625s3.6131147 1.6229678 3.6131147 3.625z"/></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="171" height="155" viewBox="0 0 171 155">
+  <defs>
+    <radialGradient id="roles-permissions-c" cx="18.205%" cy="0%" r="100%" fx="18.205%" fy="0%">
+      <stop offset="0%" stop-color="#3F6ABC"/>
+      <stop offset="100%" stop-color="#1851BE"/>
+    </radialGradient>
+    <path id="roles-permissions-b" d="M0.986842105,27.3157895 C0.986842105,12.7756579 12.7756579,0.986842105 27.3157895,0.986842105 L122.684211,0.986842105 C137.224342,0.986842105 149.013158,12.7756579 149.013158,27.3157895 L149.013158,122.684211 C149.013158,137.224342 137.224342,149.013158 122.684211,149.013158 L27.3157895,149.013158 C12.7756579,149.013158 0.986842105,137.224342 0.986842105,122.684211 L0.986842105,27.3157895 Z"/>
+    <filter id="roles-permissions-a" width="107.1%" height="107.1%" x="-3.5%" y="-2.5%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".75" result="shadowSpreadOuter1"/>
+      <feOffset dy="1.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.25"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.3 0"/>
+    </filter>
+    <filter id="roles-permissions-d" width="111.8%" height="111.8%" x="-5.9%" y="-4.9%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="5"/>
+      <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" result="shadowMatrixInner1" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.0490329983 0"/>
+      <feOffset dy="1" in="SourceAlpha" result="shadowOffsetInner2"/>
+      <feComposite in="shadowOffsetInner2" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner2"/>
+      <feColorMatrix in="shadowInnerInner2" result="shadowMatrixInner2" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.0528299825 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixInner1"/>
+        <feMergeNode in="shadowMatrixInner2"/>
+      </feMerge>
+    </filter>
+    <radialGradient id="roles-permissions-g" cx="22.09%" cy="0%" r="106.679%" fx="22.09%" fy="0%" gradientTransform="matrix(0 1 -.80263 0 .22 -.22)">
+      <stop offset="0%" stop-color="#FFF"/>
+      <stop offset="100%" stop-color="#AEC3EB"/>
+    </radialGradient>
+    <path id="roles-permissions-f" d="M49.9180328,57.2368421 C65.6717289,57.2368421 78.442623,44.4239386 78.442623,28.6184211 C78.442623,12.8129035 65.6717289,0 49.9180328,0 C34.1643366,0 21.3934426,12.8129035 21.3934426,28.6184211 C21.3934426,44.4239386 34.1643366,57.2368421 49.9180328,57.2368421 Z M71.3114754,71.5460526 C71.3275785,69.1562496 71.9487054,66.8097448 73.1165471,64.7268195 C72.046875,64.6150288 70.9994877,64.3914474 69.8852459,64.3914474 L66.1636783,64.3914474 C55.8549288,69.1610428 43.9811368,69.1610428 33.6723873,64.3914474 L29.9508197,64.3914474 C13.4109677,64.3951502 0.00369069566,77.8465301 0,94.4407895 L0,103.741776 C0,109.668845 4.78908526,114.473684 10.6967213,114.473684 L73.2948258,114.473684 C72.0131297,112.307428 71.3286256,109.838194 71.3114754,107.319079 L71.3114754,71.5460526 Z M135.491803,64.3914474 L128.360656,64.3914474 L128.360656,46.5049342 C128.360656,36.6264858 120.378847,28.6184211 110.532787,28.6184211 C100.686727,28.6184211 92.704918,36.6264858 92.704918,46.5049342 L92.704918,64.3914474 L85.5737705,64.3914474 C81.6353465,64.3914474 78.442623,67.5946733 78.442623,71.5460526 L78.442623,107.319079 C78.442623,111.270458 81.6353465,114.473684 85.5737705,114.473684 L135.491803,114.473684 C139.430227,114.473684 142.622951,111.270458 142.622951,107.319079 L142.622951,71.5460526 C142.622951,67.5946733 139.430227,64.3914474 135.491803,64.3914474 Z M110.532787,96.5871711 C106.594363,96.5871711 103.401639,93.3839452 103.401639,89.4325658 C103.401639,85.4811864 106.594363,82.2779605 110.532787,82.2779605 C114.471211,82.2779605 117.663934,85.4811864 117.663934,89.4325658 C117.663934,93.3839452 114.471211,96.5871711 110.532787,96.5871711 Z M117.663934,64.3914474 L103.401639,64.3914474 L103.401639,46.5049342 C103.401639,42.5535548 106.594363,39.3503289 110.532787,39.3503289 C114.471211,39.3503289 117.663934,42.5535548 117.663934,46.5049342 L117.663934,64.3914474 Z"/>
+    <filter id="roles-permissions-e" width="114.9%" height="118.6%" x="-7.4%" y="-4.9%" filterUnits="objectBoundingBox">
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".625" result="shadowSpreadOuter1"/>
+      <feOffset dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.147836538 0"/>
+      <feMorphology in="SourceAlpha" operator="dilate" radius=".625" result="shadowSpreadOuter2"/>
+      <feOffset dy="5" in="shadowSpreadOuter2" result="shadowOffsetOuter2"/>
+      <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="2.5"/>
+      <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+      <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0.0941176471   0 0 0 0 0.317647059   0 0 0 0 0.745098039  0 0 0 0.0864565122 0"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="shadowMatrixOuter2"/>
+      </feMerge>
+    </filter>
+    <filter id="roles-permissions-h" width="118.1%" height="122.5%" x="-9%" y="-6.9%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation="1.25"/>
+      <feOffset dy="12" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+      <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+      <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.0782615822 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(3 1)">
+    <g fill-rule="nonzero">
+      <use fill="#000" filter="url(#roles-permissions-a)" xlink:href="#roles-permissions-b"/>
+      <use fill="url(#roles-permissions-c)" xlink:href="#roles-permissions-b"/>
+      <use fill="#000" filter="url(#roles-permissions-d)" xlink:href="#roles-permissions-b"/>
+      <use stroke="#FFF" stroke-opacity=".01" stroke-width="1.5" xlink:href="#roles-permissions-b"/>
+    </g>
+    <g fill-rule="nonzero" transform="translate(19.737 13.816)">
+      <use fill="#000" filter="url(#roles-permissions-e)" xlink:href="#roles-permissions-f"/>
+      <use fill="url(#roles-permissions-g)" xlink:href="#roles-permissions-f"/>
+      <use fill="#000" filter="url(#roles-permissions-h)" xlink:href="#roles-permissions-f"/>
+      <use stroke="#FFF" stroke-opacity=".01" stroke-width="1.25" xlink:href="#roles-permissions-f"/>
+    </g>
+  </g>
+</svg>

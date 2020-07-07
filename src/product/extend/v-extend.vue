@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
+import { factorLink, factorIcon } from "@factor/ui"
 
 export default {
   components: {
@@ -50,12 +50,12 @@ export default {
           link: { path: "/pricing", text: "Learn more" }
         }
       ]
-    };
+    }
   },
   mounted(this: any) {
     setTimeout(() => {
-      this.loadingButtons = false;
-    }, 1000);
+      this.loadingButtons = false
+    }, 1000)
   },
   methods: {}
   // metaInfo() {
@@ -64,7 +64,7 @@ export default {
   //     description: ""
   //   };
   // }
-};
+}
 </script>
 <style lang="less">
 .view-product-extend {
@@ -184,10 +184,11 @@ export default {
     }
     @media (max-width: 900px) {
       .title {
-        font-size: 1.8em;
+        font-size: 2rem;
       }
       .text {
-        font-size: 1.1em;
+        font-size: 1.25rem;
+        line-height: 1.4;
       }
     }
   }

@@ -112,16 +112,20 @@ export default {
         font-weight: 400;
       }
       .icon {
-        width: 3.5rem;
-        height: 4.225rem;
+        width: 3.25rem;
+        height: 3.25rem;
         margin: 0.5rem 0;
         overflow: hidden;
         color: #1952be;
         font-size: 1.5rem;
         position: absolute;
-        @media (max-width: 900px) {
+        @media (max-width: 1200px) {
           width: 2.75rem;
-          height: 3rem;
+          height: 2.75rem;
+        }
+        @media (max-width: 900px) {
+          width: 2.5rem;
+          height: 2.5rem;
         }
         i {
           position: relative;

@@ -145,7 +145,10 @@ export default {
   height: 45px;
   align-items: center;
   display: grid;
-  grid-template-columns: minmax(150px, 300px) 1fr minmax(150px, 300px);
+  grid-template-columns: minmax(100px, 300px) 1fr minmax(150px, 300px);
+  @media (max-width: 1200px) {
+    grid-template-columns: minmax(0, 300px) 1fr minmax(150px, 300px);
+  }
 
   .head-nav {
     display: flex;

@@ -31,19 +31,30 @@
               </factor-link>
             </div>
           </div>
+          <factor-link
+            v-if="$route.path != '/pricing'"
+            path="/pricing"
+            btn="link"
+          >Start Free Trial &rarr;</factor-link>
+          <factor-link
+            btn="link"
+            path="https://manage.nodebb.org"
+            target="_blank"
+            rel="noopener"
+          >Sign In</factor-link>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script lang="ts">
-import { factorLink } from "@factor/ui"
+import { factorLink, factorBtn } from "@factor/ui"
 import { toLabel, emitEvent } from "@factor/api"
 
-import { isLoggedIn } from "@factor/user"
 export default {
   components: {
     factorLink,
+    factorBtn,
     siteBrand: () => import("./el/brand.vue")
   },
   data() {
@@ -59,22 +70,6 @@ export default {
         _id: "pages",
         title: "Pages",
         items: [
-          // {
-          //     event: "sign-in-modal",
-          //     name: "Sign In &rarr;",
-          //     condition: (): boolean => !isLoggedIn(),
-          //   },
-          //   {
-          //     path: "/dashboard",
-          //     name: "View Dashboard &rarr;",
-          //     condition: (): boolean => isLoggedIn(),
-          //   },
-
-          // { path: "/install", name: "Install" },
-          // { path: "/themes", name: "Themes" },
-          // { path: "/plugins", name: "Plugins" },
-          // { path: "/docs", name: "Docs" },
-
           { path: "/", name: "Home" },
           { path: "/product", name: "Product" },
           { path: "/pricing", name: "Pricing" },
@@ -97,9 +92,9 @@ export default {
             name: "Answers",
             target: "_blank",
             rel: "noopener"
-          },
+          }
 
-          { component: () => import("./el/github-stars.vue") }
+          // { component: () => import("./el/github-stars.vue") }
         ]
       }
     ]
@@ -159,32 +154,65 @@ export default {
     font-size: 1.2em;
     font-weight: 700;
     margin: 1.5rem 0 0.3rem;
+    button {
+      padding-left: 0;
+    }
     .factor-icon {
       opacity: 0.3;
     }
   }
+
   .menu-area {
     margin-top: 2rem;
-    a {
-      color: inherit;
-    }
-    .factor-link {
+  }
+
+  .menu-items {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: inset 0 -1px #e3e8ee;
+    + .factor-link {
+      button {
+        padding-left: 0;
+      }
+      .btn-content {
+        --highlight-background: linear-gradient(102deg, #1952be 0%, #265bc2 100%);
+        color: inherit;
+        background: var(--highlight-background);
+        -webkit-text-fill-color: transparent;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        padding-right: 0.04em;
+        margin-right: -0.04em;
+        padding-bottom: 0.02em;
+        margin-bottom: -0.02em;
+        -webkit-background-clip: text;
+      }
+      + .factor-link {
+        button {
+          padding-left: 0;
+        }
+      }
     }
   }
   .menu-link,
   .group-title {
-    padding: 0.5em;
+    padding: 0.65rem 0;
   }
   .menu-component {
-    padding: 2rem 0;
+    padding: 1rem 0 0;
   }
   .menu-link {
     display: block;
-
-    border-radius: 5px;
+    color: #8792a2;
     &.active-path {
-      background: var(--color-bg-highlight);
-      color: var(--color-primary);
+      font-weight: 600;
+      --highlight-background: linear-gradient(102deg, #1952be 0%, #265bc2 100%);
+      color: inherit;
+      background: var(--highlight-background);
+      -webkit-text-fill-color: transparent;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      -webkit-background-clip: text;
     }
   }
   .group-title {

@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import img from "../img/_.svg";
+import img from "../img/_.svg"
 export default {
   components: {
     homeIcon: () => import("../icon.vue")
@@ -42,9 +42,9 @@ export default {
           text: `NodeBB integrates with several spam prevention tools including Akismet, StopForumSpam, and Project Honeypot.`
         }
       ]
-    };
+    }
   }
-};
+}
 </script>
 <style lang="less">
 .nodebb-product-benefits {
@@ -83,13 +83,28 @@ export default {
         font-weight: 400;
       }
       .icon {
-        width: 3.5rem;
-        height: 4.225rem;
+        width: 3.25rem;
+        height: 3.25rem;
         margin: 0.5rem 0;
         overflow: hidden;
         color: #1952be;
         font-size: 1.5rem;
         position: absolute;
+        @media (max-width: 1200px) {
+          width: 2.75rem;
+          height: 2.75rem;
+        }
+        @media (max-width: 900px) {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+        i {
+          position: relative;
+          left: 0;
+          margin-left: 0;
+          top: 0;
+          transform: translateY(0);
+        }
       }
       h3,
       p {

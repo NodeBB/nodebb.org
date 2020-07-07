@@ -11,28 +11,27 @@
 </template>
 
 <script lang="ts">
-
 export default {
   data() {
     return {
       width: 500,
       screenshots: [
         {
-          img: require("./img/theme-alpha.jpg"),
+          img: require("./img/_.png")
         },
         {
-          img: require("./img/theme-ultra.jpg"),
+          img: require("./img/_.png")
         },
         {
-          img: require("./img/theme-alpha-yellow.jpg"),
-        },
-      ],
+          img: require("./img/_.png")
+        }
+      ]
     }
   },
   computed: {
     scale(this: any) {
       return Math.max(Math.min(this.width / 500, 1), 0.5)
-    },
+    }
   },
   mounted(this: any) {
     this.width = this.getWidth()
@@ -44,8 +43,8 @@ export default {
   methods: {
     getWidth(this: any) {
       return this.$refs.wrapper ? this.$refs.wrapper.clientWidth : 100
-    },
-  },
+    }
+  }
 }
 </script>
 

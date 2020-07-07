@@ -100,6 +100,7 @@ export default {
 <style lang="postcss">
 .footer {
   background: #fff;
+  box-shadow: inset 0 1px #e3e8ee;
   .content-footer {
     position: relative;
     width: 100%;

@@ -43,7 +43,7 @@
 </template>
 
 <script lang="ts">
-import { factorLink, factorIcon } from "@factor/ui";
+import { factorLink, factorIcon } from "@factor/ui"
 export default {
   components: {
     factorLink,
@@ -52,9 +52,9 @@ export default {
     githubStars: () => import("../el/github-stars.vue")
   },
   data() {
-    return {};
+    return {}
   }
-};
+}
 </script>
 
 <style lang="less">
@@ -68,8 +68,7 @@ export default {
   margin-top: 8rem;
   margin-bottom: 12rem;
   position: relative;
-  box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1),
-    0 5px 15px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
   &:before {
     content: "";
     background-image: url(../home/img/nbb-bg-c.svg);
@@ -138,9 +137,14 @@ export default {
   .figure {
     justify-self: center;
   }
+  @media (max-width: 1200px) {
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+  }
   @media (max-width: 900px) {
-    margin: 4rem 0;
     grid-template-columns: 1fr;
+    margin-bottom: 4.5rem;
+    margin-top: 5rem;
     .title {
       font-size: 1.5rem;
     }

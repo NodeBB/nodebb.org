@@ -391,7 +391,7 @@ figure.splash-figure-container.splash-figure-main {
       }
       .icon {
         transition: all 0.3s;
-        background-color: #2a2f44;
+        background-color: #1a1f36;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -399,7 +399,6 @@ figure.splash-figure-container.splash-figure-main {
         height: 3.5rem;
         border-radius: 50%;
         box-shadow: 0 0 1px 0 hsla(0, 0%, 100%, 0.01), 0 0 1px 0 #2a2f44;
-        background-image: linear-gradient(90deg, #2a2f44, #2a2f44);
         position: relative;
         margin: 0 auto;
 
