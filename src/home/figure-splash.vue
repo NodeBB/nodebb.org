@@ -47,27 +47,27 @@ export default {
     return {
       width: 500,
       animationInterval: 10000
-    };
+    }
   },
   computed: {
     scale(this: any) {
-      return Math.max(Math.min(this.width / 900, 1), 0.5);
+      return Math.max(Math.min(this.width / 900, 1), 0.5)
     }
   },
 
   mounted() {
-    this.width = window.innerWidth;
+    this.width = window.innerWidth
 
     window.addEventListener("resize", () => {
-      this.width = window.innerWidth < 900 ? window.innerWidth : 900;
-    });
+      this.width = window.innerWidth < 900 ? window.innerWidth : 900
+    })
   },
   methods: {
     getWidth(this: any) {
-      return this.$refs.wrapper ? this.$refs.wrapper.clientWidth : 100;
+      return this.$refs.wrapper ? this.$refs.wrapper.clientWidth : 100
     }
   }
-};
+}
 </script>
 
 <style lang="less">
@@ -115,25 +115,25 @@ figure {
         .stage {
           .main {
             z-index: 10;
-            animation: mainTransformHome 1s 1 forwards;
+            animation: mainTransformHome 0s 1 forwards;
             background: transparent;
             box-shadow: none;
           }
           .main-clip {
             z-index: 10;
-            animation: mainClipTransformHome 1s 1 forwards;
+            animation: mainClipTransformHome 0s 1 forwards;
             padding: 1rem;
             border-radius: 0.75rem;
           }
           .tablet-device {
             position: absolute;
             transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-            animation: tabletTransformHome 1s 1 forwards;
+            animation: tabletTransformHome 0s 1 forwards;
           }
           .tablet-device-clip {
             position: absolute;
             transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-            animation: tabletClipTransformHome 1s 1 forwards;
+            animation: tabletClipTransformHome 0s 1 forwards;
 
             position: absolute;
             top: 1288px;
@@ -149,9 +149,8 @@ figure {
             }
             @media (max-width: 900px) {
               top: 314px;
-              transform: scale(0.8) rotateX(0deg) rotateY(0deg)
-                translateZ(-586px) translateY(114px) translateX(-148px)
-                rotate(0deg);
+              transform: scale(0.8) rotateX(0deg) rotateY(0deg) translateZ(-586px)
+                translateY(114px) translateX(-148px) rotate(0deg);
             }
           }
           .main-clip,
@@ -169,7 +168,7 @@ figure {
             left: 32px;
             bottom: 10px;
             transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-            animation: mobileTransformHome 1s 1 forwards;
+            animation: mobileTransformHome 0s 1 forwards;
             @media (max-width: 1200px) {
               left: 0;
               bottom: 0;
@@ -188,7 +187,7 @@ figure {
             z-index: 1;
             position: absolute;
             transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-            animation: mobileClipTransformHome 1s 1 forwards;
+            animation: mobileClipTransformHome 0s 1 forwards;
             @media (max-width: 900px) {
               transform: scale(0.6) rotateX(0) rotateY(0) translateZ(-406px)
                 translateY(32px) translateX(-368px) rotate(0deg);
@@ -216,9 +215,8 @@ figure {
               transform: scale(0.9);
             }
             to {
-              transform: scale(1) perspective(1200px) rotateX(0deg)
-                rotateY(0deg) translateZ(-74px) translateY(14px) rotate(-12deg)
-                translateX(98px);
+              transform: scale(1) perspective(1200px) rotateX(0deg) rotateY(0deg)
+                translateZ(-74px) translateY(14px) rotate(-12deg) translateX(98px);
             }
           }
           @keyframes mainClipTransformHome {
@@ -226,9 +224,8 @@ figure {
               transform: scale(0.9);
             }
             to {
-              transform: scale(1) perspective(1200px) rotateX(0deg)
-                rotateY(-6deg) translateZ(-24rem) translateY(-18rem) rotate(0)
-                translateX(9rem);
+              transform: scale(1) perspective(1200px) rotateX(0deg) rotateY(-6deg)
+                translateZ(-24rem) translateY(-18rem) rotate(0) translateX(9rem);
             }
           }
           @keyframes tabletTransformHome {
@@ -236,9 +233,8 @@ figure {
               transform: scale(0.9);
             }
             to {
-              transform: scale(0.8) perspective(1200px) rotateX(0deg)
-                rotateY(0deg) translateZ(-134px) translateY(-16rem)
-                rotate(-12deg) translateX(-128px);
+              transform: scale(0.8) perspective(1200px) rotateX(0deg) rotateY(0deg)
+                translateZ(-134px) translateY(-16rem) rotate(-12deg) translateX(-128px);
             }
           }
           @keyframes tabletClipTransformHome {
@@ -255,9 +251,8 @@ figure {
               transform: scale(0.9);
             }
             to {
-              transform: perspective(1200px) scale(1) rotateY(0deg)
-                translateZ(230px) translateY(-164px) rotate(-12deg)
-                translateX(62px);
+              transform: perspective(1200px) scale(1) rotateY(0deg) translateZ(230px)
+                translateY(-164px) rotate(-12deg) translateX(62px);
             }
           }
           @media (max-width: 1200px) {
@@ -265,9 +260,8 @@ figure {
               transform: scale(0.9);
             }
             to {
-              transform: scale(0.8) perspective(1200px) rotateX(0deg)
-                rotateY(0deg) translateZ(-9rem) translateY(-12rem)
-                rotate(-12deg) translateX(-9rem);
+              transform: scale(0.8) perspective(1200px) rotateX(0deg) rotateY(0deg)
+                translateZ(-9rem) translateY(-12rem) rotate(-12deg) translateX(-9rem);
             }
           }
 
@@ -277,9 +271,8 @@ figure {
                 transform: scale(0.9);
               }
               to {
-                transform: scale(1) perspective(1200px) rotateX(0deg)
-                  rotateY(0deg) translateZ(-64px) translateY(-28px)
-                  rotate(-12deg) translateX(78px);
+                transform: scale(1) perspective(1200px) rotateX(0deg) rotateY(0deg)
+                  translateZ(-64px) translateY(-28px) rotate(-12deg) translateX(78px);
               }
             }
             @keyframes tabletTransformHome {
@@ -287,9 +280,8 @@ figure {
                 transform: scale(0.9);
               }
               to {
-                transform: scale(0.6) perspective(1200px) rotateX(0deg)
-                  rotateY(0deg) translateZ(-134px) translateY(-548px)
-                  rotate(-12deg) translateX(-128px);
+                transform: scale(0.6) perspective(1200px) rotateX(0deg) rotateY(0deg)
+                  translateZ(-134px) translateY(-548px) rotate(-12deg) translateX(-128px);
               }
             }
           }

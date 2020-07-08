@@ -142,7 +142,7 @@ figure.splash-figure-container.splash-figure-main {
       box-shadow: 0px 50px 100px rgba(50, 50, 93, 0.13),
         0px 15px 35px rgba(50, 50, 93, 0.11), 0px 5px 15px rgba(0, 0, 0, 0.07);
       transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-      animation: themeTransform 1s 1 forwards;
+      animation: themeTransform 0s 1 forwards;
       overflow: hidden;
       &.wrap {
         width: 100%;
@@ -180,7 +180,7 @@ figure.splash-figure-container.splash-figure-main {
       z-index: 100;
       bottom: 9%;
       left: 0rem;
-      animation: tabletTransform 1s 1 forwards;
+      animation: tabletTransform 0s 1 forwards;
       box-shadow: 0 5px 15px rgba(27, 34, 60, 0.1), 0 15px 35px rgba(27, 34, 60, 0.1),
         20px -20px 35px rgba(80, 102, 119, 0.15);
     }
@@ -189,7 +189,7 @@ figure.splash-figure-container.splash-figure-main {
       top: 0;
       right: 0;
 
-      animation: themeTransform 1s 1 forwards;
+      animation: themeTransform 0s 1 forwards;
     }
 
     @keyframes themeTransform {
@@ -265,7 +265,7 @@ figure.splash-figure-container.splash-figure-main {
       box-shadow: 0px 50px 100px rgba(50, 50, 93, 0.13),
         0px 15px 35px rgba(50, 50, 93, 0.11), 0px 5px 15px rgba(0, 0, 0, 0.07);
 
-      animation: mainTransform 1s 1 forwards;
+      animation: mainTransform 0s 1 forwards;
     }
     .mobile-device {
       max-width: 18%;
@@ -276,7 +276,7 @@ figure.splash-figure-container.splash-figure-main {
       box-shadow: 0px 5px 15px rgba(27, 34, 60, 0.1), 0px 15px 35px rgba(27, 34, 60, 0.1),
         0px 50px 100px rgba(27, 34, 60, 0.1), 20px -20px 35px rgba(80, 102, 119, 0.15);
       transition: all 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-      animation: mobileTransform 1s 1 forwards;
+      animation: mobileTransform 0s 1 forwards;
 
       &:hover {
         box-shadow: 0px 5px 15px rgba(4, 150, 255, 0.3),
