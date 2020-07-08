@@ -32,8 +32,8 @@ export default {
   position: fixed;
   bottom: 0;
   right: 1.5rem;
+  z-index: 9999;
   .feedback-icon {
-    z-index: 9999;
     width: 38px;
     height: 30px;
     background: #3ca773 !important;
