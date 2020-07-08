@@ -32,7 +32,7 @@ export default {
   position: fixed;
   bottom: 0;
   right: 1.5rem;
-  z-index: 9999;
+  z-index: 4999;
   .feedback-icon {
     width: 38px;
     height: 30px;
