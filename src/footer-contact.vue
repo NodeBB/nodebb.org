@@ -4,13 +4,13 @@
       <iframe src="/contact"></iframe>
     </factor-modal>
 
-    <a id="feedback" @click="vis = !vis" class="feedback-icon" target="_top">
-      <span class="feedback-icon-container">
-        <span class="feedback-icon-eye feedback-icon-eye-left"></span>
-        <span class="feedback-icon-eye feedback-icon-eye-right"></span>
+    <a id="contact" @click="vis = !vis" class="contact-icon" target="_top">
+      <span class="contact-icon-container">
+        <span class="contact-icon-eye contact-icon-eye-left"></span>
+        <span class="contact-icon-eye contact-icon-eye-right"></span>
       </span>
-      <span class="feedback-icon-mouth"></span>
-      <p class="feedback-tooltip">Speak to a specialist</p>
+      <span class="contact-icon-mouth"></span>
+      <p class="contact-tooltip">Speak to a specialist</p>
     </a>
   </div>
 </template>
@@ -30,16 +30,15 @@ export default {
   display: flex;
   align-items: center;
   position: fixed;
-  bottom: 0;
+  bottom: 1.5rem;
   right: 1.5rem;
   z-index: 4999;
-  .feedback-icon {
+  .contact-icon {
     width: 38px;
     height: 30px;
     background: #3ca773 !important;
-    position: fixed;
+    position: relative;
     right: 1rem;
-    bottom: 56px;
     border-radius: 6px 5px 6px 0;
     transform: scale(0.74);
     transition: all 0.15s ease-out;
@@ -70,20 +69,20 @@ export default {
     &:hover {
       transform: scale(0.86);
       right: 18px;
-      .feedback-icon-mouth {
+      .contact-icon-mouth {
         &:after {
           background: #fff;
           opacity: 0;
           visibility: hidden;
         }
       }
-      .feedback-tooltip {
+      .contact-tooltip {
         transform: scale(1);
         opacity: 1;
         visibility: visible;
       }
     }
-    .feedback-tooltip {
+    .contact-tooltip {
       color: #161718;
       background-color: #fff;
       padding: 0.5rem 1rem;
@@ -97,18 +96,18 @@ export default {
       left: -13.5rem;
       transform: scale(0);
       transform-origin: right;
-      opacity: 0;
+      opacity: 0.9;
       visibility: hidden;
       border: 1px solid #c1c9d2;
       transition: all 65ms ease-out 5ms;
     }
   }
-  .feedback-icon-container {
+  .contact-icon-container {
     position: absolute;
     left: 0.95rem;
     top: 0;
   }
-  .feedback-icon-eye {
+  .contact-icon-eye {
     width: 4px;
     height: 4px;
     position: absolute;
@@ -117,13 +116,13 @@ export default {
     border-radius: 50%;
     animation: blink 6s ease-in-out infinite;
   }
-  .feedback-icon-eye-left {
+  .contact-icon-eye-left {
     left: 8px;
   }
-  .feedback-icon-eye-right {
+  .contact-icon-eye-right {
     right: 0;
   }
-  .feedback-icon-mouth {
+  .contact-icon-mouth {
     width: 16px;
     height: 7px;
     position: absolute;
@@ -147,7 +146,7 @@ export default {
       visibility: visible;
     }
   }
-  .feedback-tooltip {
+  .contact-tooltip {
     &:after {
       left: 100%;
       top: 50%;
