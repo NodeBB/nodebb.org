@@ -164,6 +164,9 @@ export default {
 
   .menu-area {
     margin-top: 1.5rem;
+    .factor-link.btn-link {
+      display: block;
+    }
   }
 
   .menu-items {
