@@ -101,8 +101,8 @@ body.modal-open .contact-toggle {
 
 .contact-modal form>div:first-child {
 	flex: 1;
-	padding-right: 1rem;
-	padding-left: 1rem;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .contact-modal form>div:nth-child(2),
@@ -218,11 +218,11 @@ body.modal-open .contact-toggle {
 .contact-modal button[data-type] {
 	width: 100%;
 	display: flex;
-	padding: 0.5rem 0.5rem;
+	padding: 0.5rem 1rem;
 	border: none;
 	text-align: left;
 	margin: 1rem 0 0;
-	border-radius: 0.25rem;
+	border-radius: 0;
 	color: #2a2f45;
 	background: none;
 	line-height: 1.65;
@@ -236,8 +236,8 @@ body.modal-open .contact-toggle {
 
 .contact-modal button[data-type]:not(.selected) {
 	opacity: 0.97;
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .contact-modal button[data-type]:hover {
@@ -288,8 +288,8 @@ body.modal-open .contact-toggle {
 }
 
 .contact-modal button:disabled {
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 input::-webkit-input-placeholder {
