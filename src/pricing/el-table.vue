@@ -4,9 +4,11 @@
       <div class="header">
         <home-icon icon="model-instant" />
         <h1>Instant Hosting</h1>
-        <p
-          class="text-lg font-normal mb-10"
-        >The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us.</p>
+        <p class="text-lg font-normal mb-10">
+          The quickest way to get your forum up and running today. Launch your forum in
+          minutes using one of our great looking themes, and leave the server maintenance
+          and upgrades to us.
+        </p>
       </div>
     </div>
     <div class="view-table-version-2">
@@ -72,8 +74,8 @@
 </template>
 
 <script lang="ts">
-import { toLabel } from "@factor/api";
-import { factorModal, factorIcon, factorLink } from "@factor/ui";
+import { toLabel } from "@factor/api"
+import { factorModal, factorIcon, factorLink } from "@factor/ui"
 export default {
   components: {
     factorModal,
@@ -88,7 +90,7 @@ export default {
       title: "Pricing that scales with your business.",
       description:
         "The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us. Choose the plan that suits your needs."
-    };
+    }
   },
   data(this: any) {
     return {
@@ -295,15 +297,14 @@ export default {
           external: {
             path: "",
             text: "Contact us",
-            meta:
-              "Contact us directly for customised support plans (SLAs, etc.)"
+            meta: "Contact us directly for customised support plans (SLAs, etc.)"
           }
         }
       ]
-    };
+    }
   },
   methods: { toLabel }
-};
+}
 </script>
 <style lang="less">
 .el-table {
@@ -447,11 +448,7 @@ export default {
             position: relative;
           }
           .label:before {
-            background-image: linear-gradient(
-              90deg,
-              #e3e8ee 33%,
-              transparent 0
-            );
+            background-image: linear-gradient(90deg, #e3e8ee 33%, transparent 0);
             background-position: bottom;
             background-repeat: repeat-x;
             background-size: 3px 1px;
@@ -505,8 +502,8 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 0 1px 1px rgba(50, 50, 93, 0.11),
-        0 5px 5px rgba(50, 50, 93, 0.05), 0 5px 15px rgba(50, 50, 93, 0.11);
+      box-shadow: 0 1px 1px rgba(50, 50, 93, 0.11), 0 5px 5px rgba(50, 50, 93, 0.05),
+        0 5px 15px rgba(50, 50, 93, 0.11);
       border-radius: 5px;
       padding: 2rem;
       h2 {
@@ -556,30 +553,35 @@ export default {
     border-radius: 0 0 0.5rem 0.5rem;
     @media (max-width: 900px) {
       flex-direction: column;
+      display: block;
+      text-align: center;
     }
     a {
       color: #fff;
     }
     .text {
       margin-right: 2rem;
-    }
-    .discount-title {
-      font-size: 1.5rem;
-      font-weight: var(--font-weight-bold, 700);
-      color: #fff;
       @media (max-width: 900px) {
-        font-size: 1.25rem;
+        margin-right: 0;
       }
-    }
-    .action {
-      color: #fff;
-      font-weight: 700;
-      @media (max-width: 900px) {
-        margin-top: 2rem;
+      .discount-title {
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-bold, 700);
+        color: #fff;
+        @media (max-width: 900px) {
+          font-size: 1.25rem;
+        }
       }
-    }
-    .sub {
-      color: #8192b3;
+      .action {
+        color: #fff;
+        font-weight: 700;
+        @media (max-width: 900px) {
+          margin-top: 2rem;
+        }
+      }
+      .sub {
+        color: #8192b3;
+      }
     }
   }
 }
@@ -825,8 +827,8 @@ export default {
         position: relative;
         border-radius: 6px;
         overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
-          0 15px 35px rgba(0, 0, 0, 0.1), 0 50px 100px rgba(50, 50, 93, 0.1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1),
+          0 50px 100px rgba(50, 50, 93, 0.1);
         background-size: cover;
         transition: opacity 0.2s;
         @media (max-width: 900px) {
@@ -858,8 +860,7 @@ export default {
           opacity: 0.9;
           border-radius: 50%;
           box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-            0 8px 16px -8px rgba(0, 0, 0, 0.3),
-            0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+            0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
           width: 72px;
           height: 72px;
         }
@@ -1000,8 +1001,8 @@ export default {
     .feature-icon {
       margin: 0 auto;
       margin-bottom: 1rem;
-      box-shadow: 0 2px 3px rgba(25, 82, 190, 0.13),
-        0 2px 5px rgba(25, 82, 190, 0.11), 0 5px 15px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 2px 3px rgba(25, 82, 190, 0.13), 0 2px 5px rgba(25, 82, 190, 0.11),
+        0 5px 15px rgba(0, 0, 0, 0.07);
       overflow: hidden;
       position: relative;
       color: #1952be;
@@ -1067,8 +1068,7 @@ export default {
         &.data {
           position: relative;
           z-index: 1;
-          box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1),
-            0 5px 15px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 4px 35px 0 rgba(23, 55, 87, 0.1), 0 5px 15px 0 rgba(0, 0, 0, 0.07);
           transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 
           &:not(:first-child),
