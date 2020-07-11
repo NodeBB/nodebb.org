@@ -145,6 +145,12 @@ export default {
     grid-template-columns: 1fr;
     margin-bottom: 4.5rem;
     margin-top: 5rem;
+    .header {
+      padding-left: 0;
+      .icon {
+        position: relative;
+      }
+    }
     .title {
       font-size: 1.5rem;
     }
