@@ -78,11 +78,14 @@ app.post('/contact', function (req, res) {
 	// Naive filtering of Russian spambots
 	const regex1 = /^(.*?):/;
 	const match1 = req.body.message.match(regex1);
+	const match2 = req.body.title.match(regex1);
 	if (req.body.email.indexOf('@yandex.ru') !== -1 && /\.ru\//.test(req.body.message)) {
 		return res.sendStatus(200); // OK, ya rascals!
 	} else if (/:\shttps?:\/\/.*\s\.$/.test(req.body.message)) {	// nodebb/misty#7
 		return res.sendStatus(200);
 	} else if (match1 && req.body.name === match1[1]) {	// if beginning of text followed by colon matches name: 🗑
+		return res.sendStatus(200);
+	} else if (match2 && match1[0] === match2[0]) {	// if beginning of text with colon matches name w/ colon: 🗑
 		return res.sendStatus(200);
 	}
 
