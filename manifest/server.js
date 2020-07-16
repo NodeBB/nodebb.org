@@ -80,7 +80,7 @@ app.post('/', function (req, res) {
 	// Naive filtering of Russian spambots
 	const regex1 = /^(.*?):/;
 	const match1 = req.body.message.match(regex1);
-	const match2 = req.body.title.match(regex1);
+	const match2 = req.body.name.match(regex1);
 	if (req.body.email.indexOf('@yandex.ru') !== -1 && /\.ru\//.test(req.body.message)) {
 		return res.sendStatus(200); // OK, ya rascals!
 	} else if (/:\shttps?:\/\/.*\s\.$/.test(req.body.message)) {	// nodebb/misty#7
