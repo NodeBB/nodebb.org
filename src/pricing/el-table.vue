@@ -583,6 +583,15 @@ export default {
         color: #8192b3;
       }
     }
+    .action {
+      @media (max-width: 900px) {
+        margin-top: 1rem;
+      }
+      @media (max-width: 768px) {
+        margin-top: 1rem;
+        text-align: left;
+      }
+    }
   }
 }
 .view-table-version-2 {
