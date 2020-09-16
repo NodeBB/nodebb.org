@@ -152,12 +152,12 @@ figure.splash-figure-container.splash-figure-main {
           box-shadow: none;
           width: 100%;
           height: 1000%;
-          animation: codeScrollTransform 60s 0s linear;
+          // animation: codeScrollTransform 60s 0s linear;
           background-size: contain;
         }
       }
       img {
-        animation: codeScrollTransform 60s 1s linear;
+        // =animation: codeScrollTransform 60s 1s linear;
         width: 100%;
       }
     }
