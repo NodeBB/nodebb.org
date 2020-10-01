@@ -4,13 +4,15 @@
       <iframe src="/contact"></iframe>
     </factor-modal>
 
-    <a id="contact" @click="vis = !vis" class="contact-icon" target="_top">
-      <span class="contact-icon-container">
-        <span class="contact-icon-eye contact-icon-eye-left"></span>
-        <span class="contact-icon-eye contact-icon-eye-right"></span>
+    <a id="contact" @click="vis = !vis" target="_top">
+      <span class="contact-icon">
+        <span class="contact-icon-container">
+          <span class="contact-icon-eye contact-icon-eye-left"></span>
+          <span class="contact-icon-eye contact-icon-eye-right"></span>
+        </span>
+        <span class="contact-icon-mouth"></span>
+        <p class="contact-tooltip">Speak to a specialist</p>
       </span>
-      <span class="contact-icon-mouth"></span>
-      <p class="contact-tooltip">Speak to a specialist</p>
     </a>
   </div>
 </template>
@@ -20,29 +22,32 @@ export default {
   components: { factorModal, factorBtn, factorLink },
   data() {
     return {
-      vis: false
+      vis: false,
     }
-  }
+  },
 }
 </script>
 <style lang="less">
 .contact-modal {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  z-index: 4999;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 4999;
+    padding: 1.5rem;
+
   .contact-icon {
     width: 38px;
     height: 30px;
     background: #3ca773 !important;
     position: relative;
-    right: 1rem;
+    right: 0;
     border-radius: 6px 5px 6px 0;
     transform: scale(0.74);
     transition: all 0.15s ease-out;
     box-shadow: none !important;
+    display: flex;
     &:before {
       display: block;
       width: 1rem;
@@ -66,22 +71,6 @@ export default {
       z-index: -1;
       border-radius: 0.05rem 0 0 0;
     }
-    &:hover {
-      transform: scale(0.86);
-      right: 18px;
-      .contact-icon-mouth {
-        &:after {
-          background: #fff;
-          opacity: 0;
-          visibility: hidden;
-        }
-      }
-      .contact-tooltip {
-        transform: scale(1);
-        opacity: 1;
-        visibility: visible;
-      }
-    }
     .contact-tooltip {
       color: #161718;
       background-color: #fff;
@@ -100,6 +89,28 @@ export default {
       visibility: hidden;
       border: 1px solid #c1c9d2;
       transition: all 65ms ease-out 5ms;
+    }
+  }  
+  a {
+    padding: 1rem;
+    cursor: pointer;
+    &:hover {
+      .contact-icon {
+        transform: scale(0.86);
+        right: 18px;
+        .contact-icon-mouth {
+          &:after {
+            background: #fff;
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+        .contact-tooltip {
+          transform: scale(1);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
     }
   }
   .contact-icon-container {

@@ -59,12 +59,12 @@
                 <img
                   class="client-picture mx-auto h-16 w-16 rounded-full"
                   :src="quote.img"
-                  alt="NodeBB Client Picture"
+                  :alt="quote.author"
                 />
                 <img
                   class="client-company"
                   :src="quote.company"
-                  alt="NodeBB Client Company Favicon"
+                  :alt="quote.companyName"
                 />
               </div>
               <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
@@ -127,6 +127,7 @@ export default {
           attribution: `Netgate, CTO`,
           author: `Jim Thompson`,
           img: require("./img/jim.jpg"),
+          companyName: `Netgate`,
           company: require("./img/netgate.svg"),
           companylink: "https://netgate.com",
           link: "https://forum.netgate.com"
@@ -137,6 +138,7 @@ export default {
           attribution: `Opera, Software Engineer`,
           author: `Artur Matczak`,
           img: require("./img/attis.jpg"),
+          companyName: `Opera`,
           company: require("./img/opera.svg"),
           companylink: "https://opera.com",
           link: "https://forums.opera.com"

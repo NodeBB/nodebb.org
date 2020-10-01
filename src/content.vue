@@ -33,6 +33,10 @@ export default {
         {
           name: "author",
           content: "NodeBB, LLC"
+        },
+        {
+          name: "generator",
+          content: "NodeBB"
         }
       ],
       htmlAttrs: { lang: "en" }

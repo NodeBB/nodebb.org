@@ -44,9 +44,9 @@
       </div>
     </section>
 
-    <!-- <section class="poweredby content">
+    <section class="poweredby content">
       <section-poweredby class="content-pad" />
-    </section>-->
+    </section>
 
     <div class="view-home-version-2">
       <div class="compare content">
@@ -128,8 +128,8 @@ export default {
     homeSplash: () => import("./splash.vue"),
     homeIcon: () => import("../product/icon.vue"),
     sectionBenefits: () => import("./section-benefits.vue"),
-    sectionQuotes: () => import("./section-quotes.vue")
-    // sectionPoweredby: () => import("./section-poweredby.vue")
+    sectionQuotes: () => import("./section-quotes.vue"),
+    sectionPoweredby: () => import("./section-poweredby.vue")
   },
   data(this: any) {
     return {

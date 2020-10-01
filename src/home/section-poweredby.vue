@@ -9,12 +9,15 @@
       <div class="logos">
         <img src="./img/icon-funimation.svg" />
       </div>
-      <div class="logos be">
-        <img src="./img/icon-bleedingedge.svg" />
+         <div class="logos tbs">
+        <img src="./img/icon-tbs.svg" />
       </div>
       <div class="logos opera">
         <img src="./img/icon-opera.svg" />
-      </div>
+      </div>      
+ <div class="logos be">
+        <img src="./img/icon-bleedingedge.svg" />
+      </div>  
       <div class="logos">
         <img src="./img/icon-netgate.svg" />
       </div>
@@ -24,9 +27,7 @@
       <div class="logos itprotv">
         <img src="./img/icon-itprotv.svg" />
       </div>
-      <div class="logos tbs">
-        <img src="./img/icon-tbs.svg" />
-      </div>
+
       <div class="logos npp">
         <img src="./img/icon-npp.svg" />
       </div>
