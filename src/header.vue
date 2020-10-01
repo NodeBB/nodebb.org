@@ -22,12 +22,12 @@
           target="_blank"
           rel="noopener"
           data-test="signin-link"
-        >Sign In</factor-link>
+        >Sign in</factor-link>
         <factor-link
           v-if="$route.path != '/pricing'"
           path="/pricing"
           btn="primary"
-        >Start Free Trial &rarr;</factor-link>
+        >Start free trial &rarr;</factor-link>
       </div>
     </div>
   </div>
@@ -61,16 +61,10 @@ export default {
           rel: "noopener"
         },
         {
-          path: "https://blog.nodebb.org",
-          name: `Blog`,
+          path: "https://try.nodebb.org",
+          name: `Demo Site`,
           target: "_blank"
         },
-        {
-          path: "https://answers.nodebb.org",
-          name: `Answers`,
-          target: "_blank",
-          rel: "noopener"
-        }
       ],
       actionNav: [
         {

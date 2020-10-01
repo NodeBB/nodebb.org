@@ -63,7 +63,7 @@ export default {
       padding-bottom: 2rem;
     }
     @media (max-width: 767px) {
-      padding: 2rem 1rem 1rem;
+      padding: 2rem 1rem 2rem;
     }
     .poweredby-title {
       font-size: 1.35rem;

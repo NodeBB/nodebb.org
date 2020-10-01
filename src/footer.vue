@@ -42,6 +42,7 @@
           <div class="menu-header text-sm">Resources</div>
           <factor-link path="https://answers.nodebb.org" target="_blank" rel="noopener">Answers</factor-link>
           <factor-link path="https://docs.nodebb.org" target="_blank" rel="noopener">Docs</factor-link>
+          <factor-link path="https://try.nodebb.org" target="_blank" rel="noopener">Demo Site</factor-link>
         </div>
 
         <div class="footer-col list">

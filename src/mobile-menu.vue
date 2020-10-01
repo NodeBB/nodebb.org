@@ -31,17 +31,16 @@
               </factor-link>
             </div>
           </div>
-          <factor-link
-            v-if="$route.path != '/pricing'"
-            path="/pricing"
-            btn="link"
-          >Start Free Trial &rarr;</factor-link>
+          <factor-link v-if="$route.path != '/pricing'" path="/pricing" btn="link"
+            >Start free trial &rarr;</factor-link
+          >
           <factor-link
             btn="link"
             path="https://manage.nodebb.org"
             target="_blank"
             rel="noopener"
-          >Sign In</factor-link>
+            >Sign in</factor-link
+          >
         </div>
       </div>
     </div>
@@ -55,12 +54,12 @@ export default {
   components: {
     factorLink,
     factorBtn,
-    siteBrand: () => import("./el/brand.vue")
+    siteBrand: () => import("./el/brand.vue"),
   },
   data() {
     return {
       menus: {},
-      activeMenu: { docs: true, pages: true }
+      activeMenu: { docs: true, pages: true },
     }
   },
   computed: {},
@@ -79,29 +78,34 @@ export default {
             path: "https://community.nodebb.org",
             name: "Community",
             target: "_blank",
-            rel: "noopener"
+            rel: "noopener",
+          },
+          {
+            path: "https://try.nodebb.org",
+            name: `Demo Site`,
+            target: "_blank",
           },
           {
             path: "https://blog.nodebb.org",
             name: "Blog",
             target: "_blank",
-            rel: "noopener"
+            rel: "noopener",
           },
           {
             path: "https://answers.nodebb.org",
             name: "Answers",
             target: "_blank",
-            rel: "noopener"
-          }
+            rel: "noopener",
+          },
 
           // { component: () => import("./el/github-stars.vue") }
-        ]
-      }
+        ],
+      },
     ]
   },
   methods: {
     filteredMenu(items: any) {
-      return items.filter(item => {
+      return items.filter((item) => {
         const condition = item.condition ? item.condition() : true
 
         return condition
@@ -114,8 +118,8 @@ export default {
     toggleMenuArea(this: any, area: string) {
       const newValue = this.activeMenu[area] ? false : true
       this.$set(this.activeMenu, area, newValue)
-    }
-  }
+    },
+  },
 }
 </script>
 <style lang="less">

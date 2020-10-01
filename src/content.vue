@@ -19,7 +19,7 @@ export default {
     "header-primary": () => import("./header.vue"),
     "footer-primary": () => import("./footer.vue"),
     "footer-contact": () => import("./footer-contact.vue"),
-    "header-mobile": () => import("./header-mobile.vue")
+    "header-mobile": () => import("./header-mobile.vue"),
   },
   metaInfo() {
     return {
@@ -28,18 +28,18 @@ export default {
       meta: [
         {
           name: "viewport",
-          content: "width=device-width, initial-scale=1, shrink-to-fit=no"
+          content: "width=device-width, initial-scale=1, shrink-to-fit=no",
         },
         {
           name: "author",
-          content: "NodeBB, LLC"
+          content: "NodeBB, LLC",
         },
         {
           name: "generator",
-          content: "NodeBB"
-        }
+          content: "NodeBB",
+        },
       ],
-      htmlAttrs: { lang: "en" }
+      htmlAttrs: { lang: "en" },
       // link: [
       //   {
       //     vmid: "my-key",
@@ -56,7 +56,7 @@ export default {
       //   },
       // ],
     }
-  }
+  },
 }
 </script>
 

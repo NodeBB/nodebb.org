@@ -29,13 +29,13 @@ export default {
 </script>
 <style lang="less">
 .contact-modal {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 4999;
-    padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 4999;
+  padding: 1.5rem;
 
   .contact-icon {
     width: 38px;
@@ -90,7 +90,7 @@ export default {
       border: 1px solid #c1c9d2;
       transition: all 65ms ease-out 5ms;
     }
-  }  
+  }
   a {
     padding: 1rem;
     cursor: pointer;
