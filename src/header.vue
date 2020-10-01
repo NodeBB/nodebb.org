@@ -62,14 +62,14 @@ export default {
         },
         {
           path: "https://try.nodebb.org",
-          name: `Demo Site`,
+          name: `Demo site`,
           target: "_blank"
         },
       ],
       actionNav: [
         {
           path: "https://manage.nodebb.org",
-          name: "Sign In &rarr;"
+          name: "Sign in &rarr;"
         },
         { component: accountMenu, condition: (): boolean => isLoggedIn() }
       ]
