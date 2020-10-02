@@ -1,7 +1,7 @@
 <template>
   <div class="nodebb-benefits">
     <header class="section-header">
-      <h1 class="title">Why NodeBB?</h1>
+      <h2 class="title">Why NodeBB?</h2>
       <!-- <p class="text"></p> -->
     </header>
 

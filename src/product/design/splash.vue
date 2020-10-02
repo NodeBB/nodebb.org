@@ -2,10 +2,10 @@
   <section class="product-splash product-design-splash">
     <div class="product-splash-inner">
       <div class="content">
-        <h1 class="page-title">...get a platform that supports modern responsive design.</h1>
-        <h3
+        <h2 class="page-title">...get a platform that supports modern responsive design.</h2>
+        <p
           class="page-title-sub"
-        >NodeBB forums are built from the ground up to work on all devices - phone, tablet, or desktop.</h3>
+        >NodeBB forums are built from the ground up to work on all devices - phone, tablet, or desktop.</p>
         <p
           class="page-title-sub"
         >Need an even more customized look? No problem, we provide full in-house design services for our Enterprise clients, contact us for more details.</p>

@@ -3,16 +3,16 @@
     <div class="product-performance-inner">
       <div class="content">
         <span class="page-sup">With NodeBB, you...</span>
-        <h1 class="page-title">
+        <h2 class="page-title">
           ...will never worry about
           <span>performance</span> and scalability
-        </h1>
-        <h3
+        </h2>
+        <p
           class="page-title-sub"
-        >NodeBB is built using the Node.js server-side Javascript platform, delivering unmatched performance.</h3>
-        <h3
+        >NodeBB is built using the Node.js server-side Javascript platform, delivering unmatched performance.</p>
+        <p
           class="page-title-sub"
-        >Building on this high performance platform means fast and dependable performance that will support even the biggest and most active community.</h3>
+        >Building on this high performance platform means fast and dependable performance that will support even the biggest and most active community.</p>
 
         <div class="actions">
           <factor-link btn-link="primary" path="/pricing" size="medium">Try it now for free &rarr;</factor-link>

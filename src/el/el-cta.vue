@@ -5,7 +5,7 @@
         <slot />
       </div>
       <div class="cta-content">
-        <h1 class="title">{{ title }}</h1>
+        <h3 class="title">{{ title }}</h3>
         <p v-if="subtitle" class="subtitle">{{ subtitle }}</p>
       </div>
     </div>

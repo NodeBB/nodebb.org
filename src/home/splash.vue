@@ -3,9 +3,9 @@
     <div class="splash-inner">
       <div class="content">
         <h1 class="page-title">A better community platform for the modern web.</h1>
-        <h3
+        <h2
           class="page-title-sub"
-        >NodeBB is next generation forum software. It's powerful, mobile-ready and easy to use.</h3>
+        >NodeBB is next generation forum software. It's powerful, mobile-ready and easy to use.</h2>
         <div class="actions">
           <factor-link btn="primary" path="/pricing">Start free trial</factor-link>
           <factor-link btn="link" path="/product">Learn more &rarr;</factor-link>

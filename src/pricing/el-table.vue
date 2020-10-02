@@ -3,7 +3,7 @@
     <div class="max-w-xl">
       <div class="header">
         <home-icon icon="model-instant" />
-        <h1>Instant Hosting</h1>
+        <h2>Instant Hosting</h2>
         <p class="text-lg font-normal mb-10">
           The quickest way to get your forum up and running today. Launch your forum in
           minutes using one of our great looking themes, and leave the server maintenance

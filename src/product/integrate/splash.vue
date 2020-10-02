@@ -2,8 +2,8 @@
   <section class="product-splash">
     <div class="product-splash-inner">
       <div class="content">
-        <h3 class="page-sup">Integrate</h3>
-        <h1 class="page-title">Make running your community even easier with integrations.</h1>
+        <h2 class="page-sup">Integrate</h2>
+        <p class="page-title">Make running your community even easier with integrations.</p>
       </div>
 
       <!-- <div class="figure-container">

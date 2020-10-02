@@ -5,7 +5,7 @@
         <div class="wedge" />
       </div>
       <div class="text">
-        <h1 class="title">Contact NodeBB</h1>
+        <h3 class="title">Contact NodeBB</h3>
         <div class="sub-title">I'd like to speak to someone about...</div>
       </div>
     </div>

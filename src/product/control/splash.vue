@@ -2,10 +2,10 @@
   <section class="product-splash product-control">
     <div class="product-splash-inner">
       <div class="content">
-        <h1 class="page-title">...be in complete control</h1>
-        <h3
+        <h2 class="page-title">...be in complete control</h2>
+        <p
           class="page-title-sub"
-        >NodeBB’s administration system makes it easy to control all aspects of your forum. You can create an unlimited number of administrator and moderator accounts, and you can set permissions on each account according to your needs.</h3>
+        >NodeBB’s administration system makes it easy to control all aspects of your forum. You can create an unlimited number of administrator and moderator accounts, and you can set permissions on each account according to your needs.</p>
 
         <div class="actions">
           <factor-link btn-link="primary" path="/pricing" size="large">Get started for free &rarr;</factor-link>

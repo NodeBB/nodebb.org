@@ -2,10 +2,10 @@
   <section class="product-splash">
     <div class="product-splash-inner">
       <div class="content">
-        <h1 class="page-title">...have access to more power with plugins and extensions.</h1>
-        <h3
+        <h2 class="page-title">...have access to more power with plugins and extensions.</h2>
+        <p
           class="page-title-sub"
-        >NodeBB has over 500 plugins and themes to choose from. Download and install them directly from the control panel in one click.</h3>
+        >NodeBB has over 500 plugins and themes to choose from. Download and install them directly from the control panel in one click.</p>
 
         <div class="actions">
           <factor-link btn="primary" path="/plugins" size="large">View Plugins &rarr;</factor-link>
