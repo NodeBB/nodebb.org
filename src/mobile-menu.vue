@@ -31,6 +31,13 @@
               </factor-link>
             </div>
           </div>
+          <factor-link
+            btn="link"
+            path="https://try.nodebb.org"
+            target="_blank"
+            rel="noopener"
+            >Demo site</factor-link
+          >
           <factor-link v-if="$route.path != '/pricing'" path="/pricing" btn="link"
             >Start free trial &rarr;</factor-link
           >
@@ -80,11 +87,11 @@ export default {
             target: "_blank",
             rel: "noopener",
           },
-          {
-            path: "https://try.nodebb.org",
-            name: `Demo Site`,
-            target: "_blank",
-          },
+          // {
+          //   path: "https://try.nodebb.org",
+          //   name: `Demo Site`,
+          //   target: "_blank",
+          // },
           {
             path: "https://blog.nodebb.org",
             name: "Blog",

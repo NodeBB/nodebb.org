@@ -15,19 +15,26 @@
       </div>
       <div class="head-nav action-nav">
         <account-menu v-if="!userLoading && isLoggedIn()" />
+        
         <factor-link
-          v-else-if="!userLoading"
-          _event="sign-in-modal"
+         v-else-if="!userLoading"
+          btn="link"
           path="https://manage.nodebb.org"
           target="_blank"
           rel="noopener"
-          data-test="signin-link"
-        >Sign in</factor-link>
+          >Sign in</factor-link
+        >
         <factor-link
-          v-if="$route.path != '/pricing'"
-          path="/pricing"
-          btn="primary"
-        >Start free trial &rarr;</factor-link>
+         
+          btn="link"
+          path="https://try.nodebb.org"
+          target="_blank"
+          rel="noopener"
+          >Try demo site
+        </factor-link>
+        <factor-link v-if="$route.path != '/pricing'" path="/pricing" btn="primary"
+          >Start free trial &rarr;</factor-link
+        >
       </div>
     </div>
   </div>
@@ -42,7 +49,7 @@ export default {
     accountMenu,
     headerBanner: () => import("./banner.vue"),
     siteBrand: () => import("./el/brand.vue"),
-    githubStars: () => import("./el/github-stars.vue")
+    githubStars: () => import("./el/github-stars.vue"),
   },
   data() {
     return {
@@ -58,21 +65,21 @@ export default {
           path: "https://community.nodebb.org",
           name: `Community`,
           target: "_blank",
-          rel: "noopener"
+          rel: "noopener",
         },
-        {
-          path: "https://try.nodebb.org",
-          name: `Demo site`,
-          target: "_blank"
-        },
+        // {
+        //   path: "https://try.nodebb.org",
+        //   name: `Demo site`,
+        //   target: "_blank"
+        // },
       ],
       actionNav: [
         {
           path: "https://manage.nodebb.org",
-          name: "Sign in &rarr;"
+          name: "Sign in &rarr;",
         },
-        { component: accountMenu, condition: (): boolean => isLoggedIn() }
-      ]
+        { component: accountMenu, condition: (): boolean => isLoggedIn() },
+      ],
     }
   },
   computed: {},
@@ -81,7 +88,7 @@ export default {
 
     this.userLoading = false
   },
-  methods: { isLoggedIn }
+  methods: { isLoggedIn },
 }
 </script>
 <style lang="less">
