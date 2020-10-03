@@ -71,6 +71,14 @@
           </factor-link>
           <factor-link
             class="icon-link"
+            path="https://www.instagram.com/node.bb"
+            target="_blank"
+            rel="noopener"
+          >
+            <factor-icon icon="fab fa-instagram" />
+          </factor-link>
+          <factor-link
+            class="icon-link"
             path="https://twitter.com/nodebb"
             target="_blank"
             rel="noopener"
