@@ -177,6 +177,9 @@ export default {
     margin-top: 1.5rem;
     .factor-link.btn-link {
       display: block;
+      > button {
+        padding-left: 0;
+      }
     }
   }
 

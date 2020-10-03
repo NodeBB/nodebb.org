@@ -2,7 +2,7 @@
   <section class="product-splash">
     <div class="product-splash-inner">
       <div class="content">
-        <h3 class="page-title">...enable great conversation and community interaction.</h3>
+        <h2 class="page-title">...enable great conversation and community interaction.</h2>
       </div>
     </div>
   </section>

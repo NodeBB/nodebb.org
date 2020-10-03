@@ -19,7 +19,7 @@
         <div class="feature-content-container">
           <div class="feature-content">
             <!-- <home-icon v-if="feature.icon" class="feature-icon" :icon="feature.icon" /> -->
-            <h2 class="title">{{ feature.title }}</h2>
+            <h3 class="title">{{ feature.title }}</h3>
             <div class="text">{{ feature.text }}</div>
             <div v-if="feature.link" class="action">
               <factor-link :path="feature.link.path">{{ feature.link.text }} &rarr;</factor-link>

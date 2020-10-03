@@ -19,7 +19,7 @@
           :icon="item.icon"
         />
         <div class="entry-content">
-          <h1 class="title">{{ item.title }}</h1>
+          <h3 class="title">{{ item.title }}</h3>
           <p class="description">{{ item.synopsis }}</p>
         </div>
       </div>

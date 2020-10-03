@@ -3,7 +3,7 @@
     <ul class="features-list">
       <li v-for="(feature, i) in features" :key="i" class="feature-block">
         <home-icon :icon="feature.icon" :alt="feature.title" />
-        <h3 class="title">{{ feature.title }}</h3>
+        <h4 class="title">{{ feature.title }}</h4>
         <p class="text">{{ feature.text }}</p>
       </li>
     </ul>

@@ -148,7 +148,7 @@ export default {
   display: grid;
   grid-template-columns: minmax(100px, 300px) 1fr minmax(150px, 300px);
   @media (max-width: 1200px) {
-    grid-template-columns: minmax(0, 300px) 1fr minmax(150px, 300px);
+    grid-template-columns: minmax(0, 0) 1fr minmax(150px, 300px);
   }
 
   .head-nav {
@@ -202,6 +202,13 @@ export default {
           margin-right: 4px;
           opacity: 0.7;
         }
+      }
+    }
+
+    &.action-nav {
+      > .factor-link {
+          padding-left: 0;
+          padding-right: 0;
       }
     }
     .account-menu {
