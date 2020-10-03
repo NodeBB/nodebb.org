@@ -209,6 +209,9 @@ export default {
       > .factor-link {
           padding-left: 0;
           padding-right: 0;
+          button:not(.primary) {
+            padding-left: 0;
+          }
       }
     }
     .account-menu {
