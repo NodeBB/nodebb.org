@@ -3,38 +3,44 @@
     <div class="figure-wrap">
       <div class="splash-figure dashboard">
         <div class="stage">
-          <img
-            src="../product/img/desktop-view.svg"
-            alt="NodeBB Community Product Desktop View"
-            class="main"
-          />
-          <img
-            src="../product/img/category-topic-view-clip-b.svg"
-            alt="NodeBB Community Category Topic View"
-            class="main-clip"
-          />
+          <div class="desktop">
+            <img
+              src="../product/img/desktop-view.svg"
+              alt="NodeBB Community Product Desktop View"
+              class="main"
+            />
+            <img
+              src="../product/img/category-topic-view-clip-b.svg"
+              alt="NodeBB Community Category Topic View"
+              class="main-clip"
+            />
+          </div>
 
-          <img
-            src="../product/img/tablet-view.svg"
-            alt="NodeBB Community Tablet View"
-            class="tablet-device"
-          />
-          <img
-            src="../product/img/tablet-composer-view.svg"
-            alt="NodeBB Community Composer View"
-            class="tablet-device-clip"
-          />
+          <div class="tablet">
+            <img
+              src="../product/img/tablet-view.svg"
+              alt="NodeBB Community Tablet View"
+              class="tablet-device"
+            />
+            <img
+              src="../product/img/tablet-composer-view.svg"
+              alt="NodeBB Community Composer View"
+              class="tablet-device-clip"
+            />
+          </div>
 
-          <img
-            src="../product/img/mobile-view.svg"
-            alt="NodeBB Community Mobile View"
-            class="mobile-device"
-          />
-          <img
-            src="../product/img/category-topic-view-clip-a.svg"
-            alt="NodeBB Community ategory Topic View"
-            class="mobile-device-clip"
-          />
+          <div class="mobile">
+            <img
+              src="../product/img/mobile-view.svg"
+              alt="NodeBB Community Mobile View"
+              class="mobile-device"
+            />
+            <img
+              src="../product/img/category-topic-view-clip-a.svg"
+              alt="NodeBB Community ategory Topic View"
+              class="mobile-device-clip"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -46,13 +52,13 @@ export default {
   data() {
     return {
       width: 500,
-      animationInterval: 10000
+      animationInterval: 10000,
     }
   },
   computed: {
     scale(this: any) {
       return Math.max(Math.min(this.width / 900, 1), 0.5)
-    }
+    },
   },
 
   mounted() {
@@ -65,8 +71,8 @@ export default {
   methods: {
     getWidth(this: any) {
       return this.$refs.wrapper ? this.$refs.wrapper.clientWidth : 100
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -105,8 +111,9 @@ figure {
     .stage {
       perspective: 800px;
       @media (max-width: 900px) {
-        perspective: 780px;
-        transform: scale(0.8) translate(1rem, -3rem);
+        perspective: 700px;
+        // transform: scale(0.8) translate(1rem, -3rem);
+        transform: scale(0.8) translate(-4rem, 0);
       }
     }
 

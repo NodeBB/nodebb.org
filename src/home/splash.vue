@@ -59,6 +59,7 @@ export default {
     .content {
       max-width: 550px;
       justify-self: flex-end;
+      z-index: 1;
 
       h1 {
         z-index: 5;

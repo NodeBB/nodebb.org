@@ -192,7 +192,19 @@ export default {
         padding-left: 0;
       }
       .btn-content {
-        --highlight-background: linear-gradient(102deg, #1952be 0%, #265bc2 100%);
+      }
+      + .factor-link {
+        button {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  .menu-area {
+    &.active {
++ .factor-link { 
+.btn-content {
+          --highlight-background: linear-gradient(102deg, #1952be 0%, #265bc2 100%);
         color: inherit;
         background: var(--highlight-background);
         -webkit-text-fill-color: transparent;
@@ -203,12 +215,10 @@ export default {
         padding-bottom: 0.02em;
         margin-bottom: -0.02em;
         -webkit-background-clip: text;
-      }
-      + .factor-link {
-        button {
-          padding-left: 0;
-        }
-      }
+
+
+}
+}
     }
   }
   .menu-link,
