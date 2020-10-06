@@ -72,28 +72,7 @@ export default {
     }
   }
 }
-.el-modal {
-  .el-modal-pad {
-    padding: 3rem 0 0.25rem !important;
-    border-radius: 0.5rem !important;
-  }
-  .el-modal-content {
-    border-radius: 0;
-    padding: 5rem 0 !important;
-    margin: 0 auto !important;
-    width: 100% !important;
-    max-width: 620px !important;
-    min-height: 100vh !important;
-  }
-  .modal-text-content {
-    flex-basis: 100%;
-    text-align: center;
-    max-width: 100%;
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
-  }
-}
+
 .close i {
   font-family: Font Awesome 5 Pro;
   font-weight: 300;

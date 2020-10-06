@@ -7,33 +7,33 @@
 // }
 
 @font-face {
-  font-family: 'nbb';
-  src: url('./@fonts/ae/aeroport-medium.woff2') format('woff2'),
-    url('./@fonts/ae/aeroport-medium.woff') format('woff');
+  font-family: "nbb";
+  src: url("./@fonts/ae/aeroport-medium.woff2") format("woff2"),
+    url("./@fonts/ae/aeroport-medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'nbb';
-  src: url('./@fonts/ae/aeroport-light.woff2') format('woff2'),
-    url('./@fonts/ae/aeroport-light.woff') format('woff');
+  font-family: "nbb";
+  src: url("./@fonts/ae/aeroport-light.woff2") format("woff2"),
+    url("./@fonts/ae/aeroport-light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'nbb';
-  src: url('./@fonts/ae/aeroport.woff2') format('woff2'),
-    url('./@fonts/ae/aeroport.woff') format('woff');
+  font-family: "nbb";
+  src: url("./@fonts/ae/aeroport.woff2") format("woff2"),
+    url("./@fonts/ae/aeroport.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'nbb';
-  src: url('./@fonts/ae/aeroport-bold.woff2') format('woff2'),
-    url('./@fonts/ae/aeroport-bold.woff') format('woff');
+  font-family: "nbb";
+  src: url("./@fonts/ae/aeroport-bold.woff2") format("woff2"),
+    url("./@fonts/ae/aeroport-bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -74,8 +74,8 @@
   --color-bg: #ffffff;
   --color-bg-contrast: #f6fafd;
   --color-bg-highlight: #edf1f5;
-  --font-family-primary: nbb, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --font-family-primary: nbb, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   --font-family-cursive: var(--font-family-primary);
   -webkit-font-smoothing: antialiased;
 
@@ -118,6 +118,121 @@
 
     @media (max-width: 900px) {
       display: none;
+    }
+  }
+}
+
+.factor-app {
+  .el-modal {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    //background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(22, 22, 25, 0.8);
+    .el-modal-wrap {
+      height: 100%;
+    }
+    .el-modal-content {
+      border-radius: 5px;
+      padding: 4em 0;
+      margin: 0 auto;
+      width: 90%;
+      max-width: 500px;
+      min-height: 300px;
+      font-weight: 600;
+      @media screen and (max-width: 550px) {
+        width: 100%;
+        min-height: 100%;
+        padding: 0;
+        height: 100%;
+        .el-modal-pad.modal-content {
+          border-radius: 0;
+          height: 100%;
+        }
+      }
+      .el-modal-pad {
+        position: relative;
+        padding: 3rem 3rem 2rem;
+        background: #fff;
+        color: #3a4854;
+        border-radius: 0.5em;
+        box-shadow: 1px 1px 4px 0 rgba(22, 22, 25, 0.4),
+          -9px 22.5px 65px -5px rgba(22, 22, 25, 0.8);
+        .close {
+          position: absolute;
+          z-index: 50;
+          right: 0.5em;
+          top: 0.5em;
+          display: block;
+
+          opacity: 0.3;
+          font-size: 1.7em;
+          line-height: 1;
+          transition: all 0.5s;
+          cursor: pointer;
+          &:hover {
+            opacity: 1;
+            color: #ff0076;
+            transform: rotate(90deg);
+          }
+        }
+        input,
+        textarea,
+        select {
+          color: inherit;
+        }
+      }
+      .modal-text {
+        text-align: left;
+        display: flex;
+        &.center {
+          margin: 3em auto;
+          padding: 0;
+        }
+        .modal-text-icon {
+          flex-basis: 100px;
+          margin-right: 2em;
+        }
+        .modal-text-content {
+          flex-basis: 100%;
+          text-align: center;
+          max-width: 100%;
+          .errors {
+            text-align: center;
+          }
+        }
+
+        .actions {
+          margin-top: 2em;
+          .fi-btn {
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .factor-app {
+    .el-modal {
+      .el-modal-content {
+        border-radius: 0;
+        max-width: none;
+        padding: 0 !important;
+        .modal-text-content {
+          padding: inherit !important;
+          position: inherit !important;
+        }
+        .el-modal-pad {
+          padding: 2rem 1rem;
+        }
+      }
     }
   }
 }
