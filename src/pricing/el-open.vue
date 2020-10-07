@@ -3,9 +3,10 @@
     <div class="header">
       <home-icon icon="model-open" />
       <h2 class="title">Open Source</h2>
-      <div
-        class="sub"
-      >NodeBB is open source software that is free for anyone to download and install on their own server under the terms of the GNU General Public Licence (GPLv3).</div>
+      <div class="sub">
+        NodeBB is open source software that is free for anyone to download and install on
+        their own server under the terms of the GNU General Public Licence (GPLv3).
+      </div>
 
       <div class="mt-5">
         <factor-link
@@ -14,7 +15,8 @@
           path="https://github.com/NodeBB/NodeBB"
           target="_blank"
           rel="noopener"
-        >Go to GitHub repo &rarr;</factor-link>
+          >Go to GitHub repo &rarr;</factor-link
+        >
         <!-- <div class="actions">
           <github-stars />
         </div>-->
@@ -23,20 +25,22 @@
 
     <div class="figure">
       <p>
-        The code can be found at our project repository on GitHub, and installation instructions can be found in our
-        <factor-link
-          path="https://docs.nodebb.org"
-          target="_blank"
-          rel="noopener"
-        >Documentation Portal</factor-link>.
+        The code can be found at our project repository on GitHub, and installation
+        instructions can be found in our
+        <factor-link path="https://docs.nodebb.org" target="_blank" rel="noopener"
+          >Documentation Portal</factor-link
+        >.
       </p>
       <p>
-        If you do not have a server, we recommend using DigitalOcean to host NodeBB. They do charge based on your usage, but you can get a month of free hosting from them by
+        If you do not have a server, we recommend using DigitalOcean to host NodeBB. They
+        do charge based on your usage, but you can get a month of free hosting from them
+        by
         <factor-link
           path="https://www.digitalocean.com/?refcode=98bdc9454647"
           target="_blank"
           rel="noopener"
-        >following this link</factor-link>.
+          >following this link</factor-link
+        >.
       </p>
     </div>
   </div>
@@ -49,11 +53,11 @@ export default {
     factorLink,
     factorIcon,
     homeIcon: () => import("../product/icon.vue"),
-    githubStars: () => import("../el/github-stars.vue")
+    githubStars: () => import("../el/github-stars.vue"),
   },
   data() {
     return {}
-  }
+  },
 }
 </script>
 
@@ -153,6 +157,12 @@ export default {
     }
     .title {
       font-size: 1.5rem;
+    }
+    .btn-link,
+    .btn-link button {
+      width: 100%;
+      display: block;
+      margin-top: 0.5rem;
     }
   }
 }

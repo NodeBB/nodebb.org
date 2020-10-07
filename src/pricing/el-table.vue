@@ -31,7 +31,12 @@
                   :class="row ? 'has-content' : 'empty'"
                 />
                 <div v-if="col.link" class="footer-row row">
-                  <factor-link btn="primary" size="medium" class="font-bold" :path="col.link.path">
+                  <factor-link
+                    btn="primary"
+                    size="medium"
+                    class="font-bold"
+                    :path="col.link.path"
+                  >
                     <span v-formatted-text="col.link.text" />
                   </factor-link>
                   <span class="text-xs mt-3 font-bold" v-formatted-text="col.link.meta" />
@@ -47,7 +52,10 @@
                   >
                     <span v-formatted-text="col.external.text" />
                   </factor-link>
-                  <span class="text-xs mt-3 font-bold" v-formatted-text="col.external.meta" />
+                  <span
+                    class="text-xs mt-3 font-bold"
+                    v-formatted-text="col.external.meta"
+                  />
                 </div>
               </div>
             </div>
@@ -83,13 +91,13 @@ export default {
     factorLink,
     homeIcon: () => import("../product/icon.vue"),
     planIcon: () => import("./icons.vue"),
-    planBenefits: () => import("./section-benefits.vue")
+    planBenefits: () => import("./section-benefits.vue"),
   },
   metaInfo() {
     return {
       title: "Pricing that scales with your business.",
       description:
-        "The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us. Choose the plan that suits your needs."
+        "The quickest way to get your forum up and running today. Launch your forum in minutes using one of our great looking themes, and leave the server maintenance and upgrades to us. Choose the plan that suits your needs.",
     }
   },
   data(this: any) {
@@ -107,22 +115,22 @@ export default {
           id: "village",
           price: "$250",
           gutter: "Instant setup",
-          sub: "Small startups, businesses, and groups"
+          sub: "Small startups, businesses, and groups",
         },
         {
           super: "Businesses",
           id: "city",
           price: "$750",
           gutter: "Instant setup",
-          sub: "Great value for growing businesses and groups"
+          sub: "Great value for growing businesses and groups",
         },
         {
           super: "Custom",
           id: "metropolis",
           price: "",
           gutter: "Custom install",
-          sub: "Larger organizations that need a custom solution"
-        }
+          sub: "Larger organizations that need a custom solution",
+        },
       ],
       groups: [
         {
@@ -131,16 +139,16 @@ export default {
               title: "Price",
               content: "All prices in USD",
               village: "$250 / mo",
-              city: "$750 / mo"
+              city: "$750 / mo",
             },
             {
               title: "Monthly page views",
               content: "",
               village: "Up to 2 million",
               city: "Up to 10 million",
-              metropolis: "Over 10 million"
-            }
-          ]
+              metropolis: "Over 10 million",
+            },
+          ],
         },
         // {
         //   title: "Plugins",
@@ -175,18 +183,18 @@ export default {
             {
               title: "Unlimited community staff and users",
               content: "",
-              level: 0
+              level: 0,
             },
             {
               title: "SSL encryption",
               content: "",
-              level: 0
+              level: 0,
             },
             {
               title: "Automated daily backup",
               content: "",
-              level: 0
-            }
+              level: 0,
+            },
             // {
             //   title: "Migration services",
             //   content:
@@ -223,7 +231,7 @@ export default {
             //   title: "",
             //   level: 20
             // }
-          ]
+          ],
         },
         {
           title: "Support",
@@ -232,20 +240,20 @@ export default {
             {
               title: "Email, community support",
               content: "",
-              level: 0
+              level: 0,
             },
             {
               title: "Premium support",
               content: "",
-              level: 10
-            }
+              level: 10,
+            },
             // {
             //   title: "Customized support with debugging*",
             //   content: "",
             //   level: 20
             // }
-          ]
-        }
+          ],
+        },
         // {
         //   title: "",
         //   icon: "",
@@ -264,13 +272,13 @@ export default {
             "$250 / mo",
             "Small startups, businesses, and groups",
             `Up to 2 million monthly page views`,
-            `Email and community forum support`
+            `Email and community forum support`,
           ],
           link: {
             path: "https://manage.nodebb.org/register",
             text: "Start for free",
-            meta: "Free for 14 days. Credit card required. All prices in USD."
-          }
+            meta: "Free for 14 days. Credit card required. All prices in USD.",
+          },
         },
         {
           items: [
@@ -278,13 +286,13 @@ export default {
             "$750 / mo",
             "Great value for growing businesses and groups",
             `Up to 10 million monthly page views`,
-            `Premium support`
+            `Premium support`,
           ],
           link: {
             path: "https://manage.nodebb.org/register",
             text: "Start for free",
-            meta: "Free for 14 days. Credit card required. All prices in USD."
-          }
+            meta: "Free for 14 days. Credit card required. All prices in USD.",
+          },
         },
         {
           items: [
@@ -292,18 +300,18 @@ export default {
             "Custom",
             "Larger organizations that need a custom solution",
             `10 million monthly page views`,
-            `Customised support`
+            `Customised support`,
           ],
           external: {
             path: "",
             text: "Contact us",
-            meta: "Contact us directly for customised support plans (SLAs, etc.)"
-          }
-        }
-      ]
+            meta: "Contact us directly for customised support plans (SLAs, etc.)",
+          },
+        },
+      ],
     }
   },
-  methods: { toLabel }
+  methods: { toLabel },
 }
 </script>
 <style lang="less">
@@ -555,6 +563,12 @@ export default {
       flex-direction: column;
       display: block;
       text-align: center;
+      .btn-link,
+      .btn-link button {
+        width: 100%;
+        display: block;
+        margin-top: 0.5rem;
+      }
     }
     a {
       color: #fff;

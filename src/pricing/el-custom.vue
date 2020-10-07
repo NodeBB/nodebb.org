@@ -3,31 +3,42 @@
     <div class="header">
       <home-icon icon="model-custom" />
       <h2 class="title">Custom Solutions</h2>
-      <div
-        class="sub"
-      >Custom enterprise packages for larger businesses and organizations. We will work closely with you to create the perfect solution.</div>
+      <div class="sub">
+        Custom enterprise packages for larger businesses and organizations. We will work
+        closely with you to create the perfect solution.
+      </div>
       <div class="mt-5">
-        <factor-link btn="primary" size="medium" @click="vis = !vis">Contact us</factor-link>
+        <factor-link btn="primary" size="medium" @click="vis = !vis"
+          >Contact us</factor-link
+        >
       </div>
     </div>
     <div class="figure">
-      <p class="font-semibold list-outside list-square ml-5 text-base leading-relaxed">Includes:</p>
-      <ul class="font-normal list-outside list-square mt-5 ml-5 text-base leading-relaxed">
+      <p class="font-semibold list-outside list-square ml-5 text-base leading-relaxed">
+        Includes:
+      </p>
+      <ul
+        class="font-normal list-outside list-square mt-5 ml-5 text-base leading-relaxed"
+      >
         <li>
-          <strong>Custom feature development</strong> to integrate with your current systems.
+          <strong>Custom feature development</strong> to integrate with your current
+          systems.
         </li>
 
         <li>
           <strong>Theme customization</strong> to match your brand identity perfectly.
         </li>
         <li>
-          <strong>Single Sign-On</strong> with your existing services to provide your users with a seamless experience.
+          <strong>Single Sign-On</strong> with your existing services to provide your
+          users with a seamless experience.
         </li>
         <li>
-          <strong>Migration services</strong> from existing forums – we'll make the move from your old software as painless as possible.
+          <strong>Migration services</strong> from existing forums – we'll make the move
+          from your old software as painless as possible.
         </li>
         <li>
-          <strong>Premium hosting or self-hosting options</strong> to best suit your requirements and security policies.
+          <strong>Premium hosting or self-hosting options</strong> to best suit your
+          requirements and security policies.
         </li>
       </ul>
     </div>
@@ -38,20 +49,20 @@
 </template>
 
 <script lang="ts">
-import { factorModal, factorLink, factorIcon } from "@factor/ui";
+import { factorModal, factorLink, factorIcon } from "@factor/ui"
 export default {
   components: {
     factorModal,
     factorLink,
     factorIcon,
-    homeIcon: () => import("../product/icon.vue")
+    homeIcon: () => import("../product/icon.vue"),
   },
   data() {
     return {
-      vis: false
-    };
-  }
-};
+      vis: false,
+    }
+  },
+}
 </script>
 
 <style lang="less">
@@ -145,6 +156,12 @@ export default {
     grid-template-columns: 1fr;
     .title {
       font-size: 1.5em;
+    }
+    .btn-link,
+    .btn-link button {
+      width: 100%;
+      display: block;
+      margin-top: 0.5rem;
     }
   }
 
