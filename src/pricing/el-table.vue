@@ -372,6 +372,9 @@ export default {
     font-size: 2rem;
     font-weight: var(--font-weight-bold, 700);
     margin-bottom: 1rem;
+    @media (max-width: 900px) {
+      font-size: 1.5rem;
+    }
   }
 
   .feature-group {
