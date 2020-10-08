@@ -32,7 +32,7 @@
           rel="noopener"
           >Try demo site
         </factor-link>
-        <factor-link v-if="$route.path != '/pricing'" path="/pricing" btn="primary"
+        <factor-link _v-if="$route.path != '/pricing'" path="/pricing" btn="primary"
           >Start free trial &rarr;</factor-link
         >
       </div>

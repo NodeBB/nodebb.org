@@ -38,15 +38,17 @@
             rel="noopener"
             >Demo site</factor-link
           >
-          <factor-link v-if="$route.path != '/pricing'" path="/pricing" btn="link"
-            >Start free trial &rarr;</factor-link
-          >
+         
           <factor-link
             btn="link"
             path="https://manage.nodebb.org"
             target="_blank"
             rel="noopener"
             >Sign in</factor-link
+          > 
+          
+          <factor-link path="/pricing" btn="link"
+            >Start free trial &rarr;</factor-link
           >
         </div>
       </div>
