@@ -47,9 +47,13 @@
             >Sign in</factor-link
           > 
           
-          <factor-link path="/pricing" btn="link"
-            >Start free trial &rarr;</factor-link
-          >
+        <factor-link v-if="$route.path == '/pricing'" target="_blank" path="//manage.nodebb.org/register" btn="link"
+          >Start free trial &rarr;</factor-link
+        >
+
+        <factor-link v-if="$route.path != '/pricing'" path="/pricing" btn="link"
+          >Start free trial &rarr;</factor-link
+        >
         </div>
       </div>
     </div>
