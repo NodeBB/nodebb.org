@@ -366,7 +366,8 @@ export default {
       }
     }
   }
-  h1 {
+  h1,
+  h2 {
     padding: 0;
     font-size: 2rem;
     font-weight: var(--font-weight-bold, 700);
