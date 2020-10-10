@@ -28,6 +28,7 @@
   "dependencies": {
     "compression": "^1.5.2",
     "node-zendesk": "^1.4.0",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.9"
   }
 }

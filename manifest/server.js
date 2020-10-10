@@ -11,7 +11,7 @@ const compression = require('compression');
 const cacheTime = process.env.NODE_ENV === 'production' ? 86400000 : 0;
 
 var bodyParser = require('body-parser');
-var request = require('request');
+var request = require('request-promise-native');
 
 var filecache = {};
 
@@ -71,11 +71,27 @@ app.get('/:page?/:subpage?', middleware.buildPage, function (req, res) {
 	}
 });
 
-app.post('/', function (req, res) {
+app.post('/', async function (req, res) {
 	var required = ['type', 'message', 'email', 'name'];
 	var ok = required.every(function (prop) {
 		return req.body.hasOwnProperty(prop);
 	});
+
+	// hCaptcha check
+	const captchaResponse = await request({
+		url: 'https://hcaptcha.com/siteverify',
+		method: 'post',
+		form: {
+			response: req.body['h-captcha-response'],
+			secret: nconf.get('hcaptcha:secret'),
+			remoteip: req.ip,
+			sitekey: 'ee9f972a-1bab-45e0-90ef-0d521163b381',
+		}
+	});
+
+	if (!captchaResponse.success) {
+		return res.sendStatus(200);
+	}
 
 	// Naive filtering of Russian spambots
 	const regex1 = /^(.*?):/;

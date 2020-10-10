@@ -25,6 +25,7 @@
 					<label for="message">Message</label>
 					<textarea id="message" name="message" placeholder="I&apos;d like to ask about..."></textarea>
 				</div>
+				<div class="h-captcha" data-sitekey="ee9f972a-1bab-45e0-90ef-0d521163b381"></div>
 				<button class="submit" type="button">Send</button>
 			</fieldset>
 			<div>

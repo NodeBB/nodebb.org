@@ -24,6 +24,7 @@
 		ga('send', 'pageview');
 		ga('ComboTracker.send', 'pageview');
 	</script>
+	<script src="https://hcaptcha.com/1/api.js" async defer></script>
 
 	<link rel="stylesheet" type="text/css" href="{base_path}/bin/style.css">
 </head>
