@@ -81,6 +81,7 @@ app.post('/', async function (req, res) {
 	const captchaResponse = await request({
 		url: 'https://hcaptcha.com/siteverify',
 		method: 'post',
+		json: true,
 		form: {
 			response: req.body['h-captcha-response'],
 			secret: nconf.get('hcaptcha:secret'),
