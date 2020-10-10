@@ -92,7 +92,7 @@ $(document).ready(function () {
 
 		ga('ComboTracker.send', 'event', 'Contact Form', 'submit', payload.type);
 
-		$.post('/', payload)
+		$.post('/contact', payload)
 			.done(function () {
 				fieldset.css('opacity', 0);
 				successEl.css('opacity', 0);
