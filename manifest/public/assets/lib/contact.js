@@ -113,6 +113,9 @@ $(document).ready(function () {
 					fieldset.css('display', 'none');
 					failureEl.css('display', 'block').css('opacity', 1);
 				}, 200);
+			})
+			.always(function () {
+				hcaptcha.reset();
 			});
 	};
 
