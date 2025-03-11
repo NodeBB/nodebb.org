@@ -33,13 +33,13 @@
 			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
 				<ul class="nav nav-underline gap-4" id="myTab" role="tablist">
 					<li class="nav-item" role="presentation">
-						<button class="nav-link text-reset fw-semibold active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true" onclick="window.scrollTo({ top: 0, behavior: 'instant' })">HOME</button>
+						<a href="index.html" class="nav-link active text-reset fw-semibold">HOME</a>
 					</li>
 					<li class="nav-item" role="presentation">
-						<button class="nav-link text-reset fw-semibold" id="profile-tab" data-bs-toggle="tab" data-bs-target="#pricing-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false" onclick="window.scrollTo({ top: 0, behavior: 'instant' })">PRICING</button>
+						<a href="pricing.html" class="nav-link text-reset fw-semibold">PRICING</a>
 					</li>
 					<li class="nav-item" role="presentation">
-						<button class="nav-link text-reset fw-semibold" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false" onclick="window.scrollTo({ top: 0, behavior: 'instant' })">CONTACT</button>
+						<a href="contact.html" class="nav-link text-reset fw-semibold">CONTACT</a>
 					</li>
 				</ul>
 			</div>
@@ -48,270 +48,110 @@
 
 	<!-- Page Content -->
 	<div class="container mt-5">
-		<div class="tab-content" id="myTabContent">
-			<!-- Home -->
-			<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-				<div class="row">
-					<div class="col-12 col-md-6 d-flex flex-column gap-4 mt-5 py-5">
-						<h1 class="display-1 fw-bold fs-1">
-							A better forum platform for the modern web.
-						</h1>
-						<h4 class="text-secondary">
-							NodeBB is next generation forum software. It's powerful, mobile-ready and easy to use.
-						</h4>
-						<div class="elementor-widget-container">
-							<p><span style="font-weight: 400;">Looking for a way to engage your followers, away from the noise and chaos of today’s “social” sites? </span></p><p><strong>NodeBB</strong> takes the spirit and energy of the great online forum communities of old, and empowers it with powerful, mobile-ready and easy to use software.&nbsp;</p><p><span style="font-weight: 400;">Establish your own platform for <em>real</em> conversations. Start today!</span></p>						</div>
-						<div class="d-flex gap-2">
-							<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
-							<a href="#features-section" class="btn btn-ghost">Learn More -></a>
-						</div>
-					</div>
-					<div class="col-12 col-md-6 mt-5 py-5 d-none d-lg-block">
-						<div class="screenshot-stack position-relative">
-							<img src="images/desktop-view.png" alt="Desktop Screenshot" class="screenshot desktop shadow rounded-2">
-							<img src="images/tablet-view.png" alt="Tablet Screenshot" class="screenshot tablet shadow rounded-2">
-							<img src="images/mobile-view.png" alt="Mobile Screenshot" class="screenshot mobile shadow rounded-2">
-						</div>
+		<!-- Home -->
+		<div id="home-tab-pane">
+			<div class="row">
+				<div class="col-12 col-md-6 d-flex flex-column gap-4 mt-5 py-5">
+					<h1 class="display-1 fw-bold fs-1">
+						A better forum platform for the modern web.
+					</h1>
+					<h4 class="text-secondary">
+						NodeBB is next generation forum software. It's powerful, mobile-ready and easy to use.
+					</h4>
+					<div class="elementor-widget-container">
+						<p><span style="font-weight: 400;">Looking for a way to engage your followers, away from the noise and chaos of today’s “social” sites? </span></p><p><strong>NodeBB</strong> takes the spirit and energy of the great online forum communities of old, and empowers it with powerful, mobile-ready and easy to use software.&nbsp;</p><p><span style="font-weight: 400;">Establish your own platform for <em>real</em> conversations. Start today!</span></p>						</div>
+					<div class="d-flex gap-2">
+						<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+						<a href="#features-section" class="btn btn-ghost">Learn More -></a>
 					</div>
 				</div>
-				<hr class="my-5" id="features-section"/>
-				<div class="container py-5">
-					<div class="row row-cols-1 row-cols-lg-4 g-5">
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-solid fa-language"></i> Internationalization</div>
-								<div class="text-secondary">NodeBB has built-in multilingual support to provide a localized user interface and <a href="http://transifex.com/projects/p/nodebb" target="_blank"><strong>translatable content.</strong></a></div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-solid fa-rss"></i> Realtime Streaming</div>
-								<div class="text-secondary">See the conversation as it unfolds with realtime streaming of topics and posts.</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-solid fa-right-to-bracket"></i> Single Sign-on</div>
-								<div class="text-secondary">SSO makes it easy for visitors to become members on your NodeBB site. Registration has never been so easy.</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-solid fa-paintbrush"></i> Theming</div>
-								<div class="text-secondary">Change the look and feel of your NodeBB site. You can use themes contributed by others or create your own to match your existing website!</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-solid fa-plug"></i> Plugins</div>
-								<div class="text-secondary">We have many plugins to choose from that will enhance your community's user experience.</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-brands fa-dev"></i> Services</div>
-								<div class="text-secondary">We offer professional services from migration, integration to theming and community management. Let us help you jump start your community today!</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-solid fa-mobile-screen"></i> Responsive</div>
-								<div class="text-secondary">NodeBB is mobile-first and was developed to be a perfect experience no matter what device it's viewed on. It looks great on all devices or screen resolutions.</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-solid fa-share-nodes"></i> Social Integration</div>
-								<div class="text-secondary">NodeBB makes it simple to share content from your community to Facebook, Google, and Twitter which in return brings more visitors to your community.</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-solid fa-key"></i> Roles & Permissions</div>
-								<div class="text-secondary">Control fine-grained, role-based permissions that can be assigned per category. Assign multiple roles to individual users. This is perfect for your private community.</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-solid fa-headset"></i> Support</div>
-								<div class="text-secondary">Ask other users for advice on features, customization and running a community in our <a href="//community.nodebb.org/" title="Community Forums"><strong>community forums</strong></a>.</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-regular fa-message"></i> Chat</div>
-								<div class="text-secondary">Built in chat and instant messaging support that enables your users to interact with each other.</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="d-flex flex-column gap-2">
-								<div class="fs-5 fw-semibold"><i class="fa-brands fa-searchengin"></i> SEO</div>
-								<div class="text-secondary">Human-readable URLs, semantic HTML with embedded microdata, and many more SEO features.</div>
-							</div>
-						</div>
+				<div class="col-12 col-md-6 mt-5 py-5 d-none d-lg-block">
+					<div class="screenshot-stack position-relative">
+						<img src="images/desktop-view.png" alt="Desktop Screenshot" class="screenshot desktop shadow rounded-2">
+						<img src="images/tablet-view.png" alt="Tablet Screenshot" class="screenshot tablet shadow rounded-2">
+						<img src="images/mobile-view.png" alt="Mobile Screenshot" class="screenshot mobile shadow rounded-2">
 					</div>
 				</div>
 			</div>
-
-			<!-- Pricing -->
-			<div class="tab-pane fade" id="pricing-tab-pane" role="tabpanel" aria-labelledby="pricing-tab" tabindex="0">
-				<div class="row">
-					<div class="col-12 d-flex flex-column gap-4 mt-5 py-5">
-						<h1 class="display-1 fw-bold fs-1">
-							Pricing
-						</h1>
-						<h4 class="text-secondary">
-							Find the right plan and price for your community
-						</h4>
-						<div class="d-flex gap-3">
-							<!-- STARTER -->
-							<div class="card border-0 shadow-sm" style="width: 18rem;">
-								<div class="card-body">
-									<h5 class="card-title fw-semibold">Starter</h5>
-									<h6 class="mb-2 text-muted">$20/month</h6>
-									<ul class="list-group list-group-flush mb-2">
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> 50,000 Pageviews</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> 5gb Storage</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Unlimited Staff Users</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary invisible"></i> Custom Plugins</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary invisible"></i> Custom Domain</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary invisible"></i> SSL</li>
-									</ul>
-									<div class="d-flex justify-content-center">
-										<a href="https://manage.nodebb.org/register" class="btn btn-sm btn-primary">Start Free Trial</a>
-									</div>
-								</div>
-							</div>
-
-							<!-- HAMLET -->
-							<div class="card border-0 shadow-sm" style="width: 18rem;">
-								<div class="card-body">
-									<h5 class="card-title fw-semibold">Hamlet</h5>
-									<h6 class="mb-2 text-muted">$100/month</h6>
-									<ul class="list-group list-group-flush mb-2">
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> 500,000 Pageviews</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> 20gb Storage</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Unlimited Staff Users</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Custom Plugins</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Custom Domain</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> SSL</li>
-									</ul>
-									<div class="d-flex justify-content-center">
-										<a href="https://manage.nodebb.org/register" class="btn btn-sm btn-primary">Start Free Trial</a>
-									</div>
-								</div>
-							</div>
-							<!-- VILLAGE -->
-							<div class="card border-0 shadow-sm" style="width: 18rem;">
-								<div class="card-body">
-									<h5 class="card-title fw-semibold">Village</h5>
-									<h6 class="mb-2 text-muted">$250/month</h6>
-									<ul class="list-group list-group-flush mb-2">
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> 2,000,000 Pageviews</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> 100gb Storage</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Unlimited Staff Users</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Custom Plugins</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Custom Domain</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> SSL</li>
-									</ul>
-									<div class="d-flex justify-content-center">
-										<a href="https://manage.nodebb.org/register" class="btn btn-sm btn-primary">Start Free Trial</a>
-									</div>
-								</div>
-							</div>
-							<!-- CITY -->
-							<div class="card border-0 shadow-sm" style="width: 18rem;">
-								<div class="card-body">
-									<h5 class="card-title fw-semibold">City</h5>
-									<h6 class="mb-2 text-muted">$750/month</h6>
-									<ul class="list-group list-group-flush mb-2">
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> 10,000,000 Pageviews</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> 300gb Storage</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Unlimited Staff Users</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Custom Plugins</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> Custom Domain</li>
-										<li class="list-group-item small"><i class="fa-solid fa-check text-primary"></i> SSL</li>
-									</ul>
-									<div class="d-flex justify-content-center">
-										<a href="https://manage.nodebb.org/register" class="btn btn-sm btn-primary">Start Free Trial</a>
-									</div>
-								</div>
-							</div>
+			<hr class="my-5" id="features-section"/>
+			<div class="container py-5">
+				<div class="row row-cols-1 row-cols-lg-4 g-5">
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-solid fa-language"></i> Internationalization</div>
+							<div class="text-secondary">NodeBB has built-in multilingual support to provide a localized user interface and <a href="http://transifex.com/projects/p/nodebb" target="_blank"><strong>translatable content.</strong></a></div>
 						</div>
 					</div>
-				</div>
-				<hr class="my-5"/>
-				<div class="container py-5">
-					<div class="text-center m-b">
-						<span class="i-s i-s-3x pull-n m-r-sm">
-						<i class="fa fa-wrench fa-2x"></i>
-						</span>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-solid fa-rss"></i> Realtime Streaming</div>
+							<div class="text-secondary">See the conversation as it unfolds with realtime streaming of topics and posts.</div>
+						</div>
 					</div>
-					<div class="text-center">
-						<h3>Want us to set up our platform on your own server?</h3>
-						<p class="text-secondary">Off-site installations and custom plugin &amp; theme development billed hourly.</p>
-						<a href="#" onclick="document.getElementById('contact-tab').click();" class="btn btn-ghost">Contact us for more details</a>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-solid fa-right-to-bracket"></i> Single Sign-on</div>
+							<div class="text-secondary">SSO makes it easy for visitors to become members on your NodeBB site. Registration has never been so easy.</div>
+						</div>
 					</div>
-				</div>
-			</div>
-
-			<!-- Contact -->
-			<div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-				<div class="row">
-					<div class="col-12 col-md-6 d-flex flex-column gap-4 mt-5 py-5 mx-auto">
-						<h1 class="display-1 fw-bold fs-1">
-							Contact Us
-						</h1>
-						<h4 class="text-secondary">
-							Feel free to reach out to us for any questions.
-						</h4>
-						<div class="d-flex gap-3">
-							<form action="mailto:support@nodebb.org" method="POST" enctype="text/plain">
-								<div class="row g-3 mb-4">
-								  <div class="col-md-6">
-									<label for="name" class="form-label fw-semibold">Name <span class="text-danger">*</span></label>
-									<input type="text" id="name" name="Name" class="form-control" placeholder="Full Name" required>
-								  </div>
-								  <div class="col-md-6">
-									<label for="email" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
-									<input type="email" id="email" name="Email" class="form-control" placeholder="Your E-mail" required>
-								  </div>
-								</div>
-
-								<div class="mb-4">
-								  <label class="form-label fw-semibold">Inquiry Type <span class="text-danger">*</span></label>
-								  <div class="form-check">
-									<input class="form-check-input" type="radio" name="Inquiry Type" value="Technical/support issue" id="inquiry1" required>
-									<label class="form-check-label" for="inquiry1">Technical/support issue</label>
-								  </div>
-								  <div class="form-check">
-									<input class="form-check-input" type="radio" name="Inquiry Type" value="Hosting, including startup/nonprofit pricing" id="inquiry2" required>
-									<label class="form-check-label" for="inquiry2">Hosting, including startup/nonprofit pricing</label>
-								  </div>
-								  <div class="form-check">
-									<input class="form-check-input" type="radio" name="Inquiry Type" value="Custom design, development, enterprise pricing" id="inquiry3" required>
-									<label class="form-check-label" for="inquiry3">Custom design, development, enterprise pricing</label>
-								  </div>
-								  <div class="form-check">
-									<input class="form-check-input" type="radio" name="Inquiry Type" value="Other, not sure" id="inquiry4" required>
-									<label class="form-check-label" for="inquiry4">Other, not sure</label>
-								  </div>
-								</div>
-
-								<div class="mb-4">
-								  <label for="message" class="form-label fw-semibold">Message <span class="text-danger">*</span></label>
-								  <textarea id="message" name="Message" class="form-control" rows="6" placeholder="Your Text" required></textarea>
-								</div>
-
-								<div class="text-end">
-								  <button type="submit" class="btn btn-warning rounded-pill px-4">Submit</button>
-								</div>
-							</form>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-solid fa-paintbrush"></i> Theming</div>
+							<div class="text-secondary">Change the look and feel of your NodeBB site. You can use themes contributed by others or create your own to match your existing website!</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-solid fa-plug"></i> Plugins</div>
+							<div class="text-secondary">We have many plugins to choose from that will enhance your community's user experience.</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-brands fa-dev"></i> Services</div>
+							<div class="text-secondary">We offer professional services from migration, integration to theming and community management. Let us help you jump start your community today!</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-solid fa-mobile-screen"></i> Responsive</div>
+							<div class="text-secondary">NodeBB is mobile-first and was developed to be a perfect experience no matter what device it's viewed on. It looks great on all devices or screen resolutions.</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-solid fa-share-nodes"></i> Social Integration</div>
+							<div class="text-secondary">NodeBB makes it simple to share content from your community to Facebook, Google, and Twitter which in return brings more visitors to your community.</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-solid fa-key"></i> Roles & Permissions</div>
+							<div class="text-secondary">Control fine-grained, role-based permissions that can be assigned per category. Assign multiple roles to individual users. This is perfect for your private community.</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-solid fa-headset"></i> Support</div>
+							<div class="text-secondary">Ask other users for advice on features, customization and running a community in our <a href="//community.nodebb.org/" title="Community Forums"><strong>community forums</strong></a>.</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-regular fa-message"></i> Chat</div>
+							<div class="text-secondary">Built in chat and instant messaging support that enables your users to interact with each other.</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="d-flex flex-column gap-2">
+							<div class="fs-5 fw-semibold"><i class="fa-brands fa-searchengin"></i> SEO</div>
+							<div class="text-secondary">Human-readable URLs, semantic HTML with embedded microdata, and many more SEO features.</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 		<hr class="my-5"/>
 
 		<!-- FOOTER -->
