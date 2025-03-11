@@ -1,0 +1,53 @@
+body { font-family: 'Inter', sans-serif; }
+button { font-family: 'Poppins', sans-serif; }
+
+:root {
+	--btn-ghost-hover-color: rgb(226.5, 227.8, 229.1);
+}
+[data-bs-theme="dark"] {
+	--btn-ghost-hover-color: rgb(226.5, 227.8, 229.1);
+}
+
+/* https://getbootstrap.com/docs/5.3/components/buttons/#variables */
+.btn-ghost {
+	--bs-btn-color: inherit!important;
+	--bs-btn-bg: transparent;
+	--bs-btn-border-color: transparent;
+	--bs-btn-box-shadow: none;
+	--bs-btn-hover-color: inherit;
+	--bs-btn-hover-bg: var(--btn-ghost-hover-color);
+	--bs-btn-hover-border-color: var(--btn-ghost-hover-color);
+	--bs-btn-active-bg: var(--btn-ghost-hover-color);
+	--bs-btn-active-border-color: transparent;
+}
+
+.screenshot-stack {
+	width: fit-content;
+}
+.screenshot {
+	transition: transform 0.3s ease;
+	position: absolute;
+}
+.screenshot.desktop {
+	z-index: 1;
+	top: 0;
+	left: 50px;
+	width: 500px;
+}
+.screenshot.tablet {
+	z-index: 2;
+	top: 80px;
+	left: 230px;
+	width: 250px;
+}
+
+.screenshot.mobile {
+	z-index: 3;
+	top: 150px;
+	left: 400px;
+	width: 160px;
+}
+.screenshot:hover {
+	transform: scale(1.05);
+	z-index: 10;
+}

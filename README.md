@@ -7,4 +7,5 @@ A beautiful, responsive landing page specifically for NodeBB.
 ### Features
 
  * Built with: HTML5, CSS3, jQuery
- * BS3 Framework with modified classes
+ * BS5 Framework
+ * Fontawesome
