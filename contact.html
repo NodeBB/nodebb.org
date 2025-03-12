@@ -60,7 +60,17 @@
 						Feel free to reach out to us for any questions.
 					</h4>
 					<div class="d-flex gap-3">
-						<form action="mailto:support@nodebb.org" method="POST" enctype="text/plain">
+						<script>
+							 function handleSubmit(e) {
+								e.preventDefault();
+								const name = document.getElementById('name').value;
+								const email = document.getElementById('email').value;
+								const subject = document.querySelector('input[name="Inquiry Type"]:checked').value;
+								const message = document.getElementById('message').value;
+								window.open(`mailto:support@nodebb.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`);
+  							}
+						</script>
+						<form onsubmit="handleSubmit(event)">
 							<div class="row g-3 mb-4">
 								<div class="col-md-6">
 								<label for="name" class="form-label fw-semibold">Name <span class="text-danger">*</span></label>
