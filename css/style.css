@@ -51,7 +51,7 @@ button { font-family: 'Poppins', sans-serif; }
 	left: 400px;
 	width: 160px;
 }
-.screenshot:hover {
+.screenshot.zoom:hover {
 	transform: scale(1.05);
 	z-index: 10;
 }
