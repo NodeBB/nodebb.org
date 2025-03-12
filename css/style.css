@@ -21,6 +21,10 @@ button { font-family: 'Poppins', sans-serif; }
 	--bs-btn-active-border-color: transparent;
 }
 
+.carousel-indicators button {
+	filter: invert(100%);
+}
+
 .screenshot-stack {
 	width: fit-content;
 }
