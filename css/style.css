@@ -35,20 +35,20 @@ button { font-family: 'Poppins', sans-serif; }
 .screenshot.desktop {
 	z-index: 1;
 	top: 0;
-	left: 50px;
+	right: 20px;
 	width: 500px;
 }
 .screenshot.tablet {
 	z-index: 2;
 	top: 80px;
-	left: 230px;
+	right: 100px;
 	width: 250px;
 }
 
 .screenshot.mobile {
 	z-index: 3;
 	top: 150px;
-	left: 400px;
+	right: 0px;
 	width: 160px;
 }
 .screenshot.zoom:hover {
