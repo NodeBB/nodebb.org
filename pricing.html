@@ -20,10 +20,10 @@
 	<!-- our css-->
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body class="p-5">
+<body class="p-0 py-5 p-lg-5">
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
-		<div class="container">
+		<div class="container-lg">
 			<a class="navbar-brand" href="#">
 				<img src="./images/brand/site-logo.png" style="height: 50px; width: auto;" alt="NodeBB Logo" />
 			</a>
@@ -31,7 +31,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-				<ul class="nav nav-underline gap-4" id="myTab" role="tablist">
+				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-start align-items-lg-center">
 					<li class="nav-item" role="presentation">
 						<a href="index.html" class="nav-link text-reset fw-semibold">HOME</a>
 					</li>
@@ -47,11 +47,11 @@
 	</nav>
 
 	<!-- Page Content -->
-	<div class="container mt-5">
+	<div class="container-lg mt-5">
 		<!-- Pricing -->
 		<div id="pricing-tab-pane">
-			<div class="row">
-				<div class="col-12 d-flex flex-column gap-4 mt-5 py-5">
+			<div class="row pt-2 pt-lg-5">
+				<div class="col-12 d-flex flex-column gap-4">
 					<h1 class="display-1 fw-bold fs-1">
 						Pricing
 					</h1>
@@ -170,7 +170,7 @@
 			</div>
 			<hr class="my-5">
 			<div class="d-flex flex-column gap-5">
-				<div class="d-flex gap-5">
+				<div class="d-flex flex-column flex-column-reverse flex-lg-row gap-5">
 					<div class="flex-grow-1">
 						<h3 class="fw-semibold">Need More? Contact us about our Enterprise Solutions</h3>
 						<p class="text-secondary">Geared at larger organizations who need custom integrations, customised support, or who have greater traffic. We can help build your perfect forum solution.</p>
@@ -188,7 +188,7 @@
 					</div>
 				</div>
 				<hr class="my-5"/>
-				<div class="d-flex gap-5">
+				<div class="d-flex flex-column flex-lg-row gap-5">
 					<div>
 						<img src="./images/pricing-open-source.webp" class="img-fluid rounded" alt="NodeBB Open Source Hosting">
 					</div>
@@ -206,7 +206,7 @@
 					</div>
 				</div>
 				<hr class="my-5"/>
-				<div class="d-flex gap-5">
+				<div class="d-flex flex-column flex-column-reverse flex-lg-row gap-5">
 					<div class="flex-grow-1">
 						<h3 class="fw-semibold">Want to host NodeBB on your own?</h3>
 						<p class="text-secondary">NodeBB is open source software that is free for anyone to download and install on their own server under the terms of the GNU General Public Licence (GPLv3).</p>
@@ -227,7 +227,7 @@
 
 		<!-- FOOTER -->
 		<footer>
-			<div class="d-flex gap-5 justify-content-between mb-5 flex-wrap">
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
 				<div class="d-flex flex-column">
 					<h5 class="fw-bold">Get Started</h5>
 					<ul class="list-unstyled">

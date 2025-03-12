@@ -20,10 +20,10 @@
 	<!-- our css-->
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body class="p-5">
+<body class="p-0 py-5 p-lg-5">
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
-		<div class="container">
+		<div class="container-lg">
 			<a class="navbar-brand" href="#">
 				<img src="./images/brand/site-logo.png" style="height: 50px; width: auto;" alt="NodeBB Logo" />
 			</a>
@@ -31,7 +31,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-				<ul class="nav nav-underline gap-4">
+				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-start align-items-lg-center">
 					<li class="nav-item">
 						<a href="index.html" class="nav-link active text-reset fw-semibold">HOME</a>
 					</li>
@@ -47,26 +47,26 @@
 	</nav>
 
 	<!-- Page Content -->
-	<div class="container mt-5">
+	<div class="container-lg mt-5">
 		<!-- Home -->
 		<div id="home-tab-pane">
-			<div class="row">
-				<div class="col-12 col-md-6 d-flex flex-column gap-4 mt-5 py-5">
+			<div class="row pt-2 pt-lg-5">
+				<div class="col-12 col-md-6 d-flex flex-column gap-4">
 					<h1 class="display-1 fw-bold fs-1">
 						A better forum platform for the modern web.
 					</h1>
 					<h4 class="text-secondary">
 						NodeBB is next generation forum software. It's powerful, mobile-ready and easy to use.
 					</h4>
-					<div class="elementor-widget-container">
+					<div>
 						<p>Looking for a way to engage your followers, away from the noise and chaos of today’s “social” sites?</p><p><strong>NodeBB</strong> takes the spirit and energy of the great online forum communities of old, and empowers it with powerful, mobile-ready and easy to use software.&nbsp;</p><p>Establish your own platform for <em>real</em> conversations. Start today!</p>
 					</div>
 					<div class="d-flex gap-2">
-						<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
-						<a href="#features-section" class="btn btn-ghost">Learn More -></a>
+						<a href="https://manage.nodebb.org/register" class="btn btn-primary text-nowrap"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+						<a href="#features-section" class="btn btn-ghost text-nowrap">Learn More -></a>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 mt-5 py-5 d-none d-lg-block">
+				<div class="col-12 col-md-6 d-none d-lg-block">
 					<div class="screenshot-stack position-relative">
 						<img src="images/desktop-view.png" alt="Desktop Screenshot" class="screenshot desktop shadow rounded-2">
 						<img src="images/tablet-view.png" alt="Tablet Screenshot" class="screenshot tablet shadow rounded-2">
@@ -78,7 +78,7 @@
 			<hr class="my-5"/>
 
 			<!-- company logos -->
-			<div class="container py-5">
+			<div class="py-5">
 				<h4 class="fw-semibold">NodeBB powers thousands of community forums. These are just a few:</h4>
 				<div class="d-flex align-items-center gap-3 flex-wrap">
 					<img height="100" src="./images/brand/opera.png" alt="Opera Forums">
@@ -88,7 +88,7 @@
 					<img height="50" src="./images/brand/notepad++.svg" alt="Notepad++ Forums">
 					<img height="100" src="./images/brand/flux.png" alt="F.lux Forums">
 					<img height="60" src="./images/brand/moz.png" alt="Mox Forums">
-					<img height="60" src="./images/brand/qt.png" alt="QT Forums">
+					<img height="50" src="./images/brand/qt.png" alt="QT Forums">
 					<img height="60" src="./images/brand/vivaldi.png" alt="Vivaldi Forums">
 				</div>
 			</div>
@@ -152,7 +152,7 @@
 			<hr class="my-5">
 
 			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="min-height:300px;">
-				<div class="carousel-indicators">
+				<div class="carousel-indicators d-none d-lg-flex">
 					<button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
 					<button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -204,7 +204,7 @@
 
 			<hr class="my-5" id="features-section"/>
 			<!-- Features -->
-			<div class="container py-5">
+			<div class="py-5">
 				<div class="row row-cols-1 row-cols-lg-4 g-5">
 					<div class="col">
 						<div class="d-flex flex-column gap-2">
@@ -286,7 +286,7 @@
 
 		<!-- FOOTER -->
 		<footer>
-			<div class="d-flex gap-5 justify-content-between mb-5 flex-wrap">
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
 				<div class="d-flex flex-column">
 					<h5 class="fw-bold">Get Started</h5>
 					<ul class="list-unstyled">

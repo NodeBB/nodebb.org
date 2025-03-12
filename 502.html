@@ -1,86 +1,110 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-dark">
-	<head>
-		<meta charset="utf-8" />
-		<title>
-			NodeBB | 502/503 Service Unavailable
-		</title>
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		<link rel="stylesheet" href="https://nodebb.org/css/f.css" type="text/css" />
-		<link rel="stylesheet" href="https://nodebb.org/css/n.css" type="text/css" />
-		<link rel="stylesheet" href="https://nodebb.org/css/l.css" type="text/css" />
-		<!-- /STY -->
-		<link rel="shortcut icon" href="favicon.ico">
-		<!--[if lt IE 9]>
-		<script src="js/ie/html5shiv.js"></script>
-		<script src="js/ie/respond.min.js"></script>
-		<script src="js/ie/excanvas.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<body class="">
-			<section id="content" class="">
-				<div class="bg-splash dk splash-x">
-					<div class="bg-splash-overlay"></div>
-					<div class="bg-splash-cover-alt container">
-						<div class="">
-							<h1 class="m-b-none text-white font-thin text-center logo"><a href="//nodebb.org" title="NodeBB"><img src="https://nodebb.org/images/brand/logo-bb-wc.png" width="120" height="49" alt="NodeBB"></a></h1>
-							<h3 class="text-white font-thin text-center">Start your online community today</h3>
-						</div>
-					</div>
-				</div>
-				<div class="bg-dark bg-splash-a">
-				<div class="splash-overlay"></div>
-					<div class="container aside-xl">
-						<section class="m-b-lg m-t-lg text-center">
-							<h1>Service Unavailable</h1>
-							<p>
-								We couldn&apos;t reach the website you were looking to access. It may be offline temporarily, please try again later.
-							</p>
-						</section>
-					</div>
-				</div>
-			</section>
-			<!-- /SEC -->
-			<footer id="footer" class="clearfix padder m-t-lg m-b-lg">
-				<div class="container aside-xl text-center padder">
-					<ul class="footer-links">
-						<li>
-						<a href="https://nodebb.org/tos">Terms</a>
-						</li>
-						<li>
-						<a href="https://nodebb.org/privacy">Privacy</a>
-						</li>
-						<li>
-						<a href="https://nodebb.org/dmca">DMCA</a>
-						</li>
-						<li>
-						<a href="https://twitter.com/nodebb">Status</a>
-						</li>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>NodeBB | Modern Forum Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="NodeBB Forum Software - The Modern Discussion Platform">
+	<meta name="author" content="NodeBB Inc.">
+	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting">
+
+	<!-- Google Fonts: Inter & Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- our css-->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body class="p-0 py-5 p-lg-5">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+		<div class="container-lg">
+			<a class="navbar-brand" href="#">
+				<img src="./images/brand/site-logo.png" style="height: 50px; width: auto;" alt="NodeBB Logo" />
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+				<ul class="nav nav-underline gap-4  flex-column flex-lg-row align-items-start align-items-lg-center">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link active text-reset fw-semibold">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="pricing.html" class="nav-link text-reset fw-semibold">PRICING</a>
+					</li>
+					<li class="nav-item">
+						<a href="contact.html" class="nav-link text-reset fw-semibold">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container-lg mt-5">
+		<div class="text-center py-5">
+			<h1 class="py-5">502 Bad Gateway</h1>
+		</div>
+
+		<hr class="my-5"/>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Get Started</h5>
+					<ul class="list-unstyled">
+						<li><a href="product.html" class="text-secondary text-decoration-none">PRODUCT</a></li>
+						<li><a href="pricing.html" class="text-secondary text-decoration-none">PRICING</a></li>
 					</ul>
-					<p class="m-t">
-						<small>
-						&copy; NodeBB 2014-2018
-						</small>
-					</p>
 				</div>
-			</footer>
-			<!-- /FTR -->
-			<!-- /APP -->
-			<script src="https://code.jquery.com/jquery.js"></script>
-			<script src="https://nodebb.org/js/jquery/jquery.appear.js"></script>
-			<script src="https://nodebb.org/js/landing.js"></script>
-			<script src="https://nodebb.org/js/nodebb.js"></script>
-			<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-45914244-2', 'nodebb.org');
-			ga('send', 'pageview');
-			</script>
-			<!-- /ANALYTICS -->
-			<!-- /SCR -->
-	</body>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Resources</h5>
+					<ul class="list-unstyled">
+						<li><a href="https://try.nodebb.org/" class="text-secondary text-decoration-none">DEMO SITE</a></li>
+						<li><a href="https://community.nodebb.org/category/28/answers" class="text-secondary text-decoration-none">ANSWERS</a></li>
+						<li><a href="https://docs.nodebb.org" class="text-secondary text-decoration-none">DOCS</a></li>
+						<li><a href="bounty.html" class="text-secondary text-decoration-none">BOUNTY</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Company</h5>
+					<ul class="list-unstyled">
+						<li><a href="about.html" class="text-secondary text-decoration-none">ABOUT</a></li>
+						<li><a href="https://community.nodebb.org/category/13/nodebb-blog" class="text-secondary text-decoration-none">BLOG</a></li>
+						<li><a href="contact.html" class="text-secondary text-decoration-none">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					<div class="d-flex gap-3 mt-3 justify-content-between px-2">
+						<a title="NodeBB Github Page" href="https://github.com/nodebb/nodebb" class="text-secondary text-decoration-none"><i class="fab fa-github"></i></a>
+						<a title="NodeBB Twitter Page" href="https://twitter.com/nodebb" class="text-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
+						<a title="NodeBB Mastodon Page" href="https://fosstodon.org/@nodebb" class="text-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="text-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between gap-5 small">
+				<span class="text-secondary text-nowrap">© 2014 – 2025 NodeBB, Inc. — Made in Canada.</span>
+				<div class="d-flex gap-3">
+					<a href="tos.html" class="text-secondary text-nowrap text-decoration-none">Terms of Service</a>
+					<a href="privacy.html" class="text-secondary text-nowrap text-decoration-none">Privacy Policy</a>
+					<a href="gdpr.html" class="text-secondary text-nowrap text-decoration-none">GDPR</a>
+					<a href="dmca.html" class="text-secondary text-nowrap text-decoration-none">DMCA</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
 </html>
