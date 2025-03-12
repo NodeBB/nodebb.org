@@ -9,3 +9,6 @@ A beautiful, responsive landing page specifically for NodeBB.
  * Built with: HTML5, CSS3, jQuery
  * BS5 Framework
  * Fontawesome
+
+### Deployement
+`git pull` and done! 🚀
