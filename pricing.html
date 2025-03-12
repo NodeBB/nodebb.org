@@ -61,7 +61,7 @@
 					<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
 						<!-- STARTER -->
 						<div class="col">
-							<div class="card border-0 shadow-sm">
+							<div class="card border-0 shadow">
 							<div class="card-body">
 								<h5 class="card-title fw-semibold">Starter</h5>
 								<h6 class="mb-2 text-muted">$20/month</h6>
@@ -88,7 +88,7 @@
 
 						<!-- HAMLET -->
 						<div class="col">
-							<div class="card border-0 shadow-sm">
+							<div class="card border-0 shadow">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Hamlet</h5>
 									<h6 class="mb-2 text-muted">$100/month</h6>
@@ -115,7 +115,7 @@
 
 						<!-- VILLAGE -->
 						<div class="col">
-							<div class="card border-0 shadow-sm">
+							<div class="card border-0 shadow">
 								<div class="card-body">
 									<h5 class="card-title fw-semibold">Village <span class="badge text-bg-primary">Most Popular</span></h5>
 									<h6 class="mb-2 text-muted">$250/month</h6>
@@ -141,7 +141,7 @@
 						</div>
 						<!-- CITY -->
 						<div class="col">
-							<div class="card border-0 shadow-sm">
+							<div class="card border-0 shadow">
 							<div class="card-body">
 								<h5 class="card-title fw-semibold">City</h5>
 								<h6 class="mb-2 text-muted">$750/month</h6>
@@ -169,45 +169,57 @@
 				</div>
 			</div>
 			<hr class="my-5">
-			<div class="container py-5">
-				<div class="mb-4">
-					<h3 class="fw-semibold">Need More? Contact us about our Enterprise Solutions</h3>
-					<p class="text-secondary">Geared at larger organizations who need custom integrations, customised support, or who have greater traffic. We can help build your perfect forum solution.</p>
-					<label class="fw-semibold">Includes:</label>
-					<ul>
-						<li>Custom feature development to integrate with your current systems.</li>
-						<li>Theme customization to match your brand identity perfectly.</li>
-						<li>Single Sign-On with your existing services to provide your users with a seamless experience.</li>
-						<li>Migration services from existing forums – we'll make the move from your old software as painless as possible.</li>
-						<li>Premium hosting or self-hosting options to best suit your requirements and security policies.</li>
-					</ul>
+			<div class="d-flex flex-column gap-5">
+				<div class="d-flex gap-5">
+					<div class="flex-grow-1">
+						<h3 class="fw-semibold">Need More? Contact us about our Enterprise Solutions</h3>
+						<p class="text-secondary">Geared at larger organizations who need custom integrations, customised support, or who have greater traffic. We can help build your perfect forum solution.</p>
+						<label class="fw-semibold">Includes:</label>
+						<ul class="text-secondary">
+							<li>Custom feature development to integrate with your current systems.</li>
+							<li>Theme customization to match your brand identity perfectly.</li>
+							<li>Single Sign-On with your existing services to provide your users with a seamless experience.</li>
+							<li>Migration services from existing forums – we'll make the move from your old software as painless as possible.</li>
+							<li>Premium hosting or self-hosting options to best suit your requirements and security policies.</li>
+						</ul>
+					</div>
+					<div>
+						<img src="./images/pricing-enterprise.png" class="img-fluid" alt="NodeBB Desktop View">
+					</div>
 				</div>
-				<div class="mb-4">
-					<h3 class="fw-semibold">Non-profit or start-up company?</h3>
-					<p class="text-secondary">We offer special pricing for non-profits and start-up companies. If you run a popular open-source project and are interested in a free hosting account from NodeBB to help grow your community, please drop us a line.</p>
-					<label class="fw-semibold">Requirements:</label>
-					<ul>
-						<li>Qualified projects should be publicly hosted (GitHub, GitLab, Codeberg, etc.) and demonstrate a clear need for better interaction within their contributor community</li>
-						<li>Hosting provided will be equivalent to our 'Starter' level plan – upgraded plans may be provided at a discounted rate</li>
-						<li>Your forum URL must retain the "project.nodebb.com" format, with no other NodeBB branding required</li>
-						<li>Qualification will be at the discretion of NodeBB Inc.</li>
-						<li>Premium hosting or self-hosting options to best suit your requirements and security policies.</li>
-					</ul>
+				<hr class="my-5"/>
+				<div class="d-flex gap-5">
+					<div>
+						<img src="./images/pricing-open-source.webp" class="img-fluid rounded" alt="NodeBB Open Source Hosting">
+					</div>
+					<div class="flex-grow-1">
+						<h3 class="fw-semibold">Non-profit or start-up company?</h3>
+						<p class="text-secondary">We offer special pricing for non-profits and start-up companies. If you run a popular open-source project and are interested in a free hosting account from NodeBB to help grow your community, please drop us a line.</p>
+						<label class="fw-semibold">Requirements:</label>
+						<ul class="text-secondary">
+							<li>Qualified projects should be publicly hosted (GitHub, GitLab, Codeberg, etc.) and demonstrate a clear need for better interaction within their contributor community</li>
+							<li>Hosting provided will be equivalent to our 'Starter' level plan – upgraded plans may be provided at a discounted rate</li>
+							<li>Your forum URL must retain the "project.nodebb.com" format, with no other NodeBB branding required</li>
+							<li>Qualification will be at the discretion of NodeBB Inc.</li>
+							<li>Premium hosting or self-hosting options to best suit your requirements and security policies.</li>
+						</ul>
+					</div>
 				</div>
-
-				<div class="mb-4">
-					<h3 class="fw-semibold">Want to host NodeBB on your own?</h3>
-					<p class="text-secondary">NodeBB is open source software that is free for anyone to download and install on their own server under the terms of the GNU General Public Licence (GPLv3).</p>
-					<p class="text-secondary">The code can be found at our project repository on GitHub, and installation instructions can be found in our <a href="https://docs.nodebb.org/">Documentation Portal</a>.</p>
-					<p class="text-secondary">If you do not have a server, we recommend using DigitalOcean to host NodeBB. They do charge based on your usage, but you can get a month of free hosting from them by <a href="https://www.digitalocean.com/?refcode=98bdc9454647" target="_blank" rel="noopener">following this link</a>.</p>
+				<hr class="my-5"/>
+				<div class="d-flex gap-5">
+					<div class="flex-grow-1">
+						<h3 class="fw-semibold">Want to host NodeBB on your own?</h3>
+						<p class="text-secondary">NodeBB is open source software that is free for anyone to download and install on their own server under the terms of the GNU General Public Licence (GPLv3).</p>
+						<p class="text-secondary">The code can be found at our project repository on GitHub, and installation instructions can be found in our <a href="https://docs.nodebb.org/">Documentation Portal</a>.</p>
+						<p class="text-secondary">If you do not have a server, we recommend using DigitalOcean to host NodeBB. They do charge based on your usage, but you can get a month of free hosting from them by <a href="https://www.digitalocean.com/?refcode=98bdc9454647" target="_blank" rel="noopener">following this link</a>.</p>
+					</div>
+					<div>
+						<img src="./images/terminal.svg" class="img-fluid" alt="Terminal View">
+					</div>
 				</div>
-
-				<div class="mb-4">
-					<h3 class="fw-semibold">Want us to set up our platform on your own server?</h3>
-					<p class="text-secondary">Off-site installations and custom plugin &amp; theme development billed hourly.</p>
+				<div class="text-center">
+					<a href="contact.html" class="btn btn-lg btn-primary">Contact Us</a>
 				</div>
-
-				<a href="contact.html" class="btn btn-primary">Contact Us</a>
 			</div>
 		</div>
 
