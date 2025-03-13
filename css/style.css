@@ -25,6 +25,13 @@ button { font-family: 'Poppins', sans-serif; }
 	filter: invert(100%);
 }
 
+@media (max-width: 1200px) {
+	.brand-images > a:last-child {
+	  margin-right: auto;
+	}
+  }
+
+
 .screenshot-stack {
 	width: fit-content;
 }
