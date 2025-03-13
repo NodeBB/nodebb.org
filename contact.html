@@ -86,12 +86,40 @@
 					<div class="d-flex gap-3">
 						<script>
 							 function handleSubmit(e) {
+								document.getElementById('submit-success').classList.add('d-none');
+								document.getElementById('submit-error').classList.add('d-none');
 								e.preventDefault();
 								const name = document.getElementById('name').value;
 								const email = document.getElementById('email').value;
 								const subject = document.querySelector('input[name="Inquiry Type"]:checked').value;
 								const message = document.getElementById('message').value;
-								window.open(`mailto:support@nodebb.org?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`);
+								fetch('https://manage.nodebb.org/support/ticket', {
+									method: 'POST',
+									credentials: 'include',
+									headers: {
+										'Content-Type': 'application/json'
+									},
+									body: JSON.stringify({
+										type: subject,
+										name: name,
+										email: email,
+										message: message,
+									}),
+								})
+								.then(response => {
+									if (!response.ok) {
+										throw new Error('Network response was not ok');
+									}
+									return response.json();
+								})
+								.then(data => {
+									console.log('Response from server:', data);
+									document.getElementById('submit-success').classList.remove('d-none');
+								})
+								.catch(error => {
+									console.error('There was a problem with the fetch request:', error);
+									document.getElementById('submit-error').classList.remove('d-none');
+								});
   							}
 						</script>
 						<form onsubmit="handleSubmit(event)">
@@ -131,7 +159,9 @@
 								<textarea id="message" name="Message" class="form-control" rows="6" placeholder="Your Text" required></textarea>
 							</div>
 
-							<div class="text-end">
+							<div class="d-flex gap-3 justify-content-end align-items-center">
+								<div id="submit-success" class="alert alert-info mb-0 p-2 fw-semibold d-none">Message sent</div>
+								<div id="submit-error" class="alert alert-danger mb-0 p-2 fw-semibold d-none">Error submitting form</div>
 								<button type="submit" class="btn btn-warning rounded-pill px-4">Submit</button>
 							</div>
 						</form>
