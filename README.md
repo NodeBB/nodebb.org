@@ -11,5 +11,5 @@ A beautiful, responsive landing page specifically for NodeBB.
    * Bootstrap 5
    * Fontawesome
 
-### Deployement
+### Deployment
 `git pull` and done! 🚀
