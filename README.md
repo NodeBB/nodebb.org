@@ -2,13 +2,14 @@
 
 A beautiful, responsive landing page specifically for NodeBB.
 
-![NodeBB Marketing Page](http://i.imgur.com/aYolLnl.png)
+![NodeBB Marketing Page](./images/site-screenshot.png)
 
 ### Features
 
- * Built with: HTML5, CSS3, jQuery
- * BS5 Framework
- * Fontawesome
+ * Built with:
+   * HTML5
+   * Bootstrap 5
+   * Fontawesome
 
 ### Deployement
 `git pull` and done! 🚀
