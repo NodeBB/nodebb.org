@@ -27,9 +27,9 @@ button { font-family: 'Poppins', sans-serif; }
 
 @media (max-width: 1200px) {
 	.brand-images > a:last-child {
-	  margin-right: auto;
+		margin-right: auto;
 	}
-  }
+}
 
 
 .screenshot-stack {
