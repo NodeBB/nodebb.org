@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://nodebb.org/sitemap.xml
