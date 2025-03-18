@@ -37,28 +37,8 @@ button { font-family: 'Poppins', sans-serif; }
 }
 .screenshot {
 	transition: transform 0.3s ease;
-	position: absolute;
-}
-.screenshot.desktop {
-	z-index: 1;
-	top: 0;
-	right: 20px;
-	width: 500px;
-}
-.screenshot.tablet {
-	z-index: 2;
-	top: 80px;
-	right: 100px;
-	width: 250px;
-}
-
-.screenshot.mobile {
-	z-index: 3;
-	top: 150px;
-	right: 0px;
-	width: 160px;
 }
 .screenshot.zoom:hover {
 	transform: scale(1.05);
-	z-index: 10;
+	z-index: 10!important;
 }
