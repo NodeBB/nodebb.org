@@ -1,0 +1,14 @@
+{
+	"url": "https://nodebb.org/blog/changes-to-our-release-branches",
+	"title": "Changes to our release branches",
+	"subtitle": "",
+	"excerpt": "What is a release branch? Whenever we make a NodeBB release, whether it be a patch release, minor release, or a major release, we also push the code to specific...",
+	"cover": "https://images.unsplash.com/photo-1521675333836-36e707ac1d20?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	"pubDate": "Tue, 26 Jul 2022 18:18:20 +0000",
+	"author": {
+		"name": "Julian Lam",
+		"url": "https://community.nodebb.org/user/julian",
+		"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+	},
+	"content": "changes-to-our-release-branches.html"
+}
