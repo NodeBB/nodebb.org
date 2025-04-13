@@ -11,5 +11,9 @@ A beautiful, responsive landing page specifically for NodeBB.
    * Bootstrap 5
    * Fontawesome
 
+### To build the blog pages run
+
+`node blog_source/build-blog.js`
+
 ### Deployment
 `git pull` and done! 🚀

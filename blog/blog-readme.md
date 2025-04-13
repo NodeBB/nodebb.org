@@ -1,0 +1,1 @@
+Running `node blog_source/build-blog.js` will populate this folder with index.html and the html pages of the blog posts.
