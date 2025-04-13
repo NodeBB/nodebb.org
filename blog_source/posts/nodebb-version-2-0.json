@@ -1,0 +1,14 @@
+{
+	"url": "https://nodebb.org/blog/nodebb-version-2-0",
+	"title": "NodeBB version 2.0 – Moving on Up",
+	"subtitle": "",
+	"excerpt": "It’s a big week at NodeBB. For one, we are moving from the office on King Street in Toronto where we have been for the last 5 years… okay yes,...",
+	"cover": "https://nodebb.org/blog/images/office-move.jpg",
+	"pubDate": "Wed, 04 May 2022 19:34:56 +0000",
+	"author": {
+		"name": "Jay Moonah",
+		"url": "https://community.nodebb.org/user/jay-moonah",
+		"image": "https://community.nodebb.org/assets/uploads/profile/uid-7950/7950-profileavatar-1701887954691.jpeg"
+	},
+	"content": "nodebb-version-2-0.html"
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>NodeBB version 2.0 – Moving on Up - NodeBB - Modern Community Forum Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Blog of NodeBB Forum Software - The Modern Discussion Platform">
+	<meta name="author" content="NodeBB Inc.">
+	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting, blog">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/16x16.png">
+	<link rel="shortcut icon" href="/images/icons/favicon.ico">
+
+	<!-- Google Fonts: Inter & Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- our css-->
+	<link href="/css/style.css" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0P62EB8Q6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-V0P62EB8Q6');
+	</script>
+</head>
+<body class="p-0 py-5 p-lg-5">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+		<div class="container-lg">
+			<a class="navbar-brand py-2" href="/">
+				<img src="/images/brand/nodebb-logo.svg" style="height: 36px; width: auto;" alt="NodeBB Logo" />
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-end align-items-lg-center mt-4 mt-lg-0">
+					<li class="nav-item">
+						<a href="/" class="nav-link text-reset fw-semibold">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="/product" class="nav-link text-reset fw-semibold">PRODUCT</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pricing" class="nav-link text-reset fw-semibold">PRICING</a>
+					</li>
+					<li class="nav-item">
+						<a href="/services" class="nav-link text-reset fw-semibold">SERVICES</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle text-reset fw-semibold">RESOURCES</a>
+						<ul class="dropdown-menu dropdown-menu-end border-0 shadow p-1">
+							<li><a href="https://community.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Community</a></li>
+							<li><a href="https://try.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Demo Site</a></li>
+							<li><a href="https://community.nodebb.org/category/28/answers" class="dropdown-item rounded-1" target="_blank">Answers</a></li>
+							<li><a href="https://docs.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Documentation</a></li>
+							<li><a href="/bounty" class="dropdown-item rounded-1">Bug Bounty</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/contact" class="btn btn-warning rounded-pill">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container-lg mt-5">
+		<!-- Home -->
+		<div id="home-tab-pane">
+			<div class="row pt-2 pt-lg-5">
+				<div class="col-12 d-flex flex-column gap-4">
+					<h1 class="display-1 fw-bold fs-1">
+						NodeBB version 2.0 – Moving on Up
+					</h1>
+					
+				</div>
+			</div>
+
+			<!-- blog post -->
+			<div class="py-5">
+				<div class="d-flex gap-2 align-items-center mb-4">
+					<a href="https://community.nodebb.org/user/jay-moonah"><img class="rounded-circle" width="32" src="https://community.nodebb.org/assets/uploads/profile/uid-7950/7950-profileavatar-1701887954691.jpeg"></a> <a href="https://community.nodebb.org/user/jay-moonah" class="fw-semibold">Jay Moonah</a> <span class="text-secondary">5/4/2022, 3:34:56 PM</span>
+				</div>
+				<div class="">
+					<h2>It's a big week at NodeBB. For one, we are moving from the office on King Street in Toronto where we have been for the last 5 years... okay yes, we're only moving to another <em>floor</em> of the same building due to renovations, but it's still fairly big deal.</h2>
+<p>But in even bigger news...</p>
+<h2>...NodeBB version 2 is here!</h2>
+<p>If you have been following <a href="https://nodebb.org/blog/looking-ahead-to-nodebb-v2-x/">Julian's</a> <a href="https://nodebb.org/blog/migration-guide-for-v2/">recent</a> <a href="https://nodebb.org/blog/roadmap-for-2022/">posts</a> this won't come as a big surprise, but v2.0.0 is now a reality. This has been a while in the making, and we're excited this day has finally arrived.</p>
+<h2>What's New in NodeBB v2.0.0?</h2>
+<p>The focus of the version 2 release work has been the elimination of "technical debt." If you are not familiar with the term, technical debt is essentially the build up of small changes in various pieces of code over time that can eventual cause a variety of issues, such as performance problems or challenges to future development.&nbsp;</p>
+<p>The biggest change  is the move to <a href="https://webpack.js.org/">Webpack version 5.0</a> as the module bundler for NodeBB, which will align us with the current prevailing standard of web development. Prior to this, we were using a hand-written module bundler—which worked well for many years—but had some rough edges when integrating with third-party libraries. The key benefit to upgrading to Webpack is a reduction in client-side payloads which will give faster initial load times, and will also simplify things for developers.</p>
+<p>While this change won't have much direct impact on forum users or admins, we believe that making things easier for developers will more easily allow new features and customizations to be added to NodeBB via plugins and other development, ultimately benefiting everyone in the ecosystem.</p>
+<p><strong>Other changes in v2.0.0&nbsp;</strong></p>
+<p>(Note that a few of these are actually changes from various 1.19.x releases that we hadn't got around to blogging about.)</p>
+<ul>
+<li>Now easier for plugin developers to add their own privileges to NodeBB
+<ul>
+<li>Devs used to have to hook into 4 different calls, but now only 1 is needed</li>
+</ul>
+</li>
+<li>Better support for multiple nav bars in a theme
+<ul>
+<li>Theme developers often had issues adding multiple nav bars to a theme, as pages within NodeBB expected a single nav bar -- the underlying logic has been rewritten to handle multiple nav bars and react appropriately</li>
+</ul>
+</li>
+<li>Muting users
+<ul>
+<li>This allows admins to "silence" user, meaning they cannot post but can still login</li>
+</ul>
+</li>
+<li>Changed <a href="https://community.nodebb.org/users?section=online">recent online users</a>
+<ul>
+<li>Going to the "users" page and selecting "online" will now show users who have been active in the last 24 hours</li>
+</ul>
+</li>
+<li>Automatic flagging of downvoted posts
+<ul>
+<li>In the admin control panel under "Reputation &amp; Flags &gt; Flag Settings", admins can now optionally set a threshold number of downvotes to automatically flag that post for moderation</li>
+</ul>
+</li>
+<li>Controversial posts
+<ul>
+<li>User profiles now contain a "<a href="https://nodebb.org/blog/controversial-increasing-transparency-downvote/">controversial post</a>" page, which lists an individuals most downvoted posts</li>
+</ul>
+</li>
+<li>Upvote/downvote visual indicators for colour blind persons
+<ul>
+<li>A box will now appear when you upvote or downvote a post -- previously this was represented only by a colour change</li>
+</ul>
+</li>
+<li>Mobile menu reconfiguration
+<ul>
+<li>Notifications and chats have been merged to the right to more closely align with the desktop view</li>
+</ul>
+</li>
+<li>Minimum reputation for chats
+<ul>
+<li>This can be set in the admin control panel under "Settings &gt; Reputation"&nbsp;</li>
+</ul>
+</li>
+<li>Drag/drop images in chats</li>
+</ul>
+<p><strong>Upgrading to NodeBB v2.0</strong></p>
+<p>If you are hosting your own forum and are moving up to the new version, be sure to check out our <a href="https://nodebb.org/blog/migration-guide-for-v2/">Migration Guide for v2.</a>&nbsp; And if you are hosted client with us, please contact <a href="mailto:support@nodebb.org">support@nodebb.org</a> to discuss upgrading your forum.</p>
+				</div>
+			</div>
+		</div>
+
+		<hr class="my-5"/>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Get Started</h5>
+					<ul class="list-unstyled">
+						<li><a href="/product" class="link-secondary text-decoration-none">PRODUCT</a></li>
+						<li><a href="/pricing" class="link-secondary text-decoration-none">PRICING</a></li>
+						<li><a href="/services" class="link-secondary text-decoration-none">SERVICES</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Resources</h5>
+					<ul class="list-unstyled">
+						<li><a href="https://community.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">COMMUNITY</a></li>
+						<li><a href="https://try.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">DEMO SITE</a></li>
+						<li><a href="https://community.nodebb.org/category/28/answers" class="link-secondary text-decoration-none" target="_blank">ANSWERS</a></li>
+						<li><a href="https://docs.nodebb.org" class="link-secondary text-decoration-none" target="_blank">DOCUMENTATION</a></li>
+						<li><a href="/bounty" class="link-secondary text-decoration-none">BUG BOUNTY</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Company</h5>
+					<ul class="list-unstyled">
+						<li><a href="/about" class="link-secondary text-decoration-none">ABOUT</a></li>
+						<li><a href="/blog" class="link-secondary text-decoration-none">BLOG</a></li>
+						<li><a href="/contact" class="link-secondary text-decoration-none">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					<div class="d-flex gap-3 mt-3 justify-content-between px-2">
+						<a title="NodeBB Github Page" href="https://github.com/nodebb/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-github"></i></a>
+						<a title="NodeBB Twitter Page" href="https://twitter.com/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
+						<a title="NodeBB Mastodon Page" href="https://fosstodon.org/@nodebb" class="link-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="link-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between gap-5 small">
+				<span class="text-secondary text-nowrap">©2025 NodeBB, Inc. — Made in Canada with <i class="fa-solid fa-heart text-danger"></i>.</span>
+				<div class="d-flex gap-3">
+					<a href="/tos" class="link-secondary text-nowrap text-decoration-none">Terms of Service</a>
+					<a href="/privacy" class="link-secondary text-nowrap text-decoration-none">Privacy Policy</a>
+					<a href="/gdpr" class="link-secondary text-nowrap text-decoration-none">GDPR</a>
+					<a href="/dmca" class="link-secondary text-nowrap text-decoration-none">DMCA</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

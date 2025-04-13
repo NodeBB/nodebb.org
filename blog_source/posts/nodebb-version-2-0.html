@@ -1,0 +1,60 @@
+<h2>It's a big week at NodeBB. For one, we are moving from the office on King Street in Toronto where we have been for the last 5 years... okay yes, we're only moving to another <em>floor</em> of the same building due to renovations, but it's still fairly big deal.</h2>
+<p>But in even bigger news...</p>
+<h2>...NodeBB version 2 is here!</h2>
+<p>If you have been following <a href="https://nodebb.org/blog/looking-ahead-to-nodebb-v2-x/">Julian's</a> <a href="https://nodebb.org/blog/migration-guide-for-v2/">recent</a> <a href="https://nodebb.org/blog/roadmap-for-2022/">posts</a> this won't come as a big surprise, but v2.0.0 is now a reality. This has been a while in the making, and we're excited this day has finally arrived.</p>
+<h2>What's New in NodeBB v2.0.0?</h2>
+<p>The focus of the version 2 release work has been the elimination of "technical debt." If you are not familiar with the term, technical debt is essentially the build up of small changes in various pieces of code over time that can eventual cause a variety of issues, such as performance problems or challenges to future development.&nbsp;</p>
+<p>The biggest change  is the move to <a href="https://webpack.js.org/">Webpack version 5.0</a> as the module bundler for NodeBB, which will align us with the current prevailing standard of web development. Prior to this, we were using a hand-written module bundler—which worked well for many years—but had some rough edges when integrating with third-party libraries. The key benefit to upgrading to Webpack is a reduction in client-side payloads which will give faster initial load times, and will also simplify things for developers.</p>
+<p>While this change won't have much direct impact on forum users or admins, we believe that making things easier for developers will more easily allow new features and customizations to be added to NodeBB via plugins and other development, ultimately benefiting everyone in the ecosystem.</p>
+<p><strong>Other changes in v2.0.0&nbsp;</strong></p>
+<p>(Note that a few of these are actually changes from various 1.19.x releases that we hadn't got around to blogging about.)</p>
+<ul>
+<li>Now easier for plugin developers to add their own privileges to NodeBB
+<ul>
+<li>Devs used to have to hook into 4 different calls, but now only 1 is needed</li>
+</ul>
+</li>
+<li>Better support for multiple nav bars in a theme
+<ul>
+<li>Theme developers often had issues adding multiple nav bars to a theme, as pages within NodeBB expected a single nav bar -- the underlying logic has been rewritten to handle multiple nav bars and react appropriately</li>
+</ul>
+</li>
+<li>Muting users
+<ul>
+<li>This allows admins to "silence" user, meaning they cannot post but can still login</li>
+</ul>
+</li>
+<li>Changed <a href="https://community.nodebb.org/users?section=online">recent online users</a>
+<ul>
+<li>Going to the "users" page and selecting "online" will now show users who have been active in the last 24 hours</li>
+</ul>
+</li>
+<li>Automatic flagging of downvoted posts
+<ul>
+<li>In the admin control panel under "Reputation &amp; Flags &gt; Flag Settings", admins can now optionally set a threshold number of downvotes to automatically flag that post for moderation</li>
+</ul>
+</li>
+<li>Controversial posts
+<ul>
+<li>User profiles now contain a "<a href="https://nodebb.org/blog/controversial-increasing-transparency-downvote/">controversial post</a>" page, which lists an individuals most downvoted posts</li>
+</ul>
+</li>
+<li>Upvote/downvote visual indicators for colour blind persons
+<ul>
+<li>A box will now appear when you upvote or downvote a post -- previously this was represented only by a colour change</li>
+</ul>
+</li>
+<li>Mobile menu reconfiguration
+<ul>
+<li>Notifications and chats have been merged to the right to more closely align with the desktop view</li>
+</ul>
+</li>
+<li>Minimum reputation for chats
+<ul>
+<li>This can be set in the admin control panel under "Settings &gt; Reputation"&nbsp;</li>
+</ul>
+</li>
+<li>Drag/drop images in chats</li>
+</ul>
+<p><strong>Upgrading to NodeBB v2.0</strong></p>
+<p>If you are hosting your own forum and are moving up to the new version, be sure to check out our <a href="https://nodebb.org/blog/migration-guide-for-v2/">Migration Guide for v2.</a>&nbsp; And if you are hosted client with us, please contact <a href="mailto:support@nodebb.org">support@nodebb.org</a> to discuss upgrading your forum.</p>

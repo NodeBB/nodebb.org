@@ -1,0 +1,15 @@
+{
+	"url": "https://nodebb.org/blog/plugin-compatibility-semver",
+	"title": "Plugin Compatibility and Semantic Versioning (semver)",
+	"subtitle": "",
+	"excerpt": "Over the years, NodeBB has amassed quite a collection of plugins, most of which were published to npm and listed in the “Manage Plugins” page in the admin control panel....",
+	"cover": "https://images.unsplash.com/photo-1591040092219-081fb773589c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	"pubDate": "Fri, 20 May 2022 17:39:52 +0000",
+	"author": {
+		"name": "Julian Lam",
+		"url": "https://community.nodebb.org/user/julian",
+		"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+	},
+
+	"content": "plugin-compatibility-semver.html"
+}
