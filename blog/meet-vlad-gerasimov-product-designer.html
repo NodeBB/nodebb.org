@@ -48,7 +48,7 @@
 			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
 				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-end align-items-lg-center mt-4 mt-lg-0">
 					<li class="nav-item">
-						<a href="/" class="nav-link active text-reset fw-semibold">HOME</a>
+						<a href="/" class="nav-link text-reset fw-semibold">HOME</a>
 					</li>
 					<li class="nav-item">
 						<a href="/product" class="nav-link text-reset fw-semibold">PRODUCT</a>
