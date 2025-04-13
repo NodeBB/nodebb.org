@@ -1,0 +1,13 @@
+{
+	"url": "https://nodebb.org/blog/nodebb-march-update-digest-new-features-security-fixes-and-more",
+	"title": "NodeBB March Update Digest: New Features, Security Fixes, and More",
+	"subtitle": "",
+	"excerpt": "In advance of the release of v3, we are releasing this migration guide in order to give third-party developers a chance to bring their plugins and themes up-to-date. In the...",
+	"pubDate": "Wed, 29 Mar 2023 15:07:59 +0000",
+	"author": {
+		"name": "Julian Lam",
+		"url": "https://community.nodebb.org/user/julian",
+		"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+	},
+	"content": "nodebb-march-update-digest-new-features-security-fixes-and-more.html"
+}

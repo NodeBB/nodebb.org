@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Migration Guide for v2 - NodeBB - Modern Community Forum Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Blog of NodeBB Forum Software - The Modern Discussion Platform">
+	<meta name="author" content="NodeBB Inc.">
+	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting, blog">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/16x16.png">
+	<link rel="shortcut icon" href="/images/icons/favicon.ico">
+
+	<!-- Google Fonts: Inter & Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- our css-->
+	<link href="/css/style.css" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0P62EB8Q6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-V0P62EB8Q6');
+	</script>
+</head>
+<body class="p-0 py-5 p-lg-5">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+		<div class="container-lg">
+			<a class="navbar-brand py-2" href="/">
+				<img src="/images/brand/nodebb-logo.svg" style="height: 36px; width: auto;" alt="NodeBB Logo" />
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-end align-items-lg-center mt-4 mt-lg-0">
+					<li class="nav-item">
+						<a href="/" class="nav-link active text-reset fw-semibold">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="/product" class="nav-link text-reset fw-semibold">PRODUCT</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pricing" class="nav-link text-reset fw-semibold">PRICING</a>
+					</li>
+					<li class="nav-item">
+						<a href="/services" class="nav-link text-reset fw-semibold">SERVICES</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle text-reset fw-semibold">RESOURCES</a>
+						<ul class="dropdown-menu dropdown-menu-end border-0 shadow p-1">
+							<li><a href="https://community.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Community</a></li>
+							<li><a href="https://try.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Demo Site</a></li>
+							<li><a href="https://community.nodebb.org/category/28/answers" class="dropdown-item rounded-1" target="_blank">Answers</a></li>
+							<li><a href="https://docs.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Documentation</a></li>
+							<li><a href="/bounty" class="dropdown-item rounded-1">Bug Bounty</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/contact" class="btn btn-warning rounded-pill">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container-lg mt-5">
+		<!-- Home -->
+		<div id="home-tab-pane">
+			<div class="row pt-2 pt-lg-5">
+				<div class="col-12 d-flex flex-column gap-4">
+					<h1 class="display-1 fw-bold fs-1">
+						Migration Guide for v2
+					</h1>
+					
+				</div>
+			</div>
+
+			<!-- blog post -->
+			<div class="py-5">
+				<div class="d-flex gap-2 align-items-center mb-4">
+					<a href="https://community.nodebb.org/user/julian"><img class="rounded-circle" width="32" src="https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"></a> <a href="https://community.nodebb.org/user/julian" class="fw-semibold">Julian Lam</a> <span class="text-secondary">2/23/2022, 11:36:58 AM</span>
+				</div>
+				<div class="">
+					<h2>v2 Migration Guide</h2><p>In advance of the release of version 2, we are releasing this guide in order to give third-party developers a chance to bring their plugins and themes up-to-date. In the successive sections below, we will outline the breaking change or new best-practice, and the steps to migrate, along with a live example.</p>            <h4>This blog post is the third in a series of posts related to the release of NodeBB v2</h4>                                                                        <p><p><em>We tried to plan out this release in such a way that any breaking changes would be minimized. There is a chance that your theme or plugin will just work out-of-the-box, or with minimal changes.</em></p><p><em>We've tried to list any gotchas and necessary changes in this article, but please do let us know if you encounter one we haven't seen yet.</em></p></p><h3>Migrate AMD modules from <code>scripts</code> and <code>acpScripts</code> to <code>modules</code> (breaking change 🚨)</h3><p>Standard practice in v1.x was to write a page-specific client-side script or admin script as an AMD module, and bundle them with the minified files served to the browser. We now recommend that the files be defined in the <code>modules</code> property in <code>package.json</code> so that they can be bundled as necessary, or dynamically loaded otherwise.</p><p><strong>Note:</strong>These scripts can continue to be written in AMD-style, as it is supported by Webpack.</p><h4>Live example (nodebb-theme-persona)</h4><p>The persona theme contains two page-specific scripts, one loaded on the user settings page, and another loaded in the ACP settings page.</p><ul><li>The <a href=\"https://github.com/NodeBB/nodebb-theme-persona/pull/545/files#diff-7b32f67ab72ef7b295c60be75ff703b7660e0f7e737e77251e5cc69deb7844aaL12-L22\">scripts are removed from the <code>scripts</code> and <code>acpScripts</code> sections, and added to <code>modules</code></a></li><li>Note that the key for these modules matches the template name, and that it is prepended with <code>../</code> -- this is necessary because they are not added to the modules folder</li><li>Modules can continue to be written in AMD-style, this is handled transparently by Webpack.</li></ul><h3>Migrate third-party modules to use npm dependencies, if available (best practice)</h3><p>Any third-party modules are no longer recommended to be used in the <code>modules</code> section of <code>plugin.json</code>. Instead, install them directly from npm  if available, and just import them into your client-side code.</p><p>There are some savings to be had by no longer appending third-party code into the main bundle. Webpack can choose to either bundle it in, or dynamically load it as-needed.</p><p>Additionally, having a dependency maintained in your <code>package.json</code> allows for better version control and updates, without needing to modify copy-pasted code directly in your repository.</p><h4>Live example (nodebb-plugin-markdown)</h4><p>The markdown plugin relies on <code>highlightjs</code> as a dependency in order to highlight code written in code blocks.</p><ul><li>The plugin is now <a href=\"https://github.com/julianlam/nodebb-plugin-markdown/pull/209/files#diff-7ae45ad102eab3b6d7e7896acd08c427a9b25b346470d7bc6507b6481575d519L32-R32\">installed directly from npm</a>, instead of the CDN variant, and</li><li>Instead of <code>require</code>-ing them as an AMD module, <a href=\"https://github.com/julianlam/nodebb-plugin-markdown/pull/209/files#diff-c3eb992fbaa0b603cd6f9ab34aff720e723fbedd4b64065482d463a9a892d7d5L212-R214\">they are now imported in by Webpack</a></li></ul><h4>Live example (nodebb-plugin-2factor)</h4><p>The 2factor plugin relies on <a href=\"https://github.com/github/webauthn-json\">@github/webauthn-json</a> to properly encode and verify key registrations and challenges.</p><ul><li><a href=\"https://github.com/NodeBB/nodebb-plugin-2factor/pull/73/files#diff-7b32f67ab72ef7b295c60be75ff703b7660e0f7e737e77251e5cc69deb7844aaL28\">The script is removed from scripts configuration</a> (in this case, the package was already installed as a dependency)</li><li><a href=\"https://github.com/NodeBB/nodebb-plugin-2factor/pull/73/files#diff-b5984e1a72ed80d2e07aa9093751a43bcc307dd433f2300f7b489436f762bbabR9\">The dependency is imported directly by Webpack</a></li></ul><h3>Require.js dependency removed (breaking change 🚨)</h3><p dir=\"auto\">While modules and client-side scripts can continue to be written in AMD-style (with <code>define</code> and <code>require</code> calls), you will no longer be able to use the AMD-style <code>require</code> in <strong>widgets or the browser console</strong> to get modules. By and large, this will not affect most installations/plugins.</p><p dir=\"auto\">A helper method <code>app.require</code> is added to require modules dynamically. <code>app.require</code> can be used in widgets or custom javascript tab in the ACP to require modules.</p><h4 dir=\"auto\">Before</h4><p><code>require(['alerts'], function (alerts) {}); // single module</code><br /><code>require(['alerts', 'translator'], function (alerts, translator) {}); // multiple modules</code></p><h4 dir=\"auto\">After</h4><p dir=\"auto\"><code>const alerts = await app.require('alerts'); // single module</code><br /><code>const [alerts, translator] = await app.require(['alerts', 'translator']); // multiple modules</code></p><h3>Update <code>try_files</code> directive in nginx config (best practice)</h3><p>Power users may opt to have <a href=\"https://docs.nodebb.org/configuring/scaling/#use-a-proxy-server-to-serve-static-assets\">a reverse proxy serve the built assets directly</a>, instead of going through NodeBB.</p><p>Several paths are included in this configuration, but you no longer need to have your reverse proxy handle the <code>/plugins</code> path prefix.</p><h4>Remove this block</h4><pre id=\"__code_0\">location /plugins/ {<br />    root /path/to/nodebb/build/public/;<br />    try_files $uri @nodebb;<br />}</pre><h3>Update <code>nbbpm.compatibility</code> in third-party themes and plugins (best practice)</h3><p>In order to ensure that plugins and themes updated for NodeBB v2.x are not accidentally installed in v1.x installations, you should update the <code>nbbpm.compatibility</code> string in your <code>package.json</code> to at least <code>^2.0.0</code>.</p><p>Keep in mind that after updating your plugin, it might still actually be compatible with NodeBB v1.x. Whether your plugin continues to be backwards compatible does not depend on whether you needed to apply the breaking changes in this guide. A breaking change just means that change is needed to be <em>forwards</em> compatible.</p><h4>Change</h4><pre>{  ...  \"nbbpm\": {-    \"compatibility\": \"^1.17.4\"+    \"compatibility\": \"^2.0.0\"  }  ...}</pre><h3><code>translator</code>, <code>utils</code>, and <code>helpers</code> library restrictions (breaking change 🚨)</h3><p>The following three libraries were used on both the server and client side:</p><ul><li><code>utils</code> (basic utility functions)</li><li><code>translator</code> (localisation methods)</li><li><code>helpers</code> (NodeBB's set of built-in <a href=\"https://github.com/benchpressjs/benchpressjs/blob/master/docs/helpers.md\">Benchpress helpers</a>)</li></ul><p>In NodeBB v1.x, you were able to <code>require()</code> them from the server-side, even though they were contained in the client-side directories.</p><p>As of NodeBB v2.x, you will need to <code>require()</code> from the server-side <code>src/</code> directory instead:</p><ul><li><code>src/utils.js</code></li><li><code>src/translator.js</code></li><li><code>src/helpers.js</code></li></ul><h4>Change</h4><pre>-    const utils = require.main.require('./public/src/utils');+    const utils = require.main.require('./src/utils');</pre><pre>-    const translator = require.main.require('./public/src/modules/translator');+    const translator = require.main.require('./src/translator');</pre><pre>-    const helpers = require.main.require('./public/src/modules/helpers');+    const helpers = require.main.require('./src/helpers');</pre><h3>ACP Privileges table template change (breaking change 🚨)</h3><p>If you maintain a theme that modifies one of the following files:</p><ul><li><code>admin/partials/privileges/global.tpl</code></li><li><code>admin/partials/privileges/category.tpl</code></li></ul><p>The format of the privilege labels has changed from an array of objects to a simpler array of language keys (strings).</p><p>Apply the changeset to the right.</p><h4>Change</h4><pre>-    {privileges.labels.users.name}+    {@value}</pre><h4>Live Example</h4><p>Core maintains templates for the ACP privilege page, <a href=\"https://github.com/NodeBB/NodeBB/commit/767b2688b606e5575102b68d02cfba0bdb94a58a#diff-7ffdbef79026800b98c86557137a7698ded3d72ba57bf821ef4e7f52cb3e0831\">the diff for this particular changeset can be found here</a>.</p><h3>Sorted Lists client-side hook renamed</h3><p>A client-side hook used in the sorted-lists module has been renamed from <code>action:settings.sorted-list.loaded</code> to <code>action:settings.sorted-list.itemLoaded</code>.</p><p>A new action hook by the same name is still called, but only once at the very end, when all sorted list items have been parsed and inserted into the DOM.</p><h4>Change</h4><pre>hook.on('action:settings.sorted-list.loadedItemLoaded', ...</pre><h3>Top and bottom padding removed from body element (breaking change 🚨)</h3><p>In v1.19.x and earlier, the body element had a 70px top padding, which was missing on mobile. This discrepancy meant that styles for mobile needed to account for a missing 70px in their positioning.</p><p>The padding is now removed, and the #panel element now contains a top padding corresponding to the dynamically generated height of the header bar(s).</p><h4>Live Example</h4><p>The Persona theme contains the logic for calculating the panel-offset. As part of this change, <a href=\"https://github.com/NodeBB/nodebb-theme-persona/commit/f6f67687b76a6e2610f3e0750f9f330ce48837e8\">some of the styles depending on the old 70px offset needed to be adjusted</a>. Some additional styles needed to be removed as they were no longer required as a single common style for both desktop and mobile was applicable.</p><h3><code>utils.params()</code> refactored</h3>The common utility method <code>.params()</code> has been refactored in order to use browser and node built-ins, instead of executing its own logic.<ul> <li>The <code>skipToType</code> and <code>disableToType</code> options have now been removed</li> <li>A new option &mdash; <code>full</code> &mdash; has been added, which will cause the method to return an <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams\"><code>URLSearchParams</code> object</a> instead of a plain Object</li></ul><h4>No Example Available</h4><p><em>There are no pre-existing usages of the <code>.params()</code> method &amp;mdashl that we know of — that use either of the deprecated options.</em></p><p><a href=\"https://github.com/NodeBB/NodeBB/commit/0a07ae26043355310f261d0fd0adb38b8a30cae6\">This commit</a> shows how to use the new <code>full</code> option to return something other than a plain Object.</p><h2>Notes</h2><ul><li>Cover Photo by <a href=\"https://unsplash.com/@dancristianp?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\">Dan-Cristian Pădureț</a> on <a href=\"https://unsplash.com/s/photos/tools?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\">Unsplash</a></li></ul>[nodebb_blog_comments]
+				</div>
+			</div>
+		</div>
+
+		<hr class="my-5"/>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Get Started</h5>
+					<ul class="list-unstyled">
+						<li><a href="/product" class="link-secondary text-decoration-none">PRODUCT</a></li>
+						<li><a href="/pricing" class="link-secondary text-decoration-none">PRICING</a></li>
+						<li><a href="/services" class="link-secondary text-decoration-none">SERVICES</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Resources</h5>
+					<ul class="list-unstyled">
+						<li><a href="https://community.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">COMMUNITY</a></li>
+						<li><a href="https://try.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">DEMO SITE</a></li>
+						<li><a href="https://community.nodebb.org/category/28/answers" class="link-secondary text-decoration-none" target="_blank">ANSWERS</a></li>
+						<li><a href="https://docs.nodebb.org" class="link-secondary text-decoration-none" target="_blank">DOCUMENTATION</a></li>
+						<li><a href="/bounty" class="link-secondary text-decoration-none">BUG BOUNTY</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Company</h5>
+					<ul class="list-unstyled">
+						<li><a href="/about" class="link-secondary text-decoration-none">ABOUT</a></li>
+						<li><a href="/blog" class="link-secondary text-decoration-none">BLOG</a></li>
+						<li><a href="/contact" class="link-secondary text-decoration-none">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					<div class="d-flex gap-3 mt-3 justify-content-between px-2">
+						<a title="NodeBB Github Page" href="https://github.com/nodebb/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-github"></i></a>
+						<a title="NodeBB Twitter Page" href="https://twitter.com/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
+						<a title="NodeBB Mastodon Page" href="https://fosstodon.org/@nodebb" class="link-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="link-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between gap-5 small">
+				<span class="text-secondary text-nowrap">©2025 NodeBB, Inc. — Made in Canada with <i class="fa-solid fa-heart text-danger"></i>.</span>
+				<div class="d-flex gap-3">
+					<a href="/tos" class="link-secondary text-nowrap text-decoration-none">Terms of Service</a>
+					<a href="/privacy" class="link-secondary text-nowrap text-decoration-none">Privacy Policy</a>
+					<a href="/gdpr" class="link-secondary text-nowrap text-decoration-none">GDPR</a>
+					<a href="/dmca" class="link-secondary text-nowrap text-decoration-none">DMCA</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

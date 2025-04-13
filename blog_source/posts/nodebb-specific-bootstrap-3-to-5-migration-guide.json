@@ -1,0 +1,13 @@
+{
+	"url": "https://nodebb.org/blog/nodebb-specific-bootstrap-3-to-5-migration-guide",
+	"title": "NodeBB Specific Bootstrap 3 to 5 Migration Guide",
+	"subtitle": "",
+	"excerpt": "A guide to help you migrate your NodeBB theme from Bootstrap 3 to Bootstrap 5.",
+	"pubDate": "Mon, 12 Sep 2022 13:59:35 +0000",
+	"author": {
+		"name": "Julian Lam",
+		"url": "https://community.nodebb.org/user/julian",
+		"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+	},
+	"content": "nodebb-specific-bootstrap-3-to-5-migration-guide.html"
+}

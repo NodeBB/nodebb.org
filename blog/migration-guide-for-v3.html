@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Migration Guide for v3 - NodeBB - Modern Community Forum Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Blog of NodeBB Forum Software - The Modern Discussion Platform">
+	<meta name="author" content="NodeBB Inc.">
+	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting, blog">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/16x16.png">
+	<link rel="shortcut icon" href="/images/icons/favicon.ico">
+
+	<!-- Google Fonts: Inter & Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- our css-->
+	<link href="/css/style.css" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0P62EB8Q6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-V0P62EB8Q6');
+	</script>
+</head>
+<body class="p-0 py-5 p-lg-5">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+		<div class="container-lg">
+			<a class="navbar-brand py-2" href="/">
+				<img src="/images/brand/nodebb-logo.svg" style="height: 36px; width: auto;" alt="NodeBB Logo" />
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-end align-items-lg-center mt-4 mt-lg-0">
+					<li class="nav-item">
+						<a href="/" class="nav-link active text-reset fw-semibold">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="/product" class="nav-link text-reset fw-semibold">PRODUCT</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pricing" class="nav-link text-reset fw-semibold">PRICING</a>
+					</li>
+					<li class="nav-item">
+						<a href="/services" class="nav-link text-reset fw-semibold">SERVICES</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle text-reset fw-semibold">RESOURCES</a>
+						<ul class="dropdown-menu dropdown-menu-end border-0 shadow p-1">
+							<li><a href="https://community.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Community</a></li>
+							<li><a href="https://try.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Demo Site</a></li>
+							<li><a href="https://community.nodebb.org/category/28/answers" class="dropdown-item rounded-1" target="_blank">Answers</a></li>
+							<li><a href="https://docs.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Documentation</a></li>
+							<li><a href="/bounty" class="dropdown-item rounded-1">Bug Bounty</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/contact" class="btn btn-warning rounded-pill">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container-lg mt-5">
+		<!-- Home -->
+		<div id="home-tab-pane">
+			<div class="row pt-2 pt-lg-5">
+				<div class="col-12 d-flex flex-column gap-4">
+					<h1 class="display-1 fw-bold fs-1">
+						Migration Guide for v3
+					</h1>
+					
+				</div>
+			</div>
+
+			<!-- blog post -->
+			<div class="py-5">
+				<div class="d-flex gap-2 align-items-center mb-4">
+					<a href="https://community.nodebb.org/user/julian"><img class="rounded-circle" width="32" src="https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"></a> <a href="https://community.nodebb.org/user/julian" class="fw-semibold">Julian Lam</a> <span class="text-secondary">9/30/2022, 3:43:49 PM</span>
+				</div>
+				<div class="">
+					<h2>v3 Migration Guide</h2><p>In advance of the release of version 3, we are releasing this guide in order to give third-party developers a chance to bring their plugins and themes up-to-date. In the successive sections below, we will outline the breaking change or new best-practice, and the steps to migrate, along with a live example.</p><p>While the update to version 2 was primarily limited to the server-side, there are a significant number of client-side breaking changes (most notably the switch from LESS to SCSS.)</p><p><a href="https://nodebb.org/blog/migration-guide-for-v2/">Looking for the v2 migration guide? Click here.</a></p>
+                            <h4>This blog post is the fourth in a series of posts related to the release of NodeBB v3</h4>
+                                                                        <p><p>Please see our other articles related to v3:</p><ul><li><a href="https://nodebb.org/blog/meet-vlad-gerasimov-product-designer/">Meet the Designer (Vlad Gerasimov)</a></li><li><a href="https://nodebb.org/blog/bringing-back-better-bootswatch/">Bringing Back Better Bootswatch!</a></li><li><a href="https://nodebb.org/blog/nodebb-specific-bootstrap-3-to-5-migration-guide/">NodeBB Specific Bootstrap 3 to 5 Migration Guide</a></li><li>Migration Guide for v3 (👈 You are here)</li></ul></p>
+		<h3>Update Less files to SCSS (🚨 breaking change)</h3><p>Bootstrap 4 swiched from Less to Sass for their source files. As we are updating to Bootstrap 5, we will follow suit and change the underlying CSS preprocessor used in NodeBB to Sass (or SCSS).</p><p>Existing plugins and themes with LESS files will not be compiled to CSS. The <code>scss</code> and <code>acpScss</code> properties will be checked instead of <code>less</code> and <code>acpLess</code>.</p><p>Additionally, a new required file <code>overrides.scss</code> has been added. It must be present, even if empty.</p><h4>Live example (nodebb-plugin-markdown)</h4><p>The markdown theme exposes a Less file for precompilation. <a href="https://github.com/NodeBB/nodebb-plugin-markdown/commit/972c287a7326a12b2102188828cf558489890d23">The file extension is renamed to .scss, and the plugin.json property <code>less</code> is changed to <code>scss</code></a>.</p><h4>Rename</h4><pre>git mv public/less public/scss
+</pre><p><em>Note: Your less directory may be named or located differently.<br /></em></p><h4>Add</h4><pre>touch public/scss/overrides.scss
+git add public/scss/overrides.scss</pre><p><em>Note: Your less directory may be named or located differently.<br /></em></p><h4>Change</h4><pre>{
+  ...
+- "less": ["public/less/default.less"],
++ "scss": ["public/scss/default.scss"],
+  ...
+}
+</pre><p>While many features in Less (e.g. nesting of styles, etc.) are also found in Sass, there are some differences. The most prominent ones being:</p><ul><li>Mixins are now explicitly defined with the <code>@mixin</code> prefix. If a mixin is used in style declarations, they are explicitly referred to via the <code>@include</code> prefix. (<a href="https://sass-lang.com/documentation/at-rules/mixin">source documentation</a>)</li><li>Variables are now referenced using the <code>$</code> character instead of <code>@</code><ul><li>e.g. <code>@brand-primary</code> becomes <code>$brand-primary</code></li></ul></li><li>Many variables available in Bootstrap 3 are no longer available in Bootstrap 5, or were more likely <em>renamed</em><ul><li><code>$brand-primary</code> doesn't actually exist in Bootstrap 5. It was renamed <code>$primary</code></li></ul></li></ul><h3>Update to FontAwesome 6</h3><p>We've updated the icon library from Fontawesome 5 to <a href="https://fontawesome.com/docs/web/setup/upgrade/whats-changed">FontAwesome 6</a>, which comes with its own subtle icon style changes.</p><p>It should mean that any new functionality for FontAwesome 6 is available for use in templates, including the new FontAwesome styles (thin, solid, duotone, etc.) and new icon names.</p><p>Big thanks to contributor <a href="https://github.com/oplik0">@oplik0</a> for doing the legwork to upgrade us to FontAwesome 6!</p><h4>Relax 😎</h4><p>No changes here.</p><h3>Update <code>nbbpm.compatibility</code> in third-party themes and plugins (best practice)</h3><p>In order to ensure that plugins and themes updated for NodeBB v3.x are not accidentally installed in v2.x installations, you should update the <code>nbbpm.compatibility</code> string in your <code>package.json</code> to at least <code>^3.0.0</code>.</p><p>If your plugin does not contain any SCSS, or if the styles are backwards compatible, you can simply append <code>|| ^3.0.0</code> to the compatibility string.</p><h4>Change</h4>
+<pre>{
+  ...
+  "nbbpm": {
+-    "compatibility": "^1.17.4 || ^2.0.0"
++    "compatibility": "^3.0.0"
+  }
+  ...
+}</pre><h3>Rewrite templates to use Bootstrap 5 classes (🚨 breaking change)</h3><p>The most major changes to Bootstrap came from the jump from Bootstrap 3 to Bootstrap 4. Bootstrap 5 has comparatively fewer changes, although there are still enough to warrant their own migration guides.</p><h4>Migration Guides</h4><ul><li><a href="https://getbootstrap.com/docs/4.6/migration/">Bootstrap 3 to Bootstrap 4 Migration Guide</a></li><li><a href="https://getbootstrap.com/docs/5.2/migration/">Bootstrap 4 to Bootstrap 5 Migration Guide</a></li></ul><p>While the above are complete migration guides from one framework to another, there are a couple of patterns that are used heavily in NodeBB, and many parts of Bootstrap that NodeBB doesn't use at all.</p><p>For convenience, we've compiled a list of template changes that we've run into most often when upgrading themes and plugins to support Bootstrap 5 → <a href="https://nodebb.org/blog/nodebb-specific-bootstrap-3-to-5-migration-guide/">Check it out here</a>.</p><h3>Replace any broken widget containers (🚨 breaking change)</h3><p>Related to the above change, the "panel" and "well" containers have been updated.</p><h4>Fix</h4><p>If you have any widgets using those two container types, you will need to enter the widget configuration page (ACP &gt; Extend &gt; Widgets), and reset the container to the new type by dragging and dropping the container into the affected widget.</p><ul><li>Instead of the "panel" container, use the "card" container</li><li>The "Well" container still exists, but you will need to overwrite the old container HTML with the new one.</li></ul><h3>Renamed methods in lru-cache dependency (🚨 breaking change)</h3>NodeBB exposes a least-recently-used cache in src/cache.js for use in core and by plugins. That library uses the underlying dependency lru-cache, which was upgraded to version 7. Some methods have been renamed, and some properties have been deprecated/removed.<h4>Methods</h4><ul><li><code>.del()</code> is no longer available, it is now <code>.delete()</code></li><li><code>.reset()</code> is no longer available, it is now <code>.clear()</code></li></ul><h4>Properties</h4><p dir="auto"><em>The following options will now emit warnings.</em></p><ul dir="auto"><li><code>stale</code> is now <code>allowStale</code></li><li><code>maxAge</code> is now <code>ttl</code></li><li><code>length</code> is now <code>sizeCalculation</code></li></ul><h3>Changes to panel offset calculation (🚨 breaking change)</h3><p>The panel-offset CSS variable was calculated from the main NodeBB navbar's vertical position, but also included its bottom margin.</p><p>This behaviour has now changed to <em>not include the bottom margin</em>, as well as to be calculated more simply, so as to be easier for themes to override if needed.</p><h4>Live Example</h4><p>If your theme uses <code>var(--panel-offset)</code>, you may have to adjust its value. In practice, you should probably just only need to use <code>var(--panel-offset)</code> with no additional offsets at all, now.</p><p><a href="https://github.com/NodeBB/nodebb-theme-persona/commit/996692d25d1bb40e83747fecdb70c3e8fa417bba">This Persona theme commit contains fixes to adapt to this change.</a></p><h3>Changes to <code>alert.tpl</code> (🚨 breaking change)</h3><p>The <code>alert.tpl</code> template has been moved to the <code>partials/</code> directory.</p><p>This change probably will not apply if your theme does not extend or override the alert template.</p><h4>Live Example</h4><p>The persona theme contained <code>alert.tpl</code>, and <a href="https://github.com/NodeBB/nodebb-theme-persona/pull/555">it was moved to the new location</a>.</p><h3>Changes to <code>partials/users_list_menu.tpl</code> (🚨 breaking change)</h3>
+The <code>partials/users_list_menu.tpl</code> template has been updated to <a href="https://github.com/NodeBB/nodebb-theme-persona/commit/cf1648029b69ea55abe8e37e0daeca37eee8af0a">specify a new component attribute for the list element</a>.
+This change probably will not apply if your theme does not extend or override the alert template.<h4>Guidance</h4>
+The persona theme contains <a href="https://github.com/NodeBB/nodebb-theme-persona/commit/cf1648029b69ea55abe8e37e0daeca37eee8af0a">the partial</a>.
+If your custom theme also contains <code>partials/users_list_menu.tpl</code>, update it to contain the new component attribute.<h3>Changes to <code>registerComplete.tpl</code> (🚨 breaking change)</h3>
+The <code>registerComplete.tpl</code> template has been updated so that <a href="https://github.com/NodeBB/nodebb-theme-persona/commit/d8f0bc27c551d62dcd449f7900996a41ed2dffb5">the CSRF token is no longer passed in via query string, but via hidden input element instead</a>.
+This change probably will not apply if your theme does not extend or override this template.<h4>Guidance</h4>
+The persona theme contains <a href="https://github.com/NodeBB/nodebb-theme-persona/commit/d8f0bc27c551d62dcd449f7900996a41ed2dffb5">the template</a>.
+If your custom theme also contains <code>registerComplete.tpl</code>, update it to contain the new component attribute.
+<strong>As of v3</strong>, this template is now provided by NodeBB core, and not by the theme. It could be that you don't need this template customized at all.<h3>Removal of deprecated user export routes and socket.io methods (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3>
+The following routes have been removed:
+<ul dir="auto">
+ 	<li><code>/api/user/{userslug}/export/posts</code></li>
+ 	<li><code>/api/user/{userslug}/export/uploads</code></li>
+ 	<li><code>/api/user/{userslug}/export/profile</code></li>
+ 	<li><code>/api/user/uid/{userslug}/export/{type}</code>
+<ul dir="auto">
+ 	<li>(where <code>type</code> is one of <code>posts</code> <code>uploads</code> or <code>profile</code>)</li>
+</ul>
+</li>
+</ul>
+The following socket.io methods have been removed:
+<ul>
+ 	<li><code>user.exportProfile</code></li>
+ 	<li><code>user.exportPosts</code></li>
+ 	<li><code>user.exportUploads</code></li>
+ 	<li><code>user.emailConfirm</code></li>
+</ul>
+<p dir="auto"></p><h4>Guidance</h4>
+<a href="https://docs.nodebb.org/api/write/#tag/users/paths/~1users~1%7Buid%7D~1exports~1%7Btype%7D/get">Use the appropriate v3 write API route instead.</a>
+If you make calls to any of those routes listed on the left, you will want to update the endpoint URL. Note that the response bodies have not changed, but merely their endpoints.
+Email confirmation via <code>user.emailConfirm</code> has been removed in favour of redirecting the user to the email change flow (<code>/me/edit/email</code>).<h3>Passport v0.6 changes (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><p>An underlying dependency called passport was updated to v0.6.x, and includes some breaking changes, the most important of which is that sessions are now automatically re-rolled on authentication.</p><p>This was duplicate functionality, as NodeBB had already implemented its own session re-rolling mechanism, but in the interest of keeping things simple, we removed our implementation in favour of the code now built-into passport@0.6</p><h4>Guidance</h4><ul dir="auto"><li>If your plugin calls <code>req.login</code>, <code>req.logout</code>, or <code>passport.authenticate</code>, any saved session info will be removed. Pass in <code>keepSessionInfo: true</code> to retain that information.</li><li>You probably also don't need to call <code>req.login</code> directly. It is likely more thorough/complete for you to <code>require</code> <code>src/controllers/authentication</code> and call <code>await nbbAuthController.doLogin(req, uid);</code> instead.</li></ul><p dir="auto"><em>For more context on what these breaking changes were inherited from, please see the <a href="https://github.com/jaredhanson/passport/blob/master/CHANGELOG.md#060---2022-05-20">changelog for v0.6 of passport</a></em></p><h4 dir="auto">Live Example</h4><p>The two-factor authentication plugin calls passport.authenticate in order to validate the user response against the TOTP challenge. <a href="https://github.com/NodeBB/nodebb-plugin-2factor/commit/ef085b17b20de226af4ff9a4d0be8a60853d2063">We did not want their session re-rolled here</a>.</p><h3>Changes to avatar generation (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><p>Avatars are generated via the <code>buildAvatar</code> helper, which consumes a user object and returns either the user's uploaded avatar in an <code>img</code> tag, or a "user icon" via the <code>span</code> tag.</p><p>The <code>.avatar</code> class ensured that irrespective of whether an image was shown or a user icon, that they were both rendered identically.</p><p>As of v3, the <code>buildAvatar</code> helper will now render <em>both</em> the picture and the user icon, and hide the second. This will allow for the user icon to function as a fallback if the picture does not load (due to the picture being unreachable, or due to CORS misconfigurations, etc.)</p><p>Furthermore, the following class names have been removed:</p><ul><li><code>avatar-xs</code></li><li><code>avatar-sm</code></li><li><code>avatar-sm2x</code></li><li><code>avatar-md</code></li><li><code>avatar-lg</code></li><li><code>avatar-xl</code></li></ul><p>Instead, when using the buildAvatar helper, pass in the desired avatar size in quotes (see right.)</p><h4>Live Example</h4><p>The Persona theme used the <code>buildAvatar</code> helper to render avatars in its templates. We <a href="https://github.com/NodeBB/nodebb-theme-persona/commit/c65d03e5d1b0ffa0e6bb34b4e116db781253617b">updated the call to that helper to pass in the desired sizes</a> (e.g. <code>"32px"</code>) instead of the old sizes (e.g. "sm", "lg", etc.)</p><p>You can theoretically use any unit you like (pixels, ems, rems, viewport widths/heights), although we've only thoroughly tested with pixel units.</p><h4>Change</h4><pre>-   {buildAvatar(user, "sm", true)}
++   {buildAvatar(user, "24px", true)}
+</pre><h3>Removed client-side methods (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><p>The following deprecated methods were removed from the <code>app</code> object on the client side:</p><ul><li><code>app.enableTopicSearch()</code></li><li><code>app.handleSearch()</code></li><li><code>app.prepareSearch()</code></li></ul><h4>Guidance</h4>
+Require the <code>search</code> module and use the following methods instead:
+<ul>
+ 	<li><code>search.enableQuickSearch(options);</code></li>
+ 	<li><code>search.init(options);</code></li>
+ 	<li><code>search.showAndFocusInput();</code></li>
+</ul>
+<h4>Change</h4>
+<pre>-   app.enableTopicSearch(options);
++   require(['search'], (search) =&gt; {
++       search.enableQuickSearch(options);
++   });
+</pre><h3>Removal of common templates from themes (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><p>The following templates have been moved from themes to core, so they can be more easily maintained.</p><h4>Change</h4><p>If your theme contains these templates, <em>and they have not been modified</em>, you can remove them from your theme.</p><p>If they have been modified, move them to the new locations relative to the templates directory:</p><pre>cd your-plugin/templates
+git mv partials/change_picture_modal.tpl modals/change-picture.tpl
+</pre>
+			<table id="eael-data-table-783792a">
+			    <thead>
+			        <tr>
+									            <th id="" colspan="">
+														Old Template</th>
+			        				            <th id="" colspan="">
+														New Template</th>
+			        				        </tr>
+			    </thead>
+			  	<tbody>
+											<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/modals/change_picture_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/change-picture.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/change_owner_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/change-owner.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/delete_posts_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/delete-posts.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/delete_posts_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/delete-posts.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/fork_thread_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/fork-topic.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/merge_topics_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/merge-topic.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/move_thread_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/move-topic.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/modals/flag_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/flag.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/modals/manage_room.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/manage-room.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/modals/manage_room_users.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												partials/chats/manage-room-users.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/modals/post_history.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/post-history.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/modals/rename_room.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/rename-room.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/modals/upload_file_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/upload-file.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/modals/upload_picture_from_url.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/upload-picture-from-url.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												partials/modals/votes_modal.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/votes.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												<strong>(core)</strong> src/views/admin/partials/temporary-ban.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/temporary-ban.tpl
+											</td>
+																										</tr>
+			        						<tr>
+																   											<td colspan="" rowspan="" id="">
+												<strong>(core)</strong> src/views/admin/partials/temporary-mute.tpl
+											</td>
+																													   											<td colspan="" rowspan="" id="">
+												modals/temporary-mute.tpl
+											</td>
+																										</tr>
+			        			    </tbody>
+			</table>
+		<h3>Removal of some stylesheets to core</h3><p>In conjunction with the above (removal of common templates from themes), we also moved the following stylesheet from the Persona theme to core.</p><ul><li><code>bottom-sheet.scss</code> (formerly <code>bottom-sheet.less</code>)</li></ul><p><strong>This stylesheet is now in effect for all themes</strong>, although <code>bottom-sheet.scss</code> is opt-in — that is — the style is only applied to dropdowns if the parent container has the <code>bottom-sheet</code> class. Iin reality, there should be no unexpected style changes.</p><h4>Relax 😎</h4><p>No changes here.</p><h3><code>mobile</code> formatting option no longer allowed for composer toolbar items (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><p>We had a leftover deprecation that was meant to be removed in v1.16.0, which was finally removed for v3.0.</p><p>When defining a composer toolbar item, <code>mobile</code> was an accepted option. This has now been removed in favour of using the more fine-grained <code>visibility</code> property.</p><h4>Change</h4><p>Instead of setting <code>mobile</code> to a boolean value, set the <code>visibility</code> property as follows:</p><pre>{
+  "visibility": {
+    mobile: true,
+    desktop: false,
+  }
+}
+</pre><p>The values are not exclusive, they can both be true or false (although if you set them both to false, the item just won't show up at all.)</p><h3>Changes to chat client-side API/hooks (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><ul><li>The <code>.close()</code> method now takes a composer <code>uuid</code> instead of the jQuery element of the composer</li><li>The <code>action:chat.sent</code> hook now fires only after the message has actually been sent, instead of immediately before<ul><li>Additionally, it will now only fire if the chat message was <em>successfully</em> sent.</li></ul></li></ul><h4>Change</h4>
+<pre> require(['chat'], (chat) =&gt; {
+-    const chatModal = $('.chat-modal[data-uuid="' + uuid + '"]');
+-    chat.close(chatModal);
++    chat.close(uuid);
+ });</pre><h3><code>colorpicker</code> module removed from admin panel (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><p>The module was no longer used used (as of late 2021), and has been removed in order to reduce the javascript payload.</p><h4>Guidance</h4><p>Plugin developers are encouraged to use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input/color">native HTML5 color picker</a> instead.</p><h3>Material Design Lite vendor library removed (<img width="24"role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><p>This library has been removed to reduce the admin CSS payload size, and to reduce maintenance burden. The only affected elements are either checkboxes or the custom floating save button.</p><p>For checkboxes, <a href="https://getbootstrap.com/docs/5.2/forms/checks-radios/">use the checkbox styles provided by Bootstrap5 instead</a>.</p><p>For the floating save button, import the new partial served by core: <code>admin/partials/save_button.tpl</code></p><h4>Live Example</h4><p>The mentions plugin <a href="https://github.com/NodeBB/nodebb-plugin-markdown/commit/542a7134391026291aac6727bf2b0ab117a77e0f">has been updated to utilise the new save button</a>. The save button code is replaced with the import statement.</p><h4>Change</h4><pre>&lt;button id="save"&gt;
+    &lt;i&gt;save&lt;/i&gt;
+&lt;/button&gt;
+&lt;!-- IMPORT admin/partials/save_button.tpl --&gt;</pre><h4>Change</h4>
+<pre>&lt;div&gt;
+	&lt;label for="myInput"&gt;
+		&lt;input id="myInput" type="checkbox" /&gt;
+		&lt;span&gt;Label&lt;/span&gt;
+	&lt;/label&gt;
+&lt;/div&gt;
+&lt;div&gt;
+	&lt;label for="myInput"&gt;Label&lt;/label&gt;
+	&lt;input id="myInput" type="checkbox" /&gt;
+&lt;/div&gt;</pre><h3>Middleware Changes (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><p>The following middlewares have been removed:</p><ul><li><code>middleware.renderHeader</code></li><li><code>middleware.renderAdminHeader</code></li></ul><h4>Relax 😎</h4><p>No changes here. These were public methods used internally, that are now internal-only.</p><h3>CSRF protection library change (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3>
+The CSRF protection library has been changed to <code>csrf-sync</code>. The method used to retrieve a new csrf token has changed.<h4>Guidance</h4>
+If you call <code>req.csrfToken()</code> in your plugin to generate a new CSRF token, you will need to update that code:
+<pre>const { generateToken } = require('../middleware/csrf');
+const token = generateToken(req);
+</pre>
+Pass <code>true</code> as the second parameter if you wish to force a new csrf token to be generated.<h3>Flags Page Changes (<img width="24" role="img" draggable="false" src="https://s.w.org/images/core/emoji/14.0.0/svg/1f6a8.svg" alt="🚨" /> breaking change)</h3><p>The flag details template has been updated, and corresponding front-end logic for adding and editing flag notes has been changed.</p><h4>Guidance</h4>
+If you have a customized <code>flags/detail.tpl</code>, update to the latest version of the file from the appropriate parent theme.
+The note editing is done via modal now. Instead of <code>data-action="appendNote"</code> and <code>data-action="prepareEdit"</code>, just use <code>data-action="addEditNote"</code><h3>API changes</h3>
+<ol>
+ 	<li>Requests to API endpoints that are rejected due to unauthorized access (i.e. requesting authenticated endpoint while not logged in, or requesting admin endpoint after the relogin timeout has passed) now return a standardised API response instead of an empty object literal.</li>
+ 	<li>Unauthorized requests via the client-side API module will now automatically prompt the user to (re-)login, instead of throwing an error.</li>
+ 	<li>The <code>api.delete()</code> method has been removed, use <code>api.del()</code> instead.</li>
+</ol><h4>Guidance</h4><p>If you were inspecting the payload for validity, you should instead look at the response code (as that remains unchanged; 401 Unauthorized).</p><p>If you continue to analyze the response body, failing requests now look something like this:</p><pre>{
+    "status": {
+        "code": "not-authorised",
+        "message": "A valid login session was not found. Please log in and try again."
+    },
+    "response": {}
+}
+</pre><h3>Base theme changes</h3><p>The default theme is no longer assumed to be providing their templates to the currently enabled theme.</p><p>This change eliminates longstanding unexpected behaviour where the default theme's templates were always applied even if the current theme is standalone (that is, it does not define a base/parent theme).</p><h4>Guidance</h4>
+If you have a theme that relies on another theme, but you don't have it defined — you should update your theme to explicitly define it in your theme's <code>theme.json</code> now.
+<pre>
+{
+   ...
+   "baseTheme": "nodebb-theme-persona"
+   ...
+}
+</pre><h2>Notes</h2><ul><li>Cover Photo by <a href="https://unsplash.com/@alvarordesign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alvaro Reyes</a> on <a href="https://unsplash.com/s/photos/planning?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></li></ul>
+				</div>
+			</div>
+		</div>
+
+		<hr class="my-5"/>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Get Started</h5>
+					<ul class="list-unstyled">
+						<li><a href="/product" class="link-secondary text-decoration-none">PRODUCT</a></li>
+						<li><a href="/pricing" class="link-secondary text-decoration-none">PRICING</a></li>
+						<li><a href="/services" class="link-secondary text-decoration-none">SERVICES</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Resources</h5>
+					<ul class="list-unstyled">
+						<li><a href="https://community.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">COMMUNITY</a></li>
+						<li><a href="https://try.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">DEMO SITE</a></li>
+						<li><a href="https://community.nodebb.org/category/28/answers" class="link-secondary text-decoration-none" target="_blank">ANSWERS</a></li>
+						<li><a href="https://docs.nodebb.org" class="link-secondary text-decoration-none" target="_blank">DOCUMENTATION</a></li>
+						<li><a href="/bounty" class="link-secondary text-decoration-none">BUG BOUNTY</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Company</h5>
+					<ul class="list-unstyled">
+						<li><a href="/about" class="link-secondary text-decoration-none">ABOUT</a></li>
+						<li><a href="/blog" class="link-secondary text-decoration-none">BLOG</a></li>
+						<li><a href="/contact" class="link-secondary text-decoration-none">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					<div class="d-flex gap-3 mt-3 justify-content-between px-2">
+						<a title="NodeBB Github Page" href="https://github.com/nodebb/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-github"></i></a>
+						<a title="NodeBB Twitter Page" href="https://twitter.com/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
+						<a title="NodeBB Mastodon Page" href="https://fosstodon.org/@nodebb" class="link-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="link-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between gap-5 small">
+				<span class="text-secondary text-nowrap">©2025 NodeBB, Inc. — Made in Canada with <i class="fa-solid fa-heart text-danger"></i>.</span>
+				<div class="d-flex gap-3">
+					<a href="/tos" class="link-secondary text-nowrap text-decoration-none">Terms of Service</a>
+					<a href="/privacy" class="link-secondary text-nowrap text-decoration-none">Privacy Policy</a>
+					<a href="/gdpr" class="link-secondary text-nowrap text-decoration-none">GDPR</a>
+					<a href="/dmca" class="link-secondary text-nowrap text-decoration-none">DMCA</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

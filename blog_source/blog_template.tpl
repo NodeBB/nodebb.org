@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>About - NodeBB - Modern Community Forum Software</title>
+	<title>{{{ title }}} - NodeBB - Modern Community Forum Software</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="NodeBB Forum Software - The Modern Discussion Platform">
+	<meta name="description" content="Blog of NodeBB Forum Software - The Modern Discussion Platform">
 	<meta name="author" content="NodeBB Inc.">
-	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting">
+	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting, blog">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/32x32.png">
@@ -48,7 +48,7 @@
 			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
 				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-end align-items-lg-center mt-4 mt-lg-0">
 					<li class="nav-item">
-						<a href="/" class="nav-link text-reset fw-semibold">HOME</a>
+						<a href="/" class="nav-link active text-reset fw-semibold">HOME</a>
 					</li>
 					<li class="nav-item">
 						<a href="/product" class="nav-link text-reset fw-semibold">PRODUCT</a>
@@ -82,41 +82,24 @@
 
 	<!-- Page Content -->
 	<div class="container-lg mt-5">
-		<!-- About -->
-		<div>
+		<!-- Home -->
+		<div id="home-tab-pane">
 			<div class="row pt-2 pt-lg-5">
-				<div class="col-12 col-md-6 d-flex flex-column gap-4 mx-auto">
+				<div class="col-12 d-flex flex-column gap-4">
 					<h1 class="display-1 fw-bold fs-1">
-						We help communities gather, share, and thrive.
+						{{{ title }}}
 					</h1>
-					<div class="">
-						<div class="mb-4">
-							<h4>Did you know that forums pre-date blogs, social networks and smartphones?</h4>
-							<p class="text-secondary">They were the first places where communities gathered and thrived on the Internet. And millions of them are still going strong. From brand communities to product support boards, forums continue to provide value for communities.</p>
-							<p class="text-secondary">“<strong>Our mission is to take the spirit and energy of those great forum platforms</strong> and give them the features and performance you’ve come to expect from today’s online world.”</p>
-						</div>
+					{{{ subtitle }}}
+				</div>
+			</div>
 
-						<div class="mb-4">
-							<h4>Who We Are?</h4>
-							<p class="text-secondary">
-								NodeBB was founded by three developers with a passion for creating great software.
-							</p>
-							<p class="text-secondary">
-								Our Co-founders <a href="https://github.com/julianlam" class="fw-semibold link-secondary">Julian</a>, <a href="https://github.com/psychobunny" class="fw-semibold link-secondary">Andrew</a> and <a href="https://github.com/barisusakli" class="fw-semibold link-secondary">Barış</a> met in 2011 while working at a social game company. They quickly bonded over the idea that the time was right to build a new community platform for the future. In 2014, NodeBB was born.
-							</p>
-							<p class="text-secondary">
-								We were extremely proud to be named winners of the 2015 CMS Critic People’s Choice Awards for Best Forum Software.
-							</p>
-						</div>
-
-						<div class="mb-4">
-							<h4>Our community motivates us</h4>
-							<p class="text-secondary">
-								We want to give a shout-out to the pros in our very own community support forum. Every day our members help us improve our product and push us to find creative solutions. We wouldn’t be where we are today without their support.
-							</p>
-							<a class="btn btn-primary" href="https://community.nodebb.org">Join the community</a>
-						</div>
-					</div>
+			<!-- blog post -->
+			<div class="py-5">
+				<div class="d-flex gap-2 align-items-center mb-4">
+					<a href="{{{ author_url }}}"><img class="rounded-circle" width="32" src="{{{ author_image_url }}}"></a> <a href="{{{ author_url }}}" class="fw-semibold">{{{ author }}}</a> <span class="text-secondary">{{{ pubDate }}}</span>
+				</div>
+				<div class="">
+					{{{ content }}}
 				</div>
 			</div>
 		</div>
@@ -155,10 +138,10 @@
 				<div class="d-flex flex-column">
 					<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
 					<div class="d-flex gap-3 mt-3 justify-content-between px-2">
-						<a href="https://github.com/nodebb/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-github"></i></a>
-						<a href="https://twitter.com/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
-						<a href="https://fosstodon.org/@nodebb" class="link-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
-						<a href="https://www.facebook.com/NodeBB" class="link-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
+						<a title="NodeBB Github Page" href="https://github.com/nodebb/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-github"></i></a>
+						<a title="NodeBB Twitter Page" href="https://twitter.com/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
+						<a title="NodeBB Mastodon Page" href="https://fosstodon.org/@nodebb" class="link-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="link-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
 					</div>
 
 				</div>

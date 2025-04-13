@@ -1,0 +1,14 @@
+{
+	"url": "https://nodebb.org/blog/bringing-back-better-bootswatch",
+	"title": "Bringing Back Better Bootswatch!",
+	"subtitle": "",
+	"excerpt": "This blog post is the second in a series of posts related to the release of NodeBB v3 Please see our other articles related to v3: Meet the Designer (Vlad...",
+	"pubDate": "Tue, 27 Sep 2022 14:51:14 +0000",
+	"cover": "https://images.unsplash.com/photo-1618513462042-29ac20aefe11?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	"author": {
+		"name": "Julian Lam",
+		"url": "https://community.nodebb.org/user/julian",
+		"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+	},
+	"content": "bringing-back-better-bootswatch.html"
+}

@@ -1,0 +1,15 @@
+{
+	"url": "https://nodebb.org/blog/migration-guide-for-v2",
+	"title": "Migration Guide for v2",
+	"subtitle": "",
+	"excerpt": "In advance of the release of v2, we are releasing this migration guide in order to give third-party developers a chance to bring their plugins and themes up-to-date. In the...",
+	"cover": "https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	"pubDate": "Wed, 23 Feb 2022 16:36:58 +0000",
+	"author": {
+		"name": "Julian Lam",
+		"url": "https://community.nodebb.org/user/julian",
+		"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+	},
+
+	"content": "migration-guide-for-v2.html"
+}

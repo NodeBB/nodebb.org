@@ -1,0 +1,44 @@
+<h2>What is this?</h2><p>Version 2 of NodeBB using the Persona theme (and many child themes based off of Persona) used <a href="https://getbootstrap.com/docs/3.4/">Bootstrap 3</a> as its front-end CSS framework.</p><p>As part of the upgrade to version 3, we are upgrading to <a href="https://getbootstrap.com/docs/5.2/">Bootstrap 5</a>, whose migration comes with a number of updates and changes, many of which are incompatible with previous versions of Bootstrap.</p><h3>Do I need this?</h3><p>If your theme or child theme updates the templates folder, you will need this guide to update your templates to use Bootstrap 5 components and classes.</p><p>If your templates are based off of an older version of Persona (that is, you copied an existing template and modified it), you simply need to copy the latest template from Persona and re-apply your changes.</p><p>The main migration docs for migrating from Bootstrap 3 to 5 can be found on the Bootstrap website:</p><ul><li><a href="https://getbootstrap.com/docs/4.6/migration/">Bootstrap 3 to 4</a></li><li><a href="https://getbootstrap.com/docs/5.2/migration/">Bootstrap 4 to 5</a></li></ul><p>... however, they are exhaustively complete and likely contain a lot of content that does not necessarily pertain to your theme. We have distilled some of the common migration steps below for easier consumption.</p>
+                            <h4>This blog post is the third in a series of posts related to the release of NodeBB v3</h4>
+                                                                        <p><p>Please see our other articles related to v3:</p><ul><li><a href="https://nodebb.org/blog/meet-vlad-gerasimov-product-designer/">Meet the Designer (Vlad Gerasimov)</a></li><li><a href="https://nodebb.org/blog/bringing-back-better-bootswatch/">Bringing Back Better Bootswatch!</a></li><li>NodeBB Specific Bootstrap 3 to 5 Migration Guide (👈 You are here)</li><li><a href="https://nodebb.org/blog/migration-guide-for-v3/">Migration Guide for v3</a></li></ul></p>
+		<h3>In general...</h3><ul><li><code>pull-left</code> changed to <code>float-start</code></li><li><code>pull-right</code> changed to <code>float-end</code></li><li><code>text-right</code> changed to <code>text-end</code></li><li><code>img-responsive</code> changed to <code>img-fluid<br /></code></li></ul><h3>Buttons</h3><ul><li>Vertically stacked buttons change from <b>.btn-block </b>to using display/spacer classes.</li></ul><pre>&lt;div&gt;
+  &lt;button type="button"&gt;Button&lt;/button&gt;
+  &lt;button type="button"&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+</pre><ul><li aria-level="1"><code>btn-xs</code> removed use <code>btn-sm</code></li><li aria-level="1"><code>btn-default</code> removed use <code>btn-outline-secondary</code></li></ul><h3>Grid/Breakpoints</h3><ul><li><code>col-xs-&lt;n&gt;</code> changed to <code>col-&lt;n&gt;</code></li></ul><h3>Display</h3><ul><li><code>inline-block</code> changed to <code>d-inline-block</code></li></ul><h3>Media Component</h3>
+... has been removed completely, use flex display classes instead:
+<pre>&lt;div&gt;
+  &lt;div&gt;
+    image
+  &lt;/div&gt;
+  &lt;div&gt;
+    text
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre><h3>Navbar</h3><ul><li><code>navbar-toggle</code> changed to <code>navbar-toggler</code></li></ul><h3>Panels, Wells, and Jumbotrons</h3><p>... have all been removed in favour of the "card" component.</p><p>To convert a panel into a card:</p><pre>&lt;div class=”card”&gt;
+  &lt;div class=”card-header”&gt;header&lt;/div&gt;
+  &lt;div class=”card-body”&gt;body&lt;/div&gt;
+  &lt;div class=”card-footer”&gt;footer&lt;/div&gt;
+&lt;/div&gt;</pre><ul><li><code>&lt;div&gt;</code> changed to <code>&lt;div&gt;</code></li></ul><h3>Forms</h3>
+<ul>
+ 	<li><code>&lt;select></select></code> changed to <code>&lt;select></select></code></li>
+ 	<li>Add <code>form-label</code> class to labels <code><label></label></code></li>
+ 	<li>Add <code>form-check-input</code> to checkboxes. Sample checkbox with label:</li>
+</ul>
+<pre>
+&lt;div>
+  &lt;input type="”checkbox”" />
+  &lt;label>a checkbox&lt;/label>
+&lt;/div>
+</pre>
+<ul>
+ 	<li><code>form-group</code>, <code>.form-row</code>, or <code>.form-inline</code> are removed use spacing utilities</li>
+ 	<li><code>help-block</code> changed to <code>form-text</code></li>
+</ul>
+<h3>Dropdowns</h3>
+<ul>
+ 	<li><code>data-toggle="dropdown"</code> changed to <code>data-bs-toggle="dropdown"</code></li>
+ 	<li>Add <code>dropdown-item</code> to dropdown list item <code>Item 1</code></li>
+ 	<li><code>dropdown-menu-right</code> changed to <code>dropdown-menu-end</code></li>
+ 	<li>Divider changed to <code>dropdown-divider</code></li>
+</ul><h3>Collapse</h3><ul><li><code>data-toggle="collapse"</code> changed to <code>data-bs-toggle="collapse"</code></li><li><code>data-target=".classname"</code> changed to <code>data-bs-target=".classname"</code></li></ul><h3>Modals</h3><ul><li><code>data-dismiss="modal"</code> changed to <code>data-bs-dismiss="modal"</code></li></ul><h3>Responsive Breakpoints</h3><p>Instead of using media queries using old Bootstrap 3 variables (e.g. <code>@media (max-width: @screen-sm-max) { ... }</code>), Bootstrap 5 introduces a new mixin for breakpoints.</p><p>Read more about it in <a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/#media-queries">Bootstrap 5's article re: responsive breakpoints</a>.</p>
