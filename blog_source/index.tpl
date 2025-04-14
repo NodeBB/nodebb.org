@@ -90,7 +90,7 @@
 					NodeBB Development Blog Archive
 				</h1>
 				<h2 class="text-secondary fs-4">
-					Find out what the NodeBB development team is up to in our <a class="link-secondary" href="https://community.nodebb.org/category/3/nodebb-development">Development Category</a>
+					Find out what the NodeBB development team is up to in our <a class="link-secondary" href="https://community.nodebb.org/category/3/nodebb-development" target="_blank">Development Category</a>
 				</h2>
 			</div>
 		</div>
