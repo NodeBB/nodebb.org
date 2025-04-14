@@ -25,6 +25,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://community.nodebb.org/blog</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nodebb.org/privacy</loc>
     <priority>0.5</priority>
   </url>
