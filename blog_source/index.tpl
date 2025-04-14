@@ -83,24 +83,23 @@
 	<!-- Page Content -->
 	<div class="container-lg mt-5">
 		<!-- Home -->
-		<div id="home-tab-pane">
-			<div class="row pt-2 pt-lg-5">
-				<div class="col-12 d-flex flex-column gap-4">
-					<h1 class="display-1 fw-bold fs-1">
-						NodeBB Development Blog
-					</h1>
-					<h2 class="text-secondary fs-4">
-						Find out what the NodeBB development team is up to.
-					</h2>
-				</div>
-			</div>
 
-			<hr class="my-5"/>
-
-			<!-- blog posts -->
-			<div class="py-5 row row-cols-1 row-cols-lg-3 g-5">
-				{{{ blog_posts }}}
+		<div class="row pt-2 pt-lg-5">
+			<div class="col-12 d-flex flex-column gap-4">
+				<h1 class="display-1 fw-bold fs-1">
+					NodeBB Development Blog
+				</h1>
+				<h2 class="text-secondary fs-4">
+					Find out what the NodeBB development team is up to.
+				</h2>
 			</div>
+		</div>
+
+		<hr class="my-5"/>
+
+		<!-- blog posts -->
+		<div class="row row-cols-1 row-cols-lg-3 g-0 gy-5 g-lg-5">
+			{{{ blog_posts }}}
 		</div>
 
 		<hr class="my-5"/>
