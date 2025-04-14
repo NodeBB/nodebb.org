@@ -10,7 +10,7 @@ const files = await fs.promises.readdir('./blog_source/posts');
 const jsonFiles = files.filter(file => path.extname(file) === '.json');
 
 const blogTpl = await fs.promises.readFile('./blog_source/blog_template.tpl', 'utf-8');
-
+const start = Date.now();
 const blogData = await Promise.all(jsonFiles.map(async file => {
 	const filename = path.parse(file).name;
 	const fileData = JSON.parse(await fs.promises.readFile(path.join('./blog_source/posts', file), 'utf-8'));
@@ -22,8 +22,7 @@ const blogData = await Promise.all(jsonFiles.map(async file => {
 	if (fileData.content.endsWith('.md')) {
 		content = marked.parse(content);
 	}
-	content = content.replace(/\\t/g, '');
-	content = content.replace(/\\n/g, '');
+	content = content.replace(/\\t/g, '').replace(/\\n/g, '');
 
 	const html = blogTpl.replace('{{{ content }}}', content)
 		.replace(/{{{ title }}}/g, fileData.title)
@@ -34,7 +33,6 @@ const blogData = await Promise.all(jsonFiles.map(async file => {
 		.replace('{{{ author_image_url }}}', fileData.author.image);
 
 	await fs.promises.writeFile(path.join(`./blog/${filename}.html`), html);
-	console.log('Created blog post:', filename, 'from', fileData.content);
 	return fileData;
 }));
 
@@ -68,3 +66,5 @@ const cardsHtml = await Promise.all(blogData.map(async (blog, index) => {
 }));
 const html = blogIndexTpl.replace('{{{ blog_posts }}}', cardsHtml.join(''))
 await fs.promises.writeFile(path.join(`./blog/index.html`), html);
+
+console.log(`Generated ${blogData.length} blog posts in ${((Date.now() - start) / 1000).toFixed(2)} seconds`);
