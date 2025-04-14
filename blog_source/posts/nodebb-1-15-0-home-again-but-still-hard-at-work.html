@@ -1,0 +1,27 @@
+<div class="kg-card-markdown">
+
+	<p>Unfortunately, after only returning a couple of times to our Toronto office, the city started to see a new spike in COVID-19 cases, so we're back to working remotely. But that certainly won't stop us from continuing to improve NodeBB, including fast-tracking a long-planned feature.</p>
+
+	<h2 id="writeapimergedintocore">Write API Merged Into Core</h2>
+	This was originally meant to be a part of version 2.0, but instead we decided to move ahead and bring it out even sooner. For those who had previously been using the Write API plug-in, it should be a simple switch from the <code>v2</code> endpoint to the new <code>v3</code> endpoint, although it is wise to <a href="https://github.com/NodeBB/NodeBB/pull/8708#issuecomment-705780711">check the breaking changes</a> to see if you are affected. Note that you <em>can</em> continue to use the plugin as it will not conflict with the new API. Eventually we will expand this API with <code>GET</code> routes and make it a complete API, but for now retrieving data from NodeBB can still be done by prepending <code>/api</code> to all page routes. (As a reminder, we recently released a list of all routes at <a href="https://docs.nodebb.org/api/">https://docs.nodebb.org/api/</a>).
+	<h2 id="flagsimprovements">Flags Improvements</h2>
+	The previous release included a number of moderation improvements, and we've continued the work on flags to make it more usable:
+	<ul>
+		 <li>Multiple flag reports are now consolidated into a single flag, so duplicate reports for the same piece of content are now simply added to the existing flag rather than generating multiple reports</li>
+		 <li>Flags page has been updated to allow for additional functionality (sorting, and bulk actions)</li>
+	</ul>
+	<h2 id="otherchanges">Other Changes</h2>
+	<ul>
+		 <li>Progressive Web Application enhancements – NodeBB is now "installable" from mobile devices to your home screen, and should act like an app now
+	** This is one of the starting points to eventually allowing NodeBB to be accessible while offline, just like a native app</li>
+		 <li>"Verified Users" is now a separate system group, allowing you to segment privileges and control category access to those specific users
+	** Verified users are those users who have confirmed (or "verified") their email address</li>
+		 <li>Able to search a particular categories including its children
+	** Before, you had to select all of the categories, including its children</li>
+		 <li>And finally because we're always thinking about performance, Baris Usakli has made a number of optimizations that should allow NodeBB to handle more traffic</li>
+	</ul>
+	Be sure to check out the breaking changes at <a href="https://community.nodebb.org/topic/14917/1-15-0-breaking-changes">https://community.nodebb.org/topic/14917/1-15-0-breaking-changes</a>. As always we <strong>recommend backing up your database, and upgrading at your earliest convenience</strong>. If you are running your own server and encounter any issues, please drop a post on the <a href="https://community.nodebb.org/">community support forum</a>.
+
+	If you are a hosting client of with us, please drop a line to <a href="mailto:support@nodebb.org">support@nodebb.org</a> to schedule a time for our team to perform the upgrade.
+
+	</div>

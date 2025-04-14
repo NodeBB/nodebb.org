@@ -1,0 +1,213 @@
+<div class="kg-card-markdown"><h1 id="optimizingbenchpress">Optimizing Benchpress</h1>
+	<p>Recently, I saw the release of <a href="https://github.com/Geal/nom/">nom v6</a> and decided I wanted to try it out, and see if I could speed up my hobby JS template compiler, <a href="https://github.com/benchpressjs/benchpressjs">BenchpressJS</a>.</p>
+	<h2 id="background">Background</h2>
+	<p>Benchpress is a template compiler and tiny runtime which is focused on two things:</p>
+	<ul>
+	<li>Backwards compatibility with <a href="https://github.com/benchpressjs/benchpressjs/tree/templates.js-legacy">templates.js</a> syntax</li>
+	<li>Runtime speed</li>
+	<li>(As of 2018) Compilation speed</li>
+	</ul>
+	<p>A short history:</p>
+	<ul>
+	<li>2014: templates.js is created as a light library for use in NodeBB.<br>
+	It used Regular Expressions to fill in template data at runtime, allowing for an unconventional syntax. No precompilation is necessary or possible.</li>
+	<li>2017: Benchpress is created as a backwards-compatible replacement for templates.js<br>
+	It provides much faster runtime performance by compiling templates into Javascript code.</li>
+	<li>2018: A compiler rewrite is undertaken utilizing Rust, as the JS compiler (based on Regexp) is quite slow.<br>
+	This version of the compiler, named <a href="https://github.com/benchpressjs/benchpress-rs"><strong>benchpress-rs</strong></a>, uses <a href="https://neon-bindings.com/">Neon</a> to interface with Node, and is about 30x faster than the JS version.<br>
+	The JS compiler continues to ship alongside, since pre-built binaries are not available for all platforms.</li>
+	<li>Nov 7, 2020: Realizing WASM module support is available on all supported version of Node, the JS compiler is removed, and the Rust compiler is shipped solo as a WASM module. Having a single codebase opens up the door to adding more features, but benchpress-rs is pretty hacky and difficult to work on.</li>
+	<li>Nov 15, 2020: Another compiler rewrite is finished, using the <strong>nom</strong> parser combinator library.<br>
+	This rewrite is optimized to be 4.4x as fast as the previous version, on top of being far more maintainable and extensible.<br>
+	<em>I'd say a week is pretty good, all things considered</em></li>
+	</ul>
+	<h2 id="thedrop">The Drop</h2>
+	<p>Much of the time implementing the rewrite was getting my new version to pass the <a href="https://github.com/benchpressjs/benchpressjs/tree/master/tests/templates/source">quite extensive suite of integration tests</a> (especially getting Spans working), but that's not what I'm here to talk about. I'm here to talk about optimizing it after all of that, because I have a shameful secret:</p>
+	<blockquote>
+	<p>It was <em>slower</em>.</p>
+	</blockquote>
+	<p>Yep, after all of that work, the end result was actually slower than the previous version. Let's see the benchmarks.</p>
+	<h4 id="benchmarksetup">Benchmark Setup</h4>
+	<p>I set up benchmarks both in Rust and Node. Both are based on two large template files: <code>categories.tpl</code> and <code>topic.tpl</code>, which are from some NodeBB at some point I think.</p>
+	<p>Essentially, each benchmark compiles these repeatedly. Here's what I saw:</p>
+	<p><strong>Before</strong></p>
+	<pre><code class="language-sh">$ cargo +nightly bench
+	running 2 tests
+	test bench_compile_categories ... bench: 329,287 ns/iter (+/- 120,222)
+	test bench_compile_topic ... bench: 4,402,767 ns/iter (+/- 63,216) test result: ok. 0 passed; 0 failed; 0 ignored; 2 measured; 0 filtered out $ grunt bench 2&gt;/dev/null
+	Running &quot;benchmark&quot; task
+	compilation x 74.70 ops/sec ±0.32% (167 runs sampled) Done.
+	</code></pre>
+	<p><strong>After</strong></p>
+	<pre><code class="language-sh">$ cargo +nightly bench
+	running 2 tests
+	test bench_compile_categories ... bench: 2,498,374 ns/iter (+/- 11,032)
+	test bench_compile_topic ... bench: 15,065,914 ns/iter (+/- 51,794) test result: ok. 0 passed; 0 failed; 0 ignored; 2 measured; 0 filtered out $ grunt bench 2&gt;/dev/null
+	Running &quot;benchmark&quot; task
+	compilation x 33.88 ops/sec ±0.26% (175 runs sampled) Done.
+	</code></pre>
+	<p>Woops! That's more than twice as slow. And even worse, the vast majority of that time is spent in Rust.</p>
+	<h4 id="flamegraphing">Flamegraphing</h4>
+	<p>One of the best tools, in my opinion, for finding optimization opportunities is the flamegraph. This neat little figure will show you where the time is spent in your program. So, let's make one with the very handy <a href="https://github.com/flamegraph-rs/flamegraph">cargo flamegraph tool</a>:</p>
+	<pre><code class="language-sh">$ cargo +nightly flamegraph --bin bench # bench refers to a binary based on the benchmarks run before
+	</code></pre>
+	<p><a href="https://blog.nodebb.org/content/images/2020/11/flamegraph_before.svg"><img src="https://blog.nodebb.org/content/images/2020/11/flamegraph_before.svg" alt="Flamegraph, click to open in your browser"></a></p>
+	<p>Isn't it beautiful? Alright let's dig in. Here's how to read the graph, from the flamegraph README:</p>
+	<blockquote>
+	<p>The <strong>y-axis</strong> shows the stack depth number. When looking at a flamegraph, the main function of your program will be closer to the bottom, and the called functions will be stacked on top, with the functions that they call stacked on top of them, etc...</p>
+	<p>The <strong>x-axis</strong> spans all of the samples. It does <em>not</em> show the passing of time from left to right. The left to right ordering has no meaning.</p>
+	<p>The <strong>width</strong> of each box shows the total time that that function is on the CPU or is part of the call stack. If a function's box is wider than others, that means that it consumes more CPU per execution than other functions, or that it is called more than other functions.</p>
+	<p>The <strong>color</strong> of each box isn't significant, and is chosen at random.</p>
+	</blockquote>
+	<p>First, let's ignore anything not above <code>compiler::compile</code>, since that's really what we care about. It's clear that the majority of the program is spent in <code>compiler::parse::tokens</code>, so let's zoom in on that part by clicking on it.</p>
+	<p>Now we see something like this:</p>
+	<p><a href="https://nodebb.org/blog/images/optimizing-benchpress-2.png"><img src="https://nodebb.org/blog/images/optimizing-benchpress-2.png" alt="Click to open full flamegraph"></a></p>
+	<p>Hmmm. Nothing sticks out to me right off the bat. All of the token parsers seem to be taking a portion of the time that matches what I'd expect.</p>
+	<p>This had me stumped for a while. Then I figured out what I was missing.</p>
+	<h3 id="optimization1tokenrecognition">Optimization #1: Token recognition</h3>
+	<p>There are a couple of clues in the flamegraph that give it away:</p>
+	<ol>
+	<li><code>interp_escaped</code> and <code>interp_raw</code> share a similar amount of time. But we should be hitting <code>interp_escaped</code> way more than <code>interp_raw</code>, because escaped interpolation tokens show up far more often in the benchmark templates.</li>
+	<li>There are a lot of hits on <code>new_else</code> and <code>new_end</code>, but those don't show up in the templates <em>at all</em>.</li>
+	<li>We're hitting <code>from_error</code> and <code>into_result</code> a lot, which implies the parsers are erroring a lot.</li>
+	</ol>
+	<p>It turns out, the way token recognition works is extremely expensive. Here's the code:</p>
+	<pre><code class="language-rust">let mut res = Vec::new();
+	let mut index = 0; while index &lt; input.len() { match sep.parse(input.slice(index..)) { Err(nom::Err::Error(_)) =&gt; { // do-while while { index += 1; !input.is_char_boundary(index) } {} } Err(e) =&gt; return Err(e), Ok((rest, mat)) =&gt; { // if this match was escaped, skip it if input.slice(..index).ends_with('\\') { let before_escape = input.slice(..(index - 1)); if before_escape.len() &gt; 0 { res.push(f(before_escape)); } input = input.slice(index..); index = nom::Offset::offset(&amp;input, &amp;rest); continue; } if rest == input { return Err(nom::Err::Error(E::from_error_kind( rest, nom::error::ErrorKind::SeparatedList, ))); } if index &gt; 0 { res.push(f(input.slice(..index))); } res.push(mat); input = rest; index = 0; } }
+	} if index &gt; 0 { res.push(f(input.slice(..index)));
+	} Ok((input.slice(input.len()..), res))
+	</code></pre>
+	<p>Do you see it? For every byte in the input, we're running the full parsing suite, checking it against 10 parsers! This works, but it's quite naive. For context, Benchpress tokens come in three shapes:</p>
+	<ul>
+	<li>Interpolation: <code>{thing_escaped}</code>, <code>{{raw_stuff}}</code></li>
+	<li>Modern Control Flow: <code>{{{ if cond }}}</code>, <code>{{{ each arr }}}</code>, <code>{{{ else }}}</code>, <code>{{{ end }}}</code></li>
+	<li>Legacy Control Flow: <code>&lt;!-- IF cond --&gt;</code>, <code>&lt;!-- BEGIN arr --&gt;</code>, <code>&lt;!-- ELSE --&gt;</code>, <code>&lt;!-- END(IF) stuff --&gt;</code></li>
+	</ul>
+	<p>Which means that we don't need to check these at every point in the input. We only need to run the parsers when we hit an opening curly brace <code>{</code> or an opening comment-arrow <code>&lt;!--</code>. It just so happens that there's a nice rust library made exactly for the purpose of searching for multiple patterns in text: <a href="https://github.com/BurntSushi/aho-corasick">aho-corasick</a>, which also backs the Rust regex crate.</p>
+	<p>Let's refactor the code to use that. I also want the refactor to handle escaping tokens here as well. aho-corasick makes this easy: we just need to define the patterns we want to look for, and tell it to use the <code>LeftmostFirst</code> mode, so it will match the escaped patterns we define first before it hits the unescaped start patterns:</p>
+	<pre><code class="language-rust">static PATTERNS: &amp;[&amp;str] = &amp;[&quot;\\{{{&quot;, &quot;\\{{&quot;, &quot;\\{&quot;, &quot;\\&lt;!--&quot;, &quot;{&quot;, &quot;&lt;!--&quot;]; use aho_corasick::{ AhoCorasick, AhoCorasickBuilder, MatchKind,
+	};
+	lazy_static::lazy_static! { static ref TOKEN_START: AhoCorasick = AhoCorasickBuilder::new() .auto_configure(PATTERNS) .match_kind(MatchKind::LeftmostFirst) .build(PATTERNS);
+	}
+	</code></pre>
+	<p>Now we can use <code>TOKEN_START</code> in our hot loop to skip over portions of text with no tokens:</p>
+	<pre><code class="language-rust">pub fn tokens(mut input: Span) -&gt; IResult&lt;Span, Vec&lt;Token&lt;'_&gt;&gt;&gt; { let mut tokens = vec![]; let mut index = 0; while index &lt; input.len() { // skip to the next `{` or `&lt;!--` if let Some(i) = TOKEN_START.find(input.slice(index..).fragment()) { // If this is an escaped opener, skip it if i.pattern() &lt;= 3 { let start = index + i.start(); let length = i.end() - i.start(); // Add text before the escaper character let before_escape = input.slice(..start); if before_escape.len() &gt; 0 { tokens.push(Token::Text(before_escape)); } // Advance to after the escaper character input = input.slice((start + 1)..); // Step to after the escaped sequence index = length - 1; } else { index += i.start(); } } else { // no tokens found, break out index = input.len(); break; } match token(input.slice(index..)) { // Not a match, step to the next character Err(nom::Err::Error(_)) =&gt; { // do-while while { index += 1; !input.is_char_boundary(index) } {} } Ok((rest, tok)) =&gt; { // Token returned what it was sent, this shouldn't happen if rest == input { return Err(nom::Err::Error(nom::error::Error::from_error_kind( rest, nom::error::ErrorKind::SeparatedList, ))); } // Add test before the token if index &gt; 0 { tokens.push(Token::Text(input.slice(..index))); } // Add token tokens.push(tok); // Advance to after the token input = rest; index = 0; } // Pass through other errors Err(e) =&gt; return Err(e), } } if index &gt; 0 { tokens.push(Token::Text(input.slice(..index))); } Ok((input.slice(input.len()..), tokens))
+	}
+	</code></pre>
+	<p>This looks cleaner and requires no backtracking for escaped tokens. What did it gain us in performance?</p>
+	<h4 id="benchmarksround2">Benchmarks Round 2</h4>
+	<pre><code class="language-sh">$ cargo +nightly bench
+	running 2 tests
+	test bench_compile_categories ... bench: 241,765 ns/iter (+/- 4,493)
+	test bench_compile_topic ... bench: 3,969,554 ns/iter (+/- 43,614) test result: ok. 0 passed; 0 failed; 0 ignored; 2 measured; 0 filtered out $ grunt bench 2&gt;/dev/null
+	Running &quot;benchmark&quot; task
+	compilation x 103 ops/sec ±0.38% (176 runs sampled) Done.
+	</code></pre>
+	<p>Nice! That's even slightly faster than benchpress-rs, so we've made a lot of progress. But there's still room for improvement.</p>
+	<p>Let's see another flamegraph:</p>
+	<p><a href="https://nodebb.org/blog/images/optimizing-benchpress-3.png"><img src="https://nodebb.org/blog/images/optimizing-benchpress-3.png" alt="Click to open full flamegraph"></a></p>
+	<p>Look at that, tokens parsing is now a small portion of the compilation. This puts a big target on the next step: replacing the prefixer with additions to the parser.</p>
+	<h3 id="optimization2prefixerforexternalkeywords">Optimization #2: Prefixer for external keywords</h3>
+	<p>The &quot;prefixer&quot; is what I call a simple backwards-compatibility layer which runs before the parsing step. The prefixer is based on Regular Expressions, which results in it being quite slow. It does a few things:</p>
+	<ul>
+	<li>Detects keywords like <code>@value</code>, <code>@key</code>, <code>@index</code> outside interpolation tokens, and wraps them in curly braces: <code>{@value}</code></li>
+	<li>Detects legacy loop helpers with no arguments like <code>{function.print_element}</code>, and changes them to be called with the current element as the first argument: <code>{function.print_element, @value}</code></li>
+	<li>Detects legacy IF-helpers like <code>&lt;!-- IF function.works, stuff --&gt;</code> and adds the top-level context as the first argument: <code>&lt;!-- IF function.works, @root, stuff --&gt;</code>, but <em>only</em> if IF conditions</li>
+	<li>Detects nested legacy <code>&lt;!-- BEGIN arr --&gt;</code> blocks and duplicates them as <code>&lt;!-- IF ./arr --&gt;&lt;!-- BEGIN ./arr --&gt;...&lt;!-- ELSE --&gt;&lt;!-- BEGIN arr --&gt;...</code><br>
+	The legacy syntax is ambiguous: templates.js would work if <code>arr</code> was a top-level value or if <code>arr</code> was a property of the current element. Because of this, we have to emit code for both cases.</li>
+	</ul>
+	<p>Let's move the first case into our parser instead of relying on Regex. Luckily, we just made our jobs a lot easier with that refactor of the token recognition. All we need to do is add those keywords to our aho-corasick patterns:</p>
+	<pre><code class="language-rust">static PATTERNS: &amp;[&amp;str] = &amp;[&quot;\\{{{&quot;, &quot;\\{{&quot;, &quot;\\{&quot;, &quot;\\&lt;!--&quot;, &quot;{&quot;, &quot;&lt;!--&quot;, &quot;@key&quot;, &quot;@value&quot;, &quot;@index&quot;];
+	</code></pre>
+	<p>And then handle those cases in the tokens parser, parsing them as an expression and adding that to our collection of tokens:</p>
+	<pre><code class="language-rust">// If this is an escaped opener, skip it
+	if matches!(i.pattern(), 0..=3) { let start = index + i.start(); let length = i.end() - i.start(); // Add text before the escaper character if start &gt; 0 { tokens.push(Token::Text(input.slice(..start))); } // Advance to after the escaper character input = input.slice((start + 1)..); // Step to after the escaped sequence index = length - 1;
+	// If this is an opener, step to it
+	} else if matches!(i.pattern(), 4..=5) { index += i.start();
+	// If this is `@key`, `@value`, `@index`
+	} else { let start = index + i.start(); let end = index + i.end(); let span = input.slice(start..end); let (_, expr) = expression(span)?; // Add text before the token if start &gt; 0 { tokens.push(Token::Text(input.slice(..start))); } // Add token tokens.push(Token::InterpEscaped { span, expr }); // Advance to after the token input = input.slice(end..); index = 0;
+	}
+	</code></pre>
+	<p>Let's remove the relevant parts of the prefixer and see what this bought us.</p>
+	<h4 id="benchmarksround3">Benchmarks Round 3</h4>
+	<pre><code class="language-sh">$ cargo +nightly bench
+	running 2 tests
+	test bench_compile_categories ... bench: 194,683 ns/iter (+/- 5,158)
+	test bench_compile_topic ... bench: 2,109,842 ns/iter (+/- 26,943) test result: ok. 0 passed; 0 failed; 0 ignored; 2 measured; 0 filtered out $ grunt bench 2&gt;/dev/null
+	Running &quot;benchmark&quot; task
+	compilation x 172 ops/sec ±0.26% (176 runs sampled) Done.
+	</code></pre>
+	<p>Another nice boost to our compilation speed. Onward!</p>
+	<h3 id="optimization3legacyloophelpers">Optimization #3: Legacy loop helpers</h3>
+	<p>Our second prefixer case is quite simple: when we encounter a legacy helper called with no arguments, we need to implicitly call it with <code>@value</code>. This we can implement in the expression parser.</p>
+	<p>Before, we just provided an empty argument list to a legacy helper:</p>
+	<pre><code class="language-rust">fn legacy_helper(input: Span) -&gt; IResult&lt;Span, Expression&lt;'_&gt;&gt; { map( consumed(pair( preceded(tag(&quot;function.&quot;), identifier), opt(preceded( ws(tag(&quot;,&quot;)), separated_list0(ws(tag(&quot;,&quot;)), expression), )), )), |(span, (name, args))| Expression::LegacyHelper { span, name, args: args.unwrap_or_default(), // Provides an empty Vec }, )(input)
+	}
+	</code></pre>
+	<p>But now, we want to give it <code>@value</code> in those cases, which we can achieve with <code>Option::unwrap_or_else</code>:</p>
+	<pre><code class="language-rust"> args: args.unwrap_or_else(|| { // Handle legacy helpers without args being implicitly passed `@value` vec![Expression::Path(vec![PathPart::Part(Span::new_extra( &quot;@value&quot;, input.extra, ))])] }),
+	</code></pre>
+	<p>Let's see the benchmarks with this removed from the prefixer.</p>
+	<h4 id="benchmarksround4">Benchmarks Round 4</h4>
+	<pre><code class="language-sh">$ cargo +nightly bench
+	running 2 tests
+	test bench_compile_categories ... bench: 187,462 ns/iter (+/- 2,519)
+	test bench_compile_topic ... bench: 2,030,519 ns/iter (+/- 19,016) test result: ok. 0 passed; 0 failed; 0 ignored; 2 measured; 0 filtered out $ grunt bench 2&gt;/dev/null
+	Running &quot;benchmark&quot; task
+	compilation x 180 ops/sec ±0.32% (181 runs sampled) Done.
+	</code></pre>
+	<p>Not a huge bump, likely because this doesn't show up a ton in templates, but an improvement nonetheless.</p>
+	<h3 id="optimization4legacyifhelpers">Optimization #4: Legacy IF helpers</h3>
+	<p>Next step in my quest to dismantle the prefixer is to handle <code>&lt;!-- IF function.foo, bar --&gt;</code>. Essentially, I need to check if the conditional is a legacy helper expression, and if so, prepend the arguments with <code>@root</code>. We can implement this in the token parser.</p>
+	<p>Before, we just provided the unmodified expression:</p>
+	<pre><code class="language-rust">fn legacy_if(input: Span) -&gt; IResult&lt;Span, Token&lt;'_&gt;&gt; { map( consumed(delimited( pair(tag(&quot;&lt;!--&quot;), ws(tag(&quot;IF&quot;))), ws(consumed(expression)), tag(&quot;--&gt;&quot;), )), |(span, (subject_raw, subject))| Token::LegacyIf { span, subject_raw, subject, // Unmodified expression }, )(input)
+	}
+	</code></pre>
+	<p>Rust's extensive pattern-matching makes it easy to check for a <code>LegacyHelper</code> expression, and modify it accordingly:</p>
+	<pre><code class="language-rust"> subject: { // Handle legacy IF helpers being passed @root as implicit first argument if let Expression::LegacyHelper { span, name, mut args } = subject { args.insert(0, Expression::Path(vec![PathPart::Part(Span::new_extra( &quot;@root&quot;, input.extra, ))])); Expression::LegacyHelper { span, name, args } } else { subject } },
+	</code></pre>
+	<p>This fix step was implemented with a <a href="https://github.com/benchpressjs/benchpressjs/blob/a263019ac54e18d393e405306049f5be68e30328/benchpress_sys/src/pre_fixer.rs#L49-L57">pretty nasty Regex</a>, so I expected a pretty substantial performance improvement.</p>
+	<h4 id="benchmarksround5">Benchmarks Round 5</h4>
+	<pre><code class="language-sh">$ cargo +nightly bench
+	running 2 tests
+	test bench_compile_categories ... bench: 196,249 ns/iter (+/- 13,057)
+	test bench_compile_topic ... bench: 2,028,033 ns/iter (+/- 16,110) test result: ok. 0 passed; 0 failed; 0 ignored; 2 measured; 0 filtered out $ grunt bench 2&gt;/dev/null
+	Running &quot;benchmark&quot; task
+	compilation x 178 ops/sec ±0.37% (178 runs sampled) Done.
+	</code></pre>
+	<p>But really, performance was about the same, because this pattern actually never shows up in the benchmark templates. That's okay though, let's move on.</p>
+	<h3 id="optimization5ambiguousinnerbegin">Optimization #5: Ambiguous inner BEGIN</h3>
+	<p>With those taken care of, the only thing left is handling this:</p>
+	<pre><code class="language-html">&lt;!-- BEGIN people --&gt; person {people.name} has the following pets: &lt;!-- BEGIN pets --&gt; - {pets.name} &lt;!-- END pets --&gt;
+	&lt;!-- END people --&gt;
+	</code></pre>
+	<p>The inner <code>pets</code> loop is ambiguous. There's no way for the compiler to know that it should refer to the pets for each element of people. It could also refer to the top-level <code>pets</code> value. So we must emit code for both cases, by transforming it to this:</p>
+	<pre><code class="language-html">&lt;!-- BEGIN people --&gt; person {people.name} has the following pets: &lt;!-- IF ./pets --&gt;&lt;!-- BEGIN ./pets --&gt; - {pets.name} &lt;!-- END pets --&gt;&lt;!-- ELSE --&gt;&lt;!-- BEGIN pets --&gt; - {pets.name} &lt;!-- END pets --&gt;&lt;!-- ENDIF ./pets --&gt;
+	&lt;!-- END people --&gt;
+	</code></pre>
+	<p>This will be the most difficult to move into code. I won't bore you with the details, but here's a quick run-down. When this condition is detected, we interpret the tokens ahead both as if it was a relative path and as if it was an absolute path, then wrap those in a conditional. Otherwise, we emit it as we would normally.</p>
+	<p>Rust's closures help with this immensely, allowing me to deduplicate the code into a closure, which I call depending on the case.</p>
+	<pre><code class="language-rust">// create an iteration intruction
+	Token::LegacyBegin { span, subject, subject_raw,
+	} =&gt; { let normal = |input: &amp;mut I, subject| { let mut body = vec![]; let mut alt = vec![]; let subject = resolve_expression_paths(base, subject); let base: PathBuf = if let Expression::Path(base) = &amp;subject { let mut base = base.clone(); if let Some(last) = base.last_mut() { last.with_depth(depth) } base } else { base.to_vec() }; match tree(depth + 1, &amp;base, input, &amp;mut body)? { Some(Token::LegacyElse { .. }) | Some(Token::Else { .. }) =&gt; { // consume the end after the else match tree(depth, &amp;base, input, &amp;mut alt)? { Some(Token::LegacyEnd { .. }) | Some(Token::End { .. }) =&gt; {} _ =&gt; return Err(TreeError), } } Some(Token::LegacyEnd { .. }) | Some(Token::End { .. }) =&gt; {} _ =&gt; return Err(TreeError), } Ok(Instruction::Iter { depth, subject_raw, subject, body, alt, }) }; // Handle legacy `&lt;!-- BEGIN stuff --&gt;` working for top-level `stuff` and implicitly `./stuff` match &amp;subject { Expression::Path(path) if depth &gt; 0 &amp;&amp; path.first().map_or(false, |s| { // Not a relative path or keyword !s.inner().starts_with(&amp;['.', '@'] as &amp;[char]) }) =&gt; { // Path is absolute, so create a branch for both `./subject` and `subject` let mut relative_path = vec![PathPart::Part(Span::new_extra(&quot;./&quot;, span.extra))]; relative_path.extend_from_slice(path); let relative_subject = Expression::Path(relative_path); Instruction::If { subject: resolve_expression_paths(base, relative_subject.clone()), body: vec![normal(&amp;mut input.clone(), relative_subject)?], alt: vec![normal(input, subject)?], } } _ =&gt; normal(input, subject)?, }
+	}
+	</code></pre>
+	<p>Yes! The prefixer is gone. Time for a final set of benchmarks.</p>
+	<h4 id="finalbenchmarks">Final Benchmarks</h4>
+	<pre><code class="language-sh">$ cargo +nightly bench
+	running 2 tests
+	test bench_compile_categories ... bench: 111,440 ns/iter (+/- 4,479)
+	test bench_compile_topic ... bench: 944,981 ns/iter (+/- 6,062) test result: ok. 0 passed; 0 failed; 0 ignored; 2 measured; 0 filtered out $ grunt bench 2&gt;/dev/null
+	Running &quot;benchmark&quot; task
+	compilation x 327 ops/sec ±0.53% (180 runs sampled) Done.
+	</code></pre>
+	<p>Check that out! We're 10x faster than we started, and 4.4x faster than benchpress-rs. <em>Fantastic</em>.</p>
+	<p>Let's take a final look at the flamegraph:</p>
+	<p><a href="https://nodebb.org/blog/images/optimizing-benchpress-4.png"><img src="https://nodebb.org/blog/images/optimizing-benchpress-4.png" alt="Click to open full flamegraph"></a></p>
+	<p>Now we can see that our program spends about equal time parsing and generating output.</p>
+	<h2 id="finalremarks">Final Remarks</h2>
+	<p>After all of that, I was quite proud of myself. Ditching the prefixer also has a huge side-benefit: true source location information. Having that information allows me to emit some helpful Rust-inspired warnings like this:</p>
+	<pre><code class="language-text">[benchpress] warning: keyword outside an interpolation token is deprecated --&gt; tests/templates/source/loop-tokens-conditional.tpl:3:39 | 3 | &lt;span class=&quot;label label-primary&quot;&gt;@key&lt;/span&gt; | ^^^^ help: wrap this in curly braces: `{@key}` | note: This will become an error in the v3.0.0
+	</code></pre>
+	<p>Overall, I'm very happy with <strong>nom</strong>. It made the rewrite much easier than it would have been, had I tried to custom write another parser. It made the resulting code much easier to read and more maintainable. And without its flexibility, I would never have been able to refactor out the prefixer.</p>
+	</div>

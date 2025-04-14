@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>The API continues to evolve... - NodeBB - Modern Community Forum Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Blog of NodeBB Forum Software - The Modern Discussion Platform">
+	<meta name="author" content="NodeBB Inc.">
+	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting, blog">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/16x16.png">
+	<link rel="shortcut icon" href="/images/icons/favicon.ico">
+
+	<!-- Google Fonts: Inter & Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- our css-->
+	<link href="/css/style.css" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0P62EB8Q6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-V0P62EB8Q6');
+	</script>
+</head>
+<body class="p-0 py-5 p-lg-5">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+		<div class="container-lg">
+			<a class="navbar-brand py-2" href="/">
+				<img src="/images/brand/nodebb-logo.svg" style="height: 36px; width: auto;" alt="NodeBB Logo" />
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-end align-items-lg-center mt-4 mt-lg-0">
+					<li class="nav-item">
+						<a href="/" class="nav-link text-reset fw-semibold">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="/product" class="nav-link text-reset fw-semibold">PRODUCT</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pricing" class="nav-link text-reset fw-semibold">PRICING</a>
+					</li>
+					<li class="nav-item">
+						<a href="/services" class="nav-link text-reset fw-semibold">SERVICES</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle text-reset fw-semibold">RESOURCES</a>
+						<ul class="dropdown-menu dropdown-menu-end border-0 shadow p-1">
+							<li><a href="https://community.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Community</a></li>
+							<li><a href="https://try.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Demo Site</a></li>
+							<li><a href="https://community.nodebb.org/category/28/answers" class="dropdown-item rounded-1" target="_blank">Answers</a></li>
+							<li><a href="https://docs.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Documentation</a></li>
+							<li><a href="/bounty" class="dropdown-item rounded-1">Bug Bounty</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/contact" class="btn btn-warning rounded-pill">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container-lg mt-5">
+		<!-- Home -->
+		<div id="home-tab-pane">
+			<div class="row pt-2 pt-lg-5">
+				<div class="col-12 d-flex flex-column gap-4">
+					<h1 class="display-1 fw-bold fs-1">
+						The API continues to evolve...
+					</h1>
+					
+				</div>
+			</div>
+
+			<!-- blog post -->
+			<div class="py-5">
+				<div class="d-flex gap-2 align-items-center mb-4">
+					<a href="https://community.nodebb.org/user/julian"><img class="rounded-circle" width="32" src="https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"></a> <a href="https://community.nodebb.org/user/julian" class="fw-semibold">Julian Lam</a> <span class="text-secondary">12/7/2020, 12:36:00 PM</span>
+				</div>
+				<div class="">
+					<div class="kg-card-markdown"><p>A couple months back as part of our <a href="https://blog.nodebb.org/api-continues-to-evolve/link">Roadmap to v2</a>, I made the claim that one of the large features in that release would be the merging of the <a href="//github.com/NodeBB/nodebb-plugin-write-api">Write API plugin</a> into core. The majority of the exploratory work had been completed in a development branch reserved for v2-only changes, but the need for a consistent RESTful API became more and more important, and we simply could not wait for v2 (which hadn't and still hasn't, a release date) to drop.</p>
+	<p>So <a href="https://github.com/NodeBB/NodeBB/pull/8708/commits/3dc9324ed60bc2e331b22dc70e0e253e0d3eaf62">two months ago</a>, I started pulling out this work to a separate branch based off of <code>master</code>, and set about to finishing the integration. I'm proud to say that the preliminary release of this API has been merged into core, and is available starting v1.15.0.</p>
+	<p>Better yet, <a href="https://blog.nodebb.org/unveiling-of-the-read-api/">the docs have been much improved, and are now maintained similar to the Read API</a>, using the OpenAPI v3 format, and can be found here ?</p>
+	<p><a href="//docs.nodebb.org/api/write">Write API Documentation</a></p>
+	<h2 id="isntwriteapiamisnomer">Isn't &quot;Write API&quot; a misnomer?</h2>
+	<p>Yes! In a sense, it is a transitionary title while the API evolves over time.</p>
+	<ul>
+	<li>The <strong>Read API</strong>, such as it is, contains a number of non-<code>GET</code> routes
+	<ul>
+	<li>These would mostly be upload-specific routes (avatars, cover photos, topic thumbnails, etc.)</li>
+	</ul>
+	</li>
+	<li>The <strong>Write API</strong>, on the other hand, <em>does</em> contain a couple of <code>GET</code> routes, and will be gaining more, over time.</li>
+	</ul>
+	<p>The nomenclature comes from its predecessor, <a href="//github.com/NodeBB/nodebb-plugin-write-api"><code>nodebb-plugin-write-api</code></a>. I wanted to keep the feature name similar so as to reduce confusion.</p>
+	<p>Over time, we intend to introduce additional GET routes, especially for new feature construction (or rewrites of such). For example, the <em>topic thumbnail</em> functionality is currently undergoing a rewrite, and will using the Write API exclusively.</p>
+	<p>All routes using the new Write API are visually separate from the Read API routes in that they all begin with <code>/api/v3</code> (e.g. <code>POST api/v3/topics</code> to create a new topic.)</p>
+	<p>Eventually, the plan is to rename the <em>Write API</em> into the <em>REST API</em> (imaginative, I know.)</p>
+	<h2 id="doesthismeanthedeathoftheapiprefix">Does this mean the death of the <code>/api</code> prefix?</h2>
+	<p>Not at all! The existing API will continue to be maintained. <strong>We have no plans to deprecate this API</strong>. It will likely be renamed from <em>Read API</em> to <em>Page API</em> or similar. This is purely for aesthetics.</p>
+	<p>Oftentimes, we would tell clients that any page you can browse to, you can see its underlying data by prepending <code>/api</code> onto that page's path. This remains true today, but we also want the reverse to be true. This means additional routes would be removed from the Read API and ported over to the Write API.</p>
+	<p>NodeBB's existing frontend uses the Read API exclusively to render page templates, and to that end the Read API is functioning as intended. The Write API was originally intended to allow external services (and specific usage from within NodeBB) leaner access to forum resources.</p>
+	<h2 id="whatswiththeapiv3prefix">What's with the <code>/api/v3</code> prefix?</h2>
+	<p>My plan with the Write API was to iterate on version numbers whenever there were breaking changes. There was one major change, which brought the plugin's prefix to <code>api/v2</code>, and for this move, we will be bumping it <strong>one last time</strong> (more on why below) to <code>api/v3</code>. I chose to continue with <code>api/v3</code> as it would not conflict with users who wished to use the Write API plugin in parallel with a newer version of NodeBB.</p>
+	<p>Keep in mind: Most users of the Write API should be able to migrate to <code>v3</code> with no significant issues.</p>
+	<p><a href="https://github.com/NodeBB/NodeBB/pull/8708#issuecomment-705780711">The full list of breaking changes from <code>v2</code> to <code>v3</code> can be found here</a>.</p>
+	<p>Eventually, I intend to introduce a versioning system for the API, <a href="https://stripe.com/blog/api-versioning">inspired by the Stripe API team</a>. They release new versions of their API prolifically, versioned by the date (e.g. <code>2017-05-24</code>), and requests sent in to the API with that specific version number will instruct Stripe to mutate the response to match what the response would have looked like under that version. It absolutely blows my mind how that worked, and my plan is to mimic something similar for successive releases of the API.</p>
+	<h2 id="howdoesthisplaywithnodebbswebsocketimplementation">How does this play with NodeBB's websocket implementation?</h2>
+	<p>The websockets/socket.io interface was never meant to be for external use. We rely on websockets for real-time events, such as new posts, notifications, online indicators, etc.</p>
+	<p>I fully admit (on behalf of my peers Baris and Andrew) that we abused this system to also handle simpler requests for information, or to instruct the server to do things.</p>
+	<p>These <em>call-and-response</em> type of requests were not what socket.io was designed for. That said, it handles these types of actions without breaking a sweat, but why reinvent the wheel when a battle-hardened version exists in the form of HTTP requests?</p>
+	<p>Socket.io even falls back to using XHR when a websocket connection is not available, imagine that!</p>
+	<p><strong>Let me be clear</strong>, we have no intention of dropping our use of socket.io. When we implement real-time events on websockets/socket.io, they work really really well, and it would be much easier to treat our use of websockets simply as a form of progressive enhancement, rather than an integral part of our software which won't work without it.</p>
+	<p>There is one (rather significant) additional reason why I personally wanted to switch to using a REST API — many of our clients don't have the technical knowledge to interface via websockets. This was the original reason why the Write API was created, but if a client wanted functionality that wasn't provided by that API, they were essentially SOL because domain knowledge on how to connect to a websocket server was far and few between. HTTP is a no-brainer, and many <em>many</em> developers know how to handle and negotiate responses with external APIs.</p>
+	<p>As an extension to that reason — if clients couldn't easily figure it out, <strong>neither could (or would) white-hat hackers</strong>. This meant that we had a blind spot in our websocket implementation, in that fewer eyes were looking at the code, and fewer people were trying to break in, simply due to the relative obscurity of websockets. While security by obscurity can be a part of your security plan, relying solely on security by obscurity is <strong>plain bad practice</strong>. The easier it is to interface with NodeBB, the easier it will be for clients to use, and for us to feel assured that it is implemented in a safe way.</p>
+	<h2 id="theremaining10">The remaining 10%</h2>
+	<p>Getting the rest of the call-and-response usages of websockets migrated to the Write API is the last 10%, and of course, the 10% is the hardest and dullest work. Once we're done this, we'll likely move forward with the name change from <strong>Write API</strong> to <strong>REST API</strong>.</p>
+	<p>The average end-user of NodeBB shouldn't see a single bit of difference in their every day use. If nobody can see what I'm doing, I'd consider the migration a success ?</p>
+	</div>
+				</div>
+			</div>
+		</div>
+
+		<hr class="my-5"/>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Get Started</h5>
+					<ul class="list-unstyled">
+						<li><a href="/product" class="link-secondary text-decoration-none">PRODUCT</a></li>
+						<li><a href="/pricing" class="link-secondary text-decoration-none">PRICING</a></li>
+						<li><a href="/services" class="link-secondary text-decoration-none">SERVICES</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Resources</h5>
+					<ul class="list-unstyled">
+						<li><a href="https://community.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">COMMUNITY</a></li>
+						<li><a href="https://try.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">DEMO SITE</a></li>
+						<li><a href="https://community.nodebb.org/category/28/answers" class="link-secondary text-decoration-none" target="_blank">ANSWERS</a></li>
+						<li><a href="https://docs.nodebb.org" class="link-secondary text-decoration-none" target="_blank">DOCUMENTATION</a></li>
+						<li><a href="/bounty" class="link-secondary text-decoration-none">BUG BOUNTY</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Company</h5>
+					<ul class="list-unstyled">
+						<li><a href="/about" class="link-secondary text-decoration-none">ABOUT</a></li>
+						<li><a href="/blog" class="link-secondary text-decoration-none">BLOG</a></li>
+						<li><a href="/contact" class="link-secondary text-decoration-none">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					<div class="d-flex gap-3 mt-3 justify-content-between px-2">
+						<a title="NodeBB Github Page" href="https://github.com/nodebb/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-github"></i></a>
+						<a title="NodeBB Twitter Page" href="https://twitter.com/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
+						<a title="NodeBB Mastodon Page" href="https://fosstodon.org/@nodebb" class="link-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="link-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between gap-5 small">
+				<span class="text-secondary text-nowrap">©2025 NodeBB, Inc. — Made in Canada with <i class="fa-solid fa-heart text-danger"></i>.</span>
+				<div class="d-flex gap-3">
+					<a href="/tos" class="link-secondary text-nowrap text-decoration-none">Terms of Service</a>
+					<a href="/privacy" class="link-secondary text-nowrap text-decoration-none">Privacy Policy</a>
+					<a href="/gdpr" class="link-secondary text-nowrap text-decoration-none">GDPR</a>
+					<a href="/dmca" class="link-secondary text-nowrap text-decoration-none">DMCA</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

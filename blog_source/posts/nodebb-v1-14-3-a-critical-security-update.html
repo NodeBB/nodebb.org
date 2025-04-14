@@ -1,0 +1,6 @@
+<div class="kg-card-markdown"><p>A bug in our validation logic made it possible to change the password of any user on a running NodeBB forum by sending a specially crafted socket.io call to the server.</p>
+	<p>We have resolved this in the latest version of NodeBB, and the fix has already been rolled out as a patch on all of our hosted customers.</p>
+	<p>For more information on the vulnerability as well as instructions on how to resolve this issue, please have a look here: <a href="https://github.com/NodeBB/NodeBB/security/advisories/GHSA-hr66-c8pg-5mg7">https://github.com/NodeBB/NodeBB/security/advisories/GHSA-hr66-c8pg-5mg7</a></p>
+	<p>If you are unable to upgrade ASAP, you can also apply the patch via cherry-picking <a href="https://github.com/NodeBB/NodeBB/commit/16cee1b03ba3eee177834a1fdac4aa8a12b39d2a">this commit</a>.</p>
+	<p>As this release contains a critical security fix, we <strong>highly recommend upgrading at your earliest convenience</strong>. If you are running your own server and encounter any issues upgrading, please post them in the <a href="https://community.nodebb.org/">community support forum</a>.</p>
+	</div>

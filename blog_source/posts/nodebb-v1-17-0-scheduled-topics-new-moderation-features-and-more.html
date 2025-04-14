@@ -1,0 +1,51 @@
+<div class="kg-card-markdown">
+
+	<p>Spring has sprung in Toronto, so we're taking advantage by getting some <em>extremely</em> low budget advertising. Hey, doesn't everyone make their software purchasing decisions based on what they read on the sidewalk? Hah-hah!</p>
+
+	<p>Onward with our latest release, NodeBB version 1.17.0. Improvements include:</p>
+	<ul>
+		 <li><strong>Scheduled Topics</strong> We've had multiple requests for this one. Rather than simply submitting a topic immediately users now have the option to select a time and date for it to go live. If you wish to limit this ability to certain users, there's also a new category-level privilege that can toggled for individuals or user groups.</li>
+		 <li><strong>Post Diff Deletion</strong> Specific entries in post history can now be removed. This resolved an issue where simply editing a post to remove sensitive content, such as passwords or secret key was not enough, as the post history would still allow you to easily reconstruct an old post.</li>
+		 <li><strong>Topic Event Improvements</strong> Topic events such as pinning or locking are now displayed in-line with posts, and plugins can add their own topic events. Previously, topic actions were done in the background, so this increases the transparency of moderation actions.</li>
+		 <li><strong>Categories System Refactoring</strong> If your forum only has a few categories then loading all of them is probably not an issue, but increasingly some larger NodeBB forums have hundreds or even thousands of categories, which can cause performance issues. Now the routes that were previously loading all categories can be paginated via a setting in the admin control panel, reducing the load considerably.</li>
+		 <li><strong>Filter Tags by Topic</strong> We've added the ability to filter the tags page by category, so users can more easily filter out tags that might not be relevant to what they are looking for.</li>
+		 <li><strong>Timeline Design added to Persona Theme</strong> This change to our most popular theme makes it easier to follow conversations, particularly long running ones:
+	<img src="https://nodebb.wpcomstaging.com/wp-content/uploads/2021/08/nodebb-v1-17-0-scheduled-topics-new-moderation-features-and-more.png" alt="NodeBB v1.17.0 - Scheduled Topics, New Moderation Features and More" /></li>
+		 <li><strong>Developer Improvements</strong>
+	<ul>
+		 <li>Re-mountable routes
+	<ul>
+		 <li>It is now possible to (via custom plugin logic) override specific mountpoints in NodeBB. For example, instead of /category (and related pages such as /category/5/category-name, the mount point can be renamed to /kategori for German communities</li>
+	</ul>
+	</li>
+		 <li>Sorted lists available on client side
+	<ul>
+		 <li>The "sorted-lists" functionality was primarily an ACP-only library. We now enabled this to be used on the front-end.</li>
+	</ul>
+	</li>
+		 <li>Client-side hooks
+	<ul>
+		 <li>Now filter, static, and action hooks are available on client-side.</li>
+		 <li>A new "hooks" module has been added to v1.17.0, allowing the use of filter, static, and action hooks similar to the server-side. Prior to this, we were limited to <code>$(window).trigger</code> calls, which had limitations, especially for asynchronous tasks. (see <a href="https://github.com/NodeBB/NodeBB/blob/32c20806bc8467953ba354042b870ed8794f8517/public/src/admin/admin.js#L33-L38#L33-L38">https://github.com/NodeBB/NodeBB/blob/32c20806bc8467953ba354042b870ed8794f8517/public/src/admin/admin.js#L33-L38#L33-L38</a> for details)</li>
+	</ul>
+	</li>
+	</ul>
+	</li>
+		 <li>Security Fixes
+	<ul>
+		 <li>One XSS vulnerability fixed</li>
+		 <li>One security best practice implemented, to guard against session fixation attacks</li>
+	</ul>
+	</li>
+	</ul>
+
+
+	<p>For a breaking changes, please see:</p>
+
+	<a href="https://community.nodebb.org/topic/15259/1-17-0-breaking-changes">https://community.nodebb.org/topic/15259/1-17-0-breaking-changes</a>
+
+	<p>As usual if you are hosting your own NodeBB forum we highly recommend <a href="https://docs.nodebb.org/configuring/upgrade/">updating to the latest version</a> to take advantage of the latest features and fixes. Always remember to back up your database before proceeding with any upgrade.</p>
+
+	<p>If you encounter any issues, please post them on our community support forum.</p>
+
+	</div>

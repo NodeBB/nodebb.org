@@ -1,0 +1,34 @@
+<div class="kg-card-markdown">
+
+	It's been several months since our Toronto team has convened in our downtown office, and we've blogged previously about how we are <a href="https://blog.nodebb.org/social-distancing-whats-that/">spending our free time during social distancing</a>. But of course that DOES NOT mean the team hasn't been working hard. Version 1.14.0 includes expanded documentation and improved features, as well as streamlining and security fixes. Here are some highlights:
+	<h2 id="readapidocs">Read API Docs</h2>
+	Since the begining, NodeBB has had a powerful Read API which allows for the JSON for almost every route to be be shown by simply appending "/api" into the path (e.g. the code behind the most recent posts on our own forum can be see at <a href="https://community.nodebb.org/api/recent">https://community.nodebb.org/api/recent</a>). A <a href="https://blog.nodebb.org/unveiling-of-the-read-api/">previous blog post talked in depth about the work being done to document this better</a>, and you can now find a proper list of these routes at:
+
+	<a href="https://docs.nodebb.org/api/">https://docs.nodebb.org/api/</a>
+	<h2 id="moderationimprovements">Moderation Improvements</h2>
+	The 1.14.0 includes a number of improvements to moderation tasks, including better tools for moderators and admins as well as better messaging for users. These include:
+	<ul>
+		 <li>New moderation options on the flags detail page: quick assign, ban user, and delete user</li>
+		 <li>Better messaging for account deletion (i.e. deletion via account page only deletes account, not content)</li>
+		 <li>Admins are now able to choose between deletion of account, content, or both, in account page and ACP.</li>
+		 <li>An improved dialog for topic merging, allowing for searching of topics and choosing which topic to merge into</li>
+		 <li>Post history can now be restored at the press of a button -- a restored version is just a new edit, so history is preserved</li>
+	</ul>
+	<h2 id="morepowerinprivileges">More Power in Privileges</h2>
+	NodeBB's privileges system has allowed for individual users or groups to be given a wide variety of reading, posting and moderation abilities globally or within specific categories of a forum. With the latest release, admins are now able to grant more fine-grained access control to the Admin Control Panel, including the dashboard, category management, privileges, user management, and forum settings
+	<ul>
+		 <li>Privilege grant/rescind now fires plugin hooks for all types, category, global, and admin hooks</li>
+	</ul>
+	<h2 id="otherchanges">Other Changes</h2>
+	<ul>
+		 <li>Edits to posts inside watched topics now send notifications</li>
+		 <li>User blocks functionality now has plugin hooks</li>
+		 <li>Profile export now returns more user data</li>
+		 <li>Grunt restart/rebuild and filechange detection have been sped up</li>
+		 <li>The General menu has been removed from the Admin Control Panel, with items there mostly moved to Settings</li>
+	</ul>
+	Because this release contains a number of security fixes, we <strong>highly recommend upgrading at your earliest convenience</strong> If you are running your own server and encounter any issues upgrading, please post them in the <a href="https://community.nodebb.org/">community support forum</a>.
+
+	If you are a hosting client of with us, please drop a line to <a href="mailto:support@nodebb.org">support@nodebb.org</a> to schedule a time for our team to perform the upgrade.
+
+	</div>

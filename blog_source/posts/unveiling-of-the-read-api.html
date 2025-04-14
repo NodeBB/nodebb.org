@@ -1,0 +1,79 @@
+<div class="kg-card-markdown">
+
+	Developer empowerment has always been at the core of NodeBB:
+	<ul>
+		 <li>Plugins receive first-class treatment, in that there are plenty of hooks enabling plugins to interact with nearly all facets of NodeBB</li>
+		 <li>Themes play a central role in NodeBB, allowing designers to fully realise their vision without being hamstrung by unnecessary limitations.</li>
+		 <li>Our open source community is thriving due in no small part to our community forum of developers helping each other</li>
+	</ul>
+	However, one consistent pain point has been our API, and its rather opaque discovery model.
+
+	More often than I care to admit, we'll receive a query: "Where are your Read API docs?", to which our response is a conciliatory "prepend <code>/api</code> to any route in order to see the underlying JSON". After all, we use the same APIs to render every single page in NodeBB, and if it's good enough for us, then it ought to be good enough for you!
+
+	However, this sort of solution totally sucks (pardon my French) if you don't have experience working <strong>with</strong> NodeBB. The core developers all have the full context behind most parts of the code, so we know the full capabilities of the backend, and where to look when we want to edit something. On the other hand, developers new to NodeBB don't have this benefit, and given that we're not a small project, it can definitely feel overwhelming to try to find out how everything works, or where specific logic lives in NodeBB.
+
+	The lack of consistent API documentation also implicitly enforces a "develop-first" approach, where you simply get started on a feature by diving into the code and figure out the plan and design later. While this approach works really well for <em>hackers</em><sup>1</sup>, it lets down the <em>planners</em>, and we want to take steps to ease development for both types of developers.
+
+	Another downside of our pre-existing API is that it is not entirely RESTful. The API has been <code>GET</code>-exclusive for the most part. Whatever few places we don't do <code>GET</code>s are for uploads and non-JSON related exports. Almost every action to write to NodeBB is done via websockets, which we are intending to partially deprecate<sup>2</sup>.
+
+	Lastly, our API is mostly displaying what we need on the page (to render properly client-side). In many cases, that dovetails nicely with developer expectations, but the nomenclature and structure need revising in order to follow API best-practices. A quick example would be, <code>/users</code> shows the user list, but individual users are under the <code>/user</code> prefix (no plural).
+	<h2 id="whatdo">What do?</h2>
+	The first order of business is to shine a light on the black box, our opaque Read API.
+
+	The more documentation we have, the easier it will be to spot opportunities for improvement. More importantly, better documentation empowers developers with better context for their planning.
+
+	We settled on the OpenAPI 3 specification (formerly known as Swagger), for a couple of reasons:
+	<ul>
+		 <li>A standardised API schema allows for consistent consumption via automated tooling</li>
+		 <li>We can achieve some spectacular out-of-the-box styling via <a href="https://github.com/Redocly/redoc">ReDoc</a>.</li>
+	</ul>
+	A huge thanks to <a href="https://github.com/akhoury">Aziz Khoury </a> for getting us started on this. He singlehandedly implemented a script that allowed for automatic generation of OpenAPI docs (including request and response schemas) by examining the content that went in and out of our <a href="//community.nodebb.org">community forum</a>. Right off the bat, we had nearly complete, workable documentation! ??
+
+	The rest of it<sup>3</sup> was done by hand by the core developers, and <a href="https://github.com/NodeBB/NodeBB/blob/master/public/openapi/read.yaml">the document itself</a> will be a living document, that grows with the project.
+
+	So without further ado, introducing the <a href="https://docs.nodebb.org/api/">NodeBB Read API Documentation</a>! ??
+	<h2 id="sowhat">So what?</h2>
+	If you <a href="https://github.com/NodeBB/NodeBB/blob/master/public/openapi/read.yaml">look at the actual spec</a>, it's not really all that exciting. It's a bunch of YAML that looks nigh-impenetrable to the laymen<sup>4</sup>.
+
+	The real cool advantages come in two stages:
+	<h3 id="1redoc">1. ReDoc</h3>
+	We integrated ReDoc to style our documentation. We loved the design and found that it gave our API some much needed polish. <a href="https://docs.nodebb.org/api/">If you go to our Read API documentation now</a>, you'll see ReDoc as the front-end serving the behind-the-scenes YAML file.
+	<h3 id="2testingsuiteintegration">2. Testing Suite Integration</h3>
+	The OpenAPI document itself is tied in to our testing suite, and so every time a change is made to the public API, a corresponding change <strong>must</strong> be made to the OpenAPI document as well, otherwise the tests will fail.
+
+	This step is important because it keeps us accountable and ensures that the documentation itself is up-to-date with the latest code. Documentation is often one of the hardest things to keep up-to-date, second only to <strong>writing</strong> the actual documentation, so you can imagine why a tool is needed to gently (or in some cases, no-so-gently) remind developers to keep the API documentation up to date!
+	<h3 id="3betterchangetracking">3. Better change tracking</h3>
+	We will now also be able to see how the API changes between version releases, which begets the question of whether this aids us in our steps towards adopting <a href="https://semver.org/">semver</a>.
+	<h2 id="letstakeastepback">Let's take a step back...</h2>
+	In March, <a href="https://blog.nodebb.org/slice-and-dice-ndash-bringing-nodebb-back-to-basics/">I talked about taking a step back to view a project under a more objective lens</a>. Oftentimes developers (myself included!) will dive so deeply into a feature or project, and become so invested in its success, that we don't often consider whether it (or its implementation) is a good idea in the first place.
+
+	So let's take the time now to take a step back and view the OpenAPI spec under an objective lens:
+
+	I will admit that initial adoption is painful. The integration into our testing suite will introduce a failure point during our development workflow).
+
+	However, the benefits potentially outnumber the downsides:
+	<ul>
+		 <li>We should now be able to catch bugs where output is changed by accident, or if property types have changed.</li>
+		 <li>We gain savings in developer frustration, as new developers try to integrate with NodeBB for the first time.</li>
+	</ul>
+	Time will tell as to whether we will discover more benefits, or run into additional downsides. We are hoping that the Read API documentation is a step in the right direction for all parties involved.
+	<h2 id="whatsnext">What's next?</h2>
+	Now that we have a published OpenAPI spec for our Read API, the obvious next step would be to adopt this for the Write API as well.
+
+	Our Write API capabilities are currently served by our <a href="https://github.com/NodeBB/nodebb-plugin-write-api">Write API plugin</a>. Currently, we're in the planning and initial development stages of merging the Write API into core. This is <a href="https://blog.nodebb.org/looking-ahead-to-nodebb-v2-x/">scheduled to land in NodeBB v2</a>.
+
+	The <a href="https://github.com/NodeBB/nodebb-plugin-write-api/blob/master/routes/v2/readme.md">current documentation is maintained by hand</a>, and does not offer any of the benefits of OpenAPI.
+
+	Additionally, while the majority of the "write-type" calls in NodeBB are handled via socket.io, we intend to replace these calls with calls to the Write API.
+
+	A potential stretch goal here would be strict versioning of the API with built-in backwards compatibility. We want to model this after Stripe's API, which allows you to pass in outdated payloads under a version header, and receive the response as though you were still calling that outdated API.
+
+	====
+
+	<sup>1</sup> "hacker" in this context, refers to the mindset of figuring out how something works in order to extend or modify it. In modern times, the term has evolved to mean someone gaining unauthorized access to a resource, usually with malicious intent, but I am using it in the strictly exploratory meaning.
+	<sup>2</sup> <strong><em>WHAT?!</em></strong>, you say? All will be explained, in a future blog post. Don't worry, socket.io won't go away, we're just reinforcing our commitment to the Write API.
+	<sup>3</sup> Pun not intended.
+	<sup>4</sup> For what it's worth, it's pretty impenetrable by developers too.
+	<sup>Cover Photo</sup> <a href="https://unsplash.com/photos/_-hjiem5TqI">Sincerely Media on Unsplash</a>
+
+	</div>
