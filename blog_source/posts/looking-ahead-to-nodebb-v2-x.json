@@ -1,0 +1,14 @@
+{
+	"url": "https://nodebb.org/blog/looking-ahead-to-nodebb-v2-x",
+	"title": "Looking ahead to NodeBB v2.x",
+	"subtitle": "",
+	"excerpt": "Wait! Don’t get too excited! There’s a lot to figure out and a lot to actually do, so we’re not in any position to state any timelines or make any...",
+	"pubDate": "Wed, 26 Feb 2020 09:00:00 +0000",
+	"cover": "https://nodebb.org/blog/images/looking-ahead-to-nodebb-v2-x-768x493.png",
+	"author": {
+		"name": "Julian Lam",
+		"url": "https://community.nodebb.org/user/julian",
+		"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+	},
+	"content": "looking-ahead-to-nodebb-v2-x.html"
+}

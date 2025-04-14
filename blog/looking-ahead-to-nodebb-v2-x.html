@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Looking ahead to NodeBB v2.x - NodeBB - Modern Community Forum Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Blog of NodeBB Forum Software - The Modern Discussion Platform">
+	<meta name="author" content="NodeBB Inc.">
+	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting, blog">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/16x16.png">
+	<link rel="shortcut icon" href="/images/icons/favicon.ico">
+
+	<!-- Google Fonts: Inter & Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- our css-->
+	<link href="/css/style.css" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0P62EB8Q6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-V0P62EB8Q6');
+	</script>
+</head>
+<body class="p-0 py-5 p-lg-5">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+		<div class="container-lg">
+			<a class="navbar-brand py-2" href="/">
+				<img src="/images/brand/nodebb-logo.svg" style="height: 36px; width: auto;" alt="NodeBB Logo" />
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-end align-items-lg-center mt-4 mt-lg-0">
+					<li class="nav-item">
+						<a href="/" class="nav-link text-reset fw-semibold">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="/product" class="nav-link text-reset fw-semibold">PRODUCT</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pricing" class="nav-link text-reset fw-semibold">PRICING</a>
+					</li>
+					<li class="nav-item">
+						<a href="/services" class="nav-link text-reset fw-semibold">SERVICES</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle text-reset fw-semibold">RESOURCES</a>
+						<ul class="dropdown-menu dropdown-menu-end border-0 shadow p-1">
+							<li><a href="https://community.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Community</a></li>
+							<li><a href="https://try.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Demo Site</a></li>
+							<li><a href="https://community.nodebb.org/category/28/answers" class="dropdown-item rounded-1" target="_blank">Answers</a></li>
+							<li><a href="https://docs.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Documentation</a></li>
+							<li><a href="/bounty" class="dropdown-item rounded-1">Bug Bounty</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/contact" class="btn btn-warning rounded-pill">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container-lg mt-5">
+		<!-- Home -->
+		<div id="home-tab-pane">
+			<div class="row pt-2 pt-lg-5">
+				<div class="col-12 d-flex flex-column gap-4">
+					<h1 class="display-1 fw-bold fs-1">
+						Looking ahead to NodeBB v2.x
+					</h1>
+					
+				</div>
+			</div>
+
+			<!-- blog post -->
+			<div class="py-5">
+				<div class="d-flex gap-2 align-items-center mb-4">
+					<a href="https://community.nodebb.org/user/julian"><img class="rounded-circle" width="32" src="https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"></a> <a href="https://community.nodebb.org/user/julian" class="fw-semibold">Julian Lam</a> <span class="text-secondary">2/26/2020, 4:00:00 AM</span>
+				</div>
+				<div class="">
+					<div class="kg-card-markdown">
+	<h2 id="waitdontgettooexcited">Wait! Don't get too excited!</h2>
+	<p>There's a lot to figure out and a lot to actually do, so we're not in any position to state any timelines or make any promises<sup>1</sup> just yet.</p>
+
+	<p>For what we <em>can</em> say, head on over to <a href="#tldrwhatdoesthismeanfornodebbv1xandpersona">the bottom tl;dr section</a>.</p>
+
+	<hr />
+
+	<p>On the 7<sup>th</sup> of February, the NodeBB founders came together and thought critically about NodeBB's next steps. On this not-so-historic day (because regular conversations about our future should definitely happen!), we reflected on our work so far, and talked at a high level about what would/could come next.</p>
+
+	<p>We've often had customers and users ask us about our roadmap, but we honestly didn't have one that we willingly shared. Between Baris, Andrew, and myself, we had different goals, different priorities, and different visions of what NodeBB could be, and we were almost always constantly busy iterating on NodeBB to step back and ponder the future.</p>
+
+	<p>However, it's safe to say that for the past few years, we've strayed away from our beginning goal — to build forum software like it's meant to be. We've become a <a href="https://cutle.fish/blog/12-signs-youre-working-in-a-feature-factory">feature factory</a>, shipping functionality<sup>2</sup>, but not spending the time to view NodeBB as a whole to consider our direction from a top-down perspective.</p>
+
+	<p><strong>We decided we needed to step back and re-evaluate our work, achievements, and direction.</strong> NodeBB v1 has evolved into a project we're very proud of, but there is always room to grow, work to be done, and improvements to be made. We've <a href="https://github.com/NodeBB/NodeBB/commit/b04d262fe428a80ed3ed448575b5db7b6970afeb">spent 6½ years</a> building what we have, but did we want to spend the next 6½ iterating on the same base?</p>
+
+	<h3 id="webpackbootstrap4andscss">Webpack, Bootstrap 4, and SCSS</h3>
+
+	<p>We initially hitched our wagon to technologies popular in 2013: <a href="https://requirejs.org/">require.js</a>, <a href="https://getbootstrap.com/2.3.2/">Bootstrap 2</a> (and <a href="https://getbootstrap.com/docs/3.4/">later, 3</a>), and <a href="https://lesscss.org">LESS</a><sup>3</sup>.</p>
+
+	<p>The industry has evolved and moved on, but we've maintained our use of these tools because of inertia. Simply put – to change now would be a huge amount of work.</p>
+
+	<p>We also had a fair bit of decision paralysis – which technology gives us adequate future-proofing, and which ones are worth learning? Investing time and effort into a technology that would only be deprecated or put into maintenance shortly after would be demoralizing, to say the least!</p>
+
+	<p>The way NodeBB internals are built, to implement one technology would (or might) cause pain to our 3<sup>rd</sup> party plugin and theme developers. Did we want to do this multiple times as we iterated through breaking technologies? This easily caused our discussion about NodeBB v2 to snowball massively until we were looking at the daunting prospect of rewriting a huge amount of the codebase (i.e. Bootstrap 4 breaks every theme, so we might as well also implement SCSS. If we're going to ditch all our existing stylesheets, we may as well create a brand-new theme to go with it).</p>
+
+	<p>We've wanted to get rid of require.js for quite some time. There were always incompatibility issues with third-party libraries, and it did not play nice with our minifier<sup>4</sup>.</p>
+
+	<p><strong>So, what to do?</strong></p>
+
+	<p>Break everything at once, apparently. We decided we <em>had</em> to implement them all at once, and go through the pain of migration once.</p>
+
+	<h4 id="webpack">Webpack</h4>
+	<p>Baris is leading the charge to implement webpack as a module/dependency loader in an effort to improve our client-side minification/bundling efforts. Our current implementation often had us in dependency hell: one library loaded another, and so on, until the entire set of modules was loaded into memory!</p>
+
+	<p>We also hand-built our minifier (<a href="https://blog.nodebb.org/content/images/2020/02/1011009.jpg">as was the style at the time</a>), but the industry has matured since then and we have great new features like bundling, which we were interested in taking advantage of. Smarter dependency loading would reduce the client-side payload, and give us faster initial load times.</p>
+
+	<p>The second benefit is allowing us to finally write client-side code in CommonJS/ES6 style. We're hoping that implementing webpack properly will swiftly ease the many pain points we experienced with require.js.</p>
+
+	<h4 id="bootstrap4">Bootstrap 4</h4>
+	<p>While Bootstrap 4 was released awhile ago, we've been hesitant to upgrade as it contains many breaking changes. Not only is it hard for us to upgrade, but it would instantly invalidate every theme and impair the interface of most plugins available today. We also wanted to re-evaluate the current method of making a custom theme – was forking <a href="https://github.com/NodeBB/NodeBB-theme-persona">Persona</a> ideal? Is it necessary for a theme to contain every single template?</p>
+
+	<p><strong>Enter <code>nodebb-theme-palette</code></strong></p>
+
+	<p>The Palette theme is intended to address these concerns:</p>
+	<ul>
+		 <li>Minimal templating – some unnecessary templates have been moved to core so as to eliminate unnecessary duplication. For example, we found that most themes never touched the account edit/settings pages. Once moved to core, they would be a sensible default, yet still easily customizable if need be.</li>
+		 <li>Minimal styling – aside from the Bootstrap 4 base, individual pages in Palette should have minimal styling, if any. This should allow theme developers a solid base with which to build upon. The less time spent rebooting a theme back to a clean slate, the better!</li>
+	</ul>
+
+	<h4 id="scss">SCSS</h4>
+	<p>Relying on LESS was a gamble that we had taken. It was a decidedly good improvement on CSS, but the industry (and bootstrap) went with SCSS, and we intend to follow suit.</p>
+
+	<p>We would likely still allow usage of LESS in themes and plugins, but we're going to bite the bullet and dump almost all of our stylesheets and start over with a clean slate for Palette.</p>
+
+	<h3 id="tldrwhatdoesthismeanfornodebbv1xandpersona">tl;dr – What does this mean for NodeBB v1.x and Persona?</h3>
+	<p>We fully intend to continue development and issue bug fixes to the 1.x (and <code>master</code>) branches. For now, all of the v2.x work is contained in the <code>webpack</code> branch of core.</p>
+
+	<p>Timeline-wise, we can't even begin to speculate on how long this work would take.</p>
+
+	<p>This blog post serves as an introductory overview of what we intend to do. I'm hoping I'll be able to release periodic updates on our work, as I'm sure many of you will want to follow our progress closely :)</p>
+
+	<p>As we get closer to our goal (2.x), we will be releasing a series of migration guides to help you move to the new v2.x of NodeBB.</p>
+
+	<hr />
+
+	<p><sup>1</sup> <code>await nodebbv2plz();</code> :)</p>
+	<p><sup>2</sup> By and large, our philosophy is that we should always ship functionality in plugin format. We've seen much success (and by extension, achieved a fairly lean core) by doing so, and we have no plans on changing this strategy.</p>
+	<p><sup>3</sup> You'll notice I didn't include <a href="//jquery.org">jQuery</a> in this list. We definitely <em>do</em> want to replace jQuery with a lighter variant (maybe Zepto?), but we figured webpack, bootstrap, and SCSS were a big enough bite for now.</p>
+	<p><sup>4</sup> Most often, we'd have <a href="https://requirejs.org/docs/errors.html#mismatch"><code>mismatched anonymous define() modules</code></a> errors, because our implementation relied on modules being explicitly named. We'd also have platform-agnostic libraries plain refuse to work, again because of an incompatibility with how we configured require.js</p>
+
+	<hr />
+
+	<a href="https://unsplash.com/photos/twukN12EN7c">Cover Photo by Simon Matzinger on Unsplash</a>
+
+</div>
+				</div>
+			</div>
+		</div>
+
+		<hr class="my-5"/>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Get Started</h5>
+					<ul class="list-unstyled">
+						<li><a href="/product" class="link-secondary text-decoration-none">PRODUCT</a></li>
+						<li><a href="/pricing" class="link-secondary text-decoration-none">PRICING</a></li>
+						<li><a href="/services" class="link-secondary text-decoration-none">SERVICES</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Resources</h5>
+					<ul class="list-unstyled">
+						<li><a href="https://community.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">COMMUNITY</a></li>
+						<li><a href="https://try.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">DEMO SITE</a></li>
+						<li><a href="https://community.nodebb.org/category/28/answers" class="link-secondary text-decoration-none" target="_blank">ANSWERS</a></li>
+						<li><a href="https://docs.nodebb.org" class="link-secondary text-decoration-none" target="_blank">DOCUMENTATION</a></li>
+						<li><a href="/bounty" class="link-secondary text-decoration-none">BUG BOUNTY</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Company</h5>
+					<ul class="list-unstyled">
+						<li><a href="/about" class="link-secondary text-decoration-none">ABOUT</a></li>
+						<li><a href="/blog" class="link-secondary text-decoration-none">BLOG</a></li>
+						<li><a href="/contact" class="link-secondary text-decoration-none">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					<div class="d-flex gap-3 mt-3 justify-content-between px-2">
+						<a title="NodeBB Github Page" href="https://github.com/nodebb/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-github"></i></a>
+						<a title="NodeBB Twitter Page" href="https://twitter.com/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
+						<a title="NodeBB Mastodon Page" href="https://fosstodon.org/@nodebb" class="link-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="link-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between gap-5 small">
+				<span class="text-secondary text-nowrap">©2025 NodeBB, Inc. — Made in Canada with <i class="fa-solid fa-heart text-danger"></i>.</span>
+				<div class="d-flex gap-3">
+					<a href="/tos" class="link-secondary text-nowrap text-decoration-none">Terms of Service</a>
+					<a href="/privacy" class="link-secondary text-nowrap text-decoration-none">Privacy Policy</a>
+					<a href="/gdpr" class="link-secondary text-nowrap text-decoration-none">GDPR</a>
+					<a href="/dmca" class="link-secondary text-nowrap text-decoration-none">DMCA</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
