@@ -87,10 +87,10 @@
 		<div class="row pt-2 pt-lg-5">
 			<div class="col-12 d-flex flex-column gap-4">
 				<h1 class="display-1 fw-bold fs-1">
-					NodeBB Development Blog
+					NodeBB Development Blog Archive
 				</h1>
 				<h2 class="text-secondary fs-4">
-					Find out what the NodeBB development team is up to.
+					Find out what the NodeBB development team is up to in our <a class="link-secondary" href="https://community.nodebb.org/category/3/nodebb-development">Development Category</a>
 				</h2>
 			</div>
 		</div>
