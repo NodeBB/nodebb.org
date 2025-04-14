@@ -1,0 +1,37 @@
+<em>Truth be told our latest release was published late last week in advance of "snowmageddon" burying much of the U.S. northeast and Canadian southeast. But everyone is well and we've mostly managed to dig our way out of our various home offices across the Greater Toronto Area. Hope you are keeping safe and warm, wherever you are!</em>
+<h2>What's new in v1.19.0</h2>
+<h5>All users can now access the post queue, but non-moderators and admins only see their own queued posts</h5>
+
+<p>Users now have more transparency into the status of any posts they may have in the post queue.&nbsp; Queued posts can now be edited directly from the post queue page, and rejected posts can have a message attached to them.</p>
+
+<h5>Email verification functionality can be turned off via the ACP</h5>
+
+<p>By default, NodeBB sends out emails to new users, but this functionality can now be turned off. This is primarily intended for forums that use a third-party Single Sign On service, so that users don't need to "double verify" which can cause confusion.</p>
+
+<h5>When a topic is forked, a link to the new topic will be left behind in the old topic</h5>
+
+<p>Forking topics can be helpful to keep discussions on-point, but sometimes it is useful to have the original context of the post.&nbsp; Forked threads now include a link to the old topic:</p>
+
+<img class="img-fluid" src="https://nodebb.org/blog/images/you-been-forked.png" alt="Forked post indicator" width="300" height="64">
+
+<p>
+And a few notes mainly of interest for developers:
+<ul>
+ 	<li><strong><a href="https://community.nodebb.org/post/85277">Previously deprecated methods and socket calls now removed&nbsp;</a></strong></li>
+ 	<li>Various pages now work better with custom themes that add a navbar above the main NodeBB nav (<a href="https://github.com/NodeBB/NodeBB/issues/10023">more information, plus breaking change notes</a>)</li>
+ 	<li>Minor change regarding how privilege checking is done for admin plugin pages (<a href="https://community.nodebb.org/post/86162">more information re: breaking change</a>)</li>
+ 	<li>New API for chats (<a href="https://docs.nodebb.org/api/write/#tag/chats">spec</a>)</li>
+</ul>
+</p>
+
+<p>
+For the full list of changes, <a href="https://github.com/NodeBB/NodeBB/blob/master/CHANGELOG.md">click here</a>.
+</p>
+<p>
+For a summary of all breaking changes, <a href="https://community.nodebb.org/topic/15981/1-19-0-breaking-changes">click here</a>.
+</p>
+
+<p>
+If you are hosting your own forum we always recommend upgrading to the latest version to ensure you have the latest fixes and features. And if you are hosted client with us, please contact&nbsp;<a href="mailto:support@nodebb.org">support@nodebb.org</a> to arrange a time to upgrade.
+</p>
+

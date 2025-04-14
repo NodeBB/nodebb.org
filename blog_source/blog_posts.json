@@ -1,0 +1,272 @@
+[
+	{
+		"url": "https://nodebb.org/blog/nodebb-march-update-digest-new-features-security-fixes-and-more",
+		"title": "NodeBB March Update Digest: New Features, Security Fixes, and More",
+		"excerpt": "In advance of the release of v3, we are releasing this migration guide in order to give third-party developers a chance to bring their plugins and themes up-to-date. In the...",
+		"pubDate": "Wed, 29 Mar 2023 15:07:59 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "nodebb-march-update-digest-new-features-security-fixes-and-more.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/avatars-404-no-more/",
+		"title": "Graceful fallback for avatars (404 no more!)",
+		"excerpt": "In the midst of our work hacking on v3 (and I mean that in the best possible light), we ran across an interesting problem with an even more interesting solution...",
+		"pubDate": "15 Oct 2022, 21:17",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "avatars-404-no-more.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/migration-guide-for-v3",
+		"title": "Migration Guide for v3",
+		"excerpt": "In advance of the release of v3, we are releasing this migration guide in order to give third-party developers a chance to bring their plugins and themes up-to-date. In the...",
+		"pubDate": "Fri, 30 Sep 2022 19:43:49 +0000",
+		"cover": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "migration-guide-for-v3.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/bringing-back-better-bootswatch",
+		"title": "Bringing Back Better Bootswatch!",
+		"excerpt": "This blog post is the second in a series of posts related to the release of NodeBB v3 Please see our other articles related to v3: Meet the Designer (Vlad...",
+		"pubDate": "Tue, 27 Sep 2022 14:51:14 +0000",
+		"cover": "https://images.unsplash.com/photo-1618513462042-29ac20aefe11?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "bringing-back-better-bootswatch.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/meet-vlad-gerasimov-product-designer",
+		"title": "Meet the Designer (Vlad Gerasimov)",
+		"excerpt": "In advance of the release of v2, we are releasing this migration guide in order to give third-party developers a chance to bring their plugins and themes up-to-date. In the...",
+		"pubDate": "Mon, 12 Sep 2022 13:59:35 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "meet-vlad-gerasimov-product-designer.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/nodebb-specific-bootstrap-3-to-5-migration-guide",
+		"title": "NodeBB Specific Bootstrap 3 to 5 Migration Guide",
+		"excerpt": "A guide to help you migrate your NodeBB theme from Bootstrap 3 to Bootstrap 5.",
+		"pubDate": "Mon, 12 Sep 2022 13:59:35 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "nodebb-specific-bootstrap-3-to-5-migration-guide.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/roadmap-for-2022",
+		"title": "Roadmap for 2022",
+		"excerpt": "The last time we provided an update on our roadmap was in late February of 2020. Development has ebbed and flowed, but we've always tried to make time for contributing...",
+		"cover": "https://images.unsplash.com/photo-1486673748761-a8d18475c757?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"pubDate": "Wed, 23 Feb 2022 16:26:25 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "roadmap-for-2022.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/changes-to-our-release-branches",
+		"title": "Changes to our release branches",
+		"excerpt": "What is a release branch? Whenever we make a NodeBB release, whether it be a patch release, minor release, or a major release, we also push the code to specific...",
+		"cover": "https://images.unsplash.com/photo-1521675333836-36e707ac1d20?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"pubDate": "Tue, 26 Jul 2022 18:18:20 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "changes-to-our-release-branches.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/plugin-compatibility-semver",
+		"title": "Plugin Compatibility and Semantic Versioning (semver)",
+		"excerpt": "Over the years, NodeBB has amassed quite a collection of plugins, most of which were published to npm and listed in the “Manage Plugins” page in the admin control panel....",
+		"cover": "https://images.unsplash.com/photo-1591040092219-081fb773589c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"pubDate": "Fri, 20 May 2022 17:39:52 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "plugin-compatibility-semver.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/nodebb-version-2-0",
+		"title": "NodeBB version 2.0 – Moving on Up",
+		"excerpt": "It’s a big week at NodeBB. For one, we are moving from the office on King Street in Toronto where we have been for the last 5 years… okay yes,...",
+		"cover": "https://nodebb.org/blog/images/office-move.jpg",
+		"pubDate": "Wed, 04 May 2022 19:34:56 +0000",
+		"author": {
+			"name": "Jay Moonah",
+			"url": "https://community.nodebb.org/user/jay-moonah",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-7950/7950-profileavatar-1701887954691.jpeg"
+		},
+		"content": "nodebb-version-2-0.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/migration-guide-for-v2",
+		"title": "Migration Guide for v2",
+		"excerpt": "In advance of the release of v2, we are releasing this migration guide in order to give third-party developers a chance to bring their plugins and themes up-to-date. In the...",
+		"cover": "https://images.unsplash.com/photo-1597484661643-2f5fef640dd1?q=80&w=1979&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"pubDate": "Wed, 23 Feb 2022 16:36:58 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "migration-guide-for-v2.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/roadmap-for-2022",
+		"title": "Roadmap for 2022",
+		"excerpt": "The last time we provided an update on our roadmap was in late February of 2020. Development has ebbed and flowed, but we've always tried to make time for contributing...",
+		"cover": "https://images.unsplash.com/photo-1486673748761-a8d18475c757?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"pubDate": "Wed, 23 Feb 2022 16:26:25 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "roadmap-for-2022.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/why-we-moved-from-exciting_technology-to-boring_standard",
+		"title": "Why we moved from $EXCITING_TECHNOLOGY to $BORING_STANDARD",
+		"excerpt": "Introduction This article was inspired by the May 2020 blog post Why we at $FAMOUS_COMPANY Switched to $HYPED_TECHNOLOGY, but while that article is satire, this one is completely serious. This...",
+		"cover": "https://images.unsplash.com/photo-1562426772-f7b1d159764b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"pubDate": "Wed, 16 Feb 2022 17:50:47 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "why-we-moved-from-exciting_technology-to-boring_standard.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/controversial-increasing-transparency-downvote",
+		"title": "How controversial... increasing transparency of the downvote",
+		"excerpt": "Starting in NodeBB v1.19.2, released today, you may notice there is a new account page available for each user — controversial posts. 👎 A counterpart to the “best posts” page,...",
+		"cover": "https://images.unsplash.com/photo-1591171400758-b2885b7a3183?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"pubDate": "Wed, 09 Feb 2022 21:53:59 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "controversial-increasing-transparency-downvote.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/tutorial-install-nodebb-on-digitalocean-ubuntu-20-04",
+		"title": "Tutorial: Install NodeBB on DigitalOcean/Ubuntu 20.04",
+		"excerpt": "Interested in installing NodeBB? The good news is that NodeBB is free and open-source forum software, so anybody can install and set it up, even you! This tutorial will help...",
+		"pubDate": "Mon, 07 Feb 2022 09:00:00 +0000",
+		"cover": "https://images.unsplash.com/photo-1630173210162-502ae270c8ad?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "tutorial-install-nodebb-on-digitalocean-ubuntu-20-04.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/gifs-support-ahoy",
+		"title": "GIFs support, ahoy!",
+		"excerpt": "This is a bit of a silly one… but in advance of NodeBB v1.19.2, I wanted to take a minute and announce that we’ll be supporting animated GIFs in post...",
+		"pubDate": "Fri, 04 Feb 2022 21:02:22 +0000",
+		"cover": "https://nodebb.org/blog/images/nyan-cat.gif",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "gifs-support-ahoy.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/nodebb-v1-19-0",
+		"title": "NodeBB v1.19.0 - Delivering Through The Snow",
+		"excerpt": "Truth be told our latest release was published late last week in advance of “snowmageddon” burying much of the U.S. northeast and Canadian southeast. But everyone is well and we’ve...",
+		"pubDate": "Wed, 19 Jan 2022 21:34:06 +0000",
+		"cover": "https://nodebb.org/blog/images/snow-mailbox-2048x1279.jpg",
+		"author": {
+			"name": "Jay Moonah",
+			"url": "https://community.nodebb.org/user/jay-moonah",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-7950/7950-profileavatar-1701887954691.jpeg"
+		},
+		"content": "nodebb-v1-19-0.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/fido2-webauthn",
+		"title": "Introducing FIDO2/WebAuthn support for NodeBB",
+		"excerpt": "Ever since the very first commits to the NodeBB codebase, we’ve made it a point of pride to implement features and functionality that “no other forum has”. We wanted to...",
+		"pubDate": "Mon, 10 Jan 2022 16:47:48 +0000",
+		"cover": "https://nodebb.org/blog/images/5CNFC-lifestyle-30-4-scaled-1-2048x1154.jpg",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "fido2-webauthn.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/happy-holidays-from-nodebb",
+		"title": "Happy Holidays from NodeBB",
+		"excerpt": "Happy Holidays from the team at NodeBB! Upcoming changes in NodeBB are listed within, as well as some news regarding staff departures.",
+		"cover": "https://nodebb.org/blog/images/holiday-blog.jpg",
+		"pubDate": "Fri, 17 Dec 2021 20:48:57 +0000",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "happy-holidays-from-nodebb.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/looking-ahead-to-nodebb-v2-x",
+		"title": "Looking ahead to NodeBB v2.x",
+		"excerpt": "Wait! Don’t get too excited! There’s a lot to figure out and a lot to actually do, so we’re not in any position to state any timelines or make any...",
+		"pubDate": "Wed, 26 Feb 2020 09:00:00 +0000",
+		"cover": "https://nodebb.org/blog/images/looking-ahead-to-nodebb-v2-x-768x493.png",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "looking-ahead-to-nodebb-v2-x.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/security-vulnerability-disclosure-08-dec-2021",
+		"title": "Security Vulnerability Disclosure, 08 Dec 2021",
+		"excerpt": "All of us at NodeBB are committed to delivering fully-secure, bug-free software. At the same time, we believe in full transparency when it comes to disclosing security vulnerabilities Today's blog...",
+		"pubDate": "Wed, 08 Dec 2021 21:14:29 +0000",
+		"cover": "https://nodebb.org/blog/images/NodeBB1.18.4One-ShotRCE@2x-2048x1072.jpeg",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "security-vulnerability-disclosure-08-dec-2021.html"
+	}
+
+]

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Introducing FIDO2/WebAuthn support for NodeBB - NodeBB - Modern Community Forum Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Blog of NodeBB Forum Software - The Modern Discussion Platform">
+	<meta name="author" content="NodeBB Inc.">
+	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting, blog">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/16x16.png">
+	<link rel="shortcut icon" href="/images/icons/favicon.ico">
+
+	<!-- Google Fonts: Inter & Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- our css-->
+	<link href="/css/style.css" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0P62EB8Q6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-V0P62EB8Q6');
+	</script>
+</head>
+<body class="p-0 py-5 p-lg-5">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+		<div class="container-lg">
+			<a class="navbar-brand py-2" href="/">
+				<img src="/images/brand/nodebb-logo.svg" style="height: 36px; width: auto;" alt="NodeBB Logo" />
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-end align-items-lg-center mt-4 mt-lg-0">
+					<li class="nav-item">
+						<a href="/" class="nav-link text-reset fw-semibold">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="/product" class="nav-link text-reset fw-semibold">PRODUCT</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pricing" class="nav-link text-reset fw-semibold">PRICING</a>
+					</li>
+					<li class="nav-item">
+						<a href="/services" class="nav-link text-reset fw-semibold">SERVICES</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle text-reset fw-semibold">RESOURCES</a>
+						<ul class="dropdown-menu dropdown-menu-end border-0 shadow p-1">
+							<li><a href="https://community.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Community</a></li>
+							<li><a href="https://try.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Demo Site</a></li>
+							<li><a href="https://community.nodebb.org/category/28/answers" class="dropdown-item rounded-1" target="_blank">Answers</a></li>
+							<li><a href="https://docs.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Documentation</a></li>
+							<li><a href="/bounty" class="dropdown-item rounded-1">Bug Bounty</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/contact" class="btn btn-warning rounded-pill">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container-lg mt-5">
+		<!-- Home -->
+		<div id="home-tab-pane">
+			<div class="row pt-2 pt-lg-5">
+				<div class="col-12 d-flex flex-column gap-4">
+					<h1 class="display-1 fw-bold fs-1">
+						Introducing FIDO2/WebAuthn support for NodeBB
+					</h1>
+					
+				</div>
+			</div>
+
+			<!-- blog post -->
+			<div class="py-5">
+				<div class="d-flex gap-2 align-items-center mb-4">
+					<a href="https://community.nodebb.org/user/julian"><img class="rounded-circle" width="32" src="https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"></a> <a href="https://community.nodebb.org/user/julian" class="fw-semibold">Julian Lam</a> <span class="text-secondary">1/10/2022, 11:47:48 AM</span>
+				</div>
+				<div class="">
+					<p>Ever since the very first commits to the NodeBB codebase, we've made it a point of pride to implement features and functionality that "no other forum has". We wanted to set ourselves apart from other community software offerings by natively supporting new UX paradigms (e.g. single page app, markdown editor, or infinite scrolling), or supporting the latest technologies (e.g. external SSO login, RESTful API) endemic<sup>1</sup> to popular web applications. WebAuthn and hardware key support is just the latest in that line of development effort.</p><p>Today, I am happy to announce that NodeBB officially supports <a href="https://en.wikipedia.org/wiki/Multi-factor_authentication">Multi-factor authentication</a> via hardware keys, built atop the FIDO2/WebAuthn protocol. This functionality was recently added to v3.0 of the <a href="https://github.com/NodeBB/nodebb-plugin-2factor">Two-Factor Authentication</a> plugin for NodeBB. The plugin already supported a second factor via a <a href="https://en.wikipedia.org/wiki/Time-based_One-Time_Password">time-based one-time password (TOTP)</a>, and further support for hardware keys allows users to increase security even more so.</p><p>Support for hardware keys via the WebAuthn protocol was sponsored by <a href="https://github.com/ylothar">@yLothar</a> and the <a href="https://keeb.it">mechanical keyboarding community at KEEB.it</a>. Thank you!</p><h2>What is a hardware key, how is it different from the SMS/one-time password?</h2><p>You may already be familiar with two-factor authentication used on other sites. Typical implementations include a one-time code sent to you via SMS, or a code generated by a device like your phone.</p><p>A nice summary is: 2FA complements the "something you know" aspect of passwords, with "something you have".</p><p>However, while a second factor is far and away the best way to further protect your account from password leaks, <a href="https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/">credential stuffing</a>, or just plain bad password hygiene, there are some known (albeit minor) limitations to both:</p><ul><li>An SMS-based code can be intercepted or your SIM card can be <a href="https://blog.mozilla.org/en/internet-culture/mozilla-explains/mozilla-explains-sim-swapping/">remotely swapped</a> by a compromised agent of the mobile phone carrier</li><li>If a TOTP secret is compromised or leaked, then it can be used and set up by others.</li><li>In both cases, a one-time password is also vulnerable to phishing/social engineering, where a malicious user impersonates the site (e.g. a bank) and asks for your one-time code.</li></ul><p>A hardware key is registered with the site and associated with the physical key itself. Short of having your key stolen, it is impossible to impersonate or have its secret revealed via some sort of social engineering attack.</p><p>The downside to the hardware key, of course... is that you have to actually <strong>buy</strong> a hardware key. They're fairly inexpensive, and usable across multiple sites, so it is not an overly burdensome expense, but I'll leave that determination up to you.</p><h2>How does FIDO2/WebAuthn work in NodeBB?</h2><p>Much like the existing TOTP support, you are able to register your hardware key from <a href="https://community.nodebb.org/me/2factor">within the user profile page</a> in NodeBB.</p><p>Once the key is registered with your account, whenever you log in, you will be requested to activate your hardware key (usually with some sort of press or tap).</p><p>Take a look at it in action on the right. I had already associated the key with my account on my <em>desktop via USB</em>, but am logging into my account on my <em>phone</em>, and completed the challenge <em>using NFC</em>. Neat, isn't it?</p><h2>How safe is it?</h2><p>Unless your key is stolen, the hardware key is just as safe as other two-factor authentication methods. As mentioned above, while there are some minor disadvantages to SMS or TOTP-based 2FA, <strong>simply having 2FA at all</strong> — no matter which method — <strong>is the best thing you can do to increase your account security</strong>.</p><h2>Plugin ownership change</h2><p>Additionally, we have also officially transferred guardianship of <a href="https://github.com/NodeBB/nodebb-plugin-2factor">the 2factor plugin</a> from my personal account to the NodeBB organization on GitHub, and will bundle it with future versions of NodeBB.</p><p>As with all of our bundled plugins, this also automatically means that the plugin is fair game <a href="/bounty">according to our bug bounty</a>.</p><h2>What's next for the plugin?</h2><p>Best practice for multi-factor authentication suggests we should enable the ability to associate multiple strategies (e.g. TOTP <em>and</em> hardware key <em>and</em> maybe fingerprint, etc.). Currently, we only support either the hardware key, or the regular QR code token, with backup code support. In future iterations of the plugin, we will be allowing for concurrently registered 2FA methods.</p>
+															<img class="img-fluid" src="https://nodebb.org/blog/images/yubikey-optimized.gif" alt="An animation showing how the FIDO2/WebAuthn protocol is used via a hardware key, in order to log into a NodeBB instance for two-factor authentication" loading="lazy" />
+		<p>Thanks for reading, and stay safe online! Remember, nobody will ever ask you for your password... or your one-time passcode... and if you use a hardware key, then tell them so and confuse them instead 🙃.</p><h2>Notes</h2><p><sup>1</sup> Funny how "endemic" is now a word almost everybody knows the definition of.</p>
+				</div>
+			</div>
+		</div>
+
+		<hr class="my-5"/>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Get Started</h5>
+					<ul class="list-unstyled">
+						<li><a href="/product" class="link-secondary text-decoration-none">PRODUCT</a></li>
+						<li><a href="/pricing" class="link-secondary text-decoration-none">PRICING</a></li>
+						<li><a href="/services" class="link-secondary text-decoration-none">SERVICES</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Resources</h5>
+					<ul class="list-unstyled">
+						<li><a href="https://community.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">COMMUNITY</a></li>
+						<li><a href="https://try.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">DEMO SITE</a></li>
+						<li><a href="https://community.nodebb.org/category/28/answers" class="link-secondary text-decoration-none" target="_blank">ANSWERS</a></li>
+						<li><a href="https://docs.nodebb.org" class="link-secondary text-decoration-none" target="_blank">DOCUMENTATION</a></li>
+						<li><a href="/bounty" class="link-secondary text-decoration-none">BUG BOUNTY</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Company</h5>
+					<ul class="list-unstyled">
+						<li><a href="/about" class="link-secondary text-decoration-none">ABOUT</a></li>
+						<li><a href="/blog" class="link-secondary text-decoration-none">BLOG</a></li>
+						<li><a href="/contact" class="link-secondary text-decoration-none">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					<div class="d-flex gap-3 mt-3 justify-content-between px-2">
+						<a title="NodeBB Github Page" href="https://github.com/nodebb/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-github"></i></a>
+						<a title="NodeBB Twitter Page" href="https://twitter.com/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
+						<a title="NodeBB Mastodon Page" href="https://fosstodon.org/@nodebb" class="link-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="link-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between gap-5 small">
+				<span class="text-secondary text-nowrap">©2025 NodeBB, Inc. — Made in Canada with <i class="fa-solid fa-heart text-danger"></i>.</span>
+				<div class="d-flex gap-3">
+					<a href="/tos" class="link-secondary text-nowrap text-decoration-none">Terms of Service</a>
+					<a href="/privacy" class="link-secondary text-nowrap text-decoration-none">Privacy Policy</a>
+					<a href="/gdpr" class="link-secondary text-nowrap text-decoration-none">GDPR</a>
+					<a href="/dmca" class="link-secondary text-nowrap text-decoration-none">DMCA</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

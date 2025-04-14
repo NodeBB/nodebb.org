@@ -6,15 +6,13 @@ import fs from 'fs';
 import path from 'path';
 import { marked } from 'marked';
 
-const files = await fs.promises.readdir('./blog_source/posts');
-const jsonFiles = files.filter(file => path.extname(file) === '.json');
+const blogPostData = JSON.parse(await fs.promises.readFile('./blog_source/blog_posts.json', 'utf-8'));
+
 
 const blogTpl = await fs.promises.readFile('./blog_source/blog_template.tpl', 'utf-8');
 const start = Date.now();
-const blogData = await Promise.all(jsonFiles.map(async file => {
-	const filename = path.parse(file).name;
-	const fileData = JSON.parse(await fs.promises.readFile(path.join('./blog_source/posts', file), 'utf-8'));
-
+await Promise.all(blogPostData.map(async fileData => {
+	const filename = path.parse(fileData.content).name;
 
 	let content = await fs.promises.readFile(
 		path.join('./blog_source/posts', fileData.content), 'utf-8'
@@ -37,7 +35,7 @@ const blogData = await Promise.all(jsonFiles.map(async file => {
 }));
 
 // building blog index
-blogData.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+blogPostData.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
 
 const cardTpl = await fs.promises.readFile('./blog_source/blog_card.tpl', 'utf-8');
 const blogIndexTpl = await fs.promises.readFile('./blog_source/index.tpl', 'utf-8');
@@ -52,7 +50,7 @@ const defaultCovers = [
 ];
 let defaultCoverIndex = 0;
 
-const cardsHtml = await Promise.all(blogData.map(async (blog, index) => {
+const cardsHtml = await Promise.all(blogPostData.map(async (blog, index) => {
 	let html = cardTpl.replace(/{{{ title }}}/g, blog.title)
 		.replace(/{{{ excerpt }}}/g, blog.excerpt || '')
 		.replace(/{{{ url }}}/g, blog.url)
@@ -67,4 +65,4 @@ const cardsHtml = await Promise.all(blogData.map(async (blog, index) => {
 const html = blogIndexTpl.replace('{{{ blog_posts }}}', cardsHtml.join(''))
 await fs.promises.writeFile(path.join(`./blog/index.html`), html);
 
-console.log(`Generated ${blogData.length} blog posts in ${((Date.now() - start) / 1000).toFixed(2)} seconds`);
+console.log(`Generated ${blogPostData.length} blog posts in ${((Date.now() - start) / 1000).toFixed(2)} seconds`);
