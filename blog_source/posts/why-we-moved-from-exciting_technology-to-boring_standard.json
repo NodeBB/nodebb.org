@@ -1,0 +1,15 @@
+{
+	"url": "https://nodebb.org/blog/why-we-moved-from-exciting_technology-to-boring_standard",
+	"title": "Why we moved from $EXCITING_TECHNOLOGY to $BORING_STANDARD",
+	"subtitle": "",
+	"excerpt": "Introduction This article was inspired by the May 2020 blog post Why we at $FAMOUS_COMPANY Switched to $HYPED_TECHNOLOGY, but while that article is satire, this one is completely serious. This...",
+	"cover": "https://images.unsplash.com/photo-1562426772-f7b1d159764b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+	"pubDate": "Wed, 16 Feb 2022 17:50:47 +0000",
+	"author": {
+		"name": "Julian Lam",
+		"url": "https://community.nodebb.org/user/julian",
+		"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+	},
+
+	"content": "why-we-moved-from-exciting_technology-to-boring_standard.html"
+}

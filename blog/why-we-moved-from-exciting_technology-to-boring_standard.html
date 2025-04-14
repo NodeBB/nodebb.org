@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Why we moved from $EXCITING_TECHNOLOGY to $BORING_STANDARD - NodeBB - Modern Community Forum Software</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Blog of NodeBB Forum Software - The Modern Discussion Platform">
+	<meta name="author" content="NodeBB Inc.">
+	<meta name="keywords" content="nodebb, node.js, forum, discussion, community, software, hosting, blog">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/16x16.png">
+	<link rel="shortcut icon" href="/images/icons/favicon.ico">
+
+	<!-- Google Fonts: Inter & Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap 5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- our css-->
+	<link href="/css/style.css" rel="stylesheet">
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-V0P62EB8Q6"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-V0P62EB8Q6');
+	</script>
+</head>
+<body class="p-0 py-5 p-lg-5">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-body fixed-top shadow-sm">
+		<div class="container-lg">
+			<a class="navbar-brand py-2" href="/">
+				<img src="/images/brand/nodebb-logo.svg" style="height: 36px; width: auto;" alt="NodeBB Logo" />
+			</a>
+			<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+				<ul class="nav nav-underline gap-4 flex-column flex-lg-row align-items-end align-items-lg-center mt-4 mt-lg-0">
+					<li class="nav-item">
+						<a href="/" class="nav-link text-reset fw-semibold">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a href="/product" class="nav-link text-reset fw-semibold">PRODUCT</a>
+					</li>
+					<li class="nav-item">
+						<a href="/pricing" class="nav-link text-reset fw-semibold">PRICING</a>
+					</li>
+					<li class="nav-item">
+						<a href="/services" class="nav-link text-reset fw-semibold">SERVICES</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" target="_blank" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle text-reset fw-semibold">RESOURCES</a>
+						<ul class="dropdown-menu dropdown-menu-end border-0 shadow p-1">
+							<li><a href="https://community.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Community</a></li>
+							<li><a href="https://try.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Demo Site</a></li>
+							<li><a href="https://community.nodebb.org/category/28/answers" class="dropdown-item rounded-1" target="_blank">Answers</a></li>
+							<li><a href="https://docs.nodebb.org/" class="dropdown-item rounded-1" target="_blank">Documentation</a></li>
+							<li><a href="/bounty" class="dropdown-item rounded-1">Bug Bounty</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="/contact" class="btn btn-warning rounded-pill">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<div class="container-lg mt-5">
+		<!-- Home -->
+		<div id="home-tab-pane">
+			<div class="row pt-2 pt-lg-5">
+				<div class="col-12 d-flex flex-column gap-4">
+					<h1 class="display-1 fw-bold fs-1">
+						Why we moved from $EXCITING_TECHNOLOGY to $BORING_STANDARD
+					</h1>
+					
+				</div>
+			</div>
+
+			<!-- blog post -->
+			<div class="py-5">
+				<div class="d-flex gap-2 align-items-center mb-4">
+					<a href="https://community.nodebb.org/user/julian"><img class="rounded-circle" width="32" src="https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"></a> <a href="https://community.nodebb.org/user/julian" class="fw-semibold">Julian Lam</a> <span class="text-secondary">2/16/2022, 12:50:47 PM</span>
+				</div>
+				<div class="">
+					<h2>Introduction</h2><p>This article was inspired by the May 2020 blog post <a href="https://saagarjha.com/blog/2020/05/10/why-we-at-famous-company-switched-to-hyped-technology/">Why we at $FAMOUS_COMPANY Switched to $HYPED_TECHNOLOGY</a>, but while that article is satire, this one is completely serious.</p><p>This article is the first in a follow-up series regarding our work leading up to NodeBB v2 and beyond. <a href="https://nodebb.org/blog/looking-ahead-to-nodebb-v2-x/">The original article about NodeBB v2 can be found here</a>.</p><h2>Move Fast, Break Things</h2><p>When we first started NodeBB, we wanted to capitalize on the newest technology stack available. After all, what's newest is clearly an indicator of market direction, and therefore going to stick around forever!</p><p>The decision was a little more nuanced, but by and large, this is why we ended up investing so heavily in our <strong>websockets implementation</strong>, up until a couple years ago.</p><p>Don't worry, this isn't a hit piece on websockets! It's served us very well over the years, and we're not planning to get rid of it anytime soon<sup>1</sup>.</p><h2>What happened to exciting?</h2><p>As it turns out, exciting technology has a couple drawbacks. None that were showstoppers, mind you -- but significant enough to give us pause long enough to consider whether we were using exciting technology for the right purposes. Were we shoving a square peg into a round hole?</p><h3>Browser and Proxy Support</h3><p>Websockets are not entirely supported by 100% of clients. Support is <em>nearing</em> 100%, but you'll always have some users who will complain that feature X or feature Y is not working, because they're behind some sort of firewall, or their ISP is blocking websockets, or maybe because Jupiter happens to be aligned with Venus on that particular day.</p><p>Conversely, a REST API is supported by 100% of clients. If they can load a website, they can load an API.</p><p>We also had an issue with websockets being <em>too new</em> at the time, but this is no longer an issue, since nginx has had websocket support for nearly a decade now.</p><p>Websockets also needed <a href="https://docs.nodebb.org/configuring/proxies/nginx/">some changes to a reverse proxy config</a> to get working. This hasn't changed from day 1.</p><h3>When you have a hammer, everything looks like a nail</h3><p>We were so enamoured with websockets that we implemented almost everything with it. We were doing simple call-and-response requests with websockets, simply because it was just <strong>so easy</strong> to <code>.emit()</code> something on the server, and get it on the client, or vice versa.</p><p>We didn't want to put in the legwork to build out proper RESTful routes, especially if we were requesting one-off bits of information, but in the end, that would've been the better approach.</p><p>Now that we <em>do</em> have a standardized REST API, along with the associated helpers on the backend and frontend to make implementing routes easier, we're actually in the unique position of being able to move more slowly and deliberately, ensuring that implemented routes make sense from a RESTful point of view.</p><h3>RESTful opinions</h3><p>I hear often that REST is a standard that sets out how an API is to be designed. While this is true to an extent, many APIs do not follow these rules rigidly, and some legacy APIs pre-date these opinions.</p><p>A problem with websockets was that it was vague enough that it didn't have any best-practices. Do you use periods as separators in your messages, in order to denote namespace, or pipes? Maybe dashes? In the end, it was up to whoever implemented it, and in some places, we had different standards co-existing.</p><p>While this pitfall can certainly happen in a RESTful API, it was much easier to build out our API more deliberately and slowly, as by this point, we had reached feature parity. Enforcing things like <code>GET</code> for data retrieval, <code>POST</code> for data creation, <code>PUT</code> for data update, and <code>DELETE</code> for data deletion were easier to enforce as it was an already established best-practice<sup>2</sup>.</p><h3>Developer Friendliness</h3><p>While it was easy for <em>us</em> to get started with websockets, it's not a ubiquitous technology that all developers know how to use. We were approached by several clients who wanted to integrate with NodeBB, but had no option except to build out a websocket client. In terms of developer simplicity, it was an order of magnitude more difficult to do this, compared to sending over <a href="https://docs.nodebb.org/api/write/">our write API docs</a>, and a sample cURL:</p><pre>curl -X POST -H "Authorization: Bearer mytoken" https://mysite.example.com/api/v3/users --data "username=myUser"</pre><p>I expanded on this at length in <a href="https://nodebb.org/blog/unveiling-of-the-read-api/">a companion blog post about our Read API</a>.</p><p>Very soon after we published the Write API plugin, we started seeing a noticible uptick in integrations and questions regarding integrations, which told us clearly that there was a demand for it. We've had the websocket interface all along, but very <em>very </em>few people approached us with questions on using it.</p><h2><del datetime="2022-02-16T17:36:06+00:00">$EXCITING_TECHNOLOGY</del> Websockets isn't going away soon</h2><p>The primary use for websockets is for real-time events that require low latency. For example, a browser-based game would benefit from a websockets implementation to achieve near-real-time client-server communication. While the content served by a community forum will never be so time-sensitive as to require sub-second latency, the benefits of having a websocket implementation still apply.</p><p>Since it's already implemented in our codebase, our use of websockets to send packets of information to a client is still the ideal use case -- for example, notifying other browsing users when a new topic is posted. While we may investigate other boring technologies like <a href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events">server-sent events</a>, our websocket implementation is still here to stay for the time being.</p><p>Ever since we migrated the write API into core, we've been deprecating websocket routes here and there in favour of the RESTful API. This is a long-running work in progress, and we don't expect to fully-deprecate websockets until at least 2-3 major versions from now (if ever).</p><h2>Notes</h2><p><sup>Cover Photo</sup> <a href="https://unsplash.com/@tmdpw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tim De Pauw</a> on <a href="https://unsplash.com/s/photos/tired?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a><br /><sup>1</sup> However, "soon" in the context of NodeBB could mean bloody well anything, from 5 minutes, to 5 years. Your mileage may vary.<br /><sup>2</sup> Ironically, we don't actually use <code>PATCH</code> methods, but we should, for routes that allow you to update only certain values (e.g. user update routes)</p>
+				</div>
+			</div>
+		</div>
+
+		<hr class="my-5"/>
+
+		<!-- FOOTER -->
+		<footer>
+			<div class="d-flex flex-column flex-md-row gap-5 justify-content-between mb-5 flex-wrap">
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Get Started</h5>
+					<ul class="list-unstyled">
+						<li><a href="/product" class="link-secondary text-decoration-none">PRODUCT</a></li>
+						<li><a href="/pricing" class="link-secondary text-decoration-none">PRICING</a></li>
+						<li><a href="/services" class="link-secondary text-decoration-none">SERVICES</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Resources</h5>
+					<ul class="list-unstyled">
+						<li><a href="https://community.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">COMMUNITY</a></li>
+						<li><a href="https://try.nodebb.org/" class="link-secondary text-decoration-none" target="_blank">DEMO SITE</a></li>
+						<li><a href="https://community.nodebb.org/category/28/answers" class="link-secondary text-decoration-none" target="_blank">ANSWERS</a></li>
+						<li><a href="https://docs.nodebb.org" class="link-secondary text-decoration-none" target="_blank">DOCUMENTATION</a></li>
+						<li><a href="/bounty" class="link-secondary text-decoration-none">BUG BOUNTY</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<h5 class="fw-bold">Company</h5>
+					<ul class="list-unstyled">
+						<li><a href="/about" class="link-secondary text-decoration-none">ABOUT</a></li>
+						<li><a href="/blog" class="link-secondary text-decoration-none">BLOG</a></li>
+						<li><a href="/contact" class="link-secondary text-decoration-none">CONTACT</a></li>
+					</ul>
+				</div>
+				<div class="d-flex flex-column">
+					<a href="https://manage.nodebb.org/register" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Free Trial</a>
+					<div class="d-flex gap-3 mt-3 justify-content-between px-2">
+						<a title="NodeBB Github Page" href="https://github.com/nodebb/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-github"></i></a>
+						<a title="NodeBB Twitter Page" href="https://twitter.com/nodebb" class="link-secondary text-decoration-none"><i class="fab fa-twitter"></i></a>
+						<a title="NodeBB Mastodon Page" href="https://fosstodon.org/@nodebb" class="link-secondary text-decoration-none"><i class="fa-brands fa-mastodon"></i></a>
+						<a title="NodeBB Facebook Page" href="https://www.facebook.com/NodeBB" class="link-secondary text-decoration-none"><i class="fab fa-facebook"></i></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between gap-5 small">
+				<span class="text-secondary text-nowrap">©2025 NodeBB, Inc. — Made in Canada with <i class="fa-solid fa-heart text-danger"></i>.</span>
+				<div class="d-flex gap-3">
+					<a href="/tos" class="link-secondary text-nowrap text-decoration-none">Terms of Service</a>
+					<a href="/privacy" class="link-secondary text-nowrap text-decoration-none">Privacy Policy</a>
+					<a href="/gdpr" class="link-secondary text-nowrap text-decoration-none">GDPR</a>
+					<a href="/dmca" class="link-secondary text-nowrap text-decoration-none">DMCA</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
