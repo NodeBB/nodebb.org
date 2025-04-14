@@ -56,7 +56,7 @@ const cardsHtml = await Promise.all(blogData.map(async (blog, index) => {
 	let html = cardTpl.replace(/{{{ title }}}/g, blog.title)
 		.replace(/{{{ excerpt }}}/g, blog.excerpt || '')
 		.replace(/{{{ url }}}/g, blog.url)
-		.replace('{{{ cover }}}', `<img style="height: 225px;" src="${blog.cover || defaultCovers[defaultCoverIndex % defaultCovers.length]}" class="card-img-top"></img>`);
+		.replace('{{{ cover }}}', `<img style="height: 225px; object-fit: cover;" src="${blog.cover || defaultCovers[defaultCoverIndex % defaultCovers.length]}" class="card-img-top"></img>`);
 
 	if (!blog.cover) {
 		defaultCoverIndex++;
