@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Blog - NodeBB - Modern Community Forum Software</title>
+	<title>Blog - NodeBB - Modern Forum Software</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Blog of NodeBB Forum Software - The Modern Discussion Platform">
 	<meta name="author" content="NodeBB Inc.">
