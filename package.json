@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "marked": "^15.0.8"
   }
