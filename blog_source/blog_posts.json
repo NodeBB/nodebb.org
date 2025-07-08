@@ -432,5 +432,31 @@
 			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
 		},
 		"content": "unveiling-of-the-read-api.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/nodebb-1-9-0-worlds-first-gdpr-compliant-forum-software",
+		"title": "NodeBB 1.9.0: world's first GDPR compliant forum software",
+		"excerpt": "We're proud to announce that NodeBB has become the first forum software to become GDPR compliant.",
+		"pubDate": "Wed, 02 May 2018 19:23:57 +0000",
+		"cover": "",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "nodebb-1-9-0-worlds-first-gdpr-compliant-forum-software.html"
+	},
+	{
+		"url": "https://nodebb.org/blog/whats-new-in-v1-9-0",
+		"title": "What's New in v1.9.0",
+		"excerpt": "Spring has finally arrived in Toronto, and that means it's time for a brand new NodeBB release!",
+		"pubDate": "Wed, 02 May 2018 19:32:03 +0000",
+		"cover": "",
+		"author": {
+			"name": "Julian Lam",
+			"url": "https://community.nodebb.org/user/julian",
+			"image": "https://community.nodebb.org/assets/uploads/profile/uid-2/2-profileavatar-1738544541106.jpeg"
+		},
+		"content": "whats-new-in-v1-9-0.html"
 	}
 ]

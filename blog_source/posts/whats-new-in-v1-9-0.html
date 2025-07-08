@@ -1,0 +1,24 @@
+<div class="kg-card-markdown">
+
+<p>Spring has finally arrived in Toronto, and that means it's time for a brand new NodeBB release!</p>
+<h2 id="sowhatsnew">So what's new?</h2>
+<p>We initially planned this release for late April, although we ran into a couple of last-minute blockers that necessitated pushing back the launch until today. We're excited to share this new version with you as it contains a couple of new features that allow for compliance with GDPR, as well as fixing a number of issues present in the current stable release.</p>
+<h3 id="gdprsupport">GDPR Support</h3>
+<p>The main addition this round is support for the General Data Protection Regulation (GDPR). A number of our users in the EU expressed the need to become compliant, and as the aims of the GDPR are aligned with our general treatment of personal data, we felt it important to promote some issues on our internal roadmap to allow us to fully achieve compliance.</p>
+
+<p>To that end, it means all new users are required to supply informed consent upon registration. Additionally, a page listing a user's rights and consent is now available from inside the user pages, appropriately titled "Your Rights &amp; Consent".</p>
+
+<p>For more information on what NodeBB has changed to become compliant with GDPR, and how it affects you, please take a look <a href="https://nodebb.org/blog/nodebb-1-9-0-worlds-first-gdpr-compliant-forum-software">at our dedicated post on the GDPR compliance</a>.</p>
+<h3 id="postsuploadassociation">Posts' Upload Association</h3>
+<p>Prior to v1.9.0, uploaded posts were not tied to any specific post or user. As part of the work to bring NodeBB into compliance with GDPR, we wanted to associate uploaded posts with both the user who uploaded it, and the post content iself.</p>
+
+<p>You'll now be able to see your individual uploads at this page (a logged in account is needed): <a href="https://community.nodebb.org/me/uploads">https://community.nodebb.org/me/uploads</a>, and administrators will also have a page to administer uploaded files and determine if any are orphaned (and can be safely deleted).</p>
+
+<h3 id="userignoringblockingnowincore">User ignoring/blocking now in core</h3>
+<p>
+We received many requests for user ignoring/blocking tools, and we're happy to report that the logic that was formerly in plugins is now available in core. You should be able to manage your personal blocklist by accessing the following page: <a href="https://community.nodebb.org/me/blocks">https://community.nodebb.org/me/blocks</a> (logged in user account required).</p>
+
+<h3 id="andmuchmore">... and much more!</h3>
+<p>We have many additional bug fixes and small features that are included in this release. As always, we recommend that you update your NodeBB to keep ahead of the latest changes and to take advantage of the latest features. If you run into any issues, feel free to post in our community support forum, where we will do our best to assist.</p>
+
+</div>
